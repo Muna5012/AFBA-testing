@@ -1,0 +1,200 @@
+[
+  {
+    "source": "User input DepartmentCode and SourceCode",
+    "steps": [
+      {
+        "name": "User input DepartmentCode and SourceCode",
+        "aggregatedDurations": {
+          "average": 0.3308615,
+          "median": 0.3308615
+        },
+        "durations": [
+          {
+            "duration": 0.3308615,
+            "location": "MyFeatures/application.feature:19"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "User click Show Coverage Options button",
+    "steps": [
+      {
+        "name": "User click Show Coverage Options button",
+        "aggregatedDurations": {
+          "average": 2.3659938,
+          "median": 2.3659938
+        },
+        "durations": [
+          {
+            "duration": 2.3659938,
+            "location": "MyFeatures/application.feature:20"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "User enter HomePage to click Manage cases button",
+    "steps": [
+      {
+        "name": "User enter HomePage to click Manage cases button",
+        "aggregatedDurations": {
+          "average": 1.1065939,
+          "median": 1.1065939
+        },
+        "durations": [
+          {
+            "duration": 1.1065939,
+            "location": "MyFeatures/application.feature:6"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "User select Eligibility, BranchOfService, DutyStatus, Rank and Contribution Mode",
+    "steps": [
+      {
+        "name": "User select Eligibility, BranchOfService, DutyStatus, Rank and Contribution Mode",
+        "aggregatedDurations": {
+          "average": 0.5921289,
+          "median": 0.5921289
+        },
+        "durations": [
+          {
+            "duration": 0.5921289,
+            "location": "MyFeatures/application.feature:18"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "User select firstOption",
+    "steps": [
+      {
+        "name": "User select firstOption",
+        "aggregatedDurations": {
+          "average": 0.4773959,
+          "median": 0.4773959
+        },
+        "durations": [
+          {
+            "duration": 0.4773959,
+            "location": "MyFeatures/application.feature:21"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "User click Next button",
+    "steps": [
+      {
+        "name": "User click Next button",
+        "aggregatedDurations": {
+          "average": 0.1160958,
+          "median": 0.1160958
+        },
+        "durations": [
+          {
+            "duration": 0.1160958,
+            "location": "MyFeatures/application.feature:22"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "User input Sponsor SSN and click Next button",
+    "steps": [
+      {
+        "name": "User input Sponsor SSN and click Next button",
+        "aggregatedDurations": {
+          "average": 3.9766902,
+          "median": 3.9766902
+        },
+        "durations": [
+          {
+            "duration": 3.9766902,
+            "location": "MyFeatures/application.feature:10"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "User input search to find AFBA case",
+    "steps": [
+      {
+        "name": "User input search to find AFBA case",
+        "aggregatedDurations": {
+          "average": 0.2132152,
+          "median": 0.2132152
+        },
+        "durations": [
+          {
+            "duration": 0.2132152,
+            "location": "MyFeatures/application.feature:7"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "click the AFBA case",
+    "steps": [
+      {
+        "name": "click the AFBA case",
+        "aggregatedDurations": {
+          "average": 2.1921783,
+          "median": 2.1921783
+        },
+        "durations": [
+          {
+            "duration": 2.1921783,
+            "location": "MyFeatures/application.feature:8"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "create New Enrollment",
+    "steps": [
+      {
+        "name": "create New Enrollment",
+        "aggregatedDurations": {
+          "average": 2.1851892,
+          "median": 2.1851892
+        },
+        "durations": [
+          {
+            "duration": 2.1851892,
+            "location": "MyFeatures/application.feature:9"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "User input Sponsor firstName, lastName, dateOfBirth",
+    "steps": [
+      {
+        "name": "User input Sponsor firstName, lastName, dateOfBirth",
+        "aggregatedDurations": {
+          "average": 0.7411326,
+          "median": 0.7411326
+        },
+        "durations": [
+          {
+            "duration": 0.7411326,
+            "location": "MyFeatures/application.feature:11"
+          }
+        ]
+      }
+    ]
+  }
+]
