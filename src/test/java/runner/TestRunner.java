@@ -21,7 +21,7 @@ import cucumber.api.junit.Cucumber;
 		,glue = "stepdefination",
 		dryRun = false,
 		//tags = {"@Test05","@Test06","@Test07"}
-		tags = {"@Test01"}
+		tags = {"@Test21"}
 		
 		)
 
