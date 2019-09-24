@@ -14,7 +14,7 @@ public class ApplicationPage {
 	@FindBy(xpath = "//*[@id='cases_table']/tbody/tr[1]/td[1]")
 	public static WebElement AFBACase;
 	
-	@FindBy(id = "add-to-census-btn")
+	@FindBy(xpath = "//*[@id='add-to-census-btn']")
 	public static WebElement CreateNewEnrollement;
 	
 	@FindBy(xpath = "//input[@id='add-census-ssn-input']")
@@ -34,6 +34,9 @@ public class ApplicationPage {
 	
 	@FindBy(name= "eeBenefitDOB")
 	public static WebElement Birthday;
+	
+	@FindBy(xpath ="//*[@id='step1-form']/div[1]/div[1]/div[2]/div[2]/div/label[2]/span")
+	public static WebElement Gender;
 	
 	@FindBy(css=".lbl.padding-8.is_married")
 	public static WebElement MarriedBtn;
@@ -117,10 +120,10 @@ public class ApplicationPage {
 	public static WebElement NextBtn;
 	
 
-	@FindBy(xpath ="//*[@id='step2']/form/div[2]/div[1]/div[2]/div[2]/div/button[2]")
+	@FindBy(xpath ="//*[@id='step2']/form/div[2]/div[2]/div[2]/div[2]/div/button[2]")
 	public static WebElement LifeInsuranceOption;
 	
-	@FindBy(xpath = "//*[@id='step2']/form/div[2]/div[2]/div[2]/div[2]/div/button[2]")
+	@FindBy(xpath = "//*[@id='step2']/form/div[2]/div[3]/div[2]/div[2]/div/button[2]")
 	public static WebElement ReplaceLifeInsuranceOption;
 	
 	
@@ -176,8 +179,6 @@ public class ApplicationPage {
 	@FindBy(xpath ="//button[@class='btn btn-success btn-next']")
 	public static WebElement NextBtn2;
 	
-	@FindBy(xpath ="//*[@id='step3-form']/div[6]/div/label[2]/span")
-	public static WebElement Gender;
 	
 	@FindBy(name ="height_feet_null")
 	public static WebElement HeightClick;
@@ -191,7 +192,7 @@ public class ApplicationPage {
 	@FindBy (xpath = "//select[@name='height_inches_null']/option[12]")
 	public static WebElement HeightInchesOption;
 	
-	@FindBy (xpath = "//*[@id='step3-form']/div[8]/div/input")
+@FindBy (xpath = "//*[@id='step3-form']/div[2]/div[7]/div/input")
 	public static WebElement Weight;
 	
 	@FindBy(xpath ="//div[@class='wizard-actions']/button[2]")
@@ -271,6 +272,10 @@ public class ApplicationPage {
 	
 	@FindBy(xpath ="//*[@name='step_6_ssn']")
 	public static WebElement SponsorLastSSN;
+	
+	@FindBy(xpath ="//*[@id='modal-signing-applicant-in-person']/div[2]/div/div[3]")
+	public static WebElement verifySSN;
+	
 	
 	@FindBy(xpath="//*[@id='modal-signing-applicant-in-person']/div[2]/div/div[2]")
 	public static WebElement clickModalBodyBtn;
