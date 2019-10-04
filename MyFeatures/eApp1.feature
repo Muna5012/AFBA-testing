@@ -9,7 +9,7 @@ Scenario: eApp application Feature test scenarios
 	
 	Then Input Sponsor SSN 
 	Then Input Enrollement City
-	Then Input Enrollement State and click Next button
+	Then Input Enrollement State
 	And Click the Next Button
 	Then Click Begin Enrollement button
 	
@@ -21,7 +21,7 @@ Scenario: eApp application Feature test scenarios
 	Then Click Show Coverage Options button 
 	
 	And Select Better Alternative Roy option
-	Then Click Applicationfor member benefit
+	Then Click Applicationfon member benefit five thousand k
 	Then Select waive enrollment in Application radio button
 	Then click Next button for next page
 	

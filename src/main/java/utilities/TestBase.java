@@ -28,7 +28,6 @@ public abstract class TestBase {
 		
 		Assert.assertTrue(driver.getTitle().contains("Login"));
 		LoginPage.email.sendKeys("MAbabaikeli@afba.com");
-	
 		LoginPage.password.sendKeys("Muna5012");	 
 		LoginPage.loginBtn.click();
 		act.pause(3000).perform();

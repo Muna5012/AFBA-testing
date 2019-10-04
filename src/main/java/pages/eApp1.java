@@ -3,7 +3,7 @@ package pages;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class eApp1 {
+public class EApp1 {
 	
 	@FindBy(xpath = "//a[contains(text(),'Manage cases')]")
 	public static WebElement ManageCaseButton;

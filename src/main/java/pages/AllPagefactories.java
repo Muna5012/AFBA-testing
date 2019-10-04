@@ -55,13 +55,17 @@ public class AllPagefactories extends TestBase{
 			
 			PageFactory.initElements(driver, MemberLoginPage.class);
 			
-			PageFactory.initElements(driver, NewRequest1.class);
+		//	PageFactory.initElements(driver, NewRequest1.class);
 			
 			PageFactory.initElements(driver, NewRequest2.class);
 			
 			PageFactory.initElements(driver, NewRequest3.class);
 			
 			PageFactory.initElements(driver, XML.class);
+			
+			PageFactory.initElements(driver, EApp1.class);
+			
+			PageFactory.initElements(driver, EApp2.class);
 		
 
 			
