@@ -6,7 +6,7 @@ import cucumber.api.java.en.When;
 import pages.EApp2;
 import utilities.TestBase;
 
-public class eApp2StepDef extends TestBase {
+public class EApp2StepDef extends TestBase {
 
 	@When("Click Manage cases button")
 	public void click_Manage_cases_button() {

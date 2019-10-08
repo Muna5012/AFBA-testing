@@ -7,7 +7,7 @@ import cucumber.api.java.en.When;
 import pages.EApp2;
 import utilities.TestBase;
 
-public class eApp3StepDef  extends TestBase {
+public class EApp3StepDef  extends TestBase {
 
 	@When("Home page click Manage cases button")
 	public void home_page_click_Manage_cases_button() {
@@ -125,7 +125,7 @@ public class eApp3StepDef  extends TestBase {
 
 	@Then("SelectWaive enrollment for this application")
 	public void selectwaive_enrollment_for_this_application() {
-	    EApp2.waiveEnrollment.click();
+	    EApp2.WaiveApplication.click();
 	    act.pause(2000).perform();
 	}
 

@@ -7,7 +7,7 @@ import cucumber.api.java.en.When;
 import pages.EApp2;
 import utilities.TestBase;
 
-public class eAppHiddenEleStepDef extends TestBase {
+public class EAppHiddenEleStepDef extends TestBase {
 
 	@When("Click Manage cases button on Home page")
 	public void click_Manage_cases_button_on_Home_page() {
@@ -114,7 +114,6 @@ public class eAppHiddenEleStepDef extends TestBase {
 	@Then("Input second child first name, last name and DOB")
 	public void input_second_child_first_name_last_name_and_DOB() {
 		EApp2.ChildTwoFN.sendKeys("Ted");
-		EApp2.ChildTwoLN.sendKeys("Yang");
 		EApp2.ChildTwoDOB.click();
 		EApp2.ChildTwoDOB.sendKeys("07042005");
 	}
@@ -179,7 +178,7 @@ public class eAppHiddenEleStepDef extends TestBase {
 	   act.pause(2000).perform();
 	   EApp2.ChildCoverageClick.click();
 	   EApp2.ChildrenCoverageOption5.click();
-	   act.pause(2000).perform();
+	   act.pause(4000).perform();
 	   
 	}
 

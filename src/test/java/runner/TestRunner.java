@@ -19,9 +19,9 @@ import cucumber.api.junit.Cucumber;
 				
 		features = "MyFeatures"
 		,glue = "stepdefination",
-		dryRun = true,
+		dryRun = false,
 		//tags = {"@Test05","@Test06","@Test07"}
-		tags = {"@eApp1"}
+		tags = {"@eApp4"}
 		
 		)
 
