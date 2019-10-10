@@ -16,7 +16,7 @@ public class EApp2StepDef extends TestBase {
 	@Then("Manage Case Page search to find AFBA case")
 	public void manage_Case_Page_search_to_find_AFBA_case() {
 	  EApp2.searchSpace.click();
-	  EApp2.searchSpace.sendKeys("AFBA");
+	  EApp2.searchSpace.sendKeys("IT_QA Automation Face2Face Remote");
 	}
 
 	@Then("Select AFBA case")
