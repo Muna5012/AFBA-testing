@@ -160,8 +160,8 @@ public class EApp7FedAdultStepdef extends TestBase{
 
 	@Then("Input Email Address, repeat Email address for confimation")
 	public void input_Email_Address_repeat_Email_address_for_confimation() {
-		 EApp2.EmailAddress.sendKeys("MAbabaikeli@afba.com");
-		 EApp2.ReEmailAddress.sendKeys("MAbabaikeli@afba.com");
+		 EApp2.EmailAddress.sendKeys("qapeep19@gmail.com");
+		 EApp2.ReEmailAddress.sendKeys("qapeep19@gmail.com");
 	}
 
 	@Then("Input phone numbers")
@@ -355,6 +355,8 @@ public class EApp7FedAdultStepdef extends TestBase{
 	
 	@Then("Click Signin person option")
 	public void click_Signin_person_option() {
+		EApp2.EmailSummary2.click();
+		 act.pause(3000).perform();
 		EApp2.AcknowledgeofPayment.click();
 		   EApp2.SiginingInPerson.click();
 			  act.pause(2000).perform();
@@ -407,12 +409,8 @@ public class EApp7FedAdultStepdef extends TestBase{
 	@Then("Click Sign Button for eSignature to this applications")
 	public void click_Sign_Button_for_eSignature_to_this_applications() {
 		EApp2.eSignatureBrn.click();
-		act.pause(7000).perform();
+		act.pause(5000).perform();
 	}
 
-
-	
-	
-	
 	
 }

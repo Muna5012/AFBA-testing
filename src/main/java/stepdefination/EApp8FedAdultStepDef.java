@@ -41,8 +41,8 @@ public class EApp8FedAdultStepDef extends TestBase{
 
 	@Then("click the Begin Enrollement button to create new Case")
 	public void click_the_Begin_Enrollement_button_to_create_new_Case() {
-		EApp2.BeginEnrollment.click();
-		// EApp2.ClickNewSponsor.click();
+	//	EApp2.BeginEnrollment.click();
+		 EApp2.ClickNewSponsor.click();
 	}
 
 	@Then("Input the Sponsor FirstName, LastName and DOB")
@@ -289,7 +289,7 @@ public class EApp8FedAdultStepDef extends TestBase{
 
 	@Then("Then Input Beneficiaries for First Protect Contingent Beneficiary of Raven FullName, SSN, Relationship and DOB")
 	public void then_Input_Beneficiaries_for_First_Protect_Contingent_Beneficiary_of_Raven_FullName_SSN_Relationship_and_DOB() {
-	    EApp2.FirstProtecContingentSecondKidSomeOneElse.click();
+	    EApp2.SomeOneElseForFirstProtecSecondKidContingent.click();
 	    EApp2.FirstProtectContingentSecondKidFN.sendKeys("Donatella Kerr");
 	    EApp2.FirstProtectContingentSecondKidSSN.sendKeys("545100134");
 	    EApp2.FirstProtecContingentSecondKidRelationship.click();
@@ -302,10 +302,8 @@ public class EApp8FedAdultStepDef extends TestBase{
 	
 	@Then("Click Email Summary to coverage confirmation to email address")
 	public void click_Email_Summary_to_coverage_confirmation_to_email_address() {
-		EApp2.EmailSummary.click();
+		EApp2.EmailSummary2.click();
 		 act.pause(3000).perform();
-//		EApp2.EmailSummaryConfirm1.sendKeys("qapeep19@gmail.com");
-//		EApp2.EmailSummaryConfirm2.sendKeys("qapeep19@gmail.com");
 		EApp2.AcknowledgeofPayment.click();
 		   EApp2.SiginingInPerson.click();
 			  act.pause(2000).perform();

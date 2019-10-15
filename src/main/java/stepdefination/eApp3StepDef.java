@@ -127,6 +127,12 @@ public class EApp3StepDef  extends TestBase {
 	public void selectwaive_enrollment_for_this_application() {
 	    EApp2.WaiveApplication.click();
 	    act.pause(2000).perform();
+	    EApp2.FedTerm.click();
+		EApp2.WaiveFedTerm.click();
+		act.pause(2000).perform();
+		EApp2.ClickFirstProtect.click();
+		EApp2.WaiveFirstProtect.click();
+		act.pause(2000).perform();
 	}
 
 	@Then("click Next button for answer question")

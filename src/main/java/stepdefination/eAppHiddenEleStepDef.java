@@ -17,7 +17,7 @@ public class EAppHiddenEleStepDef extends TestBase {
 	@Then("Search AFBA case Manage Cases page")
 	public void search_AFBA_case_Manage_Cases_page() {
 		 EApp2.searchSpace.click();
-		  EApp2.searchSpace.sendKeys("AFBA");
+		  EApp2.searchSpace.sendKeys("IT_QA Automation Face2Face Remote");
 	}
 
 	@Then("Click the AFBA case")
@@ -147,8 +147,8 @@ public class EAppHiddenEleStepDef extends TestBase {
 
 	      EApp2.ZipCode.click();
 	      EApp2.ZipCode.sendKeys("96799");
-	      EApp2.EmailAddress.sendKeys("MAbabaikeli@afba.com");
-		  EApp2.ReEmailAddress.sendKeys("MAbabaikeli@afba.com");
+	      EApp2.EmailAddress.sendKeys("qapeep19@gmail.com");
+		  EApp2.ReEmailAddress.sendKeys("qapeep19@gmail.com");
 		  EApp2.Phone.click();
 		  EApp2.Phone.sendKeys("7037065961");
 		  act.pause(2000).perform();
@@ -330,6 +330,8 @@ public class EAppHiddenEleStepDef extends TestBase {
 	
 	@Then("Select Location for Signing in person")
 	public void select_Location_for_Signing_in_person() {
+		EApp2.EmailSummary2.click();
+		 act.pause(3000).perform();
 		EApp2.AcknowledgeofPayment.click();
 		   EApp2.SiginingInPerson.click();
 			  act.pause(2000).perform();

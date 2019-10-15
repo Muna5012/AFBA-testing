@@ -208,7 +208,7 @@ public class EApp9SeniorStepDef extends TestBase {
 
 	@Then("Next page to Email Summary and click Sigining in person and spouse signin button")
 	public void next_page_to_Email_Summary_and_click_Sigining_in_person_and_spouse_signin_button() {
-		EApp2.EmailSummary.click();
+		EApp2.EmailSummary2.click();
 		 act.pause(3000).perform();
 		 EApp2.AcknowledgeofPayment.click();
 		 EApp2.SiginingInPerson.click();

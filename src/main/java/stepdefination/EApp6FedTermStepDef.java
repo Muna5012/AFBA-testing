@@ -111,7 +111,6 @@ public class EApp6FedTermStepDef extends TestBase{
 	@Then("Input second child First Name and Last Name and DOB")
 	public void input_second_child_First_Name_and_Last_Name_and_DOB() {
 		EApp2.ChildTwoFN.sendKeys("Cye");
-		EApp2.ChildTwoLN.sendKeys("Pop");
 		EApp2.ChildTwoDOB.click();
 		EApp2.ChildTwoDOB.sendKeys("12312011");
 	}
@@ -164,8 +163,8 @@ public class EApp6FedTermStepDef extends TestBase{
 
 	@Then("Input Email Address and repeat Email address for confimation")
 	public void input_Email_Address_and_repeat_Email_address_for_confimation() {
-		 EApp2.EmailAddress.sendKeys("MAbabaikeli@afba.com");
-		 EApp2.ReEmailAddress.sendKeys("MAbabaikeli@afba.com");
+		 EApp2.EmailAddress.sendKeys("qapeep19@gmail.com");
+		 EApp2.ReEmailAddress.sendKeys("qapeep19@gmail.com");
 	}
 
 	@Then("Input daytime phone and second phone")
@@ -307,6 +306,8 @@ public class EApp6FedTermStepDef extends TestBase{
 
 	@Then("Select Location for Signing in person option")
 	public void select_Location_for_Signing_in_person_option() {
+		EApp2.EmailSummary2.click();
+		 act.pause(3000).perform();
 		EApp2.AcknowledgeofPayment.click();
 		   EApp2.SiginingInPerson.click();
 			  act.pause(2000).perform();

@@ -51,7 +51,8 @@ public class EApp2StepDef extends TestBase {
 
 	@Then("Click Begin Enrollement Button")
 	public void click_Begin_Enrollement_Button() {
-		 EApp2.BeginEnrollment.click();
+	//	 EApp2.BeginEnrollment.click();
+		   EApp2.ClickNewSponsor.click();
 	}
 
 	@Then("Input valid Sponsor firstName, lastName, DOB")
@@ -131,6 +132,12 @@ public class EApp2StepDef extends TestBase {
 
 	@Then("click Next button")
 	public void click_Next_button() {
+		EApp2.FedTerm.click();
+		EApp2.WaiveFedTerm.click();
+		act.pause(2000).perform();
+		EApp2.ClickFirstProtect.click();
+		EApp2.WaiveFirstProtect.click();
+		act.pause(2000).perform();
 		EApp2.NextBtn1.click();
 	}
 

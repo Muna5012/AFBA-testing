@@ -34,8 +34,8 @@ public class EApp13SeniorProAdultChildFirstProStepDef extends TestBase {
 
 	@Then("click Begin Enrollement and Input Sponsor FirstName, LastName, Gender and DOB")
 	public void click_Begin_Enrollement_and_Input_Sponsor_FirstName_LastName_Gender_and_DOB() {
-		EApp2.BeginEnrollment.click();
-	//    EApp2.ClickNewSponsor.click();
+	//	EApp2.BeginEnrollment.click();
+	   EApp2.ClickNewSponsor.click();
 		 EApp2.FirstName.sendKeys("Simon");
 		    EApp2.LastName.sendKeys("LeBlanc");
 		    act.pause(1000).perform();

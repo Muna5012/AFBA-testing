@@ -38,8 +38,8 @@ public class EApp10SeniorGroupFreeStepDef extends TestBase{
 
 	@Then("click Begin Enrollement to create")
 	public void click_Begin_Enrollement_to_create() {
-		EApp2.BeginEnrollment.click();
-	//  EApp2.ClickNewSponsor.click();
+	//	EApp2.BeginEnrollment.click();
+	  EApp2.ClickNewSponsor.click();
 	}
 
 	@Then("Input the Sponsor FirstName, LastName, DOB, Gender")
