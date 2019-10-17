@@ -9,10 +9,10 @@ public class ApplicationPage {
 	public static WebElement ManageCaseBtn;
 	
 	@FindBy(xpath = "//*[@type='search']")
-	public static WebElement searchAFBA;
+	public static WebElement search;
 	
-	@FindBy(xpath = "//*[@id='cases_table']/tbody/tr[1]/td[1]")
-	public static WebElement AFBACase;
+	@FindBy(xpath = "//*[contains(text(),'IT_QA Automation Face2Face Remote')]")
+	public static WebElement SearchAFBACase;
 	
 	@FindBy(xpath = "//*[@id='add-to-census-btn']")
 	public static WebElement CreateNewEnrollement;
@@ -20,11 +20,23 @@ public class ApplicationPage {
 	@FindBy(xpath = "//input[@id='add-census-ssn-input']")
 	public static WebElement SSNnumber;
 	
+	@FindBy(xpath = "//*[@id='add-to-census-modal']/div[2]/div/div[2]/div[1]/form/div/div/div[2]/input")
+	public static WebElement EnrollmentCity;
+	
+	@FindBy(xpath = "/html/body/div[4]/div/div[2]/div/div[2]/div[1]/form/div/div/div[3]/limited-state-select/select/option[48]" )
+	public static WebElement EnrollmentState;
+	
+	@FindBy(xpath ="/html/body/div[4]/div/div[2]/div/div[2]/div[1]/form/div/div/div[3]/limited-state-select/select/option[37]")
+	public static WebElement NC;
+	
 	@FindBy(xpath = "//button[contains(text(),'Next')]")
 	public static WebElement ClickNextBtn;
 	
-	@FindBy(xpath = "//button[contains(text(),'Begin Enrollment')]")
-	public static WebElement ClickBiginEnrollement;
+	@FindBy(xpath ="//*[@id='add-to-census-modal']/div[2]/div/div[3]/div/button[3]")
+	public static WebElement BeginEnrollment;
+	
+	@FindBy(xpath = "//*[@id='add-to-census-modal']/div[2]/div/div[3]/div/button[5]")
+	public static WebElement ClickNewSponsor;
 	
 	@FindBy(xpath= "//input[@id='eeBenefitFName']")
 	public static WebElement FirstName;
@@ -61,8 +73,6 @@ public class ApplicationPage {
 	
 	@FindBy(className ="child_first")
 	public static WebElement ChildFirstNam;
-	
-	
 	
 	@FindBy(xpath= "//option[@value='Military']")
 	public static WebElement Eligibility ;
@@ -112,13 +122,11 @@ public class ApplicationPage {
 	@FindBy(xpath="//*[contains(text(),'Show Coverage Options')]")
 	public static WebElement ShowCoverageOptopnBtn;
 	
-	
 	@FindBy(xpath="//a[@class='btn btn-block btn-sm btn-danger']")
 	public static WebElement SelectOption;
 	
 	@FindBy(xpath="//*[contains(text(),'Next')]")
 	public static WebElement NextBtn;
-	
 
 	@FindBy(xpath ="//*[@id='step2']/form/div[2]/div[2]/div[2]/div[2]/div/button[2]")
 	public static WebElement LifeInsuranceOption;
@@ -126,13 +134,11 @@ public class ApplicationPage {
 	@FindBy(xpath = "//*[@id='step2']/form/div[2]/div[3]/div[2]/div[2]/div/button[2]")
 	public static WebElement ReplaceLifeInsuranceOption;
 	
-	
 	@FindBy(xpath="//*[@id='step2']/form/div[5]/div[1]/table/tbody/tr[1]/td/div[1]/div[2]/div/div/button[2]")
 	public static WebElement OptionOne;
 	
 	@FindBy(xpath="//*[@id='step2']/form/div[5]/div[1]/table/tbody/tr[2]/td/div[1]/div[2]/div/div/button[2]")
 	public static WebElement OptionTwo;
-	
 	
 	@FindBy(xpath="//*[@id='step2']/form/div[5]/div[1]/table/tbody/tr[3]/td/div[1]/div[2]/div/div/button[2]")
 	public static WebElement DrugDependencyOption;
@@ -179,7 +185,6 @@ public class ApplicationPage {
 	@FindBy(xpath ="//button[@class='btn btn-success btn-next']")
 	public static WebElement NextBtn2;
 	
-	
 	@FindBy(name ="height_feet_null")
 	public static WebElement HeightClick;
 	
@@ -192,7 +197,7 @@ public class ApplicationPage {
 	@FindBy (xpath = "//select[@name='height_inches_null']/option[12]")
 	public static WebElement HeightInchesOption;
 	
-@FindBy (xpath = "//*[@id='step3-form']/div[2]/div[7]/div/input")
+	@FindBy (xpath = "//*[@id='step3-form']/div[2]/div[7]/div/input")
 	public static WebElement Weight;
 	
 	@FindBy(xpath ="//div[@class='wizard-actions']/button[2]")
@@ -276,7 +281,6 @@ public class ApplicationPage {
 	@FindBy(xpath ="//*[@id='modal-signing-applicant-in-person']/div[2]/div/div[3]")
 	public static WebElement verifySSN;
 	
-	
 	@FindBy(xpath="//*[@id='modal-signing-applicant-in-person']/div[2]/div/div[2]")
 	public static WebElement clickModalBodyBtn;
 	
@@ -297,4 +301,6 @@ public class ApplicationPage {
 	
 	@FindBy(xpath="//*[@id='submissions']/tbody/tr[2]/td/div[2]/div/a")
 	public static WebElement DawnloadDataBtn;
+	
+	
 }

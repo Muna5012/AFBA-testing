@@ -16,7 +16,7 @@ public class EAppStepDef extends TestBase{
 	@Then("Input search to find AFBA case")
 	public void input_search_to_find_AFBA_case() {
 	   EApp1.searchSpace.click();
-	   EApp1.searchSpace.sendKeys("AFBA");
+	   EApp1.searchSpace.sendKeys("IT_QA Automation Face2Face Remote");
 	}
 
 	@Then("click AFBA case")
@@ -46,7 +46,7 @@ public class EAppStepDef extends TestBase{
 		//eApp1.EnrollementClick.click();
 		act.pause(2000).perform();
 	   EApp1.EnrollmentState.click();
-	   act.pause(1000).perform();
+	   act.pause(2000).perform();
 	   
 	}
 	
@@ -57,7 +57,7 @@ public class EAppStepDef extends TestBase{
 
 	@Then("Click Begin Enrollement button")
 	public void click_Begin_Enrollement_button() {
-	  EApp1.ClickBiginEnrollement.click();
+	  EApp1.ClickNewSponsor.click();
 	}
 
 	@Then("Input Sponsor firstName, lastName, dateOfBirth")
@@ -103,8 +103,8 @@ public class EAppStepDef extends TestBase{
       EApp1.ZipCode.click();
       EApp1.ZipCode.sendKeys("20130");
 	  
-	  EApp1.EmailAddress.sendKeys("MAbabaikeli@afba.com");
-	  EApp1.ReEmailAddress.sendKeys("MAbabaikeli@afba.com");
+	  EApp1.EmailAddress.sendKeys("qapeep19@gmail.com");
+	  EApp1.ReEmailAddress.sendKeys("qapeep19@gmail.com");
 	  EApp1.Phone.click();
 	  EApp1.Phone.sendKeys("7037065961");
 	  act.pause(2000).perform();

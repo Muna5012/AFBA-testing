@@ -216,6 +216,10 @@ public class EApp6FedTermStepDef extends TestBase{
 		EApp2.WaiveFirstProtect.click();
 		act.pause(2000).perform();
 		   EApp2.NextBtn1.click();
+		EApp2.ChildrenProtectClick.click();
+		EApp2.WaiveChildProtect.click();
+		act.pause(2000).perform();
+		   EApp2.NextBtn1.click();
 	}
 
 	@Then("Click Answer No to all Questions")

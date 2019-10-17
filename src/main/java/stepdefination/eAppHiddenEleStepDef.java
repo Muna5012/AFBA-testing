@@ -187,6 +187,15 @@ public class EAppHiddenEleStepDef extends TestBase {
 	   EApp2.spouseCoverage.click();
 	   act.pause(2000).click();
 	   EApp2.Covered.click();
+	   EApp2.FedTerm.click();
+	   EApp2.WaiveFedTerm.click();
+	   act.pause(2000).perform();
+	   EApp2.ClickFirstProtect.click();
+	   EApp2.WaiveFirstProtect.click();
+	   act.pause(2000).perform();
+	   EApp2.ChildrenProtectClick.click();
+	   EApp2.WaiveChildProtect.click();
+	   act.pause(2000).perform();
 	   EApp2.NextBtn1.click();
 	}
 

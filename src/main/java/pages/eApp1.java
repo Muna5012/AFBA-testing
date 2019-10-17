@@ -32,6 +32,9 @@ public class EApp1 {
 	@FindBy(xpath = "//*[@id='add-to-census-modal']/div[2]/div/div[3]/div/button[5]")
 	public static WebElement ClickBiginEnrollement;
 	
+	@FindBy(xpath = "//*[@id='add-to-census-modal']/div[2]/div/div[3]/div/button[5]")
+	public static WebElement ClickNewSponsor;
+	
 	@FindBy(xpath= "//input[@id='eeBenefitFName']")
 	public static WebElement FirstName;
 	

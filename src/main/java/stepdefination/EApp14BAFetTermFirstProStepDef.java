@@ -21,8 +21,9 @@ public class EApp14BAFetTermFirstProStepDef extends TestBase {
 	@Then("Click New Enrollement button and Input Sponsor SSN, Enrollment City Pago Pago, Enrollment State AS")
 	public void click_New_Enrollement_button_and_Input_Sponsor_SSN_Enrollment_City_Pago_Pago_Enrollment_State_AS() {
 		EApp2.NewEnrollement.click();
-		act.pause(1000).perform();
+		act.pause(2000).perform();
 		EApp2.SSN.click();
+		act.pause(1000).perform();
 		 EApp2.SSN.sendKeys("545100158");
 		 EApp2.EnrollmentCity.clear();
 		  EApp2.EnrollmentCity.sendKeys("Pago Pago");

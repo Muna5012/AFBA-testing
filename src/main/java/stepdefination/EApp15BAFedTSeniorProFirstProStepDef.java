@@ -123,175 +123,201 @@ public class EApp15BAFedTSeniorProFirstProStepDef extends TestBase{
 		 act.pause(1000).perform();
 	}
 	
-@Then("Select Better Alternative Tobacco to Sponsor and Customize fifty thousand K for sponsor")
-public void select_Better_Alternative_Tobacco_to_Sponsor_and_Customize_fifty_thousand_K_for_sponsor() {
-   EApp2.TobaccoForSponsorBA.click();
-   act.pause(2000).perform();
-   EApp2.CustomizeOption3.click();
-   act.pause(2000).perform();
-   
-}
-
-@Then("Click Fed Term Customize One houndred thousand K for Sponsor")
-public void click_Fed_Term_Customize_One_houndred_thousand_K_for_Sponsor() {
-   EApp2.FedTerm.click();
-   EApp2.CustomizeOptionSe10.click();
-   act.pause(2000).perform();
-   
-}
-
-@Then("Select First Protect Tobacco for kid and Customize fifty thousand K for AC")
-public void select_First_Protect_Tobacco_for_kid_and_Customize_fifty_thousand_K_for_AC() {
-    EApp2.ClickFirstProtect.click();
-    act.pause(2000).perform();
-    EApp2.ClickFirstProtectKidCustomize.click();
-    act.pause(2000).perform();
-}
-
-@Then("Waived Application Member Benefict")
-public void waived_Application_Member_Benefict() {
-	  EApp2.spouseCoverage.click();
-      EApp2.WaiveApplication.click();
-      act.pause(2000).perform();
-}
-
-@Then("Click Covered for Child Protect Product")
-public void click_Covered_for_Child_Protect_Product() {
-	 EApp2.ChildrenProtectClick.click();
-	   act.pause(2000).perform();
-	   EApp2.CoveredForFirstKid.click();
-}
-
-@Then("Next page Answer All Qustions")
-public void next_page_Answer_All_Qustions() {
-	  EApp2.Next.click();
-	  EApp2.AnswerNOAll.click();
-	    act.pause(2000).perform(); 
-	    EApp2.NextBtn2.click();
-}
-
-@Then("Input Sponsor Information height and weight")
-public void input_Sponsor_Information_height_and_weight() {
-	EApp2.HeightOption6.click();
-    EApp2.HeightInchesOption5.click();
-    act.pause(2000).perform();
-    EApp2.Weight.click();
-    EApp2.Weight.sendKeys("217"); 
-    EApp2.NextBtn3.click();
-}
-
-@Then("Next page input Children Information include Gender, Height, Weight and Relationship options")
-public void next_page_input_Children_Information_include_Gender_Height_Weight_and_Relationship_options() {
-	EApp2.ChildOneSSN.click();
-	EApp2.ChildOneSSN.sendKeys("545100164");
-	EApp2.ChildOneGenderFamale.click();
-	EApp2.ChildOneHeight5Feet.click();
-	EApp2.ChildOneHeight10Inches.click();
-	EApp2.ChildOneWeight.sendKeys("143");
-	EApp2.ChildUSCitizen.click();
-	EApp2.ChildOneRelationshipParent.click();
-	act.pause(2000).perform();
-	EApp2.ChildTwoSSN.sendKeys("545100165");
-	EApp2.ChildTwoGenderMale.click();
-	EApp2.ChildTwoHeight5Feet.click();
-	EApp2.ChildTwoInches6.click();
-	EApp2.ChildTwoWeight.sendKeys("103");
-	EApp2.ChildUSCitizenm2.click();
-	EApp2.ChildTwoRelationship.click();
-	 act.pause(2000).perform();
-	   EApp2.Next.click();
-}
-
-@Then("Next Page for Beneficiaries for BA Sponsor primary Benficiary Full Name and Relationship")
-public void next_Page_for_Beneficiaries_for_BA_Sponsor_primary_Benficiary_Full_Name_and_Relationship() {
-	act.pause(1000).perform();
-	EApp2.SomeoneElseForSponsorPrimary.click();
-	EApp2.PrimaryBenficiaryFullName.sendKeys("Maldo Lanski");
-    EApp2.PrimaryRelationshipForOther.click();
-   
-}
-
-@Then("Input Beneficiaries for BA Sponsor Contingent Beneficiary Full Name and Relationship")
-public void input_Beneficiaries_for_BA_Sponsor_Contingent_Beneficiary_Full_Name_and_Relationship() {
-	EApp2.SomeoneElsee.click();
-    act.pause(1000).perform();
-    EApp2.ContingentBeneficiaryFullName.sendKeys("Grover Washington");
-    EApp2.ContingentBeneficiaryRelationship.click();
-	act.pause(2000).perform();
-}
-
-@Then("Input Beneficiaries for Fed Term Sponsor Primary Beneficiary Full Name, SSN, Relationship and DOB")
-public void input_Beneficiaries_for_Fed_Term_Sponsor_Primary_Beneficiary_Full_Name_SSN_Relationship_and_DOB() {
-	EApp2.SecondPrmaryBenSOmeOneElse.click();
-	EApp2.SecondPrmaryBenFullName.sendKeys("Qui Qui Lanski");
-	EApp2.SecondPrimaryBenfSSN.click();
-	EApp2.SecondPrimaryBenfSSN.sendKeys("545100164");
-	EApp2.SecondPrimaryBenRelationshipforChild.click();
-	EApp2.SecondPrimaryBenfDOB.click();
-	EApp2.SecondPrimaryBenfDOB.sendKeys("10141993");
-	act.pause(2000).perform();
-}
-
-@Then("Input Beneficiary for First Protect Adult Child Primary Beneficiary Full Name, SSN, Relationship and DOB")
-public void input_Beneficiary_for_First_Protect_Adult_Child_Primary_Beneficiary_Full_Name_SSN_Relationship_and_DOB() {
-	EApp2.FirstProtectPrimarySomeOneElse.click();
-	EApp2.FirstProtectPrimaryFN.sendKeys("Qui Qui Lanski");
-	EApp2.FirstProtectPrimarySSN.click();
-	EApp2.FirstProtectPrimarySSN.sendKeys("545100164");
-	EApp2.FirstProtectPrimaryRelationshipBF.click();
-	EApp2.FirstProtectPrimaryDOB.click();
-	EApp2.FirstProtectPrimaryDOB.sendKeys("10141993");
-	act.pause(2000).perform();
-}
-
-@Then("Input Beneficiary for Children Protect for Minor Child Contingent Beneficiary Full Name, SSN, Relationship and DOB")
-public void input_Beneficiary_for_Children_Protect_for_Minor_Child_Contingent_Beneficiary_Full_Name_SSN_Relationship_and_DOB() {
-    EApp2.ChildProtectContingentSomeOneElse.click();
-    EApp2.ChildProtectContingentFullName.sendKeys("Maldo Lanski");
-    EApp2.ChildProtectContingentSSN.click();
-    EApp2.ChildProtectContingentSSN.sendKeys("545100163");
-    act.pause(2000).perform();
-    EApp2.ChildProtectContingentRelationshipFather.click();
-    EApp2.ChildProtectContingentDOB.click();
-    EApp2.ChildProtectContingentDOB.sendKeys("01301969");
-    act.pause(2000).perform();
-}
-
-@Then("Nexc page select Email Summary and select Acknowledgement Military Payment radio button")
-public void nexc_page_select_Email_Summary_and_select_Acknowledgement_Military_Payment_radio_button() {
-	EApp2.NextBtn6.click();
-	EApp2.EmailSummary2.click();
-	 act.pause(3000).perform();
-	 EApp2.AcknowledgeofPayment.click();
-}
-
-@Then("Click I Sgree to This Coverage and am ready to signin button")
-public void click_I_Sgree_to_This_Coverage_and_am_ready_to_signin_button() {
-	EApp2.AgreeToSignInBtn.click();
-	 act.pause(3000).perform();
-}
-
-@Then("Select Applicant eSignature three options Button")
-public void select_Applicant_eSignature_three_options_Button() {
-	 EApp2.ClickQuestion1.click();
-	   EApp2.ClickQuestion2.click();
-	   EApp2.ClickQuestion3.click();
+	@Then("Select Better Alternative Tobacco to Sponsor and Customize fifty thousand K for sponsor")
+	public void select_Better_Alternative_Tobacco_to_Sponsor_and_Customize_fifty_thousand_K_for_sponsor() {
+		EApp2.TobaccoForSponsorBA.click();
 		act.pause(2000).perform();
-}
+		EApp2.CustomizeOption3.click();
+		act.pause(2000).perform();
+   
+	}
 
-@Then("Select recieve Documents Option for Paper and click Sign button")
-public void select_recieve_Documents_Option_for_Paper_and_click_Sign_button() {
-	EApp2.PaperBtn2.click();
-	 act.pause(2000).perform();
-}
+	@Then("Click Fed Term Customize One houndred thousand K for Sponsor")
+	public void click_Fed_Term_Customize_One_houndred_thousand_K_for_Sponsor() {
+		EApp2.FedTerm.click();
+		EApp2.CustomizeOptionSe10.click();
+		act.pause(2000).perform();
+   
+	}
 
-@Then("Select Sign button on Agent Enroller eSignature")
-public void select_Sign_button_on_Agent_Enroller_eSignature() {
-	EApp2.SignBtn2.click();
-	act.pause(3000).perform();
-	EApp2.eSignatureBrn2.click();
-	act.pause(7000).perform();
-}
+	@Then("Select First Protect Tobacco for kid and Customize fifty thousand K for AC")
+	public void select_First_Protect_Tobacco_for_kid_and_Customize_fifty_thousand_K_for_AC() {
+		EApp2.ClickFirstProtect.click();
+		act.pause(2000).perform();
+		EApp2.ClickFirstProtectKidCustomize.click();
+		act.pause(2000).perform();
+		EApp2.SeniorProtect.click();
+		EApp2.SeniorProtectCustomize20.click();
+		act.pause(2000).perform();
+
+	}
+
+	@Then("Waived Application Member Benefict")
+	public void waived_Application_Member_Benefict() {
+		EApp2.spouseCoverage.click();
+		EApp2.WaiveApplication.click();
+		act.pause(2000).perform();
+	}
+
+	@Then("Click Covered for Child Protect Product")
+	public void click_Covered_for_Child_Protect_Product() {
+		EApp2.ChildrenProtectClick.click();
+		act.pause(2000).perform();
+		EApp2.CoveredForFirstKid.click();
+	}
+
+	@Then("Next page Answer All Qustions")
+	public void next_page_Answer_All_Qustions() {
+		EApp2.Next.click();
+		EApp2.AnswerNOAll.click();
+	    act.pause(2000).perform(); 
+	    EApp2.AnsweYesFirstQuestion.click();
+	    EApp2.AnsweYesFirstQuestionforSpouse.click();
+	    EApp2.AnsweYes10yearsQuestion.click();
+	    EApp2.AnsweYes10yearsQuestionAnswer.sendKeys("Reason One.....");
+	    act.pause(2000).perform();
+	    EApp2.AnsweYes10yearsQuestiontwo.click();
+	    EApp2.AnsweYes10yearsQuestiontwoRadioBtn.click();
+	    EApp2.AnsweYes10yearsQuestiontwoRadioBtnAnswer.sendKeys("Reason Two.....");
+	    act.pause(2000).perform();
+	    EApp2.NextBtn2.click();
+	}
+
+	@Then("Input Sponsor Information height and weight")
+	public void input_Sponsor_Information_height_and_weight() {
+		EApp2.HeightOption6.click();
+		EApp2.HeightInchesOption5.click();
+		act.pause(2000).perform();
+		EApp2.Weight.click();
+		EApp2.Weight.sendKeys("217"); 
+		EApp2.NextBtn3.click();
+	}
+
+	@Then("Next page input Children Information include Gender, Height, Weight and Relationship options")
+	public void next_page_input_Children_Information_include_Gender_Height_Weight_and_Relationship_options() {
+		EApp2.SpouseSSN.click();
+		 EApp2.SpouseSSN.sendKeys("545100163");
+		 EApp2.SpouseGenderMale.click();
+		 act.pause(1000).perform();
+		 EApp2.SpouseHeigthFeet.click();
+		 EApp2.SpouseHeightInches.click();
+		  act.pause(2000).perform();
+		  EApp2.SpouseWeight.click();
+		  EApp2.SpouseWeight.sendKeys("143");
+		  act.pause(2000).perform();
+		EApp2.ChildOneSSN.click();
+		EApp2.ChildOneSSN.sendKeys("545100164");
+		EApp2.ChildOneGenderFamale.click();
+		EApp2.ChildOneHeight5Feet.click();
+		EApp2.ChildOneHeight10Inches.click();
+		EApp2.ChildOneWeight.sendKeys("143");
+		EApp2.ChildUSCitizen.click();
+		EApp2.ChildOneRelationshipParent.click();
+		act.pause(2000).perform();
+		EApp2.ChildTwoSSN.sendKeys("545100165");
+		EApp2.ChildTwoGenderMale.click();
+		EApp2.ChildTwoHeight5Feet.click();
+		EApp2.ChildTwoInches6.click();
+		EApp2.ChildTwoWeight.sendKeys("103");
+		EApp2.ChildUSCitizenm2.click();
+		EApp2.ChildTwoRelationshipParent.click();
+		act.pause(2000).perform();
+		EApp2.Next.click();
+	}
+
+	@Then("Next Page for Beneficiaries for BA Sponsor primary Benficiary Full Name and Relationship")
+	public void next_Page_for_Beneficiaries_for_BA_Sponsor_primary_Benficiary_Full_Name_and_Relationship() {
+		act.pause(1000).perform();
+		EApp2.SomeoneElseForSponsorPrimary.click();
+		EApp2.PrimaryBenficiaryFullName.sendKeys("Maldo Lanski");
+		EApp2.PrimaryRelationshipForOther.click();
+   
+	}
+
+	@Then("Input Beneficiaries for BA Sponsor Contingent Beneficiary Full Name and Relationship")
+	public void input_Beneficiaries_for_BA_Sponsor_Contingent_Beneficiary_Full_Name_and_Relationship() {
+		EApp2.SomeoneElsee.click();
+		act.pause(1000).perform();
+		EApp2.ContingentBeneficiaryFullName.sendKeys("Grover Washington");
+		EApp2.ContingentBeneficiaryRelationship.click();
+		act.pause(2000).perform();
+	}	
+
+	@Then("Input Beneficiaries for Fed Term Sponsor Primary Beneficiary Full Name, SSN, Relationship and DOB")
+	public void input_Beneficiaries_for_Fed_Term_Sponsor_Primary_Beneficiary_Full_Name_SSN_Relationship_and_DOB() {
+		EApp2.SecondPrmaryBenSOmeOneElse.click();
+		EApp2.SecondPrmaryBenFullName.sendKeys("Qui Qui Lanski");
+		EApp2.SecondPrimaryBenfSSN.click();
+		EApp2.SecondPrimaryBenfSSN.sendKeys("545100164");
+		EApp2.SecondPrimaryBenRelationshipforChild.click();
+		EApp2.SecondPrimaryBenfDOB.click();
+		EApp2.SecondPrimaryBenfDOB.sendKeys("10141993");
+		act.pause(2000).perform();
+	}
+
+	@Then("Input Beneficiary for First Protect Adult Child Primary Beneficiary Full Name, SSN, Relationship and DOB")
+	public void input_Beneficiary_for_First_Protect_Adult_Child_Primary_Beneficiary_Full_Name_SSN_Relationship_and_DOB() {
+		EApp2.SeniorProtectPrimarySomeOneElse.click();
+		EApp2.SeniorProtectPrimaryFN.sendKeys("Qui Qui Lanski");
+		EApp2.SeniorProtectPrimarySSN.click();
+		EApp2.SeniorProtectPrimarySSN.sendKeys("545100164");
+		EApp2.SeniorProtectPrimaryRelationshipChild.click();
+		EApp2.SeniorProtectPrimaryDOB.click();
+		EApp2.SeniorProtectPrimaryDOB.sendKeys("10141993");
+		act.pause(2000).perform();
+	}
+
+	@Then("Input Beneficiary for Children Protect for Minor Child Contingent Beneficiary Full Name, SSN, Relationship and DOB")
+	public void input_Beneficiary_for_Children_Protect_for_Minor_Child_Contingent_Beneficiary_Full_Name_SSN_Relationship_and_DOB() {
+		EApp2.ChildProtectContingentSomeOneElse.click();
+		EApp2.ChildProtectContingentFullName.sendKeys("Maldo Lanski");
+		EApp2.ChildProtectContingentSSN.click();
+		EApp2.ChildProtectContingentSSN.sendKeys("545100163");
+		act.pause(2000).perform();
+		EApp2.ChildProtectContingentRelationshipFather.click();
+		EApp2.ChildProtectContingentDOB.click();
+		EApp2.ChildProtectContingentDOB.sendKeys("01301969");
+		act.pause(2000).perform();
+	}
+
+	@Then("Nexc page select Email Summary and select Acknowledgement Military Payment radio button")
+	public void nexc_page_select_Email_Summary_and_select_Acknowledgement_Military_Payment_radio_button() {
+		EApp2.NextBtn6.click();
+		EApp2.EmailSummary2.click();
+		act.pause(3000).perform();
+		EApp2.AcknowledgeofPayment.click();
+		  EApp2.SpouseSigninYesforCallCenter.click();
+		  act.pause(2000).perform();
+	}
+
+	@Then("Click I Sgree to This Coverage and am ready to signin button")
+	public void click_I_Sgree_to_This_Coverage_and_am_ready_to_signin_button() {
+		EApp2.AgreeToSignInBtn.click();
+		act.pause(3000).perform();
+		
+	}
+
+	@Then("Select Applicant eSignature three options Button")
+	public void select_Applicant_eSignature_three_options_Button() {
+		EApp2.ClickQuestion1.click();
+		EApp2.ClickQuestion2.click();
+		EApp2.ClickQuestion3.click();
+		act.pause(2000).perform();
+	}
+
+	@Then("Select recieve Documents Option for Paper and click Sign button")
+	public void select_recieve_Documents_Option_for_Paper_and_click_Sign_button() {
+		EApp2.PaperBtn2.click();
+		act.pause(2000).perform();
+	}
+
+	@Then("Select Sign button on Agent Enroller eSignature")
+	public void select_Sign_button_on_Agent_Enroller_eSignature() {
+		EApp2.SignBtn2.click();
+		act.pause(3000).perform();
+		EApp2.eSignatureBrn2.click();
+		act.pause(7000).perform();
+	}
 
 
 

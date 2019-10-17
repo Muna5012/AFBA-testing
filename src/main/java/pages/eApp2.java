@@ -230,6 +230,9 @@ public class EApp2 {
 	@FindBy(xpath="//*[@id='step1-form']/div[4]/div[2]/div[2]/div[3]/div/div/label/input")
 	public static WebElement WaiveFedTerm;
 	
+	@FindBy(xpath="//*[@id='step1-form']/div[4]/div[2]/div[2]/div[3]/div/div/label/input")
+	public static WebElement WaiveChildProtect;
+	
 	@FindBy(xpath="//*[contains(text(),'Show Coverage Options')]")
 	public static WebElement ShowCoverageOptions;
 	
@@ -366,6 +369,9 @@ public class EApp2 {
 	@FindBy(xpath ="//select[@class='emp-coverage']/option[4]")
 	public static WebElement SeniorProtectCustomize15;
 	
+	@FindBy(xpath ="//select[@class='emp-coverage']/option[5]")
+	public static WebElement SeniorProtectCustomize20;
+	
 	@FindBy(xpath ="//select[@class='emp-coverage']/option[6]")
 	public static WebElement SeniorProtectCustomize25;
 	
@@ -411,6 +417,28 @@ public class EApp2 {
 	
 	@FindBy (xpath = "//*[@class='btn btn-success btn-next']")
 	public static WebElement NextBtn2;
+	
+	
+	@FindBy (xpath = "//*[@id='step2']/form/div[2]/div[2]/div[2]/div[2]/div[1]/button[1]")
+	public static WebElement AnsweYesFirstQuestion;
+	
+	@FindBy (xpath = "//*[@id='step2']/form/div[2]/div[2]/div[2]/div[2]/div[2]/button[1]")
+	public static WebElement AnsweYesFirstQuestionforSpouse;
+	
+	@FindBy (xpath = "//*[@id='step2']/form/div[5]/div[1]/table/tbody/tr[1]/td/div[1]/div[2]/div/div/button[1]")
+	public static WebElement AnsweYes10yearsQuestion;
+	
+	@FindBy (xpath = "//*[@id='step2']/form/div[5]/div[1]/table/tbody/tr[1]/td/div[2]/div/div/textarea")
+	public static WebElement AnsweYes10yearsQuestionAnswer;
+	
+	@FindBy (xpath = "//*[@id='step2']/form/div[5]/div[1]/table/tbody/tr[2]/td/div[1]/div[2]/div/div/button[1]")
+	public static WebElement AnsweYes10yearsQuestiontwo;
+	
+	@FindBy (xpath = "//*[@id='step2']/form/div[5]/div[1]/table/tbody/tr[2]/td/div[2]/div/div[2]/label/input")
+	public static WebElement AnsweYes10yearsQuestiontwoRadioBtn;
+	
+	@FindBy (xpath = "//*[@id='step2']/form/div[5]/div[1]/table/tbody/tr[2]/td/div[2]/div/div[3]/textarea")
+	public static WebElement AnsweYes10yearsQuestiontwoRadioBtnAnswer;
 	
 	@FindBy(name ="height_feet_null")
 	public static WebElement HeightClick;
@@ -676,7 +704,7 @@ public class EApp2 {
 	@FindBy(xpath ="//*[@name='eeBeneOtherRelation1']/option[28]")
 	public static WebElement SecondPrimaryBenRelationshiTrust;
 	
-	@FindBy(xpath ="//*[@name='eeBeneOtherRelation1']/option[28]")
+	@FindBy(xpath ="//*[@name='eeBeneOtherRelation1']/option[5]")
 	public static WebElement SecondPrimaryBenRelationshipforChild;
 	
 	@FindBy(xpath = "//*[@name='eeBeneOtherDOB1']")
@@ -943,20 +971,35 @@ public class EApp2 {
 	public static WebElement SecondChildProtectContingentDOB;
 	
 	
-	@FindBy(xpath="/html/body/div[2]/div[1]/div[2]/div/div/div[1]/div/div/div[2]/div/div[1]/div/div[5]/form/div[4]/div[6]/div[3]/div[1]/div/label[3]/span")
+	@FindBy(xpath="/html/body/div[2]/div[1]/div[2]/div/div/div[1]/div/div/div[2]/div/div[1]/div/div[5]/form/div[5]/div[6]/div[3]/div[1]/div/label[3]/span")
 	public static WebElement ChildProtectContingentSomeOneElse;
 	
-	@FindBy(xpath="//*[@name='chContBeneOtherName3_0']")
+	@FindBy(xpath="//*[@name='chContBeneOtherName4_0']")
 	public static WebElement ChildProtectContingentFullName;
 	
-	@FindBy(xpath="//*[@name='chContBeneOtherSSN3_0']")
+	@FindBy(xpath="//*[@name='chContBeneOtherSSN4_0']")
 	public static WebElement ChildProtectContingentSSN;
 	
-	@FindBy(xpath="//*[@name='chContBeneOtherRelation3_0']/option[10]")
+	@FindBy(xpath="//*[@name='chContBeneOtherRelation4_0']/option[10]")
 	public static WebElement ChildProtectContingentRelationshipFather;
 	
-	@FindBy(xpath="//*[@name='chContBeneOtherDOB3_0']")
+	@FindBy(xpath="//*[@name='chContBeneOtherDOB4_0']")
 	public static WebElement ChildProtectContingentDOB;
+	
+	@FindBy(xpath="/html/body/div[2]/div[1]/div[2]/div/div/div[1]/div/div/div[2]/div/div[1]/div/div[5]/form/div[4]/div[3]/div[1]/div/label[2]/span")
+	public static WebElement SeniorProtectPrimarySomeOneElse;
+	
+	@FindBy(xpath="//*[@name='spBeneOtherName3']")
+	public static WebElement SeniorProtectPrimaryFN;
+	
+	@FindBy(xpath="//*[@name='spBeneOtherSSN3']")
+	public static WebElement SeniorProtectPrimarySSN;
+	
+	@FindBy(xpath="//*[@name='spBeneOtherRelation3']/option[5]")
+	public static WebElement SeniorProtectPrimaryRelationshipChild;
+	
+	@FindBy(xpath="//*[@name='spBeneOtherDOB3']")
+	public static WebElement SeniorProtectPrimaryDOB;
 	
 	@FindBy (css=".btn.btn-success.btn-next")
 	public static WebElement NextBtn6;
@@ -981,6 +1024,9 @@ public class EApp2 {
 	
 	@FindBy(xpath ="//*[@id='step6-form']/div[5]/div/label[1]/span")
 	public static WebElement SpouseSigninYes;
+	
+	@FindBy(xpath ="//*[@id='step6-form']/div[3]/div/label[1]/span")
+	public static WebElement SpouseSigninYesforCallCenter;
 	
 	@FindBy(xpath ="//*[contains(text(),'I agree to this coverage and am ready to sign')]")
 	public static WebElement AgreeToSignInBtn;

@@ -341,8 +341,4 @@ public class EApp13SeniorProAdultChildFirstProStepDef extends TestBase {
 		EApp2.eSignatureBrn2.click();
 		act.pause(7000).perform();
 	}
-
-
-
-
 }

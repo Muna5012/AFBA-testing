@@ -4,6 +4,7 @@ import org.openqa.selenium.*;
 
 import cucumber.api.java.en.*;
 import pages.ApplicationPage;
+import pages.EApp2;
 import utilities.*;
 
 public class ApplicationPageStepDef extends TestBase {
@@ -15,12 +16,12 @@ public class ApplicationPageStepDef extends TestBase {
 
     @Then("User input search to find AFBA case")
     public void user_input_search_to_find_AFBA_case() {
-    	ApplicationPage.searchAFBA.sendKeys("AFBA" + Keys.ENTER);
+    	ApplicationPage.search.sendKeys("IT_QA Automation Face2Face Remote" + Keys.ENTER);
     }
 
     @Then("click the AFBA case")
     public void click_the_AFBA_case() {
-    	ApplicationPage.AFBACase.click();
+    	ApplicationPage.SearchAFBACase.click();
     }
 
     @Then("create New Enrollment")
@@ -34,8 +35,14 @@ public class ApplicationPageStepDef extends TestBase {
     	ApplicationPage.SSNnumber.click();
     	ApplicationPage.SSNnumber.sendKeys("111118834");
     	act.pause(1000).perform();
+    	 EApp2.EnrollmentCity.clear();
+		  EApp2.EnrollmentCity.sendKeys("Bath");
+			act.pause(2000).perform();
     	ApplicationPage.ClickNextBtn.click();
-    	ApplicationPage.ClickBiginEnrollement.click();
+    	  EApp2.NC.click();
+		   act.pause(1000).perform();
+		   EApp2.NextBtn.click();
+    	ApplicationPage.ClickNewSponsor.click();
     }
     
     @Then("User input Sponsor firstName, lastName, dateOfBirth")

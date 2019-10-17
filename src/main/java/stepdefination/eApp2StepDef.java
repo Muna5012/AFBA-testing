@@ -98,8 +98,8 @@ public class EApp2StepDef extends TestBase {
 	      EApp2.ZipCode.click();
 	      EApp2.ZipCode.sendKeys("20130");
 		  
-		  EApp2.EmailAddress.sendKeys("MAbabaikeli@afba.com");
-		  EApp2.ReEmailAddress.sendKeys("MAbabaikeli@afba.com");
+		  EApp2.EmailAddress.sendKeys("qapeep19@gmail.com");
+		  EApp2.ReEmailAddress.sendKeys("qapeep19@gmail.com");
 		  EApp2.Phone.click();
 		  EApp2.Phone.sendKeys("7037065961");
 		  act.pause(2000).perform();
