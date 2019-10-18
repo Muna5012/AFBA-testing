@@ -29,7 +29,7 @@ public class EApp1 {
 	@FindBy(xpath = "//*[@id='add-to-census-modal']/div[2]/div/div[3]/div/button[2]")
 	public static WebElement NextBtn;
 	
-	@FindBy(xpath = "//*[@id='add-to-census-modal']/div[2]/div/div[3]/div/button[5]")
+	@FindBy(xpath = "//*[@id='add-to-census-modal']/div[2]/div/div[3]/div/button[3]")
 	public static WebElement ClickBiginEnrollement;
 	
 	@FindBy(xpath = "//*[@id='add-to-census-modal']/div[2]/div/div[3]/div/button[5]")

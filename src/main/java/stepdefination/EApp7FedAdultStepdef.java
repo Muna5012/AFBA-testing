@@ -35,7 +35,7 @@ public class EApp7FedAdultStepdef extends TestBase{
 	public void input_Sponsor_valid_SSN() {
 		act.pause(1000).perform();
 		EApp2.SSN.click();
-		EApp2.SSN.sendKeys("545100123");
+		EApp2.SSN.sendKeys("545100216");
 	}
 
 	@Then("Input Sponsor Enrollment city")
@@ -248,7 +248,7 @@ public class EApp7FedAdultStepdef extends TestBase{
 
 	@Then("Select Spouse information, Gender, Height and Weight")
 	public void select_Spouse_information_Gender_Height_and_Weight() {
-		 EApp2.SpouseSSN.sendKeys("545100124");
+		 EApp2.SpouseSSN.sendKeys("545100217");
 		 EApp2.SpouseGenderMale.click();
 		 act.pause(1000).perform();
 		 EApp2.SpouseHeigthFeet.click();
@@ -261,14 +261,17 @@ public class EApp7FedAdultStepdef extends TestBase{
 
 	@Then("Select Children information, Gender, Height, Weight and Relationship")
 	public void select_Children_information_Gender_Height_Weight_and_Relationship() {
-		EApp2.ChildOneSSN.sendKeys("545100125");
+		EApp2.ChildOneSSN.click();
+		EApp2.ChildOneSSN.sendKeys("545100218");
 		EApp2.ChildOneGenderFamale.click();
 		EApp2.ChildOneHeight5Feet.click();
 		EApp2.ChildOneHeight10Inches.click();
 		EApp2.ChildOneWeight.sendKeys("169");
 		EApp2.ChildOneRelationship.click();
 		act.pause(2000).perform();
-		EApp2.ChildTwoSSN.sendKeys("545100126");
+		
+		EApp2.ChildTwoSSN.click();
+		EApp2.ChildTwoSSN.sendKeys("545100219");
 		EApp2.ChildTwoGenderMale.click();
 		EApp2.ChildTwoHeight5Feet.click();
 		EApp2.ChildTwoInches11.click();
@@ -284,7 +287,8 @@ public class EApp7FedAdultStepdef extends TestBase{
 		EApp2.SomeoneElseForSponsorPrimary.click();
 		 act.pause(1000).perform();
 		    EApp2.PrimaryBenficiaryFullName.sendKeys("Isabella Macron");
-		    EApp2.PrimaryBeneficiarySSN.sendKeys("545100127");
+		    EApp2.PrimaryBeneficiarySSN.click();
+		    EApp2.PrimaryBeneficiarySSN.sendKeys("545100220");
 		    EApp2.PrimaryRelationshipBF.click();
 		    EApp2.PrimaryBeneficiaryDOB.click();
 		    EApp2.PrimaryBeneficiaryDOB.sendKeys("09241978");
@@ -297,7 +301,7 @@ public class EApp7FedAdultStepdef extends TestBase{
 	   EApp2.SomeoneElseForSponsorContingent.click();
 	   EApp2.ContingentBeneficiaryFullName.sendKeys("Aldo Marteen");
 	   EApp2.ContingentBeneficiarySSNnumber.click();
-		EApp2.ContingentBeneficiarySSNnumber.sendKeys("545100129");
+		EApp2.ContingentBeneficiarySSNnumber.sendKeys("545100221");
 		EApp2.ContingentRelationUncle.click();
 		EApp2.ContingentBeneficiaryDOB.click();
 		EApp2.ContingentBeneficiaryDOB.sendKeys("08081964");
@@ -309,7 +313,8 @@ public class EApp7FedAdultStepdef extends TestBase{
 		EApp2.SomeoneElseForSpousePrimary.click();
 		 act.pause(1000).perform();
 	    EApp2.SpousePrimarytFN.sendKeys("Qui LeGard");
-	    EApp2.SpousePrimarytSSN.sendKeys("545100128");
+	    EApp2.SpousePrimarytSSN.click();
+	    EApp2.SpousePrimarytSSN.sendKeys("545100222");
 	    EApp2.SpousePrimaryRelationship.click();
 	    EApp2.SpousePrimaryDOB.click();
 	    EApp2.SpousePrimaryDOB.sendKeys("11041978");
@@ -321,7 +326,8 @@ public class EApp7FedAdultStepdef extends TestBase{
 	    EApp2.SomeOneElseForSpouseContingent.click();
 	    act.pause(1000).perform();
 	    EApp2.SpouseContingentFN.sendKeys("Pilo Tobar");
-	    EApp2.SpouseContingentSSN.sendKeys("545100130");
+	    EApp2.SpouseContingentSSN.click();
+	    EApp2.SpouseContingentSSN.sendKeys("545100223");
 		   act.pause(2000).perform();
 		   EApp2.SpouseContingentRelationship.click();
 		   EApp2.spouseContingentDOB.click();
@@ -333,7 +339,8 @@ public class EApp7FedAdultStepdef extends TestBase{
 	  EApp2.SomeOneElseForFirstProtect.click();
 	    act.pause(2000).perform();
 	  EApp2.FirstProtectPrimaryFirstKidFN.sendKeys("Kane Boyd");
-	  EApp2.FirstProtectPrimaryFirstKidSSN.sendKeys("545100131");
+	  EApp2.FirstProtectPrimaryFirstKidSSN.click();
+	  EApp2.FirstProtectPrimaryFirstKidSSN.sendKeys("545100224");
 	  EApp2.FirstProtecPrimaryFirstKidRelationship.click();
 	  EApp2.FirstProtecPrimaryFirstKidDOB.click();
 	  EApp2.FirstProtecPrimaryFirstKidDOB.sendKeys("07151982");
@@ -345,7 +352,8 @@ public class EApp7FedAdultStepdef extends TestBase{
 	    EApp2.FirstProtecPrimarySecondKidSomeOneElse.click();
 	    act.pause(2000).perform();
 	    EApp2.FirstProtectPrimarySecondKidFN.sendKeys("Miles Yo");
-	    EApp2.FirstProtectPrimarSecondKidSSN.sendKeys("545100132");
+	    EApp2.FirstProtectPrimarSecondKidSSN.click();
+	    EApp2.FirstProtectPrimarSecondKidSSN.sendKeys("545100225");
 	    EApp2.FirstProtecPrimarySecondKidRelationship.click();
 	    EApp2.FirstProtecPrimarySecondKidDOB.click();
 	    EApp2.FirstProtecPrimarySecondKidDOB.sendKeys("12061982");
@@ -393,7 +401,7 @@ public class EApp7FedAdultStepdef extends TestBase{
 		act.pause(2000).perform();
 		EApp2.SponsorLastSSN.clear();
 	   EApp2.SponsorLastSSN.click();
-	   EApp2.SponsorLastSSN.sendKeys("0123");
+	   EApp2.SponsorLastSSN.sendKeys("0216");
 	}
 
 	@Then("Select Paper Option for receive the document")

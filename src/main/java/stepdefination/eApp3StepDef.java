@@ -29,7 +29,7 @@ public class EApp3StepDef  extends TestBase {
 	@Then("Input valid Sponsor SSN number")
 	public void input_valid_Sponsor_SSN_number() {
 		EApp2.SSN.click();
-		 EApp2.SSN.sendKeys("545100108");
+		 EApp2.SSN.sendKeys("545100201");
 	}
 
 	@Then("Input City of Enrollment")
@@ -52,6 +52,7 @@ public class EApp3StepDef  extends TestBase {
 
 	@Then("Click Begin Enrollement")
 	public void click_Begin_Enrollement() {
+	//	EApp2.BeginEnrollment.click();
 	  EApp2.ClickNewSponsor.click();
 	}
 
@@ -179,7 +180,7 @@ public class EApp3StepDef  extends TestBase {
 	@Then("Input Primary Beneficiary SSN")
 	public void input_Primary_Beneficiary_SSN() {
 		  EApp2.PrimaryBeneficiarySSN.click();
-		    EApp2.PrimaryBeneficiarySSN.sendKeys("545100109");
+		    EApp2.PrimaryBeneficiarySSN.sendKeys("545100202");
 	}
 
 	@Then("Select Primary Beneficiary Relationship option")
@@ -208,7 +209,7 @@ public class EApp3StepDef  extends TestBase {
 	@Then("Input Contingent Beneficiary SSN number")
 	public void input_Contingent_Beneficiary_SSN_number() {
 		 EApp2.ContingentBeneficiarySSNnumber.click();
-		    EApp2.ContingentBeneficiarySSNnumber.sendKeys("545100110");
+		    EApp2.ContingentBeneficiarySSNnumber.sendKeys("545100203");
 	}
 
 	@Then("Select Contingent Beneficiary Relationship")
@@ -270,7 +271,7 @@ public class EApp3StepDef  extends TestBase {
 		act.pause(2000).perform();
 		EApp2.SponsorLastSSN.clear();
 	   EApp2.SponsorLastSSN.click();
-	   EApp2.SponsorLastSSN.sendKeys("0108");
+	   EApp2.SponsorLastSSN.sendKeys("0201");
 	}
 
 	@Then("Select Paper")

@@ -23,7 +23,7 @@ public class EApp13SeniorProAdultChildFirstProStepDef extends TestBase {
 		EApp2.NewEnrollement.click();
 		act.pause(1000).perform();
 		EApp2.SSN.click();
-		 EApp2.SSN.sendKeys("545100153");
+		 EApp2.SSN.sendKeys("545100247");
 		 EApp2.EnrollmentCity.clear();
 		  EApp2.EnrollmentCity.sendKeys("Washington");
 			act.pause(2000).perform();
@@ -35,7 +35,7 @@ public class EApp13SeniorProAdultChildFirstProStepDef extends TestBase {
 	@Then("click Begin Enrollement and Input Sponsor FirstName, LastName, Gender and DOB")
 	public void click_Begin_Enrollement_and_Input_Sponsor_FirstName_LastName_Gender_and_DOB() {
 	//	EApp2.BeginEnrollment.click();
-	   EApp2.ClickNewSponsor.click();
+	  EApp2.ClickNewSponsor.click();
 		 EApp2.FirstName.sendKeys("Simon");
 		    EApp2.LastName.sendKeys("LeBlanc");
 		    act.pause(1000).perform();
@@ -194,7 +194,7 @@ public class EApp13SeniorProAdultChildFirstProStepDef extends TestBase {
 	@Then("Next page input Spouse Information")
 	public void next_page_input_Spouse_Information() {
 		EApp2.SpouseSSN.click();
-		 EApp2.SpouseSSN.sendKeys("545100154");
+		 EApp2.SpouseSSN.sendKeys("545100248");
 		 EApp2.SpouseGenderFamale.click();
 		 act.pause(1000).perform();
 		 EApp2.SpouseHeigthFeet.click();
@@ -207,7 +207,7 @@ public class EApp13SeniorProAdultChildFirstProStepDef extends TestBase {
 	@Then("Input child one Information SSN, Gender, Height, Weight, Slect US Citizen Option and Relationship")
 	public void input_child_one_Information_SSN_Gender_Height_Weight_Slect_US_Citizen_Option_and_Relationship() {
 		EApp2.ChildOneSSN.click();
-		EApp2.ChildOneSSN.sendKeys("545100155");
+		EApp2.ChildOneSSN.sendKeys("545100249");
 		EApp2.ChildOneGenderMale.click();
 		EApp2.ChildOneHeight6Feet.click();
 		EApp2.ChildOneHeight0Inches.click();
@@ -220,7 +220,7 @@ public class EApp13SeniorProAdultChildFirstProStepDef extends TestBase {
 	@Then("Input child two Information SSN, Gender, Height, Weight, Slect US Citizen Option and Relationship")
 	public void input_child_two_Information_SSN_Gender_Height_Weight_Slect_US_Citizen_Option_and_Relationship() {
 		EApp2.ChildTwoSSN.click();
-		EApp2.ChildTwoSSN.sendKeys("545100156");
+		EApp2.ChildTwoSSN.sendKeys("545100250");
 		EApp2.ChildTwoGenderMale.click();
 		EApp2.ChildTwoHeight3Feet.click();
 		EApp2.ChildTwoInches1.click();
@@ -233,7 +233,7 @@ public class EApp13SeniorProAdultChildFirstProStepDef extends TestBase {
 	@Then("Input child three Information SSN, Gender, Height, Weight, Slect US Citizen Option and Relationship")
 	public void input_child_three_Information_SSN_Gender_Height_Weight_Slect_US_Citizen_Option_and_Relationship() {
 		EApp2.ChildThreeSSN.click();
-		EApp2.ChildThreeSSN.sendKeys("545100157");
+		EApp2.ChildThreeSSN.sendKeys("545100251");
 		EApp2.ChildThreeGenderFemale.click();
 		EApp2.ChildThreeHeight3Feet.click();
 		EApp2.ChildThree2Inches.click();
@@ -266,7 +266,7 @@ public class EApp13SeniorProAdultChildFirstProStepDef extends TestBase {
 	    EApp2.ChildProtectPrimarySomeOneElse.click();
 	    EApp2.ChildProtectPrimaryFN.sendKeys("Priscilla LeBlanc");
 	    EApp2.ChildProtectPrimarySSN.click();
-	    EApp2.ChildProtectPrimarySSN.sendKeys("545100154");
+	    EApp2.ChildProtectPrimarySSN.sendKeys("545100252");
 	    EApp2.ChildProtectPrimaryRelationshipParent.click();
 	    EApp2.ChildProtectPrimaryDOB.click();
 	    EApp2.ChildProtectPrimaryDOB.sendKeys("10151978");
@@ -286,7 +286,7 @@ public class EApp13SeniorProAdultChildFirstProStepDef extends TestBase {
 			EApp2.SecondChildProtectPrimarySomeOneElse.click();
 			EApp2.SecondChildProtectPrimarytFN.sendKeys("Priscilla LeBlanc");
 			EApp2.SecondChildProtectPrimarySSN.click();
-			EApp2.SecondChildProtectPrimarySSN.sendKeys("545100154");
+			EApp2.SecondChildProtectPrimarySSN.sendKeys("545100253");
 			EApp2.SecondChildProtectPrimaryRelationshipParent.click();
 			EApp2.SecondChildProtectPrimaryDOB.click();
 			EApp2.SecondChildProtectPrimaryDOB.sendKeys("10151987");
@@ -299,7 +299,7 @@ public class EApp13SeniorProAdultChildFirstProStepDef extends TestBase {
 	    EApp2.SecondChildProtectContingentSomeOneElse.click();
 	    EApp2.SecondChildProtectContingentFN.sendKeys("Priscilla LeBlanc");
 	    EApp2.SecondChildProtectContingentSSN.click();
-	    EApp2.SecondChildProtectContingentSSN.sendKeys("545100154");
+	    EApp2.SecondChildProtectContingentSSN.sendKeys("545100254");
 	    EApp2.SecondChildProtectContingentRelationshipParent.click();
 	    EApp2.SecondChildProtectContingentDOB.click();
 	    EApp2.SecondChildProtectContingentDOB.sendKeys("10151987");

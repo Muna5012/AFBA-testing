@@ -35,7 +35,7 @@ public class EApp6FedTermStepDef extends TestBase{
 	public void input_Sponsor_SSN_numbers() {
 	act.pause(1000).perform();
 	EApp2.SSN.click();
-	 EApp2.SSN.sendKeys("545100119");
+	 EApp2.SSN.sendKeys("545100212");
 	}
 
 	@Then("Input Enrollment city")
@@ -54,7 +54,7 @@ public class EApp6FedTermStepDef extends TestBase{
 
 	@Then("click Begin Enrollement button to create new sponsor")
 	public void click_Begin_Enrollement_button_to_create_new_sponsor() {
-		//EApp2.BeginEnrollment.click();
+	//	EApp2.BeginEnrollment.click();
 		 EApp2.ClickNewSponsor.click();
 	}
 
@@ -143,7 +143,7 @@ public class EApp6FedTermStepDef extends TestBase{
 
 	@Then("Input Source Code")
 	public void input_Source_Code() {
-		//EApp2.DepartmentCode.sendKeys("AutoTest");
+		EApp2.DepartmentCode.sendKeys("AutoTest");
 		EApp2.SourceCode.sendKeys("ATWINTER");
 	}
 
@@ -253,7 +253,8 @@ public class EApp6FedTermStepDef extends TestBase{
 
 	@Then("Input Spouse SSN")
 	public void input_Spouse_SSN() {
-		EApp2.SpouseSSN.sendKeys("545100113");
+		EApp2.SpouseSSN.click();
+		EApp2.SpouseSSN.sendKeys("545100213");
 	
 	}
 
@@ -284,7 +285,8 @@ public class EApp6FedTermStepDef extends TestBase{
 		EApp2.SomeoneElseForSponsorPrimary.click();
 		 act.pause(1000).perform();
 	    EApp2.PrimaryBenficiaryFullName.sendKeys("George Jetson");
-	    EApp2.PrimaryBeneficiarySSN.sendKeys("545100121");
+	    EApp2.PrimaryBeneficiarySSN.click();
+	    EApp2.PrimaryBeneficiarySSN.sendKeys("545100214");
 	    EApp2.PrimaryRelationshipForFIL.click();
 	    EApp2.PrimaryBeneficiaryDOB.click();
 	    EApp2.PrimaryBeneficiaryDOB.sendKeys("04101942");
@@ -296,7 +298,8 @@ public class EApp6FedTermStepDef extends TestBase{
 		EApp2.SomeoneElseForSpousePrimary.click();
 		 act.pause(1000).perform();
 	    EApp2.SpousePrimarytFN.sendKeys("Bette Hawkins");
-	    EApp2.SpousePrimarytSSN.sendKeys("545100122");
+	    EApp2.SpousePrimarytSSN.click();
+	    EApp2.SpousePrimarytSSN.sendKeys("545100215");
 	    EApp2.SpousePrimaryRelationship.click();
 	    EApp2.SpousePrimaryDOB.click();
 	    EApp2.SpousePrimaryDOB.sendKeys("12111937");
@@ -348,7 +351,7 @@ public class EApp6FedTermStepDef extends TestBase{
 		act.pause(2000).perform();
 		EApp2.SponsorLastSSN.clear();
 	   EApp2.SponsorLastSSN.click();
-	   EApp2.SponsorLastSSN.sendKeys("0119");
+	   EApp2.SponsorLastSSN.sendKeys("0212");
 	}
 
 	@Then("Select Paper Option for receive the documents")

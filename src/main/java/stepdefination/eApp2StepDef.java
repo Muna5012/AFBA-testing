@@ -10,13 +10,13 @@ public class EApp2StepDef extends TestBase {
 
 	@When("Click Manage cases button")
 	public void click_Manage_cases_button() {
-	  EApp2.ManageCaseButton.click();
+		EApp2.ManageCaseButton.click();
 	}
 
 	@Then("Manage Case Page search to find AFBA case")
 	public void manage_Case_Page_search_to_find_AFBA_case() {
-	  EApp2.searchSpace.click();
-	  EApp2.searchSpace.sendKeys("IT_QA Automation Face2Face Remote");
+		EApp2.searchSpace.click();
+		EApp2.searchSpace.sendKeys("IT_QA Automation Face2Face Remote");
 	}
 
 	@Then("Select AFBA case")
@@ -26,22 +26,22 @@ public class EApp2StepDef extends TestBase {
 
 	@Then("Create New Enrollment")
 	public void create_New_Enrollment() {
-	 EApp2.NewEnrollement.click();
+		EApp2.NewEnrollement.click();
 	}
 
 	@Then("Input valid Sponsor SSN")
 	public void input_valid_Sponsor_SSN() {
-	 EApp2.SSN.click();
-	 EApp2.SSN.sendKeys("545100103");
+		EApp2.SSN.click();
+		EApp2.SSN.sendKeys("545100196");
 	}
 
 	@Then("Input Enrollement State then click Next button")
 	public void input_Enrollement_State_then_click_Next_button() {
-		  EApp2.EnrollmentCity.clear();
-		  EApp2.EnrollmentCity.sendKeys("Rice");
-			act.pause(2000).perform();
-			   EApp2.EnrollmentState.click();
-			   act.pause(1000).perform();
+		EApp2.EnrollmentCity.clear();
+		EApp2.EnrollmentCity.sendKeys("Rice");
+		act.pause(2000).perform();
+		EApp2.EnrollmentState.click();
+		act.pause(1000).perform();
 	}
 
 	@Then("Click Next Button")
@@ -51,8 +51,8 @@ public class EApp2StepDef extends TestBase {
 
 	@Then("Click Begin Enrollement Button")
 	public void click_Begin_Enrollement_Button() {
-	//	 EApp2.BeginEnrollment.click();
-		   EApp2.ClickNewSponsor.click();
+		 EApp2.BeginEnrollment.click();
+	//	 EApp2.ClickNewSponsor.click();
 	}
 
 	@Then("Input valid Sponsor firstName, lastName, DOB")
@@ -179,7 +179,7 @@ public class EApp2StepDef extends TestBase {
 	@Then("Input Primary BeneficiarySSN")
 	public void input_Primary_BeneficiarySSN() {
 	    EApp2.PrimaryBeneficiarySSN.click();
-	    EApp2.PrimaryBeneficiarySSN.sendKeys("545100104");
+	    EApp2.PrimaryBeneficiarySSN.sendKeys("545100197");
 	}
 
 	@Then("Select Primary Beneficiary Relationship")
@@ -208,7 +208,7 @@ public class EApp2StepDef extends TestBase {
 	@Then("Input Contingent Beneficiary SSN")
 	public void input_Contingent_Beneficiary_SSN() {
 	    EApp2.ContingentBeneficiarySSNnumber.click();
-	    EApp2.ContingentBeneficiarySSNnumber.sendKeys("545100105");
+	    EApp2.ContingentBeneficiarySSNnumber.sendKeys("545100198");
 	}
 
 	@Then("Select Contingent Beneficiary Relationship option")
@@ -231,7 +231,7 @@ public class EApp2StepDef extends TestBase {
 	@Then("Input Second Primary Beneficiary SSN")
 	public void input_Second_Primary_Beneficiary_SSN() {
 	  EApp2.SecondPrimaryBenfSSN.click();
-	  EApp2.SecondPrimaryBenfSSN.sendKeys("545100106");
+	  EApp2.SecondPrimaryBenfSSN.sendKeys("545100199");
 	}
 
 	@Then("Select Second Primary Beneficiary Relationship option")
@@ -260,7 +260,7 @@ public class EApp2StepDef extends TestBase {
 	@Then("Input second Contingent Beneficiary SSN")
 	public void input_second_Contingent_Beneficiary_SSN() {
 	   EApp2.SecondContingentBeneficiarySSN.click();
-	   EApp2.SecondContingentBeneficiarySSN.sendKeys("545100107");
+	   EApp2.SecondContingentBeneficiarySSN.sendKeys("545100200");
 	}
 
 	@Then("Select Second Contigent Beneficiary Relationship")
@@ -324,7 +324,7 @@ public class EApp2StepDef extends TestBase {
 		act.pause(2000).perform();
 		EApp2.SponsorLastSSN.clear();
 	   EApp2.SponsorLastSSN.click();
-	   EApp2.SponsorLastSSN.sendKeys("0103");
+	   EApp2.SponsorLastSSN.sendKeys("0196");
 	}
 
 	@Then("Click Paper radio button")

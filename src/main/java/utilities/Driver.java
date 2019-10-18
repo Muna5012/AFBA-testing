@@ -71,7 +71,7 @@ enum MyWebDrivers{
          
              
          act.pause(2000).perform();
-         driver.quit(); 
+        driver.quit(); 
      } 
  } 
 

@@ -23,7 +23,7 @@ public class EApp12ChildProtectStepDef extends TestBase {
 		EApp2.NewEnrollement.click();
 		act.pause(1000).perform();
 		EApp2.SSN.click();
-		 EApp2.SSN.sendKeys("545100147");
+		 EApp2.SSN.sendKeys("545100241");
 		 EApp2.EnrollmentCity.clear();
 		  EApp2.EnrollmentCity.sendKeys("Lake Gaston");
 			act.pause(2000).perform();
@@ -173,7 +173,7 @@ public class EApp12ChildProtectStepDef extends TestBase {
 	@Then("Next page input child one information SSN, Gender, Height, Weight, Slect US Citizen Option and Relationship")
 	public void next_page_input_child_one_information_SSN_Gender_Height_Weight_Slect_US_Citizen_Option_and_Relationship() {
 		EApp2.ChildOneSSN.click();
-		EApp2.ChildOneSSN.sendKeys("545100148");
+		EApp2.ChildOneSSN.sendKeys("545100242");
 		EApp2.ChildOneGenderMale.click();
 		EApp2.ChildOneHeight5Feet.click();
 		EApp2.ChildOneHeight6Inches.click();
@@ -186,7 +186,7 @@ public class EApp12ChildProtectStepDef extends TestBase {
 	@Then("Input child two information SSN, Gender, Height, Weight, Slect US Citizen Option and Relationship")
 	public void input_child_two_information_SSN_Gender_Height_Weight_Slect_US_Citizen_Option_and_Relationship() {
 		EApp2.ChildTwoSSN.click();
-		EApp2.ChildTwoSSN.sendKeys("545100149");
+		EApp2.ChildTwoSSN.sendKeys("545100243");
 		EApp2.ChildTwoGenderMale.click();
 		EApp2.ChildTwoHeight5Feet.click();
 		EApp2.ChildTwoInches0.click();
@@ -201,7 +201,7 @@ public class EApp12ChildProtectStepDef extends TestBase {
 	@Then("Input child three information SSN, Gender, Height, Weight, Slect US Citizen Option and Relationship")
 	public void input_child_three_information_SSN_Gender_Height_Weight_Slect_US_Citizen_Option_and_Relationship() {
 		EApp2.ChildThreeSSN.click();
-		EApp2.ChildThreeSSN.sendKeys("545100150");
+		EApp2.ChildThreeSSN.sendKeys("545100244");
 		EApp2.ChildThreeGenderFemale.click();
 		EApp2.ChildThreeHeight4Feet.click();
 		EApp2.ChildThree11Inches.click();
@@ -230,7 +230,7 @@ public class EApp12ChildProtectStepDef extends TestBase {
 		   EApp2.ChildProtectSecondKidPrimarySomeOneElse.click();
 		   EApp2.ChildProtectSecondKidPrimaryFN.sendKeys("Margaret Thatcher");
 		   EApp2.ChildProtectSecondKidPrimarySSN.click();
-		   EApp2.ChildProtectSecondKidPrimarySSN.sendKeys("545100151");
+		   EApp2.ChildProtectSecondKidPrimarySSN.sendKeys("545100245");
 		   EApp2.ChildProtectSecondKidPrimaryRelationship.click();
 		   EApp2.ChildProtectSecondKidPrimaryDOB.click();
 		   EApp2.ChildProtectSecondKidPrimaryDOB.sendKeys("05201990");
@@ -250,7 +250,7 @@ public class EApp12ChildProtectStepDef extends TestBase {
 		EApp2.Childprotect3KidPrimarySomeOneElse.click();
 		EApp2.ChildProtect3kidPrimaryFN.sendKeys("Caroline Woodward");
 		EApp2.ChildProtect3KidPrimarySSN.click();
-		EApp2.ChildProtect3KidPrimarySSN.sendKeys("545100152");
+		EApp2.ChildProtect3KidPrimarySSN.sendKeys("545100246");
 		EApp2.ChildProtect3kidPrimaryRelationship.click();
 		EApp2.ChildProtect3KidPrimaryDOB.click();
 		EApp2.ChildProtect3KidPrimaryDOB.sendKeys("10301980");

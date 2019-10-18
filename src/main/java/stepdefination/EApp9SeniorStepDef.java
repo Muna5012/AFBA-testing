@@ -27,7 +27,7 @@ public class EApp9SeniorStepDef extends TestBase {
 	public void input_Sponsor_SSN_Enrollment_City_Enrollment_state() {
 		act.pause(1000).perform();
 		EApp2.SSN.click();
-		 EApp2.SSN.sendKeys("545100139");
+		 EApp2.SSN.sendKeys("545100233");
 		 EApp2.EnrollmentCity.clear();
 		  EApp2.EnrollmentCity.sendKeys("Mobile");
 			act.pause(2000).perform();
@@ -168,7 +168,7 @@ public class EApp9SeniorStepDef extends TestBase {
 	@Then("Next page Input Spouse inofrmation, Gender, Height and Weight")
 	public void next_page_Input_Spouse_inofrmation_Gender_Height_and_Weight() {
 		EApp2.SpouseSSN.click();
-		 EApp2.SpouseSSN.sendKeys("545100140");
+		 EApp2.SpouseSSN.sendKeys("545100234");
 		 EApp2.SpouseGenderFamale.click();
 		 act.pause(1000).perform();
 		 EApp2.SpouseHeigthFeet.click();
@@ -183,12 +183,9 @@ public class EApp9SeniorStepDef extends TestBase {
 	@Then("Next Page for Beneficiaries for senior protect Sponsor Contingent Beneficiary Fullname, SSN, Relationship and DOB")
 	public void next_Page_for_Beneficiaries_for_senior_protect_Sponsor_Contingent_Beneficiary_Fullname_SSN_Relationship_and_DOB() {
 		 EApp2.SomeoneElseForSponsorContingent.click();
-		   EApp2.ContingentBeneficiaryFullName.sendKeys("My Estate");
-	//	   EApp2.ContingentBeneficiarySSNnumber.click();
-		//	EApp2.ContingentBeneficiarySSNnumber.sendKeys("545100129");
-			EApp2.ContingentRelationshipForEstate.click();
-//			EApp2.ContingentBeneficiaryDOB.click();
-//			EApp2.ContingentBeneficiaryDOB.sendKeys("08081964");
+	     EApp2.ContingentBeneficiaryFullName.sendKeys("My Estate");
+	     EApp2.ContingentRelationshipForEstate.click();
+	
 	}
 
 	@Then("Select Contingent Beneficiary of Spouse Coverage FullName, SSN, Relationship and DOB")
@@ -196,7 +193,8 @@ public class EApp9SeniorStepDef extends TestBase {
 		 EApp2.SomeOneElseForSpouseContingent.click();
 		    act.pause(1000).perform();
 		    EApp2.SpouseContingentFN.sendKeys("Gabriella Rinconnes");
-		    EApp2.SpouseContingentSSN.sendKeys("545100141");
+		    EApp2.SpouseContingentSSN.click();
+		    EApp2.SpouseContingentSSN.sendKeys("545100235");
 			   act.pause(2000).perform();
 			   EApp2.SpouseContingentRelationshipMother.click();
 			   EApp2.spouseContingentDOB.click();
@@ -243,7 +241,7 @@ public class EApp9SeniorStepDef extends TestBase {
 			act.pause(2000).perform();
 			EApp2.SponsorLastSSN.clear();
 		   EApp2.SponsorLastSSN.click();
-		   EApp2.SponsorLastSSN.sendKeys("0139");
+		   EApp2.SponsorLastSSN.sendKeys("0233");
 			act.pause(2000).perform();
 	}
 
@@ -251,7 +249,7 @@ public class EApp9SeniorStepDef extends TestBase {
 	public void input_Spouse_Last_Name_and_last_SSN_numbers_for_confirm() {
 		 EApp2.SpouseLastName.sendKeys("Jefferson");
 		   EApp2.SpouseLastSSN.click();
-		   EApp2.SpouseLastSSN.sendKeys("0140");
+		   EApp2.SpouseLastSSN.sendKeys("0234");
 	}
 
 	@Then("Select Paper option radio button")

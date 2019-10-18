@@ -35,7 +35,7 @@ public class EAppHiddenEleStepDef extends TestBase {
 	public void input_Sponsor_valid_SSN_number() {
 		act.pause(1000).perform();
 		EApp2.SSN.click();
-		 EApp2.SSN.sendKeys("545100112");
+		 EApp2.SSN.sendKeys("545100207");
 	}
 
 	@Then("Input Sponsor Enrollment City")
@@ -59,6 +59,7 @@ public class EAppHiddenEleStepDef extends TestBase {
 	@Then("Select Begin Enrollement button")
 	public void select_Begin_Enrollement_button() {
 	  EApp2.ClickNewSponsor.click();
+	//  EApp2.BeginEnrollment.click();
 	}
 
 	@Then("Input Sponsor first Name, last Name and DOB")
@@ -228,7 +229,8 @@ public class EAppHiddenEleStepDef extends TestBase {
 
 	@Then("Select Spouse gender")
 	public void select_Spouse_gender() {
-		EApp2.SpouseSSN.sendKeys("545100113");
+		EApp2.SpouseSSN.click();
+		EApp2.SpouseSSN.sendKeys("545100208");
 		EApp2.SpouseGenderMale.click();
 		act.pause(1000).perform();
 		
@@ -262,7 +264,7 @@ public class EAppHiddenEleStepDef extends TestBase {
 	@Then("Input Sponsor Contingent Beneficiary SSN")
 	public void input_Sponsor_Contingent_Beneficiary_SSN() {
 		EApp2.ContingentBeneficiarySSNnumber.click();
-		EApp2.ContingentBeneficiarySSNnumber.sendKeys("545100114");
+		EApp2.ContingentBeneficiarySSNnumber.sendKeys("545100209");
 	}
 
 	@Then("Select Sponsor Relationship for Contingent Beneficiary")
@@ -291,7 +293,8 @@ public class EAppHiddenEleStepDef extends TestBase {
 
 	@Then("Input Spouse Contingent Beneficiary SSN")
 	public void input_Spouse_Contingent_Beneficiary_SSN() {
-	   EApp2.SpouseContingentSSN.sendKeys("545100115");
+		  EApp2.SpouseContingentSSN.click();
+	   EApp2.SpouseContingentSSN.sendKeys("545100210");
 	   act.pause(2000).perform();
 	   EApp2.SpouseContingentRelationship.click();
 	}
@@ -316,7 +319,8 @@ public class EAppHiddenEleStepDef extends TestBase {
 
 	@Then("Input Sponsor Primary Beneficiary SSN")
 	public void input_Sponsor_Primary_Beneficiary_SSN() {
-	   EApp2.SecondPrimaryBenfSSN.sendKeys("545100118");
+		EApp2.SecondPrimaryBenfSSN.click();
+	   EApp2.SecondPrimaryBenfSSN.sendKeys("545100211");
 	   act.pause(2000).perform();
 	}
 
@@ -381,7 +385,7 @@ public class EAppHiddenEleStepDef extends TestBase {
 		act.pause(2000).perform();
 		EApp2.SponsorLastSSN.clear();
 	   EApp2.SponsorLastSSN.click();
-	   EApp2.SponsorLastSSN.sendKeys("0112");
+	   EApp2.SponsorLastSSN.sendKeys("0207");
 	}
 
 	@Then("Select Paper Option radio button")

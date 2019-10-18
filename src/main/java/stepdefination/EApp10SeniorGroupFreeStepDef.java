@@ -27,7 +27,7 @@ public class EApp10SeniorGroupFreeStepDef extends TestBase{
 	public void input_Sponsor_SSN_Enrollment_city_Enrollment_state() {
 		act.pause(1000).perform();
 		EApp2.SSN.click();
-		 EApp2.SSN.sendKeys("545100142");
+		 EApp2.SSN.sendKeys("545100236");
 		 EApp2.EnrollmentCity.clear();
 		  EApp2.EnrollmentCity.sendKeys("Fort Meyer");
 			act.pause(2000).perform();
@@ -38,7 +38,7 @@ public class EApp10SeniorGroupFreeStepDef extends TestBase{
 
 	@Then("click Begin Enrollement to create")
 	public void click_Begin_Enrollement_to_create() {
-	//	EApp2.BeginEnrollment.click();
+    //	EApp2.BeginEnrollment.click();
 	  EApp2.ClickNewSponsor.click();
 	}
 
@@ -166,7 +166,8 @@ public class EApp10SeniorGroupFreeStepDef extends TestBase{
 		 act.pause(2000).perform();
 		   EApp2.Next.click();
 		   EApp2.PrimaryBenficiaryFullName.sendKeys("Gladys Cratch");
-		    EApp2.PrimaryBeneficiarySSN.sendKeys("545100143");
+		   EApp2.PrimaryBeneficiarySSN.click();
+		    EApp2.PrimaryBeneficiarySSN.sendKeys("545100237");
 		    EApp2.PrimaryRelationshipBF.click();
 		    EApp2.PrimaryBeneficiaryDOB.click();
 		    EApp2.PrimaryBeneficiaryDOB.sendKeys("08121964");
@@ -223,7 +224,7 @@ public class EApp10SeniorGroupFreeStepDef extends TestBase{
 			act.pause(2000).perform();
 			EApp2.SponsorLastSSN.clear();
 		   EApp2.SponsorLastSSN.click();
-		   EApp2.SponsorLastSSN.sendKeys("0142");
+		   EApp2.SponsorLastSSN.sendKeys("0236");
 			act.pause(2000).perform();
 	}
 

@@ -23,7 +23,7 @@ public class EApp15BAFedTSeniorProFirstProStepDef extends TestBase{
 		EApp2.NewEnrollement.click();
 		act.pause(1000).perform();
 		EApp2.SSN.click();
-		 EApp2.SSN.sendKeys("545100162");
+		 EApp2.SSN.sendKeys("545100260");
 		 EApp2.EnrollmentCity.clear();
 		  EApp2.EnrollmentCity.sendKeys("SANTA RITA");
 			act.pause(2000).perform();
@@ -35,7 +35,7 @@ public class EApp15BAFedTSeniorProFirstProStepDef extends TestBase{
 	@Then("click Begin Enrollement buttonInput Sponsor First Name, Last Name, Gender and DOB")
 	public void click_Begin_Enrollement_buttonInput_Sponsor_First_Name_Last_Name_Gender_and_DOB() {
 	//	EApp2.BeginEnrollment.click();
-	    EApp2.ClickNewSponsor.click();
+	   EApp2.ClickNewSponsor.click();
 		 EApp2.FirstName.sendKeys("Illona");
 		    EApp2.LastName.sendKeys("Lanski");
 		    act.pause(1000).perform();
@@ -51,7 +51,7 @@ public class EApp15BAFedTSeniorProFirstProStepDef extends TestBase{
 		    EApp2.SpouseFN.sendKeys("Maldo");
 			   EApp2.SpouseLN.sendKeys("Lanski");
 			   act.pause(1000).perform();
-			   EApp2.SpouseDOB.click();
+			  EApp2.SpouseDOB.click();
 			   EApp2.SpouseDOB.sendKeys("01301969");
 	}
 
@@ -196,7 +196,7 @@ public class EApp15BAFedTSeniorProFirstProStepDef extends TestBase{
 	@Then("Next page input Children Information include Gender, Height, Weight and Relationship options")
 	public void next_page_input_Children_Information_include_Gender_Height_Weight_and_Relationship_options() {
 		EApp2.SpouseSSN.click();
-		 EApp2.SpouseSSN.sendKeys("545100163");
+		 EApp2.SpouseSSN.sendKeys("545100261");
 		 EApp2.SpouseGenderMale.click();
 		 act.pause(1000).perform();
 		 EApp2.SpouseHeigthFeet.click();
@@ -205,8 +205,9 @@ public class EApp15BAFedTSeniorProFirstProStepDef extends TestBase{
 		  EApp2.SpouseWeight.click();
 		  EApp2.SpouseWeight.sendKeys("143");
 		  act.pause(2000).perform();
+		  
 		EApp2.ChildOneSSN.click();
-		EApp2.ChildOneSSN.sendKeys("545100164");
+		EApp2.ChildOneSSN.sendKeys("545100262");
 		EApp2.ChildOneGenderFamale.click();
 		EApp2.ChildOneHeight5Feet.click();
 		EApp2.ChildOneHeight10Inches.click();
@@ -214,7 +215,8 @@ public class EApp15BAFedTSeniorProFirstProStepDef extends TestBase{
 		EApp2.ChildUSCitizen.click();
 		EApp2.ChildOneRelationshipParent.click();
 		act.pause(2000).perform();
-		EApp2.ChildTwoSSN.sendKeys("545100165");
+		EApp2.ChildTwoSSN.click();
+		EApp2.ChildTwoSSN.sendKeys("545100263");
 		EApp2.ChildTwoGenderMale.click();
 		EApp2.ChildTwoHeight5Feet.click();
 		EApp2.ChildTwoInches6.click();
@@ -247,8 +249,9 @@ public class EApp15BAFedTSeniorProFirstProStepDef extends TestBase{
 	public void input_Beneficiaries_for_Fed_Term_Sponsor_Primary_Beneficiary_Full_Name_SSN_Relationship_and_DOB() {
 		EApp2.SecondPrmaryBenSOmeOneElse.click();
 		EApp2.SecondPrmaryBenFullName.sendKeys("Qui Qui Lanski");
+		
 		EApp2.SecondPrimaryBenfSSN.click();
-		EApp2.SecondPrimaryBenfSSN.sendKeys("545100164");
+		EApp2.SecondPrimaryBenfSSN.sendKeys("545100262");
 		EApp2.SecondPrimaryBenRelationshipforChild.click();
 		EApp2.SecondPrimaryBenfDOB.click();
 		EApp2.SecondPrimaryBenfDOB.sendKeys("10141993");
@@ -260,7 +263,7 @@ public class EApp15BAFedTSeniorProFirstProStepDef extends TestBase{
 		EApp2.SeniorProtectPrimarySomeOneElse.click();
 		EApp2.SeniorProtectPrimaryFN.sendKeys("Qui Qui Lanski");
 		EApp2.SeniorProtectPrimarySSN.click();
-		EApp2.SeniorProtectPrimarySSN.sendKeys("545100164");
+		EApp2.SeniorProtectPrimarySSN.sendKeys("545100262");
 		EApp2.SeniorProtectPrimaryRelationshipChild.click();
 		EApp2.SeniorProtectPrimaryDOB.click();
 		EApp2.SeniorProtectPrimaryDOB.sendKeys("10141993");
@@ -272,7 +275,7 @@ public class EApp15BAFedTSeniorProFirstProStepDef extends TestBase{
 		EApp2.ChildProtectContingentSomeOneElse.click();
 		EApp2.ChildProtectContingentFullName.sendKeys("Maldo Lanski");
 		EApp2.ChildProtectContingentSSN.click();
-		EApp2.ChildProtectContingentSSN.sendKeys("545100163");
+		EApp2.ChildProtectContingentSSN.sendKeys("545100260");
 		act.pause(2000).perform();
 		EApp2.ChildProtectContingentRelationshipFather.click();
 		EApp2.ChildProtectContingentDOB.click();
