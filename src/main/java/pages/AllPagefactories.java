@@ -67,7 +67,7 @@ public class AllPagefactories extends TestBase{
 			
 			PageFactory.initElements(driver, EApp2.class);
 		
-
+			PageFactory.initElements(driver, GoogleLoginPage.class);
 			
 		
 			
