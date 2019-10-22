@@ -232,10 +232,9 @@ public class EAppCallCenter1 extends TestBase {
 						 EApp2.SpouseLastName.sendKeys("Wayne");
 						   EApp2.SpouseLastSSN.click();
 						   EApp2.SpouseLastSSN.sendKeys("0239");
-						   act.pause(2000).perform();
-					
+						   act.pause(2000).perform();			
 	}
-//
+	
 	@Then("Applicant eSignature and select Paper to receive documents and click sign button")
 	public void applicant_eSignature_and_select_Paper_to_receive_documents_and_click_sign_button() {	
 		EApp2.clickModalBodyBtn.click();
@@ -244,7 +243,6 @@ public class EAppCallCenter1 extends TestBase {
 		act.pause(3000).perform();
 		EApp2.eSignatureBrn.click();
 		act.pause(5000).perform();
-
 //	   EApp2.ClickQuestion1.click();
 //	   EApp2.ClickQuestion2.click();
 //	   EApp2.ClickQuestion3.click();

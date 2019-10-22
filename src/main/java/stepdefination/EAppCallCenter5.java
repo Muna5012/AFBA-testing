@@ -322,7 +322,4 @@ public class EAppCallCenter5 extends TestBase{
 		act.pause(7000).perform();
 	}
 
-
-
-
 }

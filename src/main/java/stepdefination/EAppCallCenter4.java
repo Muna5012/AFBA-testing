@@ -256,11 +256,5 @@ public class EAppCallCenter4 extends TestBase {
 		EApp2.eSignatureBrn2.click();
 		act.pause(7000).perform();
 	}
-
-
-	  
-	
-	  
-	
 	
 }
