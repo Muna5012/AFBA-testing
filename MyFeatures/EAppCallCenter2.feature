@@ -4,7 +4,6 @@ Scenario: Minor Children(MC) only with Child Protect (LT16) specific DC area tes
 
 When Click Manage Cases button on Homepage and Search IT QA Automation Call Center and click it 
 Then Click New Enrollement button to Input Sponsor SSN, Enrollment City, Enrollment State 
-
 And click Begin Enrollement and Input the Sponsor First Name, Last Name, Gender and DOB
 And Click Include Children button to input first Child first name, last name, DOB
 And Click Add Child button to input second Child first name, last name, DOB
@@ -16,7 +15,6 @@ Then Input DepartmentCode and Sourcecode
 And Input street address, City, state and ST Zipcode
 Then Input Emails for confimation and daytime phone numbers
 Then Click Show Coverage Options to Select benefitiary planes
-
 And Waived BA, Fed Term, First protect, Application Member Benefit
 Then Click Children Protect and select Covered for Three of children
 And Next Page to Answer to All the questions 

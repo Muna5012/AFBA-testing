@@ -5,7 +5,6 @@ Scenario:  Senior Protect LT121 generic NC. Contingent Beneficiary test scanario
 When Click Manage Cases button on Home page and Search IT_QA Automation Face2Face Remote cases and click it 
 Then Click New Enrollement button to create new Case
 And Input Sponsor SSN, Enrollment city and Enrollment state 
-
 And click Begin Enrollement
 Then Input the Sponsor First Name, Last Name, Gender, DOB
 And Click Married button to input Spouse first name, last name, DOB
@@ -17,7 +16,6 @@ Then Input Department code and Sourcecode
 And Input street address, City and ST Zipcode
 Then Input Email for confimation and daytime phone numbers
 Then Click Show Coverage Options to Select Benefitiary planes
-
 And Waived BA, FedTerm, First Protect and Application Member Benefit
 Then Slect Senior Protect NonTobacco for Spouse and Customize twenty five thousand K
 And Next page answer All Questions

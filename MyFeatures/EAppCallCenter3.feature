@@ -16,7 +16,6 @@ Then Select Military Allotment on Contribution Mode and input DepartmentCode and
 And Input Street address, City, state and ST Zipcode
 Then Input Email for confimation and phone number
 Then Click Show Coverage Options to select Benefitiary Planes
-
 And Waived BA, Fed Term and Application Member Benefit
 Then Select Sponsor NonTobacco, Spouse Tobacco and First kid Tobacco
 And Sponsor Customize No benefit, Spouse Customize one houndred thousand K and first kid Customize fifty thousand K 
@@ -27,14 +26,12 @@ And Next page input Spouse Information
 And Input child one Information SSN, Gender, Height, Weight, Slect US Citizen Option and Relationship
 Then Input child two Information SSN, Gender, Height, Weight, Slect US Citizen Option and Relationship
 And Input child three Information SSN, Gender, Height, Weight, Slect US Citizen Option and Relationship
-
 Then Next page for Benficiaries for First Protect Contingent beneficiary FullName, SSN, Relationship and DOB
 And Beneficiary for Senior Protect Primary Beneficiary FullName, SSN, Relationship and DOB
 Then Input Children Protect Primary Beneficiary for Silas Beneficiary FullName, SSN, Relationship and DOB
 And Input Children Protect Contingent Beneficiary for Silas Beneficiary FullName, SSN, Relationship and DOB
 Then Input Children Protect Primary Beneficiary for Xavier Beneficiary FullName, SSN, Relationship and DOB
 And Input Children Protect Contingent Beneficiary for Xavier Beneficiary FullName, SSN, Relationship and DOB
-
 Then Nexc page Select Email Summary and Select Acknowledgement Military Payment option
 And Click I Agree to this Coverage and am ready to Signin button
 Then Select Applicant eSignature Three options
