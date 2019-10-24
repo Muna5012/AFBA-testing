@@ -15,6 +15,7 @@ import SalesforceFlashingPages.SalesforceFlashingPage;
 import cucumber.api.Scenario;
 import pages.AllPagefactories;
 import pages.LoginPage;
+import pages.RemoteLoginPage;
 
 public abstract class TestBase {
 	
@@ -33,6 +34,19 @@ public abstract class TestBase {
 		act.pause(3000).perform();
 	}
 	
+	protected static void RemoteLogIn() {
+		Assert.assertTrue(driver.getTitle().contains("Login"));
+		RemoteLoginPage.email.sendKeys("qapeep512@gmail.com");
+		RemoteLoginPage.password.sendKeys("Muna@512");	 
+		RemoteLoginPage.loginBtn.click();
+		act.pause(2000).perform();
+		RemoteLoginPage.EnrollmentCase.click();
+		act.pause(1000).perform();
+		RemoteLoginPage.searchSpace.sendKeys("IT_QA Automation Remote");
+		RemoteLoginPage.SearchITQAAutomationRemote.click();
+		RemoteLoginPage.NewEnrollement.click();
+		act.pause(3000).perform();
+	}
 	
 	protected static void MemberLogIn() {	
 		MemberLoginPage.MemberLoginBtn.click();
@@ -57,7 +71,7 @@ public abstract class TestBase {
 	
 	protected static void SetUp() {
 		driver=Driver.getDriver();
-		driver.get(ConfigurationReader.getProperty("url"));
+		driver.get(ConfigurationReader.getProperty("url7"));
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		act = new Actions(driver);

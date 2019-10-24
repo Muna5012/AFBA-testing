@@ -69,8 +69,9 @@ public class AllPagefactories extends TestBase{
 		
 			PageFactory.initElements(driver, GoogleLoginPage.class);
 			
+			PageFactory.initElements(driver, Remote.class);
 		
-			
+			PageFactory.initElements(driver, RemoteLoginPage.class);
 	
 			
 			// here I must write all the page' classes' Page Factory
