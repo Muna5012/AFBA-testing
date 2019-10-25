@@ -368,9 +368,8 @@ public class EAppRemote1 extends TestBase{
 		act.pause(1000).perform();
 		Remote.ClickEmail.click();
 		act.pause(2000).perform();
-		Remote.ClickInbox.click();
 		Remote.SelectFirstEmail.click();
-		Remote.selectEmail.click();
+	//	Remote.selectEmail.click();
 		act.pause(2000).perform();
 		Remote.ReviewApplicationBtn.click();
 		act.pause(2000).perform();

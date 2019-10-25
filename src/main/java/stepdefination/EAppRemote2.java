@@ -1,5 +1,4 @@
 package stepdefination;
-
 import org.openqa.selenium.Keys;
 
 import cucumber.api.java.en.Then;
@@ -60,7 +59,7 @@ public class EAppRemote2 extends TestBase {
 	@Then("Select O three on Rank, Checkmatic on Contribution Mode")
 	public void select_O_three_on_Rank_Checkmatic_on_Contribution_Mode() {
 		 Remote.O3.click();
-		   Remote.MilitaryAllotmentCheckmatic.click();
+		   Remote.Checkmatic.click();
 		   act.pause(2000).perform();
 	}
 
@@ -72,7 +71,7 @@ public class EAppRemote2 extends TestBase {
 
 	@Then("Input Street Address, City, State and Zip")
 	public void input_Street_Address_City_State_and_Zip() {
-		 Remote.Street.sendKeys("Bayview Shores");
+		    Remote.Street.sendKeys("Bayview Shores");
 		    Remote.Street2.sendKeys("Apt 2");
 		    Remote.City.sendKeys("Piti");
 		    Remote.State.sendKeys("Guam");
@@ -114,7 +113,7 @@ public class EAppRemote2 extends TestBase {
 
 	@Then("Waived Fed Term Product and Application Member Benefit five thousand K Product")
 	public void waived_Fed_Term_Product_and_Application_Member_Benefit_five_thousand_K_Product() {
-		 Remote.FedTerm.click();
+		   Remote.FedTerm.click();
 		   Remote.WaiveFedTerm.click();
 		   act.pause(2000).perform();
 		   Remote.ApplicationMemberBenf.click();
@@ -124,15 +123,15 @@ public class EAppRemote2 extends TestBase {
 
 	@Then("Senior Protect select Option two")
 	public void senior_Protect_select_Option_two() {
-		 Remote.SeniorProtect.click();
-		   Remote.SeniorProtectOption2.click();
+	    Remote.SeniorProtect.click();
+	 	   Remote.SeniorProtectOption2.click();
 		   act.pause(2000).perform();	  
 	   
 	}
 
 	@Then("First Protect Customize sponsor and spouse fifty thousand K")
 	public void first_Protect_Customize_sponsor_and_spouse_fifty_thousand_K() {
-		 Remote.FirstProtect.click();
+		  Remote.FirstProtect.click();
 		  Remote.FirstProtectSponsorCustomize50.click();
 		  Remote.FirstProtectSpouseCustomize50.click();
 		  act.pause(2000).perform();
@@ -189,7 +188,7 @@ public class EAppRemote2 extends TestBase {
 
 	@Then("Select Sponsor Information Height Feet, Inches and Weight")
 	public void select_Sponsor_Information_Height_Feet_Inches_and_Weight() {
-		 Remote.Height6Feet.click();
+		   Remote.Height6Feet.click();
 		   Remote.Height3Inches.click();
 		   Remote.Weight.sendKeys("230");
 		   act.pause(2000).perform();
@@ -330,7 +329,7 @@ public class EAppRemote2 extends TestBase {
 	
 	@Then("Confirmation page select Email Summary input Email address")
 	public void confirmation_page_select_Email_Summary_input_Email_address() {
-		 Remote.NextBtn6.click();
+		    Remote.NextBtn6.click();
 		    act.pause(2000).perform();
 			Remote.EmailSummary1.click();
 			act.pause(1000).perform();
@@ -371,7 +370,7 @@ public class EAppRemote2 extends TestBase {
 	@Then("Click Submit and Send Email for Signature button")
 	public void click_Submit_and_Send_Email_for_Signature_button() {
 		  Remote.SubmitEmailForsignatureBtn.click();
-		  act.pause(7000).perform();  
+		  act.pause(9000).perform();  
 	}
 
 	@Then("Open Email account to login Email username and password")
@@ -392,9 +391,10 @@ public class EAppRemote2 extends TestBase {
 		act.pause(1000).perform();
 		Remote.ClickEmail.click();
 		act.pause(2000).perform();
-		Remote.ClickInbox.click();
+		//Remote.ClickInbox.click();
 		Remote.SelectFirstEmail.click();
-		Remote.selectEmail.click();
+		act.pause(2000).perform();
+	//	Remote.selectEmail.click();
 		
 	}
 
@@ -427,7 +427,7 @@ public class EAppRemote2 extends TestBase {
 	@Then("Click to open Review Application Ducuments button to review all the application")
 	public void click_to_open_Review_Application_Ducuments_button_to_review_all_the_application() {
 		Remote.ReviewApplicationDocumentBtn.click();
-		act.pause(8000).perform();
+		act.pause(9000).perform();
 		Remote.CloseBtn.click();
 		act.pause(2000).perform();
 	}
@@ -456,7 +456,7 @@ public class EAppRemote2 extends TestBase {
 	public void select_Paper_radio_button_to_receive_the_Document() {
 		Remote.PaperBtn.click();
 		act.pause(2000).perform();
-	//	Remote.SignBtn.click();
+		Remote.SignBtn.click();
 		act.pause(3000).perform();
 		driver.get("https://enroll-sandbox.afba.com/login");
 		Remote.email.sendKeys("qapeep512@gmail.com");
@@ -468,16 +468,18 @@ public class EAppRemote2 extends TestBase {
 		Remote.SignButton.click();
 		act.pause(2000).perform();
 		Remote.ReviewApplicationDocumentBtn.click();
-		act.pause(8000).perform();
+		act.pause(10000).perform();
 		Remote.CloseBtn.click();
 		act.pause(2000).perform();
 		Remote.Sign.click();
 		act.pause(3000).perform();
-	}
 
 
-
-
-
-
+	
+		}
 }
+
+
+
+
+

@@ -26,10 +26,10 @@ public class GoogleLoginPage {
 	@FindBy(xpath = "//*[@class='TN bzz aHS-bnt']/div[2]")
 	public static WebElement ClickInbox;
 	
-	@FindBy(xpath = "/html/body/div[7]/div[3]/div/div[2]/div[1]/div[2]/div/div/div/div/div[2]/div/div[1]/div/div/div[6]/div/div[1]/div[3]/div/table/tbody/tr[1]/td[5]/div[2]")
+	@FindBy(xpath = "/html/body/div[7]/div[3]/div/div[2]/div[1]/div[2]/div/div/div/div/div[2]/div/div[1]/div/div/div[6]/div/div[1]/div[3]/div/table/tbody/tr[1]/td[6]/div/div/div/span/span")
 	public static WebElement SelectFirstEmail;
 	
-	@FindBy(xpath="/html/body/div[7]/div[3]/div/div[2]/div[1]/div[2]/div/div/div/div/div[2]/div/div[1]/div/div[2]/div/table/tr/td[1]/div[2]/div[2]/div/div[3]/div[1]/div/div/div/div/div/div[2]/div/table/tbody/tr[1]/td[1]/span")
+	@FindBy(xpath="/html/body/div[7]/div[3]/div/div[2]/div[1]/div[2]/div/div/div/div/div[2]/div/div[1]/div/div[2]/div/table/tr/td[1]/div[2]/div[2]/div/div[3]/div/div/div/div/div/div[1]/div[2]/div[1]/table/tbody/tr[1]/td[1]/table/tbody/tr/td/h3/span/span[1]")
 	public static WebElement selectEmail;
 	
 	@FindBy(xpath = "//*[contains(text(),'Review Application')]")

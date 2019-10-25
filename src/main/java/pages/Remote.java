@@ -123,6 +123,9 @@ public class Remote {
 	@FindBy(xpath= "//option[@value='Military']")
 	public static WebElement Military;
 	
+	@FindBy(xpath= "//option[@value='Law Enforcement']")
+	public static WebElement LawEnforcement;
+	
 	@FindBy(xpath = "//*[contains(text(),'Coast Guard')]")
 	public static WebElement CoastGuard;
 	
@@ -198,8 +201,11 @@ public class Remote {
 	@FindBy(xpath ="//*[@id='contributionMode']/option[4]")
 	public static WebElement MilitaryAllotment;
 	
+	@FindBy(xpath ="//*[@id='contributionMode']/option[2]")
+	public static WebElement CreditCard;
+	
 	@FindBy(xpath ="//*[@id='contributionMode']/option[3]")
-	public static WebElement MilitaryAllotmentCheckmatic;
+	public static WebElement Checkmatic;
 	
 	@FindBy(xpath ="//input[@name='deptCode']")
 	public static WebElement DepartmentCode;
@@ -276,6 +282,9 @@ public class Remote {
 	@FindBy(xpath="/html/body/div[2]/div[1]/div[2]/div/div/div[1]/div/div/div[2]/div/div[1]/div/div[1]/form/div[4]/div[2]/div[2]/div[2]/div[2]/div/div/div[1]/div[1]/div/div[2]/div/ul/li[2]/div/label[2]/span")
 	public static WebElement TobaccoforSpouse;
 	
+	@FindBy(xpath="//*[@class='btn btn-block btn-sm btn-danger']")
+	public static WebElement SeniorProtectOption1;
+	
 	@FindBy(xpath="//*[@class='btn btn-block btn-sm btn-primary']")
 	public static WebElement SeniorProtectOption3;
 	
@@ -287,6 +296,12 @@ public class Remote {
 	
 	@FindBy(xpath="//*[@id=\"step1-form\"]/div[4]/div[2]/div[2]/div[2]/div[2]/div/div/div[1]/div[2]/div[4]/div/div[2]/div/ul/li[2]/select/option[3]")
 	public static WebElement FirstProtectSpouseCustomize50;
+	
+	@FindBy(xpath="//*[@id=\"step1-form\"]/div[4]/div[2]/div[2]/div[2]/div[2]/div/div/div[1]/div[2]/div[4]/div/div[2]/div/ul/li[1]/select/option[4]")
+	public static WebElement FirstProtectSponsorCustomize100;
+	
+	@FindBy(xpath="//*[@id=\"step1-form\"]/div[4]/div[2]/div[2]/div[2]/div[2]/div/div/div[1]/div[2]/div[4]/div/div[2]/div/ul/li[2]/select/option[4]")
+	public static WebElement FirstProtectSpouseCustomize100;
 	
 	@FindBy(xpath = "//*[@id=\"step1-form\"]/div[4]/div[2]/div[2]/div[2]/div[2]/div/div/div[1]/div[2]/div[4]/div/div[2]/div/ul/li[1]/select/option[3]")
 	public static WebElement BASponsorCustomize50;
@@ -753,6 +768,8 @@ public class Remote {
 	@FindBy(xpath="//*[@name='eeBeneOtherDOB0']")
 	public static WebElement PrimaryBeneficiaryDOB;
 	
+	@FindBy(xpath="/html/body/div[2]/div[1]/div[2]/div/div/div[1]/div/div/div[2]/div/div[1]/div/div[5]/form/div[1]/div[1]/div[2]/div[2]/div[2]/label")
+	public static WebElement VarifyDOB;
 	
 	
 	@FindBy(xpath = "//*[@id='eeContingentBeneficiaryBlock']/div[1]/div/label[3]/span")
@@ -860,11 +877,17 @@ public class Remote {
 	@FindBy(xpath = "//*[@name='eeBeneOtherDOB1']")
 	public static WebElement SeniorProtectSponsorPrimaryBenfDOB;
 	
+	@FindBy(xpath="/html/body/div[2]/div[1]/div[2]/div/div/div[1]/div/div/div[2]/div/div[1]/div/div[5]/form/div[2]/div[1]/div[2]/div[2]/div[2]/label")
+	public static WebElement VarifyDOB2;
+	
 	@FindBy(xpath ="//*[@name='eeBeneOtherRelation1']/option[3]")
 	public static WebElement SeniorProtectSponsorPrimaryBenRelationshipBrother;
 	
 	@FindBy(xpath ="//*[@name='eeBeneOtherRelation1']/option[15]")
 	public static WebElement SeniorProtectSponsorPrimaryBenRelationshipGrandParent;
+	
+	@FindBy(xpath ="//*[@name='eeBeneOtherRelation1']/option[10]")
+	public static WebElement SeniorProtectSponsorPrimaryBenRelationshipFather;
 	
 	
 	
@@ -877,8 +900,14 @@ public class Remote {
 	@FindBy(xpath="//*[@name='eeContBeneOtherSSN1']")
 	public static WebElement SeniorProtrctSponsorContingentSSN;
 	
+	@FindBy(xpath="//*[@name='eeContBeneOtherDOB1']")
+	public static WebElement SeniorProtrctSponsorContingentDOB;
+	
 	@FindBy(xpath="//*[@name='eeContBeneOtherRelation1']/option[21]")
 	public static WebElement SeniorProtrctSponsorContingentRelationshipOther;
+	
+	@FindBy(xpath="//*[@name='eeContBeneOtherRelation1']/option[3]")
+	public static WebElement SeniorProtrctSponsorContingentRelationshipBoyFriend;
 	
 	
 	
@@ -897,6 +926,8 @@ public class Remote {
 	@FindBy(xpath ="//*[@name='spBeneOtherRelation1']/option[29]")
 	public static WebElement SeniorProtectSpousePrimaryBenRelationshipUncle;
 	
+	@FindBy(xpath ="//*[@name='spBeneOtherRelation1']/option[2]")
+	public static WebElement SeniorProtectSpousePrimaryBenRelationshipAunt;
 	
 
 
@@ -917,6 +948,9 @@ public class Remote {
 	
 	@FindBy(xpath ="//*[@name='spContBeneOtherRelation1']/option[17]")
 	public static WebElement SeniorProtectSpouseContingentRelationshipMother;
+	
+	@FindBy(xpath ="//*[@name='spContBeneOtherRelation1']/option[21]")
+	public static WebElement SeniorProtectSpouseContingentRelationshipOther;
 	
 	
 	
@@ -940,6 +974,9 @@ public class Remote {
 	
 	@FindBy(xpath="//*[@name='eeBeneOtherRelation2']/option[21]")
 	public static WebElement FirstProtectSponsorPrimaryRelationshipOther;
+	
+	@FindBy(xpath="//*[@name='eeBeneOtherRelation2']/option[13]")
+	public static WebElement FirstProtectSponsorPrimaryRelationshipGirlFriend;
 	
 	
 	
@@ -979,6 +1016,9 @@ public class Remote {
 	@FindBy(xpath="//*[@name='spBeneOtherRelation2']/option[15]")
 	public static WebElement FirstProtectSpousePrimaryRelationshipGrandParent;
 	
+	@FindBy(xpath="//*[@name='spBeneOtherRelation2']/option[11]")
+	public static WebElement FirstProtectSpousePrimaryRelationshipFatherInLaw;
+	
 	
 	
 	@FindBy(xpath="/html/body/div[2]/div[1]/div[2]/div/div/div[1]/div/div/div[2]/div/div[1]/div/div[5]/form/div[3]/div[4]/div[1]/div/label[3]/span")
@@ -995,6 +1035,9 @@ public class Remote {
 	
 	@FindBy(xpath ="//*[@name='spContBeneOtherRelation2']/option[11]")
 	public static WebElement FirstProtectSpouseContingentRelationshipFatherInLaw;
+	
+	@FindBy(xpath ="//*[@name='spContBeneOtherRelation2']/option[4]")
+	public static WebElement FirstProtectSpouseContingentRelationshipFatherBrother;
 	
 	
 	@FindBy (css=".btn.btn-success.btn-next")
@@ -1032,6 +1075,19 @@ public class Remote {
 	
 	@FindBy(xpath="//*[@id='checkmatic-bank-city-state-zip']")
 	public static WebElement CityStateZip;
+	
+	@FindBy(xpath="//*[@id='credit-card-info']/div[3]/div[2]/select/option[2]")
+	public static WebElement DayOfDeducation1forCreditCard;
+	
+	@FindBy(xpath="//*[@name='credit-card-number']")
+	public static WebElement CreditCardNumber;
+	
+	@FindBy(xpath="//*[@name='expiration-date']")
+	public static WebElement ExpirationDate;
+	
+	@FindBy(xpath="//*[@name='cvv']")
+	public static WebElement CVV;
+	
 	
 	@FindBy(xpath="//*[@id='step6-form']/div[3]/div/label[2]/span")
 	public static WebElement SiginingViaEmail;
@@ -1072,12 +1128,10 @@ public class Remote {
 	@FindBy(xpath = "//*[@class='TN bzz aHS-bnt']/div[2]")
 	public static WebElement ClickInbox;
 	
-	@FindBy(xpath = "/html/body/div[7]/div[3]/div/div[2]/div[1]/div[2]/div/div/div/div/div[2]/div/div[1]/div/div/div[6]/div/div[1]/div[3]/div/table/tbody/tr[1]/td[5]/div[2]")
+	@FindBy(xpath = "/html/body/div[7]/div[3]/div/div[2]/div[1]/div[2]/div/div/div/div/div[2]/div/div[1]/div/div/div[6]/div/div[1]/div[3]/div/table/tbody/tr[1]/td[6]/div/div/div/span/span")
 	public static WebElement SelectFirstEmail;
 	
-	
-	
-	@FindBy(xpath="/html/body/div[7]/div[3]/div/div[2]/div[1]/div[2]/div/div/div/div/div[2]/div/div[1]/div/div[4]/div/table/tr/td[1]/div[2]/div[2]/div/div[3]/div[1]/div/div/div/div/div/div[2]/div/table/tbody/tr[1]/td[1]/span")
+	@FindBy(xpath="/html/body/div[7]/div[3]/div/div[2]/div[1]/div[2]/div/div/div/div/div[2]/div/div[1]/div/div/div[3]/div[2]/div[2]/div[2]/div")
 	public static WebElement selectEmail;
 	
 	@FindBy(xpath = "//*[contains(text(),'Review Application')]")
@@ -1133,6 +1187,9 @@ public class Remote {
 	
 	@FindBy(xpath="//*[contains(text(),'Access agent signing inbox')]")
 	public static WebElement AccessAgentSigningInbox;
+	
+	@FindBy(xpath="//*[@id='pending']/div[3]")
+	public static WebElement NoSigining;
 	
 	@FindBy(xpath="//*[@id='pending-table']/tbody/tr/td[1]/button")
 	public static WebElement SignButton;
