@@ -1,4 +1,4 @@
-@google1
+@google
 Feature: EApp application Remote Signature test feature
 Scenario: EApp application Remote signature test scenarios
 

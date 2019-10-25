@@ -1,6 +1,6 @@
 @Remote2
-Feature: Member LT12, Better Alternative, LT121. All policies for each Applicant have Primary and Contingent Beneficiaries without DOB. Select Payment Checkmatic test feature 
-Scenario: Member LT12, Better Alternative, LT121. All policies for each Applicant have Primary and Contingent Beneficiaries without DOB. Select Payment Checkmatic test scanario
+Feature: Member LT12, Better Alternative, LT121. All policies for each Applicant have Primary and Contingent Beneficiaries without DOB. Select Checkmatic payment test feature 
+Scenario: Member LT12, Better Alternative, LT121. All policies for each Applicant have Primary and Contingent Beneficiaries without DOB. Select Checkmatic payment test scanario
 
 When Click New Enrollment Input Sponsor SSN, Enrollment City and Enrollment State 
 Then click Next and Click Begin Enrollment button
