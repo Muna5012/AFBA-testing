@@ -1,6 +1,6 @@
 @Remote3
-Feature: Member LT12, Better Alternative, LT121. All policies for each Applicant have Primary and Contingent Beneficiaries without SSN. Select credit card Payment test feature 
-Scenario: Member LT12, Better Alternative, LT121. All policies for each Applicant have Primary and Contingent Beneficiaries without SSN. Select credit card Payment test scanario
+Feature: Member LT12, Better Alternative, LT121. All policies for each Applicant have Primary and Contingent Beneficiaries NO SSN. Select credit card Payment test feature 
+Scenario: Member LT12, Better Alternative, LT121. All policies for each Applicant have Primary and Contingent Beneficiaries NO SSN. Select credit card Payment test scanario
 
 When Click New Enrollment enter Sponsor SSN, Enrollment City and Enrollment State 
 Then click Next and select Begin Enrollment button

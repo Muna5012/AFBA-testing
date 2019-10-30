@@ -23,7 +23,7 @@ public class EAppRemote3 extends TestBase {
 	@Then("click Next and select Begin Enrollment button")
 	public void click_Next_and_select_Begin_Enrollment_button() {
 		  Remote.NextBtn.click();
-		//  Remote.BeginEnrollment.click();
+		//Remote.BeginEnrollment.click();
 		  Remote.ClickNewSponsor.click();
 		  act.pause(2000).perform();
 	}
@@ -240,7 +240,7 @@ public class EAppRemote3 extends TestBase {
 
 	@Then("Input Beneficiaries for Better Alternative Spouse Contingent Beneficiary FullName, Relationship and DOB")
 	public void input_Beneficiaries_for_Better_Alternative_Spouse_Contingent_Beneficiary_FullName_Relationship_and_DOB() {
-		Remote.BASpouseContingentSomeOneElse.click();
+		   Remote.BASpouseContingentSomeOneElse.click();
 		   Remote.SpouseContingentFN.sendKeys("Chuck Berry");
 		   Remote.SpouseContingentRelationshipBrother.click();
 		   Remote.spouseContingentDOB.click();
@@ -255,7 +255,7 @@ public class EAppRemote3 extends TestBase {
 
 	@Then("Input Beneficiaries for Senior Protect Sponsor Primary Beneficiary FullName, Relationship and DOB")
 	public void input_Beneficiaries_for_Senior_Protect_Sponsor_Primary_Beneficiary_FullName_Relationship_and_DOB() {
-		 Remote.SeniorProtectSponsorPrimaryBenifSomeoneElse.click();
+		    Remote.SeniorProtectSponsorPrimaryBenifSomeoneElse.click();
 		    Remote.SeniorProtectSponsorPrmaryBenFullName.sendKeys("Muddy Waters");
 		    Remote.SeniorProtectSponsorPrimaryBenRelationshipFather.click();
 		    Remote.SeniorProtectSponsorPrimaryBenfDOB.click();
@@ -378,7 +378,7 @@ public class EAppRemote3 extends TestBase {
 	
 	@Then("Confirmation page select Email Summary enter Email address")
 	public void confirmation_page_select_Email_Summary_enter_Email_address() {
-		 Remote.NextBtn6.click();
+		    Remote.NextBtn6.click();
 		    act.pause(2000).perform();
 			Remote.EmailSummary1.click();
 			act.pause(1000).perform();

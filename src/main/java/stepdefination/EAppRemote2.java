@@ -473,8 +473,6 @@ public class EAppRemote2 extends TestBase {
 		act.pause(2000).perform();
 		Remote.Sign.click();
 		act.pause(3000).perform();
-
-
 	
 		}
 }
