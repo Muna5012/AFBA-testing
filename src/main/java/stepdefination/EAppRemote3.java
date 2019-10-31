@@ -517,22 +517,6 @@ public class EAppRemote3 extends TestBase {
 	}
 
 
-
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	
 	
 	

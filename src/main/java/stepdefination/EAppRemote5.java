@@ -134,7 +134,7 @@ public void enter_Street_Address_City_State_and_Zip_code_numbers() {
 public void enter_Daytime_phone_numbers() {
 	Remote.Phone.click();
     Remote.Phone.sendKeys("7037065961");
-    act.pause(2000).perform();
+    act.pause(3000).perform();
 }
 
 @Then("Click Show Coverage Option to select Sponsor, Spouse, AC and MC Beneficiary Plans")
@@ -145,7 +145,7 @@ public void click_Show_Coverage_Option_to_select_Sponsor_Spouse_AC_and_MC_Benefi
 @Then("Waived BA, FedTerm and Application Member Benefit Products")
 public void waived_BA_FedTerm_and_Application_Member_Benefit_Products() {
     	Remote.WaiveBA.click();
-	   act.pause(1000).perform();
+	   act.pause(2000).perform();
      	Remote.FedTerm.click();
 	   Remote.WaiveFedTerm.click();
 	   act.pause(2000).perform();
@@ -157,6 +157,7 @@ public void senior_Protect_spouse_Customize_twenty_five_thousand_K() {
 	   act.pause(1000).perform();
 	Remote.SeniorProtectNoBenefitForSponsor.click();
 	Remote.SeniorProtectCustomizeClick.click();
+	act.pause(1000).perform();
 	Remote.SeniorProtectSpouseCustomize25.click();
 	act.pause(2000).perform();
 	  Remote.ApplicationMemberBenf.click();
@@ -174,7 +175,7 @@ public void first_Protect_No_Benefit_for_Sponsor_and_Spouse_Customize_fifty_thou
   Remote.FirstProtectAC1Customize50.click();
   Remote.FirstProtectAC2Customize50.click();
   Remote.FirstProtectAC3Customize50.click();
-  act.pause(2000).perform();
+  act.pause(3000).perform();
 }
 
 @Then("Childrens Protect Covered for three MC")
@@ -183,8 +184,7 @@ public void childrens_Protect_Covered_for_three_MC() {
   Remote.CoveredForFirstKid.click();
   Remote.CoveredforSecondKid.click();
   Remote.CoveredForThrid.click();
-  act.pause(2000).perform();
-  act.pause(2000).perform();
+  act.pause(3000).perform();
   Remote.NextBtn2.click();
 }
 
@@ -252,7 +252,7 @@ public void next_page_Answer_All_the_questions() {
 	  Remote.ChildProtectThridMC2.click();
 	  Remote.ChildProtectThridMC3.click();
 	  Remote.ChildProtectThridMC4.click();
-	  act.pause(2000).perform();
+	  act.pause(3000).perform();
 	    Remote.NextBtn2.click();  
 }
 
@@ -261,7 +261,7 @@ public void input_Sponsor_Height_feet_inches_and_Weight() {
 	 Remote.Height6Feet.click();
 	   Remote.Height6Inches.click();
 	   Remote.Weight.sendKeys("230");
-	   act.pause(2000).perform();
+	   act.pause(3000).perform();
 	   Remote.NextBtn2.click();
 }
 
@@ -286,7 +286,7 @@ public void input_Children_Information_SSN_Gender_Height_Weight_Status_Relations
     Remote.ChildOneWeight.sendKeys("124");
     Remote.ChildUSCitizen.click();
     Remote.ChildOneRelationshipParent.click();
-    act.pause(1000).perform();
+    act.pause(2000).perform();
     Remote.ChildTwoSSN.click();
     Remote.ChildTwoSSN.sendKeys("404000029");
     Remote.ChildTwoGenderFamale.click();
@@ -295,7 +295,7 @@ public void input_Children_Information_SSN_Gender_Height_Weight_Status_Relations
     Remote.ChildTwoWeight.sendKeys("127");
     Remote.ChildTwoRelationshipParent.click();
     Remote.ChildTwoUSCitizenm.click();
-    act.pause(1000).perform();
+    act.pause(2000).perform();
     Remote.ChildThreeSSN.click();
     Remote.ChildThreeSSN.sendKeys("404000030");
     Remote.ChildThreeGenderMale.click();
@@ -304,7 +304,7 @@ public void input_Children_Information_SSN_Gender_Height_Weight_Status_Relations
     Remote.ChildThreeWeight.sendKeys("130");
     Remote.ChildThreeUSCitizen.click();
     Remote.ChildThreeRelationshipG.click();
-    act.pause(1000).perform();
+    act.pause(2000).perform();
     
     Remote.Child4SSN.click();
     Remote.Child4SSN.sendKeys("404000031");
@@ -314,7 +314,7 @@ public void input_Children_Information_SSN_Gender_Height_Weight_Status_Relations
     Remote.Child4Weight.sendKeys("154");
     Remote.Child4USCitizenYes.click();
     Remote.Child4RelationshipGrandParent.click();
-    act.pause(1000).perform();
+    act.pause(2000).perform();
     
     Remote.Child5SSN.click();
     Remote.Child5SSN.sendKeys("404000032");
@@ -324,7 +324,7 @@ public void input_Children_Information_SSN_Gender_Height_Weight_Status_Relations
     Remote.Child5Weight.sendKeys("157");
     Remote.Child5USCitizen.click();
     Remote.Child5RelationshipStepParent.click();
-    act.pause(1000).perform();
+    act.pause(2000).perform();
     
     Remote.Child6SSN.click();
     Remote.Child6SSN.sendKeys("404000033");
@@ -334,7 +334,7 @@ public void input_Children_Information_SSN_Gender_Height_Weight_Status_Relations
     Remote.Child6Weight.sendKeys("160");
     Remote.Child6USCitizen.click();
     Remote.Child6RelationshipStepParent.click();
-    act.pause(2000).perform();
+    act.pause(3000).perform();
     Remote.Next.click();
     
 }
@@ -351,6 +351,7 @@ public void senior_Protect_for_Spouse_Contingent_Beneficiary_FullName_SSN_Relati
     Remote.VarifyDOBSpouseContingent.click();
     act.pause(1000).perform();
     Remote.spouseContingentDOB.clear();
+    Remote.spouseContingentDOB.click();
     Remote.spouseContingentDOB.sendKeys("05201979");
     act.pause(1000).perform();
 }
@@ -367,6 +368,7 @@ public void first_Protect_Adult_Child_Nancy_Primary_Beneficiary_FullName_SSN_Rel
   Remote.VarifyDOBAC1.click();
   act.pause(1000).perform();
   Remote.AC1FirstProtectPrimaryDOB.clear();
+  Remote.AC1FirstProtectPrimaryDOB.click();
   Remote.AC1FirstProtectPrimaryDOB.sendKeys("04101959");
   act.pause(1000).perform();
 }
@@ -383,6 +385,7 @@ public void first_Protect_Adult_Child_Nancy_Contingent_Beneficiary_FullName_SSN_
    Remote.AC1FirstProtectContingentDOBVarify.click();
    act.pause(1000).perform();
    Remote.AC1FirstProtectContingentDOB.clear();
+   Remote.AC1FirstProtectContingentDOB.click();
    Remote.AC1FirstProtectContingentDOB.sendKeys("01291963");
    act.pause(1000).perform();
 }
@@ -399,6 +402,7 @@ public void first_Protect_Adult_Child_Olivia_Primary_Beneficiary_FullName_SSN_Re
    Remote.AC1FirstProtectContingentDOBVarify.click();
    act.pause(1000).perform();
    Remote.AC2FirstProtectPrimaryDOB.clear();
+   Remote.AC2FirstProtectPrimaryDOB.click();
    Remote.AC2FirstProtectPrimaryDOB.sendKeys("09161998");
    act.pause(1000).perform();
 }
@@ -415,6 +419,7 @@ public void first_Protect_Dult_Child_Olivia_Contingent_Beneficiary_FullName_SSN_
     Remote.AC2FirstProtectContingentDOBVarify.click();
     act.pause(1000).perform();
     Remote.AC2FirstProtectContingentDOB.clear();
+    Remote.AC2FirstProtectContingentDOB.click();
     Remote.AC2FirstProtectContingentDOB.sendKeys("02211954");
     act.pause(1000).perform();
 }
@@ -431,6 +436,7 @@ public void first_Protect_Adult_Child_Pia_Primary_Beneficiary_FullName_SSN_Relat
 	Remote.AC2FirstProtectContingentDOBVarify.click();
 	act.pause(1000).perform();
 	Remote.AC3FirstProtectPrimaryDOB.clear();
+	Remote.AC3FirstProtectPrimaryDOB.click();
 	Remote.AC3FirstProtectPrimaryDOB.sendKeys("08282010");
 	act.pause(1000).perform();
 }
@@ -446,9 +452,9 @@ public void first_Protect_Adult_Child_Pia_Contingent_Beneficiary_FullName_SSN_Re
     Remote.AC3FirstProtectContingentDOB.sendKeys("07041850");
     Remote.AC2FirstProtectContingentDOBVarify.click();
     act.pause(1000).perform();
-    Remote.AC3FirstProtectPrimaryDOB.clear();
-    Remote.AC3FirstProtectPrimaryDOB.click();
-    Remote.AC3FirstProtectPrimaryDOB.sendKeys("07041950");
+    Remote.AC3FirstProtectContingentDOB.clear();
+    Remote.AC3FirstProtectContingentDOB.click();
+    Remote.AC3FirstProtectContingentDOB.sendKeys("07041950");
     act.pause(1000).perform();
 }
 
@@ -464,6 +470,7 @@ public void child_Protect_Minor_Child_Roman_Primary_Beneficiary_FullName_SSN_Rel
    Remote.MC1ChildProtectContingentDOBVarify.click();
    act.pause(1000).perform();
    Remote.MC1ChildProtectPrimaryDOB.clear();
+   Remote.MC1ChildProtectPrimaryDOB.click();
    Remote.MC1ChildProtectPrimaryDOB.sendKeys("06221992");
    act.pause(1000).perform();
 }
@@ -480,6 +487,7 @@ public void child_Protect_Minor_Child_Steve_Primary_Beneficiary_FullName_SSN_Rel
    Remote.MC2ChildProtectContingentDOBVarify.click();
    act.pause(1000).perform();
    Remote.MC2ChildProtectPrimaryDOB.clear();
+   Remote.MC2ChildProtectPrimaryDOB.click();
    Remote.MC2ChildProtectPrimaryDOB.sendKeys("12121991");
    act.pause(1000).perform();
 }
@@ -496,6 +504,7 @@ public void child_Protect_Minor_Child_Travis_Primary_Beneficiary_FullName_SSN_Re
    Remote.MC3ChildProtectContingentDOBVarify.click();
    act.pause(1000).perform();
    Remote.MC3ChildProtectPrimaryDOB.clear();
+   Remote.MC3ChildProtectPrimaryDOB.click();
    Remote.MC3ChildProtectPrimaryDOB.sendKeys("11151996");
    act.pause(2000).perform();
    Remote.NextBtn6.click();
