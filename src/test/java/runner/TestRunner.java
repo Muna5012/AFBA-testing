@@ -21,8 +21,7 @@ import cucumber.api.junit.Cucumber;
 		,glue = "stepdefination",
 		dryRun = false,
 		//tags = {"@Test05","@Test06","@Test07"}
-		tags = {"@eApp15"}
-		
+		tags = {"@Remote5"}
 		)
 
 public class TestRunner {
