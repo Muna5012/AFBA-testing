@@ -1053,6 +1053,9 @@ public class Remote {
 	@FindBy(xpath="//*[@name='height_inches_8']/option[10]")
 	public static WebElement Child6Inches8;
 	
+	@FindBy(xpath="//*[@name='height_inches_8']/option[8]")
+	public static WebElement Child6Inches6;
+	
 	@FindBy(xpath="//*[@name='height_inches_8']/option[9]")
 	public static WebElement Child6Inches7;
 	
@@ -1104,6 +1107,9 @@ public class Remote {
 	public static WebElement PrimaryRelationshipGirlFriend;
 	
 	@FindBy(xpath ="//*[@name='eeBeneOtherRelation0']/option[16]")
+	public static WebElement PrimaryRelationshipGuardian;
+
+	@FindBy(xpath="//*[@name='eeBeneOtherRelation0']/option[17]")
 	public static WebElement PrimaryRelationshipMother;
 	
 	@FindBy(xpath ="//*[@name='eeBeneOtherRelation0']/option[21]")
@@ -1120,6 +1126,7 @@ public class Remote {
 	
 	@FindBy(xpath="/html/body/div[2]/div[1]/div[2]/div/div/div[1]/div/div/div[2]/div/div[1]/div/div[5]/form/div[1]/div[1]/div[2]/div[2]/div[2]/label")
 	public static WebElement VarifyDOB;
+	
 	
 	
 	@FindBy(xpath = "//*[@id='eeContingentBeneficiaryBlock']/div[1]/div/label[3]/span")
@@ -1431,6 +1438,9 @@ public class Remote {
 	@FindBy(xpath="//*[@name='chBeneOtherRelation1_0']/option[21]")
 	public static WebElement AC1FirstProtectPrimaryRelationshipOther;
 	
+	@FindBy(xpath="//*[@name='chBeneOtherRelation1_0']/option[12]")
+	public static WebElement ACFirstProtectPrimaryRelationshipFiance;
+	
 	@FindBy(xpath="//*[@name='chBeneOtherDOB1_0']")
 	public static WebElement AC1FirstProtectPrimaryDOB;
 	
@@ -1452,6 +1462,9 @@ public class Remote {
 	
 	@FindBy(xpath="//*[@name='chContBeneOtherRelation1_0']/option[18]")
 	public static WebElement AC1FirstProtectContingentRelationshipMotherInLaw;
+	
+	@FindBy(xpath="//*[@name='chContBeneOtherRelation1_0']/option[27]")
+	public static WebElement AC1FirstProtectContingentRelationshipStepParent;
 	
 	@FindBy(xpath="//*[@name='chContBeneOtherDOB1_0']")
 	public static WebElement AC1FirstProtectContingentDOB;
@@ -1475,6 +1488,9 @@ public class Remote {
 	
 	@FindBy(xpath="//*[@name='chBeneOtherRelation1_1']/option[13]")
 	public static WebElement AC2FirstProtectPrimaryRelationshipGirlFriend;
+	
+	@FindBy(xpath="//*[@name='chBeneOtherRelation1_1']/option[21]")
+	public static WebElement AC2FirstprotectPrimaryRelationshipOther;
 	
 	@FindBy(xpath="//*[@name='chBeneOtherDOB1_1']")
 	public static WebElement AC2FirstProtectPrimaryDOB;
@@ -1519,6 +1535,9 @@ public class Remote {
 	@FindBy(xpath="//*[@name='chBeneOtherRelation1_2']/option[2]")
 	public static WebElement AC3FirstProtectPrimaryRelationshipAunt;
 	
+	@FindBy(xpath="//*[@name='chBeneOtherRelation1_2']/option[29]")
+	public static WebElement AC3FirstProtectPrimaryRelationshipUncle;
+	
 	@FindBy(xpath="//*[@name='chBeneOtherDOB1_2']")
 	public static WebElement AC3FirstProtectPrimaryDOB;
 	
@@ -1532,6 +1551,9 @@ public class Remote {
 	
 	@FindBy(xpath="//*[@name='chContBeneOtherSSN1_2']")
 	public static WebElement AC3FirstProtectContingentSSN;
+	
+	@FindBy(xpath="//*[@name='chContBeneOtherRelation1_2']/option[2]")
+	public static WebElement AC3FirstProtectContingentRelationshipAunt;
 	
 	@FindBy(xpath="//*[@name='chContBeneOtherRelation1_2']/option[4]")
 	public static WebElement AC3FirstProtectContingentRelationshipBrother;
@@ -1559,6 +1581,9 @@ public class Remote {
 	@FindBy(xpath="//*[@name='chBeneOtherRelation2_0']/option[9]")
 	public static WebElement MC1ChildProtectPrimaryRelationshipExSpouse;
 	
+	@FindBy(xpath="//*[@name='chBeneOtherRelation2_0']/option[15]")
+	public static WebElement MC1ChildProtectPrimaryRelationshipGrandParent;
+	
 	@FindBy(xpath="//*[@name='chBeneOtherDOB2_0']")
 	public static WebElement MC1ChildProtectPrimaryDOB;
 	
@@ -1584,6 +1609,9 @@ public class Remote {
 	@FindBy(xpath="//*[@name='chContBeneOtherRelation2_0']/option[8]")
 	public static WebElement MC1ChildProtectContingentRelationshipEstate;
 	
+	@FindBy(xpath="//*[@name='chContBeneOtherRelation2_0']/option[15]")
+	public static WebElement MC1ChildProtectContingentRelationshipGrandParent;
+	
 	
 	
 	@FindBy(xpath="/html/body/div[2]/div[1]/div[2]/div/div/div[1]/div/div/div[2]/div/div[1]/div/div[5]/form/div[3]/div[6]/div[4]/div/label[2]/span")
@@ -1600,6 +1628,9 @@ public class Remote {
 	
 	@FindBy(xpath="//*[@name='chBeneOtherRelation2_1']/option[2]")
 	public static WebElement MC2ChildProtectPrimaryRelationshipAUnt;
+	
+	@FindBy(xpath="//*[@name='chBeneOtherRelation2_1']/option[21]")
+	public static WebElement MC2ChildProtectPrimaryRelationshipOther;
 	
 	@FindBy(xpath="//*[@name='chBeneOtherDOB2_1']")
 	public static WebElement MC2ChildProtectPrimaryDOB;
@@ -1624,6 +1655,9 @@ public class Remote {
 	@FindBy(xpath="//*[@name='chContBeneOtherRelation2_1']/option[28]")
 	public static WebElement MC2ChildProtectContingentRelationshipTrust;
 	
+	@FindBy(xpath="//*[@name='chContBeneOtherRelation2_1']/option[3]")
+	public static WebElement MC2ChildProtectContingentRelationshipBoyFriend;
+	
 	@FindBy(xpath="//*[@name='chContBeneOtherDOB2_1']")
 	public static WebElement MC2ChildProtectContingentDOB;
 	
@@ -1644,12 +1678,14 @@ public class Remote {
 	@FindBy(xpath="//*[@name='chBeneOtherRelation2_2']/option[4]")
 	public static WebElement MC3ChildProtectPrimaryRelationshipBrother;
 	
+	@FindBy(xpath="//*[@name='chBeneOtherRelation2_2']/option[28]")
+	public static WebElement MC3ChildProtectPrimaryRelationshipTrust;
+	
 	@FindBy(xpath="//*[@name='chBeneOtherDOB2_2']")
 	public static WebElement MC3ChildProtectPrimaryDOB;
 	
 	@FindBy(xpath="/html/body/div[2]/div[1]/div[2]/div/div/div[1]/div/div/div[2]/div/div[1]/div/div[5]/form/div[3]/div[6]/div[8]/div[2]/div[2]/label")
 	public static WebElement MC3ChildProtectContingentDOBVarify;
-	
 	
 	@FindBy(xpath="/html/body/div[2]/div[1]/div[2]/div/div/div[1]/div/div/div[2]/div/div[1]/div/div[5]/form/div[3]/div[6]/div[9]/div[1]/div/label[3]/span")
 	public static WebElement MC3ChildProtectContingentSomeoneElse;
@@ -1665,6 +1701,9 @@ public class Remote {
 	
 	@FindBy(xpath="//*[@name='chContBeneOtherRelation2_2']/option[4]")
 	public static WebElement MC3ChildProtectContingentRelationshipBrother;
+	
+	@FindBy(xpath="//*[@name='chContBeneOtherRelation2_2']/option[4]")
+	public static WebElement MC3ChildProtectContingentRelationshipGuardian;
 	
 	@FindBy(xpath="//*[@name='chContBeneOtherDOB2_2']")
 	public static WebElement MC3ChildProtectContingentDOB;

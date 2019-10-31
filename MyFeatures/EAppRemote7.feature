@@ -22,5 +22,36 @@ And First Protect select Tobacco for sponsor, spouse, AC1 and Customize fifty th
 Then Children Protect Covered three MC
 And Answer all the questions Yes or NO for Qualification page
 Then Input Sponsor Information include Height and Weight 
-And Input Spouse Information include SSN, Gender, Height and Weight
 Then Input Children Information include SSN, Gender, Height, Weight, Status, Relationship
+
+And Senior Protect Primary Beneficiary of SPonsor Coverage beneficiary FullName, Relationship and DOB
+Then Senior Protect Contingent Beneficiary of Sponsor Coverage beneficiary FullName, Relationship and DOB
+And First Protect first Adult Child Primary Beneficiary FullName, Relationship and DOB
+Then First Protect first Adult Child Contingent Beneficiary FullName, Relationship and DOB
+And First Protect second Adult Child Primary Beneficiary FullName, Relationship and DOB
+Then First Protect second Adult Child Contingent Beneficiary FullName, Relationship and DOB
+And First Protect last Adult Child Primary Beneficiary FullName, Relationship and DOB
+Then First Protect last Asult Child Contingent Beneficiary FullName, Relationship and DOB
+
+And Children Protect first Minor Child Lillith Primary Beneficiary FullName, Relationship and DOB
+Then Children Protect first Minor Child Lillith Contingent Bneficiary FullName, Relationship and DOB
+And Children Protect second Minor Child Milton Primary Benedficiary FullName, Relastionship and DOB
+Then Children Protect second Minor Child Milton Contingent Beneficiary FullName, Relationship and DOB
+And Children Protect Minor Child Isabella Primary Beneficiary FullName, Relationship and DOB
+Then Children protect Minor Child Isabella Contingent Beneficiary FullName, Relationship and DOB
+
+Then Confirmation page select Email Summary enter Email address for Coverage Confirmation
+And Enter Credit Card Number, Expiration Date and CVV 
+And Select Singing Via Email and input Email address for Routing application
+Then Click Submit and Send Email for Signature button to submit it
+
+And Login Email account to input Username and Password
+Then Select Inbox and check Email from AFBA Enrollment  
+Then Enter sponsor Last Name and Last four SSN 
+And Click Review and Sign My Application button 
+Then Click Review Application Ducument button to review all application
+And Input sponsor and spouse Last Name and last four SSN
+Then Select Paper option to receive the document 
+
+
+
