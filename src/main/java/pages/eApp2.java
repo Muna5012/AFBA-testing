@@ -17,6 +17,9 @@ public class EApp2 {
 	@FindBy(xpath="//*[contains(text(),'IT_QA Automation Call Center')]")
 	public static WebElement SearchITAutomationCallCenter;
 	
+	@FindBy(xpath="//*[contains(text(),'IT_QA Automation Face2Face')]")
+	public static WebElement SearchITQAAutomationFace2Face;
+	
 	@FindBy(xpath = "//*[@id='add-to-census-btn']")
 	public static WebElement NewEnrollement;
 	
@@ -1015,6 +1018,18 @@ public class EApp2 {
 	
 	@FindBy (xpath="//*[@id='coverageEmailRepeat']")
 	public static WebElement EmailSummaryConfirm2;
+	
+	@FindBy(xpath="//*[@id='step6-form']/div[3]/div/label[2]/span")
+	public static WebElement SiginingViaEmail;
+	
+	@FindBy(xpath="//*[@id='step6-form']/div[4]/div[1]/div[2]/div/input")
+	public static WebElement EnterEmailOne;
+	
+	@FindBy(xpath="//*[@id='sponsor-sig-email-repeat']")
+	public static WebElement EnterEmailTwo;
+	
+	@FindBy(xpath="//*[contains(text(),'Submit and send email for signature')]")
+	public static WebElement SubmitEmailForsignatureBtn;
 	
 	@FindBy(xpath= "//*[@id='military_allotment_payment_started']")
 	public static WebElement AcknowledgeofPayment;
