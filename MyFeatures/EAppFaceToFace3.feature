@@ -1,4 +1,4 @@
-@eApp3
+@face3
 Feature: EApp Application Better Alternative test, state specific NC which SOH is five questions, this product include Contingent Beneficiary FaceToFace test feature
 Scenario: EApp Application Better Alternative test, state specific NC which SOH is five questions, this product include Contingent Beneficiary test scenarios
 

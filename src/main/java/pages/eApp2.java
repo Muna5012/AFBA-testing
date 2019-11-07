@@ -11,6 +11,9 @@ public class EApp2 {
 	@FindBy(xpath = "//*[@type='search']")
 	public static WebElement searchSpace;
 	
+	@FindBy(xpath="/html/body/div[1]/ul/li[1]/a")
+	public static WebElement Home;
+	
 	@FindBy(xpath = "//*[contains(text(),'IT_QA Automation Face2Face Remote')]")
 	public static WebElement SearchAFBACase;
 	

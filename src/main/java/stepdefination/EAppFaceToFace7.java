@@ -11,13 +11,15 @@ public class EAppFaceToFace7 extends TestBase{
 
 	@When("Home page to click Manage Cases button")
 	public void home_page_to_click_Manage_Cases_button() {
+		EApp2.Home.click();
+		act.pause(2000).perform();
 		EApp2.ManageCaseButton.click();
 	}
 
 	@Then("Search AFBA cases")
 	public void search_AFBA_cases() {
 		EApp2.searchSpace.click();
-		EApp2.searchSpace.sendKeys("IT_QA Automation Face2Face Remote");
+		EApp2.searchSpace.sendKeys("IT_QA Automation Face2Face");
 	}
 
 	@Then("Click the AFBA case Owner Agent Hugh Wang")

@@ -1,4 +1,4 @@
-@eApp1
+@face1
 Feature: EApp application Better Alternative test state specific TX SOH is six questions, include continegent beneficiary FaceToFace test feature 
 Scenario:  EApp application Better Alternative test state specific TX SOH is six questions, include continegent beneficiary test scenarios
 

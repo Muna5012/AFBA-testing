@@ -1,4 +1,4 @@
-@eApp7
+@face7
 Feature: Better Alternative FedTerm (LT12) With Adult Child first protect (LT15) and Enrollment state specific MO. Both LT12 or LT15 Contingent Beneficiary test feature
 Scenario: Better Alternative FedTerm (LT12) With Adult Child first protect (LT15) and Enrollment state specific MO. Both LT12 or LT15 Contingent Beneficiary test
 

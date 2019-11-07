@@ -6,13 +6,16 @@ import cucumber.api.java.en.When;
 import pages.EApp1;
 import pages.EApp2;
 import pages.GoogleLoginPage;
+import pages.Remote;
 import utilities.TestBase;
 
 public class EAppFaceToFace2 extends TestBase {
 
 	@When("Click Manage cases button")
 	public void click_Manage_cases_button() {
-		EApp2.ManageCaseButton.click();
+		EApp2.Home.click();
+		act.pause(2000).perform();
+		EApp2.ManageCaseButton.click();	
 	}
 
 	@Then("Manage Case Page search to find AFBA case")
@@ -327,13 +330,13 @@ public class EAppFaceToFace2 extends TestBase {
 
 	@Then("Click InBox on Google account and Select first Email")
 	public void click_InBox_on_Google_account_and_Select_first_Email() {
-		GoogleLoginPage.ClickSelect.click();
+		Remote.ClickSelect.click();
 		act.pause(1000).perform();
-		GoogleLoginPage.ClickEmail.click();
+		Remote.ClickEmail.click();
 		act.pause(2000).perform();
-		GoogleLoginPage.ClickInbox.click();
-		GoogleLoginPage.SelectFirstEmail.click();
-		GoogleLoginPage.selectEmail.click();
+		//Remote.ClickInbox.click();
+		Remote.SelectFirstEmail.click();
+		act.pause(2000).perform();
 	}
 
 	@Then("Click Review Application Button to signin")

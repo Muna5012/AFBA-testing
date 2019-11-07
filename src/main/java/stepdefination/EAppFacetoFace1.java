@@ -11,6 +11,8 @@ public class EAppFacetoFace1 extends TestBase{
 	
 	@When("HomePage to click Manage cases button")
 	public void homepage_to_click_Manage_cases_button() {
+		EApp2.Home.click();
+		act.pause(2000).perform();
 	 EApp1.ManageCaseButton.click();
 	}
 
@@ -255,9 +257,6 @@ public class EAppFacetoFace1 extends TestBase{
 	  act.pause(1000).perform();
 	  EApp2.SubmitEmailForsignatureBtn.click();
 	  act.pause(5000).perform();  
-	  
-	  
-	  
 	}
 
 //	@Then("Click I agree to this coverage and ready to sign button")

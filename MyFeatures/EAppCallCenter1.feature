@@ -1,4 +1,4 @@
-@eApp11
+@callCenter1
 Feature: Senior Protect LT121 generic NC. Contingent Beneficiary test feature 
 Scenario:  Senior Protect LT121 generic NC. Contingent Beneficiary test scanario
 

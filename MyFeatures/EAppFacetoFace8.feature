@@ -1,4 +1,4 @@
-@eApp8
+@face8
 Feature: FedTerm (LT12) With two Adult Child and First Protect (LT15), Enrollment state specific NC. Both LT12 or LT15 Contingent Beneficiary FacetoFace test feature
 Scenario: Better Alternative FedTerm (LT12) With Adult Child first protect (LT15) and Enrollment state specific NC. Both LT12 or LT15 Contingent Beneficiary  test scenarios
 

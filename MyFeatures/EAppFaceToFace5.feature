@@ -1,4 +1,4 @@
-@eApp5
+@face5
 Feature: EApp Application Better Alternative with Child Rider Group Free test, state specific NC which SOH is five questions amd both products Contingent Beneficiary FaceToFace test feature
 Scenario: EApp Application Better Alternative with Child Rider Group Free test, state specific NC which SOH is five questions amd both products Contingent Beneficiary test scenarios
 

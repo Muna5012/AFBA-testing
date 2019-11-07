@@ -1,4 +1,4 @@
-@eApp9
+@face9
 Feature: Senior Protect LT121 generic NV. sponsor and spouse Contingent Beneficiary FaceToFace test feature 
 Scenario: Senior Protect LT121 generic NV. sponsor and spouse Contingent Beneficiary test scanario
 

@@ -1,4 +1,4 @@
-@eApp2
+@face2
 Feature: EApp application Better Alternative Group Free test, state specific TX, SOH include six questions, both product Coningent Beneficiary FaceToFace test feature 
 Scenario: EApp application Better Alternative Group Free test, state specific TX, SOH include six questions, both product coningent beneficiary test scenarios
 

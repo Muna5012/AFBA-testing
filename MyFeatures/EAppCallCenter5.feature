@@ -1,4 +1,4 @@
-@eApp15
+@callCenter5
 Feature: Better Alternative, Fed Term, Senior Protect and First protect With Adullt child and Minior Child test feature 
 Scenario: : Better Alternative, Fed Term, Senior Protect and First protect With Adullt child and Minior Child Enrollement state GU test scanario
 

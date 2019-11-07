@@ -1,4 +1,4 @@
-@eApp10
+@face10
 Feature: Senior Protect and Group Free LT121 generic FL. sponsor Contingent Beneficiary test feature 
 Scenario:  Senior Protect and Group Free LT121 generic FL. sponsor Contingent Beneficiary test scanario
 

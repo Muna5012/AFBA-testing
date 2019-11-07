@@ -1,4 +1,4 @@
-@eApp12
+@callCenter2
 Feature: Minor Children(MC) only with Child Protect (LT16) specific DC area test feature 
 Scenario: Minor Children(MC) only with Child Protect (LT16) specific DC area test scanario
 
