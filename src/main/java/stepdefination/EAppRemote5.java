@@ -24,6 +24,7 @@ public void click_New_Enrollment_button_input_Sponsor_SSN_Enrollment_city_and_En
 @Then("Select Begin Enrollment button to create case")
 public void select_Begin_Enrollment_button_to_create_case() {
 	Remote.NextBtn.click();
+	act.pause(1000).perform();
   //  Remote.BeginEnrollment.click();
 	Remote.ClickNewSponsor.click();
 	act.pause(2000).perform();
@@ -45,6 +46,7 @@ public void select_Married_button_and_input_spouse_firstName_lastName_and_DOB() 
 	Remote.MarriedBtn.click();
     Remote.SpouseFN.sendKeys("Melody");
     Remote.SpouseLN.sendKeys("Jackson");
+    act.pause(1000).perform();
     Remote.SpouseDOB.click();
     act.pause(1000).perform();
     Remote.SpouseDOB.sendKeys("06171969");
@@ -132,6 +134,7 @@ public void enter_Street_Address_City_State_and_Zip_code_numbers() {
 
 @Then("Enter Daytime phone numbers")
 public void enter_Daytime_phone_numbers() {
+	
 	Remote.Phone.click();
     Remote.Phone.sendKeys("7037065961");
     act.pause(3000).perform();
@@ -402,6 +405,7 @@ public void first_Protect_Adult_Child_Olivia_Primary_Beneficiary_FullName_SSN_Re
    Remote.AC1FirstProtectContingentDOBVarify.click();
    act.pause(1000).perform();
    Remote.AC2FirstProtectPrimaryDOB.clear();
+   act.pause(1000).perform();
    Remote.AC2FirstProtectPrimaryDOB.click();
    Remote.AC2FirstProtectPrimaryDOB.sendKeys("09161998");
    act.pause(1000).perform();
