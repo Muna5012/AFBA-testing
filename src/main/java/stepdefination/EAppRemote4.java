@@ -23,7 +23,7 @@ public class EAppRemote4 extends TestBase {
 	@Then("click Next button and Select Begin Enrollment button")
 	public void click_Next_button_and_Select_Begin_Enrollment_button() {
 			Remote.NextBtn.click();
-		//    Remote.BeginEnrollment.click();
+		//  Remote.BeginEnrollment.click();
 			Remote.ClickNewSponsor.click();
 			act.pause(2000).perform();
 	}
@@ -44,8 +44,8 @@ public class EAppRemote4 extends TestBase {
 		Remote.MarriedBtn.click();
 	    Remote.SpouseFN.sendKeys("Andres");
 	    Remote.SpouseLN.sendKeys("Rojas");
-	    Remote.SpouseDOB.click();
 	    act.pause(1000).perform();
+	    Remote.SpouseDOB.click();
 	    Remote.SpouseDOB.sendKeys("10201969");
 	}
 

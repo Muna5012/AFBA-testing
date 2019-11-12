@@ -84,7 +84,7 @@ public class EAppRemote6 extends TestBase {
 		Remote.AddChildBtn.click();
 		Remote.ChildFourFN.sendKeys("Ibis");
 		Remote.ChildFourDOB.click();
-		Remote.ChildFourDOB.sendKeys("11042001");
+		Remote.ChildFourDOB.sendKeys("11042003");
 		act.pause(1000).perform();
 	}
 
@@ -93,7 +93,7 @@ public class EAppRemote6 extends TestBase {
 		Remote.AddChildBtn.click();
 	    Remote.ChildFifthFN.sendKeys("Jayda");
 	    Remote.ChildFifthDOB.click();
-	    Remote.ChildFifthDOB.sendKeys("11052001");
+	    Remote.ChildFifthDOB.sendKeys("11052003");
 	    act.pause(1000).perform();
 	}
 
@@ -102,7 +102,7 @@ public class EAppRemote6 extends TestBase {
 		Remote.AddChildBtn.click();
 		Remote.ChildSixFN.sendKeys("Kyra");
 		Remote.ChildSixDOB.click();
-		Remote.ChildSixDOB.sendKeys("11062001");
+		Remote.ChildSixDOB.sendKeys("11062003");
 		act.pause(2000).perform();
 	}
 	
