@@ -13,11 +13,11 @@ public class Hooks extends TestBase {
 		  SetUp();
 		}
 		
-		@Before(order = 5)
-		public void remotelogin() {
-			RemoteLogIn();
-			
-		}
+//		@Before(order = 5)
+//		public void remotelogin() {
+//			RemoteLogIn();
+//			
+//		}
 		
 //		@Before(order = 2)
 //		public void login() {
@@ -37,6 +37,11 @@ public class Hooks extends TestBase {
 //			
 //		}
 		
+		@Before(order = 4)
+		public void memberportal() {
+			MemberPortal();
+			
+		}
 	
 		
 		@After

@@ -73,6 +73,9 @@ public class AllPagefactories extends TestBase{
 		
 			PageFactory.initElements(driver, RemoteLoginPage.class);
 	
+			PageFactory.initElements(driver, AFBAMemberPortalLoginPage.class);
+			
+			PageFactory.initElements(driver, AFBACustomerPortalMainPage.class);
 			
 			// here I must write all the page' classes' Page Factory
 			
