@@ -41,8 +41,18 @@ public class AFBACustomerPortalMainPage {
 	@FindBy(xpath="//*[@name='Mainmenu:j_id41:j_id42:theForm:j_id61']")
 	public static WebElement EditContactInformationBtn;
 	
+	@FindBy(xpath="//*[@id='Mainmenu:j_id41:j_id42:j_id48']/div[1]/div/div[2]/p")
+	public static WebElement GetNameOfText;
+	
+	
 	@FindBy(xpath="//*[@id='toggleBtnPwd']")
 	public static WebElement EditPasswordClick;
+	
+	@FindBy(xpath="//*[@id='Mainmenu:j_id41:j_id42:j_id48:passwordContainer']/div[1]/h2")
+	public static WebElement GetTextChangePassword;
+	
+	@FindBy(xpath="//*[@id='Mainmenu:j_id41:j_id42:j_id48:passwordContainer']/div[2]/div")
+	public static WebElement GetTextOldNewConfirmPassword;
 	
 	@FindBy(xpath="//*[@id='Mainmenu:j_id41:j_id42:j_id48:oldPasswordid']")
 	public static WebElement OldPassword;
@@ -59,8 +69,26 @@ public class AFBACustomerPortalMainPage {
 	@FindBy(xpath="//*[@id='Mainmenu:j_id41:j_id42:j_id48:j_id249']")
 	public static WebElement ClickOKForSaveNewPassword;
 	
+	@FindBy(xpath="//*[@id='Mainmenu:j_id41:j_id42:j_id48:changepasswordFooter']/a")
+	public static WebElement ClickCancel;
+	
 	@FindBy(xpath="/html/body/div/div/div/div/section/div[1]/form/span[2]/div/div[3]/div/div/a")
 	public static WebElement EditAddressBtn;
+	
+	@FindBy(xpath="//*[contains(text(),'Address Change')]")
+	public static WebElement GetTextOfAddressChange;
+	
+	@FindBy(xpath="//*[contains(text(),'Mailing Street')]")
+	public static WebElement GetTextOfMallingStreet;
+	
+	@FindBy(xpath="//*[contains(text(),'Mailing City')]")
+	public static WebElement GetTextOfMallingCity;
+	
+	@FindBy(xpath="//*[contains(text(),'Mailing State')]")
+	public static WebElement GetTextOfMallingState;
+	
+	@FindBy(xpath="//*[contains(text(),'Mailing Zip Code')]")
+	public static WebElement GetTextOfMallingZipCode;
 	
 	@FindBy(xpath="//*[@id='Mainmenu:j_id41:j_id42:j_id48:mailingStreetId']")
 	public static WebElement MaillingStreet;
@@ -77,14 +105,23 @@ public class AFBACustomerPortalMainPage {
 	@FindBy(xpath="//*[@id='Mainmenu:j_id41:j_id42:j_id48:mailingZipId']")
 	public static WebElement MaillingZipCode;
 	
-	@FindBy(xpath="//*[@id='Mainmenu:j_id41:j_id42:j_id48:j_id334']")
+	@FindBy(xpath="//*[@name='Mainmenu:j_id41:j_id42:j_id48:j_id336']")
 	public static WebElement SaveBtn;
 	
-	@FindBy(xpath="//*[@id='Mainmenu:j_id41:j_id42:j_id48:j_id335']")
+	@FindBy(xpath="//*[@name='Mainmenu:j_id41:j_id42:j_id48:j_id337']")
 	public static WebElement ClickOKForSaveNewAddress;
 	
 	@FindBy(xpath="//*[@id='Mainmenu:j_id41:j_id42:j_id48:emailid']")
 	public static WebElement EditEmailAddress;
+	
+	@FindBy(xpath="//*[@id='Mainmenu:j_id41:j_id42:j_id48:emailContainer']/div[1]/h2")
+	public static WebElement GetTextOfChnageEmail;
+	
+	@FindBy(xpath="//label[contains(text(),'Email Address')]")
+	public static WebElement GetTextofEmail;
+	 
+	@FindBy(xpath="//div[contains(text(),'This action')]")
+	public static WebElement GetTextOfEmailNotice;
 	
 	@FindBy(xpath="//*[@id='toggleBtnEmail']")
 	public static WebElement EmailAddressChange;
@@ -98,10 +135,23 @@ public class AFBACustomerPortalMainPage {
 	@FindBy(xpath="//*[@id='Mainmenu:j_id41:j_id42:j_id48:emailFooter']/a")
 	public static WebElement ClickCancelForNewEmail;
 	
-	
+	@FindBy(xpath="//*[@id='Mainmenu:j_id41:j_id42:j_id48:emailFooter']/a")
+	public static WebElement CloseNewEmailChange;
 	
 	@FindBy(xpath="/html/body/div/div/div/div/section/div[1]/form/span[2]/div/div[2]/div/div/a")
 	public static WebElement EditMilitarySalutation;
+	
+	@FindBy(xpath="//*[contains(text(),'Salutation Change')]")
+	public static WebElement GetTextOfSalutationChange;
+	
+	@FindBy(xpath="//*[contains(text(),'Branch of Service')]")
+	public static WebElement GetTextOfBOS;
+	
+	@FindBy(xpath="//*[contains(text(),'Rank')]")
+	public static WebElement GetTextOfRank;
+	
+	@FindBy(xpath="//*[contains(text(),'Rank')]")
+	public static WebElement GetTextDutyStatus;
 	
 	@FindBy(xpath="//*[@id='Mainmenu:j_id41:j_id42:j_id48:eligibility']")
 	public static WebElement BranchOfServiceClick;
@@ -139,6 +189,12 @@ public class AFBACustomerPortalMainPage {
 	@FindBy(xpath="//*[@class='slds-grid slds-wrap']/div[4]/div/div/a")
 	public static WebElement EditPrimaryPhoneNumber;
 	
+	@FindBy(xpath="//*[@id='Mainmenu:j_id41:j_id42:j_id48:phoneContainer']/div[1]/h2")
+	public static WebElement GetTextOfChangePhone;
+	
+	@FindBy(xpath="//*[@id='Mainmenu:j_id41:j_id42:j_id48:phoneContainer']/div[2]/div/div/label")
+	public static WebElement GetTextOfPhoneNumber;
+	
 	@FindBy(xpath="//*[@id='Mainmenu:j_id41:j_id42:j_id48:phoneNumberid']")
 	public static WebElement InputPhoneNumberForChange;
 	
@@ -151,13 +207,19 @@ public class AFBACustomerPortalMainPage {
 	@FindBy(xpath="//*[@class='slds-grid slds-wrap']/div[6]/div/div/a")
 	public static WebElement EditMobilePhoneNumber;
 	
-	@FindBy(xpath="//*[@id='Mainmenu:j_id41:j_id42:j_id48:mobphoneNumberid']")
+	@FindBy(xpath="//span[contains(text(),'Change Mobile Phone')]")
+	public static WebElement GetTextOfChangeMobilePhone;
+	
+	@FindBy(xpath="//span[contains(text(),'Change Mobile Phone')]")
+	public static WebElement GetTextOfMobilePhoneNumber;
+	
+	@FindBy(xpath="//label[contains(text(),'Mobile Phone Number')]")
 	public static WebElement InputMobilePhoneNumber;
 	
-	@FindBy(xpath="//*[@id='Mainmenu:j_id41:j_id42:j_id48:j_id407']")
+	@FindBy(xpath="//*[@name='Mainmenu:j_id41:j_id42:j_id48:j_id409']")
 	public static WebElement ClickOkforChangeMobilePhone;
 	
-	@FindBy(xpath="//*[@id='Mainmenu:j_id41:j_id42:j_id48:j_id406']")
+	@FindBy(xpath="//*[@name='Mainmenu:j_id41:j_id42:j_id48:j_id408']")
 	public static WebElement ClickSaveforChangeMobilePhone;
 	
 	@FindBy(xpath="//*[contains(text(),'Your Active Policies')]")
@@ -165,7 +227,6 @@ public class AFBACustomerPortalMainPage {
 	
 	@FindBy(xpath="//*[@id=\"Mainmenu:j_id41:j_id42:theForm:panel2\"]/div[1]/table/tbody/tr")
 	public static WebElement AccountText;
-	
 	
 
 	@FindBy(xpath="//*[@id=\"Mainmenu:j_id41:j_id42:theForm:panel2\"]/div[2]/table/tbody/tr")
@@ -188,8 +249,6 @@ public class AFBACustomerPortalMainPage {
 	
 	@FindBy(xpath="//*[@id=\"Mainmenu:j_id41:j_id42:theForm:panel2\"]/table[3]/tbody/tr/td[3]")
 	public static WebElement TotalNumberOfBalance;
-	
-	
 	
 	
 	@FindBy(xpath="//*[contains(text(),'Document Delivery Preference:')]")
@@ -236,4 +295,9 @@ public class AFBACustomerPortalMainPage {
     
     @FindBy(xpath="//*[@value='SAVE CHANGES']")
     public static WebElement SaveChangesBtn;
+    
+    @FindBy(xpath="//*[@name='Mainmenu:j_id41:j_id42:j_id48:j_id477']")
+    public static WebElement ClickOk;
+    
+    
 }
