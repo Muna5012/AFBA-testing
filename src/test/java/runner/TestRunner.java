@@ -1,3 +1,4 @@
+  
 package runner;
 
 import org.junit.runner.RunWith;
@@ -19,9 +20,9 @@ import cucumber.api.junit.Cucumber;
 				
 		features = "MyFeatures"
 		,glue = "stepdefination",
-		dryRun = false,
+		dryRun = true,
 		//tags = {"@Test05","@Test06","@Test07"}
-		tags = {"@Remote5"}
+		tags = {"@contactInfo"}
 		)
 
 public class TestRunner {
