@@ -38,8 +38,6 @@ public class AFBACustomerPortalMainPage {
 	@FindBy(xpath="//*[@id='Mainmenu:j_id41:j_id42:theForm:personalInformation']/div[5]/div")
 	public static WebElement NumberOfMobile;
 	
-	
-	
 	@FindBy(xpath="//*[@name='Mainmenu:j_id41:j_id42:theForm:j_id61']")
 	public static WebElement EditContactInformationBtn;
 	
