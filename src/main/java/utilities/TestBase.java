@@ -38,7 +38,7 @@ public abstract class TestBase {
 	protected static void RemoteLogIn() {
 		Assert.assertTrue(driver.getTitle().contains("Login"));
 		RemoteLoginPage.email.sendKeys("qapeep512@gmail.com");
-		RemoteLoginPage.password.sendKeys("Muna@5012");	 
+		RemoteLoginPage.password.sendKeys("Muna@512");	 
 		RemoteLoginPage.loginBtn.click();
 		act.pause(2000).perform();
 		RemoteLoginPage.EnrollmentCase.click();
@@ -71,6 +71,7 @@ public abstract class TestBase {
 		act.pause(3000).perform();
 		
 	}
+	
 	
 	protected static void SetUp() {
 		driver=Driver.getDriver();
