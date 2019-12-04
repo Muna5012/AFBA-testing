@@ -28,5 +28,3 @@ package utilities;
 			return configFile.getProperty(keyName);
 		}
 	}
-
-
