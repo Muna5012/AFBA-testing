@@ -13,10 +13,9 @@ public class AFBAMemberPortalAccountLoginStepDef extends TestBase {
 	public void accout_Login_page_get_title() {
 		String title = AFBAMemberPortalLoginPage.AccountLogin.getText();
 		System.out.println(title + " page: "+ "\n");
-//		String expected_title="Account Login";
-//		Assert.assertEquals(title,expected_title);
 	}
 
+	
 	@When("Click Register Here button")
 	public void click_Register_Here_button() {
 		AFBAMemberPortalLoginPage.RegisterHere.click();
@@ -29,6 +28,7 @@ public class AFBAMemberPortalAccountLoginStepDef extends TestBase {
 		System.out.println(AFBAMemberPortalLoginPage.ContactAFBAText.getText());
 		act.pause(1000).perform();
 	}
+	
 	
 	@Then("Get the title of Register with AFBA")
 	public void get_the_title_of_Register_with_AFBA() {
