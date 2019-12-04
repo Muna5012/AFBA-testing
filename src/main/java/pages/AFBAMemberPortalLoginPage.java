@@ -29,7 +29,6 @@ public class AFBAMemberPortalLoginPage {
 	@FindBy(xpath="//input[@id='Registration:theForm:email']")
 	public static WebElement Email;
 	
-	
 	@FindBy(xpath="//input[@id='Registration:theForm:password']")
 	public static WebElement Password;
 	
