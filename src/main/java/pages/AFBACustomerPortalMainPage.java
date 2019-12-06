@@ -8,6 +8,9 @@ public class AFBACustomerPortalMainPage {
 	@FindBy(xpath="//*[contains(text(),'Welcome')]")
 	public static WebElement WelcomeText;
 	
+	@FindBy(xpath="//*[@id='Mainmenu:j_id41:j_id42:theForm']/div[1]/div/div/h1/p[2]")
+	public static WebElement GetTextOfToTheAFBAMemberPortal;
+	
 	@FindBy(xpath="//*[contains(text(),'MEMBER NAME')]")
 	public static WebElement MemberName;
 	
@@ -38,12 +41,61 @@ public class AFBACustomerPortalMainPage {
 	@FindBy(xpath="//*[@id='Mainmenu:j_id41:j_id42:theForm:personalInformation']/div[5]/div")
 	public static WebElement NumberOfMobile;
 	
+	@FindBy(xpath="//*[contains(text(),'Your Active Policies')]")
+	public static WebElement YourActivePoliciesText;
+	
+	@FindBy(xpath="//*[@id='Mainmenu:j_id41:j_id42:theForm:panel2']/div[1]/table/tbody/tr")
+	public static WebElement AccountText;
+	
+	@FindBy(xpath="//*[@id='Mainmenu:j_id41:j_id42:theForm:panel2']/div[2]/table/tbody/tr")
+	public static WebElement AccountNumber1;
+	
+	@FindBy(xpath="//*[@id='Mainmenu:j_id41:j_id42:theForm:panel2']/div[4]/table/tbody/tr")
+	public static WebElement AccountNumber2;
+	
+	@FindBy(xpath="//*[@id='Mainmenu:j_id41:j_id42:theForm:panel2']/div[6]/table/tbody/tr")
+	public static WebElement AccountNumber3;
+	
+	@FindBy(xpath="//*[@id='Mainmenu:j_id41:j_id42:theForm:panel2']/div[8]/table/tbody/tr")
+	public static WebElement AccountNumber4;
+	
+	@FindBy(xpath="//*[@id='Mainmenu:j_id41:j_id42:theForm:panel2']/div[10]/table/tbody/tr")
+	public static WebElement AccountNumber5;
+	
+	@FindBy(xpath="//*[@id='Mainmenu:j_id41:j_id42:theForm:panel2']/div[12]/table/tbody/tr")
+	public static WebElement AccountNumber6;
+	
+	@FindBy(xpath="//*[@id='Mainmenu:j_id41:j_id42:theForm:panel2']/table[3]/tbody/tr/td[2]")
+	public static WebElement TotalBalance;
+	
+	@FindBy(xpath="//*[@id='Mainmenu:j_id41:j_id42:theForm:panel2']/table[3]/tbody/tr/td[3]")
+	public static WebElement TotalNumberOfBalance;
+	
+	@FindBy(xpath="//*[contains(text(),'Quick Links')]")
+	public static WebElement GetTextOfQuickLinks;
+	
+	@FindBy(xpath="/html/body/div/div/div/div/aside/div[2]")
+	public static WebElement GetAlltheTextOfQuickLinks;
+	
+	@FindBy(xpath="//*[contains(text(),'Contact AFBA')]")
+	public static WebElement GetTextofContactAFBA;
+	
+	@FindBy(xpath="/html/body/div/div/div/div/aside/div[4]")
+	public static WebElement GetAllTextOfContactAFBA;
+	
+	
+	
+	
+	
+	
 	@FindBy(xpath="//*[@name='Mainmenu:j_id41:j_id42:theForm:j_id61']")
 	public static WebElement EditContactInformationBtn;
 	
 	@FindBy(xpath="//*[@id='Mainmenu:j_id41:j_id42:j_id48']/div[1]/div/div[2]/p")
 	public static WebElement GetNameOfText;
 	
+	@FindBy(xpath="//h1[contains(text(),'Edit Contact Information')]")
+	public static WebElement GetTextOfEditContactInfo;
 	
 	@FindBy(xpath="//*[@id='toggleBtnPwd']")
 	public static WebElement EditPasswordClick;
@@ -129,7 +181,7 @@ public class AFBACustomerPortalMainPage {
 	@FindBy(xpath="//*[@id='Mainmenu:j_id41:j_id42:j_id48:emailid']")
 	public static WebElement inputEmail;
 	
-	@FindBy(xpath="//*[@id='Mainmenu:j_id41:j_id42:j_id48:j_id442']")
+	@FindBy(xpath="//*[@name='Mainmenu:j_id41:j_id42:j_id48:j_id444']")
 	public static WebElement ClickSaveForNewEmail;
 	
 	@FindBy(xpath="//*[@id='Mainmenu:j_id41:j_id42:j_id48:emailFooter']/a")
@@ -150,7 +202,7 @@ public class AFBACustomerPortalMainPage {
 	@FindBy(xpath="//*[contains(text(),'Rank')]")
 	public static WebElement GetTextOfRank;
 	
-	@FindBy(xpath="//*[contains(text(),'Rank')]")
+	@FindBy(xpath="//*[contains(text(),'Duty Status')]")
 	public static WebElement GetTextDutyStatus;
 	
 	@FindBy(xpath="//*[@id='Mainmenu:j_id41:j_id42:j_id48:eligibility']")
@@ -180,10 +232,10 @@ public class AFBACustomerPortalMainPage {
 	@FindBy(xpath="//*[@id='Mainmenu:j_id41:j_id42:j_id48:dutyStatus']/option[2]")
 	public static WebElement Active;
 	
-	@FindBy(xpath="//*[@id='Mainmenu:j_id41:j_id42:j_id48:j_id294']")
+	@FindBy(xpath="//*[@name='Mainmenu:j_id41:j_id42:j_id48:j_id296']")
 	public static WebElement ClickSaveforSalutationChange;
 	
-	@FindBy(xpath="//*[@id='Mainmenu:j_id41:j_id42:j_id48:j_id295']")
+	@FindBy(xpath="//*[@name='Mainmenu:j_id41:j_id42:j_id48:j_id297']")
 	public static WebElement ClickOKforSalutationChange;
 	
 	@FindBy(xpath="//*[@class='slds-grid slds-wrap']/div[4]/div/div/a")
@@ -195,69 +247,40 @@ public class AFBACustomerPortalMainPage {
 	@FindBy(xpath="//*[@id='Mainmenu:j_id41:j_id42:j_id48:phoneContainer']/div[2]/div/div/label")
 	public static WebElement GetTextOfPhoneNumber;
 	
-	@FindBy(xpath="//*[@id='Mainmenu:j_id41:j_id42:j_id48:phoneNumberid']")
+	@FindBy(xpath="//*[@name='Mainmenu:j_id41:j_id42:j_id48:phoneNumberid']")
 	public static WebElement InputPhoneNumberForChange;
 	
-	@FindBy(xpath="//*[@id='Mainmenu:j_id41:j_id42:j_id48:j_id370']")
+	@FindBy(xpath="//*[@name='Mainmenu:j_id41:j_id42:j_id48:j_id372']")
 	public static WebElement ClickSaveForPhoneNumChange;
 	
-	@FindBy(xpath="//*[@id='Mainmenu:j_id41:j_id42:j_id48:j_id371']")
+	@FindBy(xpath="//*[@name='Mainmenu:j_id41:j_id42:j_id48:j_id373']")
 	public static WebElement ClickOkForSavePhoneNumber;
 	
 	@FindBy(xpath="//*[@class='slds-grid slds-wrap']/div[6]/div/div/a")
-	public static WebElement EditMobilePhoneNumber;
+	public static WebElement ClickMobilePhoneNumber;
 	
-	@FindBy(xpath="//span[contains(text(),'Change Mobile Phone')]")
+	@FindBy(xpath="//h2[contains(text(),'Change Mobile Phone')]")
 	public static WebElement GetTextOfChangeMobilePhone;
 	
-	@FindBy(xpath="//span[contains(text(),'Change Mobile Phone')]")
+	@FindBy(xpath="//*[@id='Mainmenu:j_id41:j_id42:j_id48:mobilePhoneContainer']/div[2]/div/div/label")
 	public static WebElement GetTextOfMobilePhoneNumber;
 	
-	@FindBy(xpath="//label[contains(text(),'Mobile Phone Number')]")
+	@FindBy(xpath="//*[@name='Mainmenu:j_id41:j_id42:j_id48:mobphoneNumberid']")
 	public static WebElement InputMobilePhoneNumber;
-	
-	@FindBy(xpath="//*[@name='Mainmenu:j_id41:j_id42:j_id48:j_id409']")
-	public static WebElement ClickOkforChangeMobilePhone;
-	
-	@FindBy(xpath="//*[@name='Mainmenu:j_id41:j_id42:j_id48:j_id408']")
-	public static WebElement ClickSaveforChangeMobilePhone;
-	
-	@FindBy(xpath="//*[contains(text(),'Your Active Policies')]")
-	public static WebElement YourActivePoliciesText;
-	
-	@FindBy(xpath="//*[@id=\"Mainmenu:j_id41:j_id42:theForm:panel2\"]/div[1]/table/tbody/tr")
-	public static WebElement AccountText;
-	
 
-	@FindBy(xpath="//*[@id=\"Mainmenu:j_id41:j_id42:theForm:panel2\"]/div[2]/table/tbody/tr")
-	public static WebElement AccountNumber1;
+	@FindBy(xpath="//*[@id='Mainmenu:j_id41:j_id42:j_id48:j_id408']")
+	public static WebElement ClickSaveMobilePhone;
 	
-	@FindBy(xpath="//*[@id=\"Mainmenu:j_id41:j_id42:theForm:panel2\"]/div[4]/table/tbody/tr")
-	public static WebElement AccountNumber2;
+	@FindBy(xpath="//*[@id='Mainmenu:j_id41:j_id42:j_id48:j_id409']")
+	public static WebElement ClickOkChangeMobilePhone;
 	
-	@FindBy(xpath="//*[@id=\"Mainmenu:j_id41:j_id42:theForm:panel2\"]/div[6]/table/tbody/tr")
-	public static WebElement AccountNumber3;
-	
-	@FindBy(xpath="//*[@id=\"Mainmenu:j_id41:j_id42:theForm:panel2\"]/div[8]/table/tbody/tr")
-	public static WebElement AccountNumber4;
-	
-	@FindBy(xpath="//*[@id=\"Mainmenu:j_id41:j_id42:theForm:panel2\"]/div[10]/table/tbody/tr")
-	public static WebElement AccountNumber5;
-	
-	@FindBy(xpath="//*[@id=\"Mainmenu:j_id41:j_id42:theForm:panel2\"]/table[3]/tbody/tr/td[2]")
-	public static WebElement TotalBalance;
-	
-	@FindBy(xpath="//*[@id=\"Mainmenu:j_id41:j_id42:theForm:panel2\"]/table[3]/tbody/tr/td[3]")
-	public static WebElement TotalNumberOfBalance;
-	
-	
-	@FindBy(xpath="//*[contains(text(),'Document Delivery Preference:')]")
+	@FindBy(xpath="//*[@id='Mainmenu:j_id41:j_id42:j_id48']/div[2]/h3/span")
 	public static WebElement DocumentDelivery;
 	
 	@FindBy(xpath="//*[@id='Mainmenu:j_id41:j_id42:j_id48']/div[3]/div")
 	public static WebElement DocumentDeliveryAllText;
 	
-	@FindBy(xpath="//*[@id=\"Mainmenu:j_id41:j_id42:j_id48\"]/div[3]/div/img")
+	@FindBy(xpath="//*[@id='Mainmenu:j_id41:j_id42:j_id48']/div[3]/div/img")
 	public static WebElement Image;
 	
     @FindBy(xpath="//*[@id='Mainmenu:j_id41:j_id42:j_id48']/div[4]/h3/span")
@@ -266,13 +289,13 @@ public class AFBACustomerPortalMainPage {
     @FindBy(xpath="//*[@id='Mainmenu:j_id41:j_id42:j_id48']/div[5]/div")
     public static WebElement DeliveryPreferenceAllText;
     
-    @FindBy(xpath="//*[@id=\"toggle-desc\"]/span[1]")
+    @FindBy(xpath="//*[@id='toggle-desc']/span[1]")
     public static WebElement ClickYesCheckBoxforDeliveryPreference;
     
-    @FindBy(xpath="//*[contains(text(),'Text Alert Preference:')]")
+    @FindBy(xpath="//*[@id='Mainmenu:j_id41:j_id42:j_id48']/div[6]/h3/span/b")
     public static WebElement TextAlertPreference;
     
-    @FindBy(xpath="//*[@id=\"Mainmenu:j_id41:j_id42:j_id48\"]/div[7]")
+    @FindBy(xpath="//*[@id='Mainmenu:j_id41:j_id42:j_id48']/div[7]")
     public static WebElement TextAlertPreferenceGetALlText;
     
     @FindBy(xpath="/html/body/div/div/div/div/section/div[1]/form/div[7]/div/div[1]/div/label/span[1]/span[1]")
@@ -287,17 +310,362 @@ public class AFBACustomerPortalMainPage {
     @FindBy(xpath="//*[@id='Mainmenu:j_id41:j_id42:j_id48']/div[7]/div/div[4]/div/span/label/span[1]")
     public static WebElement TextAlertRadioBtn3;
     
-    @FindBy(xpath="//*[contains(text(),'Marketing Alert Preference:')]")
-    public static WebElement MarketingAlertPreference;
+    @FindBy(xpath="//u[contains(text(),'here')]")
+    public static WebElement ClickHere;
+    
+    @FindBy(xpath="//*[contains(text(),'Marketing Preference:')]")
+    public static WebElement MarketingPreference;
+    
+    @FindBy(xpath="//*[@id='Mainmenu:j_id41:j_id42:j_id48']/div[9]/div/div/div")
+    public static WebElement GetTextOfAllMarketingPreference;;
     
     @FindBy(xpath="/html/body/div/div/div/div/section/div[1]/form/div[9]/div/div/div/label/span[1]/span[1]")
     public static WebElement ClickCheckBoxMarketingAlert;
     
-    @FindBy(xpath="//*[@value='SAVE CHANGES']")
+    @FindBy(xpath="//*[@name='Mainmenu:j_id41:j_id42:j_id48:j_id211']")
     public static WebElement SaveChangesBtn;
     
-    @FindBy(xpath="//*[@name='Mainmenu:j_id41:j_id42:j_id48:j_id477']")
-    public static WebElement ClickOk;
+    @FindBy(xpath="//*[@id='modalSuccess']/div/div[3]/input")
+    public static WebElement OkForContactInfoChanges;
+    
+    
+    
+    
+    
+   
+    
+    @FindBy(xpath="//*[contains(text(),'Set Up Recurring Payments')]")
+    public static WebElement ClickSetUpRecurringPAymentBtn;
+    
+    @FindBy(xpath="//*[contains(text(),'Payment Details For Recurring Payments')]")
+    public static WebElement GetTextOfPaymentDetailsForRecurringPayments;
+    
+    @FindBy(xpath="//*[contains(text(),' Credit Card')]")
+    public static WebElement GetTextCreditCard;
+    
+    @FindBy(xpath="//*[@id='OneTimePayment:j_id41:j_id42:j_id44:regBlock:paymentDetails:j_id73:0']")
+    public static WebElement SelectCreditCard;
+    
+    @FindBy(xpath="//*[contains(text(),'Card Type')]")
+    public static WebElement GetTextCardType;
+    
+    @FindBy(xpath="//*[@name='OneTimePayment:j_id41:j_id42:j_id44:regBlock:ccDetails:j_id77:j_id79']/option[1]")
+    public static WebElement SelectVisa;
+    
+    @FindBy(xpath="//*[contains(text(),'Cardholder Name')]")
+    public static WebElement GetTextCardHolderName;
+    
+    @FindBy(xpath="//*[@name='OneTimePayment:j_id41:j_id42:j_id44:regBlock:ccDetails:j_id81:j_id83']")
+    public static WebElement CardHolderName;
+    
+    @FindBy(xpath="//*[contains(text(),'Card Number')]")
+    public static WebElement GetTextOfCardNumber;
+    
+    @FindBy(xpath="//*[@name='OneTimePayment:j_id41:j_id42:j_id44:regBlock:ccDetails:j_id84:j_id86']")
+    public static WebElement CardNumber;
+    
+    @FindBy(xpath="//*[contains(text(),'Expiration Date')]")
+    public static WebElement GetTextOfExpirationDate;
+    
+    @FindBy(xpath="//*[@name='OneTimePayment:j_id41:j_id42:j_id44:regBlock:ccDetails:j_id87:expiration']/option[1]")
+    public static WebElement MounthForExpirationDate;
+    
+    @FindBy(xpath="//*[@name='OneTimePayment:j_id41:j_id42:j_id44:regBlock:ccDetails:j_id87:j_id91']/option[4]")
+    public static WebElement YearForExpirationDate;
+    
+    @FindBy(xpath="//*[contains(text(),'CVV Number')]")
+    public static WebElement GetTextOfCVV; 
+    
+    @FindBy(xpath="//*[@name='OneTimePayment:j_id41:j_id42:j_id44:regBlock:ccDetails:j_id94:j_id96']")
+    public static WebElement CVV;
+    
+    @FindBy(xpath="//*[contains(text(),'Billing Zip code')]")
+    public static WebElement GetTextBillingZipCode;
+    
+    @FindBy(xpath="//*[@name='OneTimePayment:j_id41:j_id42:j_id44:regBlock:ccDetails:j_id97:j_id99']")
+    public static WebElement ZipCode;
+    
+    @FindBy(xpath="//*[contains(text(),'Selected')]")
+    public static WebElement GetTextOfSelected;
+    
+    @FindBy(xpath="//div[contains(text(),'Account')]")
+    public static WebElement GetTextOfAccount;
+    
+    @FindBy(xpath="//div[contains(text(),'Insured')]")
+    public static WebElement GetTextOfInsured;
+    
+    @FindBy(xpath="//div[contains(text(),'Relation')]")
+    public static WebElement GetTextOfRelation;
+    
+    @FindBy(xpath="//div[contains(text(),'Status')]")
+    public static WebElement GetTextOfStatus;
+    
+    @FindBy(xpath="//div[contains(text(),'Payment Day')]")
+    public static WebElement GetTextOfPaymentDay;
+    
+    @FindBy(xpath="//*[@id='OneTimePayment:j_id41:j_id42:j_id44:regBlock:j_id119:0:j_id120']/input")
+    public static WebElement Select1;
+    
+    @FindBy(xpath="//*[@id='OneTimePayment:j_id41:j_id42:j_id44:regBlock:j_id119:1:j_id120']/input")
+    public static WebElement Select2;
+    
+    @FindBy(xpath="//*[@id='OneTimePayment:j_id41:j_id42:j_id44:regBlock:j_id119:2:j_id120']/input")
+    public static WebElement Select3;
+    
+    @FindBy(xpath="//*[@id='OneTimePayment:j_id41:j_id42:j_id44:regBlock:j_id119:3:j_id120']/input")
+    public static WebElement Select4;
+    
+    @FindBy(xpath="//*[@id='OneTimePayment:j_id41:j_id42:j_id44:regBlock:j_id119:4:j_id120']/input")
+    public static WebElement Select5;
+    
+    @FindBy(xpath="//*[@id='OneTimePayment:j_id41:j_id42:j_id44:regBlock:j_id119:5:j_id120']/input")
+    public static WebElement Select6;
+    
+    @FindBy(xpath="//*[@id='OneTimePayment:j_id41:j_id42:j_id44:regBlock:j_id119:0:j_id122']")
+    public static WebElement GetTextOfFirstAccount;
+    
+    @FindBy(xpath="//*[@id='OneTimePayment:j_id41:j_id42:j_id44:regBlock:j_id119:0:j_id124']/span")
+    public static WebElement GetTextOfFirstInsuredName;
+    
+    @FindBy(xpath="//*[@id='OneTimePayment:j_id41:j_id42:j_id44:regBlock:j_id119:0:j_id126']/span")
+    public static WebElement GetTextOfFirstRelation;
+    
+    @FindBy(xpath="//*[@id='OneTimePayment:j_id41:j_id42:j_id44:regBlock:j_id119:0:j_id128']/span")
+    public static WebElement GetTextOfFirstStatus;
+    
+    @FindBy(xpath="//*[@id='OneTimePayment:j_id41:j_id42:j_id44:regBlock:j_id119:0:j_id130']/select/option[5]")
+    public static WebElement FirstPaymentDay3;
+    
+    @FindBy(xpath="//*[@id='OneTimePayment:j_id41:j_id42:j_id44:regBlock:j_id119:1:j_id122']")
+    public static WebElement GetTextOfSecondAccountNum;
+    
+    @FindBy(xpath="//*[@id='OneTimePayment:j_id41:j_id42:j_id44:regBlock:j_id119:1:j_id124']/span")
+    public static WebElement GetTextOfSecondInsuredName;
+    
+    @FindBy(xpath="//*[@id='OneTimePayment:j_id41:j_id42:j_id44:regBlock:j_id119:1:j_id126']/span")
+    public static WebElement GetTextOfSecondRelation;
+    
+    @FindBy(xpath="//*[@id='OneTimePayment:j_id41:j_id42:j_id44:regBlock:j_id119:1:j_id128']/span")
+    public static WebElement GetTextOfSecondStatus;
+    
+    @FindBy(xpath="//*[@id='OneTimePayment:j_id41:j_id42:j_id44:regBlock:j_id119:1:j_id130']/select/option[6]")
+    public static WebElement SecondPaymentDay5;
+    
+    @FindBy(xpath="//*[@id='OneTimePayment:j_id41:j_id42:j_id44:regBlock:j_id119:2:j_id122']")
+    public static WebElement GetTextOfThirdAccountNum;
+    
+    @FindBy(xpath="//*[@id='OneTimePayment:j_id41:j_id42:j_id44:regBlock:j_id119:2:j_id124']/span")
+    public static WebElement GetTextOfThirdInsuredName;
+    
+    @FindBy(xpath="//*[@id='OneTimePayment:j_id41:j_id42:j_id44:regBlock:j_id119:2:j_id126']/span")
+    public static WebElement GetTextOfThirdRelation;
+    
+    @FindBy(xpath="//*[@id='OneTimePayment:j_id41:j_id42:j_id44:regBlock:j_id119:2:j_id128']/span")
+    public static WebElement GetTextOfThirdStatus;
+    
+    @FindBy(xpath="//*[@id='OneTimePayment:j_id41:j_id42:j_id44:regBlock:j_id119:2:j_id130']/select/option[11]")
+    public static WebElement ThirdPaymentDay5;
+    
+    @FindBy(xpath="//*[@id='OneTimePayment:j_id41:j_id42:j_id44:regBlock:j_id119:3:j_id122']")
+    public static WebElement GetTextOfForthAccountNum;
+    
+    @FindBy(xpath="//*[@id='OneTimePayment:j_id41:j_id42:j_id44:regBlock:j_id119:3:j_id124']/span")
+    public static WebElement GetTextOfForthInsuredName;
+    
+    @FindBy(xpath="//*[@id='OneTimePayment:j_id41:j_id42:j_id44:regBlock:j_id119:3:j_id126']/span")
+    public static WebElement GetTextOfForthRelation;
+    
+    @FindBy(xpath="//*[@id='OneTimePayment:j_id41:j_id42:j_id44:regBlock:j_id119:3:j_id128']/span")
+    public static WebElement GetTextofForthStatus;
+    
+    @FindBy(xpath="//*[@id='OneTimePayment:j_id41:j_id42:j_id44:regBlock:j_id119:4:j_id122']")
+    public static WebElement GetTextOfFifthAccountNum;
+    
+    @FindBy(xpath="//*[@id='OneTimePayment:j_id41:j_id42:j_id44:regBlock:j_id119:3:j_id130']/select/option[15]")
+    public static WebElement FourtPaymentDay14;
+    
+    @FindBy(xpath="//*[@id='OneTimePayment:j_id41:j_id42:j_id44:regBlock:j_id119:4:j_id124']/span")
+    public static WebElement GetTextOfInsuredName;
+    
+    @FindBy(xpath="//*[@id='OneTimePayment:j_id41:j_id42:j_id44:regBlock:j_id119:4:j_id126']/span")
+    public static WebElement GetTextOfFifthRelation;
+    
+    @FindBy(xpath="//*[@id='OneTimePayment:j_id41:j_id42:j_id44:regBlock:j_id119:4:j_id128']/span")
+    public static WebElement GetTextOfFifthStatus;
+    
+    @FindBy(xpath="//*[@id='OneTimePayment:j_id41:j_id42:j_id44:regBlock:j_id119:4:j_id130']/select/option[23]")
+    public static WebElement FifthPaymentDay4;
+    
+    @FindBy(xpath="//*[@id='OneTimePayment:j_id41:j_id42:j_id44:regBlock:j_id119:5:j_id122']")
+    public static WebElement GetTextOfSixAccountNum;
+    
+    @FindBy(xpath="//*[@id='OneTimePayment:j_id41:j_id42:j_id44:regBlock:j_id119:5:j_id124']/span")
+    public static WebElement GetTextOfSixInsuredName;
+    
+    @FindBy(xpath="//*[@id='OneTimePayment:j_id41:j_id42:j_id44:regBlock:j_id119:5:j_id126']/span")
+    public static WebElement GetTextOfSixRelation;
+    
+    @FindBy(xpath="//*[@id='OneTimePayment:j_id41:j_id42:j_id44:regBlock:j_id119:5:j_id128']/span")
+    public static WebElement GetTextOfSixStatus;
+    
+    @FindBy(xpath="//*[@id='OneTimePayment:j_id41:j_id42:j_id44:regBlock:j_id119:5:j_id130']/select/option[9]")
+    public static WebElement SixPaymentDay6;
+    
+    @FindBy(xpath="//*[@name='OneTimePayment:j_id41:j_id42:j_id44:regBlock:j_id138']")
+    public static WebElement Click;
+    
+    @FindBy(xpath="//*[contains(text(),'I authorize')]")
+    public static WebElement GetTextIAuthorize;
+    
+    @FindBy(xpath = "//*[@name='OneTimePayment:j_id41:j_id42:j_id44:regBlock:j_id143']")
+    public static WebElement ClickProcess;
+    
+    @FindBy(xpath="//div[@class='messageText']")
+    public static WebElement GetTextOfConfirmation;
+    
+    @FindBy(xpath="//*[contains(text(),'E-Check')]")
+    public static WebElement GetTextECheck;
+    
+    @FindBy(xpath="//*[@id='OneTimePayment:j_id41:j_id42:j_id44:regBlock:paymentDetails:j_id73:1']")
+    public static WebElement ECheck;
+    
+    @FindBy(xpath="//*[contains(text(),'Account Type')]")
+    public static WebElement GetTextAccountType;
+    
+    @FindBy(xpath="//*[contains(text(),'Routing Number')]")
+    public static WebElement GetTextRoutingNum;
+    
+    @FindBy(xpath="//*[contains(text(),'Account Number')]")
+    public static WebElement GetTextAccountNum;
+        
+    @FindBy(xpath="//*[@name='OneTimePayment:j_id41:j_id42:j_id44:regBlock:checkDetails:j_id100:j_id102']/option[1]")
+    public static WebElement Checking;
+    
+    @FindBy(xpath="//*[@name='OneTimePayment:j_id41:j_id42:j_id44:regBlock:checkDetails:j_id104:j_id106']")
+    public static WebElement InputRoutingNum;
+    
+    @FindBy(xpath="//*[@name='OneTimePayment:j_id41:j_id42:j_id44:regBlock:checkDetails:j_id107:j_id109']")
+    public static WebElement InputAccountNum;
+    
+    @FindBy(xpath="//*[contains(text(),'Bank Details')]")
+    public static WebElement BankDetails;
+    
+    @FindBy(xpath="//*[@id='OneTimePayment:j_id41:j_id42:j_id44:regBlock:checkDetails:j_id110:j_id112']")
+    public static WebElement GetTextOfBanking;
+    
+    @FindBy(xpath="//*[@name='OneTimePayment:j_id41:j_id42:j_id44:regBlock:j_id119:0:j_id121']")
+    public static WebElement ECSelect1;
+    
+    @FindBy(xpath="//*[@name='OneTimePayment:j_id41:j_id42:j_id44:regBlock:j_id119:1:j_id121']")
+    public static WebElement ECSelect2;
+    
+    @FindBy(xpath="//*[@name='OneTimePayment:j_id41:j_id42:j_id44:regBlock:j_id119:2:j_id121']")
+    public static WebElement ECSelect3;
+    
+    @FindBy(xpath="//*[@name='OneTimePayment:j_id41:j_id42:j_id44:regBlock:j_id119:3:j_id121']")
+    public static WebElement ECSelect4;
+    
+    @FindBy(xpath="//*[@name='OneTimePayment:j_id41:j_id42:j_id44:regBlock:j_id119:4:j_id121']")
+    public static WebElement ECSelect5;
+    
+    @FindBy(xpath="//*[@name='OneTimePayment:j_id41:j_id42:j_id44:regBlock:j_id119:5:j_id121']")
+    public static WebElement ECSelect6;
+    
+    @FindBy(xpath="//*[@id='OneTimePayment:j_id41:j_id42:j_id44:regBlock:j_id119:0:j_id122']")
+    public static WebElement ECFirstAccountNum;
+    
+    @FindBy(xpath="//*[@id='OneTimePayment:j_id41:j_id42:j_id44:regBlock:j_id119:1:j_id122']")
+    public static WebElement ECSecondAccountNum;
+    
+    @FindBy(xpath="//*[@id='OneTimePayment:j_id41:j_id42:j_id44:regBlock:j_id119:2:j_id122']")
+    public static WebElement ECThirdAccount;
+    
+    @FindBy(xpath="//*[@id='OneTimePayment:j_id41:j_id42:j_id44:regBlock:j_id119:3:j_id122']")
+    public static WebElement ECForthAccountNum;
+    
+    @FindBy(xpath="//*[@id='OneTimePayment:j_id41:j_id42:j_id44:regBlock:j_id119:4:j_id122']")
+    public static WebElement ECFifthAccountNum;
+    
+    @FindBy(xpath="//*[@id='OneTimePayment:j_id41:j_id42:j_id44:regBlock:j_id119:5:j_id122']")
+    public static WebElement ECSixAccount;
+    
+    @FindBy(xpath="//*[@id='OneTimePayment:j_id41:j_id42:j_id44:regBlock:j_id119:0:j_id124']/span")
+    public static WebElement ECFirstInsuredName;
+    
+    @FindBy(xpath="//*[@id='OneTimePayment:j_id41:j_id42:j_id44:regBlock:j_id119:1:j_id124']/span")
+    public static WebElement ECSecondInsuredName;
+    
+    @FindBy(xpath="//*[@id='OneTimePayment:j_id41:j_id42:j_id44:regBlock:j_id119:2:j_id124']/span")
+    public static WebElement ECThirdInsuredName;
+    
+    @FindBy(xpath="//*[@id='OneTimePayment:j_id41:j_id42:j_id44:regBlock:j_id119:3:j_id124']/span")
+    public static WebElement ECForthInsuredName;
+    
+    @FindBy(xpath="//*[@id='OneTimePayment:j_id41:j_id42:j_id44:regBlock:j_id119:4:j_id124']/span")
+    public static WebElement ECFifthInsuredName;
+    
+    @FindBy(xpath="//*[@id='OneTimePayment:j_id41:j_id42:j_id44:regBlock:j_id119:5:j_id124']/span")
+    public static WebElement ECSixInsuredName;
+    
+    @FindBy(xpath="//*[@id='OneTimePayment:j_id41:j_id42:j_id44:regBlock:j_id119:0:j_id126']/span")
+    public static WebElement ECFirstRelation;
+    
+    @FindBy(xpath="//*[@id='OneTimePayment:j_id41:j_id42:j_id44:regBlock:j_id119:1:j_id126']/span")
+    public static WebElement ECSecondRelation;
+    
+    @FindBy(xpath="//*[@id='OneTimePayment:j_id41:j_id42:j_id44:regBlock:j_id119:2:j_id126']/span")
+    public static WebElement ECThirdRelation;
+    
+    @FindBy(xpath="//*[@id='OneTimePayment:j_id41:j_id42:j_id44:regBlock:j_id119:3:j_id126']/span")
+    public static WebElement ECForthRelation;
+    
+    @FindBy(xpath="//*[@id='OneTimePayment:j_id41:j_id42:j_id44:regBlock:j_id119:4:j_id126']/span")
+    public static WebElement ECFifthRelation;
+    
+    @FindBy(xpath="//*[@id='OneTimePayment:j_id41:j_id42:j_id44:regBlock:j_id119:5:j_id126']/span")
+    public static WebElement ECSixRelation;
+    
+    @FindBy(xpath="//*[@id='OneTimePayment:j_id41:j_id42:j_id44:regBlock:j_id119:0:j_id128']/span")
+    public static WebElement ECFirstStatus;
+    
+    @FindBy(xpath="//*[@id='OneTimePayment:j_id41:j_id42:j_id44:regBlock:j_id119:1:j_id126']/span")
+    public static WebElement ECSecondStatus;
+    
+    @FindBy(xpath="//*[@id='OneTimePayment:j_id41:j_id42:j_id44:regBlock:j_id119:2:j_id126']/span")
+    public static WebElement ECThirdStatus;
+    
+    @FindBy(xpath="//*[@id='OneTimePayment:j_id41:j_id42:j_id44:regBlock:j_id119:3:j_id126']/span")
+    public static WebElement EcForthStatus;
+    
+    @FindBy(xpath="//*[@id='OneTimePayment:j_id41:j_id42:j_id44:regBlock:j_id119:4:j_id126']/span")
+    public static WebElement ECFifthStatus;
+    
+    @FindBy(xpath="//*[@id='OneTimePayment:j_id41:j_id42:j_id44:regBlock:j_id119:5:j_id126']/span")
+    public static WebElement ECSixStatus;
+    
+    @FindBy(xpath="//*[@name='OneTimePayment:j_id41:j_id42:j_id44:regBlock:j_id119:0:j_id131']/option[11]")
+    public static WebElement PaymentDay10;
+    
+    @FindBy(xpath="//*[@name='OneTimePayment:j_id41:j_id42:j_id44:regBlock:j_id119:1:j_id131']/option[10]")
+    public static WebElement PaymentDay9;
+    
+    @FindBy(xpath="//*[@name='OneTimePayment:j_id41:j_id42:j_id44:regBlock:j_id119:2:j_id131']/option[8]")
+    public static WebElement PaymentDay7;
+    
+    @FindBy(xpath="//*[@name='OneTimePayment:j_id41:j_id42:j_id44:regBlock:j_id119:3:j_id131']/option[5]")
+    public static WebElement PaymentDay4;
+    
+    @FindBy(xpath="//*[@name='OneTimePayment:j_id41:j_id42:j_id44:regBlock:j_id119:4:j_id131']/option[15]")
+    public static WebElement PaymentDay14;
+    
+    @FindBy(xpath="//*[@name='OneTimePayment:j_id41:j_id42:j_id44:regBlock:j_id119:5:j_id131']/option[18]")
+    public static WebElement PaymentDay17;
+    
+    @FindBy(xpath="//*[@id='OneTimePayment:j_id41:j_id42:j_id44:regBlock:ConfirmScreen']/div/input")
+    public static WebElement ECIAuthorize;
+    
+    @FindBy(xpath="//*[@name='OneTimePayment:j_id41:j_id42:j_id44:regBlock:j_id143']")
+    public static WebElement ECClickProcess;
     
     
 }
