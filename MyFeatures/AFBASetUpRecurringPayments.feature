@@ -1,6 +1,6 @@
 @RecurringPayments
 Feature: AFBA Customer Portal set up Payment Details for Recurring Payment test feature 
-Scenario: AFBA Customer Portal set up Payment Details for Recurring Payment test  scanario
+Scenario: AFBA Customer Portal set up Payment Details for Recurring Payment test scanario
 
 Given Input Username, Password and Click Login button on Login page
 When Click Set up Recurring Payments button
@@ -16,11 +16,11 @@ Then Get text of title of status
 And Get text of Selected, Account, Insured, Relation, Status and Payment Day information
 Then Click authorize informaion and get all the Text
 And Click Process button
-Then Get text of E Check
-Then Select E Check recurring payment
-And Get text of Account Type and select Checking account type
-Then Get text of Routing Number and input Routing Number
-And Get text of Account Number and input account number
-Then Get text of Bank Details
-And Selected each account and select payment day for each account
-Then Click radio button to confirm all information
+#Then Get text of E Check
+#Then Select E Check recurring payment
+#And Get text of Account Type and select Checking account type
+#Then Get text of Routing Number and input Routing Number
+#And Get text of Account Number and input account number
+#Then Get text of Bank Details
+#And Selected each account and select payment day for each account
+#Then Click radio button to confirm all information
