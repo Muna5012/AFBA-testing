@@ -88,7 +88,6 @@ public class AFBASetUpRecurringPayments extends TestBase{
 	public void get_text_of_Billing_Zip_Code_and_input_zip_code() {
 		 String str = AFBACustomerPortalMainPage.GetTextBillingZipCode.getText();
 		  act.pause(1000).perform();
-		  AFBACustomerPortalMainPage.ZipCode.clear();
 		  AFBACustomerPortalMainPage.ZipCode.click();
 		  AFBACustomerPortalMainPage.ZipCode.sendKeys("20147");
 		  System.out.println(str +": 20147" +"\n");
@@ -122,7 +121,7 @@ public class AFBASetUpRecurringPayments extends TestBase{
 		  String str6 = AFBACustomerPortalMainPage.GetTextOfSecondRelation.getText();
 		  String str7 = AFBACustomerPortalMainPage.GetTextOfSecondStatus.getText();  
 		  System.out.println(str4 +" " + str5 + " " + str6 + " " + str7 + " ");
-		  AFBACustomerPortalMainPage.SecondPaymentDay4.click();
+		  AFBACustomerPortalMainPage.SecondPaymentDay5.click();
 		  act.pause(1000).perform();
 		  
 		  AFBACustomerPortalMainPage.Select3.click();
@@ -140,7 +139,7 @@ public class AFBASetUpRecurringPayments extends TestBase{
 		  String str14 = AFBACustomerPortalMainPage.GetTextOfForthRelation.getText();
 		  String str15 = AFBACustomerPortalMainPage.GetTextofForthStatus.getText();
 		  System.out.println(str12 +" " + str13 +" " + str14 + " " + str15 + " ");
-		  AFBACustomerPortalMainPage.FourtPaymentDay1.click();
+		  AFBACustomerPortalMainPage.FourtPaymentDay14.click();
 		  act.pause(1000).perform();
 		  
 		  AFBACustomerPortalMainPage.Select5.click();
@@ -175,12 +174,15 @@ public class AFBASetUpRecurringPayments extends TestBase{
 	public void click_Process_button() {
 	  AFBACustomerPortalMainPage.ClickProcess.click();
 	   act.pause(4000).perform();
+	  String st = AFBACustomerPortalMainPage.GetTextOfConfirmation.getText();
+	  System.out.println(st);
+	   act.pause(3000).perform();
 	}
 
 	
 	@Then("Get text of E Check")
 	public void get_text_of_E_Check() {
-		AFBACustomerPortalMainPage.NavigateBackSetUpRecurringPayments.click();
+		AFBACustomerPortalMainPage.ClickSetUpRecurringPAymentBtn.click();
 		act.pause(2000).perform();
 		String str = AFBACustomerPortalMainPage.GetTextECheck.getText();
 		 System.out.println(str +"\n");
@@ -205,7 +207,7 @@ public class AFBASetUpRecurringPayments extends TestBase{
 	
 	@Then("Get text of Routing Number and input Routing Number")
 	public void get_text_of_Routing_Number_and_input_Routing_Number() {
-		String str = AFBACustomerPortalMainPage.RoutingNum.getText();
+		String str = AFBACustomerPortalMainPage.GetTextRoutingNum.getText();
 		AFBACustomerPortalMainPage.InputRoutingNum.sendKeys("061219694");
 		System.out.println(str + ": 061219694");
 		act.pause(1000).perform();
@@ -214,7 +216,7 @@ public class AFBASetUpRecurringPayments extends TestBase{
 	
 	@Then("Get text of Account Number and input account number")
 	public void get_text_of_Account_Number_and_input_account_number() {
-		String str = AFBACustomerPortalMainPage.AccountNum.getText();
+		String str = AFBACustomerPortalMainPage.GetTextAccountNum.getText();
 		AFBACustomerPortalMainPage.InputAccountNum.click();
 		AFBACustomerPortalMainPage.InputAccountNum.sendKeys("265270002");
 		System.out.println(str + ": 265270002");
@@ -293,6 +295,7 @@ public class AFBASetUpRecurringPayments extends TestBase{
 		String str21 = AFBACustomerPortalMainPage.ECSixInsuredName.getText();
 		String str22 = AFBACustomerPortalMainPage.ECSixRelation.getText();
 		String str23 = AFBACustomerPortalMainPage.ECSixStatus.getText();
+	
 		System.out.println(str20 + " " + str21 +" " + str22 +" " + str23 + "\n");
 		AFBACustomerPortalMainPage.PaymentDay17.click();
 		act.pause(1000).perform();	
@@ -307,8 +310,7 @@ public class AFBASetUpRecurringPayments extends TestBase{
 		AFBACustomerPortalMainPage.ECClickProcess.click();
 		act.pause(2000).perform();
 	}
-
-	
-	
 	
 	}
+
+
