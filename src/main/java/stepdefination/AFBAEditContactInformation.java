@@ -25,9 +25,9 @@ public class AFBAEditContactInformation extends TestBase {
 		act.pause(2000).perform();
 	}
 
-	@Then("Get Text of Edit Contact Information")
-	public void get_Text_of_Edit_Contact_Information() {
-		String str = AFBACustomerPortalMainPage.EditContactInformationBtn.getText();
+	@Then("Get text of Edit Contact Information")
+	public void get_text_of_Edit_Contact_Information() {
+		String str = AFBACustomerPortalMainPage.GetTextOfEditContactInfo.getText();
 		System.out.println(str);
 		String str2 = AFBACustomerPortalMainPage.GetNameOfText.getText();
 		System.out.println(str2 + "\n ");
@@ -39,8 +39,8 @@ public class AFBAEditContactInformation extends TestBase {
 		act.pause(1000).perform();
 	}
 
-	@Then("Get Text of Change Password, Old Passowrd, New Password, Confirm Passowrd")
-	public void get_Text_of_Change_Password_Old_Passowrd_New_Password_Confirm_Passowrd() {
+	@Then("Get text of Change Password, Old Passowrd, New Password, Confirm Passowrd")
+	public void get_text_of_Change_Password_Old_Passowrd_New_Password_Confirm_Passowrd() {
 	   String str = AFBACustomerPortalMainPage.GetTextChangePassword.getText();
 		System.out.println(str);
 	   String str1 = AFBACustomerPortalMainPage.GetTextOldNewConfirmPassword.getText();
@@ -74,8 +74,8 @@ public class AFBAEditContactInformation extends TestBase {
 		act.pause(2000).perform();
 	}
 
-	@Then("Get Text of Address Change, Mailing Street, Mailing City, Maling State, Mailing Zip Code")
-	public void get_Text_of_Address_Change_Mailing_Street_Mailing_City_Maling_State_Mailing_Zip_Code() {
+	@Then("Get text of Address Change, Mailing Street, Mailing City, Maling State, Mailing Zip Code")
+	public void get_text_of_Address_Change_Mailing_Street_Mailing_City_Maling_State_Mailing_Zip_Code() {
 		String str = AFBACustomerPortalMainPage.GetTextOfAddressChange.getText();
 		System.out.println(str);
 		
@@ -121,8 +121,8 @@ public class AFBAEditContactInformation extends TestBase {
 		AFBACustomerPortalMainPage.EmailAddressChange.click();
 	}
 
-	@Then("Get Text of Change Email, Email Address, and button of notice text")
-	public void get_Text_of_Change_Email_Email_Address_and_button_of_notice_text() {
+	@Then("Get text of Change Email, Email Address, and button of notice text")
+	public void get_text_of_Change_Email_Email_Address_and_button_of_notice_text() {
 		String str = AFBACustomerPortalMainPage.GetTextOfChnageEmail.getText();
 		System.out.println(str);
 		String str2 = AFBACustomerPortalMainPage.GetTextofEmail.getText();
@@ -140,7 +140,7 @@ public class AFBAEditContactInformation extends TestBase {
 	public void click_Save_button_to_save_new_Email_Address() {
 		AFBACustomerPortalMainPage.ClickSaveForNewEmail.click();
 		act.pause(2000).perform();
-		AFBACustomerPortalMainPage.CloseNewEmailChange.click();
+		AFBACustomerPortalMainPage.ClickCancelForNewEmail.click();
 		act.pause(2000).perform();
 	}
 
@@ -150,8 +150,8 @@ public class AFBAEditContactInformation extends TestBase {
 		act.pause(1000).perform();
 	}
 
-	@Then("Get Text of Salutation Change, Branch of Service, Rank, Duty Status and Select it")
-	public void get_Text_of_Salutation_Change_Branch_of_Service_Rank_Duty_Status_and_Select_it() {
+	@Then("Get text of Salutation Change, Branch of Service, Rank, Duty Status and Select it")
+	public void get_text_of_Salutation_Change_Branch_of_Service_Rank_Duty_Status_and_Select_it() {
 	  String str = AFBACustomerPortalMainPage.GetTextOfSalutationChange.getText();
 	  System.out.println(str);
 	 
@@ -179,7 +179,7 @@ public class AFBAEditContactInformation extends TestBase {
 	@Then("Click Save button to save new Salutation Change")
 	public void click_Save_button_to_save_new_Salutation_Change() {
 		AFBACustomerPortalMainPage.ClickSaveforSalutationChange.click();
-		act.pause(1000).perform();
+		act.pause(2000).perform();
 		AFBACustomerPortalMainPage.ClickOKforSalutationChange.click();
 		act.pause(2000).perform();
 	}
@@ -190,16 +190,20 @@ public class AFBAEditContactInformation extends TestBase {
 		act.pause(1000).perform();
 	}
 
-	@Then("Get Text of Change Phone and Phone Number and input new Phone number")
-	public void get_Text_of_Change_Phone_and_Phone_Number_and_input_new_Phone_number() {
+	@Then("Get text of Change Phone and Phone Number and input new Phone number")
+	public void get_text_of_Change_Phone_and_Phone_Number_and_input_new_Phone_number() {
 		String str = AFBACustomerPortalMainPage.GetTextOfChangePhone.getText();
 		System.out.println(str);
+		
 		String str2 = AFBACustomerPortalMainPage.GetTextOfPhoneNumber.getText();
+		System.out.println(str2+": 770-559-4989 " + "\n" );
+		
 		AFBACustomerPortalMainPage.InputPhoneNumberForChange.clear();
+		AFBACustomerPortalMainPage.InputPhoneNumberForChange.click();
 		AFBACustomerPortalMainPage.InputPhoneNumberForChange.sendKeys("7705594989");
 		act.pause(1000).perform();
-		System.out.println(str2+": 770-559-4989 "+"\n " );
 	}
+	
 
 	@Then("Click Save button to save New Phone Number")
 	public void click_Save_button_to_save_New_Phone_Number() {
@@ -209,35 +213,37 @@ public class AFBAEditContactInformation extends TestBase {
 		act.pause(2000).perform();
 	}
 
-	@Then("Click pencil icon to Edit Mobile Phone Number")
-	public void click_pencil_icon_to_Edit_Mobile_Phone_Number() {
-		AFBACustomerPortalMainPage.EditMobilePhoneNumber.click();
+	@Then("Get text of Change Mobile Phone, Mobile Phone Number and input Mobile Phone Number")
+	public void get_text_of_Change_Mobile_Phone_Mobile_Phone_Number_and_input_Mobile_Phone_Number() {
+		AFBACustomerPortalMainPage.ClickMobilePhoneNumber.click();
 		act.pause(1000).perform();
-	}
-
-	@Then("Get Text of Change Mobile Phone, Mobile Phone Number and input Mobile Phone Number")
-	public void get_Text_of_Change_Mobile_Phone_Mobile_Phone_Number_and_input_Mobile_Phone_Number() {
-		String str = AFBACustomerPortalMainPage.GetTextOfChangeMobilePhone.getText();
-		System.out.println(str);
-		String str2 = AFBACustomerPortalMainPage.GetTextOfMobilePhoneNumber.getText();
-		AFBACustomerPortalMainPage.InputMobilePhoneNumber.clear();
+		
+		String string = AFBACustomerPortalMainPage.GetTextOfChangeMobilePhone.getText();
+		System.out.println(string);
+		act.pause(1000).perform();
+		
+		String string2 = AFBACustomerPortalMainPage.GetTextOfMobilePhoneNumber.getText();
+		System.out.println(string2 + ": 248-910-1083" + "\n ");
+		act.pause(1000).perform();
+		
 		AFBACustomerPortalMainPage.InputMobilePhoneNumber.sendKeys("2489101083");
-		System.out.println(str2 + ": 248-910-1083" + "\n ");
-	}
-	
-
-	@Then("Click Save button to save New Mobile Phone Number")
-	public void click_Save_button_to_save_New_Mobile_Phone_Number() {
-		AFBACustomerPortalMainPage.ClickSaveforChangeMobilePhone.click();
 		act.pause(1000).perform();
-		AFBACustomerPortalMainPage.ClickOkforChangeMobilePhone.click();
+	}
+
+	
+	@Then("Save New Mobile Phone Number")
+	public void save_New_Mobile_Phone_Number() {
+		AFBACustomerPortalMainPage.ClickSaveMobilePhone.click();
+		act.pause(1000).perform();
+		AFBACustomerPortalMainPage.ClickOkChangeMobilePhone.click();
 		act.pause(2000).perform();
 	}
+
 	
-	@Then("Get all the text of Document Delivery Preference")
-	public void get_all_the_text_of_Document_Delivery_Preference() {
+	@Then("Get text of Document Delivery Explained")
+	public void get_text_of_Document_Delivery_Explained() {
 		String str = AFBACustomerPortalMainPage.DocumentDelivery.getText();
-		System.out.println("\n"+ str + "\n");
+		System.out.println(str + "\n");
 		act.pause(2000).perform();
 		String str2 = AFBACustomerPortalMainPage.DocumentDeliveryAllText.getText();
 		System.out.println(str2+ "\n");
@@ -245,10 +251,12 @@ public class AFBAEditContactInformation extends TestBase {
 		
 		String imageUrl=AFBACustomerPortalMainPage.Image.getAttribute("src");
 		System.out.println("Image source path : \n"+ imageUrl + "\n");
+		
 	}
 	
-	@Then("Get all the text of Delivery Preference")
-	public void get_all_the_text_of_Delivery_Preference() {
+
+	@Then("Get all the text of Document Delivery Explained")
+	public void get_all_the_text_of_Document_Delivery_Explained() {
 		String str = AFBACustomerPortalMainPage.DeliveryPreference.getText();
 		System.out.println("\n"+ str + "\n");
 		act.pause(1000).perform();
@@ -256,33 +264,46 @@ public class AFBAEditContactInformation extends TestBase {
 		System.out.println(str2+ "\n");
 		act.pause(1000).perform();
 	}
+	
+	@Then("Get text of eDelivery")
+	public void get_text_of_eDelivery() {
+	   
+	}
 
-	@Then("Select checkbox for document delivery method eDelivery to email")
-	public void select_checkbox_for_document_delivery_method_eDelivery_to_email() {
-//		Actions action = new Actions(driver);
-//		action.moveToElement(AFBACustomerPortalMainPage.ClickYesCheckBoxforDeliveryPreference).build().perform();
+	@Then("Get all the text of eDelivery explain")
+	public void get_all_the_text_of_eDelivery_explain() {
+	    
+	}
+
+	@Then("Select checkbox to opt in eDelivery to email")
+	public void select_checkbox_to_opt_in_eDelivery_to_email() {
 		AFBACustomerPortalMainPage.ClickYesCheckBoxforDeliveryPreference.click();
 		act.pause(1000).perform();
 	}
-
-	@Then("Get text of Text Alert Preference")
-	public void get_text_of_Text_Alert_Preference() {
+	
+	@Then("Get text of Text Alert")
+	public void get_text_of_Text_Alert() {
 		String str = AFBACustomerPortalMainPage.TextAlertPreference.getText();
 		System.out.println("\n"+ str + "\n");
 		act.pause(1000).perform();
+	}
+	
+	
+	@Then("Get all the text of Text Alert")
+	public void get_all_the_text_of_Text_Alert() {
 		String str2 = AFBACustomerPortalMainPage.TextAlertPreferenceGetALlText.getText();
 		System.out.println(str2+ "\n");
 		act.pause(1000).perform();
 	}
 
-	@Then("Select checkbox to sign up for using my mobile device")
-	public void select_checkbox_to_sign_up_for_using_my_mobile_device() {
-	//	AFBACustomerPortalMainPage.ClickCheckBoxforTextAlert.click();
-//		Actions action = new Actions(driver);
-//		action.moveToElement(AFBACustomerPortalMainPage.ClickCheckBoxforTextAlert).build().perform();
+
+	@Then("Select checkbox to opt in Text Alerts to the phone number")
+	public void select_checkbox_to_opt_in_Text_Alerts_to_the_phone_number() {
+		AFBACustomerPortalMainPage.ClickCheckBoxforTextAlert.click();
 		act.pause(1000).perform();
 	}
 
+	
 	@Then("Select each alert you want to receive")
 	public void select_each_alert_you_want_to_receive() {
 		AFBACustomerPortalMainPage.TextAlertRadioBtn1.click();
@@ -290,34 +311,49 @@ public class AFBAEditContactInformation extends TestBase {
 		AFBACustomerPortalMainPage.TextAlertRadioBtn3.click();
 		act.pause(1000).perform();
 	}
+	
 
 	@Then("Click Here button to access AFBA Text Message Terms and Conditions")
 	public void click_Here_button_to_access_AFBA_Text_Message_Terms_and_Conditions() {
+		//AFBACustomerPortalMainPage.ClickHere.click();
 		act.pause(1000).perform();
+		
 	}
 
-	@Then("Get text of Marketing Alert Preference")
-	public void get_text_of_Marketing_Alert_Preference() {
-		String str = AFBACustomerPortalMainPage.MarketingAlertPreference.getText();
+	
+	@Then("Get text of Marketing Preference")
+	public void get_text_of_Marketing_Preference() {
+		String str = AFBACustomerPortalMainPage.MarketingPreference.getText();
 		System.out.println(str+ "\n");
 		act.pause(1000).perform();
 	}
-
-	@Then("Select checkbox for currently opted in to receive any Marketing from AFBA option")
-	public void select_checkbox_for_currently_opted_in_to_receive_any_Marketing_from_AFBA_option() {
-		AFBACustomerPortalMainPage.ClickCheckBoxMarketingAlert.click();
-//		Actions action = new Actions(driver);
-//		action.moveToElement(AFBACustomerPortalMainPage.ClickCheckBoxMarketingAlert).build().perform();
+	
+	
+	@Then("Get text of all the Marketing Preference")
+	public void get_text_of_all_the_Marketing_Preference() {
+		String string = AFBACustomerPortalMainPage.GetTextOfAllMarketingPreference.getText();
+		System.out.println(string + "\n");
 		act.pause(1000).perform();
 	}
 
-	@Then("Click Save Changes button to save it")
-	public void click_Save_Changes_button_to_save_it() {
-		AFBACustomerPortalMainPage.SaveChangesBtn.click();
-		act.pause(2000).perform();
-		AFBACustomerPortalMainPage.ClickOk.click();
+	
+	@Then("Select checkbox for currently opted out of receiving Marketing from AFBA third party vendors")
+	public void select_checkbox_for_currently_opted_out_of_receiving_Marketing_from_AFBA_third_party_vendors() {
+		AFBACustomerPortalMainPage.ClickCheckBoxMarketingAlert.click();
+		act.pause(1000).perform();
 	}
 
-
 	
+	@Then("Click Save Changes button to save it")
+	public void click_Save_Changes_button_to_save_it() {
+		//AFBACustomerPortalMainPage.SaveChangesBtn.click();
+		act.pause(2000).perform();
+	
+	}
+	
+	@Then("Click Ok button to save updated status")
+	public void click_Ok_button_to_save_updated_status() {
+	//	AFBACustomerPortalMainPage.OkForContactInfoChanges.click();
+		act.pause(2000).perform();
+	}
 }
