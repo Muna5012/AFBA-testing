@@ -668,4 +668,190 @@ public class AFBACustomerPortalMainPage {
     public static WebElement ECClickProcess;
     
     
+    
+    
+    @FindBy(xpath="//*[contains(text(),'Make a One-time Payment')]")
+    public static WebElement ClickMakeOneTimePayment;
+    
+    @FindBy(xpath="//h3[contains(text(),'Payor Details')]")
+    public static WebElement GetTextPayorDetails;
+    
+    @FindBy(xpath="//*[@id='OneTimePayment:j_id41:j_id42:theForm:theBlock:j_id74']/div[2]/table/tbody")
+    public static WebElement GetAllTextPayorDetails;
+    
+    @FindBy(xpath = "//*[contains(text(),'Selected')]")
+    public static WebElement GetTextSelected;
+    
+    @FindBy(xpath="//div[contains(text(),'Account')]")
+    public static WebElement GetTextInsured;
+   
+    @FindBy(xpath="//div[contains(text(),'Status')]")
+    public static WebElement GetTextStatus;
+    
+    @FindBy(xpath="//div[contains(text(),'Paid Thru Date')]")
+    public static WebElement GetTextPaidThruDate;
+    
+    @FindBy(xpath="//div[contains(text(),'Balance Due')]")
+    public static WebElement GetTextBalanceDue;
+    
+    @FindBy(xpath="//div[contains(text(),'Suspense Amount')]")
+    public static WebElement GetTextSuspenseAmount;
+    
+    @FindBy(xpath="//div[contains(text(),'Amount To Pay')]")
+    public static WebElement GetTextAmountPay;
+    
+   @FindBy(xpath="//*[@id='OneTimePayment:j_id41:j_id42:theForm:theBlock:j_id95:tb']/tr[1]") 
+    public static WebElement GetFirstAccount;
+   
+   @FindBy(xpath="//*[@id='OneTimePayment:j_id41:j_id42:theForm:theBlock:j_id95:tb']/tr[2]")
+   public static WebElement GetSecondAccount;
+   
+   @FindBy(xpath="//*[@id='OneTimePayment:j_id41:j_id42:theForm:theBlock:j_id95:0:j_id101']")
+   public static WebElement FirstAccountNum;
+   
+   @FindBy(xpath="//*[@id='OneTimePayment:j_id41:j_id42:theForm:theBlock:j_id95:1:j_id101']")
+   public static WebElement SecondAccountNum;
+   
+   @FindBy(xpath="//*[@id='OneTimePayment:j_id41:j_id42:theForm:theBlock:j_id95:2:j_id101']")
+   public static WebElement ThridAccountNum;
+   
+   @FindBy(xpath="//*[@id='OneTimePayment:j_id41:j_id42:theForm:theBlock:j_id95:3:j_id101']")
+   public static WebElement ForthAccountNum;
+   
+   @FindBy(xpath="//*[@id='OneTimePayment:j_id41:j_id42:theForm:theBlock:j_id95:4:j_id101']")
+   public static WebElement FifthAccountNum;
+   
+   @FindBy(xpath="//*[@id='OneTimePayment:j_id41:j_id42:theForm:theBlock:j_id95:5:j_id101']")
+   public static WebElement SixAccountNum;
+   
+   @FindBy(xpath="//*[@id='OneTimePayment:j_id41:j_id42:theForm:theBlock:j_id95:0:j_id103']/span")
+   public static WebElement FirstInsuredName;
+   
+   @FindBy(xpath="//*[@id='OneTimePayment:j_id41:j_id42:theForm:theBlock:j_id95:1:j_id103']/span")
+   public static WebElement SecondInsuredName;
+   
+   @FindBy(xpath="//*[@id='OneTimePayment:j_id41:j_id42:theForm:theBlock:j_id95:2:j_id103']/span")
+   public static WebElement ThirdInsuredName;
+   
+   @FindBy(xpath="//*[@id='OneTimePayment:j_id41:j_id42:theForm:theBlock:j_id95:3:j_id103']/span")
+   public static WebElement ForthInsuredName;
+   
+   @FindBy(xpath="//*[@id='OneTimePayment:j_id41:j_id42:theForm:theBlock:j_id95:4:j_id103']/span")
+   public static WebElement FifthInsuredName;
+   
+   @FindBy(xpath="//*[@id='OneTimePayment:j_id41:j_id42:theForm:theBlock:j_id95:5:j_id103']/span")
+   public static WebElement SixInsuredName;
+    
+   @FindBy(xpath="//*[@id='OneTimePayment:j_id41:j_id42:theForm:theBlock:j_id95:0:j_id105']/span")
+   public static WebElement FirstStatus;
+   
+   @FindBy(xpath="//*[@id='OneTimePayment:j_id41:j_id42:theForm:theBlock:j_id95:1:j_id105']/span")
+   public static WebElement SecondStatus;
+   
+   @FindBy(xpath="//*[@id='OneTimePayment:j_id41:j_id42:theForm:theBlock:j_id95:2:j_id105']/span")
+   public static WebElement ThirdStatus;
+   
+   @FindBy(xpath="//*[@id='OneTimePayment:j_id41:j_id42:theForm:theBlock:j_id95:3:j_id105']/span")
+   public static WebElement ForthStatus;
+   
+   @FindBy(xpath="//*[@id='OneTimePayment:j_id41:j_id42:theForm:theBlock:j_id95:3:j_id105']/span")
+   public static WebElement FifthStatus;
+   
+   @FindBy(xpath="//*[@id='OneTimePayment:j_id41:j_id42:theForm:theBlock:j_id95:3:j_id105']/span")
+   public static WebElement SixStatus;
+   
+   @FindBy(xpath="//*[@id='OneTimePayment:j_id41:j_id42:theForm:theBlock:j_id95:0:j_id107']/span")
+   public static WebElement FirstPaidThruDate;
+   
+   @FindBy(xpath="//*[@id='OneTimePayment:j_id41:j_id42:theForm:theBlock:j_id95:1:j_id107']/span")
+   public static WebElement SecondPaidThruDate;
+   
+   @FindBy(xpath="//*[@id='OneTimePayment:j_id41:j_id42:theForm:theBlock:j_id95:2:j_id107']/span")
+   public static WebElement ThridPaidThruDate;
+   
+   @FindBy(xpath="//*[@id='OneTimePayment:j_id41:j_id42:theForm:theBlock:j_id95:3:j_id107']/span")
+   public static WebElement ForthPaidThruDate;
+   
+   @FindBy(xpath="//*[@id='OneTimePayment:j_id41:j_id42:theForm:theBlock:j_id95:4:j_id107']/span")
+   public static WebElement FifthPaidThruDate;
+   
+   @FindBy(xpath="//*[@id='OneTimePayment:j_id41:j_id42:theForm:theBlock:j_id95:5:j_id107']/span")
+   public static WebElement SixPaidThruDate;
+   
+   @FindBy(xpath="//*[@id='OneTimePayment:j_id41:j_id42:theForm:theBlock:j_id95:0:j_id225']")
+   public static WebElement FirstBalanceDue;
+   
+   @FindBy(xpath="//*[@id='OneTimePayment:j_id41:j_id42:theForm:theBlock:j_id95:1:j_id226']")
+   public static WebElement SecondBalanceDue;
+   
+   @FindBy(xpath="//*[@id='OneTimePayment:j_id41:j_id42:theForm:theBlock:j_id95:2:j_id227']")
+   public static WebElement ThirdBalanceDue;
+   
+   @FindBy(xpath="//*[@id='OneTimePayment:j_id41:j_id42:theForm:theBlock:j_id95:3:j_id228']")
+   public static WebElement ForthBalanceDue;
+   
+   @FindBy(xpath="//*[@id='OneTimePayment:j_id41:j_id42:theForm:theBlock:j_id95:4:j_id229']")
+   public static WebElement FifthBalanceDue;
+   
+   @FindBy(xpath="//*[@id='OneTimePayment:j_id41:j_id42:theForm:theBlock:j_id95:5:j_id230']")
+   public static WebElement SixBalanceDue;
+   
+   @FindBy(xpath="//*[@id='OneTimePayment:j_id41:j_id42:theForm:theBlock:j_id95:0:j_id111']/span")
+   public static WebElement FirstSuspenseAmount;
+   
+   @FindBy(xpath="//*[@id='OneTimePayment:j_id41:j_id42:theForm:theBlock:j_id95:1:j_id111']/span")
+   public static WebElement SecondSuspenseAmount;
+   
+   @FindBy(xpath="//*[@id='OneTimePayment:j_id41:j_id42:theForm:theBlock:j_id95:2:j_id111']/span")
+   public static WebElement ThirdSuspenseAmount;
+   
+   @FindBy(xpath="//*[@id='OneTimePayment:j_id41:j_id42:theForm:theBlock:j_id95:3:j_id111']/span")
+   public static WebElement ForthSuspenseAmount;
+   
+   @FindBy(xpath="//*[@id='OneTimePayment:j_id41:j_id42:theForm:theBlock:j_id95:4:j_id111']/span")
+   public static WebElement FifthSuspenseAmount;
+   
+   @FindBy(xpath="//*[@id='OneTimePayment:j_id41:j_id42:theForm:theBlock:j_id95:5:j_id111']/span")
+   public static WebElement SixthSuspenseAmount;
+   
+   @FindBy(xpath="//*[@id='OneTimePayment:j_id41:j_id42:theForm:theBlock:j_id95:0:j_id113']")
+   public static WebElement FirstAmountToPay;
+   
+   @FindBy(xpath="//*[@id='OneTimePayment:j_id41:j_id42:theForm:theBlock:j_id95:1:j_id113']")
+   public static WebElement SecondAmountToPay;
+   
+   @FindBy(xpath="//*[@id='OneTimePayment:j_id41:j_id42:theForm:theBlock:j_id95:2:j_id113']")
+   public static WebElement ThirdAmountToPay;
+   
+   @FindBy(xpath="//*[@id='OneTimePayment:j_id41:j_id42:theForm:theBlock:j_id95:3:j_id113']")
+   public static WebElement ForthAmountToPay;
+   
+   @FindBy(xpath="//*[@id='OneTimePayment:j_id41:j_id42:theForm:theBlock:j_id95:4:j_id113']")
+   public static WebElement FifthAmountToPay;
+   
+   @FindBy(xpath="//*[@id='OneTimePayment:j_id41:j_id42:theForm:theBlock:j_id95:5:j_id113']")
+   public static WebElement SixAmountToPay;
+   
+   @FindBy(xpath="//*[contains(text(),'Total Amount')]")
+   public static WebElement TotalAmountToPay;
+   
+   @FindBy(xpath="//*[@id='OneTimePayment:j_id41:j_id42:theForm:theBlock:paymentScreen']/div/p")
+   public static WebElement ButtomText;
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
 }
