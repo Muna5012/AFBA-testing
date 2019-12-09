@@ -245,34 +245,32 @@ public class AFBAEditContactInformation extends TestBase {
 		String str = AFBACustomerPortalMainPage.DocumentDelivery.getText();
 		System.out.println(str + "\n");
 		act.pause(2000).perform();
+	}
+	
+
+	@Then("Get all the text of Document Delivery Explained")
+	public void get_all_the_text_of_Document_Delivery_Explained() {
 		String str2 = AFBACustomerPortalMainPage.DocumentDeliveryAllText.getText();
 		System.out.println(str2+ "\n");
 		act.pause(2000).perform();
 		
 		String imageUrl=AFBACustomerPortalMainPage.Image.getAttribute("src");
 		System.out.println("Image source path : \n"+ imageUrl + "\n");
-		
-	}
-	
-
-	@Then("Get all the text of Document Delivery Explained")
-	public void get_all_the_text_of_Document_Delivery_Explained() {
-		String str = AFBACustomerPortalMainPage.DeliveryPreference.getText();
-		System.out.println("\n"+ str + "\n");
-		act.pause(1000).perform();
-		String str2 = AFBACustomerPortalMainPage.DeliveryPreferenceAllText.getText();
-		System.out.println(str2+ "\n");
-		act.pause(1000).perform();
+		act.pause(2000).perform();
 	}
 	
 	@Then("Get text of eDelivery")
 	public void get_text_of_eDelivery() {
-	   
+		String str = AFBACustomerPortalMainPage.GetTexteDelivery.getText();
+		System.out.println("\n"+ str + "\n");
+		act.pause(1000).perform();
 	}
 
 	@Then("Get all the text of eDelivery explain")
 	public void get_all_the_text_of_eDelivery_explain() {
-	    
+		String str2 = AFBACustomerPortalMainPage.GetTextOfAlleDelivery.getText();
+		System.out.println(str2+ "\n");
+		act.pause(1000).perform();
 	}
 
 	@Then("Select checkbox to opt in eDelivery to email")
@@ -315,8 +313,8 @@ public class AFBAEditContactInformation extends TestBase {
 
 	@Then("Click Here button to access AFBA Text Message Terms and Conditions")
 	public void click_Here_button_to_access_AFBA_Text_Message_Terms_and_Conditions() {
-		//AFBACustomerPortalMainPage.ClickHere.click();
-		act.pause(1000).perform();
+		String getUrl=AFBACustomerPortalMainPage.ClickHere.getAttribute("href");
+		System.out.println("Image source URL : \n"+ getUrl + "\n");
 		
 	}
 
@@ -346,14 +344,14 @@ public class AFBAEditContactInformation extends TestBase {
 	
 	@Then("Click Save Changes button to save it")
 	public void click_Save_Changes_button_to_save_it() {
-		//AFBACustomerPortalMainPage.SaveChangesBtn.click();
+		AFBACustomerPortalMainPage.SaveChangesBtn.click();
 		act.pause(2000).perform();
 	
 	}
 	
 	@Then("Click Ok button to save updated status")
 	public void click_Ok_button_to_save_updated_status() {
-	//	AFBACustomerPortalMainPage.OkForContactInfoChanges.click();
+		AFBACustomerPortalMainPage.OkForContactInfoChanges.click();
 		act.pause(2000).perform();
 	}
 }
