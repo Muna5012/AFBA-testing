@@ -20,9 +20,9 @@ import cucumber.api.junit.Cucumber;
 				
 		features = "MyFeatures"
 		,glue = "stepdefination",
-		dryRun = true,
+		dryRun = false,
 		//tags = {"@Test05","@Test06","@Test07"}
-		tags = {"@contactInfo"}
+		tags = {"@OneTimePayment"}
 		)
 
 public class TestRunner {
