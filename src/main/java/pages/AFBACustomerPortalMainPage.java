@@ -340,7 +340,7 @@ public class AFBACustomerPortalMainPage {
     @FindBy(xpath="//*[contains(text(),'Payment Details For Recurring Payments')]")
     public static WebElement GetTextOfPaymentDetailsForRecurringPayments;
     
-    @FindBy(xpath="//*[contains(text(),' Credit Card')]")
+    @FindBy(xpath="//*[contains(text(),'Credit Card')]")
     public static WebElement GetTextCreditCard;
     
     @FindBy(xpath="//*[@id='OneTimePayment:j_id41:j_id42:j_id44:regBlock:paymentDetails:j_id73:0']")
@@ -835,22 +835,98 @@ public class AFBACustomerPortalMainPage {
    @FindBy(xpath="//*[contains(text(),'Total Amount')]")
    public static WebElement TotalAmountToPay;
    
+   @FindBy (xpath="//*[@name='OneTimePayment:j_id41:j_id42:theForm:theBlock:j_id95:0:j_id100']")
+   public static WebElement SelectFirstBenefAccount;
+   
+   @FindBy(xpath="//*[@id='OneTimePayment:j_id41:j_id42:theForm:theBlock:j_id95:j_id96']")
+   public static WebElement GetChangedTotalNum;
+   
    @FindBy(xpath="//*[@id='OneTimePayment:j_id41:j_id42:theForm:theBlock:paymentScreen']/div/p")
-   public static WebElement ButtomText;
+   public static WebElement GetAllNotes;
    
+   @FindBy(xpath="//*[@name='OneTimePayment:j_id41:j_id42:theForm:theBlock:j_id188']")
+   public static WebElement ClickNextBtn;
    
+   @FindBy(xpath="//*[contains(text(),'Payment Details')]")
+   public static WebElement GetTextOfPaymentDetailsForOneTimePayment;
    
+   @FindBy(xpath="//*[contains(text(),'Credit Card Details')]")
+   public static WebElement GetTextOfCreditCardDetails;
    
+   @FindBy(xpath="//*[@name='OneTimePayment:j_id41:j_id42:theForm:theBlock:ccDetails:j_id118:j_id120']/option[1]")
+   public static WebElement Visa;
    
+   @FindBy(xpath="//*[@name='OneTimePayment:j_id41:j_id42:theForm:theBlock:ccDetails:j_id122:j_id124']")
+   public static WebElement InputCardholderName;
    
+   @FindBy(xpath="//*[@name='OneTimePayment:j_id41:j_id42:theForm:theBlock:ccDetails:j_id125:j_id127']")
+   public static WebElement InputCreditCardNum;
    
+   @FindBy(xpath="//*[@name='OneTimePayment:j_id41:j_id42:theForm:theBlock:ccDetails:j_id128:expiration']/option[1]")
+   public static WebElement SelectDEC;
    
+   @FindBy(xpath="//*[@name='OneTimePayment:j_id41:j_id42:theForm:theBlock:ccDetails:j_id128:j_id132']/option[4]")
+   public static WebElement SelectYear;
    
+   @FindBy(xpath="//*[@name='OneTimePayment:j_id41:j_id42:theForm:theBlock:ccDetails:j_id135:j_id137']")
+   public static WebElement InputCVV;
    
+   @FindBy(xpath="//*[@name='OneTimePayment:j_id41:j_id42:theForm:theBlock:ccDetails:j_id138:j_id140']")
+   public static WebElement InputZipCode;
    
+   @FindBy(xpath="//*[@name='OneTimePayment:j_id41:j_id42:theForm:theBlock:j_id186']")
+   public static WebElement ClickPayNow;
    
+   @FindBy(xpath="//*[@id='OneTimePayment:j_id41:j_id42:theForm:theBlock:j_id163:j_id164:0:j_id168']/span")
+   public static WebElement GetTextOfFirstAccountNumOTP;
    
+   @FindBy(xpath="//*[@id='OneTimePayment:j_id41:j_id42:theForm:theBlock:j_id163:j_id164:0:j_id170']/span")
+   public static WebElement GetTextOfFirstInsuredNameOTP;
    
+   @FindBy(xpath="//*[@id='OneTimePayment:j_id41:j_id42:theForm:theBlock:j_id163:j_id164:0:j_id172']/span")
+   public static WebElement GetTextOfFirstStatusOTP;
+   
+   @FindBy(xpath="//*[@id='OneTimePayment:j_id41:j_id42:theForm:theBlock:j_id163:j_id164:0:j_id174']/span")
+   public static WebElement GetTextOfFirstPaidThruDateOTP;
+   
+   @FindBy(xpath="//*[@id='OneTimePayment:j_id41:j_id42:theForm:theBlock:j_id163:j_id164:0:j_id177']")
+   public static WebElement GetTextOfFirstBalanceDueOTP;
+   
+   @FindBy(xpath="//*[@id='OneTimePayment:j_id41:j_id42:theForm:theBlock:j_id163:j_id164:0:j_id179']/span")
+   public static WebElement GetTextOfFirstSuspenseAmount;
+   
+   @FindBy(xpath="//*[@id='OneTimePayment:j_id41:j_id42:theForm:theBlock:j_id163:j_id164:0:j_id181']/span")
+   public static WebElement GetTextOfFirstAmountToPay;
+   
+   @FindBy(xpath="//*[@id='OneTimePayment:j_id41:j_id42:theForm:theBlock:j_id163:j_id164:1:j_id168']/span")
+   public static WebElement GetTextOfSecondAccountNumOTP;
+   
+   @FindBy(xpath="//*[@id='OneTimePayment:j_id41:j_id42:theForm:theBlock:j_id163:j_id164:1:j_id170']/span")
+   public static WebElement GetTextOfSecondInsuredNameOTP;
+   
+   @FindBy(xpath="//*[@id='OneTimePayment:j_id41:j_id42:theForm:theBlock:j_id163:j_id164:1:j_id172']/span")
+   public static WebElement GetTextOfSecondStatusOTP;
+   
+   @FindBy(xpath="//*[@id='OneTimePayment:j_id41:j_id42:theForm:theBlock:j_id163:j_id164:1:j_id174']/span")
+   public static WebElement GetTextOfSecondPaidThruDateOTP;
+   
+   @FindBy(xpath="//*[@id='OneTimePayment:j_id41:j_id42:theForm:theBlock:j_id163:j_id164:1:j_id177']")
+   public static WebElement GetTextOfSecondBalanceDueOTP;
+   
+   @FindBy(xpath="//*[@id='OneTimePayment:j_id41:j_id42:theForm:theBlock:j_id163:j_id164:1:j_id179']/span")
+   public static WebElement GetTextOfSecondSuspenseAmount;
+   
+   @FindBy(xpath="//*[@id='OneTimePayment:j_id41:j_id42:theForm:theBlock:j_id163:j_id164:1:j_id181']/span")
+   public static WebElement GetTextOfSecondAmountToPay;
+   
+   @FindBy(xpath="//*[@id='OneTimePayment:j_id41:j_id42:theForm:j_id47:j_id48:j_id49:0:j_id50:j_id51:j_id53']")
+   public static WebElement GetTextOfSubmition;
+   
+   @FindBy(xpath="//*[@name='OneTimePayment:j_id41:j_id42:theForm:theBlock:j_id95:1:j_id100']")
+   public static WebElement SelectSecondPolicy;
+   
+   @FindBy(xpath="//*[@id='OneTimePayment:j_id41:j_id42:theForm:j_id47:j_id48:j_id49:0:j_id50:j_id51:j_id53']")
+   public static WebElement GetTextOfPleaseSelectAtLeastOnePolicyForPayment;
    
    
    
