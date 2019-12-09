@@ -284,10 +284,10 @@ public class AFBACustomerPortalMainPage {
 	public static WebElement Image;
 	
     @FindBy(xpath="//*[@id='Mainmenu:j_id41:j_id42:j_id48']/div[4]/h3/span")
-    public static WebElement DeliveryPreference;
+    public static WebElement GetTexteDelivery;
     
     @FindBy(xpath="//*[@id='Mainmenu:j_id41:j_id42:j_id48']/div[5]/div")
-    public static WebElement DeliveryPreferenceAllText;
+    public static WebElement GetTextOfAlleDelivery;
     
     @FindBy(xpath="//*[@id='toggle-desc']/span[1]")
     public static WebElement ClickYesCheckBoxforDeliveryPreference;
@@ -310,7 +310,7 @@ public class AFBACustomerPortalMainPage {
     @FindBy(xpath="//*[@id='Mainmenu:j_id41:j_id42:j_id48']/div[7]/div/div[4]/div/span/label/span[1]")
     public static WebElement TextAlertRadioBtn3;
     
-    @FindBy(xpath="//u[contains(text(),'here')]")
+    @FindBy(xpath="//*[@id='Mainmenu:j_id41:j_id42:j_id48']/div[7]/div/p[2]/a")
     public static WebElement ClickHere;
     
     @FindBy(xpath="//*[contains(text(),'Marketing Preference:')]")
@@ -324,6 +324,12 @@ public class AFBACustomerPortalMainPage {
     
     @FindBy(xpath="//*[@name='Mainmenu:j_id41:j_id42:j_id48:j_id211']")
     public static WebElement SaveChangesBtn;
+    
+    @FindBy(xpath="//*[contains(text(),'Save Status')]")
+    public static WebElement GetTextOfSaveStatus;
+    
+    @FindBy(xpath="//*[contains(text(),'Record updated Successfully.Thank you!')]")
+    public static WebElement GetTextOfNotiesForSaveStatus;
     
     @FindBy(xpath="//*[@id='modalSuccess']/div/div[3]/input")
     public static WebElement OkForContactInfoChanges;
