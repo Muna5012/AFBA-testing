@@ -1,5 +1,7 @@
 package stepdefination;
 
+import org.openqa.selenium.JavascriptExecutor;
+
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -171,7 +173,7 @@ public class AFBAEditContactInformation extends TestBase {
 		AFBACustomerPortalMainPage.DutyStatusClick.click();
 		act.pause(1000).perform();
 		AFBACustomerPortalMainPage.Active.click();
-	    System.out.println(str4+ ": Active" + "\n ");
+	    System.out.println(str4+ ": Active Duty" + "\n ");
 	    act.pause(1000).perform();
 	  
 	}
@@ -187,7 +189,7 @@ public class AFBAEditContactInformation extends TestBase {
 	@Then("Click pencil icon to Edit Primary Phone Number")
 	public void click_pencil_icon_to_Edit_Primary_Phone_Number() {
 		AFBACustomerPortalMainPage.EditPrimaryPhoneNumber.click();
-		act.pause(1000).perform();
+		act.pause(3000).perform();
 	}
 
 	@Then("Get text of Change Phone and Phone Number and input new Phone number")
@@ -208,7 +210,7 @@ public class AFBAEditContactInformation extends TestBase {
 	@Then("Click Save button to save New Phone Number")
 	public void click_Save_button_to_save_New_Phone_Number() {
 		AFBACustomerPortalMainPage.ClickSaveForPhoneNumChange.click();
-		act.pause(2000).perform();
+		act.pause(3000).perform();
 		AFBACustomerPortalMainPage.ClickOkForSavePhoneNumber.click();
 		act.pause(2000).perform();
 	}
@@ -345,13 +347,29 @@ public class AFBAEditContactInformation extends TestBase {
 	@Then("Click Save Changes button to save it")
 	public void click_Save_Changes_button_to_save_it() {
 		AFBACustomerPortalMainPage.SaveChangesBtn.click();
-		act.pause(2000).perform();
+		act.pause(5000).perform();
 	
 	}
 	
 	@Then("Click Ok button to save updated status")
 	public void click_Ok_button_to_save_updated_status() {
 		AFBACustomerPortalMainPage.OkForContactInfoChanges.click();
+		act.pause(4000).perform();
+	}
+	
+	@Then("Navigate back to main page and click Edit Contact Information")
+	public void navigate_back_to_main_page_and_click_Edit_Contact_Information() {
+		AFBACustomerPortalMainPage.EditContactInformationBtn.click();
 		act.pause(2000).perform();
+	}
+
+	@Then("Varify Marketing Preference Enabled changes")
+	public void varify_Marketing_Preference_Enabled_changes() {
+		 JavascriptExecutor js = (JavascriptExecutor) driver;
+		 js.executeScript("window.scrollBy(0,2000)");
+		 act.pause(1000).perform();
+		String string = AFBACustomerPortalMainPage.GetTextOfVarify.getText();
+		System.out.println(string + "\n");
+		act.pause(1000).perform();
 	}
 }
