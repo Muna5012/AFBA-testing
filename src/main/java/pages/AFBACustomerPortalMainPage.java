@@ -334,11 +334,12 @@ public class AFBACustomerPortalMainPage {
     @FindBy(xpath="//*[@id='modalSuccess']/div/div[3]/input")
     public static WebElement OkForContactInfoChanges;
     
-    
-    
+    @FindBy(xpath="/html/body/div/div/div/div/section/div[1]/form/div[9]/div/div/div/label/span[2]/span")
+    public static WebElement GetTextOfVarify;
     
     
    
+    
     
     @FindBy(xpath="//*[contains(text(),'Set Up Recurring Payments')]")
     public static WebElement ClickSetUpRecurringPAymentBtn;
