@@ -16,19 +16,21 @@ public class AFBAMakeOnePaymentStepDef extends TestBase{
 		AFBAMemberPortalLoginPage.PasswordforLogin.click();
 		AFBAMemberPortalLoginPage.PasswordforLogin.sendKeys("Q85q2019");
 		AFBAMemberPortalLoginPage.LoginBtnforLoginPage.click();
-		act.pause(2000).perform();
+		act.pause(3000).perform();
 	}
 
 	@When("Click Make a One time Payment button")
 	public void click_Make_a_One_time_Payment_button() {
 		AFBACustomerPortalMainPage.ClickMakeOneTimePayment.click();
-		act.pause(2000).perform();
+		act.pause(3000).perform();
 	}
 	
 	@Then("Get text of Please select at least one policy for payment")
 	public void get_text_of_Please_select_at_least_one_policy_for_payment() {
 		  String str = AFBACustomerPortalMainPage.GetTextOfPleaseSelectAtLeastOnePolicyForPayment.getText();
 		    System.out.println(str + "\n");
+			act.pause(3000).perform();
+
 	}
 
 
@@ -42,7 +44,7 @@ public class AFBAMakeOnePaymentStepDef extends TestBase{
 	public void get_text_of_Firstname_Lastname_Email_Address_City_status() {
 	  String str = AFBACustomerPortalMainPage.GetAllTextPayorDetails.getText();
 	  System.out.println(str + "\n");
-	  act.pause(1000).perform();
+	  act.pause(3000).perform();
 	}
 
 	@Then("Get text of Selected, Account, Insured, Status, Paid Thru Date, Balance Due, Suspense Amount, Amount To Pay")
@@ -55,7 +57,7 @@ public class AFBAMakeOnePaymentStepDef extends TestBase{
 		  String str5 = AFBACustomerPortalMainPage.GetTextSuspenseAmount.getText();
 		  String str6 = AFBACustomerPortalMainPage.GetTextAmountPay.getText();
 		  System.out.println(str + "    " + str1 + "        " + str2 + "      " + str3 + "    " + str4 + "    " + str5 + "   " + str6);
-		  act.pause(2000).perform();
+		  act.pause(3000).perform();
 	}
 
 	@Then("Get text of first beneficiary information")
@@ -68,7 +70,8 @@ public class AFBAMakeOnePaymentStepDef extends TestBase{
 		    String st30 = AFBACustomerPortalMainPage.FirstSuspenseAmount.getText();
 		    String st31 = AFBACustomerPortalMainPage.FirstAmountToPay.getText();
 		    System.out.println(st+ "  " +st1+"  "+st2+"    "+st3+"       "+st24+"          "+st30+"            "+st31);
-		    
+			act.pause(3000).perform();
+
 	}
 
 	@Then("Get text of second beneficiary information")
@@ -81,7 +84,8 @@ public class AFBAMakeOnePaymentStepDef extends TestBase{
 		    String st32 = AFBACustomerPortalMainPage.SecondSuspenseAmount.getText();
 		    String st33 = AFBACustomerPortalMainPage.SecondAmountToPay.getText();
 		    System.out.println(st4+"  "+st5+"  "+st6+"  "+st7+"        "+st25+"          "+st32+"            "+st33);
-		    
+			act.pause(3000).perform();
+
 	}
 
 	@Then("Get text of third beneficiary information")
@@ -94,7 +98,8 @@ public class AFBAMakeOnePaymentStepDef extends TestBase{
 		    String st34 = AFBACustomerPortalMainPage.ThirdSuspenseAmount.getText();
 		    String st35 = AFBACustomerPortalMainPage.ThirdAmountToPay.getText();
 		    System.out.println(st8+"  "+st9+"  "+st10+"  "+st11+"         "+st26+"          "+st34+"            "+st35);
-		    
+			act.pause(3000).perform();
+
 	}
 
 	@Then("Get text of fourth beneficiary information")
@@ -107,7 +112,8 @@ public class AFBAMakeOnePaymentStepDef extends TestBase{
 		    String st36 = AFBACustomerPortalMainPage.ForthSuspenseAmount.getText();
 		    String st37 = AFBACustomerPortalMainPage.ForthAmountToPay.getText();
 		    System.out.println(st12+"  "+st13+"  "+st14+"   "+st15+"         "+st27+"          "+st36+"            "+st37);
-		    
+			act.pause(3000).perform();
+
 	}
 
 	@Then("Get text of fifth beneficiary information")
@@ -120,7 +126,8 @@ public class AFBAMakeOnePaymentStepDef extends TestBase{
 		    String st38 = AFBACustomerPortalMainPage.FifthSuspenseAmount.getText();
 		    String st39 = AFBACustomerPortalMainPage.FifthAmountToPay.getText(); 
 		    System.out.println(st16+"  "+st17+"  "+st18+"   "+st19+"         "+st28+"          "+st38+"            "+st39);
-		    
+			act.pause(3000).perform();
+
 	}
 
 	@Then("Get text of sixth beneficiary information")
@@ -135,18 +142,20 @@ public class AFBAMakeOnePaymentStepDef extends TestBase{
 		    System.out.println(st20+"   "+st21+"  "+st22+"  "+st23+"       "+st29+"          "+st40+"            "+st41);
 		    String st42 = AFBACustomerPortalMainPage.TotalAmountToPay.getText();
 		    System.out.println(st42 + "\n");
+			act.pause(3000).perform();
+
 	}
 
 	@Then("Select first policy payment")
 	public void select_first_policy_payment() {
 		AFBACustomerPortalMainPage.SelectFirstBenefAccount.click();
-		act.pause(1000).perform();
+		act.pause(3000).perform();
 	}
   
 	@Then("Select second policy Payment")
 	public void select_second_policy_Payment() {
 		AFBACustomerPortalMainPage.SelectSecondPolicy.click();
-		act.pause(1000).perform();
+		act.pause(3000).perform();
 	}
 	
 	@Then("Get text of Total Amount to Pay")
@@ -156,13 +165,15 @@ public class AFBAMakeOnePaymentStepDef extends TestBase{
 	    act.pause(1000).perform();
 	    String st43 = AFBACustomerPortalMainPage.GetAllNotes.getText();
 	    System.out.println(st43 + "\n");
+		act.pause(3000).perform();
+
 	}
 	
 	
 	@Then("Click Next button to One Time Payment")
 	public void click_Next_button_to_One_Time_Payment() {
 		AFBACustomerPortalMainPage.ClickNextBtn.click();
-		act.pause(1000).perform();
+		act.pause(3000).perform();
 	}
 
 
@@ -173,6 +184,8 @@ public class AFBAMakeOnePaymentStepDef extends TestBase{
 	    
 		String st1 = AFBACustomerPortalMainPage.GetTextOfCreditCardDetails.getText();
 	    System.out.println(st1 + ": ");
+		act.pause(3000).perform();
+
 	}
 
 	@Then("Get text of all Credit Card Details")
@@ -180,34 +193,34 @@ public class AFBAMakeOnePaymentStepDef extends TestBase{
 		String st = AFBACustomerPortalMainPage.GetTextCardType.getText();
 	    AFBACustomerPortalMainPage.Visa.click();
 	    System.out.println(st + ": Visa");
-	    act.pause(1000).perform();
+	    act.pause(3000).perform();
 	    
 	    String st1 = AFBACustomerPortalMainPage.GetTextCardHolderName.getText();
 	    AFBACustomerPortalMainPage.InputCardholderName.click();
 	    System.out.println(st1 + ": ELEANOR ROBERSON ");
-	    act.pause(1000).perform();
+	    act.pause(3000).perform();
 	    
 	    String st2 = AFBACustomerPortalMainPage.GetTextOfCardNumber.getText();
 	    AFBACustomerPortalMainPage.InputCreditCardNum.sendKeys("4111111111111111");
 	    System.out.println(st2 + ": 4111111111111111");
-	    act.pause(1000).perform();
+	    act.pause(3000).perform();
 	    
 	    String st3 = AFBACustomerPortalMainPage.GetTextOfExpirationDate.getText();
 	    AFBACustomerPortalMainPage.SelectDEC.click();
 	    AFBACustomerPortalMainPage.SelectYear.click();
 	    System.out.println(st3 + ": DEC/2022");
-	    act.pause(1000).perform();
+	    act.pause(3000).perform();
 	    
 	    String st4 = AFBACustomerPortalMainPage.GetTextOfCVV.getText();
 	    AFBACustomerPortalMainPage.InputCVV.sendKeys("235");
 	    System.out.println(st4 + ": 235");
-	    act.pause(1000).perform();
+	    act.pause(3000).perform();
 	    
 	    String st5 = AFBACustomerPortalMainPage.GetTextBillingZipCode.getText();
 	    AFBACustomerPortalMainPage.InputZipCode.clear();
 	    AFBACustomerPortalMainPage.InputZipCode.sendKeys("20147");
 	    System.out.println(st5 + ": 20147" +"\n");
-	    act.pause(1000).perform();
+	    act.pause(3000).perform();
 	}
 
 	@Then("Get text of Account, Insured, Status, Paid Thru Date, Balance Due, Suspense Amount, Amount to Pay")
@@ -220,7 +233,7 @@ public class AFBAMakeOnePaymentStepDef extends TestBase{
 		  String str5 = AFBACustomerPortalMainPage.GetTextSuspenseAmount.getText();
 		  String str6 = AFBACustomerPortalMainPage.GetTextAmountPay.getText();
 		  System.out.println(str + "    " + str1 + "        " + str2 + "      " + str3 + "    " + str4 + "    " + str5 + "   " + str6);
-		  act.pause(2000).perform();
+			act.pause(3000).perform();
 	}
 
 	@Then("Get text of first policy payment details on One Time Payment page")
@@ -233,7 +246,8 @@ public class AFBAMakeOnePaymentStepDef extends TestBase{
 		    String st12 = AFBACustomerPortalMainPage.GetTextOfFirstSuspenseAmount.getText();
 		    String st13 = AFBACustomerPortalMainPage.GetTextOfFirstAmountToPay.getText();
 		    System.out.println(st7+ "  " +st8+"    "+st9+"    "+st10+"       "+st11+"          "+st12+"            "+st13);
-		    
+			act.pause(3000).perform();
+
 	}
 	
 	@Then("Get text of second policy payment details on One Time Payment Page")
@@ -246,7 +260,8 @@ public class AFBAMakeOnePaymentStepDef extends TestBase{
 		    String st12 = AFBACustomerPortalMainPage.GetTextOfFirstSuspenseAmount.getText();
 		    String st13 = AFBACustomerPortalMainPage.GetTextOfSecondAmountToPay.getText();
 		    System.out.println(st7+ "  " +st8+"  "+st9+"    "+st10+"       "+st11+"          "+st12+"            "+st13);
-		    
+			act.pause(3000).perform();
+
 	}
 
 
@@ -254,14 +269,15 @@ public class AFBAMakeOnePaymentStepDef extends TestBase{
 	public void get_text_of_Total_Amount_to_Pay_number() {
 	    String st = AFBACustomerPortalMainPage.TotalAmountToPay.getText();
 	    System.out.println(st + "\n");
-	    act.pause(1000).perform();
+		act.pause(3000).perform();
+
 	}
 
 	@Then("Get text of all notes")
 	public void get_text_of_all_notes() {
 		  String st = AFBACustomerPortalMainPage.GetAllNotes.getText();
 		    System.out.println(st + "\n");
-		    act.pause(1000).perform();
+			act.pause(3000).perform();
 	}
 
 	@Then("Click Pay Now button")
@@ -270,7 +286,7 @@ public class AFBAMakeOnePaymentStepDef extends TestBase{
 		act.pause(2000).perform();
 		  String st = AFBACustomerPortalMainPage.GetTextOfSubmition.getText();
 		    System.out.println(st + "\n");
-		    act.pause(1000).perform();
+			act.pause(3000).perform();
 	}
 
 	
