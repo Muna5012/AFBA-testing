@@ -43,7 +43,8 @@ And Get text of all the Marketing Preference
 And Select checkbox for currently opted out of receiving Marketing from AFBA third party vendors
 And Click Save Changes button to save it
 Then Click Ok button to save updated status
-
+And Navigate back to main page and click Edit Contact Information
+Then Varify Marketing Preference Enabled changes 
 
 
 
