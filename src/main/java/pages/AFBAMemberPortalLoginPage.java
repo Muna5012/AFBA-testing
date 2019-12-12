@@ -14,6 +14,30 @@ public class AFBAMemberPortalLoginPage {
 	@FindBy(xpath="//*[contains(text(),'Register with AFBA')]")
 	public static WebElement RegisterWithAFBA;
 	
+	
+	@FindBy(xpath="//*[contains(text(),'First Name')]")
+	public static WebElement GetTextOfFirstName;
+	
+	@FindBy(xpath="//*[contains(text(),'Last Name')]")
+	public static WebElement GetTextOfLastName;
+	
+	@FindBy(xpath="//*[contains(text(),'SSN')]")
+	public static WebElement GetTextOfSSN;
+	
+	@FindBy(xpath="//*[contains(text(),'Date of Birth')]")
+	public static WebElement GetTextOfDOB;
+	
+	@FindBy(xpath="//*[contains(text(),'Email:')]")
+	public static WebElement GetTextOfEmail;
+	
+	@FindBy(xpath="//*[@id='Registration:theForm']/fieldset/table/tbody/tr[8]/td[1]/label")
+	public static WebElement GetTextOfPassword;
+	
+	@FindBy(xpath="//label[contains(text(),'Confirm Password:')]")
+	public static WebElement GetTextOfConfirmPassword;
+	
+	
+	
 	@FindBy(xpath="//input[@id='Registration:theForm:FirstName']")
 	public static WebElement FirstName;
 	
@@ -201,6 +225,8 @@ public class AFBAMemberPortalLoginPage {
 	@FindBy(xpath="//*[@id='j_id0:theForm']/p[11]/a[3]/b/span")
 	public static WebElement loginClick3;
 	
+	  
+	
 	
 	@FindBy(xpath="//*[@id='j_id0:theForm']/p[16]/a[1]/b/span")
 	public static WebElement loginClick4;
@@ -211,6 +237,8 @@ public class AFBAMemberPortalLoginPage {
 	@FindBy(xpath="//*[contains(text(),'eDelivery')]")
 	public static WebElement eDelivery;
 	
+	@FindBy(xpath="//*[@id='j_id0:theForm']/p[23]/a[1]")
+	public static WebElement LoginClick5;
 	
 	
 	@FindBy(xpath="//*[@id='sitelogin:loginForm:username']")
