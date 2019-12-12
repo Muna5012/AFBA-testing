@@ -937,4 +937,26 @@ public class AFBACustomerPortalMainPage {
    
    
    
+   @FindBy(xpath="//*[contains(text(),'Download Forms')]")
+   public static WebElement DownloadForm;
+   
+   @FindBy(xpath="//*[contains(text(),'Financial Planning Guide')]")
+   public static WebElement FinancialPlaningGuide;
+   
+   @FindBy(xpath="//*[contains(text(),'Change Beneficiary')]")
+   public static WebElement ChangeBene;
+   
+   @FindBy(xpath="//*[contains(text(),'Change of Name')]")
+   public static WebElement ChangeName;
+   
+   @FindBy(xpath="//*[contains(text(),'Allotment Authorization')]")
+   public static WebElement AllotmentAuthorization;
+   
+   @FindBy(xpath="//*[contains(text(),'Allotment Instructions')]")
+   public static WebElement AllotmentInstructions;
+   
+   
+   
+   
+   
 }
