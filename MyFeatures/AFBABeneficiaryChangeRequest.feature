@@ -62,7 +62,10 @@ Then Get text of Step five Summary Of Selection
 And Get text of Selected Policies, Primary Beneficiaries, and Contingent Beneficiaries infromation
 Then Get text of all the Notes
 And Click Checking Box 
-Then Click Submit button to submit it
+Then Click Submit button to submit the application
+And Navigate back to home page Get text of Account Number, Status, Crated Date, Decision Date
+And Get text of beneficiary Account Number, Status, Created Date
+Then Click View button and get Beneficiary Designation Forms Url
 
 
 
