@@ -115,9 +115,71 @@ public class AFBACustomerPortalMainPageStepDef extends TestBase{
 		act.pause(1000).perform();
 		String str2 = AFBACustomerPortalMainPage.GetAlltheTextOfQuickLinks.getText();
 		System.out.println(str2 +"\n");
-		act.pause(1000).perform();
+		act.pause(3000).perform();
 	}
 	
+	@Then("Click Download Form Links")
+	public void click_Download_Form_Links() {
+		AFBACustomerPortalMainPage.DownloadForm.click();
+		act.pause(2000).perform();
+	}
+
+	@Then("Get text of Financial Planning Guide and get Url link")
+	public void get_text_of_Financial_Planning_Guide_and_get_Url_link() {
+		String str = AFBACustomerPortalMainPage.FinancialPlaningGuide.getText();
+		System.out.println(str +"\n");
+		
+	//	AFBACustomerPortalMainPage.FinancialPlaningGuide.click();
+		act.pause(2000).perform();
+	//	driver.get("https://afbafull-afba.cs93.force.com/MemberPortal/apex/BeneficiaryChangeRequest");
+	//	act.pause(3000).perform();
+		
+		String getUrl=AFBACustomerPortalMainPage.FinancialPlaningGuide.getAttribute("href");
+		System.out.println("Image source URL : \n"+ getUrl + "\n");
+		act.pause(3000).perform();
+	}
+
+	@Then("Get text of Change Beneficiary and get URL link")
+	public void get_text_of_Change_Beneficiary_and_get_URL_link() {
+		String str = AFBACustomerPortalMainPage.ChangeBene.getText();
+		System.out.println(str +"\n");
+		act.pause(2000).perform();
+		
+		String getUrl=AFBACustomerPortalMainPage.ChangeBene.getAttribute("href");
+		System.out.println("Image source URL : \n"+ getUrl + "\n");
+		act.pause(3000).perform();
+	}
+
+	@Then("Get text of Change of Name and get URL link")
+	public void get_text_of_Change_of_Name_and_get_URL_link() {
+		String str = AFBACustomerPortalMainPage.ChangeName.getText();
+		System.out.println(str +"\n");
+		
+		String getUrl=AFBACustomerPortalMainPage.ChangeName.getAttribute("href");
+		System.out.println("Image source URL : \n"+ getUrl + "\n");
+		act.pause(3000).perform();
+	}
+
+	@Then("Get text of Allotment Authorization and get URL link")
+	public void get_text_of_Allotment_Authorization_and_get_URL_link() {
+		String str = AFBACustomerPortalMainPage.AllotmentAuthorization.getText();
+		System.out.println(str +"\n");
+		
+		String getUrl=AFBACustomerPortalMainPage.AllotmentAuthorization.getAttribute("href");
+		System.out.println("Image source URL : \n"+ getUrl + "\n");
+		act.pause(3000).perform();
+	}
+
+	@Then("Get text of Allotment Instructions and get URL link")
+	public void get_text_of_Allotment_Instructions_and_get_URL_link() {
+		String str = AFBACustomerPortalMainPage.AllotmentInstructions.getText();
+		System.out.println(str +"\n");
+		
+		String getUrl=AFBACustomerPortalMainPage.AllotmentInstructions.getAttribute("href");
+		System.out.println("Image source URL : \n"+ getUrl + "\n");
+		act.pause(4000).perform();
+	   
+	}
 
 	@Then("Get text of Contact AFBA, Customer Service Hours, Toll free, Local, Email, Fax, Address")
 	public void get_text_of_Contact_AFBA_Customer_Service_Hours_Toll_free_Local_Email_Fax_Address() {
