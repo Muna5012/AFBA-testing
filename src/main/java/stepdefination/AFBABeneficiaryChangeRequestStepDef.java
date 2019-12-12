@@ -339,7 +339,7 @@ public class AFBABeneficiaryChangeRequestStepDef extends TestBase {
 	public void get_text_of_Beneficiary_added_to_list_status() {
 		  String st = NewRequest1.GetTextOfAddedStatus.getText();
 		    System.out.println(st + "\n");
-		    act.pause(2000).perform();
+		    act.pause(4000).perform();
 	}
 
 	@Then("Click Next button to move step four")
@@ -491,23 +491,102 @@ public class AFBABeneficiaryChangeRequestStepDef extends TestBase {
 		String st5 = NewRequest1.GetTextOfPolicyNumber.getText();
 		String st6 = NewRequest1.GetTextOfInsuredFullName.getText();
 		String st7 = NewRequest1.GetTextOfCoverageAmountOfNum.getText();
-		System.out.println(st5 + "     " + st6 + "     " + st7 );
+		System.out.println(st5 + "     " + st6 + "     " + st7 +"\n" );
 		act.pause(2000).perform();
+		
+		String st8 = NewRequest1.GetTextOfPrimaryBene.getText();
+		System.out.println(st8 + "\n");
+		act.pause(2000).perform();
+		
+		String st9 = NewRequest1.GetTextOfPrimaryFullName.getText();
+		String st10 = NewRequest1.GetTextOfPrimaey.getText();
+		String st11 = NewRequest1.GetTextOfPercentage100.getText();
+		System.out.println(st9 + "     " + st10 + "     " + st11 +"\n");
+		act.pause(2000).perform();
+		
+		String st12 = NewRequest1.GetTextOfRelationAndgenderforPrimarySummary.getText();
+		String st13 = NewRequest1.GetTextOfSSNForPrimarySummary.getText();
+		String st14 = NewRequest1.GetTextOfDOBForPrimarySummary.getText();
+		String st15 = NewRequest1.GetTextOfAddressForPrimarySummary.getText();
+		System.out.println(st12 + "     " + st13 + "     " + st14 + "      " +st15 );
+		act.pause(2000).perform();
+		
+		String st16 = NewRequest1.GetTextOfContingentBeneForSummary.getText();
+		System.out.println(st16 + "\n");
+		act.pause(2000).perform();
+		
+		String st19 = NewRequest1.GetTextOfContengentNameForSummary.getText();
+		String st17 = NewRequest1.GetTextOfContingentForSummary.getText();
+		String st18 = NewRequest1.GetTextOfpercentageForContingentSummary.getText();
+		System.out.println(st19 + "      " + st17 + "      " + st18 +"\n");
+		act.pause(2000).perform();
+		
+		String st20 = NewRequest1.GetTextOfRelationforContingentSummary.getText();
+		String st21 = NewRequest1.GetTextOfNameForContingentSummary.getText();
+		String st22 = NewRequest1.GetTextOfDOBForContingentSummary.getText();
+		String st23 = NewRequest1.GetTextOfNameOfTrusteeContingentSummary.getText();
+		System.out.println(st20 + "     " + st21 + "     " + st22 + "      " +st23 +"\n" );
+		act.pause(2000).perform();
+		
 	}
 	
 
 	@Then("Get text of all the Notes")
 	public void get_text_of_all_the_Notes() {
-	  
+		String st16 = NewRequest1.GetTextOfNotesForSummary.getText();
+		System.out.println(st16 + "\n");
+		act.pause(2000).perform();
 	}
 	
 
 	@Then("Click Checking Box")
 	public void click_Checking_Box() {
-	   
+		NewRequest1.ClickForChecking.click();
+		act.pause(1000).perform();
+		
+		String st16 = NewRequest1.GetTextForCheckingNotes.getText();
+		System.out.println(st16 + "\n");
+		act.pause(3000).perform();
 	}
 
 	
+	@Then("Click Submit button to submit the application")
+	public void click_Submit_button_to_submit_the_application() {
+		NewRequest1.ClickSubmitBtn.click();
+		act.pause(4000).perform();
+		
+		NewRequest1.OkBtn.click();
+		act.pause(3000).perform();
+	}
+
+	@Then("Navigate back to home page Get text of Account Number, Status, Crated Date, Decision Date")
+	public void navigate_back_to_home_page_Get_text_of_Account_Number_Status_Crated_Date_Decision_Date() {
+		String str = NewRequest1.GetTextOfAccountNum.getText();
+		String str3 = NewRequest1.GetTextOfStatus.getText();
+		String str1 = NewRequest1.GetTextOfCreatedDate.getText();
+		String str2 = NewRequest1.GetTextOfDecisionDate.getText();
+		System.out.println(str+"      "+str3+"     "+str1+"     "+str2);
+		act.pause(3000).perform();
+	}
+
+	@Then("Get text of beneficiary Account Number, Status, Created Date")
+	public void get_text_of_beneficiary_Account_Number_Status_Created_Date() {
+		String str = NewRequest1.GetTextOfFirstAccountNum.getText();
+		String str1 = NewRequest1.GetTextOfStatusSubmit.getText();
+		String str2 = NewRequest1.GetTextOfCreateDate.getText();
+		System.out.println(str+"     "+str1+"     "+str2);
+		act.pause(3000).perform();
+	}
+
+	@Then("Click View button and get Beneficiary Designation Forms Url")
+	public void click_View_button_and_get_Beneficiary_Designation_Forms_Url() {
+		NewRequest1.ClickView1.click();
+		String imageUrl=NewRequest1.GetFormURL1.getAttribute("src");
+		System.out.println("\n"+"Image source path : \n"+ imageUrl + "\n");
+		act.pause(2000).perform();
+		NewRequest1.CloseForm1.click();
+		act.pause(2000).perform();
+	}
 
 
 
