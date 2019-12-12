@@ -431,12 +431,88 @@ public class NewRequest1 {
 	@FindBy(xpath="//*[@id='Mainmenu:j_id41:j_id42:theForm:summary']/div[1]/table/tbody/tr/td[2]/div")
 	public static WebElement GetTextOfCoverageAmountOfNum;
 	
+	
+	
 	@FindBy(xpath="//*[contains(text(),'Primary Beneficiaries')]")
 	public static WebElement GetTextOfPrimaryBene;
 	
+	@FindBy(xpath="//*[@id='Mainmenu:j_id41:j_id42:theForm:j_id452']/table/tbody/tr[1]/td[1]/div")
+	public static WebElement GetTextOfPrimaryFullName;
+	
+	@FindBy(xpath="//div[contains(text(),'Primary')]")
+	public static WebElement GetTextOfPrimaey;
+	
+	@FindBy(xpath="//*[@id='Mainmenu:j_id41:j_id42:theForm:j_id452']/table/tbody/tr[1]/td[3]/div")
+	public static WebElement GetTextOfPercentage100;
 	
 	
 	
+	@FindBy(xpath="//*[@id='Mainmenu:j_id41:j_id42:theForm:j_id452']/table/tbody/tr[2]/td[1]")
+	public static WebElement GetTextOfRelationAndgenderforPrimarySummary;
+	
+	@FindBy(xpath="//*[@id='Mainmenu:j_id41:j_id42:theForm:j_id452']/table/tbody/tr[2]/td[2]")
+	public static WebElement GetTextOfSSNForPrimarySummary;
+	
+	@FindBy(xpath="//*[@id='Mainmenu:j_id41:j_id42:theForm:j_id452']/table/tbody/tr[2]/td[3]")
+	public static WebElement GetTextOfDOBForPrimarySummary;
+	
+	@FindBy(xpath="//*[@id='Mainmenu:j_id41:j_id42:theForm:j_id452']/table/tbody/tr[2]/td[4]")
+	public static WebElement GetTextOfAddressForPrimarySummary;
+	
+	
+	
+	
+	@FindBy(xpath="//*[contains(text(),'Contingent Beneficiaries')]")
+	public static WebElement GetTextOfContingentBeneForSummary;
+	
+	@FindBy(xpath="//*[@id='Mainmenu:j_id41:j_id42:theForm:j_id501']/table/tbody/tr[1]/td[1]/div")
+	public static WebElement GetTextOfContengentNameForSummary;
+	
+	@FindBy(xpath="//div[contains(text(),'Contingent')]")
+	public static WebElement GetTextOfContingentForSummary;
+	
+	@FindBy(xpath="//*[@id='Mainmenu:j_id41:j_id42:theForm:j_id501']/table/tbody/tr[1]/td[3]/div")
+	public static WebElement GetTextOfpercentageForContingentSummary;
+	
+	
+	@FindBy(xpath="//*[@id='Mainmenu:j_id41:j_id42:theForm:j_id501']/table/tbody/tr[2]/td[1]")
+	public static WebElement GetTextOfRelationforContingentSummary;
+	
+	@FindBy(xpath="//*[@id='Mainmenu:j_id41:j_id42:theForm:j_id501']/table/tbody/tr[2]/td[2]")
+	public static WebElement GetTextOfNameForContingentSummary;
+	
+	@FindBy(xpath="//*[@id='Mainmenu:j_id41:j_id42:theForm:j_id501']/table/tbody/tr[2]/td[3]")
+	public static WebElement GetTextOfDOBForContingentSummary;
+	
+	@FindBy(xpath="//*[@id='Mainmenu:j_id41:j_id42:theForm:j_id501']/table/tbody/tr[2]/td[4]")
+	public static WebElement GetTextOfNameOfTrusteeContingentSummary;
+	
+	
+	
+	@FindBy(xpath="//*[contains(text(),'To comply')]")
+	public static WebElement GetTextOfNotesForSummary;
+	
+	@FindBy(xpath="//*[@id='Mainmenu:j_id41:j_id42:theForm:check-button-label-e01']/span[1]")
+	public static WebElement ClickForChecking;
+	
+	
+	@FindBy(xpath="//*[contains(text(),'By checking')]")
+	public static WebElement GetTextForCheckingNotes;
+	
+	@FindBy(xpath="//*[@name='Mainmenu:j_id41:j_id42:theForm:submitRequest']")
+	public static WebElement ClickSubmitBtn;
+	
+	@FindBy(xpath="//*[@id='Mainmenu:j_id41:j_id42:theForm:j_id623']")
+	public static WebElement OkBtn;
+	
+	@FindBy(xpath="//*[@id='Mainmenu:j_id41:j_id42:theForm:j_id62']/table/tbody/tr[1]/td[2]/div")
+	public static WebElement GetTextOfFirstAccountNum;
+	
+	@FindBy(xpath="//*[@id='Mainmenu:j_id41:j_id42:theForm:j_id62']/table/tbody/tr[1]/td[3]/div")
+	public static WebElement GetTextOfStatusSubmit;
+	
+	@FindBy(xpath="//*[@id='Mainmenu:j_id41:j_id42:theForm:j_id62']/table/tbody/tr[1]/td[4]/div")
+	public static WebElement GetTextOfCreateDate;
 	
 	
 	
@@ -451,8 +527,5 @@ public class NewRequest1 {
 	
 	@FindBy(xpath = "//*[@id='Mainmenu:j_id41:j_id42:theForm:submitRequest']")
 	public static WebElement SubmitBtn;
-	
-	@FindBy(xpath="//*[@id='Mainmenu:j_id41:j_id42:theForm:j_id622']")
-	public static WebElement OkBtn;
 	
 }
