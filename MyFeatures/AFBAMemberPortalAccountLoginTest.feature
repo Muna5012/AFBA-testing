@@ -29,7 +29,7 @@ And Get all the text of How do I login to AFBA Member Portal explanations
 Then Get all the text of I forgot my password. How do i reset it explanations
 And Get all the text of I forget my Username. what can i do explanations
 And Get all the text of How can i receive my documents electronically explanations
-Then Input Username and Password on Account Login Page
-And Click Login button
+#Then Input Username and Password on Account Login Page
+#And Click Login button
 
  
