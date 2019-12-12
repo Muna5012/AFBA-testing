@@ -39,19 +39,42 @@ public class AFBAMemberPortalAccountLoginStepDef extends TestBase {
 
 	@Then("Input First Name, Last Name, SSN, DOB, Email, Password and Confirm Password")
 	public void input_First_Name_Last_Name_SSN_DOB_Email_Password_and_Confirm_Password() {
+		String st = AFBAMemberPortalLoginPage.GetTextOfFirstName.getText();
 		AFBAMemberPortalLoginPage.FirstName.sendKeys("AARON");
+		System.out.println(st + ": AARON");
+		act.pause(1000).perform();
+		
+		String st2 = AFBAMemberPortalLoginPage.GetTextOfLastName.getText();
 		AFBAMemberPortalLoginPage.LastName.sendKeys("DAVIS");
+		System.out.println(st2 + ": DAVIS");
+		act.pause(1000).perform();
+		
+		String st3 = AFBAMemberPortalLoginPage.GetTextOfSSN.getText();
 		AFBAMemberPortalLoginPage.SSN.sendKeys("401530001");
+		System.out.println(st3 + ": 401530001");
+		act.pause(1000).perform();
+		
+		String st4 = AFBAMemberPortalLoginPage.GetTextOfDOB.getText();
 		AFBAMemberPortalLoginPage.DOB.click();
 		AFBAMemberPortalLoginPage.DOB.sendKeys("08051978");
+		System.out.println(st4 + ": 8/5/1978");
+		act.pause(1000).perform();
+		
+		String st5 = AFBAMemberPortalLoginPage.GetTextOfEmail.getText();
 		AFBAMemberPortalLoginPage.Email.sendKeys("qapeep19@gmail.com");
+		System.out.println(st5 + ": qapeep19@gmail.com");
+		act.pause(1000).perform();
+		
+		String st6 = AFBAMemberPortalLoginPage.GetTextOfPassword.getText();
 		AFBAMemberPortalLoginPage.Password.click();
-		AFBAMemberPortalLoginPage.Password.sendKeys("123456");
-		act.pause(2000).perform();
-		AFBAMemberPortalLoginPage.Password.clear();
 		AFBAMemberPortalLoginPage.Password.sendKeys("M@12345");
+		System.out.println(st6 +": ********");
+		act.pause(2000).perform();
+		
+		String st7 = AFBAMemberPortalLoginPage.GetTextOfConfirmPassword.getText();
 		AFBAMemberPortalLoginPage.ConfirmPassword.click();
 		AFBAMemberPortalLoginPage.ConfirmPassword.sendKeys("M@12345");
+		System.out.println(st7 +": ******");
 		act.pause(1000).perform();
 	}
 	
@@ -112,33 +135,13 @@ public class AFBAMemberPortalAccountLoginStepDef extends TestBase {
 	    act.pause(2000).perform();
 	}
 	
-//	@Then("Get text of Forget Username")
-//	public void get_text_of_Forget_Username() {
-//	    MemberPortalLoginPage.ForgetYourUserName.click();
-//	    act.pause(1000).perform();
-//		String st = MemberPortalLoginPage.ForgotUserNameText.getText();
-//		System.out.println(st);
-//		act.pause(1000).perform();
-//	}
-//
-//	@Then("Input Last Name, DOB, SSN and click I'm not robot radio button")
-//	public void input_Last_Name_DOB_SSN_and_click_I_m_not_robot_radio_button() {
-//		MemberPortalLoginPage.LastNameForForgetUserName.sendKeys("DAVIS");
-//		MemberPortalLoginPage.DOBForForgotUserName.click();
-//		MemberPortalLoginPage.DOBForForgotUserName.sendKeys("08051978");
-//		act.pause(1000).perform();
-//		MemberPortalLoginPage.SSNForForgotUserName.click();
-//		MemberPortalLoginPage.SSNForForgotUserName.sendKeys("545102002");
-//		MemberPortalLoginPage.Robot.click();
-//		act.pause(3000).perform();
-//		MemberPortalLoginPage.FindUserNameBtn.click();	
-//	}
 	
 	@Then("Click Forgot your password button")
 	public void click_Forgot_your_password_button() {
 		AFBAMemberPortalLoginPage.ForgotYourPassword.click();
 		act.pause(1000).perform();
 	}
+	
 
 	@Then("Get text of Forgot your password")
 	public void get_text_of_Forgot_your_password() {
@@ -147,16 +150,19 @@ public class AFBAMemberPortalAccountLoginStepDef extends TestBase {
 	  act.pause(1000).perform();
 	}
 
+	
 	@Then("Input Username")
 	public void input_Username() {
 		AFBAMemberPortalLoginPage.UserName.sendKeys("qapeep19@gmail.com");
 	}
+	
 	
 	@Then("Click Submit button to submit Username")
 	public void click_Submit_button_to_submit_Username() {
 		AFBAMemberPortalLoginPage.ForgotYourPasswordSubmitBtn.click();
 		act.pause(1000).perform();
 	}
+	
 
 	@Then("Get text of Welcome to the AFBA member portal")
 	public void get_text_of_Welcome_to_the_AFBA_member_portal() {
@@ -166,6 +172,7 @@ public class AFBAMemberPortalAccountLoginStepDef extends TestBase {
 		  System.out.println(string1 + "\n");
 		  act.pause(1000).perform();
 	}
+	
 
 	@Then("Get text of An email has been sent to you with your temporary password")
 	public void get_text_of_An_email_has_been_sent_to_you_with_your_temporary_password() {
@@ -211,16 +218,20 @@ public class AFBAMemberPortalAccountLoginStepDef extends TestBase {
 		  System.out.println(str3 + "\n");
 		  act.pause(3000).perform(); 
 		  
-//		  MemberPortalLoginPage.LoginClick1.click();
-//		  act.pause(1000).perform();
-//		  MemberPortalLoginPage.HelpBtn.click();
-//		  act.pause(1000).perform();
-//		  MemberPortalLoginPage.RegisterHereBtn.click();
-//		  act.pause(1000).perform();
-//		  MemberPortalLoginPage.LoginBtn.click();
-//		  act.pause(1000).perform();
-//		  MemberPortalLoginPage.HelpBtn.click();
-//		  act.pause(1000).perform();
+		  AFBAMemberPortalLoginPage.LoginClick1.click();
+		  act.pause(2000).perform();
+		  driver.navigate().to("https://afbafull-afba.cs93.force.com/MemberPortal/apex/FAQ");  
+		  act.pause(3000).perform();
+		  System.out.println("Varify AFBA Member Portal Login Page");
+		  act.pause(4000).perform();
+		  
+		  
+		  AFBAMemberPortalLoginPage.RegisterHereBtn.click();
+		  act.pause(2000).perform();
+		  driver.navigate().to("https://afbafull-afba.cs93.force.com/MemberPortal/apex/FAQ");    
+		  act.pause(3000).perform();
+		  System.out.println("Verify Register Page");
+		 
 	}
 	
 	@Then("Get all the text of I forgot my password. How do i reset it explanations")
@@ -237,13 +248,22 @@ public class AFBAMemberPortalAccountLoginStepDef extends TestBase {
 		  System.out.println(str2 + "\n");
 		  act.pause(3000).perform();  
 		  
-//		  MemberPortalLoginPage.LoginClick2.click();
-//		  MemberPortalLoginPage.HelpBtn.click();
-//		  MemberPortalLoginPage.ForgetYourPassword.click();
-//		  act.pause(1000).perform();
-//		  MemberPortalLoginPage.LoginBtn.click();
-//		  MemberPortalLoginPage.HelpBtn.click();
-//		  act.pause(1000).perform();
+		  AFBAMemberPortalLoginPage.LoginClick2.click();
+		  driver.navigate().to("https://afbafull-afba.cs93.force.com/MemberPortal/apex/FAQ");    
+		  act.pause(3000).perform();
+		  System.out.println("Verify Login Page");
+
+		  AFBAMemberPortalLoginPage.ForgetYourPassword.click();
+		  act.pause(2000).perform();
+		  driver.navigate().to("https://afbafull-afba.cs93.force.com/MemberPortal/apex/FAQ");    
+		  act.pause(4000).perform();
+		  System.out.println("Verify Forget Password Page");
+		  
+		  AFBAMemberPortalLoginPage.loginClick3.click();
+		  act.pause(2000).perform();
+		  driver.navigate().to("https://afbafull-afba.cs93.force.com/MemberPortal/apex/FAQ");    
+		  act.pause(4000).perform();
+		  System.out.println("Verify Login For Change Password");
 		   
 	}
 	
@@ -261,12 +281,25 @@ public class AFBAMemberPortalAccountLoginStepDef extends TestBase {
 		  System.out.println(str2 + "\n");
 		  act.pause(3000).perform();  
 		  
+		  AFBAMemberPortalLoginPage.loginClick4.click();
+		  act.pause(2000).perform();
+		  driver.navigate().to("https://afbafull-afba.cs93.force.com/MemberPortal/apex/FAQ");    
+		  act.pause(4000).perform();
+		  System.out.println("Verify Login For Forget Username");
+		  
+		  
+		  AFBAMemberPortalLoginPage.ForgetYourUsername.click();
+		  act.pause(2000).perform();
+		  driver.navigate().to("https://afbafull-afba.cs93.force.com/MemberPortal/apex/FAQ");    
+		  act.pause(4000).perform();
+		  System.out.println("Verify Forget Username Page"); 
 	}
 	
 	@Then("Get all the text of How can i receive my documents electronically explanations")
 	public void get_all_the_text_of_How_can_i_receive_my_documents_electronically_explanations() {
-		String str = AFBAMemberPortalLoginPage.Edeliverytext.getText();
-		System.out.println(str + "\n");
+		
+		  String str = AFBAMemberPortalLoginPage.Edeliverytext.getText();
+		  System.out.println(str + "\n");
 		  act.pause(1000).perform();
 		  
 		  String str1 = AFBAMemberPortalLoginPage.ChooseExplanationForeDelivery.getText();
@@ -281,23 +314,34 @@ public class AFBAMemberPortalAccountLoginStepDef extends TestBase {
 		  System.out.println(str3 + "\n");
 		  act.pause(3000).perform();  
 		  
-		  AFBAMemberPortalLoginPage.LoginBtn.click();
+		  AFBAMemberPortalLoginPage.LoginClick5.click();
 		  act.pause(2000).perform();
+		  driver.navigate().to("https://afbafull-afba.cs93.force.com/MemberPortal/apex/FAQ");    
+		  act.pause(4000).perform();
+		  System.out.println("Verify eDelivery Login Page"); 
+		  
+		  
+		  AFBAMemberPortalLoginPage.eDelivery.click();
+		  act.pause(2000).perform();
+		  driver.navigate().to("https://afbafull-afba.cs93.force.com/MemberPortal/apex/FAQ");    
+		  act.pause(4000).perform();
+		  System.out.println("Verify eDelivery Page"); 
+		  act.pause(4000).perform();
 		  
 	}
 	
-	@Then("Input Username and Password on Account Login Page")
-	public void input_Username_and_Password_on_Account_Login_Page() {
-		AFBAMemberPortalLoginPage.UserNameforLogin.sendKeys("qapeep512@gmail.com");
-		AFBAMemberPortalLoginPage.PasswordforLogin.click();
-		AFBAMemberPortalLoginPage.PasswordforLogin.sendKeys("Q85q2019");
-		
-	}
-
-	@Then("Click Login button")
-	public void click_Login_button() {
-		AFBAMemberPortalLoginPage.LoginBtnforLoginPage.click();
-		act.pause(2000).perform();
-	}
+//	@Then("Input Username and Password on Account Login Page")
+//	public void input_Username_and_Password_on_Account_Login_Page() {
+//		AFBAMemberPortalLoginPage.UserNameforLogin.sendKeys("qapeep512@gmail.com");
+//		AFBAMemberPortalLoginPage.PasswordforLogin.click();
+//		AFBAMemberPortalLoginPage.PasswordforLogin.sendKeys("Q85q2019");
+//		
+//	}
+//
+//	@Then("Click Login button")
+//	public void click_Login_button() {
+//		AFBAMemberPortalLoginPage.LoginBtnforLoginPage.click();
+//		act.pause(2000).perform();
+//	}
 
 	}
