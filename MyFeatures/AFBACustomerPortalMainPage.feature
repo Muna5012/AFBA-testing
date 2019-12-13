@@ -1,4 +1,4 @@
-@mainPage
+@main
 Feature: AFBA Customer Portal Main page test feature 
 Scenario: AFBA Customer Portal Main page test scanario
 
