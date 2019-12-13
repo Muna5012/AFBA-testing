@@ -1,4 +1,4 @@
-@OneTimePayment
+@oneTimePayment
 Feature: AFBA Customer Portal Make a One time Payment test feature 
 Scenario: AFBA Customer Portal Make a One time Payment test scanario
 
