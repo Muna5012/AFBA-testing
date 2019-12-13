@@ -1,4 +1,4 @@
-@RecurringPayments
+@setUpPayment
 Feature: AFBA Customer Portal set up Payment Details for Recurring Payment test feature 
 Scenario: AFBA Customer Portal set up Payment Details for Recurring Payment test scanario
 
