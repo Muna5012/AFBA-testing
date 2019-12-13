@@ -1,7 +1,6 @@
 package stepdefination;
 
 import cucumber.api.java.en.Then;
-
 import pages.XML;
 
 import utilities.TestBase;
@@ -24,13 +23,29 @@ public class XMLStepDef extends TestBase{
 	    public void check_submission() {
 	    	XML.ViewSubmition.click();
 	    	act.pause(3000).perform();
+	    	XML.ClickTheName.click();
+	    	act.pause(3000).perform();
+	    	XML.ClickView.click();
+	    	act.pause(5000).perform();
+	    	driver.navigate().to("https://enroll-sandbox.afba.com/enrollment-case/61/census/2628");
+	    	act.pause(4000).perform();
+	    	XML.ClickSecondView.click();
+	    	act.pause(5000).perform();
+	    
 	    }
 	    
-	    @Then("Download XML file")
-	    public void check_Download_Data_from_XML_file() {
+	    
+//	    @Then("Download XML file")
+//	    public void check_Download_Data_from_XML_file() {
+//	    	String st = XML.DawnloadData.getText();
+//	    	System.out.println(st);
+//	    	
+//	    	String getUrl=XML.DawnloadData.getAttribute("href");
+//			System.out.println("Image source URL : \n"+ getUrl + "\n");
+//			act.pause(3000).perform();
 	    	
-	    	XML.DawnloadData.click();
-	       act.pause(3000).perform();
+//	    	XML.DawnloadData.click();
+//	       act.pause(3000).perform();
 	       
 //	       Alert alert = driver.switchTo().alert();	
 //	       alert.equals("Save File");
@@ -38,7 +53,7 @@ public class XMLStepDef extends TestBase{
 //	       alert.accept();
 //	   
 	       
-	    }
+	//    }
 }
 	       
 	       /**
