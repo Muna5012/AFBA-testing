@@ -1,4 +1,4 @@
-@contactInfo
+@contactInformation
 Feature: AFBA Customer Portal Edit customer Contact Information test feature 
 Scenario: AFBA Customer Portal Edit customer Contact Information test scanario
 
