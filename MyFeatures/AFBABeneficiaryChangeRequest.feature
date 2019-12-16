@@ -1,4 +1,4 @@
-@BeneficiaryChange
+@beneficiaryChange
 Feature: AFBA Customer Portal Request Beneficiary Change test feature 
 Scenario: AFBA Customer Portal Request Beneficiary Change test scanario
 
