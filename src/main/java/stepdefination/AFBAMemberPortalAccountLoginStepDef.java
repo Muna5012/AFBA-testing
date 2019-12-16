@@ -104,14 +104,39 @@ public class AFBAMemberPortalAccountLoginStepDef extends TestBase {
 		String str = AFBAMemberPortalLoginPage.ContactUs.getText();
 		System.out.println(str + " Page:" + "\n");
 		act.pause(1000).perform();
+		
+		String st = AFBAMemberPortalLoginPage.GetTextOfSubject.getText();
+		AFBAMemberPortalLoginPage.ClickSubject.click();
+		System.out.println(st + ": Life Insurance");
+		act.pause(1000).perform();
 		AFBAMemberPortalLoginPage.SubjectSelectLifeInsurance.click();
+		
+		String st1 = AFBAMemberPortalLoginPage.GetTextOFName.getText();
 		AFBAMemberPortalLoginPage.Name.sendKeys("AARON DAVIS");
+		System.out.println(st1+": AARON DAVIS");
+		act.pause(1000).perform();
+		
+		String st2 = AFBAMemberPortalLoginPage.GetTextOfSN.getText();
 		AFBAMemberPortalLoginPage.SSNorPolicyNumber.click();
 		AFBAMemberPortalLoginPage.SSNorPolicyNumber.sendKeys("545102002");
+		System.out.println(st2+": *******");
 		act.pause(1000).perform();
+		
+		String st3 = AFBAMemberPortalLoginPage.GetTextOfEmailAddress.getText();
 		AFBAMemberPortalLoginPage.EmailAddress.sendKeys("qapeep19@gmail.com");
+		System.out.println(st3+": qapeep19@gmail.com");
+		act.pause(1000).perform();
+		
+		String st4 = AFBAMemberPortalLoginPage.GetTextOfPhoneNumber.getText();
 		AFBAMemberPortalLoginPage.PhoneNumber.click();
 		AFBAMemberPortalLoginPage.PhoneNumber.sendKeys("7036541233");
+		System.out.println(st4+": 7036541233");
+		act.pause(1000).perform();
+		
+		String st5= AFBAMemberPortalLoginPage.GetTextOfMessage.getText();
+		AFBAMemberPortalLoginPage.ClickMessage.click();
+		AFBAMemberPortalLoginPage.ClickMessage.sendKeys("Message....");
+		System.out.println(st5+": Message....");
 		act.pause(1000).perform();
 	}
 
