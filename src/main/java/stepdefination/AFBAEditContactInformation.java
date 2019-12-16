@@ -347,14 +347,14 @@ public class AFBAEditContactInformation extends TestBase {
 	@Then("Click Save Changes button to save it")
 	public void click_Save_Changes_button_to_save_it() {
 		AFBACustomerPortalMainPage.SaveChangesBtn.click();
-		act.pause(5000).perform();
+		act.pause(7000).perform();
 	
 	}
 	
 	@Then("Click Ok button to save updated status")
 	public void click_Ok_button_to_save_updated_status() {
 		AFBACustomerPortalMainPage.OkForContactInfoChanges.click();
-		act.pause(4000).perform();
+		act.pause(5000).perform();
 	}
 	
 	@Then("Navigate back to main page and click Edit Contact Information")
