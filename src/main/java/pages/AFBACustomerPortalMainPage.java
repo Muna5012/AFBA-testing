@@ -955,8 +955,8 @@ public class AFBACustomerPortalMainPage {
    @FindBy(xpath="//*[contains(text(),'Allotment Instructions')]")
    public static WebElement AllotmentInstructions;
    
-   
-   
+   @FindBy(xpath="//span[contains(text(),'Download')]")
+   public static WebElement ClickDownload;
    
    
 }
