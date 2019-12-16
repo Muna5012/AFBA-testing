@@ -1,8 +1,11 @@
 package stepdefination;
 
+import org.openqa.selenium.JavascriptExecutor;
+
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import pages.AFBACustomerPortalMainPage;
 import pages.AFBAMemberPortalLoginPage;
 import pages.NewRequest1;
 import utilities.TestBase;
@@ -58,6 +61,22 @@ public class AFBABeneficiaryChangeRequestStepDef extends TestBase {
 		act.pause(2000).perform();
 		String str1 = NewRequest1.GetTextOfAllTheNotes.getText();
 		System.out.println(str1+"\n");
+		act.pause(2000).perform();
+		
+		String parentHandle = driver.getWindowHandle(); 
+		AFBACustomerPortalMainPage.ClickQuestionMark.click();
+
+		for (String winHandle : driver.getWindowHandles()) {
+		    driver.switchTo().window(winHandle); 
+		}
+		driver.switchTo().window(parentHandle);
+		act.pause(4000).perform();
+		
+		 JavascriptExecutor js = (JavascriptExecutor) driver;
+		 js.executeScript("window.scrollBy(0,2000)");
+		 act.pause(1000).perform();
+		
+		AFBACustomerPortalMainPage.ClickXtoClose.click();
 		act.pause(2000).perform();
 	}
 
