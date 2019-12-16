@@ -88,6 +88,9 @@ public class AFBACustomerPortalMainPage {
 	
 	
 	
+	
+	
+	
 	@FindBy(xpath="//*[@name='Mainmenu:j_id41:j_id42:theForm:j_id61']")
 	public static WebElement EditContactInformationBtn;
 	
@@ -339,6 +342,8 @@ public class AFBACustomerPortalMainPage {
     
     
    
+    
+    
     
     
     @FindBy(xpath="//*[contains(text(),'Set Up Recurring Payments')]")
@@ -675,6 +680,8 @@ public class AFBACustomerPortalMainPage {
     public static WebElement ECClickProcess;
     
     
+  
+    
     
     
     @FindBy(xpath="//*[contains(text(),'Make a One-time Payment')]")
@@ -936,7 +943,6 @@ public class AFBACustomerPortalMainPage {
    public static WebElement GetTextOfPleaseSelectAtLeastOnePolicyForPayment;
    
    
-   
    @FindBy(xpath="//*[contains(text(),'Download Forms')]")
    public static WebElement DownloadForm;
    
@@ -957,6 +963,11 @@ public class AFBACustomerPortalMainPage {
    
    @FindBy(xpath="//span[contains(text(),'Download')]")
    public static WebElement ClickDownload;
+   
+   
+   
+   
+   
    
    
 }
