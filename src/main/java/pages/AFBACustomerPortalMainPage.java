@@ -86,11 +86,6 @@ public class AFBACustomerPortalMainPage {
 	
 	
 	
-	
-	
-	
-	
-	
 	@FindBy(xpath="//*[@name='Mainmenu:j_id41:j_id42:theForm:j_id61']")
 	public static WebElement EditContactInformationBtn;
 	
@@ -964,10 +959,10 @@ public class AFBACustomerPortalMainPage {
    @FindBy(xpath="//span[contains(text(),'Download')]")
    public static WebElement ClickDownload;
    
+   @FindBy(xpath="//*[@id='Mainmenu:j_id41:j_id42:theForm']/div[1]/div/span/a")
+   public static WebElement ClickQuestionMark;
    
-   
-   
-   
-   
+   @FindBy(xpath="//*[@id='Mainmenu:j_id41:j_id42:theForm:modalInstructionsContainer']/div[1]/a")
+   public static WebElement ClickXtoClose;
    
 }
