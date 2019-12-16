@@ -44,32 +44,6 @@ public class AFBABeneficiaryChangeRequestStepDef extends TestBase {
 		act.pause(2000).perform();
 	}
 
-//	@Then("Get text of Account Number, Status, Crated Date, Decision Date")
-//	public void get_text_of_Account_Number_Status_Crated_Date_Decision_Date() {
-//		String str = NewRequest1.GetTextOfAccountNum.getText();
-//		String str3 = NewRequest1.GetTextOfStatus.getText();
-//		String str1 = NewRequest1.GetTextOfCreatedDate.getText();
-//		String str2 = NewRequest1.GetTextOfDecisionDate.getText();
-//		System.out.println(str+"      "+str3+"     "+str1+"     "+str2);
-//		act.pause(3000).perform();
-//	}
-
-//	@Then("Get text of beneficiary Account Number, Status, Created Date")
-//	public void get_text_of_beneficiary_Account_Number_Status_Created_Date() {
-//		String str = NewRequest1.GetTextofAllThePolicies.getText();
-//		System.out.println(str+"/n");
-//		act.pause(2000).perform();
-//	}
-
-//	@Then("Click View button and get Beneficiary Designation Forms Url")
-//	public void click_View_button_and_get_Beneficiary_Designation_Forms_Url() {
-//		NewRequest1.ClickView1.click();
-//		String imageUrl=NewRequest1.GetFormURL1.getAttribute("src");
-//		System.out.println("\n"+"Image source path : \n"+ imageUrl + "\n");
-//		act.pause(2000).perform();
-//		NewRequest1.CloseForm1.click();
-//		act.pause(2000).perform();
-//	}
 	
 	@Then("Click New Request button")
 	public void click_New_Request_button() {
