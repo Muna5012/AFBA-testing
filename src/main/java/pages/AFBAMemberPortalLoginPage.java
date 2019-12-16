@@ -62,6 +62,29 @@ public class AFBAMemberPortalLoginPage {
 	@FindBy(xpath="/html/body/div/div/div/section/p")
 	public static WebElement ContactAFBAText;
 	
+	
+	@FindBy(xpath="//label[contains(text(),'Subject')]")
+	public static WebElement GetTextOfSubject;
+	
+	@FindBy(xpath="//p[contains(text(),'Name')]")
+	public static WebElement GetTextOFName;
+	
+	@FindBy(xpath="//p[contains(text(),'SSN or')]")
+	public static WebElement GetTextOfSN;
+	
+	@FindBy(xpath="//label[contains(text(),'Email Address')]")
+	public static WebElement GetTextOfEmailAddress;
+	
+	@FindBy(xpath="//p[contains(text(),'Phone Number')]")
+	public static WebElement GetTextOfPhoneNumber;
+	
+	@FindBy(xpath="//p[contains(text(),'Message')]")
+	public static WebElement GetTextOfMessage;
+	
+	@FindBy(xpath="//*[@name='description']")
+	public static WebElement ClickMessage;
+	
+	
 	@FindBy(xpath="//*[@id='Registration:theForm']/fieldset/table/tbody/tr[10]/td/p")
 	public static WebElement getTextOnButton;
 	
@@ -82,6 +105,12 @@ public class AFBAMemberPortalLoginPage {
 	
 	@FindBy(xpath="//h1[contains(text(),'Contact Us')]")
 	public static WebElement ContactUs;
+	
+	@FindBy(xpath="//*[@id='subject']")
+	public static WebElement ClickSubject;
+	
+	
+	
 	
 	@FindBy(xpath="//*[@id='subject']/option[2]")
 	public static WebElement SubjectSelectLifeInsurance;
@@ -249,7 +278,6 @@ public class AFBAMemberPortalLoginPage {
 	
 	@FindBy(xpath="//*[@id='sitelogin:loginForm:submitbutton']")
 	public static WebElement LoginBtnforLoginPage;
-	
 	
 	
 	// contains text  //h3[contains(text(), 'Contact AF')]
