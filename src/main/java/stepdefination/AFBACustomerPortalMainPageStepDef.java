@@ -137,6 +137,25 @@ public class AFBACustomerPortalMainPageStepDef extends TestBase{
 		String getUrl=AFBACustomerPortalMainPage.FinancialPlaningGuide.getAttribute("href");
 		System.out.println("Image source URL : \n"+ getUrl + "\n");
 		act.pause(3000).perform();
+		
+//		AFBACustomerPortalMainPage.FinancialPlaningGuide.click();
+//		act.pause(5000).perform();
+//		
+//		AFBACustomerPortalMainPage.ClickDownload.click();
+//		act.pause(4000).perform();
+//		driver.navigate().to("https://afbafull-afba.cs93.force.com/MemberPortal/apex/Customer_Portal_MainMenu");
+//		act.pause(5000).perform();
+		
+		
+		String parentHandle = driver.getWindowHandle(); 
+		AFBACustomerPortalMainPage.FinancialPlaningGuide.click();
+
+		for (String winHandle : driver.getWindowHandles()) {
+		    driver.switchTo().window(winHandle); 
+		}
+		driver.switchTo().window(parentHandle);
+		act.pause(5000).perform();
+		
 	}
 
 	@Then("Get text of Change Beneficiary and get URL link")
@@ -148,6 +167,17 @@ public class AFBACustomerPortalMainPageStepDef extends TestBase{
 		String getUrl=AFBACustomerPortalMainPage.ChangeBene.getAttribute("href");
 		System.out.println("Image source URL : \n"+ getUrl + "\n");
 		act.pause(3000).perform();
+		
+		
+		String parentHandle = driver.getWindowHandle(); 
+		AFBACustomerPortalMainPage.ChangeBene.click();
+
+		for (String winHandle : driver.getWindowHandles()) {
+		    driver.switchTo().window(winHandle); 
+		}
+		driver.switchTo().window(parentHandle);
+		act.pause(5000).perform();
+		
 	}
 
 	@Then("Get text of Change of Name and get URL link")
@@ -158,7 +188,18 @@ public class AFBACustomerPortalMainPageStepDef extends TestBase{
 		String getUrl=AFBACustomerPortalMainPage.ChangeName.getAttribute("href");
 		System.out.println("Image source URL : \n"+ getUrl + "\n");
 		act.pause(3000).perform();
+		
+		String parentHandle = driver.getWindowHandle(); 
+		AFBACustomerPortalMainPage.ChangeName.click();
+
+		for (String winHandle : driver.getWindowHandles()) {
+		    driver.switchTo().window(winHandle); 
+		}
+		driver.switchTo().window(parentHandle);
+		act.pause(5000).perform();
 	}
+	
+	
 
 	@Then("Get text of Allotment Authorization and get URL link")
 	public void get_text_of_Allotment_Authorization_and_get_URL_link() {
@@ -168,6 +209,17 @@ public class AFBACustomerPortalMainPageStepDef extends TestBase{
 		String getUrl=AFBACustomerPortalMainPage.AllotmentAuthorization.getAttribute("href");
 		System.out.println("Image source URL : \n"+ getUrl + "\n");
 		act.pause(3000).perform();
+		
+		String parentHandle = driver.getWindowHandle(); 
+		AFBACustomerPortalMainPage.AllotmentAuthorization.click();
+
+		for (String winHandle : driver.getWindowHandles()) {
+		    driver.switchTo().window(winHandle); 
+		}
+		driver.switchTo().window(parentHandle);
+		act.pause(5000).perform();
+		
+		
 	}
 
 	@Then("Get text of Allotment Instructions and get URL link")
@@ -178,6 +230,15 @@ public class AFBACustomerPortalMainPageStepDef extends TestBase{
 		String getUrl=AFBACustomerPortalMainPage.AllotmentInstructions.getAttribute("href");
 		System.out.println("Image source URL : \n"+ getUrl + "\n");
 		act.pause(4000).perform();
+		
+		String parentHandle = driver.getWindowHandle(); 
+		AFBACustomerPortalMainPage.AllotmentInstructions.click();
+
+		for (String winHandle : driver.getWindowHandles()) {
+		    driver.switchTo().window(winHandle); 
+		}
+		driver.switchTo().window(parentHandle);
+		act.pause(5000).perform();
 	   
 	}
 
