@@ -37,8 +37,8 @@ public class AFBABeneficiaryChangeRequestStepDef extends TestBase {
 		act.pause(2000).perform();
 	}
 
-	@Then("Get text of bule line noties")
-	public void get_text_of_bule_line_noties() {
+	@Then("Get text of blue line noties")
+	public void get_text_of_blue_line_noties() {
 		String str = NewRequest1.GetTextOfBeneficiaryRequest.getText();
 		System.out.println(str+": ");
 		act.pause(2000).perform();
