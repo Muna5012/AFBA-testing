@@ -21,8 +21,7 @@ import cucumber.api.junit.Cucumber;
 		features = "MyFeatures"
 		,glue = "stepdefination",
 		dryRun = false,
-		//tags = {"@Test05","@Test06","@Test07"}
-		tags = {"@OneTimePayment"}
+		tags = {"@login"}
 		)
 
 public class TestRunner {
