@@ -19,6 +19,8 @@ Scenario: EApp Application Better Alternative with Child Rider Group Free test, 
 	And Input Child one First Name, Last Name, and DOB
 	Then click Add Child button 
 	And Input second child first name, last name and DOB
+	Then Input Child three first name, last name and DOB 
+	
 	And Select Eligibility, Contribution Mode, BranchOfService, Duty Status and Rank
 	Then Input Department code and SourceCode 
 	Then Input Sponsor street1, street2, City, ST, Zip, Emails and contact numbers 
@@ -28,6 +30,8 @@ Scenario: EApp Application Better Alternative with Child Rider Group Free test, 
 	Then Select NonTobacco for Spouse 
 	And Select Option three and select coverage for childrens option
 	Then Click the Application Member Benefit option 
+	
+	
 	Then Click Answer No to All Questions buttons
 	And Click Next button input Sponsor informations
 	Then Select Sponser height Feet and Inches option 
