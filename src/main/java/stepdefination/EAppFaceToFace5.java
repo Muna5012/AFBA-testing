@@ -120,6 +120,16 @@ public class EAppFaceToFace5 extends TestBase {
 		EApp2.ChildTwoDOB.click();
 		EApp2.ChildTwoDOB.sendKeys("07042005");
 	}
+	
+
+@Then("Input Child three first name, last name and DOB")
+public void input_Child_three_first_name_last_name_and_DOB() {
+	EApp2.AddChildBtn.click();
+    EApp2.ChildThreeFN.sendKeys("Yan");
+    EApp2.ChildThreeDOB.click();
+    EApp2.ChildThreeDOB.sendKeys("07052006");
+    act.pause(2000).perform();
+}
 
 
 	@Then("Select Eligibility, Contribution Mode, BranchOfService, Duty Status and Rank")
@@ -191,10 +201,15 @@ public class EAppFaceToFace5 extends TestBase {
 	   act.pause(2000).click();
 	   EApp2.Covered.click();
 	   EApp2.FedTerm.click();
-	   EApp2.WaiveFedTerm.click();
+	   EApp2.CustomizeOption5.click();
 	   act.pause(2000).perform();
+	   EApp2.CustomizeOptionSe1.click();
+	   act.pause(2000).perform();
+	 //  EApp2.WaiveFedTerm.click();
 	   EApp2.ClickFirstProtect.click();
-	   EApp2.WaiveFirstProtect.click();
+	   EApp2.CustomizeFirstOption150.click();
+	   EApp2.ClickFirstProtectSpouseCustomize.click();
+	 //  EApp2.WaiveFirstProtect.click();
 	   act.pause(2000).perform();
 	   EApp2.ChildrenProtectClick.click();
 	   EApp2.WaiveChildProtect.click();
