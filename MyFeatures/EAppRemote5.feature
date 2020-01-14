@@ -18,7 +18,7 @@ Then Enter Street Address, City, State and Zip code numbers
 And Enter Daytime phone numbers
 Then Click Show Coverage Option to select Sponsor, Spouse, AC and MC Beneficiary Plans
 
-Then Waived BA, FedTerm and Application Member Benefit Products
+Then BA, FedTerm and Application Member Benefit Products
 And Senior Protect spouse Customize twenty five thousand K 
 Then First Protect No Benefit for Sponsor and Spouse Customize fifty thousand K for three AC
 And Childrens Protect Covered for three MC

@@ -22,6 +22,7 @@ And First Protect select Tobacco for sponsor, spouse, AC1 and Customize fifty th
 Then Children Protect Covered three MC
 And Answer all the questions Yes or NO for Qualification page
 Then Input Sponsor Information include Height and Weight 
+Then Input Spouse Information include SSN, Gender, Height and Weight
 Then Input Children Information include SSN, Gender, Height, Weight, Status, Relationship
 
 And Senior Protect Primary Beneficiary of SPonsor Coverage beneficiary FullName, Relationship and DOB
