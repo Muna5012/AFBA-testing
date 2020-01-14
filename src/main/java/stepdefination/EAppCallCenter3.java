@@ -122,8 +122,9 @@ public class EAppCallCenter3 extends TestBase {
 	public void input_Email_for_confimation_and_phone_number() {
 		 EApp2.EmailAddress.sendKeys("qapeep19@gmail.com");
 		 EApp2.ReEmailAddress.sendKeys("qapeep19@gmail.com");
+		 act.pause(2000).perform();
 		 EApp2.Phone.click();
-			EApp2.Phone.sendKeys("7037065961");
+		 EApp2.Phone.sendKeys("7037065961");
 			  act.pause(2000).perform();
 	}
 

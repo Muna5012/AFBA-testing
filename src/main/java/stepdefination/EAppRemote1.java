@@ -365,7 +365,7 @@ public class EAppRemote1 extends TestBase{
 	@Then("Click Review Application button")
 	public void click_Review_Application_button() {
 		Remote.ClickSelect.click();
-		act.pause(1000).perform();
+		act.pause(2000).perform();
 		Remote.ClickEmail.click();
 		act.pause(2000).perform();
 		Remote.SelectFirstEmail.click();

@@ -4,6 +4,7 @@ import org.openqa.selenium.Keys;
 
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import pages.EApp2;
 import pages.Remote;
 import utilities.TestBase;
 
@@ -12,7 +13,7 @@ public class EAppRemote5 extends TestBase {
 
 @When("Click New Enrollment button input Sponsor SSN, Enrollment city and Enrollment state")
 public void click_New_Enrollment_button_input_Sponsor_SSN_Enrollment_city_and_Enrollment_state() {
-	 Remote.SSN.click();
+	  Remote.SSN.click();
 	  Remote.SSN.sendKeys("404000026");
 	  Remote.EnrollmentCity.clear();
 	  Remote.EnrollmentCity.sendKeys("Greenville");
@@ -134,7 +135,6 @@ public void enter_Street_Address_City_State_and_Zip_code_numbers() {
 
 @Then("Enter Daytime phone numbers")
 public void enter_Daytime_phone_numbers() {
-	
 	Remote.Phone.click();
     Remote.Phone.sendKeys("7037065961");
     act.pause(3000).perform();
@@ -145,24 +145,38 @@ public void click_Show_Coverage_Option_to_select_Sponsor_Spouse_AC_and_MC_Benefi
 	  Remote.ShowCoverageOptions.click();
 }
 
-@Then("Waived BA, FedTerm and Application Member Benefit Products")
-public void waived_BA_FedTerm_and_Application_Member_Benefit_Products() {
-    	Remote.WaiveBA.click();
+@Then("BA, FedTerm and Application Member Benefit Products")
+public void BA_FedTerm_and_Application_Member_Benefit_Products() {
+	  act.pause(2000).perform();
+	 EApp2.ChildCoverageClick.click();
+	   EApp2.ChildrenCoverageOption5.click();
 	   act.pause(2000).perform();
+	   Remote.SelectOption2.click(); 
      	Remote.FedTerm.click();
-	   Remote.WaiveFedTerm.click();
-	   act.pause(2000).perform();
+       EApp2.CustomizeOption5.click();
+   	   act.pause(2000).perform();
+   	   EApp2.CustomizeOptionSe1.click();
+   	   act.pause(2000).perform();
+   	   EApp2.SelectFirstChildCustomize50.click();
+   	   act.pause(2000).perform();
+   	   EApp2.SelectSecondChildCustomize50.click();
+   	   act.pause(2000).perform();
+   	   EApp2.SelectThridChildCustomize50.click();
+   	   act.pause(2000).perform();
+   	   
 }
 
 @Then("Senior Protect spouse Customize twenty five thousand K")
 public void senior_Protect_spouse_Customize_twenty_five_thousand_K() {
 	Remote.SeniorProtect.click();
 	   act.pause(1000).perform();
-	Remote.SeniorProtectNoBenefitForSponsor.click();
-	Remote.SeniorProtectCustomizeClick.click();
-	act.pause(1000).perform();
-	Remote.SeniorProtectSpouseCustomize25.click();
-	act.pause(2000).perform();
+//	Remote.SeniorProtectNoBenefitForSponsor.click();
+//	Remote.SeniorProtectCustomizeClick.click();
+//	act.pause(1000).perform();
+//	Remote.SeniorProtectSpouseCustomize25.click();
+//	act.pause(2000).perform();
+	   Remote.WaivedSeniorProtect.click();
+	   act.pause(2000).perform();
 	  Remote.ApplicationMemberBenf.click();
 	   Remote.WaiveApplication.click();
 	   act.pause(2000).perform();
@@ -193,69 +207,71 @@ public void childrens_Protect_Covered_for_three_MC() {
 
 @Then("Next page Answer All the questions")
 public void next_page_Answer_All_the_questions() {
-		Remote.OtherInsuranceSponsor1.click();
-		Remote.OtherInsuranceSponsor2.click();
-		Remote.OtherInsuranceSponsor3.click();
-		Remote.OtherInsuranceSponsor4.click();
-		act.pause(1000).perform();
-		Remote.OtherInsuranceSpouse1.click();
-		Remote.OtherInsuranceSpouse2.click();
-		Remote.OtherInsuranceSpouse3.click();
-		Remote.OtherInsuranceSpouse4.click();
-		act.pause(1000).perform();
-		Remote.OtherInsuranAC1.click();
-		Remote.OtherInsuranAC2.click();
-		Remote.OtherInsuranAC3.click();
-		Remote.OtherInsuranAC4.click();
-		act.pause(1000).perform();
-		Remote.OtherInsuranSecondAC1.click();
-		Remote.OtherInsuranSecondAC2.click();
-	    act.pause(1000).perform();
-	    Remote.SeniorProtecforSpouse1.click();
-	    Remote.SeniorProtecforSpouse2.click();
-	    Remote.SeniorProtecforSpouse3.click();
-	    Remote.SeniorProtecforSpouse4.click();
-	    Remote.SeniorProtecforSpouse5.click();
-	    act.pause(1000).perform();
-	    Remote.SeniorProtectSponsor1.click();
-	    Remote.SeniorProtectSponsor2.click();
-	    Remote.SeniorProtectSponsor3.click();
-	    Remote.SeniorProtectSponsor4.click();
-	    Remote.SeniorProtectSponsor5.click();
-	    Remote.SeniorProtectSponsor6.click();
-	    Remote.SeniorProtectSponsor7.click();
-	    act.pause(1000).perform();
-	    Remote.FirstProtectforSecondAC1.click();
-	    Remote.FirstProtectforSecondAC2.click();
-	    Remote.FirstProtectforSecondAC3.click();
-	    Remote.FirstProtectforSecondAC4.click();
-	    Remote.FirstProtectforSecondAC5.click();
-	    Remote.FirstProtectforSecondAC6.click();
-	    Remote.FirstProtectforSeconsAC7.click();
-	   act.pause(1000).perform();
-	   Remote.FirstProtectforThridAC1.click();
-	   Remote.FirstProtectforThridAC2.click();
-	   Remote.FirstProtectforThridAC3.click();
-	   Remote.FirstProtectforThridAC4.click();
-	   Remote.FirstProtectforThridAC5.click();
-	   Remote.FirstProtectforThridAC6.click();
-	   Remote.FirstProtectforThridAC7.click();
-	    act.pause(2000).perform();
-	  Remote.ChildProtectMC1.click();
-	  Remote.ChildProtectMC2.click();
-	  Remote.ChildProtectMC3.click();
-	  Remote.ChildProtectMC4.click();
-	  act.pause(1000).perform();
-	  Remote.ChildProtectSecondMC1.click();
-	  Remote.ChildProtectSecondMC2.click();
-	  Remote.ChildProtectSecondMC3.click();
-	  Remote.ChildProtectSecondMC4.click();
-	  act.pause(1000).perform();
-	  Remote.ChildProtectThridMC1.click();
-	  Remote.ChildProtectThridMC2.click();
-	  Remote.ChildProtectThridMC3.click();
-	  Remote.ChildProtectThridMC4.click();
-	  act.pause(3000).perform();
+	EApp2.AnswerNOAll.click();
+	act.pause(2000).perform();
+//		Remote.OtherInsuranceSponsor1.click();
+//		Remote.OtherInsuranceSponsor2.click();
+//		Remote.OtherInsuranceSponsor3.click();
+//		Remote.OtherInsuranceSponsor4.click();
+//		act.pause(1000).perform();
+//		Remote.OtherInsuranceSpouse1.click();
+//		Remote.OtherInsuranceSpouse2.click();
+//		Remote.OtherInsuranceSpouse3.click();
+//		Remote.OtherInsuranceSpouse4.click();
+//		act.pause(1000).perform();
+//		Remote.OtherInsuranAC1.click();
+//		Remote.OtherInsuranAC2.click();
+//		Remote.OtherInsuranAC3.click();
+//		Remote.OtherInsuranAC4.click();
+//		act.pause(1000).perform();
+//		Remote.OtherInsuranSecondAC1.click();
+//		Remote.OtherInsuranSecondAC2.click();
+//	    act.pause(1000).perform();
+//	    Remote.SeniorProtecforSpouse1.click();
+//	    Remote.SeniorProtecforSpouse2.click();
+//	    Remote.SeniorProtecforSpouse3.click();
+//	    Remote.SeniorProtecforSpouse4.click();
+//	    Remote.SeniorProtecforSpouse5.click();
+//	    act.pause(1000).perform();
+//	    Remote.SeniorProtectSponsor1.click();
+//	    Remote.SeniorProtectSponsor2.click();
+//	    Remote.SeniorProtectSponsor3.click();
+//	    Remote.SeniorProtectSponsor4.click();
+//	    Remote.SeniorProtectSponsor5.click();
+//	    Remote.SeniorProtectSponsor6.click();
+//	    Remote.SeniorProtectSponsor7.click();
+//	    act.pause(1000).perform();
+//	    Remote.FirstProtectforSecondAC1.click();
+//	    Remote.FirstProtectforSecondAC2.click();
+//	    Remote.FirstProtectforSecondAC3.click();
+//	    Remote.FirstProtectforSecondAC4.click();
+//	    Remote.FirstProtectforSecondAC5.click();
+//	    Remote.FirstProtectforSecondAC6.click();
+//	    Remote.FirstProtectforSeconsAC7.click();
+//	   act.pause(1000).perform();
+//	   Remote.FirstProtectforThridAC1.click();
+//	   Remote.FirstProtectforThridAC2.click();
+//	   Remote.FirstProtectforThridAC3.click();
+//	   Remote.FirstProtectforThridAC4.click();
+//	   Remote.FirstProtectforThridAC5.click();
+//	   Remote.FirstProtectforThridAC6.click();
+//	   Remote.FirstProtectforThridAC7.click();
+//	    act.pause(2000).perform();
+//	  Remote.ChildProtectMC1.click();
+//	  Remote.ChildProtectMC2.click();
+//	  Remote.ChildProtectMC3.click();
+//	  Remote.ChildProtectMC4.click();
+//	  act.pause(1000).perform();
+//	  Remote.ChildProtectSecondMC1.click();
+//	  Remote.ChildProtectSecondMC2.click();
+//	  Remote.ChildProtectSecondMC3.click();
+//	  Remote.ChildProtectSecondMC4.click();
+//	  act.pause(1000).perform();
+//	  Remote.ChildProtectThridMC1.click();
+//	  Remote.ChildProtectThridMC2.click();
+//	  Remote.ChildProtectThridMC3.click();
+//	  Remote.ChildProtectThridMC4.click();
+//	  act.pause(3000).perform();
 	    Remote.NextBtn2.click();  
 }
 
@@ -557,10 +573,8 @@ public void login_Email_UserID_and_Password() {
 
 @Then("Select Inbox and check the Emails")
 public void select_Inbox_and_check_the_Emails() {
-	Remote.ClickSelect.click();
-	act.pause(1000).perform();
 	Remote.ClickEmail.click();
-	act.pause(2000).perform();
+	act.pause(4000).perform();
 	//Remote.ClickInbox.click();
 	Remote.SelectFirstEmail.click();
 	act.pause(2000).perform();
@@ -591,7 +605,7 @@ public void click_review_application_ducuments_button_to_review_all_the_Informat
 	Remote.ReviewAndSignMyApplication.click();
 	act.pause(3000).perform();
 	Remote.ReviewApplicationDocumentBtn.click();
-	act.pause(9000).perform();
+	act.pause(11000).perform();
 	Remote.CloseBtn.click();
 	act.pause(2000).perform();
 }
@@ -611,9 +625,9 @@ public void enter_Sponsor_and_Spouse_lastName_and_last_four_SSN() {
 	Remote.SponsorLastSSN.click();
 	Remote.SponsorLastSSN.sendKeys("0026");
 	act.pause(1000).perform();
-	Remote.SpouseLastName.sendKeys("Jackson");
-	Remote.SpouseLastSSN.click();
-	Remote.SpouseLastSSN.sendKeys("0027");
+//	Remote.SpouseLastName.sendKeys("Jackson");
+//	Remote.SpouseLastSSN.click();
+//	Remote.SpouseLastSSN.sendKeys("0027");
 }
 
 @Then("Select Paper receive the document option")
@@ -623,7 +637,6 @@ public void select_Paper_receive_the_document_option() {
 	Remote.SignBtn.click();
 	act.pause(3000).perform();
 }
-
 @Then("Navigate back to login AFBA Enrollment Webpage")
 public void navigate_back_to_login_AFBA_Enrollment_Webpage() {
 	driver.get("https://enroll-sandbox.afba.com/login");

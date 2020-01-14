@@ -13,7 +13,7 @@ public class EAppCallCenter1 extends TestBase {
 	public void click_Manage_Cases_button_on_Home_page_and_Search_IT_QA_Automation_Face_Face_Remote_cases_and_click_it(Integer int1) {
 		EApp2.ManageCaseButton.click();
 		 EApp2.searchSpace.click();
-		  EApp2.searchSpace.sendKeys("IT_QA Automation Face2Face Remote");
+		  EApp2.searchSpace.sendKeys("IT_QA Automation Face2Face");
 			act.pause(1000).perform();
 		    EApp2.SearchITQAAutomationFace2Face.click();
 	}

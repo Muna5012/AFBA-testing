@@ -278,7 +278,7 @@ public class EAppCallCenter2 extends TestBase {
 		 act.pause(3000).perform();
 	}
 
-	@Then("Slect Applucation eSignature Three options")
+	@Then("Slect Application eSignature Three options")
 	public void slect_Applucation_eSignature_Three_options() {
 		   EApp2.ClickQuestion1.click();
 		   EApp2.ClickQuestion2.click();

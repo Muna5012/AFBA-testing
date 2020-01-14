@@ -11,6 +11,8 @@ public class EAppCallCenter5 extends TestBase{
 
 	@When("Click Manage Cases button and Search IT QA Automation Call Center Case")
 	public void click_Manage_Cases_button_and_Search_IT_QA_Automation_Call_Center_Case() {
+		EApp2.Home.click();
+		act.pause(2000).perform();
 		EApp2.ManageCaseButton.click();
 		 EApp2.searchSpace.click();
 		  EApp2.searchSpace.sendKeys("IT_QA Automation Call Center");
