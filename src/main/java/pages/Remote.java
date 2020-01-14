@@ -286,6 +286,12 @@ public class Remote {
 	@FindBy(xpath="//*[@id='step1-form']/div[4]/div[2]/div[2]/div[3]/div/div/label/input")
 	public static WebElement WaiveChildProtect;
 	
+	@FindBy(xpath="//*[@id='step1-form']/div[4]/div[2]/div[2]/div[3]/div/div/label/input")
+	public static WebElement WaivedSeniorProtect;
+	
+	@FindBy(xpath="//*[@id='step1-form']/div[4]/div[2]/div[2]/div[2]/div[2]/div/div/div[1]/div[2]/div[2]/div/div[2]/div[2]/a")
+	public static WebElement SelectOption2;
+	
 	@FindBy(xpath ="//*[@id='coverage-header-5']/span")
 	public static WebElement FedTerm;
 	
@@ -354,6 +360,7 @@ public class Remote {
 	
 	@FindBy(xpath="//*[@id=\"step1-form\"]/div[4]/div[2]/div[2]/div[2]/div[2]/div/div/div[1]/div[2]/div[4]/div/div[2]/div/ul/li[5]/select/option[3]")
 	public static WebElement FirstProtectAC3Customize50;
+	
 	
 	@FindBy(xpath="//*[@id=\"step1-form\"]/div[4]/div[2]/div[2]/div[2]/div[2]/div/div/div[1]/div[2]/div[4]/div/div[2]/div/ul/li[1]/select/option[2]")
 	public static WebElement FirstProtectNoBenefitforSponsor;
@@ -1835,7 +1842,7 @@ public class Remote {
 	@FindBy(xpath = "//*[@id='gbwa']/div[1]/a")
 	public static WebElement ClickSelect;
 	
-	@FindBy(xpath = "//*[@id='gb23']/span[1]")
+	@FindBy(xpath = "//a[contains(text(),'Gmail')]")
 	public static WebElement ClickEmail;
 	
 	@FindBy(xpath = "//*[@class='TN bzz aHS-bnt']/div[2]")

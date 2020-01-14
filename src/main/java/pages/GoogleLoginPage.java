@@ -14,14 +14,12 @@ public class GoogleLoginPage {
 	@FindBy(xpath = "/html/body/div[1]/div[1]/div[2]/div[2]/div/div/div[2]/div/div[2]/div/div[1]/div/span/span")
 	public static WebElement Next; 
 	
-	@FindBy(xpath = "//*[@id=\"password\"]/div[1]/div/div[1]/input")
+	@FindBy(xpath = "//*[@id='password']/div[1]/div/div[1]/input")
 	public static WebElement InputPassword;
 	
-	@FindBy(xpath = "//*[@id='gbwa']/div[1]/a")
-	public static WebElement ClickSelect;
-	
-	@FindBy(xpath = "//*[@id='gb23']/span[1]")
+	@FindBy(xpath = "//a[contains(text(),'Gmail')]")
 	public static WebElement ClickEmail;
+	
 	
 	@FindBy(xpath = "//*[@class='TN bzz aHS-bnt']/div[2]")
 	public static WebElement ClickInbox;
