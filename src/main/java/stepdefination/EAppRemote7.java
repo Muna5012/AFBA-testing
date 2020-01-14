@@ -4,6 +4,7 @@ import org.openqa.selenium.Keys;
 
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import pages.EApp2;
 import pages.Remote;
 import utilities.TestBase;
 
@@ -84,7 +85,7 @@ public void click_Add_Child_button_enter_Minor_child_one_First_Name_Last_Name_DO
 	Remote.AddChildBtn.click();
     Remote.ChildFourFN.sendKeys("Lillith");
     Remote.ChildFourDOB.click();
-    Remote.ChildFourDOB.sendKeys("12062001");
+    Remote.ChildFourDOB.sendKeys("12062003");
     act.pause(1000).perform();
 }
 
@@ -93,7 +94,7 @@ public void click_Add_Child_button_enter_Minor_Child_two_First_Name_Last_Name_DO
 	Remote.AddChildBtn.click();
    Remote.ChildFifthFN.sendKeys("Milton");
    Remote.ChildFifthDOB.click();
-   Remote.ChildFifthDOB.sendKeys("12072001");
+   Remote.ChildFifthDOB.sendKeys("12072003");
    act.pause(1000).perform();
 }
 
@@ -102,7 +103,7 @@ public void click_Add_Child_button_enter_Minor_Child_three_First_Name_Last_Name_
 	Remote.AddChildBtn.click();
     Remote.ChildSixFN.sendKeys("Isabella");
     Remote.ChildSixDOB.click();
-    Remote.ChildSixDOB.sendKeys("12082001");
+    Remote.ChildSixDOB.sendKeys("12082003");
     act.pause(1000).perform();
 }
 
@@ -158,6 +159,8 @@ public void select_Senior_Protect_Tobacco_for_sponsor_and_Customize_twenty_thous
 	   act.pause(1000).perform();
 	   Remote.SeniorProtectoNLYSpouseCustomize25.click();
 	   act.pause(2000).perform();
+	   Remote.SeniorProtectSpouseCustomize25.click();
+	   act.pause(2000).perform();
 		  Remote.ApplicationMemberBenf.click();
 		   Remote.WaiveApplication.click();
 		   act.pause(2000).perform();
@@ -177,6 +180,9 @@ public void first_Protect_select_Tobacco_for_sponsor_spouse_AC_and_Customize_fif
 	  Remote.FirstProtectAC2Customize50.click();
 	  Remote.FirstProtectAC3Customize50.click();
 	  act.pause(2000).perform();
+	  EApp2.ChildCoverageClick.click();
+	   EApp2.ChildrenCoverageOption5.click();
+	   act.pause(2000).perform();
 }
 
 @Then("Children Protect Covered three MC")
@@ -192,69 +198,71 @@ public void children_Protect_Covered_three_MC() {
 
 @Then("Answer all the questions Yes or NO for Qualification page")
 public void answer_all_the_questions_Yes_or_NO_for_Qualification_page() {
-	Remote.OtherInsuranceSponsor1.click();
-	Remote.OtherInsuranceSponsor2.click();
-	Remote.OtherInsuranceSponsor3.click();
-	Remote.OtherInsuranceSponsor4.click();
-	act.pause(1000).perform();
-	Remote.OtherInsuranceSpouse1.click();
-	Remote.OtherInsuranceSpouse2.click();
-	Remote.OtherInsuranceSpouse3.click();
-	Remote.OtherInsuranceSpouse4.click();
-	act.pause(1000).perform();
-	Remote.OtherInsuranAC1.click();
-	Remote.OtherInsuranAC2.click();
-	Remote.OtherInsuranAC3.click();
-	Remote.OtherInsuranAC4.click();
-	act.pause(1000).perform();
-	Remote.OtherInsuranSecondAC1.click();
-	Remote.OtherInsuranSecondAC2.click();
-    act.pause(1000).perform();
-    Remote.SeniorProtecforSpouse1.click();
-    Remote.SeniorProtecforSpouse2.click();
-    Remote.SeniorProtecforSpouse3.click();
-    Remote.SeniorProtecforSpouse4.click();
-    Remote.SeniorProtecforSpouse5.click();
-    act.pause(1000).perform();
-    Remote.SeniorProtectSponsor1.click();
-    Remote.SeniorProtectSponsor2.click();
-    Remote.SeniorProtectSponsor3.click();
-    Remote.SeniorProtectSponsor4.click();
-    Remote.SeniorProtectSponsor5.click();
-    Remote.SeniorProtectSponsor6.click();
-    Remote.SeniorProtectSponsor7.click();
-    act.pause(1000).perform();
-    Remote.FirstProtectforSecondAC1.click();
-    Remote.FirstProtectforSecondAC2.click();
-    Remote.FirstProtectforSecondAC3.click();
-    Remote.FirstProtectforSecondAC4.click();
-    Remote.FirstProtectforSecondAC5.click();
-    Remote.FirstProtectforSecondAC6.click();
-    Remote.FirstProtectforSeconsAC7.click();
-   act.pause(1000).perform();
-   Remote.FirstProtectforThridAC1.click();
-   Remote.FirstProtectforThridAC2.click();
-   Remote.FirstProtectforThridAC3.click();
-   Remote.FirstProtectforThridAC4.click();
-   Remote.FirstProtectforThridAC5.click();
-   Remote.FirstProtectforThridAC6.click();
-   Remote.FirstProtectforThridAC7.click();
-    act.pause(2000).perform();
-  Remote.ChildProtectMC1.click();
-  Remote.ChildProtectMC2.click();
-  Remote.ChildProtectMC3.click();
-  Remote.ChildProtectMC4.click();
-  act.pause(1000).perform();
-  Remote.ChildProtectSecondMC1.click();
-  Remote.ChildProtectSecondMC2.click();
-  Remote.ChildProtectSecondMC3.click();
-  Remote.ChildProtectSecondMC4.click();
-  act.pause(1000).perform();
-  Remote.ChildProtectThridMC1.click();
-  Remote.ChildProtectThridMC2.click();
-  Remote.ChildProtectThridMC3.click();
-  Remote.ChildProtectThridMC4.click();
-  act.pause(2000).perform();
+	EApp2.AnswerNOAll.click();
+	act.pause(2000).perform();
+//	Remote.OtherInsuranceSponsor1.click();
+//	Remote.OtherInsuranceSponsor2.click();
+//	Remote.OtherInsuranceSponsor3.click();
+//	Remote.OtherInsuranceSponsor4.click();
+//	act.pause(1000).perform();
+//	Remote.OtherInsuranceSpouse1.click();
+//	Remote.OtherInsuranceSpouse2.click();
+//	Remote.OtherInsuranceSpouse3.click();
+//	Remote.OtherInsuranceSpouse4.click();
+//	act.pause(1000).perform();
+//	Remote.OtherInsuranAC1.click();
+//	Remote.OtherInsuranAC2.click();
+//	Remote.OtherInsuranAC3.click();
+//	Remote.OtherInsuranAC4.click();
+//	act.pause(1000).perform();
+//	Remote.OtherInsuranSecondAC1.click();
+//	Remote.OtherInsuranSecondAC2.click();
+//    act.pause(1000).perform();
+//    Remote.SeniorProtecforSpouse1.click();
+//    Remote.SeniorProtecforSpouse2.click();
+//    Remote.SeniorProtecforSpouse3.click();
+//    Remote.SeniorProtecforSpouse4.click();
+//    Remote.SeniorProtecforSpouse5.click();
+//    act.pause(1000).perform();
+//    Remote.SeniorProtectSponsor1.click();
+//    Remote.SeniorProtectSponsor2.click();
+//    Remote.SeniorProtectSponsor3.click();
+//    Remote.SeniorProtectSponsor4.click();
+//    Remote.SeniorProtectSponsor5.click();
+//    Remote.SeniorProtectSponsor6.click();
+//    Remote.SeniorProtectSponsor7.click();
+//    act.pause(1000).perform();
+//    Remote.FirstProtectforSecondAC1.click();
+//    Remote.FirstProtectforSecondAC2.click();
+//    Remote.FirstProtectforSecondAC3.click();
+//    Remote.FirstProtectforSecondAC4.click();
+//    Remote.FirstProtectforSecondAC5.click();
+//    Remote.FirstProtectforSecondAC6.click();
+//    Remote.FirstProtectforSeconsAC7.click();
+//   act.pause(1000).perform();
+//   Remote.FirstProtectforThridAC1.click();
+//   Remote.FirstProtectforThridAC2.click();
+//   Remote.FirstProtectforThridAC3.click();
+//   Remote.FirstProtectforThridAC4.click();
+//   Remote.FirstProtectforThridAC5.click();
+//   Remote.FirstProtectforThridAC6.click();
+//   Remote.FirstProtectforThridAC7.click();
+//    act.pause(2000).perform();
+//  Remote.ChildProtectMC1.click();
+//  Remote.ChildProtectMC2.click();
+//  Remote.ChildProtectMC3.click();
+//  Remote.ChildProtectMC4.click();
+//  act.pause(1000).perform();
+//  Remote.ChildProtectSecondMC1.click();
+//  Remote.ChildProtectSecondMC2.click();
+//  Remote.ChildProtectSecondMC3.click();
+//  Remote.ChildProtectSecondMC4.click();
+//  act.pause(1000).perform();
+//  Remote.ChildProtectThridMC1.click();
+//  Remote.ChildProtectThridMC2.click();
+//  Remote.ChildProtectThridMC3.click();
+//  Remote.ChildProtectThridMC4.click();
+//  act.pause(2000).perform();
     Remote.NextBtn2.click();  
 }
 
@@ -267,16 +275,16 @@ public void input_Sponsor_Information_include_Height_and_Weight() {
 	   Remote.NextBtn2.click();
 }
 
-//@Then("Input Spouse Information include SSN, Gender, Height and Weight")
-//public void input_Spouse_Information_include_SSN_Gender_Height_and_Weight() {
-//	Remote.SpouseSSN.click();
-//    Remote.SpouseSSN.sendKeys("404000067");
-//    Remote.SpouseGenderFamale.click();
-//    Remote.Spouse5Feet.click();
-//    Remote.Spouse9Inches.click();
-//    Remote.SpouseWeight.sendKeys("137");
-//    act.pause(2000).perform();
-//}
+@Then("Input Spouse Information include SSN, Gender, Height and Weight")
+public void input_Spouse_Information_include_SSN_Gender_Height_and_Weight() {
+	Remote.SpouseSSN.click();
+    Remote.SpouseSSN.sendKeys("404000067");
+    Remote.SpouseGenderFamale.click();
+    Remote.Spouse5Feet.click();
+    Remote.Spouse9Inches.click();
+    Remote.SpouseWeight.sendKeys("137");
+    act.pause(2000).perform();
+}
 
 @Then("Input Children Information include SSN, Gender, Height, Weight, Status, Relationship")
 public void input_Children_Information_include_SSN_Gender_Height_Weight_Status_Relationship() {
@@ -336,7 +344,7 @@ public void input_Children_Information_include_SSN_Gender_Height_Weight_Status_R
 	    Remote.Child6Weight.sendKeys("100");
 	    Remote.Child6USCitizen.click();
 	    Remote.Child6RelationshipStepParent.click();
-	    act.pause(2000).perform();
+	    act.pause(3000).perform();
 	    Remote.Next.click();
 	    
 	    }
@@ -604,7 +612,7 @@ public void input_Children_Information_include_SSN_Gender_Height_Weight_Status_R
 
 	@Then("Select Inbox and check Email from AFBA Enrollment")
 	public void select_Inbox_and_check_Email_from_AFBA_Enrollment() {
-		Remote.ClickSelect.click();
+	//	Remote.ClickSelect.click();
 		act.pause(1000).perform();
 		Remote.ClickEmail.click();
 		act.pause(2000).perform();
@@ -612,7 +620,7 @@ public void input_Children_Information_include_SSN_Gender_Height_Weight_Status_R
 		Remote.SelectFirstEmail.click();
 		act.pause(2000).perform();
 	//	Remote.selectEmail.click();
-		act.pause(2000).perform();
+	//	act.pause(2000).perform();
 		Remote.ReviewApplicationBtn.click();
 		act.pause(2000).perform();
 		
@@ -660,9 +668,9 @@ public void input_Children_Information_include_SSN_Gender_Height_Weight_Status_R
 		Remote.SponsorLastSSN.click();
 		Remote.SponsorLastSSN.sendKeys("0066");
 		act.pause(1000).perform();
-//		Remote.SpouseLastName.sendKeys("Heneberry");
-//		Remote.SpouseLastSSN.click();
-//		Remote.SpouseLastSSN.sendKeys("0067");
+		Remote.SpouseLastName.sendKeys("Heneberry");
+		Remote.SpouseLastSSN.click();
+		Remote.SpouseLastSSN.sendKeys("0067");
 	}
 
 	@Then("Select Paper option to receive the document")

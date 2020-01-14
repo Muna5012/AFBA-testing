@@ -4,11 +4,11 @@ import org.openqa.selenium.Keys;
 
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import pages.EApp2;
 import pages.Remote;
 import utilities.TestBase;
 
 public class EAppRemote8 extends TestBase {
-
 	
 	@When("Click New Enrollment button to create case")
 	public void click_New_Enrollment_button_to_create_case() {
@@ -41,10 +41,10 @@ public class EAppRemote8 extends TestBase {
 	    act.pause(1000).perform();
 	    Remote.DOB.sendKeys("03151978");
 	    Remote.Gender.click();   
-	    act.pause(2000).perform();
-	   
+	    act.pause(2000).perform();  
 	}
 
+	
 	@Then("Select Married button enter spouse First Name Walter, Last Name Findlay and DOB")
 	public void select_Married_button_enter_spouse_First_Name_Walter_Last_Name_Findlay_and_DOB() {
 		 Remote.MarriedBtn.click();
@@ -186,68 +186,70 @@ public class EAppRemote8 extends TestBase {
 	
 	@Then("Answer Yes or No questions for Qualification")
 	public void answer_Yes_or_No_questions_for_Qualification() {
-		Remote.OtherInsuranceSponsor1.click();
-		Remote.OtherInsuranceSponsor2.click();
-		Remote.OtherInsuranceSponsor3.click();
-		Remote.OtherInsuranceSponsor4.click();
-		act.pause(1000).perform();
-		Remote.OtherInsuranceSpouse1.click();
-		Remote.OtherInsuranceSpouse2.click();
-		Remote.OtherInsuranceSpouse3.click();
-		Remote.OtherInsuranceSpouse4.click();
-		act.pause(1000).perform();
-		Remote.OtherInsuranAC1.click();
-		Remote.OtherInsuranAC2.click();
-		Remote.OtherInsuranAC3.click();
-		Remote.OtherInsuranAC4.click();
-		act.pause(1000).perform();
-		Remote.OtherInsuranSecondAC1.click();
-		Remote.OtherInsuranSecondAC2.click();
-	    act.pause(1000).perform();
-	    Remote.SeniorProtecforSpouse1.click();
-	    Remote.SeniorProtecforSpouse2.click();
-	    Remote.SeniorProtecforSpouse3.click();
-	    Remote.SeniorProtecforSpouse4.click();
-	    Remote.SeniorProtecforSpouse5.click();
-	    act.pause(1000).perform();
-	    Remote.SeniorProtectSponsor1.click();
-	    Remote.SeniorProtectSponsor2.click();
-	    Remote.SeniorProtectSponsor3.click();
-	    Remote.SeniorProtectSponsor4.click();
-	    Remote.SeniorProtectSponsor5.click();
-	    Remote.SeniorProtectSponsor6.click();
-	    Remote.SeniorProtectSponsor7.click();
-	    act.pause(1000).perform();
-	    Remote.FirstProtectforSecondAC1.click();
-	    Remote.FirstProtectforSecondAC2.click();
-	    Remote.FirstProtectforSecondAC3.click();
-	    Remote.FirstProtectforSecondAC4.click();
-	    Remote.FirstProtectforSecondAC5.click();
-	    Remote.FirstProtectforSecondAC6.click();
-	    Remote.FirstProtectforSeconsAC7.click();
-	    act.pause(1000).perform();
-	    Remote.FirstProtectforThridAC1.click();
-	    Remote.FirstProtectforThridAC2.click();
-	    Remote.FirstProtectforThridAC3.click();
-	    Remote.FirstProtectforThridAC4.click();
-	    Remote.FirstProtectforThridAC5.click();
-	    Remote.FirstProtectforThridAC6.click();
-	    Remote.FirstProtectforThridAC7.click();
-	    act.pause(2000).perform();
-	    Remote.ChildProtectMC1.click();
-	    Remote.ChildProtectMC2.click();
-	    Remote.ChildProtectMC3.click();
-	    Remote.ChildProtectMC4.click();
-	    act.pause(1000).perform();
-	    Remote.ChildProtectSecondMC1.click();
-	    Remote.ChildProtectSecondMC2.click();
-	    Remote.ChildProtectSecondMC3.click();
-	    Remote.ChildProtectSecondMC4.click();
- 	    act.pause(1000).perform();
-	    Remote.ChildProtectThridMC1.click();
-	    Remote.ChildProtectThridMC2.click();
-	    Remote.ChildProtectThridMC3.click();
-   	    Remote.ChildProtectThridMC4.click();
+		EApp2.AnswerNOAll.click();
+		act.pause(2000).perform();
+//		Remote.OtherInsuranceSponsor1.click();
+//		Remote.OtherInsuranceSponsor2.click();
+//		Remote.OtherInsuranceSponsor3.click();
+//		Remote.OtherInsuranceSponsor4.click();
+//		act.pause(1000).perform();
+//		Remote.OtherInsuranceSpouse1.click();
+//		Remote.OtherInsuranceSpouse2.click();
+//		Remote.OtherInsuranceSpouse3.click();
+//		Remote.OtherInsuranceSpouse4.click();
+//		act.pause(1000).perform();
+//		Remote.OtherInsuranAC1.click();
+//		Remote.OtherInsuranAC2.click();
+//		Remote.OtherInsuranAC3.click();
+//		Remote.OtherInsuranAC4.click();
+//		act.pause(1000).perform();
+//		Remote.OtherInsuranSecondAC1.click();
+//		Remote.OtherInsuranSecondAC2.click();
+//	    act.pause(1000).perform();
+//	    Remote.SeniorProtecforSpouse1.click();
+//	    Remote.SeniorProtecforSpouse2.click();
+//	    Remote.SeniorProtecforSpouse3.click();
+//	    Remote.SeniorProtecforSpouse4.click();
+//	    Remote.SeniorProtecforSpouse5.click();
+//	    act.pause(1000).perform();
+//	    Remote.SeniorProtectSponsor1.click();
+//	    Remote.SeniorProtectSponsor2.click();
+//	    Remote.SeniorProtectSponsor3.click();
+//	    Remote.SeniorProtectSponsor4.click();
+//	    Remote.SeniorProtectSponsor5.click();
+//	    Remote.SeniorProtectSponsor6.click();
+//	    Remote.SeniorProtectSponsor7.click();
+//	    act.pause(1000).perform();
+//	    Remote.FirstProtectforSecondAC1.click();
+//	    Remote.FirstProtectforSecondAC2.click();
+//	    Remote.FirstProtectforSecondAC3.click();
+//	    Remote.FirstProtectforSecondAC4.click();
+//	    Remote.FirstProtectforSecondAC5.click();
+//	    Remote.FirstProtectforSecondAC6.click();
+//	    Remote.FirstProtectforSeconsAC7.click();
+//	    act.pause(1000).perform();
+//	    Remote.FirstProtectforThridAC1.click();
+//	    Remote.FirstProtectforThridAC2.click();
+//	    Remote.FirstProtectforThridAC3.click();
+//	    Remote.FirstProtectforThridAC4.click();
+//	    Remote.FirstProtectforThridAC5.click();
+//	    Remote.FirstProtectforThridAC6.click();
+//	    Remote.FirstProtectforThridAC7.click();
+//	    act.pause(2000).perform();
+//	    Remote.ChildProtectMC1.click();
+//	    Remote.ChildProtectMC2.click();
+//	    Remote.ChildProtectMC3.click();
+//	    Remote.ChildProtectMC4.click();
+//	    act.pause(1000).perform();
+//	    Remote.ChildProtectSecondMC1.click();
+//	    Remote.ChildProtectSecondMC2.click();
+//	    Remote.ChildProtectSecondMC3.click();
+//	    Remote.ChildProtectSecondMC4.click();
+// 	    act.pause(1000).perform();
+//	    Remote.ChildProtectThridMC1.click();
+//	    Remote.ChildProtectThridMC2.click();
+//	    Remote.ChildProtectThridMC3.click();
+//   	    Remote.ChildProtectThridMC4.click();
         act.pause(2000).perform();
 	    Remote.NextBtn2.click();  
 	}
@@ -494,8 +496,8 @@ public class EAppRemote8 extends TestBase {
 
 	@Then("Select Inbox and check the Email from AFBA Enrollement and click Review Application on AFBA Enrollment")
 	public void select_Inbox_and_check_the_Email_from_AFBA_Enrollement_and_click_Review_Application_on_AFBA_Enrollment() {
-		Remote.ClickSelect.click();
-		act.pause(1000).perform();
+//		Remote.ClickSelect.click();
+//		act.pause(1000).perform();
 		Remote.ClickEmail.click();
 		act.pause(2000).perform();
 		//Remote.ClickInbox.click();

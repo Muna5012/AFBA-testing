@@ -23,15 +23,16 @@ public class GoogleLoginStepDef extends TestBase {
 	public void input_Email_password_to_click_Next_button() {
 		GoogleLoginPage.InputPassword.sendKeys("Muna@5012");
 		GoogleLoginPage.Next.click();
-		act.pause(4000).perform();
+		act.pause(3000).perform();
 	}
 
 	@Then("Click InBox and Select first Email")
 	public void click_InBox_and_Select_first_Email() {
-		GoogleLoginPage.ClickSelect.click();
-		act.pause(1000).perform();
-		GoogleLoginPage.ClickEmail.click();
-		act.pause(2000).perform();
+	
+		GoogleLoginPage.ClickEmail.click(); 
+		 act.pause(4000).perform();
+ 
+	     
 		GoogleLoginPage.ClickInbox.click();
 		GoogleLoginPage.SelectFirstEmail.click();
 	}
