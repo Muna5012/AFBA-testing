@@ -24,7 +24,7 @@ public class EAppCallCenter4 extends TestBase {
 		act.pause(2000).perform();
 		EApp2.SSN.click();
 		act.pause(1000).perform();
-		 EApp2.SSN.sendKeys("545100255");
+		 EApp2.SSN.sendKeys("545200017");
 		 EApp2.EnrollmentCity.clear();
 		  EApp2.EnrollmentCity.sendKeys("Pago Pago");
 			act.pause(2000).perform();
@@ -35,9 +35,9 @@ public class EAppCallCenter4 extends TestBase {
 
 	@Then("click Begin Enrollement button and Input Sponsor Firs tName, Last Name, Gender and DOB")
 	public void click_Begin_Enrollement_button_and_Input_Sponsor_Firs_tName_Last_Name_Gender_and_DOB() {
-	//	EApp2.BeginEnrollment.click();
-	    EApp2.ClickNewSponsor.click();
-		 EApp2.FirstName.sendKeys("Clarence");
+		// EApp2.BeginEnrollment.click();
+	        EApp2.ClickNewSponsor.click();
+		    EApp2.FirstName.sendKeys("Clarence");
 		    EApp2.LastName.sendKeys("Carter");
 		    act.pause(1000).perform();
 		    EApp2.DOB.click();
@@ -156,7 +156,7 @@ public class EAppCallCenter4 extends TestBase {
 	@Then("Next page input Adult child information, SSN, Gender, Height, Weight and Relationship")
 	public void next_page_input_Adult_child_information_SSN_Gender_Height_Weight_and_Relationship() {
 		EApp2.ChildOneSSN.click();
-		EApp2.ChildOneSSN.sendKeys("545100256");
+		EApp2.ChildOneSSN.sendKeys("545200018");
 		EApp2.ChildOneGenderMale.click();
 		EApp2.ChildOneHeight6Feet.click();
 		EApp2.ChildOneHeight0Inches.click();
@@ -171,7 +171,7 @@ public class EAppCallCenter4 extends TestBase {
 		act.pause(1000).perform();
 		EApp2.PrimaryBenficiaryFullName.sendKeys("Eva Braun");
 		EApp2.PrimaryBeneficiarySSN.click();
-	    EApp2.PrimaryBeneficiarySSN.sendKeys("545100257");
+	    EApp2.PrimaryBeneficiarySSN.sendKeys("545200019");
 	    EApp2.PrimaryBeneficiaryRelationship2.click();
 	    EApp2.PrimaryBeneficiaryDOB.click();
 		  EApp2.PrimaryBeneficiaryDOB.sendKeys("11281949");
@@ -192,7 +192,7 @@ public class EAppCallCenter4 extends TestBase {
 	public void input_FetTerm_product_Sponsor_Primary_Beneficiary_FullName_SSN_Relationship_and_DOB() {
 		EApp2.SecondPrmaryBenFullName.sendKeys("Wallace Carter");
 		EApp2.SecondPrimaryBenfSSN.click();
-		EApp2.SecondPrimaryBenfSSN.sendKeys("545100258");
+		EApp2.SecondPrimaryBenfSSN.sendKeys("545200020");
 		EApp2.SecondPrimaryBenRelationshipforChild.click();
 		EApp2.SecondPrimaryBenfDOB.click();
 		EApp2.SecondPrimaryBenfDOB.sendKeys("01211994");
@@ -213,7 +213,7 @@ public class EAppCallCenter4 extends TestBase {
 		EApp2.FirstProtectPrimarySomeOneElse.click();
 		EApp2.FirstProtectPrimaryFN.sendKeys("Mable Godley");
 		EApp2.FirstProtectPrimarySSN.click();
-		EApp2.FirstProtectPrimarySSN.sendKeys("545100259");
+		EApp2.FirstProtectPrimarySSN.sendKeys("545200021");
 		EApp2.FirstProtectPrimaryRelationshipBF.click();
 		EApp2.FirstProtectPrimaryDOB.click();
 		EApp2.FirstProtectPrimaryDOB.sendKeys("11151963");

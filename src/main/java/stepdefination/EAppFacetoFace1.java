@@ -35,7 +35,7 @@ public class EAppFacetoFace1 extends TestBase{
 	@Then("Input Sponsor SSN")
 	public void input_Sponsor_SSN() {
 	   EApp1.SSN.click();
-	   EApp1.SSN.sendKeys("545100193");
+	   EApp1.SSN.sendKeys("545200029");
 	}
 
 	@Then("Input Enrollement City")
@@ -187,7 +187,7 @@ public class EAppFacetoFace1 extends TestBase{
 	@Then("Input Beneficiary SSN")
 	public void input_Beneficiary_SSN() {
 	EApp1.BeneficiarySSN.click();
-	EApp1.BeneficiarySSN.sendKeys("545100194");
+	EApp1.BeneficiarySSN.sendKeys("545200030");
 	  act.pause(1000).perform();
 	}
 
@@ -216,7 +216,7 @@ public class EAppFacetoFace1 extends TestBase{
 	@Then("Input Contingent Beneficiary of Sponsor Coverage SSN")
 	public void input_Contingent_Beneficiary_of_Sponsor_Coverage_SSN() {
 	  EApp1.ContingentBeneficiarySSNnumber.click();
-	  EApp1.ContingentBeneficiarySSNnumber.sendKeys("545100195");
+	  EApp1.ContingentBeneficiarySSNnumber.sendKeys("545200031");
 	  act.pause(2000).perform();
 	  
 	}

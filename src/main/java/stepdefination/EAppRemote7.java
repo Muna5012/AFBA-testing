@@ -576,7 +576,7 @@ public void input_Children_Information_include_SSN_Gender_Height_Weight_Status_R
 	    Remote.CreditCardNumber.click();
 	    Remote.CreditCardNumber.sendKeys("5800000000000001");
 	    Remote.ExpirationDate.click();
-	    Remote.ExpirationDate.sendKeys("1119");
+	    Remote.ExpirationDate.sendKeys("0220");
 	    Remote.CVV.sendKeys("116");
 	    act.pause(2000).perform();
 	}

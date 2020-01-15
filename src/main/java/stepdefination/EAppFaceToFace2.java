@@ -37,7 +37,7 @@ public class EAppFaceToFace2 extends TestBase {
 	@Then("Input valid Sponsor SSN")
 	public void input_valid_Sponsor_SSN() {
 		EApp2.SSN.click();
-		EApp2.SSN.sendKeys("545100196");
+		EApp2.SSN.sendKeys("545200032");
 	}
 
 	@Then("Input Enrollement State then click Next button")
@@ -56,8 +56,8 @@ public class EAppFaceToFace2 extends TestBase {
 
 	@Then("Click Begin Enrollement Button")
 	public void click_Begin_Enrollement_Button() {
-	//	 EApp2.BeginEnrollment.click();
-		 EApp2.ClickNewSponsor.click();
+		 EApp2.BeginEnrollment.click();
+		// EApp2.ClickNewSponsor.click();
 	}
 
 	@Then("Input valid Sponsor firstName, lastName, DOB")
@@ -184,7 +184,7 @@ public class EAppFaceToFace2 extends TestBase {
 	@Then("Input Primary BeneficiarySSN")
 	public void input_Primary_BeneficiarySSN() {
 	    EApp2.PrimaryBeneficiarySSN.click();
-	    EApp2.PrimaryBeneficiarySSN.sendKeys("545100197");
+	    EApp2.PrimaryBeneficiarySSN.sendKeys("545200033");
 	}
 
 	@Then("Select Primary Beneficiary Relationship")
@@ -213,7 +213,7 @@ public class EAppFaceToFace2 extends TestBase {
 	@Then("Input Contingent Beneficiary SSN")
 	public void input_Contingent_Beneficiary_SSN() {
 	    EApp2.ContingentBeneficiarySSNnumber.click();
-	    EApp2.ContingentBeneficiarySSNnumber.sendKeys("545100198");
+	    EApp2.ContingentBeneficiarySSNnumber.sendKeys("545200034");
 	}
 
 	@Then("Select Contingent Beneficiary Relationship option")
@@ -236,7 +236,7 @@ public class EAppFaceToFace2 extends TestBase {
 	@Then("Input Second Primary Beneficiary SSN")
 	public void input_Second_Primary_Beneficiary_SSN() {
 	  EApp2.SecondPrimaryBenfSSN.click();
-	  EApp2.SecondPrimaryBenfSSN.sendKeys("545100199");
+	  EApp2.SecondPrimaryBenfSSN.sendKeys("545200035");
 	}
 
 	@Then("Select Second Primary Beneficiary Relationship option")
@@ -265,7 +265,7 @@ public class EAppFaceToFace2 extends TestBase {
 	@Then("Input second Contingent Beneficiary SSN")
 	public void input_second_Contingent_Beneficiary_SSN() {
 	   EApp2.SecondContingentBeneficiarySSN.click();
-	   EApp2.SecondContingentBeneficiarySSN.sendKeys("545100200");
+	   EApp2.SecondContingentBeneficiarySSN.sendKeys("545200036");
 	}
 
 	@Then("Select Second Contigent Beneficiary Relationship")
@@ -356,7 +356,7 @@ public class EAppFaceToFace2 extends TestBase {
 	@Then("Input Last Name and Last four SSN number")
 	public void input_Last_Name_and_Last_four_SSN_number() {
 		GoogleLoginPage.LastName.sendKeys("Hess");
-		GoogleLoginPage.LastSSN.sendKeys("0196");
+		GoogleLoginPage.LastSSN.sendKeys("0032");
 		
 	}
 
@@ -387,12 +387,12 @@ public class EAppFaceToFace2 extends TestBase {
 
 	@Then("Input Sponsor last four SSN")
 	public void input_Sponsor_last_four_SSN() {
-		 GoogleLoginPage.SponsorLastSSN.sendKeys("1116");
+		 GoogleLoginPage.SponsorLastSSN.sendKeys("0032");
 		 GoogleLoginPage.verifySSN.click();
 			act.pause(2000).perform();
 			GoogleLoginPage.SponsorLastSSN.clear();
 			GoogleLoginPage.SponsorLastSSN.click();
-			GoogleLoginPage.SponsorLastSSN.sendKeys("0196");
+			GoogleLoginPage.SponsorLastSSN.sendKeys("0032");
 	}
 
 	@Then("Select Paper Option for receive the Documents and Signin")
