@@ -14,7 +14,7 @@ public class EAppRemote6 extends TestBase {
 	@When("Click New Enrollment button input Sponsor SSN, Enrollment city, Enrollment State")
 	public void click_New_Enrollment_button_input_Sponsor_SSN_Enrollment_city_Enrollment_State() {
 		 Remote.SSN.click();
-		  Remote.SSN.sendKeys("404000044");
+		  Remote.SSN.sendKeys("414000044");
 		  Remote.EnrollmentCity.clear();
 		  Remote.EnrollmentCity.sendKeys("Tamuning");
 		  Remote.EnrollmentState.click();
@@ -25,8 +25,8 @@ public class EAppRemote6 extends TestBase {
 	@Then("Select Begin Enrollment button to create new case")
 	public void select_Begin_Enrollment_button_to_create_new_case() {
 	    	Remote.NextBtn.click();
-		//   Remote.BeginEnrollment.click();
-			Remote.ClickNewSponsor.click();
+		   Remote.BeginEnrollment.click();
+			//Remote.ClickNewSponsor.click();
 			act.pause(2000).perform();
 	}
 
@@ -265,7 +265,7 @@ public class EAppRemote6 extends TestBase {
 	@Then("Input Spouse Information which include SSN, Gender, Height and Weight")
 	public void input_Spouse_Information_which_include_SSN_Gender_Height_and_Weight() {
 		Remote.SpouseSSN.click();
-	    Remote.SpouseSSN.sendKeys("404000045");
+	    Remote.SpouseSSN.sendKeys("414000045");
 	    Remote.SpouseGenderMale.click();
 	    Remote.Spouse6Feet.click();
 	    Remote.Spouse5Inches.click();
@@ -276,7 +276,7 @@ public class EAppRemote6 extends TestBase {
 	@Then("Input Children Information which include SSN, Gender, Height, Weight, Status, Relationship")
 	public void input_Children_Information_which_include_SSN_Gender_Height_Weight_Status_Relationship() {
 		  Remote.ChildOneSSN.click();
-		    Remote.ChildOneSSN.sendKeys("404000046");
+		    Remote.ChildOneSSN.sendKeys("414000046");
 		    Remote.ChildOneGenderMale.click();
 		    Remote.ChildOnet5Feet.click();
 		    Remote.ChildOne11Inches.click();
@@ -285,7 +285,7 @@ public class EAppRemote6 extends TestBase {
 		    Remote.ChildOneRelationshipParent.click();
 		    act.pause(1000).perform();
 		    Remote.ChildTwoSSN.click();
-		    Remote.ChildTwoSSN.sendKeys("404000047");
+		    Remote.ChildTwoSSN.sendKeys("414000047");
 		    Remote.ChildTwoGenderMale.click();
 		    Remote.ChildTwo6Feet.click();
 		    Remote.ChildTwo0Inches.click();
@@ -294,7 +294,7 @@ public class EAppRemote6 extends TestBase {
 		    Remote.ChildTwoUSCitizenm.click();
 		    act.pause(1000).perform();
 		    Remote.ChildThreeSSN.click();
-		    Remote.ChildThreeSSN.sendKeys("404000048");
+		    Remote.ChildThreeSSN.sendKeys("414000048");
 		    Remote.ChildThreeGenderMale.click();
 		    Remote.ChildThree6Feet.click();
 		    Remote.ChildThree1Inches.click();
@@ -304,7 +304,7 @@ public class EAppRemote6 extends TestBase {
 		    act.pause(1000).perform();
 		    
 		    Remote.Child4SSN.click();
-		    Remote.Child4SSN.sendKeys("404000049");
+		    Remote.Child4SSN.sendKeys("414000049");
 		    Remote.Child4Famale.click();
 		    Remote.Child4Feet5.click();
 		    Remote.Child4Inches6.click();
@@ -314,7 +314,7 @@ public class EAppRemote6 extends TestBase {
 		    act.pause(1000).perform();
 		    
 		    Remote.Child5SSN.click();
-		    Remote.Child5SSN.sendKeys("404000050");
+		    Remote.Child5SSN.sendKeys("414000050");
 		    Remote.Child5Famale.click();
 		    Remote.Child5Feet5.click();
 		    Remote.Child5Inches7.click();
@@ -324,7 +324,7 @@ public class EAppRemote6 extends TestBase {
 		    act.pause(1000).perform();
 		    
 		    Remote.Child6SSN.click();
-		    Remote.Child6SSN.sendKeys("404000051");
+		    Remote.Child6SSN.sendKeys("414000051");
 		    Remote.Child6Famale.click();
 		    Remote.Chil65Feet5.click();
 		    Remote.Child6Inches7.click();
@@ -340,7 +340,7 @@ public class EAppRemote6 extends TestBase {
 		 Remote.SomeoneElseForSpousePrimary.click();
 		 Remote.SpousePrimarytFN.sendKeys("Tony Hawk");
 		 Remote.SpousePrimarytSSN.click();
-		 Remote.SpousePrimarytSSN.sendKeys("404000052");
+		 Remote.SpousePrimarytSSN.sendKeys("414000052");
 		 Remote.SpousePrimaryRelationshipGirlFriend.click();
 		 act.pause(1000).perform();
 	}
@@ -350,7 +350,7 @@ public class EAppRemote6 extends TestBase {
 	   Remote.BASpouseContingentSomeOneElse.click();
 	   Remote.SpouseContingentFN.sendKeys("NIcki Minaj");
 	   Remote.SpouseContingentSSN.click();
-	   Remote.SpouseContingentSSN.sendKeys("404000053");
+	   Remote.SpouseContingentSSN.sendKeys("414000053");
 	   Remote.SpouseContingentRelationshipBrother.click();
 	   act.pause(1000).perform();
 	}
@@ -360,7 +360,7 @@ public class EAppRemote6 extends TestBase {
 		  Remote.AC1FirstProtectPrimarySomeOneElse.click();
 		  Remote.AC1FirstProtectPrimaryFN.sendKeys("Gal Gadot");
 		  Remote.AC1FirstProtectPrimarySSN.click();
-		  Remote.AC1FirstProtectPrimarySSN.sendKeys("404000054");
+		  Remote.AC1FirstProtectPrimarySSN.sendKeys("414000054");
 		  Remote.AC1FirstProtectPrimaryRelationshipOther.click();
 		  act.pause(1000).perform();
 	}
@@ -370,7 +370,7 @@ public class EAppRemote6 extends TestBase {
 		  Remote.AC1FirstProtectContingentSomeOneElse.click();
 		   Remote.AC1FirstProtectContingentFN.sendKeys("Mae West");
 		   Remote.AC1FirstProtectContingentSSN.click();
-		   Remote.AC1FirstProtectContingentSSN.sendKeys("404000055");
+		   Remote.AC1FirstProtectContingentSSN.sendKeys("414000055");
 		   Remote.AC1FirstProtectContingentRelationshipMotherInLaw.click();
 		   act.pause(1000).perform();
 	}
@@ -380,7 +380,7 @@ public class EAppRemote6 extends TestBase {
 		 Remote.AC2FirstProtectPrimarySomeOneElse.click();
 		   Remote.AC2FirstProtectPrimaryFN.sendKeys("Emma Watson");
 		   Remote.AC2FirstProtectPrimarySSN.click();
-		   Remote.AC2FirstProtectPrimarySSN.sendKeys("404000056");
+		   Remote.AC2FirstProtectPrimarySSN.sendKeys("414000056");
 		   Remote.AC2FirstProtectPrimaryRelationshipGirlFriend.click();
 		   act.pause(1000).perform();
 	}
@@ -390,7 +390,7 @@ public class EAppRemote6 extends TestBase {
 		  Remote.AC2FirstProtectContingentSomeOneElse.click();
 		    Remote.AC2FirstProtectContingentFN.sendKeys("Roy Rogers");
 		    Remote.AC2FirstProtectContingentSSN.click();
-		    Remote.AC2FirstProtectContingentSSN.sendKeys("404000057");
+		    Remote.AC2FirstProtectContingentSSN.sendKeys("414000057");
 		    Remote.AC2FirstProtectContingentRelationshipFatherInLaw.click();
 		    act.pause(1000).perform();
 	}
@@ -400,7 +400,7 @@ public class EAppRemote6 extends TestBase {
 		Remote.AC3FirstProtectPrimarySomeOneElse.click();
 		Remote.AC3FirstProtectPrimaryFN.sendKeys("Blake Lively");
 		Remote.AC3FirstProtectPrimarySSN.click();
-		Remote.AC3FirstProtectPrimarySSN.sendKeys("404000058");
+		Remote.AC3FirstProtectPrimarySSN.sendKeys("414000058");
 		Remote.AC3FirstProtectPrimaryRelationshipAunt.click();
 		act.pause(1000).perform();
 	}
@@ -410,7 +410,7 @@ public class EAppRemote6 extends TestBase {
 		 Remote.AC3FirstProtectContingentSomeOneElse.click();
 		 Remote.AC3FirstProtectContingentFN.sendKeys("Heath Leger");
 		 Remote.AC3FirstProtectContingentSSN.click();
-		 Remote.AC3FirstProtectContingentSSN.sendKeys("404000059");
+		 Remote.AC3FirstProtectContingentSSN.sendKeys("414000059");
 		 Remote.AC3FirstProtectContingentRelationshipBrother.click();
 		 act.pause(1000).perform();
 	}
@@ -420,7 +420,7 @@ public class EAppRemote6 extends TestBase {
 		Remote.MC1ChildProtectPrimarySomeoneElse.click();
 		   Remote.MC1ChildProtectPrimaryFN.sendKeys("Ton Ford");
 		   Remote.MC1ChildProtectPrimarySSN.click();
-		   Remote.MC1ChildProtectPrimarySSN.sendKeys("404000060");
+		   Remote.MC1ChildProtectPrimarySSN.sendKeys("414000060");
 		   Remote.MC1ChildProtectPrimaryRelationshipExSpouse.click();
 		   act.pause(1000).perform();
 	}
@@ -430,7 +430,7 @@ public class EAppRemote6 extends TestBase {
 	   Remote.MC1ChildProtectContingentSomeoneElse.click();
 	   Remote.MC1ChildProtectContingentFN.sendKeys("My Estate");
 	   Remote.MC1ChildProtectContingentSSN.click();
-	   Remote.MC1ChildProtectContingentSSN.sendKeys("404000061");
+	   Remote.MC1ChildProtectContingentSSN.sendKeys("414000061");
 	   Remote.MC1ChildProtectContingentRelationshipEstate.click();
 	   act.pause(1000).perform();
 	}
@@ -440,7 +440,7 @@ public class EAppRemote6 extends TestBase {
 		   Remote.MC2ChildProtectPrimarySomeoneElse.click();
 		   Remote.MC2ChildProtectPrimaryFN.sendKeys("Donna Ford");
 		   Remote.MC2ChildProtectPrimarySSN.click();
-		   Remote.MC2ChildProtectPrimarySSN.sendKeys("404000062");
+		   Remote.MC2ChildProtectPrimarySSN.sendKeys("414000062");
 		   Remote.MC2ChildProtectPrimaryRelationshipAUnt.click();
 		   act.pause(1000).perform();
 	}
@@ -450,7 +450,7 @@ public class EAppRemote6 extends TestBase {
 	    Remote.MC2ChildProtectContingentSomeoneElse.click();
 	    Remote.MC2ChildProtectContingentFN.sendKeys("My Trust");
 	    Remote.MC2ChildProtectContingentSSN.click();
-	    Remote.MC2ChildProtectContingentSSN.sendKeys("404000063");
+	    Remote.MC2ChildProtectContingentSSN.sendKeys("414000063");
 	    Remote.MC2ChildProtectContingentRelationshipTrust.click();
 	    act.pause(1000).perform();
 	}
@@ -460,7 +460,7 @@ public class EAppRemote6 extends TestBase {
 		  Remote.MC3ChildProtectPrimarySomeoneElse.click();
 		   Remote.MC3ChildProtectPrimaryFN.sendKeys("Xavier Ford");
 		   Remote.MC3ChildProtectPrimarySSN.click();
-		   Remote.MC3ChildProtectPrimarySSN.sendKeys("404000064");
+		   Remote.MC3ChildProtectPrimarySSN.sendKeys("414000064");
 		   Remote.MC3ChildProtectPrimaryRelationshipBrother.click();
 		   act.pause(1000).perform();
 	}
@@ -470,7 +470,7 @@ public class EAppRemote6 extends TestBase {
 	        Remote.MC3ChildProtectContingentSomeoneElse.click();
 	        Remote.MC3ChildProtectContingentFN.sendKeys("Rough Riders");
 	        Remote.MC3ChildProtectContingentSSN.click();
-	        Remote.MC3ChildProtectContingentSSN.sendKeys("404000065");
+	        Remote.MC3ChildProtectContingentSSN.sendKeys("414000065");
 	        Remote.MC3ChildProtectContingentRelationshipOther.click();
 	        act.pause(2000).perform();
 	        Remote.NextBtn6.click();
