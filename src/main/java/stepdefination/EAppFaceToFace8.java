@@ -32,24 +32,24 @@ public class EAppFaceToFace8 extends TestBase{
 	public void input_Sponsor_SSN_Enrollment_City_Enrollment_State() {
 		act.pause(1000).perform();
 		EApp2.SSN.click();
-		 EApp2.SSN.sendKeys("545100226");
+		 EApp2.SSN.sendKeys("545200062");
 		 EApp2.EnrollmentCity.clear();
 		 EApp2.EnrollmentCity.sendKeys("Charlotte");
 		 act.pause(2000).perform();
-		  EApp2.NC.click();
-			   act.pause(1000).perform();
-			   EApp2.NextBtn.click();
+		 EApp2.NC.click();
+		 act.pause(1000).perform();
+		 EApp2.NextBtn.click();
 	}
 
 	@Then("click the Begin Enrollement button to create new Case")
 	public void click_the_Begin_Enrollement_button_to_create_new_Case() {
 		//EApp2.BeginEnrollment.click();
-		 EApp2.ClickNewSponsor.click();
+	   EApp2.ClickNewSponsor.click();
 	}
 
 	@Then("Input the Sponsor FirstName, LastName and DOB")
 	public void input_the_Sponsor_FirstName_LastName_and_DOB() {
-		 EApp2.FirstName.sendKeys("Allen");
+		    EApp2.FirstName.sendKeys("Allen");
 		    EApp2.LastName.sendKeys("Kerr");
 		    act.pause(1000).perform();
 		    EApp2.DOB.click();
@@ -63,9 +63,9 @@ public class EAppFaceToFace8 extends TestBase{
 
 	@Then("Input Spouse information FirstName, LastName, DOB")
 	public void input_Spouse_information_FirstName_LastName_DOB() {
-		  EApp2.MarriedBtn.click();
-		    act.pause(3000).perform();
-		    EApp2.SpouseFN.sendKeys("Donatella");
+		       EApp2.MarriedBtn.click();
+		       act.pause(3000).perform();
+		       EApp2.SpouseFN.sendKeys("Donatella");
 			   EApp2.SpouseLN.sendKeys("Kerr");
 			   act.pause(1000).perform();
 			   EApp2.SpouseDOB.click();
@@ -108,7 +108,7 @@ public class EAppFaceToFace8 extends TestBase{
 
 	@Then("Select Active Duty Status")
 	public void select_Active_Duty_Status() {
-		EApp2.DutyStatus2.click();
+		 EApp2.DutyStatus2.click();
 	}
 
 	@Then("Select O ten for Rank")
@@ -118,18 +118,18 @@ public class EAppFaceToFace8 extends TestBase{
 
 	@Then("Select Militart Allotment on ContributionMode")
 	public void select_Militart_Allotment_on_ContributionMode() {
-		 EApp2.ContributionMode.click();
-		 act.pause(2000).perform();
+		  EApp2.ContributionMode.click();
+		  act.pause(2000).perform();
 	}
 	
 	@Then("Input Department Code, Source Code")
 	public void input_Department_Code_Source_Code() {
-		EApp2.SourceCode.sendKeys("ATWINTER");
+		 EApp2.SourceCode.sendKeys("ATWINTER");
 	}
 
 	@Then("Input Street information, City, St Zipcode")
 	public void input_Street_information_City_St_Zipcode() {
-		 EApp2.Street.sendKeys("7 River Rd");
+		  EApp2.Street.sendKeys("7 River Rd");
 		  EApp2.Street2.sendKeys("Apt 1227");
 		  EApp2.City.sendKeys("Winchester");
 	      EApp2.State.click();
@@ -151,7 +151,7 @@ public class EAppFaceToFace8 extends TestBase{
 	public void input_Daytime_phone_numbers() {
 		EApp2.Phone.click();
 		EApp2.Phone.sendKeys("7037065961");
-		  act.pause(2000).perform();
+		act.pause(2000).perform();
 	}
 
 	@Then("Click Show Coverage Options to select Benefitiary plans")
@@ -163,10 +163,10 @@ public class EAppFaceToFace8 extends TestBase{
 	@Then("Waived Better Alternative and Application Member Benefit")
 	public void waived_Better_Alternative_and_Application_Member_Benefit() {
 		 EApp2.WaiveBA.click();
-		    act.pause(2000).perform();
-		    EApp2.spouseCoverage.click();
-		    EApp2.WaiveApplication.click();
-		    act.pause(2000).perform();
+		 act.pause(2000).perform();
+		 EApp2.spouseCoverage.click();
+		 EApp2.WaiveApplication.click();
+		 act.pause(2000).perform();
 	}
 
 	@Then("Select FedTerm Tobacco for Sponsor and Spouse, NonTobacco for two adult kids")
@@ -198,12 +198,12 @@ public class EAppFaceToFace8 extends TestBase{
 	@Then("Click Next button to answer all the questions")
 	public void click_Next_button_to_answer_all_the_questions() {
 		  EApp2.AnswerNOAll.click();
-		    act.pause(2000).perform();
-		    EApp2.AnswerYes4.click();
-		    EApp2.AnswerYes4click1.click();
-		    EApp2.AnswerYes4clickAnswer.sendKeys("Reason one....");
-		    act.pause(2000).perform();
-		    EApp2.NextBtn2.click();
+		  act.pause(2000).perform();
+		  EApp2.AnswerYes4.click();
+		  EApp2.AnswerYes4click1.click();
+		  EApp2.AnswerYes4clickAnswer.sendKeys("Reason one....");
+		  act.pause(2000).perform();
+		  EApp2.NextBtn2.click();
 	}
 
 	@Then("On Next page input Sponsor information, Height and Weight")
@@ -219,20 +219,20 @@ public class EAppFaceToFace8 extends TestBase{
 	@Then("Next Page input Spouse information, SSN, Gender, Height and Weight")
 	public void next_Page_input_Spouse_information_SSN_Gender_Height_and_Weight() {
 		 EApp2.SpouseSSN.click();
-		 EApp2.SpouseSSN.sendKeys("545100227");
+		 EApp2.SpouseSSN.sendKeys("545200063");
 		 EApp2.SpouseGenderFamale.click();
 		 act.pause(1000).perform();
 		 EApp2.SpouseHeigthFeet.click();
 		 EApp2.SpouseHeightInches11.click();
-		  act.pause(2000).perform();
-		  EApp2.SpouseWeight.click();
-		  EApp2.SpouseWeight.sendKeys("159");
+		 act.pause(2000).perform();
+		 EApp2.SpouseWeight.click();
+		 EApp2.SpouseWeight.sendKeys("159");
 	}
 
 	@Then("Input Children information, SSN, Gender, Height, Weight and Relationship")
 	public void input_Children_information_SSN_Gender_Height_Weight_and_Relationship() {
 		EApp2.ChildOneSSN.click();
-		EApp2.ChildOneSSN.sendKeys("545100228");
+		EApp2.ChildOneSSN.sendKeys("545200064");
 		EApp2.ChildOneGenderFamale.click();
 		EApp2.ChildOneHeight5Feet.click();
 		EApp2.ChildOneHeight10Inches.click();
@@ -241,7 +241,7 @@ public class EAppFaceToFace8 extends TestBase{
 		act.pause(2000).perform();
 		
 		EApp2.ChildTwoSSN.click();
-		EApp2.ChildTwoSSN.sendKeys("545100229");
+		EApp2.ChildTwoSSN.sendKeys("545200065");
 		EApp2.ChildTwoGenderMale.click();
 		EApp2.ChildTwoHeight5Feet.click();
 		EApp2.ChildTwoInches11.click();
@@ -264,7 +264,7 @@ public class EAppFaceToFace8 extends TestBase{
 		 act.pause(1000).perform();
 	    EApp2.SpousePrimarytFN.sendKeys("Lenzo Meiden");
 	    EApp2.SpousePrimarytSSN.click();
-	    EApp2.SpousePrimarytSSN.sendKeys("545100230");
+	    EApp2.SpousePrimarytSSN.sendKeys("545200066");
 	    EApp2.SpousePrimaryRelationshipother.click();
 	    EApp2.SpousePrimaryDOB.click();
 	    EApp2.SpousePrimaryDOB.sendKeys("04161964");
@@ -284,7 +284,7 @@ public class EAppFaceToFace8 extends TestBase{
 		    act.pause(3000).perform();
 		    EApp2.FirstProtectPrimarySecondKidFN.sendKeys("Alvaro Mendez");
 		    EApp2.FirstProtectPrimarSecondKidSSN.click();
-		    EApp2.FirstProtectPrimarSecondKidSSN.sendKeys("545100231");
+		    EApp2.FirstProtectPrimarSecondKidSSN.sendKeys("545200067");
 		    EApp2.FirstProtecPrimarySecondKidRelationshipUncle.click();
 		    EApp2.FirstProtecPrimarySecondKidDOB.click();
 		    EApp2.FirstProtecPrimarySecondKidDOB.sendKeys("12041960");
@@ -296,7 +296,7 @@ public class EAppFaceToFace8 extends TestBase{
 	    EApp2.SomeOneElseForFirstProtecSecondKidContingent.click();
 	    EApp2.FirstProtectContingentSecondKidFN.sendKeys("Donatella Kerr");
 	    EApp2.FirstProtectContingentSecondKidSSN.click();
-	    EApp2.FirstProtectContingentSecondKidSSN.sendKeys("545100232");
+	    EApp2.FirstProtectContingentSecondKidSSN.sendKeys("545200068");
 	    EApp2.FirstProtecContingentSecondKidRelationship.click();
 	    EApp2.FirstProtectContingentSecondKidDOB.click();
 	    EApp2.FirstProtectContingentSecondKidDOB.sendKeys("03221965");
@@ -345,7 +345,7 @@ public class EAppFaceToFace8 extends TestBase{
 		act.pause(2000).perform();
 		EApp2.SponsorLastSSN.clear();
 	   EApp2.SponsorLastSSN.click();
-	   EApp2.SponsorLastSSN.sendKeys("0226");
+	   EApp2.SponsorLastSSN.sendKeys("0062");
 	}
 
 	@Then("Select Paper Option")

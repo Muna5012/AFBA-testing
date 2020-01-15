@@ -37,7 +37,7 @@ public class EAppFaceToFace6 extends TestBase{
 	public void input_Sponsor_SSN_numbers() {
 	act.pause(1000).perform();
 	EApp2.SSN.click();
-	 EApp2.SSN.sendKeys("545100212");
+	 EApp2.SSN.sendKeys("545200048");
 	}
 
 	@Then("Input Enrollment city")
@@ -56,8 +56,8 @@ public class EAppFaceToFace6 extends TestBase{
 
 	@Then("click Begin Enrollement button to create new sponsor")
 	public void click_Begin_Enrollement_button_to_create_new_sponsor() {
-	//	EApp2.BeginEnrollment.click();
-		 EApp2.ClickNewSponsor.click();
+		EApp2.BeginEnrollment.click();
+	//	 EApp2.ClickNewSponsor.click();
 	}
 
 	@Then("Input Sponsor First Name, Last Name and DOB")
@@ -256,7 +256,7 @@ public class EAppFaceToFace6 extends TestBase{
 	@Then("Input Spouse SSN")
 	public void input_Spouse_SSN() {
 		EApp2.SpouseSSN.click();
-		EApp2.SpouseSSN.sendKeys("545100213");
+		EApp2.SpouseSSN.sendKeys("545200049");
 	
 	}
 
@@ -288,7 +288,7 @@ public class EAppFaceToFace6 extends TestBase{
 		 act.pause(1000).perform();
 	    EApp2.PrimaryBenficiaryFullName.sendKeys("George Jetson");
 	    EApp2.PrimaryBeneficiarySSN.click();
-	    EApp2.PrimaryBeneficiarySSN.sendKeys("545100214");
+	    EApp2.PrimaryBeneficiarySSN.sendKeys("545200050");
 	    EApp2.PrimaryRelationshipForFIL.click();
 	    EApp2.PrimaryBeneficiaryDOB.click();
 	    EApp2.PrimaryBeneficiaryDOB.sendKeys("04101942");
@@ -301,7 +301,7 @@ public class EAppFaceToFace6 extends TestBase{
 		 act.pause(1000).perform();
 	    EApp2.SpousePrimarytFN.sendKeys("Bette Hawkins");
 	    EApp2.SpousePrimarytSSN.click();
-	    EApp2.SpousePrimarytSSN.sendKeys("545100215");
+	    EApp2.SpousePrimarytSSN.sendKeys("545200051");
 	    EApp2.SpousePrimaryRelationship.click();
 	    EApp2.SpousePrimaryDOB.click();
 	    EApp2.SpousePrimaryDOB.sendKeys("12111937");
@@ -353,7 +353,7 @@ public class EAppFaceToFace6 extends TestBase{
 		act.pause(2000).perform();
 		EApp2.SponsorLastSSN.clear();
 	   EApp2.SponsorLastSSN.click();
-	   EApp2.SponsorLastSSN.sendKeys("0212");
+	   EApp2.SponsorLastSSN.sendKeys("0048");
 	}
 
 	@Then("Select Paper Option for receive the documents")

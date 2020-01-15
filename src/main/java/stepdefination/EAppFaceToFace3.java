@@ -54,8 +54,8 @@ public class EAppFaceToFace3  extends TestBase {
 
 	@Then("Click Begin Enrollement")
 	public void click_Begin_Enrollement() {
-		EApp2.BeginEnrollment.click();
-	 //  EApp2.ClickNewSponsor.click();
+		// EApp2.BeginEnrollment.click();
+	   EApp2.ClickNewSponsor.click();
 	}
 
 	@Then("Input Sponsor firstName, lastName, DOB")
