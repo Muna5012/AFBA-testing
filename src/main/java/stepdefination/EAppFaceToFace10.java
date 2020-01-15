@@ -15,9 +15,9 @@ public class EAppFaceToFace10 extends TestBase{
 		act.pause(2000).perform();
 		EApp2.ManageCaseButton.click();
 		 EApp2.searchSpace.click();
-		  EApp2.searchSpace.sendKeys("IT_QA Automation Face2Face");
-			act.pause(1000).perform();
-		    EApp2.SearchITQAAutomationFace2Face.click();
+		 EApp2.searchSpace.sendKeys("IT_QA Automation Face2Face");
+		 act.pause(1000).perform();
+		 EApp2.SearchITQAAutomationFace2Face.click();
 	}
 	
 	@When("Click New Enrollement button to create")
@@ -29,29 +29,29 @@ public class EAppFaceToFace10 extends TestBase{
 	public void input_Sponsor_SSN_Enrollment_city_Enrollment_state() {
 		act.pause(1000).perform();
 		EApp2.SSN.click();
-		 EApp2.SSN.sendKeys("545100236");
-		 EApp2.EnrollmentCity.clear();
-		  EApp2.EnrollmentCity.sendKeys("Fort Meyer");
-			act.pause(2000).perform();
-			 EApp2.FL.click();
-			   act.pause(1000).perform();
-			   EApp2.NextBtn.click();
+		EApp2.SSN.sendKeys("545200072");
+		EApp2.EnrollmentCity.clear();
+		EApp2.EnrollmentCity.sendKeys("Fort Meyer");
+	    act.pause(2000).perform();
+	    EApp2.FL.click();
+		act.pause(1000).perform();
+		EApp2.NextBtn.click();
 	}
 
 	@Then("click Begin Enrollement to create")
 	public void click_Begin_Enrollement_to_create() {
-    //	EApp2.BeginEnrollment.click();
-	  EApp2.ClickNewSponsor.click();
+    	EApp2.BeginEnrollment.click();
+	  //EApp2.ClickNewSponsor.click();
 	}
 
 	@Then("Input the Sponsor FirstName, LastName, DOB, Gender")
 	public void input_the_Sponsor_FirstName_LastName_DOB_Gender() {
 		 EApp2.FirstName.sendKeys("Charlotte");
-		    EApp2.LastName.sendKeys("McCullough");
-		    act.pause(1000).perform();
-		    EApp2.DOB.click();
-		    EApp2.DOB.sendKeys("12301961");
-			EApp2.GenderforMale.click();
+		 EApp2.LastName.sendKeys("McCullough");
+		 act.pause(1000).perform();
+		 EApp2.DOB.click();
+		 EApp2.DOB.sendKeys("12301961");
+		 EApp2.GenderforMale.click();
 	}
 
 	@Then("Select Military on Eligibility options,")
@@ -68,7 +68,7 @@ public class EAppFaceToFace10 extends TestBase{
 	@Then("Select Active Status and Rank option")
 	public void select_Active_Status_and_Rank_option() {
 		EApp2.DutyStatus2.click();
-		 EApp2.Rank9.click();
+		EApp2.Rank9.click();
 	}
 
 	@Then("Select Military Allotment on ContributionMode option")
@@ -85,7 +85,7 @@ public class EAppFaceToFace10 extends TestBase{
 
 	@Then("Input address, City and ST Zipcode")
 	public void input_address_City_and_ST_Zipcode() {
-		 EApp2.Street.sendKeys("10 River Rd");
+		  EApp2.Street.sendKeys("10 River Rd");
 		  EApp2.Street2.sendKeys("Apt 1230");
 		  EApp2.City.sendKeys("BARRIGADA");
 	      EApp2.State.click();
@@ -101,8 +101,8 @@ public class EAppFaceToFace10 extends TestBase{
 		 EApp2.EmailAddress.sendKeys("qapeep19@gmail.com");
 		 EApp2.ReEmailAddress.sendKeys("qapeep19@gmail.com");
 		 EApp2.Phone.click();
-			EApp2.Phone.sendKeys("7037065961");
-			  act.pause(2000).perform();
+		 EApp2.Phone.sendKeys("7037065961");
+		 act.pause(2000).perform();
 	}
 
 	@Then("Click Show Coverage Options to Select Benefitiary plane")
@@ -114,13 +114,13 @@ public class EAppFaceToFace10 extends TestBase{
 	@Then("Waived to Better Alternative")
 	public void waived_to_Better_Alternative() {
 		 EApp2.WaiveBA.click();
-		    act.pause(2000).perform();
+		 act.pause(2000).perform();
 	}
 
 	
 	@Then("Click Covered Application Memeber benefit")
 	public void click_Covered_Application_Memeber_benefit() {
-	    EApp2.spouseCoverage.click();
+	       EApp2.spouseCoverage.click();
 		   act.pause(2000).click();
 		   EApp2.Covered.click();
 		   EApp2.NextBtn1.click();
@@ -128,7 +128,7 @@ public class EAppFaceToFace10 extends TestBase{
 
 	@Then("Waived Fed Term and First Protect")
 	public void waived_Fed_Term_and_First_Protect() {
-		  EApp2.FedTerm.click();
+		    EApp2.FedTerm.click();
 		    EApp2.WaiveFedTerm.click();
 		    act.pause(2000).perform();
 		    EApp2.ClickFirstProtect.click();
@@ -140,10 +140,10 @@ public class EAppFaceToFace10 extends TestBase{
 	public void click_Senior_Protect_to_click_Tobacco_and_select_first_Option() {
 		 EApp2.SeniorProtect.click();
 		 EApp2.SeniorProtectSponsorTobacco.click();
-		   act.pause(2000).perform();
+		 act.pause(2000).perform();
 		 EApp2.SeniorProtectOptionOne.click();
-		   act.pause(2000).perform();
-		   EApp2.NextBtn1.click();
+		 act.pause(2000).perform();
+		 EApp2.NextBtn1.click();
 	}
 
 	@Then("Next page Answer all the questions")
@@ -165,11 +165,11 @@ public class EAppFaceToFace10 extends TestBase{
 
 	@Then("Next step Beneficairy for Application Member Benefit Sponsor Primary beneficiary FullName, SSN, Relationship and DOB")
 	public void next_step_Beneficairy_for_Application_Member_Benefit_Sponsor_Primary_beneficiary_FullName_SSN_Relationship_and_DOB() {
-		 act.pause(2000).perform();
+		   act.pause(2000).perform();
 		   EApp2.Next.click();
 		   EApp2.PrimaryBenficiaryFullName.sendKeys("Gladys Cratch");
 		   EApp2.PrimaryBeneficiarySSN.click();
-		    EApp2.PrimaryBeneficiarySSN.sendKeys("545100237");
+		    EApp2.PrimaryBeneficiarySSN.sendKeys("545200073");
 		    EApp2.PrimaryRelationshipBF.click();
 		    EApp2.PrimaryBeneficiaryDOB.click();
 		    EApp2.PrimaryBeneficiaryDOB.sendKeys("08121964");
@@ -226,7 +226,7 @@ public class EAppFaceToFace10 extends TestBase{
 			act.pause(2000).perform();
 			EApp2.SponsorLastSSN.clear();
 		   EApp2.SponsorLastSSN.click();
-		   EApp2.SponsorLastSSN.sendKeys("0236");
+		   EApp2.SponsorLastSSN.sendKeys("0072");
 			act.pause(2000).perform();
 	}
 

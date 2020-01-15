@@ -35,7 +35,7 @@ public class EAppCallCenter4 extends TestBase {
 
 	@Then("click Begin Enrollement button and Input Sponsor Firs tName, Last Name, Gender and DOB")
 	public void click_Begin_Enrollement_button_and_Input_Sponsor_Firs_tName_Last_Name_Gender_and_DOB() {
-		// EApp2.BeginEnrollment.click();
+		//  EApp2.BeginEnrollment.click();
 	        EApp2.ClickNewSponsor.click();
 		    EApp2.FirstName.sendKeys("Clarence");
 		    EApp2.LastName.sendKeys("Carter");
