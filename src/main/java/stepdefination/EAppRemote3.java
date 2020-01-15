@@ -4,6 +4,7 @@ import org.openqa.selenium.Keys;
 
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import pages.EApp2;
 import pages.Remote;
 import utilities.TestBase;
 
@@ -12,7 +13,7 @@ public class EAppRemote3 extends TestBase {
 	@When("Click New Enrollment enter Sponsor SSN, Enrollment City and Enrollment State")
 	public void click_New_Enrollment_enter_Sponsor_SSN_Enrollment_City_and_Enrollment_State() {
 		  Remote.SSN.click();
-		  Remote.SSN.sendKeys("404000022");
+		  Remote.SSN.sendKeys("414000022");
 		  Remote.EnrollmentCity.clear();
 		  Remote.EnrollmentCity.sendKeys("Las Vegas");
 		  Remote.EnrollmentState.click();
@@ -23,7 +24,7 @@ public class EAppRemote3 extends TestBase {
 	@Then("click Next and select Begin Enrollment button")
 	public void click_Next_and_select_Begin_Enrollment_button() {
 		  Remote.NextBtn.click();
-		//Remote.BeginEnrollment.click();
+	   	//  Remote.BeginEnrollment.click();
 		  Remote.ClickNewSponsor.click();
 		  act.pause(2000).perform();
 	}
@@ -60,12 +61,12 @@ public class EAppRemote3 extends TestBase {
 	@Then("Enter Street Address, City, State and Zip")
 	public void enter_Street_Address_City_State_and_Zip() {
 		 Remote.Street.sendKeys("Bayview Shores");
-		    Remote.Street2.sendKeys("Apt 3");
-		    Remote.City.sendKeys("San Diego");
-		    Remote.State.sendKeys("California");
-		    Remote.State.sendKeys(Keys.ENTER);
-		    Remote.ZipCode.click();
-		    Remote.ZipCode.sendKeys("92037");
+		 Remote.Street2.sendKeys("Apt 3");
+		 Remote.City.sendKeys("San Diego");
+		 Remote.State.sendKeys("California");
+		 Remote.State.sendKeys(Keys.ENTER);
+		 Remote.ZipCode.click();
+		 Remote.ZipCode.sendKeys("92037");
 	}
 
 	@Then("Enter Email address, Daytime Phone Numbers")
@@ -92,12 +93,12 @@ public class EAppRemote3 extends TestBase {
 
 	@Then("Waived Fed Term and Application Member Benefit Products")
 	public void waived_Fed_Term_and_Application_Member_Benefit_Products() {
-		   Remote.FedTerm.click();
-		   Remote.WaiveFedTerm.click();
-		   act.pause(2000).perform();
-		   Remote.ApplicationMemberBenf.click();
-		   Remote.WaiveApplication.click();
-		   act.pause(2000).perform();
+		Remote.FedTerm.click();
+		Remote.WaiveFedTerm.click();
+		act.pause(2000).perform();
+		Remote.ApplicationMemberBenf.click();
+		Remote.WaiveApplication.click();
+		act.pause(2000).perform();
 	}
 
 	@Then("Senior Protect select Option One")
@@ -113,59 +114,61 @@ public class EAppRemote3 extends TestBase {
 		Remote.FirstProtectSponsorCustomize100.click();
 		Remote.FirstProtectSpouseCustomize100.click();
 		act.pause(2000).perform();
-		  Remote.NextBtn2.click();
+		Remote.NextBtn2.click();
 	}
 
 	@Then("Next page for Qualification Answer all the questions")
 	public void next_page_for_Qualification_Answer_all_the_questions() {
-		Remote.OISponsor1.click();
-	    Remote.OISponsor2.click();
-	    Remote.BASponsor1.click();
-	    Remote.BASponsor2.click();
-	    Remote.BASponsor3.click();
-	    Remote.BASponsor4.click();
-	    Remote.BASponsor5.click();
-	    Remote.BASponsor6.click();
-	    Remote.BASponsor7.click();
-	    act.pause(1000).perform();
-	    Remote.SeniorProtectSponsor1.click();
-	    Remote.SeniorProtectSponsor2.click();
-	    Remote.SeniorProtectSponsor3.click();
-	    Remote.SeniorProtectSponsor4.click();
-	    Remote.SeniorProtectSponsor5.click();
-    //  Remote.SeniorProtectSponsor6.click();
-	    Remote.FirstProtectSponsor1.click();
-	    Remote.FirstProtectSponsor2.click();
-	    Remote.FirstProtectSponsor3.click();
-	    Remote.FirstProtectSponsor4.click();
-	    Remote.FirstProtectSponsor5.click();
-	    Remote.FirstProtectSponsor6.click();
-	    Remote.FirstProtectSponsor7.click();
-	    act.pause(1000).perform();
-	    Remote.OISpouse1.click();
-	    Remote.OISpouse2.click();
-	    Remote.BASpouse1.click();
-	    Remote.BASpouse2.click();
-	    Remote.BASpouse3.click();
-	    Remote.BASpouse4.click();
-	    Remote.BASpouse5.click();
-	    Remote.BASpouse6.click();
-	    Remote.BASpouse7.click();
-	    act.pause(1000).perform();
-	    Remote.SeniorProtectSpouse1.click();
-	    Remote.SeniorProtectSpouse2.click();
-	    Remote.SeniorProtectSpouse3.click();
-	    Remote.SeniorProtectSpouse4.click();
-	    Remote.SeniorProtectSpouse5.click();
-//	    Remote.SeniorProtectSpouse6.click();
-	    act.pause(1000).perform();
-	    Remote.FirstProtectSpouse1.click();
-	    Remote.FirstProtectSpouse2.click();
-	    Remote.FirstProtectSpouse3.click();
-	    Remote.FirstProtectSpouse4.click();
-	    Remote.FirstProtectSpouse5.click();
-	    Remote.FirstProtectSpouse6.click();
-	    Remote.FirstProtectSpouse7.click();
+		EApp2.AnswerNOAll.click();
+		act.pause(2000).perform();
+//		Remote.OISponsor1.click();
+//	    Remote.OISponsor2.click();
+//	    Remote.BASponsor1.click();
+//	    Remote.BASponsor2.click();
+//	    Remote.BASponsor3.click();
+//	    Remote.BASponsor4.click();
+//	    Remote.BASponsor5.click();
+//	    Remote.BASponsor6.click();
+//	    Remote.BASponsor7.click();
+//	    act.pause(1000).perform();
+//	    Remote.SeniorProtectSponsor1.click();
+//	    Remote.SeniorProtectSponsor2.click();
+//	    Remote.SeniorProtectSponsor3.click();
+//	    Remote.SeniorProtectSponsor4.click();
+//	    Remote.SeniorProtectSponsor5.click();
+//    //  Remote.SeniorProtectSponsor6.click();
+//	    Remote.FirstProtectSponsor1.click();
+//	    Remote.FirstProtectSponsor2.click();
+//	    Remote.FirstProtectSponsor3.click();
+//	    Remote.FirstProtectSponsor4.click();
+//	    Remote.FirstProtectSponsor5.click();
+//	    Remote.FirstProtectSponsor6.click();
+//	    Remote.FirstProtectSponsor7.click();
+//	    act.pause(1000).perform();
+//	    Remote.OISpouse1.click();
+//	    Remote.OISpouse2.click();
+//	    Remote.BASpouse1.click();
+//	    Remote.BASpouse2.click();
+//	    Remote.BASpouse3.click();
+//	    Remote.BASpouse4.click();
+//	    Remote.BASpouse5.click();
+//	    Remote.BASpouse6.click();
+//	    Remote.BASpouse7.click();
+//	    act.pause(1000).perform();
+//	    Remote.SeniorProtectSpouse1.click();
+//	    Remote.SeniorProtectSpouse2.click();
+//	    Remote.SeniorProtectSpouse3.click();
+//	    Remote.SeniorProtectSpouse4.click();
+//	    Remote.SeniorProtectSpouse5.click();
+////	    Remote.SeniorProtectSpouse6.click();
+//	    act.pause(1000).perform();
+//	    Remote.FirstProtectSpouse1.click();
+//	    Remote.FirstProtectSpouse2.click();
+//	    Remote.FirstProtectSpouse3.click();
+//	    Remote.FirstProtectSpouse4.click();
+//	    Remote.FirstProtectSpouse5.click();
+//	    Remote.FirstProtectSpouse6.click();
+//	    Remote.FirstProtectSpouse7.click();
 	    act.pause(2000).perform();
 	    Remote.NextBtn2.click();  
 	}
@@ -183,7 +186,7 @@ public class EAppRemote3 extends TestBase {
 	@Then("Enter Spouse Information SSN, Gender, Height feet inches and Weight")
 	public void enter_Spouse_Information_SSN_Gender_Height_feet_inches_and_Weight() {
 		  Remote.SpouseSSN.click();
-		    Remote.SpouseSSN.sendKeys("404000023");
+		    Remote.SpouseSSN.sendKeys("414000023");
 		    Remote.SpouseGenderFamale.click();
 		    Remote.Spouse5Feet.click();
 		    Remote.Spouse8Inches.click();
@@ -393,7 +396,7 @@ public class EAppRemote3 extends TestBase {
 	    Remote.CreditCardNumber.click();
 	    Remote.CreditCardNumber.sendKeys("5800000000000001");
 	    Remote.ExpirationDate.click();
-	    Remote.ExpirationDate.sendKeys("1119");
+	    Remote.ExpirationDate.sendKeys("0220");
 	    Remote.CVV.sendKeys("316");
 	    act.pause(2000).perform();
 	}

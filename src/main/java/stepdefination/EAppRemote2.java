@@ -3,6 +3,7 @@ import org.openqa.selenium.Keys;
 
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import pages.EApp2;
 import pages.Remote;
 import utilities.TestBase;
 
@@ -11,7 +12,7 @@ public class EAppRemote2 extends TestBase {
 	@When("Click New Enrollment Input Sponsor SSN, Enrollment City and Enrollment State")
 	public void click_New_Enrollment_Input_Sponsor_SSN_Enrollment_City_and_Enrollment_State() {
 		  Remote.SSN.click();
-		  Remote.SSN.sendKeys("404000009");
+		  Remote.SSN.sendKeys("414000009");
 		  Remote.EnrollmentCity.clear();
 		  Remote.EnrollmentCity.sendKeys("Charlotte");
 		  Remote.EnrollmentState.click();
@@ -22,8 +23,8 @@ public class EAppRemote2 extends TestBase {
 	@Then("click Next and Click Begin Enrollment button")
 	public void click_Next_and_Click_Begin_Enrollment_button() {
 		  Remote.NextBtn.click();
-		//  Remote.BeginEnrollment.click();
-		 Remote.ClickNewSponsor.click();
+		  Remote.BeginEnrollment.click();
+		// Remote.ClickNewSponsor.click();
 		 act.pause(2000).perform();
 	}
 
@@ -96,11 +97,11 @@ public class EAppRemote2 extends TestBase {
 	public void better_Alternative_select_Tobacco_for_Sponsor_and_spouse() {
 		  Remote.TobaccoforSponsor.click();
 		  Remote.TobaccoforSpouse.click();
-		    act.pause(2000).perform();
-		    Remote.BASponsorCustomize50.click();
-		    act.pause(1000).perform();
-		    Remote.BASpouseCustomize50.click();
-		    act.pause(2000).perform();
+		  act.pause(2000).perform();
+		  Remote.BASponsorCustomize50.click();
+		  act.pause(1000).perform();
+		  Remote.BASpouseCustomize50.click();
+		  act.pause(2000).perform();
 	}
 
 	@Then("Better Alternative Customise fifty thousand K for Sponsor and Spouse")
@@ -140,48 +141,50 @@ public class EAppRemote2 extends TestBase {
 
 	@Then("Click Next to Answer All the questions one by one")
 	public void click_Next_to_Answer_All_the_questions_one_by_one() {
-		    Remote.OISponsor1.click();
-		    Remote.OISponsor2.click();
-		    Remote.BASponsor1.click();
-		    Remote.BASponsor2.click();
-		    Remote.BASponsor3.click();
-		    Remote.BASponsor4.click();
-		    Remote.BASponsor5.click();
-		    Remote.BASponsor6.click();
-		    act.pause(1000).perform();
-		    Remote.SeniorProtectSponsor1.click();
-		    Remote.SeniorProtectSponsor2.click();
-		    Remote.SeniorProtectSponsor3.click();
-		    Remote.SeniorProtectSponsor4.click();
-		    Remote.FirstProtectSponsor1.click();
-		    Remote.FirstProtectSponsor2.click();
-		    Remote.FirstProtectSponsor3.click();
-		    Remote.FirstProtectSponsor4.click();
-		    Remote.FirstProtectSponsor5.click();
-		    Remote.FirstProtectSponsor6.click();
-		    Remote.FirstProtectSponsor7.click();
-		    act.pause(1000).perform();
-		    Remote.OISpouse1.click();
-		    Remote.OISpouse2.click();
-		    Remote.BASpouse1.click();
-		    Remote.BASpouse2.click();
-		    Remote.BASpouse3.click();
-		    Remote.BASpouse4.click();
-		    Remote.BASpouse5.click();
-		    Remote.BASpouse6.click();
-		    act.pause(1000).perform();
-		    Remote.SeniorProtectSpouse1.click();
-		    Remote.SeniorProtectSpouse2.click();
-		    Remote.SeniorProtectSpouse3.click();
-		    Remote.SeniorProtectSpouse4.click();
-		    act.pause(1000).perform();
-		    Remote.FirstProtectSpouse1.click();
-		    Remote.FirstProtectSpouse2.click();
-		    Remote.FirstProtectSpouse3.click();
-		    Remote.FirstProtectSpouse4.click();
-		    Remote.FirstProtectSpouse5.click();
-		    Remote.FirstProtectSpouse6.click();
-		    Remote.FirstProtectSpouse7.click();
+		EApp2.AnswerNOAll.click();
+		act.pause(2000).perform();
+//		    Remote.OISponsor1.click();
+//		    Remote.OISponsor2.click();
+//		    Remote.BASponsor1.click();
+//		    Remote.BASponsor2.click();
+//		    Remote.BASponsor3.click();
+//		    Remote.BASponsor4.click();
+//		    Remote.BASponsor5.click();
+//		    Remote.BASponsor6.click();
+//		    act.pause(1000).perform();
+//		    Remote.SeniorProtectSponsor1.click();
+//		    Remote.SeniorProtectSponsor2.click();
+//		    Remote.SeniorProtectSponsor3.click();
+//		    Remote.SeniorProtectSponsor4.click();
+//		    Remote.FirstProtectSponsor1.click();
+//		    Remote.FirstProtectSponsor2.click();
+//		    Remote.FirstProtectSponsor3.click();
+//		    Remote.FirstProtectSponsor4.click();
+//		    Remote.FirstProtectSponsor5.click();
+//		    Remote.FirstProtectSponsor6.click();
+//		    Remote.FirstProtectSponsor7.click();
+//		    act.pause(1000).perform();
+//		    Remote.OISpouse1.click();
+//		    Remote.OISpouse2.click();
+//		    Remote.BASpouse1.click();
+//		    Remote.BASpouse2.click();
+//		    Remote.BASpouse3.click();
+//		    Remote.BASpouse4.click();
+//		    Remote.BASpouse5.click();
+//		    Remote.BASpouse6.click();
+//		    act.pause(1000).perform();
+//		    Remote.SeniorProtectSpouse1.click();
+//		    Remote.SeniorProtectSpouse2.click();
+//		    Remote.SeniorProtectSpouse3.click();
+//		    Remote.SeniorProtectSpouse4.click();
+//		    act.pause(1000).perform();
+//		    Remote.FirstProtectSpouse1.click();
+//		    Remote.FirstProtectSpouse2.click();
+//		    Remote.FirstProtectSpouse3.click();
+//		    Remote.FirstProtectSpouse4.click();
+//		    Remote.FirstProtectSpouse5.click();
+//		    Remote.FirstProtectSpouse6.click();
+//		    Remote.FirstProtectSpouse7.click();
 		    act.pause(3000).perform();
 		    Remote.NextBtn2.click();  
 	}
@@ -198,7 +201,7 @@ public class EAppRemote2 extends TestBase {
 	@Then("Select Spouse Information SSN, Gender, Height feet inches and Weight")
 	public void select_Spouse_Information_SSN_Gender_Height_feet_inches_and_Weight() {
 		    Remote.SpouseSSN.click();
-		    Remote.SpouseSSN.sendKeys("404000010");
+		    Remote.SpouseSSN.sendKeys("414000010");
 		    Remote.SpouseGenderFamale.click();
 		    Remote.Spouse5Feet.click();
 		    Remote.Spouse5Inches.click();
@@ -212,7 +215,7 @@ public class EAppRemote2 extends TestBase {
 	   Remote.BASponsorPrimarySomeOneElse.click();
 		Remote.PrimaryBenficiaryFullName.sendKeys("Frank Tieri");
 	    Remote.PrimaryBeneficiarySSN.click();
-	    Remote.PrimaryBeneficiarySSN.sendKeys("404000011");
+	    Remote.PrimaryBeneficiarySSN.sendKeys("414000011");
 	    Remote.PrimaryRelationshipForUncle.click();
 	    act.pause(1000).perform();
 	}
@@ -223,7 +226,7 @@ public class EAppRemote2 extends TestBase {
 		Remote.ContingentBeneficiaryFullName.sendKeys("Maria Tieri");
 		Remote.ContingentBeneficiaryRelationshipSister.click();
 		Remote.ContingentBeneficiarySSNnumber.click();
-		Remote.ContingentBeneficiarySSNnumber.sendKeys("404000012");
+		Remote.ContingentBeneficiarySSNnumber.sendKeys("414000012");
 	}
 
 	@Then("Better Alternative Spouse Primary Beneficiary FullName, SSN, Relationship and Date of Birth")
@@ -231,7 +234,7 @@ public class EAppRemote2 extends TestBase {
 		   Remote.SomeoneElseForSpousePrimary.click();
 		   Remote.SpousePrimarytFN.sendKeys("Vincent Gigante");
 		   Remote.SpousePrimarytSSN.click();
-		   Remote.SpousePrimarytSSN.sendKeys("404000013");
+		   Remote.SpousePrimarytSSN.sendKeys("414000013");
 		   Remote.SpousePrimaryRelationshipOther.click();
 	}
 
@@ -240,7 +243,7 @@ public class EAppRemote2 extends TestBase {
 	   Remote.BASpouseContingentSomeOneElse.click();
 	   Remote.SpouseContingentFN.sendKeys("Charlie Luciano");
 	   Remote.SpouseContingentSSN.click();
-	   Remote.SpouseContingentSSN.sendKeys("404000014");
+	   Remote.SpouseContingentSSN.sendKeys("414000014");
 	   Remote.SpouseContingentRelationshipBrother.click();
 	   act.pause(1000).perform();
 	}
@@ -250,7 +253,7 @@ public class EAppRemote2 extends TestBase {
 	    Remote.SeniorProtectSponsorPrimaryBenifSomeoneElse.click();
 	    Remote.SeniorProtectSponsorPrmaryBenFullName.sendKeys("Nick Morello");
 	    Remote.SeniorProtectSponsorPrimaryBenfSSN.click();
-	    Remote.SeniorProtectSponsorPrimaryBenfSSN.sendKeys("404000015");
+	    Remote.SeniorProtectSponsorPrimaryBenfSSN.sendKeys("414000015");
 	    Remote.SeniorProtectSponsorPrimaryBenRelationshipGrandParent.click();
 	    act.pause(1000).perform();
 	}
@@ -260,7 +263,7 @@ public class EAppRemote2 extends TestBase {
 	    Remote.SeniorProtectSponsorContingentSomeoneElse.click();
 	    Remote.SeniorProtrctSponsorContingentFullName.sendKeys("Lorenzo Strollo");
 	    Remote.SeniorProtrctSponsorContingentSSN.click();
-	    Remote.SeniorProtrctSponsorContingentSSN.sendKeys("404000016");
+	    Remote.SeniorProtrctSponsorContingentSSN.sendKeys("414000016");
 	    act.pause(1000).perform();
 	    Remote.SeniorProtrctSponsorContingentRelationshipOther.click();
 	    act.pause(1000).perform();
@@ -271,7 +274,7 @@ public class EAppRemote2 extends TestBase {
 	    Remote.SeniorProtectSpousePrimarySomeoneElse.click();
 	    Remote.SeniorProtectSpousePrmaryBenFullName.sendKeys("Dominick Cirillo");
 	    Remote.SeniorProtectSpousePrimaryBenfSSN.click();
-	    Remote.SeniorProtectSpousePrimaryBenfSSN.sendKeys("404000017");
+	    Remote.SeniorProtectSpousePrimaryBenfSSN.sendKeys("414000017");
 	    Remote.SeniorProtectSpousePrimaryBenRelationshipUncle.click();
 	    act.pause(1000).perform();
 	}
@@ -281,7 +284,7 @@ public class EAppRemote2 extends TestBase {
 	    Remote.SeniorProtectSpouseContingentSomeoneElse.click();
 	    Remote.SeniorProtectSpouseContingentFullName.sendKeys("Angela Cirillo");
 	    Remote.SeniorProtectSpouseContingentSSN.click();
-	    Remote.SeniorProtectSpouseContingentSSN.sendKeys("404000018");
+	    Remote.SeniorProtectSpouseContingentSSN.sendKeys("414000018");
 	    Remote.SeniorProtectSpouseContingentRelationshipMother.click();
 	    act.pause(1000).perform();
 	    
@@ -292,7 +295,7 @@ public class EAppRemote2 extends TestBase {
 		  Remote.FirstprotectSponsorPrimarySomeOneElse.click();
 		  Remote.FirstProtectSponsorPrimaryFullName.sendKeys("Mario Leo");
 		  Remote.FirstProtectSponsorPrimarySSN.click();
-		  Remote.FirstProtectSponsorPrimarySSN.sendKeys("404000019");
+		  Remote.FirstProtectSponsorPrimarySSN.sendKeys("414000019");
 		  Remote.FirstProtectSponsorPrimaryRelationshipOther.click();
 		  act.pause(1000).perform();
 	}
@@ -302,7 +305,7 @@ public class EAppRemote2 extends TestBase {
 	    Remote.FirstProtectSponsorContingentSomeoneElse.click();
 	    Remote.FirstProtectSponsorContingentFullName.sendKeys("Charlie Luciano");
 	    Remote.FirstProtectSponsorContingentSSN.click();
-	    Remote.FirstProtectSponsorContingentSSN.sendKeys("404000014");
+	    Remote.FirstProtectSponsorContingentSSN.sendKeys("414000014");
 	    Remote.FirstProtectSponsorContingentRelationshipBrother.click();
 	    act.pause(1000).perform();
 	}
@@ -312,7 +315,7 @@ public class EAppRemote2 extends TestBase {
 	   Remote.FirstprotectSpousePrimarySomeOneElse.click();
 	   Remote.FirstProtectSpousePrimaryFullName.sendKeys("Connie Morello");
 	   Remote.FirstProtectSpousePrimarySSN.click();
-	   Remote.FirstProtectSpousePrimarySSN.sendKeys("404000020");
+	   Remote.FirstProtectSpousePrimarySSN.sendKeys("414000020");
 	   Remote.FirstProtectSpousePrimaryRelationshipGrandParent.click();
 	   act.pause(1000).perform();
 	}
@@ -322,7 +325,7 @@ public class EAppRemote2 extends TestBase {
 	   Remote.FirstProtectSpouseContingentSomeoneElse.click();
 	   Remote.FirstProtectSpouseContingentFullName.sendKeys("Matthew Strollo");
 	   Remote.FirstProtectSpouseContingentSSN.click();
-	   Remote.FirstProtectSpouseContingentSSN.sendKeys("404000021");
+	   Remote.FirstProtectSpouseContingentSSN.sendKeys("414000021");
 	   Remote.FirstProtectSpouseContingentRelationshipFatherInLaw.click();
 	   act.pause(2000).perform();
 	}
