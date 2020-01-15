@@ -27,7 +27,7 @@ public class EAppCallCenter1 extends TestBase {
 	public void input_Sponsor_SSN_Enrollment_city_and_Enrollment_state() {
 		act.pause(1000).perform();
 		EApp2.SSN.click();
-		 EApp2.SSN.sendKeys("545100238");
+		 EApp2.SSN.sendKeys("545200000");
 		 EApp2.EnrollmentCity.clear();
 		  EApp2.EnrollmentCity.sendKeys("Asheville");
 			act.pause(2000).perform();
@@ -38,8 +38,8 @@ public class EAppCallCenter1 extends TestBase {
 
 	@Then("click Begin Enrollement")
 	public void click_Begin_Enrollement() {
-	//	EApp2.BeginEnrollment.click();
-		 EApp2.ClickNewSponsor.click();
+		EApp2.BeginEnrollment.click();
+	//	 EApp2.ClickNewSponsor.click();
 	}
 
 	@Then("Input the Sponsor First Name, Last Name, Gender, DOB")
@@ -165,7 +165,7 @@ public class EAppCallCenter1 extends TestBase {
 	@Then("Next page input Spouse Information, SSN, gender, Height and Weight")
 	public void next_page_input_Spouse_Information_SSN_gender_Height_and_Weight() {
 		EApp2.SpouseSSN.click();
-		 EApp2.SpouseSSN.sendKeys("545100239");
+		 EApp2.SpouseSSN.sendKeys("545200001");
 		 EApp2.SpouseGenderFamale.click();
 		 act.pause(1000).perform();
 		 EApp2.SpouseHeigthFeet.click();
@@ -183,7 +183,7 @@ public class EAppCallCenter1 extends TestBase {
 		 act.pause(1000).perform();
 	    EApp2.SpousePrimarytFN.sendKeys("Basil Kennedy");
 	    EApp2.SpousePrimarytSSN.click();
-	    EApp2.SpousePrimarytSSN.sendKeys("545100240");
+	    EApp2.SpousePrimarytSSN.sendKeys("545200002");
 	    EApp2.SpousePrimaryRelationshipFatherInLaw.click();
 	    EApp2.SpousePrimaryDOB.click();
 	    EApp2.SpousePrimaryDOB.sendKeys("03171964");
@@ -222,16 +222,16 @@ public class EAppCallCenter1 extends TestBase {
 					 EApp2.SponsorLastName.clear();
 					 EApp2.SponsorLastName.click();	
 					 EApp2.SponsorLastName.sendKeys("Wayne");
-					 EApp2.SponsorLastSSN.sendKeys("0232");
+					 EApp2.SponsorLastSSN.sendKeys("0001");
 						EApp2.verifySSN.click();
 						act.pause(2000).perform();
 						EApp2.SponsorLastSSN.clear();
 					   EApp2.SponsorLastSSN.click();
-					   EApp2.SponsorLastSSN.sendKeys("0238");
+					   EApp2.SponsorLastSSN.sendKeys("0000");
 						act.pause(2000).perform();
 						 EApp2.SpouseLastName.sendKeys("Wayne");
 						   EApp2.SpouseLastSSN.click();
-						   EApp2.SpouseLastSSN.sendKeys("0239");
+						   EApp2.SpouseLastSSN.sendKeys("0002");
 						   act.pause(2000).perform();			
 	}
 	
