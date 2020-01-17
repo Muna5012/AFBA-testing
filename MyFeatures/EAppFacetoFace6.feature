@@ -56,10 +56,3 @@ Scenario: EApp Application Better Alternative FedTerm (LT12) With Child rider. L
 	Then Select Paper Option for receive the documents
 	Then Click Sign Button to Signin 
 	And Click Sign Button for eSignature to this application
-	
-	
-		
-			
-	
-	
-	

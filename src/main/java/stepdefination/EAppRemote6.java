@@ -253,6 +253,7 @@ public class EAppRemote6 extends TestBase {
 	    Remote.NextBtn2.click();  
 	}
 	
+	
 	@Then("Input Sponsor Information which include Height and Weight")
 	public void input_Sponsor_Information_which_include_Height_and_Weight() {
 		 Remote.Height6Feet.click();
