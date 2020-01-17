@@ -17,7 +17,6 @@ Scenario: EApp Application Better Alternative with Group Free test, state specif
 	Then Input Department code and Source Code 
 	Then Input Sponsor address, Emails and contact numbers 
 	Then Click Show Coverage Options button to select benefit plans
-	
 	And Select Better Alternative Tobacco
 	Then Select Customize option2
 	Then Click the Application for Member Benefit option 
@@ -28,17 +27,14 @@ Scenario: EApp Application Better Alternative with Group Free test, state specif
 	Then Input Sponser height feet and inches option 
 	Then Input weight and click Next button
 	Then Click Next button for Spouse and child informations
-	
 	And Input Primary Beneficiary Full Name
 	Then Input Primary Beneficiary SSN numbers
 	Then Select Relationship for Primary Beneficiary 
 	And Input Primary Beneficiary sponsor DOB  
-	
 	Then Input Second Primary Beneficiary Full Name
 	And Input Second Primary Beneficiary SSN numbers
 	Then Select Relationship Second Primary Beneficiary
 	And Input Second Primary Beneficiary sponsor DOB
-	
 	And Click Next button to Confirmation 
 	And Select Signing in person click button 
 	Then Click I agree to this coverage to sign button to confirm 
