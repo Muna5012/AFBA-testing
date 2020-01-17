@@ -87,11 +87,13 @@ public class EAppFaceToface9 extends TestBase {
 		 act.pause(2000).perform();
 	}
 
+	
 	@Then("Input Department code and Source code")
 	public void input_Department_code_and_Source_code() {
 		EApp2.DepartmentCode.sendKeys("AutoTest");
 		EApp2.SourceCode.sendKeys("ATWINTER");
 	}
+	
 
 	@Then("Input Street information, City and ST Zipcode")
 	public void input_Street_information_City_and_ST_Zipcode() {
@@ -105,6 +107,7 @@ public class EAppFaceToface9 extends TestBase {
 	      EApp2.ZipCode.click();
 	      EApp2.ZipCode.sendKeys("96799");
 	}
+	
 
 	@Then("Input Email Address for confimation and Daytime phone numbers")
 	public void input_Email_Address_for_confimation_and_Daytime_phone_numbers() {
@@ -122,6 +125,7 @@ public class EAppFaceToface9 extends TestBase {
 		 act.pause(1000).perform();
 	}
 	
+	
 	@Then("Waived Better Alternative, Application Member Benefit five thousand K, Fed Term and First Protect")
 	public void waived_Better_Alternative_Application_Member_Benefit_five_thousand_K_Fed_Term_and_First_Protect() {
 		    EApp2.WaiveBA.click();
@@ -138,17 +142,20 @@ public class EAppFaceToface9 extends TestBase {
 		    
 	}
 
+	
 	@Then("Click Senior protect")
 	public void click_Senior_protect() {
 	      EApp2.SeniorProtect.click();
 	}
 
+	
 	@Then("Select NonTobacco for Sponsor and Spouse, select option three")
 	public void select_NonTobacco_for_Sponsor_and_Spouse_select_option_three() {
 		 EApp2.SeniorProtectOptionThree.click();
 		 act.pause(2000).perform();
 	}
 
+	
 	@Then("Next page to Answer all Questions")
 	public void next_page_to_Answer_all_Questions() {
 		  EApp2.NextBtn1.click();
@@ -157,6 +164,7 @@ public class EAppFaceToface9 extends TestBase {
 		  EApp2.NextBtn2.click();
 	}
 
+	
 	@Then("Next page Input sponsor information, Height and Weight")
 	public void next_page_Input_sponsor_information_Height_and_Weight() {
 		EApp2.HeightOption6.click();
@@ -179,7 +187,7 @@ public class EAppFaceToface9 extends TestBase {
 		  EApp2.SpouseWeight.click();
 		  EApp2.SpouseWeight.sendKeys("150");
 		  act.pause(2000).perform();
-		   EApp2.Next.click();
+	     EApp2.Next.click();
 	}
 
 	@Then("Next Page for Beneficiaries for senior protect Sponsor Contingent Beneficiary Fullname, SSN, Relationship and DOB")
@@ -202,8 +210,7 @@ public class EAppFaceToface9 extends TestBase {
 			EApp2.spouseContingentDOB.click();
 			EApp2.spouseContingentDOB.sendKeys("04101937");
 			act.pause(2000).perform();
-		    EApp2.NextBtn6.click();
-			    
+		    EApp2.NextBtn6.click();	    
 	}
 
 	@Then("Next page to Email Summary and click Sigining in person and spouse signin button")
