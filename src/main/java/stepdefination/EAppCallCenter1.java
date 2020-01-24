@@ -31,15 +31,15 @@ public class EAppCallCenter1 extends TestBase {
 		  EApp2.EnrollmentCity.clear();
 		  EApp2.EnrollmentCity.sendKeys("Asheville");
 		  act.pause(2000).perform();
-		   EApp2.NC.click();
-		   act.pause(1000).perform();
+		  EApp2.NC.click();
+		  act.pause(1000).perform();
 			EApp2.NextBtn.click();
 	}
 
 	@Then("click Begin Enrollement")
 	public void click_Begin_Enrollement() {
-		  EApp2.BeginEnrollment.click();
-	//	  EApp2.ClickNewSponsor.click();
+	//	  EApp2.BeginEnrollment.click();
+		  EApp2.ClickNewSponsor.click();
 	}
 
 	@Then("Input the Sponsor First Name, Last Name, Gender, DOB")
@@ -231,7 +231,7 @@ public class EAppCallCenter1 extends TestBase {
 			   act.pause(2000).perform();
 			   EApp2.SpouseLastName.sendKeys("Wayne");
 			   EApp2.SpouseLastSSN.click();
-			   EApp2.SpouseLastSSN.sendKeys("0002");
+			   EApp2.SpouseLastSSN.sendKeys("0001");
 			   act.pause(2000).perform();			
 	}
 	

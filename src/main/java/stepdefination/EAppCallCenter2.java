@@ -128,7 +128,7 @@ public class EAppCallCenter2 extends TestBase {
 	
 	@Then("Waived BA, Fed Term, First protect, Application Member Benefit")
 	public void waived_BA_Fed_Term_First_protect_Application_Member_Benefit() {
-		EApp2.WaiveBA.click();
+
 	    act.pause(2000).perform();
 	    EApp2.FedTerm.click();
 	    EApp2.WaiveFedTerm.click();
