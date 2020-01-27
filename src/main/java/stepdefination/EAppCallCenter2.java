@@ -128,7 +128,8 @@ public class EAppCallCenter2 extends TestBase {
 	
 	@Then("Waived BA, Fed Term, First protect, Application Member Benefit")
 	public void waived_BA_Fed_Term_First_protect_Application_Member_Benefit() {
-
+		 EApp2.CustomizeOption3.click();
+		 act.pause(2000).perform();
 	    act.pause(2000).perform();
 	    EApp2.FedTerm.click();
 	    EApp2.WaiveFedTerm.click();
@@ -170,8 +171,8 @@ public class EAppCallCenter2 extends TestBase {
 	    EApp2.NextBtn3.click();
 	}
 
-	@Then("Next page input child one information SSN, Gender, Height, Weight, Slect US Citizen Option and Relationship")
-	public void next_page_input_child_one_information_SSN_Gender_Height_Weight_Slect_US_Citizen_Option_and_Relationship() {
+	@Then("Input child one information SSN, Gender, Height, Weight, Slect US Citizen Option and Relationship")
+	public void input_child_one_information_SSN_Gender_Height_Weight_Slect_US_Citizen_Option_and_Relationship() {
 		EApp2.ChildOneSSN.click();
 		EApp2.ChildOneSSN.sendKeys("545200004");
 		EApp2.ChildOneGenderMale.click();
@@ -193,8 +194,7 @@ public class EAppCallCenter2 extends TestBase {
 		EApp2.ChildTwoWeight.sendKeys("85");
 		EApp2.ChildUSCitizenm2.click();
 		EApp2.ChildTwoRelationship.click();
-		 act.pause(2000).perform();
-		  
+		 act.pause(2000).perform();  
 	  
 	}
 
@@ -210,57 +210,74 @@ public class EAppCallCenter2 extends TestBase {
 		EApp2.ChildThreeRelationship.click();
 	}
 
-	@Then("Next Page for Benficiaries for childrens Protect")
-	public void next_Page_for_Benficiaries_for_childrens_Protect() {
+	@Then("Input Beneficiary for Better Alternative sponsor beneficiary Full Name, SSN, Relationship and DOB")
+	public void input_Beneficiary_for_Better_Alternative_sponsor_beneficiary_Full_Name_SSN_Relationship_and_DOB() {
 		EApp2.Next.click();
+		act.pause(2000).perform();
+	    EApp2.PrimaryBenficiaryFullName.sendKeys("Basil Kennedy");
+	    EApp2.PrimaryBeneficiarySSN.click();
+	    EApp2.PrimaryBeneficiarySSN.sendKeys("545200077");
+	    EApp2.PrimaryBeneficiaryRelationship.click();
+	    EApp2.PrimaryBeneficiaryDOB.click();
+	    EApp2.PrimaryBeneficiaryDOB.sendKeys("03171964");
+	    act.pause(2000).perform();
+	    EApp2.SomeoneElsee.click();
+	    act.pause(1000).perform();
+	    EApp2.ContingentBeneficiaryFullName.sendKeys("Samuel Webster");
+	    EApp2.ContingentBeneficiarySSNnumber.click();
+	    EApp2.ContingentBeneficiarySSNnumber.sendKeys("545200078");
+	    EApp2.ContingentBeneficiaryDOB.click();
+	    EApp2.ContingentBeneficiaryDOB.sendKeys("05121989");
 		act.pause(1000).perform();
+		EApp2.ContingentBeneficiaryRelationship.click();
+		
+		act.pause(2000).perform();
 	}
 
-	@Then("SomeoneElse for first kid Mark Anthony Contingent Beneficiary FullName, SSN, DOB and Relationship")
-	public void someoneelse_for_first_kid_Mark_Anthony_Contingent_Beneficiary_FullName_SSN_DOB_and_Relationship() {
-		  EApp2.SomeOneElseForChildProFirstKidContingent.click();
-		  EApp2.ChildProtectFirstKidContingentFullName.sendKeys("Margaret Thatcher");
-		  EApp2.ChildProtectFirstKidContengentRelationship.click();
+	@Then("First kid Mark Anthony Primary and Contingent Beneficiary FullName, SSN, DOB and Relationship")
+	public void first_kid_Mark_Anthony_Primary_and_Contingent_Beneficiary_FullName_SSN_DOB_and_Relationship() {
+		  EApp2.SomeOneElseForChildProtectPrimaryFirstKid.click();
+		  EApp2.ChildProtecFirstChildtPrimaryFN.sendKeys("Margaret Thatcher");
+		  EApp2.ChildProtectFirstChildPrimarySSN.click();
+		  EApp2.ChildProtectFirstChildPrimarySSN.sendKeys("545200079");
+		  EApp2.ChildProtectFirstChildPrimaryRelationshipBrother.click();
+		  EApp2.ChildProtectFirstChildPrimaryDOB.click();
+		  EApp2.ChildProtectFirstChildPrimaryDOB.sendKeys("02201985");
+		  act.pause(1000).perform();
+		  
+		  EApp2.SomeOneElseChildProtectFirstKidContingetnt.click();
+		  EApp2.ChildProtectFirstKidContingentBeneficiaryFN.sendKeys("Margaret Thatcher");
+		  EApp2.ChildProtectFirstKidContingentBeneficiarySSN.click();
+		  EApp2.ChildProtectFirstKidContingentBeneficiarySSN.sendKeys("545200079");
+		  EApp2.ChildProtectFirstKidContingentBeneficiaryRelationship.click();
+		  EApp2.ChildProtectFirstKidContingentBeneficiaryDOB.click();
+		  EApp2.ChildProtectFirstKidContingentBeneficiaryDOB.sendKeys("02201985");
 		  act.pause(1000).perform();
 	   
 	}
 
-	@Then("Click SomeoneElse for second kid Wyatt James Primary Beneficiary FullName,SSN, Relationship and DOB")
-	public void click_SomeoneElse_for_second_kid_Wyatt_James_Primary_Beneficiary_FullName_SSN_Relationship_and_DOB() {
-		   EApp2.ChildProtectSecondKidPrimarySomeOneElse.click();
-		   EApp2.ChildProtectSecondKidPrimaryFN.sendKeys("Margaret Thatcher");
-		   EApp2.ChildProtectSecondKidPrimarySSN.click();
-		   EApp2.ChildProtectSecondKidPrimarySSN.sendKeys("545200007");
-		   EApp2.ChildProtectSecondKidPrimaryRelationship.click();
-		   EApp2.ChildProtectSecondKidPrimaryDOB.click();
-		   EApp2.ChildProtectSecondKidPrimaryDOB.sendKeys("05201990");
+	@Then("Second kid Wyatt James Primary and Contingent Beneficiary FullName,SSN, Relationship and DOB")
+	public void second_kid_Wyatt_James_Primary_and_Contingent_Beneficiary_FullName_SSN_Relationship_and_DOB() {
+		   EApp2.SomeOneElseForChildProtectPrimarySecondtKid.click();
+		   EApp2.ChildProtectSecondChildtPrimaryFN.sendKeys("Margaret Thatcher");
+		   EApp2.ChildProtectSecondChildPrimarySSN.click();
+		   EApp2.ChildProtectSecondChildPrimarySSN.sendKeys("545200007");
+		   EApp2.ChildProtectSecondChildPrimaryRelationship.click();
+		   EApp2.ChildProtectSecondChildPrimaryDOB.click();
+		   EApp2.ChildProtectSecondChildPrimaryDOB.sendKeys("05201990");
+		 
 	}
 
-	@Then("second kids Wyatt James Contingent Beneficiary FullName,SSN, Relationship and DOB")
-	public void second_kids_Wyatt_James_Contingent_Beneficiary_FullName_SSN_Relationship_and_DOB() {
-		  act.pause(2000).perform();
-		  EApp2.ChildProtectSecondKidContingentSomeOneElse.click();
-		  EApp2.ChildProtectSecondKidContingentFN.sendKeys("Denis Thatcher");
-		  EApp2.ChildProtectSecondKidContingentRelationship.click();
-		  act.pause(1000).perform();
-	}
+	@Then("Third kid Elizabeth Primary and Contingent Beneficiary FullName, SSN, Relationship and DOB")
+	public void third_kid_Elizabeth_Primary_and_Contingent_Beneficiary_FullName_SSN_Relationship_and_DOB() {
+		EApp2.SomeOneElseForChildProtectPrimaryThirdtKid.click();
+		EApp2.ChildProtectThirdChildtPrimaryFN.sendKeys("Caroline Woodward");
+		EApp2.ChildProtectThirdChildPrimarySSN.click();
+		EApp2.ChildProtectThirdChildPrimarySSN.sendKeys("545200008");
+		EApp2.ChildProtectThirdChildPrimaryRelationship.click();
+		EApp2.ChildProtectThirdChildPrimaryDOB.click();
+		EApp2.ChildProtectThirdChildPrimaryDOB.sendKeys("10301980");
 
-	@Then("Click SomeoneElse for Third kid Elizabeth Primary Beneficiary FullName, SSN, Relationship and DOB")
-	public void click_SomeoneElse_for_Third_kid_Elizabeth_Primary_Beneficiary_FullName_SSN_Relationship_and_DOB() {
-		EApp2.Childprotect3KidPrimarySomeOneElse.click();
-		EApp2.ChildProtect3kidPrimaryFN.sendKeys("Caroline Woodward");
-		EApp2.ChildProtect3KidPrimarySSN.click();
-		EApp2.ChildProtect3KidPrimarySSN.sendKeys("545200008");
-		EApp2.ChildProtect3kidPrimaryRelationship.click();
-		EApp2.ChildProtect3KidPrimaryDOB.click();
-		EApp2.ChildProtect3KidPrimaryDOB.sendKeys("10301980");
-	}
-
-	@Then("Third kid Elizabeth Contingent Beneficiary FullName, SSN, Relastionship and DOB")
-	public void third_kid_Elizabeth_Contingent_Beneficiary_FullName_SSN_Relastionship_and_DOB() {
-	    EApp2.ChildProtect3KidContingentSomeoneElse.click();
-	    EApp2.ChildProtect3KidContingentFN.sendKeys("Equestrian Oasis");
-	    EApp2.ChildProtect3KidContingentRelationship.click();
 	    act.pause(2000).perform();
 	 		EApp2.NextBtn6.click();
 	}

@@ -128,6 +128,9 @@ public class EApp2 {
 	@FindBy(xpath="//*[@id='child-dob-2']")
 	public static WebElement ChildThreeDOB;
 	
+	@FindBy(xpath= "//*[@id='step1-form']/div[1]/div[4]/div/div[1]/div/div/select/option[7]")
+	public static WebElement GovernmentContractor ;
+	
 	@FindBy(xpath= "//option[@value='Military']")
 	public static WebElement Eligibility ;
 	
@@ -868,6 +871,77 @@ public class EApp2 {
 	public static WebElement FirstProtectPrimaryDOB;
 	
 	
+	
+	
+	@FindBy(xpath="//*[@id='step5-form']/div[2]/div[6]/div[1]/div/label[2]/span")
+	public static WebElement SomeOneElseForChildProtectPrimaryFirstKid;
+	
+	@FindBy(xpath="//*[@id='step5-form']/div[2]/div[6]/div[2]/div[1]/div[1]/div/input")
+	public static WebElement ChildProtecFirstChildtPrimaryFN;
+	
+	@FindBy(xpath="//*[@id='step5-form']/div[2]/div[6]/div[2]/div[2]/div[1]/div/input")
+	public static WebElement ChildProtectFirstChildPrimarySSN;
+	
+	@FindBy(xpath="//*[@id='step5-form']/div[2]/div[6]/div[2]/div[1]/div[2]/div/select/option[4]")
+	public static WebElement ChildProtectFirstChildPrimaryRelationshipBrother;
+	
+	@FindBy(xpath="//*[@id='step5-form']/div[2]/div[6]/div[2]/div[2]/div[2]/div/input")
+	public static WebElement ChildProtectFirstChildPrimaryDOB;
+	
+	@FindBy(xpath="/html/body/div[2]/div[1]/div[2]/div/div/div[1]/div/div/div[2]/div/div[1]/div/div[5]/form/div[2]/div[6]/div[3]/div[1]/div/label[3]/span")
+	public static WebElement SomeOneElseChildProtectFirstKidContingetnt;
+	
+	@FindBy(xpath="//*[@id='chContBeneficiaryOther']/div[1]/div[1]/div/input")
+	public static WebElement ChildProtectFirstKidContingentBeneficiaryFN;
+	
+	@FindBy(xpath="//*[@id='chContBeneficiaryOther']/div[2]/div[1]/div/input")
+	public static WebElement ChildProtectFirstKidContingentBeneficiarySSN;
+	
+	@FindBy(xpath="//*[@id='chContBeneficiaryOther']/div[1]/div[2]/div/select/option[20]")
+	public static WebElement ChildProtectFirstKidContingentBeneficiaryRelationship;
+	
+	@FindBy(xpath="//*[@id='chContBeneficiaryOther']/div[2]/div[2]/div/input")
+	public static WebElement ChildProtectFirstKidContingentBeneficiaryDOB;
+	
+	
+	
+	@FindBy(xpath="//*[@id='step5-form']/div[2]/div[6]/div[4]/div/label[2]/span")
+	public static WebElement SomeOneElseForChildProtectPrimarySecondtKid;
+	
+	@FindBy(xpath="//*[@name='chBeneOtherName1_1']")
+	public static WebElement ChildProtectSecondChildtPrimaryFN;
+	
+	@FindBy(xpath="//*[@name='chBeneOtherSSN1_1']")
+	public static WebElement ChildProtectSecondChildPrimarySSN;
+	
+	@FindBy(xpath="//*[@name='chBeneOtherRelation1_1']/option[7]")
+	public static WebElement ChildProtectSecondChildPrimaryRelationship;
+	
+	@FindBy(xpath="//*[@name='chBeneOtherDOB1_1']")
+	public static WebElement ChildProtectSecondChildPrimaryDOB;
+	
+	
+	
+	@FindBy(xpath="//*[@id='step5-form']/div[2]/div[6]/div[7]/div/label[2]/span")
+	public static WebElement SomeOneElseForChildProtectPrimaryThirdtKid;
+	
+	@FindBy(xpath="//*[@name='chBeneOtherName1_2']")
+	public static WebElement ChildProtectThirdChildtPrimaryFN;
+	
+	@FindBy(xpath="//*[@name='chBeneOtherSSN1_2']")
+	public static WebElement ChildProtectThirdChildPrimarySSN;
+	
+	@FindBy(xpath="//*[@name='chBeneOtherRelation1_2']/option[10]")
+	public static WebElement ChildProtectThirdChildPrimaryRelationship;
+	
+	@FindBy(xpath="//*[@name='chBeneOtherDOB1_2']")
+	public static WebElement ChildProtectThirdChildPrimaryDOB;
+	
+	
+	
+	
+	
+	
 	@FindBy(xpath="/html/body/div[2]/div[1]/div[2]/div/div/div[1]/div/div/div[2]/div/div[1]/div/div[5]/form/div[1]/div[6]/div[3]/div[1]/div/label[3]/span")
 	public static WebElement SomeOneElseForChildProFirstKidContingent;
 	
@@ -924,8 +998,6 @@ public class EApp2 {
 	
 	@FindBy(xpath="/html/body/div[2]/div[1]/div[2]/div/div/div[1]/div/div/div[2]/div/div[1]/div/div[5]/form/div[1]/div[6]/div[9]/div[2]/div[1]/div[2]/div/select/option[21]")
 	public static WebElement ChildProtect3KidContingentRelationship;
-	
-	
 	
 	@FindBy(xpath="/html/body/div[2]/div[1]/div[2]/div/div/div[1]/div/div/div[2]/div/div[1]/div/div[5]/form/div[2]/div[1]/div[1]/div/label[2]/span")
 	public static WebElement SeniorProtectSponsorPrimarySomeOneElse;

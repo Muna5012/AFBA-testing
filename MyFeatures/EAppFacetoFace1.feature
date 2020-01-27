@@ -24,14 +24,11 @@ Scenario:  EApp application Better Alternative test state specific TX SOH is six
 	Then Click Applicationfon member benefit five thousand k
 	Then Select waive enrollment in Application radio button
 	Then click Next button for next page
-	
 	Then Click Answer No to All Questions button
 	And Click Next button 
-	
 	Then Input Sponser height and weight
 	And Click the Next button again
-	
-	Then Click Next button for Spouse or child info
+	Then Click Next button for Spouse and child info
 	
 	And Input Beneficiaries for Better Alternative Sponsor Full Name
 	Then Input Beneficiary SSN
@@ -45,23 +42,21 @@ Scenario:  EApp application Better Alternative test state specific TX SOH is six
 	Then Contingent Beneficiary of Sponsor Coverage DOB
 	And Click Next button for Confirmation page
 	And Click Signing in person option
-	And Click Sign in button to login Email account
 	
-	Then Input Email address and click Next button
-	And Input Email password to click Next button
-	Then Click InBox and Select first Email
-	And Click Review Application Button
-	Then Input LastName and Last four SSN number
+	And login Email account
+	Then Input Email address
+	And Input Email password
+	Then Select Inbox and Select first Email
+
 	And Click Review and Sign my Application
-#	Then Click I agree to this coverage and ready to sign button
-#	
-#	Then Click the Review Application Ducuments 
-#	Then Close the Application 
-#	And Input sponsor lastName 
-#	And Input Last four SSN number 
-#	Then Select Paper radio button 
-#	Then Click Sign button 
-#	And Click Sign button for Angent eSignature 
+	Then Click I agree to this coverage and ready to sign button
+	Then Click the Review Application Ducuments 
+	Then Close the Application 
+	And Input sponsor lastName 
+	And Input Last four SSN number 
+	Then Select Paper radio button 
+	Then Click Sign button 	
+
 
 
 	
