@@ -5,6 +5,7 @@ import org.openqa.selenium.Keys;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import pages.EApp2;
+import pages.Remote;
 import utilities.TestBase;
 
 public class EAppFaceToFace7 extends TestBase{
@@ -56,17 +57,17 @@ public class EAppFaceToFace7 extends TestBase{
 	
 	@Then("click Begin Enrollement button to create new case")
 	public void click_Begin_Enrollement_button_to_create_new_case() {
-		//EApp2.BeginEnrollment.click();
+	  //EApp2.BeginEnrollment.click();
 		EApp2.ClickNewSponsor.click();
 	}
 
 	@Then("Input Sponsor first name, last name and DOB")
 	public void input_Sponsor_first_name_last_name_and_DOB() {
 		 EApp2.FirstName.sendKeys("Aleia");
-		    EApp2.LastName.sendKeys("Dubois");
-		    act.pause(1000).perform();
-		    EApp2.DOB.click();
-		    EApp2.DOB.sendKeys("05201998");
+		 EApp2.LastName.sendKeys("Dubois");
+		 act.pause(1000).perform();
+		 EApp2.DOB.click();
+		 EApp2.DOB.sendKeys("05201998");
 	}
 
 	@Then("Select Sponsor gender option")
@@ -82,17 +83,17 @@ public class EAppFaceToFace7 extends TestBase{
 
 	@Then("Input Spouse first name, last name, DOB")
 	public void input_Spouse_first_name_last_name_DOB() {
-		   EApp2.SpouseFN.sendKeys("Barthon");
-		   EApp2.SpouseLN.sendKeys("Dubois");
-		   act.pause(1000).perform();
-		   EApp2.SpouseDOB.click();
-		   EApp2.SpouseDOB.sendKeys("10041998");
+		 EApp2.SpouseFN.sendKeys("Barthon");
+		 EApp2.SpouseLN.sendKeys("Dubois");
+		 act.pause(1000).perform();
+		 EApp2.SpouseDOB.click();
+		 EApp2.SpouseDOB.sendKeys("10041998");
 	}
 
 	@Then("Click include children button")
 	public void click_include_children_button() {
-		  EApp2.ChildrenBtn.click();
-		  act.pause(2000).perform();
+		 EApp2.ChildrenBtn.click();
+		 act.pause(2000).perform();
 	}
 
 	@Then("Input child first name, last name, DOB")
@@ -149,15 +150,15 @@ public class EAppFaceToFace7 extends TestBase{
 	@Then("Input Street one, Street two, City, St Zipcode")
 	public void input_Street_one_Street_two_City_St_Zipcode() {
 		 EApp2.Street.sendKeys("7 River Rd");
-		  EApp2.Street2.sendKeys("Apt 1227");
-		  EApp2.City.sendKeys("Pago Pago");
-	      EApp2.State.click();
-	      EApp2.State.sendKeys("American Samoa");
-	      EApp2.State.sendKeys(Keys.ENTER);
-	      act.pause(1000).perform();
+		 EApp2.Street2.sendKeys("Apt 1227");
+		 EApp2.City.sendKeys("Pago Pago");
+	     EApp2.State.click();
+	     EApp2.State.sendKeys("American Samoa");
+	     EApp2.State.sendKeys(Keys.ENTER);
+	     act.pause(1000).perform();
 
-	      EApp2.ZipCode.click();
-	      EApp2.ZipCode.sendKeys("96799");
+	     EApp2.ZipCode.click();
+	     EApp2.ZipCode.sendKeys("96799");
 	}
 
 	@Then("Input Email Address, repeat Email address for confimation")
@@ -181,7 +182,13 @@ public class EAppFaceToFace7 extends TestBase{
 	
 	@Then("Waived Better Alternative")
 	public void waived_Better_Alternative() {
-	    EApp2.WaiveBA.click();
+	    Remote.Tobacco.click();
+	    act.pause(2000).perform();
+	    Remote.BASponsorCustomize50.click();
+	    act.pause(1000).perform();
+	    Remote.BASpouseCustomize50.click();
+	    act.pause(2000).perform();
+	  //  EApp2.WaiveBA.click();
 	    act.pause(2000).perform();
 	}
 
@@ -217,24 +224,24 @@ public class EAppFaceToFace7 extends TestBase{
 	@Then("Select First Protect to Customize Fifty Thousand K for both kids")
 	public void select_First_Protect_to_Customize_Fifty_Thousand_K_for_both_kids() {
 		EApp2.ClickFirstProtect.click();
-		   act.pause(2000).perform();
-		   EApp2.CustomizeOptionforChild1.click();
-		   EApp2.CustomizeOptionforChild2.click();
-		    act.pause(4000).perform();
+		act.pause(2000).perform();
+		EApp2.CustomizeOptionforChild1.click();
+		EApp2.CustomizeOptionforChild2.click();
+		act.pause(4000).perform();
 		
 	}
 
 	@Then("Click Next button for next steps")
 	public void click_Next_button_for_next_steps() {
-		   EApp2.NextBtn1.click();
+		 EApp2.NextBtn1.click();
 		   
 	}
 
 	@Then("Answer No to all Questions")
 	public void answer_No_to_all_Questions() {
-		  EApp2.AnswerNOAll.click();
-		    act.pause(2000).perform();
-		    EApp2.NextBtn2.click();
+		 EApp2.AnswerNOAll.click();
+		 act.pause(2000).perform();
+		 EApp2.NextBtn2.click();
 	}
 
 	@Then("Select Sponser information, SSN, Height and Weight")
@@ -255,9 +262,9 @@ public class EAppFaceToFace7 extends TestBase{
 		 act.pause(1000).perform();
 		 EApp2.SpouseHeigthFeet.click();
 		 EApp2.SpouseHeightInches11.click();
-		  act.pause(2000).perform();
-		  EApp2.SpouseWeight.click();
-		  EApp2.SpouseWeight.sendKeys("141");
+		 act.pause(2000).perform();
+		 EApp2.SpouseWeight.click();
+		 EApp2.SpouseWeight.sendKeys("141");
 		
 	}
 
@@ -279,22 +286,22 @@ public class EAppFaceToFace7 extends TestBase{
 		EApp2.ChildTwoInches11.click();
 		EApp2.ChildTwoWeight.sendKeys("171");
 		EApp2.ChildTwoRelationship.click();
-		 act.pause(2000).perform();
-		   EApp2.Next.click();
+		act.pause(2000).perform();
+		EApp2.Next.click();
 		
 	}
 	
 	@Then("Select Beneficiary for FedTerm Sponsor Primary Beneficiary  FullName, SSN, Relationship and DOB")
 	public void select_Beneficiary_for_FedTerm_Sponsor_Primary_Beneficiary_FullName_SSN_Relationship_and_DOB() {
 		EApp2.SomeoneElseForSponsorPrimary.click();
-		 act.pause(1000).perform();
-		    EApp2.PrimaryBenficiaryFullName.sendKeys("Isabella Macron");
-		    EApp2.PrimaryBeneficiarySSN.click();
-		    EApp2.PrimaryBeneficiarySSN.sendKeys("545200056");
-		    EApp2.PrimaryRelationshipBF.click();
-		    EApp2.PrimaryBeneficiaryDOB.click();
-		    EApp2.PrimaryBeneficiaryDOB.sendKeys("09241978");
-		    act.pause(2000).perform();
+		act.pause(1000).perform();
+		EApp2.PrimaryBenficiaryFullName.sendKeys("Isabella Macron");
+		EApp2.PrimaryBeneficiarySSN.click();
+		EApp2.PrimaryBeneficiarySSN.sendKeys("545200056");
+		EApp2.PrimaryRelationshipBF.click();
+		EApp2.PrimaryBeneficiaryDOB.click();
+		EApp2.PrimaryBeneficiaryDOB.sendKeys("09241978");
+		act.pause(2000).perform();
 		
 	}
 
@@ -303,17 +310,17 @@ public class EAppFaceToFace7 extends TestBase{
 	   EApp2.SomeoneElseForSponsorContingent.click();
 	   EApp2.ContingentBeneficiaryFullName.sendKeys("Aldo Marteen");
 	   EApp2.ContingentBeneficiarySSNnumber.click();
-		EApp2.ContingentBeneficiarySSNnumber.sendKeys("545200057");
-		EApp2.ContingentRelationUncle.click();
-		EApp2.ContingentBeneficiaryDOB.click();
-		EApp2.ContingentBeneficiaryDOB.sendKeys("08081964");
+	   EApp2.ContingentBeneficiarySSNnumber.sendKeys("545200057");
+	   EApp2.ContingentRelationUncle.click();
+	   EApp2.ContingentBeneficiaryDOB.click();
+	   EApp2.ContingentBeneficiaryDOB.sendKeys("08081964");
 		
 	}
 
 	@Then("Select Beneficiary for FedTerm Spouse Primary Beneficiary FullName, SSN, Relationship and DOB")
 	public void select_Beneficiary_for_FedTerm_Spouse_Primary_Beneficiary_FullName_SSN_Relationship_and_DOB() {
 		EApp2.SomeoneElseForSpousePrimary.click();
-		 act.pause(1000).perform();
+		act.pause(1000).perform();
 	    EApp2.SpousePrimarytFN.sendKeys("Qui LeGard");
 	    EApp2.SpousePrimarytSSN.click();
 	    EApp2.SpousePrimarytSSN.sendKeys("545200058");
@@ -330,16 +337,16 @@ public class EAppFaceToFace7 extends TestBase{
 	    EApp2.SpouseContingentFN.sendKeys("Pilo Tobar");
 	    EApp2.SpouseContingentSSN.click();
 	    EApp2.SpouseContingentSSN.sendKeys("545200059");
-		   act.pause(2000).perform();
-		   EApp2.SpouseContingentRelationship.click();
-		   EApp2.spouseContingentDOB.click();
-		    EApp2.spouseContingentDOB.sendKeys("12011963");
+		act.pause(2000).perform();
+		EApp2.SpouseContingentRelationship.click();
+		EApp2.spouseContingentDOB.click();
+		EApp2.spouseContingentDOB.sendKeys("12011963");
 	}
 
 	@Then("Select Beneficiaries for Frist Protect first child Primary Beneficiary FullName, SSN, Relationship and DOB")
 	public void select_Beneficiaries_for_Frist_Protect_first_child_Primary_Beneficiary_FullName_SSN_Relationship_and_DOB() {
 	  EApp2.SomeOneElseForFirstProtect.click();
-	    act.pause(2000).perform();
+	  act.pause(2000).perform();
 	  EApp2.FirstProtectPrimaryFirstKidFN.sendKeys("Kane Boyd");
 	  EApp2.FirstProtectPrimaryFirstKidSSN.click();
 	  EApp2.FirstProtectPrimaryFirstKidSSN.sendKeys("545200060");
@@ -351,25 +358,25 @@ public class EAppFaceToFace7 extends TestBase{
 
 	@Then("Select Beneficiaries for Frist Protect second child Primary Beneficiary FullName, SSN, Relationship and DOB")
 	public void select_Beneficiaries_for_Frist_Protect_second_child_Primary_Beneficiary_FullName_SSN_Relationship_and_DOB() {
-	    EApp2.FirstProtecPrimarySecondKidSomeOneElse.click();
-	    act.pause(2000).perform();
-	    EApp2.FirstProtectPrimarySecondKidFN.sendKeys("Miles Yo");
-	    EApp2.FirstProtectPrimarSecondKidSSN.click();
-	    EApp2.FirstProtectPrimarSecondKidSSN.sendKeys("545200061");
-	    EApp2.FirstProtecPrimarySecondKidRelationship.click();
-	    EApp2.FirstProtecPrimarySecondKidDOB.click();
-	    EApp2.FirstProtecPrimarySecondKidDOB.sendKeys("12061982");
-	    act.pause(2000).perform();
-		EApp2.NextBtn6.click();
+	   EApp2.FirstProtecPrimarySecondKidSomeOneElse.click();
+	   act.pause(2000).perform();
+	   EApp2.FirstProtectPrimarySecondKidFN.sendKeys("Miles Yo");
+	   EApp2.FirstProtectPrimarSecondKidSSN.click();
+	   EApp2.FirstProtectPrimarSecondKidSSN.sendKeys("545200061");
+	   EApp2.FirstProtecPrimarySecondKidRelationship.click();
+	   EApp2.FirstProtecPrimarySecondKidDOB.click();
+	   EApp2.FirstProtecPrimarySecondKidDOB.sendKeys("12061982");
+	   act.pause(2000).perform();
+	   EApp2.NextBtn6.click();
 	}
 	
 	@Then("Click Signin person option")
 	public void click_Signin_person_option() {
 		EApp2.EmailSummary2.click();
-		 act.pause(3000).perform();
+		act.pause(3000).perform();
 		EApp2.AcknowledgeofPayment.click();
-		   EApp2.SiginingInPerson.click();
-			  act.pause(2000).perform();
+		EApp2.SiginingInPerson.click();
+	    act.pause(2000).perform();
 	}
 
 	@Then("Click I agree to this coverage sigin button")
@@ -381,19 +388,19 @@ public class EAppFaceToFace7 extends TestBase{
 	@Then("Click Review Application Ducuments to Continue Button and close it")
 	public void click_Review_Application_Ducuments_to_Continue_Button_and_close_it() {
 		EApp2.ReviewApplicationBtn.click();
-		   act.pause(6000).perform();
-			 EApp2.CloseBtn.click();
-			 act.pause(2000).perform();
+		act.pause(6000).perform();
+	    EApp2.CloseBtn.click();
+	    act.pause(2000).perform();
 	}
 
 	@Then("Input Sponsor Last Name for confirmation")
 	public void input_Sponsor_Last_Name_for_confirmation() {
 		EApp2.SponsorLastName.sendKeys("DUbios");
 		EApp2.verifySSN.click();
-		 act.pause(2000).perform();
-		 EApp2.SponsorLastName.clear();
-		 EApp2.SponsorLastName.click();	
-		 EApp2.SponsorLastName.sendKeys("DuBois");
+		act.pause(2000).perform();
+		EApp2.SponsorLastName.clear();
+		EApp2.SponsorLastName.click();	
+		EApp2.SponsorLastName.sendKeys("DuBois");
 	}
 
 	@Then("Input Sponsor last four SSN numbers for confirmation")
@@ -402,14 +409,14 @@ public class EAppFaceToFace7 extends TestBase{
 		EApp2.verifySSN.click();
 		act.pause(2000).perform();
 		EApp2.SponsorLastSSN.clear();
-	   EApp2.SponsorLastSSN.click();
-	   EApp2.SponsorLastSSN.sendKeys("0052");
+	    EApp2.SponsorLastSSN.click();
+	    EApp2.SponsorLastSSN.sendKeys("0052");
 	}
 
 	@Then("Select Paper Option for receive the document")
 	public void select_Paper_Option_for_receive_the_document() {
-		 EApp2.PaperBtn.click();
-		 act.pause(2000).perform();
+		EApp2.PaperBtn.click();
+		act.pause(2000).perform();
 		EApp2.clickModalBodyBtn.click();
 		act.pause(1000).perform();
 		EApp2.SignBtn.click();

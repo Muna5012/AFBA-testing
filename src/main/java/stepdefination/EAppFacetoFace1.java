@@ -5,6 +5,8 @@ import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import pages.EApp1;
 import pages.EApp2;
+import pages.GoogleLoginPage;
+import pages.Remote;
 import utilities.TestBase;
 
 public class EAppFacetoFace1 extends TestBase{
@@ -46,10 +48,10 @@ public class EAppFacetoFace1 extends TestBase{
 
 	@Then("Input Enrollement State")
 	public void input_Enrollement_Staten() {
-		//eApp1.EnrollementClick.click();
+	   //eApp1.EnrollementClick.click();
 		act.pause(2000).perform();
-	   EApp1.EnrollmentState.click();
-	   act.pause(2000).perform();
+	    EApp1.EnrollmentState.click();
+	    act.pause(2000).perform();
 	   
 	}
 	
@@ -60,7 +62,7 @@ public class EAppFacetoFace1 extends TestBase{
 
 	@Then("Click Begin Enrollement button")
 	public void click_Begin_Enrollement_button() {
-	//	EApp1.ClickBiginEnrollement.click();
+     //  EApp1.ClickBiginEnrollement.click();
 	  EApp1.ClickNewSponsor.click();
 	}
 
@@ -91,7 +93,7 @@ public class EAppFacetoFace1 extends TestBase{
 	@Then("Input DepartmentCode and SourceCode")
 	public void input_DepartmentCode_and_SourceCode() {
 		EApp1.DepartmentCode.sendKeys("AutoTest");
-		 EApp1.SourceCode.sendKeys("AT1");
+		EApp1.SourceCode.sendKeys("AT1");
 	}
 
 	@Then("Input Sponsor address, Email and contact numbers")
@@ -103,7 +105,6 @@ public class EAppFacetoFace1 extends TestBase{
       EApp1.State.sendKeys("Virginia");
       EApp1.State.sendKeys(Keys.ENTER);
       act.pause(1000).perform();
-
       EApp1.ZipCode.click();
       EApp1.ZipCode.sendKeys("20130");
 	  
@@ -128,14 +129,14 @@ public class EAppFacetoFace1 extends TestBase{
 	@Then("Click Applicationfon member benefit five thousand k")
 	public void click_Applicationfon_member_benefit_five_thousand_k() {
 	 EApp1.SponserCoverageOption1.click();
-	  act.pause(3000).perform();
+	 act.pause(3000).perform();
 	}
 
 	@Then("Select waive enrollment in Application radio button")
 	public void select_waive_enrollment_in_Application_radio_button() {
 	  EApp1.spouseCoverage.click();
 	  act.pause(2000).perform();
-	   EApp1.waiveEnrollment.click();
+	  EApp1.waiveEnrollment.click();
 	   act.pause(2000).perform();
 		EApp2.FedTerm.click();
 		EApp2.WaiveFedTerm.click();
@@ -174,8 +175,8 @@ public class EAppFacetoFace1 extends TestBase{
 		EApp1.NextBtn3.click();
 	}
 	
-	@Then("Click Next button for Spouse or child info")
-	public void click_Next_button_for_Spouse_or_child_info() {
+	@Then("Click Next button for Spouse and child info")
+	public void click_Next_button_for_Spouse_and_child_info() {
 		EApp1.NextBtn3.click();
 	}
 
@@ -241,13 +242,13 @@ public class EAppFacetoFace1 extends TestBase{
 
 	@Then("Click Signing in person option")
 	public void click_Signing_in_person_option() {
-		  act.pause(2000).perform();
-		EApp2.EmailSummary.click();
-		act.pause(1000).perform();
-		EApp2.EmailSummaryConfirm1.sendKeys("qapeep512@gmail.com");
-		EApp2.EmailSummaryConfirm2.sendKeys("qapeep512@gmail.com");
+	 act.pause(2000).perform();
+	 EApp2.EmailSummary.click();
+	 act.pause(1000).perform();
+	 EApp2.EmailSummaryConfirm1.sendKeys("qapeep512@gmail.com");
+	 EApp2.EmailSummaryConfirm2.sendKeys("qapeep512@gmail.com");
 		
-		EApp1.AcknowledgeofPayment.click();
+	  EApp1.AcknowledgeofPayment.click();
 	  EApp2.SiginingViaEmail.click();
 	  act.pause(2000).perform();
 	  EApp2.EnterEmailOne.clear();
@@ -258,60 +259,106 @@ public class EAppFacetoFace1 extends TestBase{
 	  EApp2.SubmitEmailForsignatureBtn.click();
 	  act.pause(5000).perform();  
 	}
+	
+	@Then("login Email account")
+	public void login_Email_account() {
+		 driver.get("https://www.google.com");
+		  GoogleLoginPage.SignIn.click();  
+	}
 
-//	@Then("Click I agree to this coverage and ready to sign button")
-//	public void click_I_agree_to_this_coverage_and_ready_to_sign_button() {
-//		 EApp1.AgreeToSignInBtn.click();
-//		  act.pause(2000).perform();
-//	}
-//	
-//	@Then("Click the Review Application Ducuments")
-//	public void click_the_Review_Application_Ducuments() {
-//	   EApp1.ReviewApplicationBtn.click();
-//	   act.pause(6000).perform();
-//	}
-//
-//	@Then("Close the Application")
-//	public void close_the_Application() {
-//	 EApp1.CloseBtn.click();
-//	// eApp1.CheckBox.click();
-//	 act.pause(2000).perform();
-//	}
-//
-//	@Then("Input sponsor lastName")
-//	public void input_sponsor_lastName() {
-//		 EApp1.SponsorLastName.click();	
-//	 EApp1.SponsorLastName.sendKeys("Holt");
-//	}
-//
-//	@Then("Input Last four SSN number")
-//	public void input_Last_four_SSN_number() {
-//		EApp1.SponsorLastSSN.sendKeys("9999");
-//		EApp1.verifySSN.click();
-//		act.pause(2000).perform();
-//		EApp1.SponsorLastSSN.clear();
-//	   EApp1.SponsorLastSSN.click();
-//	   EApp1.SponsorLastSSN.sendKeys("0193");
-//	}
-//	
-//	@Then("Select Paper radio button")
-//	public void select_Paper_radio_button() {
-//	 EApp1.PaperBtn.click();
-//	 act.pause(2000).perform();
-//	}
-//
-//	@Then("Click Sign button")
-//	public void click_Sign_button() {
-//		EApp1.clickModalBodyBtn.click();
-//		act.pause(1000).perform();
-//		EApp1.SignBtn.click();
-//		act.pause(3000).perform();
-//	}
-//
-//	@Then("Click Sign button for Angent eSignature")
-//	public void click_Sign_button_for_Angent_eSignature() {
-//		EApp1.eSignatureBrn.click();
-//		act.pause(7000).perform();
-//	}
+	@Then("Input Email address")
+	public void input_Email_address() {
+		 GoogleLoginPage.InputEmail.sendKeys("qapeep512@gmail.com");
+			GoogleLoginPage.Next.click();	
+			act.pause(2000).perform();
+	}
+
+	@Then("Input Email password")
+	public void input_Email_password() {
+		GoogleLoginPage.InputPassword.sendKeys("Muna@5012");
+		GoogleLoginPage.Next.click();
+		act.pause(4000).perform();
+	}
+
+	@Then("Select Inbox and Select first Email")
+	public void select_Inbox_and_Select_first_Email() {
+		Remote.ClickSelect.click();
+		act.pause(1000).perform();
+		Remote.ClickEmail.click();
+		act.pause(2000).perform();
+		//Remote.ClickInbox.click();
+		Remote.SelectFirstEmail.click();
+		act.pause(2000).perform();
+	}
+
+
+	@Then("Click Review and Sign my Application")
+	public void click_Review_and_Sign_my_Application() {
+		act.pause(2000).perform();
+		GoogleLoginPage.ReviewApplicationBtn.click();
+		act.pause(2000).perform();
+		java.util.Set<String> handles = driver.getWindowHandles();
+        System.out.println(handles);
+        for (String handle1 : driver.getWindowHandles()) {
+               System.out.println(handle1);
+               driver.switchTo().window(handle1);
+               
+        }
+        
+	}
+
+	@Then("Click I agree to this coverage and ready to sign button")
+	public void click_I_agree_to_this_coverage_and_ready_to_sign_button() {
+		GoogleLoginPage.LastName.sendKeys("Holt");
+		GoogleLoginPage.LastSSN.sendKeys("0029");
+		GoogleLoginPage.ReviewAndSignMyApplication.click();
+		act.pause(3000).perform();
+	}
+
+	@Then("Click the Review Application Ducuments")
+	public void click_the_Review_Application_Ducuments() {
+		GoogleLoginPage.ReviewApplicationDocumentBtn.click();
+		act.pause(6000).perform();
+		
+
+	}
+
+	@Then("Close the Application")
+	public void close_the_Application() {
+		   GoogleLoginPage.CloseBtn.click();
+		   act.pause(2000).perform();
+	}
+
+	@Then("Input sponsor lastName")
+	public void input_sponsor_lastName() {
+		 GoogleLoginPage.SponsorLastName.sendKeys("Hott");
+		 GoogleLoginPage.verifySSN.click();
+	  	 act.pause(2000).perform();
+		 GoogleLoginPage.SponsorLastName.clear();
+		 GoogleLoginPage.SponsorLastName.click();	
+		 GoogleLoginPage.SponsorLastName.sendKeys("Holt");
+	}
+
+	@Then("Input Last four SSN number")
+	public void input_Last_four_SSN_number() {
+		 GoogleLoginPage.SponsorLastSSN.sendKeys("0032");
+		 GoogleLoginPage.verifySSN.click();
+			act.pause(2000).perform();
+			GoogleLoginPage.SponsorLastSSN.clear();
+			GoogleLoginPage.SponsorLastSSN.click();
+			GoogleLoginPage.SponsorLastSSN.sendKeys("0029");
+	}
+
+	@Then("Select Paper radio button")
+	public void select_Paper_radio_button() {
+		GoogleLoginPage.PaperBtn.click();
+		act.pause(2000).perform();
+	}
+
+	@Then("Click Sign button")
+	public void click_Sign_button() {
+		GoogleLoginPage.SignBtn.click();
+		act.pause(3000).perform();
+	}
 
 }
