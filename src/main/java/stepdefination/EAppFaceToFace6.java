@@ -4,6 +4,7 @@ import org.openqa.selenium.Keys;
 
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import pages.EApp1;
 import pages.EApp2;
 import utilities.TestBase;
 
@@ -56,8 +57,8 @@ public class EAppFaceToFace6 extends TestBase{
 
 	@Then("click Begin Enrollement button to create new sponsor")
 	public void click_Begin_Enrollement_button_to_create_new_sponsor() {
-		EApp2.BeginEnrollment.click();
-	//	 EApp2.ClickNewSponsor.click();
+		//EApp2.BeginEnrollment.click();
+   	   EApp2.ClickNewSponsor.click();
 	}
 
 	@Then("Input Sponsor First Name, Last Name and DOB")
@@ -184,7 +185,8 @@ public class EAppFaceToFace6 extends TestBase{
 	
 	@Then("Waive Better Alternative")
 	public void waive_Better_Alternative() {
-	    EApp2.WaiveBA.click();
+//	    EApp2.WaiveBA.click();
+		 EApp1.SponserCoverageOption1.click();
 	    act.pause(2000).perform();
 	}
 

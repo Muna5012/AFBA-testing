@@ -76,10 +76,10 @@ public class EAppFaceToFace2 extends TestBase {
 
 	@Then("Select Eligibility, Contribution Mode, BranchOfService, DutyStatus, Rank")
 	public void select_Eligibility_Contribution_Mode_BranchOfService_DutyStatus_Rank() {
-		EApp2.Eligibility.click();
-		EApp2.BranchOfService.click();
-		EApp2.DutyStatus.click();
-		EApp2.Rank.click();
+		EApp2.GovernmentContractor.click();
+//		EApp2.BranchOfService.click();
+//		EApp2.DutyStatus.click();
+//		EApp2.Rank.click();
 		EApp2.ContributionMode.click();
 		act.pause(1000).perform();
 	}
@@ -117,14 +117,14 @@ public class EAppFaceToFace2 extends TestBase {
 
 	@Then("Select Better Alternative Roy click and selct Options")
 	public void select_Better_Alternative_Roy_click_and_selct_Options() {
-		  EApp2.NonTobacco.click();
+	//	  EApp2.NonTobacco.click();
 		  act.pause(2000).perform();
 	}
 
 	@Then("Click Application for member benefit")
 	public void click_Application_for_member_benefit() {
-		 EApp2.SponserCoverageOption2.click();
-		  act.pause(3000).perform();
+	//	 EApp2.SponserCoverageOption2.click();
+		  act.pause(1000).perform();
 	}	
 
 	@Then("Select Application Member Benefit radio button")
@@ -138,7 +138,7 @@ public class EAppFaceToFace2 extends TestBase {
 	@Then("click Next button")
 	public void click_Next_button() {
 		EApp2.FedTerm.click();
-		EApp2.WaiveFedTerm.click();
+		EApp2.CustomizeOption5.click();
 		act.pause(2000).perform();
 		EApp2.ClickFirstProtect.click();
 		EApp2.WaiveFirstProtect.click();
@@ -184,6 +184,7 @@ public class EAppFaceToFace2 extends TestBase {
 	@Then("Input Primary BeneficiarySSN")
 	public void input_Primary_BeneficiarySSN() {
 	    EApp2.PrimaryBeneficiarySSN.click();
+	    act.pause(1000).perform();
 	    EApp2.PrimaryBeneficiarySSN.sendKeys("545200033");
 	}
 
@@ -195,7 +196,7 @@ public class EAppFaceToFace2 extends TestBase {
 	@Then("Input Primary Beneficiary DOB")
 	public void input_Primary_Beneficiary_DOB() {
 		  EApp2.PrimaryBeneficiaryDOB.click();
-		    EApp2.PrimaryBeneficiaryDOB.sendKeys("04101942");
+		    EApp2.PrimaryBeneficiaryDOB.sendKeys("10101942");
 		    act.pause(2000).perform();
 	}
 
@@ -224,7 +225,7 @@ public class EAppFaceToFace2 extends TestBase {
 	@Then("Contingent Beneficiary DOB")
 	public void contingent_Beneficiary_DOB() {
 	 //  EApp2.ContingentBeneficiaryDOB.click();
-	   EApp2.ContingentBeneficiaryDOB.sendKeys("2211964");
+	   EApp2.ContingentBeneficiaryDOB.sendKeys("12211964");
 	   act.pause(1000).perform();
 	}
 	
@@ -277,7 +278,7 @@ public class EAppFaceToFace2 extends TestBase {
 	@Then("Input Second Contingent Beneficiary DOB")
 	public void input_Second_Contingent_Beneficiary_DOB() {
 	   EApp2.SecondContingentBeneficiaryDOB.click();
-	   EApp2.SecondContingentBeneficiaryDOB.sendKeys("1211937");
+	   EApp2.SecondContingentBeneficiaryDOB.sendKeys("12111937");
 	   act.pause(2000).perform();
 	}
 

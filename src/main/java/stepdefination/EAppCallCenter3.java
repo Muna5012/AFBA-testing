@@ -86,15 +86,15 @@ public class EAppCallCenter3 extends TestBase {
 
 	@Then("Select Military on Eligibility Options, Select Navy on BranchOfService")
 	public void select_Military_on_Eligibility_Options_Select_Navy_on_BranchOfService() {
-		EApp2.Eligibility.click();
+		EApp2.GovernmentContractor.click();
 		act.pause(2000).perform();
-		EApp2.BranchOfNavy.click();
+	//	EApp2.BranchOfNavy.click();
 	}
 
 	@Then("Select Active Status and Rank option E nine")
 	public void select_Active_Status_and_Rank_option_E_nine() {
-		EApp2.DutyStatus.click();
-		 EApp2.Rank9.click();
+	//	EApp2.DutyStatus.click();
+	//	 EApp2.Rank9.click();
 	}
 
 	@Then("Select Military Allotment on Contribution Mode and input DepartmentCode and Sourcecode")

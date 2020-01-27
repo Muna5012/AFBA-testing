@@ -31,40 +31,40 @@ public class EAppFaceToFace3  extends TestBase {
 	@Then("Input valid Sponsor SSN number")
 	public void input_valid_Sponsor_SSN_number() {
 		EApp2.SSN.click();
-		 EApp2.SSN.sendKeys("545200037");
+		EApp2.SSN.sendKeys("545200037");
 	}
 
 	@Then("Input City of Enrollment")
 	public void input_City_of_Enrollment() {
-		  EApp2.EnrollmentCity.clear();
-		  EApp2.EnrollmentCity.sendKeys("Bath");
-			act.pause(2000).perform();
+		EApp2.EnrollmentCity.clear();
+		EApp2.EnrollmentCity.sendKeys("Bath");
+		act.pause(2000).perform();
 	}
 
 	@Then("Input State of Enrollment")
 	public void input_State_of_Enrollment() {
-		   EApp2.NC.click();
-		   act.pause(1000).perform();
+		 EApp2.NC.click();
+		 act.pause(1000).perform();
 	}
 
 	@Then("Click Next Button for next page")
 	public void click_Next_Button_for_next_page() {
-	   EApp2.NextBtn.click();
+	    EApp2.NextBtn.click();
 	}
 
 	@Then("Click Begin Enrollement")
 	public void click_Begin_Enrollement() {
-		// EApp2.BeginEnrollment.click();
+	// EApp2.BeginEnrollment.click();
 	   EApp2.ClickNewSponsor.click();
 	}
 
 	@Then("Input Sponsor firstName, lastName, DOB")
 	public void input_Sponsor_firstName_lastName_DOB() {
-		  EApp2.FirstName.sendKeys("Tim");
-		  EApp2.LastName.sendKeys("Cole");
-		  act.pause(1000).perform();
-		  EApp2.DOB.click();
-		  EApp2.DOB.sendKeys("12061990");
+		EApp2.FirstName.sendKeys("Tim");
+		EApp2.LastName.sendKeys("Cole");
+		act.pause(1000).perform();
+		EApp2.DOB.click();
+		EApp2.DOB.sendKeys("12061990");
 	}
 
 	@Then("Select the Sponsor gender")
@@ -91,21 +91,21 @@ public class EAppFaceToFace3  extends TestBase {
 	@Then("Input Sponsor address, Email address and contact numbers")
 	public void input_Sponsor_address_Email_address_and_contact_numbers() {
 		 EApp2.Street.sendKeys("3 River Rd");
-		  EApp2.Street2.sendKeys("Apt 1223");
-		  EApp2.City.sendKeys("Paris");
-	      EApp2.State.click();
-	      EApp2.State.sendKeys("Virginia");
-	      EApp2.State.sendKeys(Keys.ENTER);
-	      act.pause(1000).perform();
+		 EApp2.Street2.sendKeys("Apt 1223");
+		 EApp2.City.sendKeys("Paris");
+	     EApp2.State.click();
+	     EApp2.State.sendKeys("Virginia");
+	     EApp2.State.sendKeys(Keys.ENTER);
+	     act.pause(1000).perform();
 
-	      EApp2.ZipCode.click();
-	      EApp2.ZipCode.sendKeys("20130");
+	     EApp2.ZipCode.click();
+	     EApp2.ZipCode.sendKeys("20130");
 		  
-		  EApp2.EmailAddress.sendKeys("qapeep19@gmail.com");
-		  EApp2.ReEmailAddress.sendKeys("qapeep19@gmail.com");
-		  EApp2.Phone.click();
-		  EApp2.Phone.sendKeys("7037065961");
-		  act.pause(2000).perform();
+		 EApp2.EmailAddress.sendKeys("qapeep19@gmail.com");
+		 EApp2.ReEmailAddress.sendKeys("qapeep19@gmail.com");
+		 EApp2.Phone.click();
+		 EApp2.Phone.sendKeys("7037065961");
+		 act.pause(2000).perform();
 	}
 
 	@Then("Click Show Coverage Options button select benefit plans")
