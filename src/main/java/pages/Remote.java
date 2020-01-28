@@ -1827,7 +1827,7 @@ public class Remote {
 	@FindBy(xpath = "//*[@id='identifierId']")
 	public static WebElement InputEmail;
 	
-	@FindBy(xpath = "/html/body/div[1]/div[1]/div[2]/div[2]/div/div/div[2]/div/div[2]/div/div[1]/div/span/span")
+	@FindBy(xpath = "//span[contains(text(),'Next')]")
 	public static WebElement NextButton; 
 	
 	@FindBy(xpath = "//*[@id='password']/div[1]/div/div[1]/input")

@@ -21,7 +21,7 @@ import cucumber.api.junit.Cucumber;
 		features = "MyFeatures"
 		,glue = "stepdefination",
 		dryRun = false,
-		tags = {"@face6"}
+		tags = {"@Remote5"}
 		)
 
 public class TestRunner {

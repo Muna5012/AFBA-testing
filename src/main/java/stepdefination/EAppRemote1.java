@@ -25,8 +25,8 @@ public class EAppRemote1 extends TestBase{
 	@When("click Next and click Begin Enrollment Btn")
 	public void click_Next_and_click_Begin_Enrollment_Btn() {
 	  Remote.NextBtn.click();
-	//  Remote.BeginEnrollment.click();
-	 Remote.ClickNewSponsor.click();
+   // Remote.BeginEnrollment.click();
+	  Remote.ClickNewSponsor.click();
 	  act.pause(2000).perform();
 	}
 
@@ -61,9 +61,9 @@ public class EAppRemote1 extends TestBase{
 
 	@Then("Select O Seven on Rank, Millitary Allotment on Contribution Mode")
 	public void select_O_Seven_on_Rank_Millitary_Allotment_on_Contribution_Mode() {
-		   Remote.O7.click();
-		   Remote.MilitaryAllotment.click();
-		   act.pause(2000).perform();
+		Remote.O7.click();
+		Remote.MilitaryAllotment.click();
+		act.pause(2000).perform();
 	}
 
 	@Then("Enter Department_Code and Source_Code")
