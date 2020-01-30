@@ -37,8 +37,8 @@ public class BASponsorTest extends TestBase {
 
 	@Then("Select Begin Enrollement")
 	public void select_Begin_Enrollement() {
-		   EApp2.BeginEnrollment.click();
-	   //  EApp2.ClickNewSponsor.click();
+		//   EApp2.BeginEnrollment.click();
+	     EApp2.ClickNewSponsor.click();
 	}
 
 	@Then("Input the sponsor First Name, Last Name, Gender, DOB")
@@ -89,7 +89,7 @@ public class BASponsorTest extends TestBase {
 	      EApp2.State.sendKeys(Keys.ENTER);
 	      act.pause(1000).perform();
 	      EApp2.ZipCode.click();
-	      EApp2.ZipCode.sendKeys("89158");
+	      EApp2.ZipCode.sendKeys("");
 	}
 
 	@Then("Input Email Address and phone numbers")

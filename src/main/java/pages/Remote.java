@@ -603,142 +603,141 @@ public class Remote {
 	
 	
 	
-	@FindBy(xpath="//*[@id=\"step2\"]/form/div[2]/div[2]/div[2]/div[2]/div[1]/button[2]")
+	@FindBy(xpath="//*[@id='step2']/form/div[2]/div[2]/div[2]/div[2]/div[1]/button[2]")
 	public static WebElement OtherInsuranceSponsor1;
 	
-	@FindBy(xpath="//*[@id=\"step2\"]/form/div[2]/div[2]/div[2]/div[2]/div[5]/button[2]")
+	@FindBy(xpath="//*[@id='step2']/form/div[2]/div[2]/div[2]/div[2]/div[5]/button[2]")
 	public static WebElement OtherInsuranceSponsor2;
 	
-	@FindBy(xpath="//*[@id=\"step2\"]/form/div[2]/div[3]/div[2]/div[2]/div[1]/button[2]")
+	@FindBy(xpath="//*[@id='step2']/form/div[2]/div[3]/div[2]/div[2]/div[1]/button[2]")
 	public static WebElement OtherInsuranceSponsor3;
 	
-	@FindBy(xpath="//*[@id=\"step2\"]/form/div[2]/div[3]/div[2]/div[2]/div[5]/button[2]")
+	@FindBy(xpath="//*[@id='step2']/form/div[2]/div[3]/div[2]/div[2]/div[5]/button[2]")
 	public static WebElement OtherInsuranceSponsor4;
 	
-	@FindBy(xpath="//*[@id=\"step2\"]/form/div[2]/div[2]/div[2]/div[2]/div[2]/button[2]")
+	@FindBy(xpath="//*[@id='step2']/form/div[2]/div[2]/div[2]/div[2]/div[2]/button[2]")
 	public static WebElement OtherInsuranceSpouse1;
 	
-	@FindBy(xpath="//*[@id=\"step2\"]/form/div[2]/div[2]/div[2]/div[2]/div[6]/button[2]")
+	@FindBy(xpath="//*[@id='step2']/form/div[2]/div[2]/div[2]/div[2]/div[6]/button[2]")
 	public static WebElement OtherInsuranceSpouse2;
 	
-	@FindBy(xpath="//*[@id=\"step2\"]/form/div[2]/div[3]/div[2]/div[2]/div[2]/button[2]")
+	@FindBy(xpath="//*[@id='step2']/form/div[2]/div[3]/div[2]/div[2]/div[2]/button[2]")
 	public static WebElement OtherInsuranceSpouse3;
 	
-	@FindBy(xpath="//*[@id=\"step2\"]/form/div[2]/div[3]/div[2]/div[2]/div[6]/button[2]")
+	@FindBy(xpath="//*[@id='step2']/form/div[2]/div[3]/div[2]/div[2]/div[6]/button[2]")
 	public static WebElement OtherInsuranceSpouse4;
 	
 	@FindBy(xpath="//*[@id='step2']/form/div[2]/div[2]/div[2]/div[2]/div[3]/button[2]")
 	public static WebElement OtherInsuranAC1;
 	
-	@FindBy(xpath="//*[@id=\"step2\"]/form/div[2]/div[2]/div[2]/div[2]/div[7]/button[2]")
+	@FindBy(xpath="//*[@id='step2']/form/div[2]/div[2]/div[2]/div[2]/div[7]/button[2]")
 	public static WebElement OtherInsuranAC2;
 	
-	@FindBy(xpath="//*[@id=\"step2\"]/form/div[2]/div[3]/div[2]/div[2]/div[3]/button[2]")
+	@FindBy(xpath="//*[@id='step2']/form/div[2]/div[3]/div[2]/div[2]/div[3]/button[2]")
 	public static WebElement OtherInsuranAC3;
 	
-	@FindBy(xpath="//*[@id=\"step2\"]/form/div[2]/div[3]/div[2]/div[2]/div[7]/button[2]")
+	@FindBy(xpath="//*[@id='step2']/form/div[2]/div[3]/div[2]/div[2]/div[7]/button[2]")
 	public static WebElement OtherInsuranAC4;
 	
-	@FindBy(xpath="//*[@id=\"step2\"]/form/div[2]/div[2]/div[2]/div[2]/div[4]/button[2]")
+	@FindBy(xpath="//*[@id='step2']/form/div[2]/div[2]/div[2]/div[2]/div[4]/button[2]")
 	public static WebElement OtherInsuranSecondAC1;
 	
-	@FindBy(xpath="//*[@id=\"step2\"]/form/div[2]/div[3]/div[2]/div[2]/div[4]/button[2]")
+	@FindBy(xpath="//*[@id='step2']/form/div[2]/div[3]/div[2]/div[2]/div[4]/button[2]")
 	public static WebElement OtherInsuranSecondAC2;
 	
 	
-	@FindBy(xpath="//*[@id=\"step2\"]/form/div[5]/div[1]/table/tbody/tr[1]/td/div[1]/div[2]/div/div/button[2]")
+	@FindBy(xpath="//*[@id='step2']/form/div[5]/div[1]/table/tbody/tr[1]/td/div[1]/div[2]/div/div/button[2]")
 	public static WebElement SeniorProtecforSpouse1;
 	
-	@FindBy(xpath="//*[@id=\"step2\"]/form/div[5]/div[1]/table/tbody/tr[2]/td/div[1]/div[2]/div/div/button[2]")
+	@FindBy(xpath="//*[@id='step2']/form/div[5]/div[1]/table/tbody/tr[2]/td/div[1]/div[2]/div/div/button[2]")
 	public static WebElement SeniorProtecforSpouse2;
 	
-	@FindBy(xpath="//*[@id=\"step2\"]/form/div[5]/div[1]/table/tbody/tr[3]/td/div[1]/div[2]/div/div/button[2]")
+	@FindBy(xpath="//*[@id='step2']/form/div[5]/div[1]/table/tbody/tr[3]/td/div[1]/div[2]/div/div/button[2]")
 	public static WebElement SeniorProtecforSpouse3;
 	
-	@FindBy(xpath="//*[@id=\"step2\"]/form/div[5]/div[1]/table/tbody/tr[4]/td/div[1]/div[2]/div/div/button[2]")
+	@FindBy(xpath="//*[@id='step2']/form/div[5]/div[1]/table/tbody/tr[4]/td/div[1]/div[2]/div/div/button[2]")
 	public static WebElement SeniorProtecforSpouse4;
 	
-	@FindBy(xpath="//*[@id=\"step2\"]/form/div[5]/div[1]/table/tbody/tr[5]/td/div[1]/div[2]/div/div/button[2]")
+	@FindBy(xpath="//*[@id='step2']/form/div[5]/div[1]/table/tbody/tr[5]/td/div[1]/div[2]/div/div/button[2]")
 	public static WebElement SeniorProtecforSpouse5;
 	
-	@FindBy(xpath="//*[@id=\"step2\"]/form/div[6]/div[1]/table/tbody/tr[1]/td/div[1]/div[2]/div/div[2]/button[2]")
+	@FindBy(xpath="//*[@id='step2']/form/div[6]/div[1]/table/tbody/tr[1]/td/div[1]/div[2]/div/div[2]/button[2]")
 	public static WebElement FirstProtectforSecondAC1;
 	
-	@FindBy(xpath="//*[@id=\"step2\"]/form/div[6]/div[1]/table/tbody/tr[2]/td/div[1]/div[2]/div/div[2]/button[2]")
+	@FindBy(xpath="//*[@id='step2']/form/div[6]/div[1]/table/tbody/tr[2]/td/div[1]/div[2]/div/div[2]/button[2]")
 	public static WebElement FirstProtectforSecondAC2;
 	
-	@FindBy(xpath="//*[@id=\"step2\"]/form/div[6]/div[1]/table/tbody/tr[3]/td/div[1]/div[2]/div/div[2]/button[2]")
+	@FindBy(xpath="//*[@id='step2']/form/div[6]/div[1]/table/tbody/tr[3]/td/div[1]/div[2]/div/div[2]/button[2]")
 	public static WebElement FirstProtectforSecondAC3;
 	
-	@FindBy(xpath="//*[@id=\"step2\"]/form/div[6]/div[1]/table/tbody/tr[4]/td/div[1]/div[2]/div/div[2]/button[2]")
+	@FindBy(xpath="//*[@id='step2']/form/div[6]/div[1]/table/tbody/tr[4]/td/div[1]/div[2]/div/div[2]/button[2]")
 	public static WebElement FirstProtectforSecondAC4;
 	
-	@FindBy(xpath="//*[@id=\"step2\"]/form/div[6]/div[1]/table/tbody/tr[5]/td/div[1]/div[2]/div/div[2]/button[2]")
+	@FindBy(xpath="//*[@id='step2']/form/div[6]/div[1]/table/tbody/tr[5]/td/div[1]/div[2]/div/div[2]/button[2]")
 	public static WebElement FirstProtectforSecondAC5;
 	
-	@FindBy(xpath="//*[@id=\"step2\"]/form/div[6]/div[1]/table/tbody/tr[6]/td/div[1]/div[2]/div/div[2]/button[2]")
+	@FindBy(xpath="//*[@id='step2']/form/div[6]/div[1]/table/tbody/tr[6]/td/div[1]/div[2]/div/div[2]/button[2]")
 	public static WebElement FirstProtectforSecondAC6;
 	
-	@FindBy(xpath="//*[@id=\"step2\"]/form/div[6]/div[1]/table/tbody/tr[7]/td/div[1]/div[2]/div/div[2]/button[2]")
+	@FindBy(xpath="//*[@id='step2']/form/div[6]/div[1]/table/tbody/tr[7]/td/div[1]/div[2]/div/div[2]/button[2]")
 	public static WebElement FirstProtectforSeconsAC7;
 	
-	@FindBy(xpath="//*[@id=\"step2\"]/form/div[6]/div[1]/table/tbody/tr[1]/td/div[1]/div[2]/div/div[3]/button[2]")
+	@FindBy(xpath="//*[@id='step2']/form/div[6]/div[1]/table/tbody/tr[1]/td/div[1]/div[2]/div/div[3]/button[2]")
 	public static WebElement FirstProtectforThridAC1;
 	
-	@FindBy(xpath="//*[@id=\"step2\"]/form/div[6]/div[1]/table/tbody/tr[2]/td/div[1]/div[2]/div/div[3]/button[2]")
+	@FindBy(xpath="//*[@id='step2']/form/div[6]/div[1]/table/tbody/tr[2]/td/div[1]/div[2]/div/div[3]/button[2]")
 	public static WebElement FirstProtectforThridAC2;
 	
-	@FindBy(xpath="//*[@id=\"step2\"]/form/div[6]/div[1]/table/tbody/tr[3]/td/div[1]/div[2]/div/div[3]/button[2]")
+	@FindBy(xpath="//*[@id='step2']/form/div[6]/div[1]/table/tbody/tr[3]/td/div[1]/div[2]/div/div[3]/button[2]")
 	public static WebElement FirstProtectforThridAC3;
 	
-	@FindBy(xpath="//*[@id=\"step2\"]/form/div[6]/div[1]/table/tbody/tr[4]/td/div[1]/div[2]/div/div[3]/button[2]")
+	@FindBy(xpath="//*[@id='step2']/form/div[6]/div[1]/table/tbody/tr[4]/td/div[1]/div[2]/div/div[3]/button[2]")
 	public static WebElement FirstProtectforThridAC4;
 	
-	@FindBy(xpath="//*[@id=\"step2\"]/form/div[6]/div[1]/table/tbody/tr[5]/td/div[1]/div[2]/div/div[3]/button[2]")
+	@FindBy(xpath="//*[@id='step2']/form/div[6]/div[1]/table/tbody/tr[5]/td/div[1]/div[2]/div/div[3]/button[2]")
 	public static WebElement FirstProtectforThridAC5;
 	
-	@FindBy(xpath="//*[@id=\"step2\"]/form/div[6]/div[1]/table/tbody/tr[6]/td/div[1]/div[2]/div/div[3]/button[2]")
+	@FindBy(xpath="//*[@id='step2']/form/div[6]/div[1]/table/tbody/tr[6]/td/div[1]/div[2]/div/div[3]/button[2]")
 	public static WebElement FirstProtectforThridAC6;
 	
-	@FindBy(xpath="//*[@id=\"step2\"]/form/div[6]/div[1]/table/tbody/tr[7]/td/div[1]/div[2]/div/div[3]/button[2]")
+	@FindBy(xpath="//*[@id='step2']/form/div[6]/div[1]/table/tbody/tr[7]/td/div[1]/div[2]/div/div[3]/button[2]")
 	public static WebElement FirstProtectforThridAC7;
 	
-	@FindBy(xpath="//*[@id=\"step2\"]/form/div[7]/div[1]/table/tbody/tr[1]/td/div[1]/div[2]/div/div[1]/button[2]")
+	@FindBy(xpath="//*[@id='step2']/form/div[7]/div[1]/table/tbody/tr[1]/td/div[1]/div[2]/div/div[1]/button[2]")
 	public static WebElement ChildProtectMC1;
 	
-	@FindBy(xpath="//*[@id=\"step2\"]/form/div[7]/div[1]/table/tbody/tr[2]/td/div[1]/div[2]/div/div[1]/button[2]")
+	@FindBy(xpath="//*[@id='step2']/form/div[7]/div[1]/table/tbody/tr[2]/td/div[1]/div[2]/div/div[1]/button[2]")
 	public static WebElement ChildProtectMC2;
 	
-	@FindBy(xpath="//*[@id=\"step2\"]/form/div[7]/div[1]/table/tbody/tr[3]/td/div[1]/div[2]/div/div[1]/button[2]")
+	@FindBy(xpath="//*[@id='step2']/form/div[7]/div[1]/table/tbody/tr[3]/td/div[1]/div[2]/div/div[1]/button[2]")
 	public static WebElement ChildProtectMC3;
 	
-	@FindBy(xpath="//*[@id=\"step2\"]/form/div[7]/div[1]/table/tbody/tr[4]/td/div[1]/div[2]/div/div[1]/button[2]")
+	@FindBy(xpath="//*[@id='step2']/form/div[7]/div[1]/table/tbody/tr[4]/td/div[1]/div[2]/div/div[1]/button[2]")
 	public static WebElement ChildProtectMC4;
 	
-	@FindBy(xpath="//*[@id=\"step2\"]/form/div[7]/div[1]/table/tbody/tr[1]/td/div[1]/div[2]/div/div[2]/button[2]")
+	@FindBy(xpath="//*[@id='step2']/form/div[7]/div[1]/table/tbody/tr[1]/td/div[1]/div[2]/div/div[2]/button[2]")
 	public static WebElement ChildProtectSecondMC1;
 	
-	@FindBy(xpath="//*[@id=\"step2\"]/form/div[7]/div[1]/table/tbody/tr[2]/td/div[1]/div[2]/div/div[2]/button[2]")
+	@FindBy(xpath="//*[@id='step2']/form/div[7]/div[1]/table/tbody/tr[2]/td/div[1]/div[2]/div/div[2]/button[2]")
 	public static WebElement ChildProtectSecondMC2;
 	
-	@FindBy(xpath="//*[@id=\"step2\"]/form/div[7]/div[1]/table/tbody/tr[3]/td/div[1]/div[2]/div/div[2]/button[2]")
+	@FindBy(xpath="//*[@id='step2']/form/div[7]/div[1]/table/tbody/tr[3]/td/div[1]/div[2]/div/div[2]/button[2]")
 	public static WebElement ChildProtectSecondMC3;
 	
-	@FindBy(xpath="//*[@id=\"step2\"]/form/div[7]/div[1]/table/tbody/tr[4]/td/div[1]/div[2]/div/div[2]/button[2]")
+	@FindBy(xpath="//*[@id='step2']/form/div[7]/div[1]/table/tbody/tr[4]/td/div[1]/div[2]/div/div[2]/button[2]")
 	public static WebElement ChildProtectSecondMC4;
 	
-	@FindBy(xpath="//*[@id=\"step2\"]/form/div[7]/div[1]/table/tbody/tr[1]/td/div[1]/div[2]/div/div[3]/button[2]")
+	@FindBy(xpath="//*[@id='step2']/form/div[7]/div[1]/table/tbody/tr[1]/td/div[1]/div[2]/div/div[3]/button[2]")
 	public static WebElement ChildProtectThridMC1;
 	
-	@FindBy(xpath="//*[@id=\"step2\"]/form/div[7]/div[1]/table/tbody/tr[2]/td/div[1]/div[2]/div/div[3]/button[2]")
+	@FindBy(xpath="//*[@id='step2']/form/div[7]/div[1]/table/tbody/tr[2]/td/div[1]/div[2]/div/div[3]/button[2]")
 	public static WebElement ChildProtectThridMC2;
 	
-	@FindBy(xpath="//*[@id=\"step2\"]/form/div[7]/div[1]/table/tbody/tr[3]/td/div[1]/div[2]/div/div[3]/button[2]")
+	@FindBy(xpath="//*[@id='step2']/form/div[7]/div[1]/table/tbody/tr[3]/td/div[1]/div[2]/div/div[3]/button[2]")
 	public static WebElement ChildProtectThridMC3;
 	
-	@FindBy(xpath="//*[@id=\"step2\"]/form/div[7]/div[1]/table/tbody/tr[4]/td/div[1]/div[2]/div/div[3]/button[2]")
+	@FindBy(xpath="//*[@id='step2']/form/div[7]/div[1]/table/tbody/tr[4]/td/div[1]/div[2]/div/div[3]/button[2]")
 	public static WebElement ChildProtectThridMC4;
-	
 	
 	
 	@FindBy (xpath = "//*[@class='btn btn-success btn-next']")

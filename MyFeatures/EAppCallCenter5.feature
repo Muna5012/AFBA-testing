@@ -14,17 +14,19 @@ Then Select Military Allotment on Contribution Mode and input Department Code Au
 And Input Street address, City, State and St Zipcode
 Then Input Email address for confirmation and phone numbers
 Then Click Show Coverage Option to select Benefitiary Planes
-And Select Better Alternative Tobacco to Sponsor and Customize fifty thousand K for sponsor
-Then Click Fed Term Customize One houndred thousand K for Sponsor
+And Select Better Alternative spouse Customize fifty thousand K
+
+Then Click Fed Term and waived Fed Term
 And Select First Protect Tobacco for kid and Customize fifty thousand K for AC
+Then Click Senior Protect and waived Senior Protect
 Then Waived Application Member Benefict 
-And Click Covered for Child Protect Product
+And Click Child Protect to Covered for minor Child 
+
 Then Next page Answer All Qustions
 And Input Sponsor Information height and weight
 Then Next page input Children Information include Gender, Height, Weight and Relationship options
-And Next Page for Beneficiaries for BA Sponsor primary Benficiary Full Name and Relationship
-Then Input Beneficiaries for BA Sponsor Contingent Beneficiary Full Name and Relationship
-And Input Beneficiaries for Fed Term Sponsor Primary Beneficiary Full Name, SSN, Relationship and DOB
+
+Then Input Beneficiaries for BA Spouse Primary Beneficiary Full Name, DOB, SSN and Relationship
 And Input Beneficiary for First Protect Adult Child Primary Beneficiary Full Name, SSN, Relationship and DOB
 Then Input Beneficiary for Children Protect for Minor Child Contingent Beneficiary Full Name, SSN, Relationship and DOB
 Then Nexc page select Email Summary and select Acknowledgement Military Payment radio button

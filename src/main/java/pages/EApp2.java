@@ -230,6 +230,9 @@ public class EApp2 {
 	@FindBy(xpath="//*[@id='step1-form']/div[4]/div[2]/div[2]/div[3]/div/div/label/input")
 	public static WebElement WaiveBA;
 	
+	@FindBy(xpath="//*[@id=\"step1-form\"]/div[4]/div[2]/div[2]/div[3]/div/div/label/input")
+	public static WebElement WaiveSeniorProtect;
+	
 	@FindBy(xpath = "//*[@id='step1-form']/div[4]/div[2]/div[2]/div[3]/div/div/label/input")
 	public static WebElement WaiveApplication;
 	
@@ -241,6 +244,19 @@ public class EApp2 {
 	
 	@FindBy(xpath="//*[@id='step1-form']/div[4]/div[2]/div[2]/div[3]/div/div/label/input")
 	public static WebElement WaiveChildProtect;
+	
+	@FindBy(xpath="//*[@id=\"step1-form\"]/div[4]/div[2]/div[2]/div[2]/div[2]/div/div/div[1]/div[2]/div[4]/div/div[2]/div/ul/li[1]/select/option[2]")
+	public static WebElement NOBeneForSponsor;
+	
+	@FindBy(xpath="//*[@id=\"step1-form\"]/div[4]/div[2]/div[2]/div[2]/div[2]/div/div/div[1]/div[2]/div[4]/div/div[2]/div/ul/li[1]/select/option[2]")
+	public static WebElement NOBeneForFirstProtectSponsor;
+	
+	@FindBy(xpath="//*[@id=\"step1-form\"]/div[4]/div[2]/div[2]/div[2]/div[2]/div/div/div[1]/div[2]/div[4]/div/div[2]/div/ul/li[2]/select/option[2]")
+	public static WebElement NOBeneForFirstProtectSpouse;
+	
+	
+	
+	
 	
 	@FindBy(xpath="//*[contains(text(),'Show Coverage Options')]")
 	public static WebElement ShowCoverageOptions;
@@ -1126,6 +1142,15 @@ public class EApp2 {
 	
 	@FindBy(xpath ="//*[@id='step6-form']/div[5]/div/label[1]/span")
 	public static WebElement SpouseSigninYes;
+	
+	@FindBy(xpath="//*[@id='step6-form']/div[5]/div/label[2]/span")
+	public static WebElement SpouseSayNo;
+	
+	@FindBy(xpath="//*[@id=\"step6-form\"]/div[6]/div[1]/div[2]/div/input")
+	public static WebElement InputSpouseEmail1;
+	
+	@FindBy(xpath="//*[@id=\"step6-form\"]/div[6]/div[2]/div[2]/div/input")
+	public static WebElement InputSpouseEmail2;
 	
 	@FindBy(xpath ="//*[@id='step6-form']/div[3]/div/label[1]/span")
 	public static WebElement SpouseSigninYesforCallCenter;

@@ -219,8 +219,12 @@ public class EAppFaceToface9 extends TestBase {
 		 act.pause(3000).perform();
 		 EApp2.AcknowledgeofPayment.click();
 		 EApp2.SiginingInPerson.click();
-		 EApp2.SpouseSigninYes.click();
+		 EApp2.SpouseSayNo.click();
 		 act.pause(2000).perform();
+		 EApp2.InputSpouseEmail1.sendKeys("qapeep512@gmail.com");
+		 act.pause(1000).perform();
+		 EApp2.InputSpouseEmail2.sendKeys("qapeep512@gmail.com");
+		 act.pause(1000).perform();
 	}
 
 	@Then("Click I agree to this coverage and I am ready to sign button")
@@ -256,9 +260,10 @@ public class EAppFaceToface9 extends TestBase {
 
 	@Then("Input Spouse Last Name and last SSN numbers for confirm")
 	public void input_Spouse_Last_Name_and_last_SSN_numbers_for_confirm() {
-		 EApp2.SpouseLastName.sendKeys("Jefferson");
-		   EApp2.SpouseLastSSN.click();
-		   EApp2.SpouseLastSSN.sendKeys("0070");
+//		 EApp2.SpouseLastName.sendKeys("Jefferson");
+//		   EApp2.SpouseLastSSN.click();
+//		   EApp2.SpouseLastSSN.sendKeys("0070");
+		act.pause(1000).perform();
 	}
 
 	@Then("Select Paper option radio button")

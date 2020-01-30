@@ -13,17 +13,17 @@ public class Hooks extends TestBase {
 		  SetUp();
 		}
 		
-		@Before(order = 5)
-		public void remotelogin() {
-			RemoteLogIn();
-			
-		}
-		
-//		@Before(order = 2)
-//		public void login() {
-//			LogIn();
+//		@Before(order = 5)
+//		public void remotelogin() {
+//			RemoteLogIn();
 //			
 //		}
+		
+		@Before(order = 2)
+		public void login() {
+			LogIn();
+			
+		}
 		
 //		@Before(order = 3)
 //		public void flashingPage() {

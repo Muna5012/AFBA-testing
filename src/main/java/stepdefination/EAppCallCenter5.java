@@ -36,8 +36,8 @@ public class EAppCallCenter5 extends TestBase{
 
 	@Then("click Begin Enrollement buttonInput Sponsor First Name, Last Name, Gender and DOB")
 	public void click_Begin_Enrollement_buttonInput_Sponsor_First_Name_Last_Name_Gender_and_DOB() {
-		//EApp2.BeginEnrollment.click();
-	  EApp2.ClickNewSponsor.click();
+		EApp2.BeginEnrollment.click();
+	//  EApp2.ClickNewSponsor.click();
 		 EApp2.FirstName.sendKeys("Illona");
 		    EApp2.LastName.sendKeys("Lanski");
 		    act.pause(1000).perform();
@@ -125,33 +125,45 @@ public class EAppCallCenter5 extends TestBase{
 		 act.pause(1000).perform();
 	}
 	
-	@Then("Select Better Alternative Tobacco to Sponsor and Customize fifty thousand K for sponsor")
-	public void select_Better_Alternative_Tobacco_to_Sponsor_and_Customize_fifty_thousand_K_for_sponsor() {
-		EApp2.TobaccoForSponsorBA.click();
-		act.pause(2000).perform();
-		EApp2.CustomizeOption3.click();
+	@Then("Select Better Alternative spouse Customize fifty thousand K")
+	public void select_Better_Alternative_spouse_Customize_fifty_thousand_K() {
+	//	EApp2.TobaccoForSponsorBA.click();
+	//	act.pause(2000).perform();
+		EApp2.NOBeneForSponsor.click();
+		EApp2.CustomizeOption4.click();
 		act.pause(2000).perform();
    
 	}
 
-	@Then("Click Fed Term Customize One houndred thousand K for Sponsor")
-	public void click_Fed_Term_Customize_One_houndred_thousand_K_for_Sponsor() {
+	@Then("Click Fed Term and waived Fed Term")
+	public void click_Fed_Term_and_waived_Fed_Term() {
 		EApp2.FedTerm.click();
-		EApp2.CustomizeOptionSe10.click();
+		EApp2.WaiveFedTerm.click();
 		act.pause(2000).perform();
    
 	}
+	
+	
 
 	@Then("Select First Protect Tobacco for kid and Customize fifty thousand K for AC")
 	public void select_First_Protect_Tobacco_for_kid_and_Customize_fifty_thousand_K_for_AC() {
 		EApp2.ClickFirstProtect.click();
 		act.pause(2000).perform();
+		EApp2.NOBeneForFirstProtectSponsor.click();
+		act.pause(1000).perform();
+		EApp2.NOBeneForFirstProtectSpouse.click();
+		act.pause(1000).perform();
 		EApp2.ClickFirstProtectKidCustomize.click();
 		act.pause(2000).perform();
-		EApp2.SeniorProtect.click();
-		EApp2.SeniorProtectCustomize20.click();
-		act.pause(2000).perform();
 
+
+	}
+	
+	@Then("Click Senior Protect and waived Senior Protect")
+	public void click_Senior_Protect_and_waived_Senior_Protect() {
+		EApp2.SeniorProtect.click();
+		EApp2.WaiveSeniorProtect.click();
+		act.pause(2000).perform();
 	}
 
 	@Then("Waived Application Member Benefict")
@@ -161,8 +173,8 @@ public class EAppCallCenter5 extends TestBase{
 		act.pause(2000).perform();
 	}
 
-	@Then("Click Covered for Child Protect Product")
-	public void click_Covered_for_Child_Protect_Product() {
+	@Then("Click Child Protect to Covered for minor Child")
+	public void click_Child_Protect_to_Covered_for_minor_Child() {
 		EApp2.ChildrenProtectClick.click();
 		act.pause(2000).perform();
 		EApp2.CoveredForFirstKid.click();
@@ -172,15 +184,15 @@ public class EAppCallCenter5 extends TestBase{
 	public void next_page_Answer_All_Qustions() {
 		EApp2.Next.click();
 		EApp2.AnswerNOAll.click();
-	    act.pause(2000).perform(); 
-	    EApp2.AnsweYesFirstQuestion.click();
-	    EApp2.AnsweYesFirstQuestionforSpouse.click();
-	    EApp2.AnsweYes10yearsQuestion.click();
-	    EApp2.AnsweYes10yearsQuestionAnswer.sendKeys("Reason One.....");
-	    act.pause(2000).perform();
-	    EApp2.AnsweYes10yearsQuestiontwo.click();
-	    EApp2.AnsweYes10yearsQuestiontwoRadioBtn.click();
-	    EApp2.AnsweYes10yearsQuestiontwoRadioBtnAnswer.sendKeys("Reason Two.....");
+//	    act.pause(2000).perform(); 
+//	    EApp2.AnsweYesFirstQuestion.click();
+//	    EApp2.AnsweYesFirstQuestionforSpouse.click();
+//	    EApp2.AnsweYes10yearsQuestion.click();
+//	    EApp2.AnsweYes10yearsQuestionAnswer.sendKeys("Reason One.....");
+//	    act.pause(2000).perform();
+//	    EApp2.AnsweYes10yearsQuestiontwo.click();
+//	    EApp2.AnsweYes10yearsQuestiontwoRadioBtn.click();
+//	    EApp2.AnsweYes10yearsQuestiontwoRadioBtnAnswer.sendKeys("Reason Two.....");
 	    act.pause(2000).perform();
 	    EApp2.NextBtn2.click();
 	}
@@ -229,59 +241,50 @@ public class EAppCallCenter5 extends TestBase{
 		EApp2.Next.click();
 	}
 
-	@Then("Next Page for Beneficiaries for BA Sponsor primary Benficiary Full Name and Relationship")
-	public void next_Page_for_Beneficiaries_for_BA_Sponsor_primary_Benficiary_Full_Name_and_Relationship() {
-		act.pause(1000).perform();
-		EApp2.SomeoneElseForSponsorPrimary.click();
-		EApp2.PrimaryBenficiaryFullName.sendKeys("Maldo Lanski");
-		EApp2.PrimaryRelationshipForOther.click();
-   
-	}
 
-	@Then("Input Beneficiaries for BA Sponsor Contingent Beneficiary Full Name and Relationship")
-	public void input_Beneficiaries_for_BA_Sponsor_Contingent_Beneficiary_Full_Name_and_Relationship() {
-		EApp2.SomeoneElsee.click();
+	@Then("Input Beneficiaries for BA Spouse Primary Beneficiary Full Name, DOB, SSN and Relationship")
+	public void input_Beneficiaries_for_BA_Spouse_Primary_Beneficiary_Full_Name_DOB_SSN_and_Relationship() {
 		act.pause(1000).perform();
-		EApp2.ContingentBeneficiaryFullName.sendKeys("Grover Washington");
-		EApp2.ContingentBeneficiaryRelationship.click();
-		act.pause(2000).perform();
+		EApp2.SomeoneElseForSpousePrimary.click();
+		EApp2.SpousePrimarytFN.sendKeys("Maldo Lanski");
+		EApp2.SpousePrimarytSSN.click();
+		EApp2.SpousePrimarytSSN.sendKeys("545200082");
+		EApp2.SpousePrimaryRelationship.click();
+		EApp2.SpousePrimaryDOB.click();
+		EApp2.SpousePrimaryDOB.sendKeys("10121954");
 	}	
-
-	@Then("Input Beneficiaries for Fed Term Sponsor Primary Beneficiary Full Name, SSN, Relationship and DOB")
-	public void input_Beneficiaries_for_Fed_Term_Sponsor_Primary_Beneficiary_Full_Name_SSN_Relationship_and_DOB() {
-		EApp2.SecondPrmaryBenSOmeOneElse.click();
-		EApp2.SecondPrmaryBenFullName.sendKeys("Qui Qui Lanski");
-		
-		EApp2.SecondPrimaryBenfSSN.click();
-		EApp2.SecondPrimaryBenfSSN.sendKeys("545200026");
-		EApp2.SecondPrimaryBenRelationshipforChild.click();
-		EApp2.SecondPrimaryBenfDOB.click();
-		EApp2.SecondPrimaryBenfDOB.sendKeys("10141993");
-		act.pause(2000).perform();
-	}
 
 	@Then("Input Beneficiary for First Protect Adult Child Primary Beneficiary Full Name, SSN, Relationship and DOB")
 	public void input_Beneficiary_for_First_Protect_Adult_Child_Primary_Beneficiary_Full_Name_SSN_Relationship_and_DOB() {
-		EApp2.SeniorProtectPrimarySomeOneElse.click();
-		EApp2.SeniorProtectPrimaryFN.sendKeys("Qui Qui Lanski");
-		EApp2.SeniorProtectPrimarySSN.click();
-		EApp2.SeniorProtectPrimarySSN.sendKeys("545200027");
-		EApp2.SeniorProtectPrimaryRelationshipChild.click();
-		EApp2.SeniorProtectPrimaryDOB.click();
-		EApp2.SeniorProtectPrimaryDOB.sendKeys("10141993");
+		EApp2.SomeOneElseForFirstProtect.click();
+		EApp2.FirstProtectPrimaryFirstKidFN.sendKeys("Qui Qui Lanski");
+		EApp2.FirstProtectPrimaryFirstKidSSN.click();
+		EApp2.FirstProtectPrimaryFirstKidSSN.sendKeys("545200027");
+		EApp2.FirstProtecPrimaryFirstKidRelationship.click();
+		EApp2.FirstProtecPrimaryFirstKidDOB.click();
+		EApp2.FirstProtecPrimaryFirstKidDOB.sendKeys("10141993");
 		act.pause(2000).perform();
 	}
 
 	@Then("Input Beneficiary for Children Protect for Minor Child Contingent Beneficiary Full Name, SSN, Relationship and DOB")
 	public void input_Beneficiary_for_Children_Protect_for_Minor_Child_Contingent_Beneficiary_Full_Name_SSN_Relationship_and_DOB() {
-		EApp2.ChildProtectContingentSomeOneElse.click();
-		EApp2.ChildProtectContingentFullName.sendKeys("Maldo Lanski");
-		EApp2.ChildProtectContingentSSN.click();
-		EApp2.ChildProtectContingentSSN.sendKeys("545200028");
+		EApp2.SomeOneElseChildProtectFirstKidContingetnt.click();
+		EApp2.ChildProtectFirstKidContingentBeneficiaryFN.sendKeys("Maldo Lanski");
+		EApp2.ChildProtectFirstKidContingentBeneficiarySSN.click();
+		EApp2.ChildProtectFirstKidContingentBeneficiarySSN.sendKeys("545200028");
 		act.pause(2000).perform();
-		EApp2.ChildProtectContingentRelationshipFather.click();
-		EApp2.ChildProtectContingentDOB.click();
-		EApp2.ChildProtectContingentDOB.sendKeys("01301969");
+		EApp2.ChildProtectFirstKidContingentBeneficiaryRelationship.click();
+		EApp2.ChildProtectFirstKidContingentBeneficiaryDOB.click();
+		EApp2.ChildProtectFirstKidContingentBeneficiaryDOB.sendKeys("01301989");
+		act.pause(2000).perform();
+		EApp2.ChildProtectPrimarySomeOneElse.click();
+		EApp2.ChildProtectPrimaryFN.sendKeys("Lanski Malody");
+		EApp2.ChildProtectPrimarySSN.click();
+		EApp2.ChildProtectPrimarySSN.sendKeys("545200083");
+		act.pause(2000).perform();
+		EApp2.ChildProtectPrimaryRelationshipParent.click();
+		EApp2.ChildProtectPrimaryDOB.click();
+		EApp2.ChildProtectPrimaryDOB.sendKeys("01301957");
 		act.pause(2000).perform();
 	}
 
@@ -291,7 +294,7 @@ public class EAppCallCenter5 extends TestBase{
 		EApp2.EmailSummary2.click();
 		act.pause(3000).perform();
 		EApp2.AcknowledgeofPayment.click();
-		  EApp2.SpouseSigninYesforCallCenter.click();
+		//  EApp2.SpouseSigninYesforCallCenter.click();
 		  act.pause(2000).perform();
 	}
 

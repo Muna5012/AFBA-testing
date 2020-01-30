@@ -113,10 +113,10 @@ public class EAppRemote8 extends TestBase {
 
 	@Then("Select Law Enforcement on Eligibility option and select checkmatic for Contribution Mode")
 	public void select_Law_Enforcement_on_Eligibility_option_and_select_checkmatic_for_Contribution_Mode() {
-	  Remote.LawEnforcement.click();
-	  act.pause(1000).perform();
-	  Remote.Checkmatic.click();
-	  act.pause(1000).perform();
+	   Remote.LawEnforcement.click();
+	   act.pause(1000).perform();
+	   Remote.Checkmatic.click();
+	   act.pause(1000).perform();
 	}
 
 	@Then("Enter Street Address, City, State, Zip and Daytime phone numbers")
@@ -141,8 +141,8 @@ public class EAppRemote8 extends TestBase {
 
 	@Then("Coverage Benficiary Options waive enrollment in Better Alternative, Fed Term, Application Member Benefit")
 	public void coverage_Benficiary_Options_waive_enrollment_in_Better_Alternative_Fed_Term_Application_Member_Benefit() {
-		Remote.WaiveBA.click();
-		act.pause(1000).perform();
+	//	Remote.WaiveBA.click();
+	//	act.pause(1000).perform();
 	  	Remote.FedTerm.click();
 	  	act.pause(1000).perform();
 		Remote.WaiveFedTerm.click();
@@ -151,26 +151,26 @@ public class EAppRemote8 extends TestBase {
 
 	@Then("Select Senior Protect select Option one")
 	public void select_Senior_Protect_select_Option_one() {
-		Remote.SeniorProtect.click();
-		act.pause(1000).perform();
-		Remote.SeniorProtectOption1.click();
-		act.pause(2000).perform();
-		Remote.ApplicationMemberBenf.click();
-		Remote.WaiveApplication.click();
-		act.pause(2000).perform();
+		 Remote.SeniorProtect.click();
+		 act.pause(1000).perform();
+		 Remote.SeniorProtectOption1.click();
+		 act.pause(2000).perform();
+		 Remote.ApplicationMemberBenf.click();
+		 Remote.WaiveApplication.click();
+		 act.pause(2000).perform();
 	}
 
 	@Then("First Protect select NonTobacco Customize fifty thousand K for each adult child")
 	public void first_Protect_select_NonTobacco_Customize_fifty_thousand_K_for_each_adult_child() {
-		Remote.FirstProtect.click();
-		act.pause(1000).perform();
-		Remote.FirstProtectNoBenefitforSponsor.click();
-		Remote.FirstProtectNoBenefitForSpouse.click();
-		act.pause(1000).perform();
-		Remote.FirstProtectAC1Customize50.click();
-		Remote.FirstProtectAC2Customize50.click();
-		Remote.FirstProtectAC3Customize50.click();
-		act.pause(2000).perform();
+		 Remote.FirstProtect.click();
+		 act.pause(1000).perform();
+		 Remote.FirstProtectNoBenefitforSponsor.click();
+		 Remote.FirstProtectNoBenefitForSpouse.click();
+		 act.pause(1000).perform();
+		 Remote.FirstProtectAC1Customize50.click();
+		 Remote.FirstProtectAC2Customize50.click();
+	  	 Remote.FirstProtectAC3Customize50.click();
+		 act.pause(2000).perform();
 	}
 
 	@Then("Childrens Protect Covered three Minor Child")
@@ -265,13 +265,13 @@ public class EAppRemote8 extends TestBase {
 
 	@Then("Enter Spouse Information include Height and Weight")
 	public void enter_Spouse_Information_include_Height_and_Weight() {
-	    Remote.SpouseSSN.click();
-	    Remote.SpouseSSN.sendKeys("404000075");
-	    Remote.SpouseGenderMale.click();
-	    Remote.Spouse6Feet.click();
-	    Remote.Spouse6Inches.click();
-	    Remote.SpouseWeight.sendKeys("238");
-	    act.pause(2000).perform();
+	     Remote.SpouseSSN.click();
+	     Remote.SpouseSSN.sendKeys("404000075");
+	     Remote.SpouseGenderMale.click();
+	     Remote.Spouse6Feet.click();
+	     Remote.Spouse6Inches.click();
+	     Remote.SpouseWeight.sendKeys("238");
+	     act.pause(2000).perform();
 	}
 
 	@Then("Enter Children Information include SSN, Gender, Height, Weight, Status and Relationship")
@@ -326,16 +326,16 @@ public class EAppRemote8 extends TestBase {
 		   Remote.Child5RelationshipStepParent.click();
 		   act.pause(1000).perform();
 		    
-		    Remote.Child6SSN.click();
-		    Remote.Child6SSN.sendKeys("404000081");
-		    Remote.Child6Male.click();
-		    Remote.Chil65Feet3.click();
-		    Remote.Child6Inches6.click();
-		    Remote.Child6Weight.sendKeys("100");
-		    Remote.Child6USCitizen.click();
-		    Remote.Child6RelationshipStepParent.click();
-		    act.pause(2000).perform();
-		    Remote.Next.click();
+		   Remote.Child6SSN.click();
+		   Remote.Child6SSN.sendKeys("404000081");
+		   Remote.Child6Male.click();
+		   Remote.Chil65Feet3.click();
+		   Remote.Child6Inches6.click();
+		   Remote.Child6Weight.sendKeys("100");
+		   Remote.Child6USCitizen.click();
+		   Remote.Child6RelationshipStepParent.click();
+		   act.pause(2000).perform();
+		   Remote.Next.click();
 		    
 		    }
 	
@@ -440,13 +440,13 @@ public class EAppRemote8 extends TestBase {
 	@Then("Confirmation page select Email Summary enter Email address and repeat it for confirmation")
 	public void confirmation_page_select_Email_Summary_enter_Email_address_and_repeat_it_for_confirmation() {
 		  Remote.NextBtn6.click();
-		    act.pause(2000).perform();
+		  act.pause(2000).perform();
 		  act.pause(1000).perform();
-		   Remote.EmailSummary1.click();
-		   act.pause(1000).perform();
-		   Remote.EmailSummaryConfirm1.sendKeys("qapeep512@gmail.com");
-		   Remote.EmailSummaryConfirm2.sendKeys("qapeep512@gmail.com");
-		   act.pause(1000).perform();
+		  Remote.EmailSummary1.click();
+		  act.pause(1000).perform();
+		  Remote.EmailSummaryConfirm1.sendKeys("qapeep512@gmail.com");
+		  Remote.EmailSummaryConfirm2.sendKeys("qapeep512@gmail.com");
+		  act.pause(1000).perform();
 		   
 	}
 
@@ -466,56 +466,54 @@ public class EAppRemote8 extends TestBase {
 
 	@Then("Click Singing Via Email option and enter Email address and repeat it")
 	public void click_Singing_Via_Email_option_and_enter_Email_address_and_repeat_it() {
-		   Remote.SiginingViaEmail.click();
-		    act.pause(2000).perform();
-			Remote.EnterEmailOne.clear();
-			Remote.EnterEmailOne.sendKeys("qapeep512@gmail.com");
-			Remote.EnterEmailTwo.clear();
-			Remote.EnterEmailTwo.sendKeys("qapeep512@gmail.com");
-			act.pause(1000).perform();
+		Remote.SiginingViaEmail.click();
+		act.pause(2000).perform();
+	    Remote.EnterEmailOne.clear();
+	    Remote.EnterEmailOne.sendKeys("qapeep512@gmail.com");
+	    Remote.EnterEmailTwo.clear();
+		Remote.EnterEmailTwo.sendKeys("qapeep512@gmail.com");
+		act.pause(1000).perform();
 		 
 	}
 	
 	@Then("Click Submit and Send Email for Signature button to submit application")
 	public void click_Submit_and_Send_Email_for_Signature_button_to_submit_application() {
 		 Remote.SubmitEmailForsignatureBtn.click();
-		  act.pause(9000).perform();
+		 act.pause(9000).perform();
 	}
 
 	@Then("Navigate back to Email account Login Email Username and Password")
 	public void navigate_back_to_Email_account_Login_Email_Username_and_Password() {
-		 driver.get("https://www.google.com");
-		 Remote.SignIn.click();  
-		 Remote.InputEmail.sendKeys("qapeep512@gmail.com");
-		 Remote.NextButton.click();	
-		 act.pause(2000).perform();
-		 Remote.InputPassword.sendKeys("Muna@5012");
-		 Remote.NextButton.click();
-		 act.pause(4000).perform();
+	  driver.get("https://www.google.com");
+	  Remote.SignIn.click();  
+	  Remote.InputEmail.sendKeys("qapeep512@gmail.com");
+	  Remote.NextButton.click();	
+	  act.pause(2000).perform();
+	  Remote.InputPassword.sendKeys("Muna@5012");
+	  Remote.NextButton.click();
+	  act.pause(4000).perform();
 	}
 
 	@Then("Select Inbox and check the Email from AFBA Enrollement and click Review Application on AFBA Enrollment")
 	public void select_Inbox_and_check_the_Email_from_AFBA_Enrollement_and_click_Review_Application_on_AFBA_Enrollment() {
-//		Remote.ClickSelect.click();
-//		act.pause(1000).perform();
-		Remote.ClickEmail.click();
-		act.pause(2000).perform();
-		//Remote.ClickInbox.click();
-		Remote.SelectFirstEmail.click();
-		act.pause(2000).perform();
-		act.pause(2000).perform();
-		Remote.ReviewApplicationBtn.click();
-		act.pause(2000).perform();
+//	  Remote.ClickSelect.click();
+//	  act.pause(1000).perform();
+	  Remote.ClickEmail.click();
+	  act.pause(2000).perform();
+	 //Remote.ClickInbox.click();
+	  Remote.SelectFirstEmail.click();
+	  act.pause(2000).perform();
+      act.pause(2000).perform();
+	  Remote.ReviewApplicationBtn.click();
+	  act.pause(2000).perform();
 		
-		java.util.Set<String> handles = driver.getWindowHandles();
-        System.out.println(handles);
-        for (String handle1 : driver.getWindowHandles()) {
+	  java.util.Set<String> handles = driver.getWindowHandles();
+      System.out.println(handles);
+      for (String handle1 : driver.getWindowHandles()) {
                System.out.println(handle1);
                driver.switchTo().window(handle1);
         }
 	}
-
-	
 
 	@Then("Enter sponsor last Name and Last four SSN numbers")
 	public void enter_sponsor_last_Name_and_Last_four_SSN_numbers() {
