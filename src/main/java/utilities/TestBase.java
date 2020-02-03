@@ -16,6 +16,7 @@ import cucumber.api.Scenario;
 import pages.AllPagefactories;
 import pages.LoginPage;
 import pages.AFBAMemberPortalLoginPage;
+import pages.AgentLoginPage;
 import pages.RemoteLoginPage;
 
 public abstract class TestBase {
@@ -57,6 +58,14 @@ public abstract class TestBase {
 		act.pause(3000).perform();
 	}
 	
+	protected static void AgentLogin() {	
+		AgentLoginPage.AgentLoginBtn.click();
+		AgentLoginPage.InputUserName.sendKeys("rams.mallipeddi@gmail.com.eleanor");
+		AgentLoginPage.InputPassword.sendKeys("Test12345");
+		AgentLoginPage.LoginBtn.click();
+		act.pause(3000).perform();
+	}
+	
 	protected static void MemberPortal() {	
 		AFBAMemberPortalLoginPage.AccountLogin.click();
 		act.pause(3000).perform();
@@ -75,7 +84,7 @@ public abstract class TestBase {
 	
 	protected static void SetUp() {
 		driver=Driver.getDriver();
-		driver.get(ConfigurationReader.getProperty("url"));
+		driver.get(ConfigurationReader.getProperty("url5"));
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		act = new Actions(driver);
