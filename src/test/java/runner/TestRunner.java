@@ -19,9 +19,9 @@ import cucumber.api.junit.Cucumber;
 				},
 				
 		features = "MyFeatures"
-		,glue = "stepdefination",
+		,glue = "AgentPortalStepDef",
 		dryRun = false,
-		tags = {"@face9"}
+		tags = {"@AgentLogin"}
 		)
 
 public class TestRunner {
