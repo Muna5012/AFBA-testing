@@ -24,11 +24,7 @@ public class Hooks extends TestBase {
 //			LogIn();
 //			
 //		}
-		
-//		@Before(order = 6)
-//		public void agentlogin() {
-//			AgentLogin();
-//		}
+	
 		
 //		@Before(order = 3)
 //		public void flashingPage() {

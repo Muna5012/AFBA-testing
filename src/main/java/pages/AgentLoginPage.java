@@ -18,5 +18,10 @@ public class AgentLoginPage {
 	public static WebElement LoginBtn;
 	
 	@FindBy(xpath="//*[contains(text(),'Forgot your password?')]")
-	public static WebElement ForgetUserNameBtn;
+	public static WebElement ForgetPasswordBtn;
+	
+	@FindBy(className="mainTitle")
+	public static WebElement GetTextOfForgetPassword;
+	
+	
 }
