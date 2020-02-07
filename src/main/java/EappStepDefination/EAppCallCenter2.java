@@ -108,7 +108,7 @@ public class EAppCallCenter2 extends TestBase {
 	      EApp2.State.sendKeys(Keys.ENTER);
 	      act.pause(2000).perform();
 	      EApp2.ZipCode.click();
-	      EApp2.ZipCode.sendKeys("22208");
+	      EApp2.ZipCode.sendKeys("08201");
 	      act.pause(1000).perform();
 	}
 

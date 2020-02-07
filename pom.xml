@@ -16,12 +16,12 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties> 
  
-     <dependencies> 
-<dependency>
+   <dependencies> 
+     <dependency>
 			<groupId>net.masterthought</groupId>
 			<artifactId>cucumber-sandwich</artifactId>
 			<version>3.15.0</version>
-		</dependency>
+     </dependency>
 		
 		      <dependency>
             <groupId>log4j</groupId>
@@ -29,17 +29,31 @@
             <version>1.2.16</version>
             <scope>test</scope>
         </dependency>
-        
+            
+  <dependency>
+    <groupId>de.redsix</groupId>
+    <artifactId>pdfcompare</artifactId>
+    <version>1.1.26</version> 
+  </dependency>
+  
          <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-api</artifactId>
             <version>1.7.5</version>
         </dependency>
+        
+        <dependency>
+    <groupId>xmlunit</groupId>
+    <artifactId>xmlunit</artifactId>
+    <version>1.4</version>
+</dependency>
+        
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-simple</artifactId>
             <version>1.6.4</version>
         </dependency>
+
 
 		<dependency>
 			<groupId>org.apache.logging.log4j</groupId>
@@ -47,12 +61,12 @@
 			<version>2.11.0</version>
 		</dependency>
 		
+		
 		<dependency>
 			<groupId>org.apache.logging.log4j</groupId>
 			<artifactId>log4j-api</artifactId>
 			<version>2.11.0</version>
 		</dependency>
-	
 		
 
 		<dependency>

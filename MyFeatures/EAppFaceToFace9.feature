@@ -2,8 +2,8 @@
 Feature: Senior Protect LT121 generic NV. sponsor and spouse Contingent Beneficiary FaceToFace test feature 
 Scenario: Senior Protect LT121 generic NV. sponsor and spouse Contingent Beneficiary test scanario
 
-When Click Manage Cases button to Search AFBA cases and click it 
-And Click New Enrollement button 
+#When Click Manage Cases button to Search AFBA cases and click it 
+#And Click New Enrollement button 
 Then Input Sponsor SSN, Enrollment City, Enrollment state 
 And click Begin Enrollement to create new Case
 Then Input the Sponsor FirstName, LastName, DOB and Gender 
