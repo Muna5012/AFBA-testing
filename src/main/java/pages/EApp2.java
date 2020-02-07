@@ -28,6 +28,12 @@ public class EApp2 {
 	
 	@FindBy(xpath = "//input[@id='add-census-ssn-input']")
 	public static WebElement SSN;
+	
+	@FindBy(xpath="//*[@id='step2']/form/div[2]/div[2]/div[2]/div[2]/div/button[1]")
+	public static WebElement YesAnswer1;
+	
+	@FindBy(xpath="//*[@id='step2']/form/div[2]/div[3]/div[2]/div[2]/div/button[1]")
+	public static WebElement YesAnswer2;
 
 	@FindBy(xpath = "//*[@id='add-to-census-modal']/div[2]/div/div[2]/div[1]/form/div/div/div[2]/input")
 	public static WebElement EnrollmentCity;
@@ -223,6 +229,24 @@ public class EApp2 {
 	
 	@FindBy(xpath="//input[@id='email_repeat']")
 	public static WebElement ReEmailAddress;
+	
+	@FindBy(xpath="//*[contains(text(),'Email Address:')]")
+	public static WebElement VarifyEmail;
+	
+	@FindBy(xpath="//*[@class='btn btn-warning btn-xs']")
+	public static WebElement ClickSaveForLater;
+	
+	@FindBy(xpath="//*[contains(text(),'Pause enrollment and Save Data')]")
+	public static WebElement ClickPauseEnrollementBtn;
+	
+	@FindBy(xpath="//*[@id='census-records-table_filter']/label/input")
+	public static WebElement SearchCase;
+	
+	@FindBy(xpath="//*[@id=\"census-records-table\"]/tbody/tr[1]/td[1]/button")
+	public static WebElement ClickEnrollCase;
+	
+	
+	
 	
 	@FindBy(xpath ="//input[@id='phone']")
 	public static WebElement Phone;

@@ -17,6 +17,9 @@ public class AgentLoginPage {
 	@FindBy(className = "btn")
 	public static WebElement LoginBtn;
 	
+	@FindBy(xpath="//*[contains(text(),'Please')]")
+	public static WebElement GetTextOfEnterYourUserName;
+	
 	@FindBy(xpath="//*[contains(text(),'Forgot your password?')]")
 	public static WebElement ForgetPasswordBtn;
 	
