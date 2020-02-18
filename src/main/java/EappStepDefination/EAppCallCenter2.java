@@ -24,11 +24,17 @@ public class EAppCallCenter2 extends TestBase {
 		 EApp2.NewEnrollement.click();
 		 act.pause(1000).perform();
 		 EApp2.SSN.click();
-		 EApp2.SSN.sendKeys("545200003");
+		 EApp2.SSN.sendKeys("999999999");
 		 EApp2.EnrollmentCity.clear();
 		 EApp2.EnrollmentCity.sendKeys("Lake Gaston");
 		 act.pause(2000).perform();
 		 EApp2.VA.click();
+		 act.pause(1000).perform();
+		 EApp2.NextBtn.click();
+		 EApp2.SSN.clear();
+		 act.pause(1000).perform();
+		 EApp2.SSN.click();
+		 EApp2.SSN.sendKeys("545200003");
 		 act.pause(1000).perform();
 		 EApp2.NextBtn.click();
 	}

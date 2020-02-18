@@ -12,10 +12,10 @@ public class EAppCallCenter4 extends TestBase {
 	@When("Click Manage Cases button and Search IT QA Automation Call Center case")
 	public void click_Manage_Cases_button_and_Search_IT_QA_Automation_Call_Center_case() {
 		EApp2.ManageCaseButton.click();
-		 EApp2.searchSpace.click();
-		  EApp2.searchSpace.sendKeys("IT_QA Automation Call Center");
-			act.pause(1000).perform();
-		    EApp2.SearchITAutomationCallCenter.click();
+		EApp2.searchSpace.click();
+		EApp2.searchSpace.sendKeys("IT_QA Automation Call Center");
+	    act.pause(1000).perform();
+		EApp2.SearchITAutomationCallCenter.click();
 	}
 
 	@Then("Click New Enrollement button and Input Sponsor SSN, Enrollment City Pago Pago, Enrollment State AS")
@@ -24,25 +24,25 @@ public class EAppCallCenter4 extends TestBase {
 		act.pause(2000).perform();
 		EApp2.SSN.click();
 		act.pause(1000).perform();
-		 EApp2.SSN.sendKeys("545200017");
-		 EApp2.EnrollmentCity.clear();
-		  EApp2.EnrollmentCity.sendKeys("Pago Pago");
-			act.pause(2000).perform();
-			 EApp2.AS.click();
-			   act.pause(1000).perform();
-			   EApp2.NextBtn.click();
+		EApp2.SSN.sendKeys("545200017");
+		EApp2.EnrollmentCity.clear();
+		EApp2.EnrollmentCity.sendKeys("Pago Pago");
+		act.pause(2000).perform();
+		EApp2.AS.click();
+		act.pause(1000).perform();
+	    EApp2.NextBtn.click();
 	}
 
 	@Then("click Begin Enrollement button and Input Sponsor Firs tName, Last Name, Gender and DOB")
 	public void click_Begin_Enrollement_button_and_Input_Sponsor_Firs_tName_Last_Name_Gender_and_DOB() {
 		//  EApp2.BeginEnrollment.click();
-	        EApp2.ClickNewSponsor.click();
-		    EApp2.FirstName.sendKeys("Clarence");
-		    EApp2.LastName.sendKeys("Carter");
-		    act.pause(1000).perform();
-		    EApp2.DOB.click();
-		    EApp2.DOB.sendKeys("09281970");
-			EApp2.GenderforMale.click();
+	      EApp2.ClickNewSponsor.click();
+		  EApp2.FirstName.sendKeys("Clarence");
+		  EApp2.LastName.sendKeys("Carter");
+		  act.pause(1000).perform();
+		  EApp2.DOB.click();
+		  EApp2.DOB.sendKeys("09281970");
+	      EApp2.GenderforMale.click();
 	}
 
 	@Then("Click Include Children button to input Adult Child FirstName, LastName, DOB")
@@ -65,7 +65,7 @@ public class EAppCallCenter4 extends TestBase {
 	@Then("Select Active Status and Rank option O two")
 	public void select_Active_Status_and_Rank_option_O_two() {
 		EApp2.DutyStatus2.click();
-		 EApp2.RankO2.click();
+		EApp2.RankO2.click();
 	}
 
 	@Then("Select Military Allotment on Contribution Mode and input DepartmentCode AutoTest and Sourcecode AT{int}")
@@ -73,20 +73,20 @@ public class EAppCallCenter4 extends TestBase {
 		 EApp2.ContributionMode.click();
 		 act.pause(2000).perform();
 		 EApp2.DepartmentCode.sendKeys("AutoTest");
-			EApp2.SourceCode.sendKeys("ATWINTER");
+		 EApp2.SourceCode.sendKeys("ATWINTER");
 	}
 
 	@Then("Input Street address, city, state and st Zipcode")
 	public void input_Street_address_city_state_and_st_Zipcode() {
 		 EApp2.Street.sendKeys("14 River Rd");
-		  EApp2.Street2.sendKeys("Apt 1234");
-		  EApp2.City.sendKeys("San Diego");
-	      EApp2.State.click();
-	      EApp2.State.sendKeys("California");
-	      EApp2.State.sendKeys(Keys.ENTER);
-	      act.pause(2000).perform();
-	      EApp2.ZipCode.click();
-	      EApp2.ZipCode.sendKeys("92102");
+		 EApp2.Street2.sendKeys("Apt 1234");
+		 EApp2.City.sendKeys("San Diego");
+	     EApp2.State.click();
+	     EApp2.State.sendKeys("California");
+	     EApp2.State.sendKeys(Keys.ENTER);
+	     act.pause(2000).perform();
+	     EApp2.ZipCode.click();
+	     EApp2.ZipCode.sendKeys("92102");
 	}
 
 	@Then("Input Email address for confimation and phone numbers")
@@ -131,16 +131,16 @@ public class EAppCallCenter4 extends TestBase {
 	@Then("Waived Application Member benefit five thousand")
 	public void waived_Application_Member_benefit_five_thousand() {
 		  EApp2.spouseCoverage.click();
-			 EApp2.WaiveApplication.click();
-			 act.pause(3000).perform();	
+		  EApp2.WaiveApplication.click();
+		  act.pause(3000).perform();	
 	}
 
 	@Then("Next page Answer All the Questions")
 	public void next_page_Answer_All_the_Questions() {
 		  EApp2.Next.click();
 		  EApp2.AnswerNOAll.click();
-		    act.pause(2000).perform(); 
-		    EApp2.NextBtn2.click();
+		  act.pause(2000).perform(); 
+		  EApp2.NextBtn2.click();
 	}
 
 	@Then("Next Page Input sponsor information include Height and Weight")

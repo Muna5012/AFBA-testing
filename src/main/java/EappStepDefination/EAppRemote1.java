@@ -13,7 +13,7 @@ public class EAppRemote1 extends TestBase{
 	@When("Input Sponsor SSN, Enrollment City and Enrollment State")
 	public void input_Sponsor_SSN_Enrollment_City_and_Enrollment_State() {
 	  Remote.SSN.click();
-	  Remote.SSN.sendKeys("414000000");
+	  Remote.SSN.sendKeys("222222222");
 	  Remote.EnrollmentCity.clear();
 	  Remote.EnrollmentCity.sendKeys("Key West");
 	  Remote.EnrollmentState.click();
@@ -25,6 +25,11 @@ public class EAppRemote1 extends TestBase{
 	@When("click Next and click Begin Enrollment Btn")
 	public void click_Next_and_click_Begin_Enrollment_Btn() {
 	  Remote.NextBtn.click();
+	  act.pause(2000).perform();
+	  Remote.SSN.clear();
+	  act.pause(1000).perform();
+	  Remote.SSN.click();
+	  Remote.SSN.sendKeys("414000000");
    // Remote.BeginEnrollment.click();
 	  Remote.ClickNewSponsor.click();
 	  act.pause(2000).perform();

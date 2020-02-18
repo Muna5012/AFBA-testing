@@ -37,7 +37,7 @@ public class EAppFaceToFace5 extends TestBase {
 	public void input_Sponsor_valid_SSN_number() {
 		act.pause(1000).perform();
 		EApp2.SSN.click();
-		 EApp2.SSN.sendKeys("545200043");
+		 EApp2.SSN.sendKeys("444444444");
 	}
 
 	@Then("Input Sponsor Enrollment City")
@@ -56,6 +56,12 @@ public class EAppFaceToFace5 extends TestBase {
 	@Then("Click Next button to create the case")
 	public void click_Next_button_to_create_the_case() {
 	  EApp2.NextBtn.click();
+	  act.pause(2000).perform();
+	  EApp2.SSN.clear();
+	  EApp2.SSN.click();
+	  EApp2.SSN.sendKeys("545200043");
+	  EApp2.NextBtn.click();
+	  act.pause(2000).perform();
 	}
 
 	@Then("Select Begin Enrollement button")
@@ -247,8 +253,9 @@ public void input_Child_three_first_name_last_name_and_DOB() {
 	@Then("Select Spouse gender")
 	public void select_Spouse_gender() {
 		EApp2.SpouseSSN.click();
-		EApp2.SpouseSSN.sendKeys("545200044");
-		EApp2.SpouseGenderMale.click();
+		EApp2.SpouseSSN.sendKeys("555555555");
+//		EApp2.SpouseSSN.sendKeys("545200044");
+//		EApp2.SpouseGenderMale.click();
 		act.pause(1000).perform();
 		
 	}
@@ -265,6 +272,10 @@ public void input_Child_three_first_name_last_name_and_DOB() {
 	   EApp2.SpouseWeight.click();
 	   EApp2.SpouseWeight.sendKeys("142");
 	   act.pause(2000).perform();
+	   EApp2.SpouseSSN.sendKeys("545200044");
+	   act.pause(2000).perform();
+		EApp2.SpouseGenderMale.click();
+		 act.pause(2000).perform();
 	   EApp2.Next.click();
 	}
 	

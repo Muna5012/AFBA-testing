@@ -12,10 +12,10 @@ public class EAppCallCenter3 extends TestBase {
 	@When("Click Manage Cases button and Search IT QA Automation Call Center")
 	public void click_Manage_Cases_button_and_Search_IT_QA_Automation_Call_Center() {
 		EApp2.ManageCaseButton.click();
-		 EApp2.searchSpace.click();
-		  EApp2.searchSpace.sendKeys("IT_QA Automation Call Center");
-			act.pause(1000).perform();
-		    EApp2.SearchITAutomationCallCenter.click();
+		EApp2.searchSpace.click();
+		EApp2.searchSpace.sendKeys("IT_QA Automation Call Center");
+		act.pause(1000).perform();
+		EApp2.SearchITAutomationCallCenter.click();
 	}
 
 	@Then("Click New Enrollement button and Input Sponsor SSN, Enrollment City Washingtom, Enrollment State DC")
@@ -23,25 +23,25 @@ public class EAppCallCenter3 extends TestBase {
 		EApp2.NewEnrollement.click();
 		act.pause(1000).perform();
 		EApp2.SSN.click();
-		 EApp2.SSN.sendKeys("545200009");
-		 EApp2.EnrollmentCity.clear();
-		  EApp2.EnrollmentCity.sendKeys("Washington");
-			act.pause(2000).perform();
-			 EApp2.DC.click();
-			   act.pause(1000).perform();
-			   EApp2.NextBtn.click();
+		EApp2.SSN.sendKeys("545200009");
+		EApp2.EnrollmentCity.clear();
+		EApp2.EnrollmentCity.sendKeys("Washington");
+	    act.pause(2000).perform();
+	    EApp2.DC.click();
+		act.pause(1000).perform();
+		EApp2.NextBtn.click();
 	}
 
 	@Then("click Begin Enrollement and Input Sponsor FirstName, LastName, Gender and DOB")
 	public void click_Begin_Enrollement_and_Input_Sponsor_FirstName_LastName_Gender_and_DOB() {
-		//  EApp2.BeginEnrollment.click();
-	        EApp2.ClickNewSponsor.click();
-		    EApp2.FirstName.sendKeys("Simon");
-		    EApp2.LastName.sendKeys("LeBlanc");
-		    act.pause(1000).perform();
-		    EApp2.DOB.click();
-		    EApp2.DOB.sendKeys("10021963");
-			EApp2.GenderforMale.click();
+	//  EApp2.BeginEnrollment.click();
+	    EApp2.ClickNewSponsor.click();
+		EApp2.FirstName.sendKeys("Simon");
+		EApp2.LastName.sendKeys("LeBlanc");
+		act.pause(1000).perform();
+		EApp2.DOB.click();
+		EApp2.DOB.sendKeys("10021963");
+	    EApp2.GenderforMale.click();
 	}
 
 	@Then("Click Married button to Input spouse FirstName,LastName and DOB")
@@ -49,10 +49,10 @@ public class EAppCallCenter3 extends TestBase {
 		EApp2.MarriedBtn.click();
 	    act.pause(3000).perform();
 	    EApp2.SpouseFN.sendKeys("Priscilla");
-		   EApp2.SpouseLN.sendKeys("LeBlanc");
-		   act.pause(1000).perform();
-		   EApp2.SpouseDOB.click();
-		   EApp2.SpouseDOB.sendKeys("10151978");
+		EApp2.SpouseLN.sendKeys("LeBlanc");
+		act.pause(1000).perform();
+		EApp2.SpouseDOB.click();
+		EApp2.SpouseDOB.sendKeys("10151978");
 	}
 
 	@Then("Click Include Children button to input first Child FirstName, LastName, DOB")
