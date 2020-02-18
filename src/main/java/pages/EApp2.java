@@ -247,7 +247,6 @@ public class EApp2 {
 	
 	
 	
-	
 	@FindBy(xpath ="//input[@id='phone']")
 	public static WebElement Phone;
 	
@@ -309,7 +308,7 @@ public class EApp2 {
 	@FindBy(xpath = "//select[@class='emp-coverage']/option[3]")
 	public static WebElement CustomizeOption1;
 	
-	@FindBy(xpath = "//*[@class='emp-coverage']/option[3]")
+	@FindBy(xpath = "//*[@id=\"step1-form\"]/div[4]/div[2]/div[2]/div[2]/div[2]/div/div/div[1]/div[2]/div[4]/div/div[2]/div/ul/li[1]/select/option[3]")
 	public static WebElement CustomizeOption;
 	
 	@FindBy(xpath = "//select[@class='emp-coverage']/option[6]")
@@ -332,6 +331,9 @@ public class EApp2 {
 	
 	@FindBy(xpath="//a[@class='btn btn-block btn-sm btn-primary']")
 	public static WebElement SponserCoverageOption3;
+	
+	@FindBy(xpath="//*[@id=\"step1-form\"]/div[4]/div[2]/div[2]/div[2]/div[2]/div/div/div[1]/div[2]/div[4]/div/div[2]/div/ul/li[2]/select/option[3]")
+	public static WebElement SponsorCustomize50;
 	
 	@FindBy(xpath="//*[@id='step1-form']/div[4]/div[2]/div[2]/div[2]/div[2]/div/div/div[3]/select")
 	public static WebElement ChildCoverageClick;
@@ -665,6 +667,8 @@ public class EApp2 {
 	
 	@FindBy(xpath ="//*[@class='btn btn-success btn-next']")
 	public static WebElement Next;
+	
+	
 	
 	@FindBy(xpath="//*[@name='eeBeneOtherName0']")
 	public static WebElement PrimaryBenficiaryFullName;

@@ -12,7 +12,7 @@ public class EAppRemote2 extends TestBase {
 	@When("Click New Enrollment Input Sponsor SSN, Enrollment City and Enrollment State")
 	public void click_New_Enrollment_Input_Sponsor_SSN_Enrollment_City_and_Enrollment_State() {
 		  Remote.SSN.click();
-		  Remote.SSN.sendKeys("414000009");
+		  Remote.SSN.sendKeys("666666666");
 		  Remote.EnrollmentCity.clear();
 		  Remote.EnrollmentCity.sendKeys("Charlotte");
 		  Remote.EnrollmentState.click();
@@ -23,8 +23,16 @@ public class EAppRemote2 extends TestBase {
 	@Then("click Next and Click Begin Enrollment button")
 	public void click_Next_and_Click_Begin_Enrollment_button() {
 		  Remote.NextBtn.click();
-		  Remote.BeginEnrollment.click();
-		// Remote.ClickNewSponsor.click();
+		  Remote.SSN.clear();
+		  act.pause(1000).perform();
+		  Remote.SSN.click();
+		  act.pause(1000).perform();
+		  Remote.SSN.sendKeys("414000009");
+		  act.pause(2000).perform();
+		  Remote.NextBtn.click();
+		  act.pause(2000).perform();
+		//  Remote.BeginEnrollment.click();
+		 Remote.ClickNewSponsor.click();
 		 act.pause(2000).perform();
 	}
 
@@ -201,11 +209,22 @@ public class EAppRemote2 extends TestBase {
 	@Then("Select Spouse Information SSN, Gender, Height feet inches and Weight")
 	public void select_Spouse_Information_SSN_Gender_Height_feet_inches_and_Weight() {
 		    Remote.SpouseSSN.click();
-		    Remote.SpouseSSN.sendKeys("414000010");
-		    Remote.SpouseGenderFamale.click();
+		    Remote.SpouseSSN.sendKeys("888888888");
+		    act.pause(1000).perform();
+//		    Remote.SpouseGenderFamale.click();
 		    Remote.Spouse5Feet.click();
 		    Remote.Spouse5Inches.click();
 		    Remote.SpouseWeight.sendKeys("165");
+		    act.pause(2000).perform();
+		    Remote.NextBtn2.click(); 
+		    act.pause(2000).perform();
+		    Remote.SpouseSSN.clear();
+		    act.pause(1000).perform();
+		    Remote.SpouseSSN.click();
+		    act.pause(1000).perform();
+		    Remote.SpouseSSN.sendKeys("414000010");
+		    act.pause(1000).perform();
+		    Remote.SpouseGenderFamale.click();
 		    act.pause(2000).perform();
 		    Remote.NextBtn2.click(); 
 	}

@@ -139,5 +139,149 @@ public class VarifySSN extends TestBase {
 		 act.pause(2000).perform();
 		 EApp2.ShowCoverageOptions.click();
 	}
+	
+	@Then("Select BA Customize sponsor and spouse")
+	public void select_BA_Customize_sponsor_and_spouse() {
+		 EApp2.CustomizeOption.click();
+		 act.pause(1000).perform();
+		 EApp2.SponsorCustomize50.click();
+		 act.pause(1000).perform();
+		 
+	}
+
+	@Then("waived Fed Term, Application Member benefit Plans and FirstProtect")
+	public void waived_Fed_Term_Application_Member_benefit_Plans_and_FirstProtect() {
+		EApp2.spouseCoverage.click();
+		EApp2.WaiveApplication.click();
+		act.pause(2000).perform();
+		EApp2.FedTerm.click();
+		EApp2.WaiveFedTerm.click();
+		act.pause(2000).perform();
+		EApp2.ClickFirstProtect.click();
+		EApp2.WaiveFirstProtect.click();
+		act.pause(2000).perform();
+		  EApp2.Next.click();
+	}
+
+	@Then("Answer all the questions related to Other Insuarnce and BA")
+	public void answer_all_the_questions_related_to_Other_Insuarnce_and_BA() {
+		EApp2.AnswerNOAll.click();
+	    act.pause(2000).perform(); 
+	    EApp2.NextBtn2.click();
+	}
+
+	@Then("Select Sponsor Height, Weight")
+	public void select_Sponsor_Height_Weight() {
+		EApp2.HeightOption6.click();
+	    EApp2.HeightInchesOption7.click();
+	    act.pause(2000).perform();
+	    EApp2.Weight.click();
+	    EApp2.Weight.sendKeys("156"); 
+	    EApp2.NextBtn3.click();
+	}
+
+	@Then("Input Spouse valid SSN Number")
+	public void input_Spouse_valid_SSN_Number() {
+		 EApp2.SpouseSSN.click();
+		 EApp2.SpouseSSN.sendKeys("111111111");
+		 act.pause(2000).perform();
+	}
+
+	@Then("Select sponsor Gender, Height and Weight")
+	public void select_sponsor_Gender_Height_and_Weight() {
+		 EApp2.SpouseHeigthFeet.click();
+		 EApp2.SpouseHeightInches11.click();
+		 act.pause(2000).perform();
+		 EApp2.SpouseWeight.click();
+		 EApp2.SpouseWeight.sendKeys("143");
+		  
+		 EApp2.SpouseSSN.clear();
+		 EApp2.SpouseSSN.click();
+		 EApp2.SpouseSSN.sendKeys("545200084");
+		 act.pause(2000).perform();
+		 EApp2.SpouseGenderFamale.click();
+		 act.pause(2000).perform();
+		 EApp2.Next.click();
+		  
+	}
+	
+	@Then("Select Sponsor Better Alternative primary beneficiary Full Name, SSN, Relationship, and DOB")
+	public void select_Sponsor_Better_Alternative_primary_beneficiary_Full_Name_SSN_Relationship_and_DOB() {
+		EApp2.SomeoneElseForSponsorPrimary.click();
+		act.pause(1000).perform();
+		EApp2.PrimaryBenficiaryFullName.sendKeys("Basil Kennedy");
+		EApp2.PrimaryBeneficiarySSN.click();
+	    EApp2.PrimaryBeneficiarySSN.sendKeys("545200085");
+		EApp2.PrimaryBeneficiaryRelationship.click();
+		EApp2.PrimaryBeneficiaryDOB.click();
+		EApp2.PrimaryBeneficiaryDOB.sendKeys("03111974");
+		act.pause(2000).perform();
+	}
+
+	@Then("Select Sponsor Better Alternative Contingent Beneficiary Full Name, SSN, Relationship, and DOB")
+	public void select_Sponsor_Better_Alternative_Contingent_Beneficiary_Full_Name_SSN_Relationship_and_DOB() {
+		EApp2.SomeoneElsee.click();
+		EApp2.ContingentBeneficiaryFullName.sendKeys("Meeker Larry");
+		EApp2.ContingentBeneficiarySSNnumber.click();
+		EApp2.ContingentBeneficiarySSNnumber.sendKeys("545200086");
+		EApp2.ContingentBeneficiaryRelationship.click();
+		EApp2.ContingentBeneficiaryDOB.click();
+		EApp2.ContingentBeneficiaryDOB.sendKeys("03161954");
+		act.pause(2000).perform();
+	}
+
+	@Then("Select Spouce Better Alternaive primary beneficiary Full Name, SSN, Relationship, and DOB")
+	public void select_Spouce_Better_Alternaive_primary_beneficiary_Full_Name_SSN_Relationship_and_DOB() {
+		EApp2.SomeoneElseForSpousePrimary.click();
+		act.pause(1000).perform();
+	    EApp2.SpousePrimarytFN.sendKeys("Basil Kennedy");
+	    EApp2.SpousePrimarytSSN.click();
+	    EApp2.SpousePrimarytSSN.sendKeys("545200087");
+	    EApp2.SpousePrimaryRelationshipFatherInLaw.click();
+	    EApp2.SpousePrimaryDOB.click();
+	    EApp2.SpousePrimaryDOB.sendKeys("03171964");
+	    act.pause(2000).perform();
+	}
+
+	@Then("Select Spouce Better Alternative Contingent Beneficiary Full Name, SSN, Relationship, and DOB")
+	public void select_Spouce_Better_Alternative_Contingent_Beneficiary_Full_Name_SSN_Relationship_and_DOB() {
+		  EApp2.SomeOneElseForSpouseContingent.click();
+		    act.pause(1000).perform();
+		    EApp2.SpouseContingentFN.sendKeys("Samuel Webster");
+			act.pause(1000).perform();
+			EApp2.SpouseContingentRelationshipBrother.click();
+			act.pause(2000).perform();
+		    EApp2.NextBtn6.click();
+	}
+	
+	@Then("Click agree to signin button")
+	public void click_agree_to_signin_button() {
+		 act.pause(2000).perform();
+		 EApp2.AcknowledgeofPayment.click();
+		 EApp2.AgreeToSignInBtn.click();
+		 act.pause(3000).perform();
+	}
+
+	@Then("Select Applicant eSignature options")
+	public void select_Applicant_eSignature_options() {
+		 EApp2.ClickQuestion1.click();
+		 EApp2.ClickQuestion2.click();
+		 EApp2.ClickQuestion3.click();
+	     act.pause(2000).perform();
+	}
+
+	@Then("Select receive life insurance notices and documents via Paper or Electronic options")
+	public void select_receive_life_insurance_notices_and_documents_via_Paper_or_Electronic_options() {
+		EApp2.PaperBtn2.click();
+		act.pause(2000).perform();
+	}
+
+	@Then("Select Sign Button to sign it")
+	public void select_Sign_Button_to_sign_it() {
+		EApp2.SignBtn2.click();
+		act.pause(3000).perform();
+		EApp2.eSignatureBrn2.click();
+		act.pause(7000).perform();
+	}
 
 }
