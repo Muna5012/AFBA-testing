@@ -1195,7 +1195,6 @@ public class EApp2 {
 	@FindBy(xpath ="//*[@id='applicant_sig_check_3']")
 	public static WebElement ClickQuestion3;
 	
-	
 	@FindBy(xpath ="//*[contains(text(),'Review Application Documents to Continue')]")
 	public static WebElement ReviewApplicationBtn;
 	
@@ -1249,6 +1248,5 @@ public class EApp2 {
 	
 	@FindBy(xpath="//*[@id='eessn']")
 	public static WebElement ChangeSponsorSSN;
-	
 	
 }

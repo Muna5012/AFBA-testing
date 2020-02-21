@@ -22,7 +22,6 @@ And Click Sigining in Person button and click Agree to this coverage and ready t
 Then Select Review Application Documents button to review all the document
 And select receive insurance notices and document via Paper option
 Then Enter Sponsor last name, last four SSN Number and select Sigin
-
 And On Main page search the name of sponsor
 Then Click Add Coverage Button
 And Change Sponsor first name, last name

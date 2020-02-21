@@ -7,8 +7,10 @@ import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
 
 
+
 @RunWith(Cucumber.class)
 @CucumberOptions(
+		
 		
 				plugin = {
 						"html:CucumberReports/HTML", 
@@ -17,6 +19,7 @@ import cucumber.api.junit.Cucumber;
 						"pretty:CucumberReports/Pretty/MyPretty.txt",
 						"usage:CucumberReports/Usage/UsageReport.xml"
 				},
+				
 				
 		features = "MyFeatures"
 		,glue = "EappStepDefination",
