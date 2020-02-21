@@ -19,9 +19,9 @@ import cucumber.api.junit.Cucumber;
 				},
 				
 		features = "MyFeatures"
-		,glue = "AgentPortalStepDef",
+		,glue = "EappStepDefination",
 		dryRun = false,
-		tags = {"@AgentLogin"}
+		tags = {"@EAppProductionIssue1"}
 		)
 
 public class TestRunner {

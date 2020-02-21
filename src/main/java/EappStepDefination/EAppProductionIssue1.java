@@ -19,6 +19,7 @@ public class EAppProductionIssue1 extends TestBase{
 		EApp2.SearchITQAAutomationFace2Face.click();
 		act.pause(2000).perform();
 		EApp2.NewEnrollement.click();
+		
 	}
 
 	@Then("Enter sponsor SSN, Enrollment City, Enrollment State and Begin Enrollment")
@@ -31,8 +32,8 @@ public class EAppProductionIssue1 extends TestBase{
 		EApp2.NC.click();
 		act.pause(1000).perform();
 		EApp2.NextBtn.click();
-	//	EApp2.BeginEnrollment.click();
-	    EApp2.ClickNewSponsor.click();
+		EApp2.BeginEnrollment.click();
+	//    EApp2.ClickNewSponsor.click();
 	}
 
 	@Then("Enter Sponsor first name, last name, gender and DOB")

@@ -1240,4 +1240,15 @@ public class EApp2 {
 	
 	@FindBy(xpath="//*[@id='modal-signing-enroller-call-center']/div[2]/div/div[3]/button[2]")
 	public static WebElement eSignatureBrn2;
+	
+	@FindBy(xpath="//*[@id='census-records-table_filter']/label/input")
+	public static WebElement SearchSponsorName;
+	
+	@FindBy(xpath="//*[@id='census-records-table']/tbody/tr/td[1]/button")
+	public static WebElement AddCoveragebtn;
+	
+	@FindBy(xpath="//*[@id='eessn']")
+	public static WebElement ChangeSponsorSSN;
+	
+	
 }
