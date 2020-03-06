@@ -20,7 +20,7 @@ import cucumber.api.junit.Cucumber;
 		features = "EappFeatures"
 		,glue = "EappStepDefination",
 		dryRun = false,
-		tags = {"@callCenter1"}
+		tags = {"@membershipApplicationverify"}
 		)
 
 public class TestRunner {
