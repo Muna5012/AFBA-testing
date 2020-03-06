@@ -37,8 +37,8 @@ public class VarifyBASponsorTest extends TestBase {
 
 	@Then("Select Begin Enrollement")
 	public void select_Begin_Enrollement() {
-		//   EApp2.BeginEnrollment.click();
-	     EApp2.ClickNewSponsor.click();
+	   EApp2.BeginEnrollment.click();
+	 //    EApp2.ClickNewSponsor.click();
 	}
 
 	@Then("Input the sponsor First Name, Last Name, Gender, DOB")

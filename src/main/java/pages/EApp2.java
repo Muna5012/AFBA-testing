@@ -250,23 +250,29 @@ public class EApp2 {
 	@FindBy(xpath ="//input[@id='phone']")
 	public static WebElement Phone;
 	
-	@FindBy(xpath="//*[@id='step1-form']/div[4]/div[2]/div[2]/div[3]/div/div/label/input")
+	@FindBy(xpath="//*[contains(text(),' I waive enrollment in')]")
 	public static WebElement WaiveBA;
 	
-	@FindBy(xpath="//*[@id=\"step1-form\"]/div[4]/div[2]/div[2]/div[3]/div/div/label/input")
+	@FindBy(xpath="//*[contains(text(),' I waive enrollment in')]")
 	public static WebElement WaiveSeniorProtect;
 	
-	@FindBy(xpath = "//*[@id='step1-form']/div[4]/div[2]/div[2]/div[3]/div/div/label/input")
+	@FindBy(xpath = "//*[contains(text(),' I waive enrollment in')]")
 	public static WebElement WaiveApplication;
 	
-	@FindBy(xpath ="//*[@id='step1-form']/div[4]/div[2]/div[2]/div[3]/div/div/label/input")
+	@FindBy(xpath ="//*[contains(text(),' I waive enrollment in')]")
 	public static WebElement WaiveFirstProtect;
 	
-	@FindBy(xpath="//*[@id='step1-form']/div[4]/div[2]/div[2]/div[3]/div/div/label/input")
+	@FindBy(xpath="//*[contains(text(),' I waive enrollment in')]")
 	public static WebElement WaiveFedTerm;
 	
-	@FindBy(xpath="//*[@id='step1-form']/div[4]/div[2]/div[2]/div[3]/div/div/label/input")
+	@FindBy(xpath="//*[contains(text(),' I waive enrollment in')]")
 	public static WebElement WaiveChildProtect;
+	
+	@FindBy(xpath="//*[@id='step1-form']/div[4]/div[2]/div[2]/div[3]/div[2]/div[1]/label[1]/span")
+	public static WebElement YesForFirstQuestion;
+	
+	@FindBy(xpath="//*[@id='step1-form']/div[4]/div[2]/div[2]/div[3]/div[2]/div[2]/label[2]/span")
+	public static WebElement NoForSecondQuestion;
 	
 	@FindBy(xpath="//*[@id=\"step1-form\"]/div[4]/div[2]/div[2]/div[2]/div[2]/div/div/div[1]/div[2]/div[4]/div/div[2]/div/ul/li[1]/select/option[2]")
 	public static WebElement NOBeneForSponsor;
@@ -980,10 +986,7 @@ public class EApp2 {
 	
 	@FindBy(xpath="//*[@name='chBeneOtherDOB1_2']")
 	public static WebElement ChildProtectThirdChildPrimaryDOB;
-	
-	
-	
-	
+
 	
 	
 	@FindBy(xpath="/html/body/div[2]/div[1]/div[2]/div/div/div[1]/div/div/div[2]/div/div[1]/div/div[5]/form/div[1]/div[6]/div[3]/div[1]/div/label[3]/span")
@@ -1072,6 +1075,8 @@ public class EApp2 {
 	@FindBy(xpath="//*[@name='chContBeneOtherRelation2_0']/option[15]")
 	public static WebElement ChildProtectContingentRelationship;
 	
+	
+	
 	@FindBy(xpath="/html/body/div[2]/div[1]/div[2]/div/div/div[1]/div/div/div[2]/div/div[1]/div/div[5]/form/div[3]/div[6]/div[4]/div/label[2]/span")
 	public static WebElement SecondChildProtectPrimarySomeOneElse;
 	
@@ -1086,8 +1091,6 @@ public class EApp2 {
 	
 	@FindBy(xpath="//*[@name='chBeneOtherDOB2_1']")
 	public static WebElement SecondChildProtectPrimaryDOB;
-	
-	
 	
 	@FindBy(xpath="/html/body/div[2]/div[1]/div[2]/div/div/div[1]/div/div/div[2]/div/div[1]/div/div[5]/form/div[3]/div[6]/div[6]/div[1]/div/label[3]/span")
 	public static WebElement SecondChildProtectContingentSomeOneElse;
@@ -1105,6 +1108,8 @@ public class EApp2 {
 	public static WebElement SecondChildProtectContingentDOB;
 	
 	
+	
+	
 	@FindBy(xpath="/html/body/div[2]/div[1]/div[2]/div/div/div[1]/div/div/div[2]/div/div[1]/div/div[5]/form/div[5]/div[6]/div[3]/div[1]/div/label[3]/span")
 	public static WebElement ChildProtectContingentSomeOneElse;
 	
@@ -1120,6 +1125,8 @@ public class EApp2 {
 	@FindBy(xpath="//*[@name='chContBeneOtherDOB4_0']")
 	public static WebElement ChildProtectContingentDOB;
 	
+	
+	
 	@FindBy(xpath="/html/body/div[2]/div[1]/div[2]/div/div/div[1]/div/div/div[2]/div/div[1]/div/div[5]/form/div[4]/div[3]/div[1]/div/label[2]/span")
 	public static WebElement SeniorProtectPrimarySomeOneElse;
 	
@@ -1134,6 +1141,22 @@ public class EApp2 {
 	
 	@FindBy(xpath="//*[@name='spBeneOtherDOB3']")
 	public static WebElement SeniorProtectPrimaryDOB;
+	
+	
+	
+	@FindBy(xpath="//input[@name='eeBeneOtherName3']")
+	public static WebElement MemberBenefitPrimaryFL;
+	
+	@FindBy(xpath="//input[@name='eeBeneOtherSSN3']")
+	public static WebElement MemberBenefitPrimarySSN;
+	
+	@FindBy(xpath="//*[@name='eeBeneOtherRelation3']/option[20]")
+	public static WebElement MemberBenefitPrimaryRelationship;
+	
+	@FindBy(xpath="//*[@name='eeBeneOtherDOB3']")
+	public static WebElement MemberBenfitPrimaryDOB;
+	
+	
 	
 	@FindBy (css=".btn.btn-success.btn-next")
 	public static WebElement NextBtn6;

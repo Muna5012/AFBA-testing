@@ -47,25 +47,25 @@ public class EAppCallCenter4 extends TestBase {
 
 	@Then("Click Include Children button to input Adult Child FirstName, LastName, DOB")
 	public void click_Include_Children_button_to_input_Adult_Child_FirstName_LastName_DOB() {
-		EApp2.ChildrenBtn.click();
-		act.pause(2000).perform();
-		EApp2.ChildOneFN.sendKeys("Wallace");
-	    EApp2.ChildOneLN.sendKeys("Carter");
-	    EApp2.ChildOneDOB.click();
-	    EApp2.ChildOneDOB.sendKeys("01211994");
-	    act.pause(2000).perform();
+		 EApp2.ChildrenBtn.click();
+		 act.pause(2000).perform();
+		 EApp2.ChildOneFN.sendKeys("Wallace");
+	     EApp2.ChildOneLN.sendKeys("Carter");
+	     EApp2.ChildOneDOB.click();
+	     EApp2.ChildOneDOB.sendKeys("01211994");
+	     act.pause(2000).perform();
 	}
 	
 	@Then("Select Military on Eligibility options, select Air Force on BranchOfService")
 	public void select_Military_on_Eligibility_options_select_Air_Force_on_BranchOfService() {
-		EApp2.Eligibility.click();
-		EApp2.BranchOfService2.click();
+		 EApp2.Eligibility.click();
+		 EApp2.BranchOfService2.click();
 	}
 
 	@Then("Select Active Status and Rank option O two")
 	public void select_Active_Status_and_Rank_option_O_two() {
-		EApp2.DutyStatus2.click();
-		EApp2.RankO2.click();
+		 EApp2.DutyStatus2.click();
+		 EApp2.RankO2.click();
 	}
 
 	@Then("Select Military Allotment on Contribution Mode and input DepartmentCode AutoTest and Sourcecode AT{int}")
@@ -94,8 +94,8 @@ public class EAppCallCenter4 extends TestBase {
 		 EApp2.EmailAddress.sendKeys("qapeep19@gmail.com");
 		 EApp2.ReEmailAddress.sendKeys("qapeep19@gmail.com");
 		 EApp2.Phone.click();
-			EApp2.Phone.sendKeys("7037065961");
-			  act.pause(2000).perform();
+		 EApp2.Phone.sendKeys("7037065961");
+		 act.pause(2000).perform();
 	}
 
 	@Then("Click Show Coverage options to Select Benefitiary Planes")
@@ -128,19 +128,19 @@ public class EAppCallCenter4 extends TestBase {
 		
 	}
 
-	@Then("Waived Application Member benefit five thousand")
-	public void waived_Application_Member_benefit_five_thousand() {
-		  EApp2.spouseCoverage.click();
-		  EApp2.WaiveApplication.click();
-		  act.pause(3000).perform();	
+	@Then("Select Application Member benefit five thousand")
+	public void select_Application_Member_benefit_five_thousand() {
+		EApp2.spouseCoverage.click();
+		EApp2.Covered.click();
+		act.pause(3000).perform();	
 	}
 
 	@Then("Next page Answer All the Questions")
 	public void next_page_Answer_All_the_Questions() {
-		  EApp2.Next.click();
-		  EApp2.AnswerNOAll.click();
-		  act.pause(2000).perform(); 
-		  EApp2.NextBtn2.click();
+		EApp2.Next.click();
+		EApp2.AnswerNOAll.click();
+		act.pause(2000).perform(); 
+		EApp2.NextBtn2.click();
 	}
 
 	@Then("Next Page Input sponsor information include Height and Weight")
@@ -174,8 +174,8 @@ public class EAppCallCenter4 extends TestBase {
 	    EApp2.PrimaryBeneficiarySSN.sendKeys("545200019");
 	    EApp2.PrimaryBeneficiaryRelationship2.click();
 	    EApp2.PrimaryBeneficiaryDOB.click();
-		  EApp2.PrimaryBeneficiaryDOB.sendKeys("11281949");
-		   act.pause(2000).perform();
+		EApp2.PrimaryBeneficiaryDOB.sendKeys("11281949");
+		act.pause(2000).perform();
 	}
 
 	@Then("Input Sponsor Better Alternative Contingent Beneficiary coverage FullName, SSN, Relationship and DOB")
@@ -221,32 +221,45 @@ public class EAppCallCenter4 extends TestBase {
 
 	}
 
+	@Then("Input Sponsor Primary Beneficiary FullName, SSN, Relationship & DOB")
+	public void input_Sponsor_Primary_Beneficiary_FullName_SSN_Relationship_DOB() {
+		//EApp2.FirstProtectPrimarySomeOneElse.click();
+		EApp2.MemberBenefitPrimaryFL.sendKeys("Godley John");
+		EApp2.MemberBenefitPrimarySSN.click();
+		EApp2.MemberBenefitPrimarySSN.sendKeys("545200110");
+		EApp2.MemberBenefitPrimaryRelationship.click();
+		EApp2.MemberBenfitPrimaryDOB.click();
+		EApp2.MemberBenfitPrimaryDOB.sendKeys("11151993");
+		act.pause(2000).perform();
+	}
+
+	
 	@Then("Nexc page select Email Summary and Select Acknowledgement Military Payment option")
 	public void nexc_page_select_Email_Summary_and_Select_Acknowledgement_Military_Payment_option() {
 		EApp2.NextBtn6.click();
 		EApp2.EmailSummary2.click();
-		 act.pause(3000).perform();
-		 EApp2.AcknowledgeofPayment.click();
+		act.pause(3000).perform();
+		EApp2.AcknowledgeofPayment.click();
 	}
 
 	@Then("Click I agree to this Coverage and am ready to signin button")
 	public void click_I_agree_to_this_Coverage_and_am_ready_to_signin_button() {
 		EApp2.AgreeToSignInBtn.click();
-		 act.pause(3000).perform();
+		act.pause(3000).perform();
 	}
 
 	@Then("Select Applicant eSignature three options radio Button")
 	public void select_Applicant_eSignature_three_options_radio_Button() {
 		 EApp2.ClickQuestion1.click();
-		   EApp2.ClickQuestion2.click();
-		   EApp2.ClickQuestion3.click();
-			act.pause(2000).perform();
+		 EApp2.ClickQuestion2.click();
+		 EApp2.ClickQuestion3.click();
+		 act.pause(2000).perform();
 	}
 
 	@Then("Select recieve Documents option for Paper and click Sign button")
 	public void select_recieve_Documents_option_for_Paper_and_click_Sign_button() {
 		EApp2.PaperBtn2.click();
-		 act.pause(2000).perform();
+		act.pause(2000).perform();
 	}
 
 	@Then("Select Sign Button for Agent Enroller eSignature")

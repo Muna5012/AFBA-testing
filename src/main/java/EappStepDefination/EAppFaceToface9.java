@@ -3,26 +3,27 @@ package EappStepDefination;
 import org.openqa.selenium.Keys;
 
 import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
 import pages.EApp2;
 import utilities.TestBase;
 
 public class EAppFaceToface9 extends TestBase {
 
-//	@When("Click Manage Cases button to Search AFBA cases and click it")
-//	public void click_Manage_Cases_button_to_Search_AFBA_cases_and_click_it() {
-//		EApp2.Home.click();
-//		act.pause(2000).perform();
-//		EApp2.ManageCaseButton.click();
-//		 EApp2.searchSpace.click();
-//		  EApp2.searchSpace.sendKeys("IT_QA Automation Face2Face");
-//			act.pause(1000).perform();
-//		    EApp2.SearchITQAAutomationFace2Face.click();
-//	}
-//
-//	@When("Click New Enrollement button")
-//	public void click_New_Enrollement_button() {
-//		EApp2.NewEnrollement.click();
-//	}
+	@When("Click Manage Cases button to Search AFBA cases and click it")
+	public void click_Manage_Cases_button_to_Search_AFBA_cases_and_click_it() {
+		EApp2.Home.click();
+		act.pause(2000).perform();
+		EApp2.ManageCaseButton.click();
+		 EApp2.searchSpace.click();
+		  EApp2.searchSpace.sendKeys("IT_QA Automation Face2Face");
+			act.pause(1000).perform();
+		    EApp2.SearchITQAAutomationFace2Face.click();
+	}
+
+	@When("Click New Enrollement button")
+	public void click_New_Enrollement_button() {
+		EApp2.NewEnrollement.click();
+	}
 
 	@Then("Input Sponsor SSN, Enrollment City, Enrollment state")
 	public void input_Sponsor_SSN_Enrollment_City_Enrollment_state() {
@@ -39,8 +40,8 @@ public class EAppFaceToface9 extends TestBase {
 
 	@Then("click Begin Enrollement to create new Case")
 	public void click_Begin_Enrollement_to_create_new_Case() {
-		EApp2.BeginEnrollment.click();
-	    // EApp2.ClickNewSponsor.click();
+	//	EApp2.BeginEnrollment.click();
+	     EApp2.ClickNewSponsor.click();
 	}
 
 	@Then("Input the Sponsor FirstName, LastName, DOB and Gender")

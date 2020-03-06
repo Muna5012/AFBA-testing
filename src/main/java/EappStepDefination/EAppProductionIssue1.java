@@ -32,8 +32,8 @@ public class EAppProductionIssue1 extends TestBase{
 		EApp2.NC.click();
 		act.pause(1000).perform();
 		EApp2.NextBtn.click();
-		EApp2.BeginEnrollment.click();
-	//    EApp2.ClickNewSponsor.click();
+	//	EApp2.BeginEnrollment.click();
+	    EApp2.ClickNewSponsor.click();
 	}
 
 	@Then("Enter Sponsor first name, last name, gender and DOB")
@@ -272,32 +272,32 @@ public class EAppProductionIssue1 extends TestBase{
 		// EApp2.EmailAddress.sendKeys("qapeep19@gmail.com");
 		 EApp2.ReEmailAddress.sendKeys("qapeep19@gmail.com");
 		 act.pause(2000).perform();
-		  EApp2.ShowCoverageOptions.click();
-		  act.pause(1000).perform();
+		 EApp2.ShowCoverageOptions.click();
+		 act.pause(1000).perform();
 	}
 
 	@Then("Select BA and Coverage, Covered Application Member, Waived Fed Term, and FirstProtect")
 	public void select_BA_and_Coverage_Covered_Application_Member_Waived_Fed_Term_and_FirstProtect() {
 		 EApp2.NonTobacco.click();
-		    EApp2.CustomizeOption2.click();
-		    act.pause(2000).perform();
-		    EApp2.spouseCoverage.click();
-			  EApp2.Covered.click();
-			  act.pause(2000).perform();
-			    EApp2.FedTerm.click();
-				EApp2.WaiveFedTerm.click();
-				act.pause(2000).perform();
-				EApp2.ClickFirstProtect.click();
-				EApp2.WaiveFirstProtect.click();
-				act.pause(2000).perform();
-				   EApp2.NextBtn1.click();
+		 EApp2.CustomizeOption2.click();
+		 act.pause(2000).perform();
+		 EApp2.spouseCoverage.click();
+		 EApp2.Covered.click();
+		 act.pause(2000).perform();
+		 EApp2.FedTerm.click();
+		 EApp2.WaiveFedTerm.click();
+		 act.pause(2000).perform();
+	     EApp2.ClickFirstProtect.click();
+		 EApp2.WaiveFirstProtect.click();
+		 act.pause(2000).perform();
+		 EApp2.NextBtn1.click();
 	}
 
 	@Then("Answer all the questions Yes or No")
 	public void answer_all_the_questions_Yes_or_No() {
 		 EApp2.AnswerNOAll.click();
-		  act.pause(2000).perform();
-		  EApp2.NextBtn2.click();
+		 act.pause(2000).perform();
+		 EApp2.NextBtn2.click();
 	}
 
 	@Then("Select Sponsor SSN and change it")
@@ -327,19 +327,19 @@ public class EAppProductionIssue1 extends TestBase{
 	@Then("Enter Sponsor Contingent Beneficiary full name, SSN, Relationship and DOB")
 	public void enter_Sponsor_Contingent_Beneficiary_full_name_SSN_Relationship_and_DOB() {
 		EApp2.SomeoneElsee.click();
-	    act.pause(1000).perform();
-	    EApp2.ContingentBeneficiaryFullName.sendKeys("Best Guy");
-	    EApp2.ContingentBeneficiarySSNnumber.click();
-	    EApp2.ContingentBeneficiarySSNnumber.sendKeys("545200093");
-		EApp2.ContingentRelationship.click();
-		EApp2.ContingentBeneficiaryDOB.click();
-		EApp2.ContingentBeneficiaryDOB.sendKeys("10151980");
-		act.pause(1000).perform();
+	     act.pause(1000).perform();
+	     EApp2.ContingentBeneficiaryFullName.sendKeys("Best Guy");
+	     EApp2.ContingentBeneficiarySSNnumber.click();
+	     EApp2.ContingentBeneficiarySSNnumber.sendKeys("545200093");
+		 EApp2.ContingentRelationship.click();
+		 EApp2.ContingentBeneficiaryDOB.click();
+		 EApp2.ContingentBeneficiaryDOB.sendKeys("10151980");
+		 act.pause(1000).perform();
 	}
 
 	@Then("Enter Sponsor Application Member Benefit primary Beneficiary full name, SSN, Relationship and DOB")
 	public void enter_Sponsor_Application_Member_Benefit_primary_Beneficiary_full_name_SSN_Relationship_and_DOB() {
-		  EApp2.SecondPrmaryBenFullName.sendKeys("Bella Luna");
+		    EApp2.SecondPrmaryBenFullName.sendKeys("Bella Luna");
 		    EApp2.SecondPrimaryBenfSSN.click();
 		    EApp2.SecondPrimaryBenfSSN.sendKeys("545200094");
 			EApp2.SecondPrimaryBenRelationship2.click();
@@ -350,35 +350,35 @@ public class EAppProductionIssue1 extends TestBase{
 
 	@Then("Enter Sponsor Application Member Benefit Contingent Beneficiary full name, SSN, Relationship and DOB")
 	public void enter_Sponsor_Application_Member_Benefit_Contingent_Beneficiary_full_name_SSN_Relationship_and_DOB() {
-		EApp2.secondSomeOneElse.click();
-	    act.pause(1000).perform();
-	    EApp2.SecondContingentBeneficiaryFullName.sendKeys("Toms John");
-	    EApp2.SecondContingentBeneficiarySSN.click();
-	    EApp2.SecondContingentBeneficiarySSN.sendKeys("545200095");
-		EApp2.SecondContingentBeneficiaryRelationship.click();
-		EApp2.SecondContingentBeneficiaryDOB.click();
-		EApp2.SecondContingentBeneficiaryDOB.sendKeys("10151980");
-		act.pause(1000).perform();
-		EApp2.NextBtn6.click();
-	}
+		 EApp2.secondSomeOneElse.click();
+	     act.pause(1000).perform();
+	     EApp2.SecondContingentBeneficiaryFullName.sendKeys("Toms John");
+	     EApp2.SecondContingentBeneficiarySSN.click();
+	     EApp2.SecondContingentBeneficiarySSN.sendKeys("545200095");
+		 EApp2.SecondContingentBeneficiaryRelationship.click();
+		 EApp2.SecondContingentBeneficiaryDOB.click();
+		 EApp2.SecondContingentBeneficiaryDOB.sendKeys("10151980");
+		 act.pause(1000).perform();
+		 EApp2.NextBtn6.click();
+	} 
 
 	@Then("Select Military Allotment Method of Payment and Sigining in Person button")
 	public void select_Military_Allotment_Method_of_Payment_and_Sigining_in_Person_button() {
-		EApp2.AcknowledgeofPayment.click();
-	    act.pause(2000).perform();
-	    EApp2.SiginingInPerson.click();
-		act.pause(2000).perform();
+		 EApp2.AcknowledgeofPayment.click();
+	     act.pause(2000).perform();
+	     EApp2.SiginingInPerson.click();
+		 act.pause(2000).perform();
 	}
 
 	@Then("click Agree to this coverage sign button")
 	public void click_Agree_to_this_coverage_sign_button() {
-		EApp2.AgreeToSignInBtn.click();
-		act.pause(2000).perform();
+		 EApp2.AgreeToSignInBtn.click();
+		 act.pause(2000).perform();
 	}
 
 	@Then("Select Review Application Documents button to review all the document and select receive document via Paper option")
 	public void select_Review_Application_Documents_button_to_review_all_the_document_and_select_receive_document_via_Paper_option() {
-		EApp2.ReviewApplicationBtn.click();
+		 EApp2.ReviewApplicationBtn.click();
 		 act.pause(7000).perform();
 		 EApp2.CloseBtn.click();
 		 act.pause(2000).perform();
@@ -386,19 +386,19 @@ public class EAppProductionIssue1 extends TestBase{
 
 	@Then("Enter Sponsor last name, last four SSN Number and select Sigin in button to sigin")
 	public void enter_Sponsor_last_name_last_four_SSN_Number_and_select_Sigin_in_button_to_sigin() {
-		 EApp2.PaperBtn.click();
-		 act.pause(2000).perform();
-		 EApp2.SponsorLastName.sendKeys("Alexander");
-			act.pause(2000).perform();
-			EApp2.SponsorLastSSN.click();
-		    EApp2.SponsorLastSSN.sendKeys("0101");
-		    act.pause(2000).perform();
-			EApp2.clickModalBodyBtn.click();
-			act.pause(1000).perform();
-			EApp2.SignBtn.click();
-			act.pause(3000).perform();
-			EApp2.eSignatureBrn.click();
-			act.pause(7000).perform();
+		  EApp2.PaperBtn.click();
+		  act.pause(2000).perform();
+		  EApp2.SponsorLastName.sendKeys("Alexander");
+		  act.pause(2000).perform();
+		  EApp2.SponsorLastSSN.click();
+		  EApp2.SponsorLastSSN.sendKeys("0101");
+		  act.pause(2000).perform();
+		  EApp2.clickModalBodyBtn.click();
+		  act.pause(1000).perform();
+		  EApp2.SignBtn.click();
+		  act.pause(3000).perform();
+		  EApp2.eSignatureBrn.click();
+		  act.pause(7000).perform();
 	}
 
 	

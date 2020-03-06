@@ -6,11 +6,8 @@ import org.junit.runner.RunWith;
 import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
 
-
-
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		
 		
 				plugin = {
 						"html:CucumberReports/HTML", 
@@ -19,12 +16,11 @@ import cucumber.api.junit.Cucumber;
 						"pretty:CucumberReports/Pretty/MyPretty.txt",
 						"usage:CucumberReports/Usage/UsageReport.xml"
 				},
-				
-				
-		features = "MyFeatures"
+					
+		features = "EappFeatures"
 		,glue = "EappStepDefination",
 		dryRun = false,
-		tags = {"@EAppProductionIssue1"}
+		tags = {"@callCenter1"}
 		)
 
 public class TestRunner {

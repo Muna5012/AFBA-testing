@@ -15,7 +15,7 @@ Then Click Show Coverage options to Select Benefitiary Planes
 And Select Better Alternative Tobacco for sponsor and Customize one hundred thousand K
 Then Select FedTerm Customize Sponsor fifty thousand K and Adult Child No customize benefit option
 And Select First Protect customize Adult Child fifty thousand K
-Then Waived Application Member benefit five thousand 
+Then Select Application Member benefit five thousand 
 And Next page Answer All the Questions 
 Then Next Page Input sponsor information include Height and Weight
 And Next page input Adult child information, SSN, Gender, Height, Weight and Relationship
@@ -24,6 +24,7 @@ And Input Sponsor Better Alternative Contingent Beneficiary coverage FullName, S
 Then Input FetTerm product Sponsor Primary Beneficiary FullName, SSN, Relationship and DOB
 And Input FedTerm Product Sponsor Contingent Beneficiary FullName, SSN, Relationship and DOB
 Then Input First Protect Adult Child Primary Beneficiary FullName, SSN. Relastionship and DOB
+And Input Sponsor Primary Beneficiary FullName, SSN, Relationship & DOB
 Then Nexc page select Email Summary and Select Acknowledgement Military Payment option
 And Click I agree to this Coverage and am ready to signin button
 Then Select Applicant eSignature three options radio Button

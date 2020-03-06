@@ -45,7 +45,7 @@ public class EAppOnlyGroupFreeBenefit extends TestBase {
 	
 	@Then("Click Begin Enrollment button to start new case")
 	public void click_Begin_Enrollment_button_to_start_new_case() {
-		// EApp2.BeginEnrollment.click();
+	   // EApp2.BeginEnrollment.click();
 	   EApp2.ClickNewSponsor.click();
 	}
 
@@ -72,8 +72,8 @@ public class EAppOnlyGroupFreeBenefit extends TestBase {
 	
 	@Then("Enter Department and Source Code")
 	public void enter_Department_and_Source_Code() {
-		EApp2.DepartmentCode.sendKeys("AutoTest");
-		EApp2.SourceCode.sendKeys("AT1");
+		 EApp2.DepartmentCode.sendKeys("AutoTest");
+		 EApp2.SourceCode.sendKeys("AT1");
 	}
 
 	@Then("Enter Street Address, City, State, and valid Zipcode")
@@ -107,26 +107,29 @@ public class EAppOnlyGroupFreeBenefit extends TestBase {
 
 	@Then("Click Show Coverage Options to select benefit plan")
 	public void click_Show_Coverage_Options_to_select_benefit_plan() {
-		   EApp2.ShowCoverageOptions.click();
-		    act.pause(1000).perform();
+		 EApp2.ShowCoverageOptions.click();
+		 act.pause(1000).perform();
 	}
 
 	@Then("Waived BA, Fed Term, First Protect")
 	public void waived_BA_Fed_Term_First_Protect() {
-		    EApp2.WaiveBA.click();
-		    act.pause(2000).perform();
-		    EApp2.FedTerm.click();
-			EApp2.WaiveFedTerm.click();
-			act.pause(2000).perform();
-			EApp2.ClickFirstProtect.click();
-			EApp2.WaiveFirstProtect.click();
-			act.pause(2000).perform();
+		 EApp2.WaiveBA.click();
+		 act.pause(2000).perform();
+		 EApp2.FedTerm.click();
+	     EApp2.WaiveBA.click();
+		 act.pause(2000).perform();
+		 EApp2.ClickFirstProtect.click();
+		 EApp2.WaiveBA.click();
+		 act.pause(2000).perform();
 	}
 
 	@Then("Select Covered Application Member Benefit five thousand K")
 	public void select_Covered_Application_Member_Benefit_five_thousand_K() {
 		  EApp2.spouseCoverage.click();
 		  EApp2.Covered.click();
+		  EApp2.YesForFirstQuestion.click();
+		  act.pause(1000).perform();
+		  EApp2.NoForSecondQuestion.click();
 		  act.pause(2000).perform();
 		  EApp2.NextBtn1.click();
 		  act.pause(2000).perform();
@@ -146,8 +149,9 @@ public class EAppOnlyGroupFreeBenefit extends TestBase {
 		  EApp2.PrimaryRelationship.click();
 		  EApp2.PrimaryBeneficiaryDOB.click();
 		  EApp2.PrimaryBeneficiaryDOB.sendKeys("10101980");
-		   act.pause(2000).perform();
+		  act.pause(2000).perform();
 	}
+	
 
 	@Then("Select Contingent Beneficiary for Application Member Benefit five thousand K")
 	public void select_Contingent_Beneficiary_for_Application_Member_Benefit_five_thousand_K() {
@@ -161,24 +165,28 @@ public class EAppOnlyGroupFreeBenefit extends TestBase {
 		EApp2.ContingentBeneficiaryDOB.sendKeys("10151980");
 		act.pause(1000).perform();
 		EApp2.NextBtn6.click();
+		
 	}
+	
 	
 	@Then("Click I agree to this Coverage and ready to sign in button")
 	public void click_I_agree_to_this_Coverage_and_ready_to_sign_in_button() {
 	//	EApp2.AcknowledgeofPayment.click();
-		   EApp2.SiginingInPerson.click();
-			  act.pause(2000).perform();
-				EApp2.AgreeToSignInBtn.click();
-				 act.pause(2000).perform();
+		EApp2.SiginingInPerson.click();
+		act.pause(2000).perform();
+		EApp2.AgreeToSignInBtn.click();
+		act.pause(2000).perform();
 	}
+	
 
 	@Then("Click Review Application Documents button to open the pdf file")
 	public void click_Review_Application_Documents_button_to_open_the_pdf_file() {
 		EApp2.ReviewApplicationBtn.click();
-		   act.pause(5000).perform();
-			 EApp2.CloseBtn.click();
-			 act.pause(2000).perform();
+		act.pause(5000).perform();
+		EApp2.CloseBtn.click();
+		act.pause(2000).perform();
 	}
+	
 
 	@Then("Enter Spouse Last Name and Last four SSN")
 	public void enter_Spouse_Last_Name_and_Last_four_SSN() {
@@ -189,23 +197,24 @@ public class EAppOnlyGroupFreeBenefit extends TestBase {
 		 EApp2.SponsorLastName.click();	
 		 EApp2.SponsorLastName.sendKeys("Burt");
 		 EApp2.SponsorLastSSN.sendKeys("3333");
-			EApp2.verifySSN.click();
-			act.pause(2000).perform();
-			EApp2.SponsorLastSSN.clear();
-		   EApp2.SponsorLastSSN.click();
-		   EApp2.SponsorLastSSN.sendKeys("0088");
+		 EApp2.verifySSN.click();
+		 act.pause(2000).perform();
+		 EApp2.SponsorLastSSN.clear();
+		 EApp2.SponsorLastSSN.click();
+		 EApp2.SponsorLastSSN.sendKeys("0088");
 	}
 
+	
 	@Then("Select receive life insuarance notices and documents options and Sign in")
 	public void select_receive_life_insuarance_notices_and_documents_options_and_Sign_in() {
 		 EApp2.PaperBtn.click();
 		 act.pause(2000).perform();
-			EApp2.clickModalBodyBtn.click();
-			act.pause(1000).perform();
-			EApp2.SignBtn.click();
-			act.pause(3000).perform();
-			EApp2.eSignatureBrn.click();
-			act.pause(7000).perform();
+		 EApp2.clickModalBodyBtn.click();
+		 act.pause(1000).perform();
+		 EApp2.SignBtn.click();
+		 act.pause(3000).perform();
+		 EApp2.eSignatureBrn.click();
+		 act.pause(7000).perform();
 	}
 
 	
