@@ -158,7 +158,7 @@ public class EAppCallCenter3 extends TestBase {
 	@Then("Sponsor Customize No benefit, Spouse Customize one houndred thousand K and first kid Customize fifty thousand K")
 	public void sponsor_Customize_No_benefit_Spouse_Customize_one_houndred_thousand_K_and_first_kid_Customize_fifty_thousand_K() {
 		    EApp2.ClickFirstProtectSpouseCustomize.click();
-		    EApp2.ClickFirstProtectKidCustomize.click();
+		    EApp2.ClickFirstProtectFirstKidCustomize150.click();
 		    act.pause(3000).perform();
 		    EApp2.SeniorProtect.click();
 		    EApp2.SeniorProtectCustomize15.click();

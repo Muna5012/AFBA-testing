@@ -271,22 +271,22 @@ public class Remote {
 	@FindBy(xpath="//*[contains(text(),'Show Coverage Options')]")
 	public static WebElement ShowCoverageOptions;
 	
-	@FindBy(xpath="//*[@id='step1-form']/div[4]/div[2]/div[2]/div[3]/div/div/label/input")
+	@FindBy(xpath="//*[contains(text(),' I waive enrollment in')]")
 	public static WebElement WaiveBA;
 	
-	@FindBy(xpath = "//*[@id='step1-form']/div[4]/div[2]/div[2]/div[3]/div/div/label/input")
+	@FindBy(xpath = "//*[contains(text(),' I waive enrollment in')]")
 	public static WebElement WaiveApplication;
 	
-	@FindBy(xpath ="//*[@id='step1-form']/div[4]/div[2]/div[2]/div[3]/div/div/label/input")
+	@FindBy(xpath ="//*[contains(text(),' I waive enrollment in')]")
 	public static WebElement WaiveFirstProtect;
 	
-	@FindBy(xpath="//*[@id='step1-form']/div[4]/div[2]/div[2]/div[3]/div/div/label/input")
+	@FindBy(xpath="//*[contains(text(),' I waive enrollment in')]")
 	public static WebElement WaiveFedTerm;
 	
-	@FindBy(xpath="//*[@id='step1-form']/div[4]/div[2]/div[2]/div[3]/div/div/label/input")
+	@FindBy(xpath="//*[contains(text(),' I waive enrollment in')]")
 	public static WebElement WaiveChildProtect;
 	
-	@FindBy(xpath="//*[@id='step1-form']/div[4]/div[2]/div[2]/div[3]/div/div/label/input")
+	@FindBy(xpath="//*[contains(text(),' I waive enrollment in')]t")
 	public static WebElement WaivedSeniorProtect;
 	
 	@FindBy(xpath="//*[@id='step1-form']/div[4]/div[2]/div[2]/div[2]/div[2]/div/div/div[1]/div[2]/div[2]/div/div[2]/div[2]/a")
@@ -340,16 +340,16 @@ public class Remote {
 	@FindBy(xpath="//*[@id='step1-form']/div[4]/div[2]/div[2]/div[2]/div[2]/div/div/div[1]/div[2]/div[4]/div/div[2]/div/ul/li/select/option[6]")
 	public static WebElement SeniorProtectoNLYSpouseCustomize25;
 	
-	@FindBy(xpath="//*[@id='step1-form']/div[4]/div[2]/div[2]/div[2]/div[2]/div/div/div[1]/div[2]/div[4]/div/div[2]/div/ul/li[1]/select/option[3]")
+	@FindBy(xpath="//*[@id='step1-form']/div[4]/div[2]/div[3]/div[2]/div/div/div[1]/div[2]/div[4]/div/div[2]/div/ul/li[1]/select/option[3]")
 	public static WebElement FirstProtectSponsorCustomize50;
 	
-	@FindBy(xpath="//*[@id=\"step1-form\"]/div[4]/div[2]/div[2]/div[2]/div[2]/div/div/div[1]/div[2]/div[4]/div/div[2]/div/ul/li[2]/select/option[3]")
+	@FindBy(xpath="//*[@id='step1-form']/div[4]/div[2]/div[3]/div[2]/div/div/div[1]/div[2]/div[4]/div/div[2]/div/ul/li[2]/select/option[3]")
 	public static WebElement FirstProtectSpouseCustomize50;
 	
-	@FindBy(xpath="//*[@id=\"step1-form\"]/div[4]/div[2]/div[2]/div[2]/div[2]/div/div/div[1]/div[2]/div[4]/div/div[2]/div/ul/li[1]/select/option[4]")
+	@FindBy(xpath="//*[@id='step1-form']/div[4]/div[2]/div[3]/div[2]/div/div/div[1]/div[2]/div[4]/div/div[2]/div/ul/li[1]/select/option[4]")
 	public static WebElement FirstProtectSponsorCustomize100;
 	
-	@FindBy(xpath="//*[@id=\"step1-form\"]/div[4]/div[2]/div[2]/div[2]/div[2]/div/div/div[1]/div[2]/div[4]/div/div[2]/div/ul/li[2]/select/option[4]")
+	@FindBy(xpath="//*[@id='step1-form']/div[4]/div[2]/div[3]/div[2]/div/div/div[1]/div[2]/div[4]/div/div[2]/div/ul/li[2]/select/option[4]")
 	public static WebElement FirstProtectSpouseCustomize100;
 	
 	@FindBy(xpath="//*[@id=\"step1-form\"]/div[4]/div[2]/div[2]/div[2]/div[2]/div/div/div[1]/div[2]/div[4]/div/div[2]/div/ul/li[3]/select/option[3]")
@@ -360,6 +360,7 @@ public class Remote {
 	
 	@FindBy(xpath="//*[@id=\"step1-form\"]/div[4]/div[2]/div[2]/div[2]/div[2]/div/div/div[1]/div[2]/div[4]/div/div[2]/div/ul/li[5]/select/option[3]")
 	public static WebElement FirstProtectAC3Customize50;
+	
 	
 	
 	@FindBy(xpath="//*[@id=\"step1-form\"]/div[4]/div[2]/div[2]/div[2]/div[2]/div/div/div[1]/div[2]/div[4]/div/div[2]/div/ul/li[1]/select/option[2]")
@@ -397,22 +398,22 @@ public class Remote {
 	
 	
 	
-	@FindBy(xpath = "//*[@id=\"step1-form\"]/div[4]/div[2]/div[2]/div[2]/div[2]/div/div/div[1]/div[2]/div[4]/div/div[2]/div/ul/li[1]/select/option[3]")
+	@FindBy(xpath = "//*[@id=\"step1-form\"]/div[4]/div[2]/div[3]/div[2]/div/div/div[1]/div[2]/div[4]/div/div[2]/div/ul/li[1]/select/option[3]")
 	public static WebElement BASponsorCustomize50;
 	
-	@FindBy(xpath = "//*[@id=\"step1-form\"]/div[4]/div[2]/div[2]/div[2]/div[2]/div/div/div[1]/div[2]/div[4]/div/div[2]/div/ul/li[1]/select/option[6]")
+	@FindBy(xpath = "//*[@id=\"step1-form\"]/div[4]/div[2]/div[3]/div[2]/div/div/div[1]/div[2]/div[4]/div/div[2]/div/ul/li[1]/select/option[6]")
 	public static WebElement BASponsorCustomize200;
 	
-	@FindBy(xpath = "//*[@id=\"step1-form\"]/div[4]/div[2]/div[2]/div[2]/div[2]/div/div/div[1]/div[2]/div[4]/div/div[2]/div/ul/li[1]/select/option[4]")
+	@FindBy(xpath = "//*[@id=\"step1-form\"]/div[4]/div[2]/div[3]/div[2]/div/div/div[1]/div[2]/div[4]/div/div[2]/div/ul/li[1]/select/option[4]")
 	public static WebElement BASponsorCustomize100;
 	
-	@FindBy(xpath = "//*[@id=\"step1-form\"]/div[4]/div[2]/div[2]/div[2]/div[2]/div/div/div[1]/div[2]/div[4]/div/div[2]/div/ul/li[1]/select/option[7]")
+	@FindBy(xpath = "//*[@id=\"step1-form\"]/div[4]/div[2]/div[3]/div[2]/div/div/div[1]/div[2]/div[4]/div/div[2]/div/ul/li[1]/select/option[7]")
 	public static WebElement BASponsorCustomize250;
 	
-	@FindBy(xpath = "//*[@id=\"step1-form\"]/div[4]/div[2]/div[2]/div[2]/div[2]/div/div/div[1]/div[2]/div[4]/div/div[2]/div/ul/li[1]/select/option[5]")
+	@FindBy(xpath = "//*[@id=\"step1-form\"]/div[4]/div[2]/div[3]/div[2]/div/div/div[1]/div[2]/div[4]/div/div[2]/div/ul/li[1]/select/option[5]")
 	public static WebElement BASponsorCustomize150;
 	
-	@FindBy(xpath = "//*[@id=\"step1-form\"]/div[4]/div[2]/div[2]/div[2]/div[2]/div/div/div[1]/div[2]/div[4]/div/div[2]/div/ul/li[2]/select/option[3]")
+	@FindBy(xpath = "//*[@id=\"step1-form\"]/div[4]/div[2]/div[3]/div[2]/div/div/div[1]/div[2]/div[4]/div/div[2]/div/ul/li[2]/select/option[3]")
 	public static WebElement BASpouseCustomize50;
 	
 	@FindBy(xpath="//a[@class='btn btn-block btn-sm btn-danger']")

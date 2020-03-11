@@ -42,7 +42,7 @@ public class EAppCallCenter4 extends TestBase {
 		  act.pause(1000).perform();
 		  EApp2.DOB.click();
 		  EApp2.DOB.sendKeys("09281970");
-	      EApp2.GenderforMale.click();
+	      EApp2.GenderforMale.click(); 
 	}
 
 	@Then("Click Include Children button to input Adult Child FirstName, LastName, DOB")

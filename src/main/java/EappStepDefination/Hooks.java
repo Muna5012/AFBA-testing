@@ -16,8 +16,8 @@ public class Hooks extends TestBase {
 //		@Before(order = 5)
 //		public void remotelogin() {
 //			RemoteLogIn();
-//			
 //		}
+		
 		
 		@Before(order = 2)
 		public void login() {

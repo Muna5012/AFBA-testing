@@ -68,6 +68,12 @@ public class EApp2 {
 	@FindBy(xpath = "/html/body/div[4]/div/div[2]/div/div[2]/div[1]/form/div/div/div[3]/limited-state-select/select/option[14]")
 	public static WebElement GU;
 	
+	@FindBy(xpath = "/html/body/div[4]/div/div[2]/div/div[2]/div[1]/form/div/div/div[3]/limited-state-select/select/option[39]")
+	public static WebElement OH;
+	
+	@FindBy(xpath="/html/body/div[4]/div/div[2]/div/div[2]/div[1]/form/div/div/div[3]/limited-state-select/select/option[49]")
+	public static WebElement UT;
+	
 	@FindBy(xpath = "//*[@id='add-to-census-modal']/div[2]/div/div[3]/div/button[2]")
 	public static WebElement NextBtn;
 	
@@ -136,6 +142,9 @@ public class EApp2 {
 	
 	@FindBy(xpath= "//*[@id='step1-form']/div[1]/div[4]/div/div[1]/div/div/select/option[7]")
 	public static WebElement GovernmentContractor ;
+	
+	@FindBy(xpath="//*[@id='step1-form']/div[1]/div[4]/div/div[1]/div[1]/div/select/option[3]")
+	public static WebElement FireDepartment;
 	
 	@FindBy(xpath= "//option[@value='Military']")
 	public static WebElement Eligibility ;
@@ -246,7 +255,6 @@ public class EApp2 {
 	public static WebElement ClickEnrollCase;
 	
 	
-	
 	@FindBy(xpath ="//input[@id='phone']")
 	public static WebElement Phone;
 	
@@ -268,21 +276,23 @@ public class EApp2 {
 	@FindBy(xpath="//*[contains(text(),' I waive enrollment in')]")
 	public static WebElement WaiveChildProtect;
 	
-	@FindBy(xpath="//*[@id='step1-form']/div[4]/div[2]/div[2]/div[3]/div[2]/div[1]/label[1]/span")
+	@FindBy(xpath="//*[@id='step1-form']/div[4]/div[2]/div[4]/div[2]/div[1]/label[1]/span")
 	public static WebElement YesForFirstQuestion;
 	
-	@FindBy(xpath="//*[@id='step1-form']/div[4]/div[2]/div[2]/div[3]/div[2]/div[2]/label[2]/span")
+	@FindBy(xpath="//*[@id='step1-form']/div[4]/div[2]/div[4]/div[2]/div[2]/label[2]/span")
 	public static WebElement NoForSecondQuestion;
+	
+	@FindBy(xpath="//*[@id='step1-form']/div[4]/div[2]/div[4]/div[2]/div[2]/label[1]/span")
+	public static WebElement YESForSecondQuestion;
 	
 	@FindBy(xpath="//*[@id=\"step1-form\"]/div[4]/div[2]/div[2]/div[2]/div[2]/div/div/div[1]/div[2]/div[4]/div/div[2]/div/ul/li[1]/select/option[2]")
 	public static WebElement NOBeneForSponsor;
 	
-	@FindBy(xpath="//*[@id=\"step1-form\"]/div[4]/div[2]/div[2]/div[2]/div[2]/div/div/div[1]/div[2]/div[4]/div/div[2]/div/ul/li[1]/select/option[2]")
+	@FindBy(xpath="//*[@id='step1-form']/div[4]/div[2]/div[3]/div[2]/div/div/div[1]/div[2]/div[4]/div/div[2]/div/ul/li[1]/select/option[2]")
 	public static WebElement NOBeneForFirstProtectSponsor;
 	
-	@FindBy(xpath="//*[@id=\"step1-form\"]/div[4]/div[2]/div[2]/div[2]/div[2]/div/div/div[1]/div[2]/div[4]/div/div[2]/div/ul/li[2]/select/option[2]")
+	@FindBy(xpath="//*[@id='step1-form']/div[4]/div[2]/div[3]/div[2]/div/div/div[1]/div[2]/div[4]/div/div[2]/div/ul/li[2]/select/option[2]")
 	public static WebElement NOBeneForFirstProtectSpouse;
-	
 	
 	
 	
@@ -314,16 +324,25 @@ public class EApp2 {
 	@FindBy(xpath = "//select[@class='emp-coverage']/option[3]")
 	public static WebElement CustomizeOption1;
 	
-	@FindBy(xpath = "//*[@id=\"step1-form\"]/div[4]/div[2]/div[2]/div[2]/div[2]/div/div/div[1]/div[2]/div[4]/div/div[2]/div/ul/li[1]/select/option[3]")
+	@FindBy(xpath = "//*[@id='step1-form']/div[4]/div[2]/div[2]/div[2]/div[2]/div/div/div[1]/div[2]/div[4]/div/div[2]/div/ul/li[1]/select/option[3]")
 	public static WebElement CustomizeOption;
 	
 	@FindBy(xpath = "//select[@class='emp-coverage']/option[6]")
 	public static WebElement CustomizeOption2;
 	
+	@FindBy(xpath="//*[@id='step1-form']/div[4]/div[2]/div[3]/div[2]/div/div/div[1]/div[2]/div[4]/div/div[2]/div/ul/li[1]/select/option[4]")
+	public static WebElement BASponsorCustomize100;
+	
+	@FindBy(xpath="//*[@id=\"step1-form\"]/div[4]/div[2]/div[3]/div[2]/div/div/div[1]/div[2]/div[4]/div/div[2]/div/ul/li[2]/select/option[4]")
+	public static WebElement BASpouseCustomize100;
+	
+	
+	
+	
 	@FindBy(xpath = "//*[@id='step1-form']/div[4]/div[2]/div[2]/div[2]/div[2]/div/div/div[1]/div[2]/div[4]/div/div[2]/div/ul/li[1]/select/option[4]")
 	public static WebElement CustomizeOption3;
 	
-	@FindBy(xpath = "//*[@id='step1-form']/div[4]/div[2]/div[2]/div[2]/div[2]/div/div/div[1]/div[2]/div[4]/div/div[2]/div/ul/li[2]/select/option[4]")
+	@FindBy(xpath = "//*[@id=\"step1-form\"]/div[4]/div[2]/div[3]/div[2]/div/div/div[1]/div[2]/div[4]/div/div[2]/div/ul/li[2]/select/option[4]")
 	public static WebElement CustomizeOption4;
 	
 	@FindBy(xpath = "//*[@id='step1-form']/div[4]/div[2]/div[2]/div[2]/div[2]/div/div/div[1]/div[2]/div[4]/div/div[2]/div/ul/li[3]/select/option[3]")
@@ -341,16 +360,16 @@ public class EApp2 {
 	@FindBy(xpath="//*[@id=\"step1-form\"]/div[4]/div[2]/div[2]/div[2]/div[2]/div/div/div[1]/div[2]/div[4]/div/div[2]/div/ul/li[2]/select/option[3]")
 	public static WebElement SponsorCustomize50;
 	
-	@FindBy(xpath="//*[@id='step1-form']/div[4]/div[2]/div[2]/div[2]/div[2]/div/div/div[3]/select")
+	@FindBy(xpath="//*[@id=\"step1-form\"]/div[4]/div[2]/div[3]/div[2]/div/div/div[3]/select")
 	public static WebElement ChildCoverageClick;
 	
-	@FindBy(xpath="//*[@id='step1-form']/div[4]/div[2]/div[2]/div[2]/div[2]/div/div/div[3]/select/option[6]")
+	@FindBy(xpath="//*[@id='step1-form']/div[4]/div[2]/div[3]/div[2]/div/div/div[3]/select/option[6]")
 	public static WebElement ChildrenCoverageOption5;
 	
 	@FindBy(xpath = "//*[@id='coverage-header-11']")
 	public static WebElement spouseCoverage;
 	
-	@FindBy(xpath = "//*[@id='step1-form']/div[4]/div[2]/div[2]/div[2]/div[2]/div/div/div[1]/div[1]/div/div[2]/div/ul/li/div/label[1]/span")
+	@FindBy(xpath = "//*[@id=\"step1-form\"]/div[4]/div[2]/div[3]/div[2]/div/div/div[1]/div[1]/div/div[2]/div/ul/li/div/label[1]/span")
 	public static WebElement Covered;
 	
 	@FindBy(xpath ="//*[@id='coverage-header-5']/span")
@@ -368,6 +387,25 @@ public class EApp2 {
 	@FindBy(xpath ="/html/body/div[2]/div[1]/div[2]/div/div/div[1]/div/div/div[2]/div/div[1]/div/div[1]/form/div[4]/div[2]/div[2]/div[2]/div[2]/div/div/div[1]/div[1]/div/div[2]/div/ul/li[4]/div/label[1]/span")
 	public static WebElement FedTermNonTobaccoforSecondKid;
 	
+	@FindBy(xpath="//*[@id='step1-form']/div[4]/div[2]/div[3]/div[2]/div/div/div[1]/div[2]/div[4]/div/div[2]/div/ul/li[1]/select/option[4]")
+	public static WebElement LT20SponsorCustomize100;
+	
+	@FindBy(xpath = "//*[@id='step1-form']/div[4]/div[2]/div[3]/div[2]/div/div/div[1]/div[2]/div[4]/div/div[2]/div/ul/li[2]/select/option[2]")
+	public static WebElement LT20NoBenefitforKid;
+	
+	@FindBy(xpath = "//*[@id='step1-form']/div[4]/div[2]/div[3]/div[2]/div/div/div[1]/div[2]/div[4]/div/div[2]/div/ul/li[2]/select/option[4]")
+	public static WebElement LT20NoBenefitforspouse;
+	
+	
+	@FindBy(xpath="//*[@id=\"step1-form\"]/div[4]/div[2]/div[3]/div[2]/div/div/div[1]/div[2]/div[4]/div/div[2]/div/ul/li[3]/select/option[2]")
+	public static WebElement LT20NoBenefitforAdultChild;
+	
+	@FindBy(xpath="/html/body/div[2]/div[1]/div[2]/div/div/div[1]/div/div/div[2]/div/div[1]/div/div[1]/form/div[4]/div[2]/div[3]/div[2]/div/div/div[1]/div[2]/div[4]/div/div[2]/div/ul/li[4]/select/option[2]")
+	public static WebElement LT20NoBenefitForSecondChild;
+	
+	
+	
+	
 	@FindBy(xpath ="//*[@id='step1-form']/div[4]/div[2]/div[2]/div[2]/div[2]/div/div/div[1]/div[2]/div[4]/div/div[2]/div/ul/li[1]/select/option[3]")
 	public static WebElement CustomizeOption5;
 	
@@ -376,6 +414,12 @@ public class EApp2 {
 	
 	@FindBy(xpath ="//*[@id='step1-form']/div[4]/div[2]/div[2]/div[2]/div[2]/div/div/div[1]/div[2]/div[4]/div/div[2]/div/ul/li[2]/select/option[4]")
 	public static WebElement CustomizeOptionSe1;
+	
+	@FindBy(xpath = "//*[@id=\"step1-form\"]/div[4]/div[2]/div[3]/div[2]/div/div/div[1]/div[2]/div[4]/div/div[2]/div/ul/li[1]/select/option[2]")
+	public static WebElement FirstProtectNoBenefitForSponse;
+	
+	@FindBy(xpath="//*[@id=\"step1-form\"]/div[4]/div[2]/div[3]/div[2]/div/div/div[1]/div[2]/div[4]/div/div[2]/div/ul/li[2]/select/option[4]")
+	public static WebElement FirstProtectKidCustomize100;
 	
 	@FindBy(xpath="//*[@id=\"step1-form\"]/div[4]/div[2]/div[2]/div[2]/div[2]/div/div/div[1]/div[2]/div[4]/div/div[2]/div/ul/li[3]/select/option[3]")
 	public static WebElement SelectFirstChildCustomize50;
@@ -413,10 +457,10 @@ public class EApp2 {
 	@FindBy(xpath ="//*[@id='step1-form']/div[4]/div[2]/div[2]/div[2]/div[2]/div/div/div[1]/div[2]/div[4]/div/div[2]/div/ul/li[2]/select/option[4]")
 	public static WebElement ClickFirstProtectSpouseCustomize;
 	
-	@FindBy(xpath ="//*[@id='step1-form']/div[4]/div[2]/div[2]/div[2]/div[2]/div/div/div[1]/div[2]/div[4]/div/div[2]/div/ul/li[3]/select/option[3]")
-	public static WebElement ClickFirstProtectKidCustomize;
+	@FindBy(xpath ="//*[@id='step1-form']/div[4]/div[2]/div[3]/div[2]/div/div/div[1]/div[2]/div[4]/div/div[2]/div/ul/li[3]/select/option[5]")
+	public static WebElement ClickFirstProtectFirstKidCustomize150;
 	
-	@FindBy(xpath ="//*[@id='step1-form']/div[4]/div[2]/div[2]/div[2]/div[2]/div/div/div[1]/div[2]/div[4]/div/div[2]/div/ul/li[2]/select/option[3]")
+	@FindBy(xpath ="//*[@id='step1-form']/div[4]/div[2]/div[3]/div[2]/div/div/div[1]/div[2]/div[4]/div/div[2]/div/ul/li[4]/select/option[3]")
 	public static WebElement ClickFirstProtectKid1Customize5;
 	
 	
@@ -455,6 +499,10 @@ public class EApp2 {
 	
 	@FindBy(xpath="//*[@id='step1-form']/div[4]/div[2]/div[2]/div[2]/div[2]/div/div/div[1]/div[1]/div/div[2]/div/ul/li[3]/div/label[1]/span")
 	public static WebElement CoveredForThrid;
+	
+	
+	
+	
 	
 	@FindBy(xpath = "//button[@class='btn btn-success btn-next']")
 	public static WebElement NextBtn1;
@@ -541,6 +589,9 @@ public class EApp2 {
 	
 	@FindBy (xpath = "//*[@id='step3-form']/div[2]/div[7]/div/input")
 	public static WebElement Weight;
+	
+	@FindBy(xpath="//*[@id='eeRankGrade']")
+	public static WebElement SponsorRank;
 	
 	@FindBy(xpath ="//div[@class='wizard-actions']/button[2]")
 	public static WebElement NextBtn3;
@@ -744,6 +795,25 @@ public class EApp2 {
 	
 	@FindBy(xpath = "//*[@name='eeContBeneOtherDOB0']")
 	public static WebElement ContingentBeneficiaryDOB;
+	
+	
+	@FindBy(xpath="/html/body/div[2]/div[1]/div[2]/div/div/div[1]/div/div/div[2]/div/div[1]/div/div[5]/form/div[1]/div[3]/div[1]/div/label[2]/span")
+	public static WebElement BASpouseSomeOneElse;
+	
+	@FindBy(xpath="/html/body/div[2]/div[1]/div[2]/div/div/div[1]/div/div/div[2]/div/div[1]/div/div[5]/form/div[1]/div[3]/div[2]/div[1]/div[1]/div/input")
+	public static WebElement BASpousePrimaryFullName;
+	
+	@FindBy(xpath="//input[@name='spBeneOtherSSN0']")
+	public static WebElement BASpousePrimarySSN;
+	
+	@FindBy(xpath="//*[@name='spBeneOtherRelation0']/option[12]")
+	public static WebElement BASpousePrimaryRelationship;
+	
+	@FindBy(xpath="//*[@name='spBeneOtherDOB0']")
+	public static WebElement BASpousePrimaryDOB;
+	
+	
+	
 	
 	@FindBy(xpath ="/html/body/div[2]/div[1]/div[2]/div/div/div[1]/div/div/div[2]/div/div[1]/div/div[5]/form/div[1]/div[4]/div[1]/div/label[3]/span")
 	public static WebElement SomeOneElseforSpouse;
@@ -1155,6 +1225,20 @@ public class EApp2 {
 	
 	@FindBy(xpath="//*[@name='eeBeneOtherDOB3']")
 	public static WebElement MemberBenfitPrimaryDOB;
+	
+	
+	
+	@FindBy(xpath="//input[@name='eeBeneOtherName2']")
+	public static WebElement GroupFreeSponsorBeneFL;
+	
+	@FindBy(xpath="//input[@name='eeBeneOtherSSN2']")
+	public static WebElement GroupFreeSponsorBeneSSN;
+	
+	@FindBy(xpath="//select[@name='eeBeneOtherRelation2']/option[20]")
+	public static WebElement GroupFreeSponsorBeneRelationship;
+	
+	@FindBy(xpath="//input[@name='eeBeneOtherDOB2']")
+	public static WebElement GroupFreeSponsorBeneDOB;
 	
 	
 	

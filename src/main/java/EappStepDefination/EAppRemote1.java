@@ -30,6 +30,8 @@ public class EAppRemote1 extends TestBase{
 	  act.pause(1000).perform();
 	  Remote.SSN.click();
 	  Remote.SSN.sendKeys("414000000");
+	  act.pause(2000).perform();
+	  Remote.NextBtn.click();
    // Remote.BeginEnrollment.click();
 	  Remote.ClickNewSponsor.click();
 	  act.pause(2000).perform();
@@ -378,7 +380,7 @@ public class EAppRemote1 extends TestBase{
 		act.pause(2000).perform();
 		Remote.SelectFirstEmail.click();
 	//	Remote.selectEmail.click();
-		act.pause(2000).perform();
+		act.pause(3000).perform();
 		Remote.ReviewApplicationBtn.click();
 		act.pause(2000).perform();
 		
