@@ -21,15 +21,15 @@ Scenario: EApp Application Better Alternative with Child Rider Group Free test, 
 	And Input second child first name, last name and DOB
 	Then Input Child three first name, last name and DOB 
 	
-	And Select Eligibility, Contribution Mode, BranchOfService, Duty Status and Rank
+	And Select Fire Department on Eligibility 
 	Then Input Department code and SourceCode 
 	Then Input Sponsor street1, street2, City, ST, Zip, Emails and contact numbers 
 	Then Click Show Coverage Options button to select benefitiary plans
 	
-	And Select Better Alternative Tobacco for sponsor
-	Then Select NonTobacco for Spouse 
-	And Select Option three and select coverage for childrens option
-	Then Click the Application Member Benefit option 
+	Then Select Application Member Benefit option Covered it, and select Yes or No questions
+	And Select FedTerm to customize sponsor and spouse
+	Then Select First Protect to customize only sponsor
+	
 	
 	
 	Then Click Answer No to All Questions buttons
@@ -40,25 +40,12 @@ Scenario: EApp Application Better Alternative with Child Rider Group Free test, 
 	And Select spouse height feet and Inches
 	Then Input spouse weight and Click Next button
 	
-	Then Select Someone else for BA Contingent Beneficiary of Sponsor Coverage 
-	And Input Sponsor Contingent Beneficiary full name
-	Then Input Sponsor Contingent Beneficiary SSN
-	And Select Sponsor Relationship for Contingent Beneficiary
-	Then Input Sponsor Contingent Beneficiary DOB
+	Then Select group free sponsor Contingent Beneficiary, full name, SSN, relationship, DOB
+	And Select Fed Term sponsor primary beneficiary full name, SSN, relationship and DOB
+	Then Select Fed Term Spouse primary beneficiary full name, SSN, relationship and DOB
+	And Select First Protect sponsor primary beneficiary full name, SSN, relationship and DOB
 	
-	And Select Someone else for BA Contingent Beneficiary of Spouse Coverage
-	Then Input Spouse Contingent Beneficiary full name
-	And Input Spouse Contingent Beneficiary SSN
-	Then Select Spouse Contingent Beneficiary DOB
-	
-	And Select Someone else for Primary Beneficiary for Application Member Benefit
-	Then Input Sponsor Primary Beneficiary full name
-	And Input Sponsor Primary Beneficiary SSN
-	Then Select Relationship for the Primary Beneficiary  
-	And Input Sponsor Primary Beneficiary DOB
-	Then Click Next button Confirm all the application
-	
-	And Select Location for Signing in person
+	And Select Location for Signing in person on next page
 	Then Click I agree to this coverage button to confirm 
 	Then Click Review Application Ducument Button to review 
 	Then Close Application document

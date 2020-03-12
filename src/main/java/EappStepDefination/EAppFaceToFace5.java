@@ -4,7 +4,9 @@ import org.openqa.selenium.Keys;
 
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import pages.EApp1;
 import pages.EApp2;
+import pages.EApp3;
 import utilities.TestBase;
 
 public class EAppFaceToFace5 extends TestBase {
@@ -138,19 +140,17 @@ public void input_Child_three_first_name_last_name_and_DOB() {
 }
 
 
-	@Then("Select Eligibility, Contribution Mode, BranchOfService, Duty Status and Rank")
-	public void select_Eligibility_Contribution_Mode_BranchOfService_Duty_Status_and_Rank() {
-		EApp2.Eligibility.click();
-	    EApp2.ContributionMode.click();
-	    EApp2.BranchOfService2.click();
-	    EApp2.DutyStatus2.click();
-	    EApp2.Rank7.click();
-	    act.pause(2000).perform();
+	@Then("Select Fire Department on Eligibility")
+	public void select_Fire_Department_on_Eligibility() {
+		EApp2.FireDepartment.click();
+		 act.pause(2000).perform();
+		 EApp2.ContributionMode.click();
+		 act.pause(1000).perform();
 	}
 
 	@Then("Input Department code and SourceCode")
 	public void input_Department_code_and_SourceCode() {
-		EApp2.DepartmentCode.sendKeys("AutoTest");
+		EApp2.DepartmentCode.sendKeys("AutomationTest");
 		EApp2.SourceCode.sendKeys("AT1");
 	}
 
@@ -178,12 +178,6 @@ public void input_Child_three_first_name_last_name_and_DOB() {
 		 EApp2.ShowCoverageOptions.click();
 		    act.pause(1000).perform();
 	}
-	
-	@Then("Select Better Alternative Tobacco for sponsor")
-	public void select_Better_Alternative_Tobacco_for_sponsor() {
-		 EApp2.Tobacco.click();
-		 act.pause(2000).perform();
-	}
 
 	@Then("Select NonTobacco for Spouse")
 	public void select_NonTobacco_for_Spouse() {
@@ -191,36 +185,38 @@ public void input_Child_three_first_name_last_name_and_DOB() {
 	  act.pause(2000).perform();
 	}
 
-	@Then("Select Option three and select coverage for childrens option")
-	public void select_Option_three_and_select_coverage_for_childrens_option() {
-	   EApp2.SponserCoverageOption3.click();
-	   act.pause(2000).perform();
-	   EApp2.ChildCoverageClick.click();
-	   EApp2.ChildrenCoverageOption5.click();
-	   act.pause(4000).perform();
-	   
+	@Then("Select Application Member Benefit option Covered it, and select Yes or No questions")
+	public void select_Application_Member_Benefit_option_Covered_it_and_select_Yes_or_No_questions() {
+		EApp2.spouseCoverage.click();
+		EApp2.Covered.click();
+		act.pause(3000).perform();	
+		EApp2.YesForFirstQuestion.click();
+		act.pause(1000).perform();
+		EApp2.YESForSecondQuestion.click();
+		act.pause(2000).perform();
+	}
+	
+	
+	@Then("Select FedTerm to customize sponsor and spouse")
+	public void select_FedTerm_to_customize_sponsor_and_spouse() {
+		EApp2.FedTerm.click();
+		EApp2.LT20SponsorCustomize100.click();
+		act.pause(2000).perform();
+		EApp2.LT20CutomizeSpouse100.click();
+		act.pause(1000).perform();
 	}
 
-	@Then("Click the Application Member Benefit option")
-	public void click_the_Application_Member_Benefit_option() {
-	   EApp2.spouseCoverage.click();
-	   act.pause(2000).click();
-	   EApp2.Covered.click();
-	   EApp2.FedTerm.click();
-	   EApp2.CustomizeOption5.click();
-	   act.pause(2000).perform();
-	   EApp2.CustomizeOptionSe1.click();
-	   act.pause(2000).perform();
-	 //  EApp2.WaiveFedTerm.click();
-	   EApp2.ClickFirstProtect.click();
-	   EApp2.CustomizeFirstOption150.click();
-	   EApp2.ClickFirstProtectSpouseCustomize.click();
-	 //  EApp2.WaiveFirstProtect.click();
-	   act.pause(2000).perform();
-	   EApp2.ChildrenProtectClick.click();
-	   EApp2.WaiveChildProtect.click();
-	   act.pause(2000).perform();
-	   EApp2.NextBtn1.click();
+	@Then("Select First Protect to customize only sponsor")
+	public void select_First_Protect_to_customize_only_sponsor() {
+		  EApp2.ClickFirstProtect.click();
+		   EApp2.CustomizeFirstOption150.click();
+		   EApp2.FirstProtectNobenefitForSpouse.click();
+		   act.pause(2000).perform();
+		   EApp2.ChildrenProtectClick.click();
+		   EApp2.WaiveChildProtect.click();
+		   act.pause(2000).perform();
+		   EApp2.NextBtn1.click();
+		    act.pause(2000).perform();
 	}
 
 	@Then("Click Answer No to All Questions buttons")
@@ -233,10 +229,13 @@ public void input_Child_three_first_name_last_name_and_DOB() {
 	@Then("Click Next button input Sponsor informations")
 	public void click_Next_button_input_Sponsor_informations() {
 		 EApp2.NextBtn2.click();
+		 act.pause(2000).perform();
 	}
 
 	@Then("Select Sponser height Feet and Inches option")
 	public void select_Sponser_height_Feet_and_Inches_option() {
+		EApp2.SponsorRank.sendKeys("E3");
+		act.pause(1000).perform();
 		EApp2.HeightOption6.click();
 	    EApp2.HeightInchesOption3.click();
 	    act.pause(2000).perform();
@@ -253,9 +252,8 @@ public void input_Child_three_first_name_last_name_and_DOB() {
 	@Then("Select Spouse gender")
 	public void select_Spouse_gender() {
 		EApp2.SpouseSSN.click();
-		EApp2.SpouseSSN.sendKeys("555555555");
-//		EApp2.SpouseSSN.sendKeys("545200044");
-//		EApp2.SpouseGenderMale.click();
+		EApp2.SpouseSSN.sendKeys("545200044");
+		EApp2.SpouseGenderMale.click();
 		act.pause(1000).perform();
 		
 	}
@@ -271,111 +269,68 @@ public void input_Child_three_first_name_last_name_and_DOB() {
 	public void input_spouse_weight_and_Click_Next_button() {
 	   EApp2.SpouseWeight.click();
 	   EApp2.SpouseWeight.sendKeys("142");
-	   act.pause(2000).perform();
-	   EApp2.SpouseSSN.sendKeys("545200044");
-	   act.pause(2000).perform();
-		EApp2.SpouseGenderMale.click();
 		 act.pause(2000).perform();
 	   EApp2.Next.click();
 	}
 	
-	@Then("Select Someone else for BA Contingent Beneficiary of Sponsor Coverage")
-	public void select_Someone_else_for_BA_Contingent_Beneficiary_of_Sponsor_Coverage() {
-	    EApp2.SomeoneElsee.click();
+	@Then("Select group free sponsor Contingent Beneficiary, full name, SSN, relationship, DOB")
+	public void select_group_free_sponsor_Contingent_Beneficiary_full_name_SSN_relationship_DOB() {
+		EApp1.SomeoneElse.click();
+		EApp1.ContingentBeneficiaryFullName.sendKeys("Leo Pugh");
+		EApp1.ContingentBeneficiarySSNnumber.click();
+		EApp1.ContingentBeneficiarySSNnumber.sendKeys("545200031");
+		act.pause(2000).perform();
+		EApp1.ContingentBeneficiaryRelationship.click();
+		EApp1.ContingentBeneficiaryDOB.click();
+		EApp1.ContingentBeneficiaryDOB.sendKeys("05221989");
+		act.pause(2000).perform();
 	}
 
-	@Then("Input Sponsor Contingent Beneficiary full name")
-	public void input_Sponsor_Contingent_Beneficiary_full_name() {
-	    EApp2.ContingentBeneficiaryFullName.sendKeys("Hyman Roth");
+	@Then("Select Fed Term sponsor primary beneficiary full name, SSN, relationship and DOB")
+	public void select_Fed_Term_sponsor_primary_beneficiary_full_name_SSN_relationship_and_DOB() {
+		   EApp3.FedTermSponsorPrmaryBenSOmeOneElse.click();
+		   EApp3.FedTermSponsorPrmaryBenFullName.sendKeys("Guy Best");
+		    EApp3.FedTermSponsorPrimaryBenfSSN.click();
+		    EApp3.FedTermSponsorPrimaryBenfSSN.sendKeys("545200090");
+		    EApp3.FedTermSponsorPrimaryBenRelationship2.click();
+		    EApp3.FedTermSponsorPrimaryBenfDOB.click();
+			EApp3.FedTermSponsorPrimaryBenfDOB.sendKeys("10151980");
 	}
 
-	@Then("Input Sponsor Contingent Beneficiary SSN")
-	public void input_Sponsor_Contingent_Beneficiary_SSN() {
-		EApp2.ContingentBeneficiarySSNnumber.click();
-		EApp2.ContingentBeneficiarySSNnumber.sendKeys("545200045");
-	}
+	@Then("Select Fed Term Spouse primary beneficiary full name, SSN, relationship and DOB")
+	public void select_Fed_Term_Spouse_primary_beneficiary_full_name_SSN_relationship_and_DOB() {
+	    EApp3.FedTermSpousePrimarySomeOneElse.click();
+	    EApp3.FedTermSpousePrimarytFN.sendKeys("Kurt Kobane");
+		EApp3.FedTermSpousePrimarytSSN.click();
+	    EApp3.FedTermSpousePrimarytSSN.sendKeys("545200047");
+	    act.pause(2000).perform();
+	    EApp3.FedTermSpousePrimaryRelationshipFather.click();
+		EApp3.FedtermSpousePrimaryDOB.click();
+		EApp3.FedtermSpousePrimaryDOB.sendKeys("02211967");
 
-	@Then("Select Sponsor Relationship for Contingent Beneficiary")
-	public void select_Sponsor_Relationship_for_Contingent_Beneficiary() {
-		 act.pause(2000).perform();
-	    EApp2.ContingentRelationshipForOther.click();
 	}
-
-	@Then("Input Sponsor Contingent Beneficiary DOB")
-	public void input_Sponsor_Contingent_Beneficiary_DOB() {
-		 act.pause(2000).perform();
-	    EApp2.ContingentBeneficiaryDOB.click();
-	    EApp2.ContingentBeneficiaryDOB.sendKeys("11011959");
-	}
-
-	@Then("Select Someone else for BA Contingent Beneficiary of Spouse Coverage")
-	public void select_Someone_else_for_BA_Contingent_Beneficiary_of_Spouse_Coverage() {
-		 act.pause(2000).perform();
-		EApp2.SomeOneElseforSpouse.click();
-	}
-
-	@Then("Input Spouse Contingent Beneficiary full name")
-	public void input_Spouse_Contingent_Beneficiary_full_name() {
-	    EApp2.SpouseContingentFN.sendKeys("Ma Barker");
-	}
-
-	@Then("Input Spouse Contingent Beneficiary SSN")
-	public void input_Spouse_Contingent_Beneficiary_SSN() {
-		  EApp2.SpouseContingentSSN.click();
-	   EApp2.SpouseContingentSSN.sendKeys("545200046");
-	   act.pause(2000).perform();
-	   EApp2.SpouseContingentRelationship.click();
-	}
-
-	@Then("Select Spouse Contingent Beneficiary DOB")
-	public void select_Spouse_Contingent_Beneficiary_DOB() {
-	    EApp2.spouseContingentDOB.click();
-	    EApp2.spouseContingentDOB.sendKeys("08281958");
-	    
-	}
-
-	@Then("Select Someone else for Primary Beneficiary for Application Member Benefit")
-	public void select_Someone_else_for_Primary_Beneficiary_for_Application_Member_Benefit() {
-		 act.pause(2000).perform();
-	    EApp2.SomeOneEleseForApp.click();
-	}
-
-	@Then("Input Sponsor Primary Beneficiary full name")
-	public void input_Sponsor_Primary_Beneficiary_full_name() {
-	   EApp2.SecondPrmaryBenFullName.sendKeys("Kurt Kobane");
-	}
-
-	@Then("Input Sponsor Primary Beneficiary SSN")
-	public void input_Sponsor_Primary_Beneficiary_SSN() {
-		EApp2.SecondPrimaryBenfSSN.click();
-	   EApp2.SecondPrimaryBenfSSN.sendKeys("545200047");
-	   act.pause(2000).perform();
-	}
-
-	@Then("Select Relationship for the Primary Beneficiary")
-	public void select_Relationship_for_the_Primary_Beneficiary() {
-	    EApp2.SecondPrimaryBenRelationship3.click();
-	}
-
-	@Then("Input Sponsor Primary Beneficiary DOB")
-	public void input_Sponsor_Primary_Beneficiary_DOB() {
-		EApp2.SecondPrimaryBenfDOB.click();
-		EApp2.SecondPrimaryBenfDOB.sendKeys("02211967");
-		 act.pause(2000).perform();
-	}
-
-	@Then("Click Next button Confirm all the application")
-	public void click_Next_button_Confirm_all_the_application() {
+	
+	@Then("Select First Protect sponsor primary beneficiary full name, SSN, relationship and DOB")
+	public void select_First_Protect_sponsor_primary_beneficiary_full_name_SSN_relationship_and_DOB() {
+		   EApp3.FirstprotectSponsorPrimarySomeOneElse.click();
+		    EApp3.FirstprotectSponsorPrimaryFL.sendKeys("Kurt Kobane");
+			EApp3.FirstprotectSponsorPrimarySSN.click();
+		    EApp3.FirstprotectSponsorPrimarySSN.sendKeys("545200047");
+		    act.pause(2000).perform();
+		    EApp3.FirstprotectSponsorPrimaryRelationship.click();
+			EApp3.FirstprotectSponsorPrimaryDOB.click();
+			EApp3.FirstprotectSponsorPrimaryDOB.sendKeys("02211967");
+		act.pause(2000).perform();
 	    EApp2.NextBtn6.click();
 	}
 	
-	@Then("Select Location for Signing in person")
-	public void select_Location_for_Signing_in_person() {
+	@Then("Select Location for Signing in person on next page")
+	public void select_Location_for_Signing_in_person_on_next_page() {
 		EApp2.EmailSummary2.click();
-		 act.pause(3000).perform();
+		act.pause(3000).perform();
 		EApp2.AcknowledgeofPayment.click();
-		   EApp2.SiginingInPerson.click();
-			  act.pause(2000).perform();
+		EApp2.SiginingInPerson.click();
+	    act.pause(2000).perform();
 	}
 
 	@Then("Click I agree to this coverage button to confirm")

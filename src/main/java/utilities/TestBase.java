@@ -52,8 +52,8 @@ public abstract class TestBase {
 	
 	protected static void MemberLogIn() {	
 		MemberLoginPage.MemberLoginBtn.click();
-		MemberLoginPage.UserName.sendKeys("rams.mallipeddi@gmail.com.eleanor");
-		MemberLoginPage.Password.sendKeys("Test12345");
+		MemberLoginPage.UserName.sendKeys("qapeep512@gmail.com");
+		MemberLoginPage.Password.sendKeys("Q85q2019");
 		MemberLoginPage.LoginBtn.click();
 		act.pause(3000).perform();
 	}

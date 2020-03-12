@@ -20,8 +20,8 @@ import cucumber.api.junit.Cucumber;
 		features = "EappFeatures"
 		,glue = "EappStepDefination",
 		dryRun = false,
-		tags = {"@NMASponsorSpouse"}
-		)
+		tags = {"@face5"}
+		)                  
 
 public class TestRunner {
 
