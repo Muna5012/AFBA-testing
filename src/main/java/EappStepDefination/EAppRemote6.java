@@ -136,23 +136,23 @@ public class EAppRemote6 extends TestBase {
 	
 	@Then("Coverage Options Waive enrollment in Better Alternative, Fed Term and Application Member Benefit")
 	public void coverage_Options_Waive_enrollment_in_Better_Alternative_Fed_Term_and_Application_Member_Benefit() {
-		  Remote.WaiveBA.click();
-		   act.pause(1000).perform();
-	     	Remote.FedTerm.click();
-	     	act.pause(1000).perform();
-		   Remote.WaiveFedTerm.click();
-		   act.pause(2000).perform();
+		 Remote.WaiveBA.click();
+		 act.pause(1000).perform();
+	     Remote.FedTerm.click();
+	     act.pause(1000).perform();
+		 Remote.WaiveFedTerm.click();
+		 act.pause(2000).perform();
 	}
 
 	@Then("Select Senior Protect Customize spouse")
 	public void select_Senior_Protect_Customize_spouse() {
 		Remote.SeniorProtect.click();
-		   act.pause(1000).perform();
-		   Remote.SeniorProtectoNLYSpouseCustomize25.click();
-		   act.pause(2000).perform();
-			  Remote.ApplicationMemberBenf.click();
-			   Remote.WaiveApplication.click();
-			   act.pause(2000).perform();
+		act.pause(1000).perform();
+		Remote.SeniorProtectoNLYSpouseCustomize25.click();
+		act.pause(2000).perform();
+	    Remote.ApplicationMemberBenf.click();
+		Remote.WaiveApplication.click();
+		act.pause(2000).perform();
 	}
 
 	@Then("First Protect No benefit for Sponsor and spouse Customize three adult children fifty thousand K")

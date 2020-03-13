@@ -257,7 +257,7 @@ public class EApp2 {
 	@FindBy(xpath="//*[@id='census-records-table_filter']/label/input")
 	public static WebElement SearchCase;
 	
-	@FindBy(xpath="//*[@id=\"census-records-table\"]/tbody/tr[1]/td[1]/button")
+	@FindBy(xpath="//*[@id='census-records-table']/tbody/tr[1]/td[1]/button")
 	public static WebElement ClickEnrollCase;
 	
 	
@@ -301,8 +301,7 @@ public class EApp2 {
 	public static WebElement NOBeneForFirstProtectSpouse;
 	
 	
-	
-	
+
 	@FindBy(xpath="//*[contains(text(),'Show Coverage Options')]")
 	public static WebElement ShowCoverageOptions;
 	

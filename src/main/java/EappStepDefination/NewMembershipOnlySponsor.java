@@ -37,7 +37,7 @@ public class NewMembershipOnlySponsor extends TestBase {
 		act.pause(1000).perform();
 		EApp2.NextBtn.click();
 		EApp2.SSN.click();
-		EApp2.SSN.sendKeys("545200088");
+		EApp2.SSN.sendKeys("512000010");
 		act.pause(1000).perform();
 		EApp2.NextBtn.click();
 		act.pause(2000).perform();
@@ -45,7 +45,7 @@ public class NewMembershipOnlySponsor extends TestBase {
 	
 	@Then("Click Begin Enrollment button to start new case")
 	public void click_Begin_Enrollment_button_to_start_new_case() {
-	   // EApp2.BeginEnrollment.click();
+	    EApp2.BeginEnrollment.click();
 	   EApp2.ClickNewSponsor.click();
 	}
 
@@ -127,8 +127,9 @@ public class NewMembershipOnlySponsor extends TestBase {
 	public void select_Covered_Application_Member_Benefit_five_thousand_K() {
 		  EApp2.spouseCoverage.click();
 		  EApp2.Covered.click();
-		  EApp2.YesForFirstQuestion.click();
 		  act.pause(1000).perform();
+		  EApp2.YesForFirstQuestion.click();
+		  act.pause(2000).perform();
 		  EApp2.NoForSecondQuestion.click();
 		  act.pause(2000).perform();
 		  EApp2.NextBtn1.click();
@@ -145,7 +146,7 @@ public class NewMembershipOnlySponsor extends TestBase {
 	public void select_Primary_Beneficiaries_for_Application_Member_Benefit_five_thousand_K() {
 		  EApp2.PrimaryBenficiaryFullName.sendKeys("Lucy Ball");
 		  EApp2.PrimaryBeneficiarySSN.click();
-		  EApp2.PrimaryBeneficiarySSN.sendKeys("545200089");
+		  EApp2.PrimaryBeneficiarySSN.sendKeys("512000011");
 		  EApp2.PrimaryRelationship.click();
 		  EApp2.PrimaryBeneficiaryDOB.click();
 		  EApp2.PrimaryBeneficiaryDOB.sendKeys("10101980");
@@ -159,7 +160,7 @@ public class NewMembershipOnlySponsor extends TestBase {
 	    act.pause(1000).perform();
 	    EApp2.ContingentBeneficiaryFullName.sendKeys("Guy Best");
 	    EApp2.ContingentBeneficiarySSNnumber.click();
-	    EApp2.ContingentBeneficiarySSNnumber.sendKeys("545200090");
+	    EApp2.ContingentBeneficiarySSNnumber.sendKeys("512000012");
 	    EApp2.ContingentRelationship.click();
 	    EApp2.ContingentBeneficiaryDOB.click();
 		EApp2.ContingentBeneficiaryDOB.sendKeys("10151980");
@@ -201,7 +202,7 @@ public class NewMembershipOnlySponsor extends TestBase {
 		 act.pause(2000).perform();
 		 EApp2.SponsorLastSSN.clear();
 		 EApp2.SponsorLastSSN.click();
-		 EApp2.SponsorLastSSN.sendKeys("0088");
+		 EApp2.SponsorLastSSN.sendKeys("0010");
 	}
 
 	

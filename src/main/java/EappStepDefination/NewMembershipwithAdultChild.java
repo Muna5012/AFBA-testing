@@ -24,7 +24,7 @@ public class NewMembershipwithAdultChild extends TestBase {
 		act.pause(2000).perform();
 		EApp2.SSN.click();
 		act.pause(1000).perform();
-		EApp2.SSN.sendKeys("545200100");
+		EApp2.SSN.sendKeys("512000013");
 		EApp2.EnrollmentCity.clear();
 		EApp2.EnrollmentCity.sendKeys("MIAMISBURG");
 		act.pause(2000).perform();
@@ -35,7 +35,7 @@ public class NewMembershipwithAdultChild extends TestBase {
 
 	@Then("click Begin Enrollment and Input Sponsor FirstName, LastName, Gender and DOB")
 	public void click_Begin_Enrollment_and_Input_Sponsor_FirstName_LastName_Gender_and_DOB() {
-	    //  EApp2.BeginEnrollment.click();
+	   //   EApp2.BeginEnrollment.click();
 	    EApp2.ClickNewSponsor.click();
 		  EApp2.FirstName.sendKeys("Beths");
 		  EApp2.LastName.sendKeys("Abney");
@@ -141,7 +141,7 @@ public class NewMembershipwithAdultChild extends TestBase {
 	@Then("Input adult child SSN, Gender, Height, Weight and Relationship")
 	public void input_adult_child_SSN_Gender_Height_Weight_and_Relationship() {
 		EApp2.ChildOneSSN.click();
-		EApp2.ChildOneSSN.sendKeys("545200101");
+		EApp2.ChildOneSSN.sendKeys("512000014");
 		EApp2.ChildOneGenderMale.click();
 		EApp2.ChildOneHeight6Feet.click();
 		EApp2.ChildOneHeight0Inches.click();
@@ -186,7 +186,7 @@ public class NewMembershipwithAdultChild extends TestBase {
 		act.pause(1000).perform();
 		EApp2.PrimaryBenficiaryFullName.sendKeys("Acka Franck");
 		EApp2.PrimaryBeneficiarySSN.click();
-	    EApp2.PrimaryBeneficiarySSN.sendKeys("545200103");
+	    EApp2.PrimaryBeneficiarySSN.sendKeys("512000015");
 	    EApp2.PrimaryBeneficiaryRelationship2.click();
 	    EApp2.PrimaryBeneficiaryDOB.click();
 		EApp2.PrimaryBeneficiaryDOB.sendKeys("11281949");
@@ -206,7 +206,7 @@ public class NewMembershipwithAdultChild extends TestBase {
 		EApp2.SomeOneElseForFirstProtect.click();
 		EApp2.FirstProtectPrimaryFirstKidFN.sendKeys("Amy Adams");
 		EApp2.FirstProtectPrimaryFirstKidSSN.click();
-		EApp2.FirstProtectPrimaryFirstKidSSN.sendKeys("545200105");
+		EApp2.FirstProtectPrimaryFirstKidSSN.sendKeys("512000016");
 		EApp2.FirstProtecPrimaryFirstKidRelationship.click();
 		EApp2.FirstProtecPrimaryFirstKidDOB.click();
 		EApp2.FirstProtecPrimaryFirstKidDOB.sendKeys("11151963");
@@ -217,7 +217,7 @@ public class NewMembershipwithAdultChild extends TestBase {
 	public void input_sponsor_Primary_Beneficiary_full_name_SSN_relationship_DOB() {
 		EApp2.GroupFreeSponsorBeneFL.sendKeys("Nina Adams");
 		EApp2.GroupFreeSponsorBeneSSN.click();
-		EApp2.GroupFreeSponsorBeneSSN.sendKeys("545200106");
+		EApp2.GroupFreeSponsorBeneSSN.sendKeys("512000017");
 		EApp2.GroupFreeSponsorBeneRelationship.click();
 		EApp2.GroupFreeSponsorBeneDOB.click();
 		EApp2.GroupFreeSponsorBeneDOB.sendKeys("11151993");
