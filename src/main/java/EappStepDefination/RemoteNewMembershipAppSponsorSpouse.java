@@ -32,7 +32,8 @@ public class RemoteNewMembershipAppSponsorSpouse extends TestBase{
 	  Remote.SSN.sendKeys("656000028");
 	  act.pause(2000).perform();
 	  Remote.NextBtn.click();
-  //    Remote.BeginEnrollment.click();
+	  act.pause(2000).perform();
+ //     Remote.BeginEnrollment.click();
 	  Remote.ClickNewSponsor.click();
 	  act.pause(2000).perform();
 	}
@@ -147,7 +148,9 @@ public class RemoteNewMembershipAppSponsorSpouse extends TestBase{
 	@Then("Select group free to Covered and select Yes or no buttons")
 	public void select_group_free_to_Covered_and_select_Yes_or_no_buttons() {
 		Remote.ApplicationMemberBenf.click();
+		act.pause(2000).perform();	 
 		  EApp2.Covered.click();
+		  act.pause(1000).perform();	 
 		  EApp2.YesForFirstQuestion.click();
 		  act.pause(1000).perform();
 		  EApp2.NoForSecondQuestion.click();

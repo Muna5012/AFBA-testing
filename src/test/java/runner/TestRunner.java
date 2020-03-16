@@ -20,7 +20,7 @@ import cucumber.api.junit.Cucumber;
 		features = "EappFeatures"
 		,glue = "EappStepDefination",
 		dryRun = false,
-		tags = {"@NMSAdultChild"}
+		tags = {"@Remote5"}
 		)                  
 
 public class TestRunner {

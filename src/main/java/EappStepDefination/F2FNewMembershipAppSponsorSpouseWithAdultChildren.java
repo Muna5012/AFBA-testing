@@ -61,15 +61,15 @@ public class F2FNewMembershipAppSponsorSpouseWithAdultChildren extends TestBase 
 	  act.pause(2000).perform();
 	  EApp2.SSN.clear();
 	  EApp2.SSN.click();
-	  EApp2.SSN.sendKeys("545200043");
+	  EApp2.SSN.sendKeys("656000040");
 	  EApp2.NextBtn.click();
 	  act.pause(2000).perform();
 	}
 
 	@Then("Select Begin Enrollement button")
 	public void select_Begin_Enrollement_button() {
-	  EApp2.ClickNewSponsor.click();
-	 // EApp2.BeginEnrollment.click();
+	//  EApp2.ClickNewSponsor.click();
+	  EApp2.BeginEnrollment.click();
 	}
 
 	@Then("Input Sponsor first Name, last Name and DOB")
@@ -252,7 +252,7 @@ public void input_Child_three_first_name_last_name_and_DOB() {
 	@Then("Select Spouse gender")
 	public void select_Spouse_gender() {
 		EApp2.SpouseSSN.click();
-		EApp2.SpouseSSN.sendKeys("545200044");
+		EApp2.SpouseSSN.sendKeys("656000041");
 		EApp2.SpouseGenderMale.click();
 		act.pause(1000).perform();
 		
@@ -278,7 +278,7 @@ public void input_Child_three_first_name_last_name_and_DOB() {
 		EApp1.SomeoneElse.click();
 		EApp1.ContingentBeneficiaryFullName.sendKeys("Leo Pugh");
 		EApp1.ContingentBeneficiarySSNnumber.click();
-		EApp1.ContingentBeneficiarySSNnumber.sendKeys("545200031");
+		EApp1.ContingentBeneficiarySSNnumber.sendKeys("656000042");
 		act.pause(2000).perform();
 		EApp1.ContingentBeneficiaryRelationship.click();
 		EApp1.ContingentBeneficiaryDOB.click();
@@ -291,7 +291,7 @@ public void input_Child_three_first_name_last_name_and_DOB() {
 		   EApp3.FedTermSponsorPrmaryBenSOmeOneElse.click();
 		   EApp3.FedTermSponsorPrmaryBenFullName.sendKeys("Guy Best");
 		    EApp3.FedTermSponsorPrimaryBenfSSN.click();
-		    EApp3.FedTermSponsorPrimaryBenfSSN.sendKeys("545200090");
+		    EApp3.FedTermSponsorPrimaryBenfSSN.sendKeys("656000043");
 		    EApp3.FedTermSponsorPrimaryBenRelationship2.click();
 		    EApp3.FedTermSponsorPrimaryBenfDOB.click();
 			EApp3.FedTermSponsorPrimaryBenfDOB.sendKeys("10151980");
@@ -300,26 +300,26 @@ public void input_Child_three_first_name_last_name_and_DOB() {
 	@Then("Select Fed Term Spouse primary beneficiary full name, SSN, relationship and DOB")
 	public void select_Fed_Term_Spouse_primary_beneficiary_full_name_SSN_relationship_and_DOB() {
 	    EApp3.FedTermSpousePrimarySomeOneElse.click();
-	    EApp3.FedTermSpousePrimarytFN.sendKeys("Kurt Kobane");
+	    EApp3.FedTermSpousePrimarytFN.sendKeys("Kim Kobe");
 		EApp3.FedTermSpousePrimarytSSN.click();
-	    EApp3.FedTermSpousePrimarytSSN.sendKeys("545200047");
+	    EApp3.FedTermSpousePrimarytSSN.sendKeys("656000044");
 	    act.pause(2000).perform();
 	    EApp3.FedTermSpousePrimaryRelationshipFather.click();
 		EApp3.FedtermSpousePrimaryDOB.click();
-		EApp3.FedtermSpousePrimaryDOB.sendKeys("02211967");
+		EApp3.FedtermSpousePrimaryDOB.sendKeys("02211975");
 
 	}
 	
 	@Then("Select First Protect sponsor primary beneficiary full name, SSN, relationship and DOB")
 	public void select_First_Protect_sponsor_primary_beneficiary_full_name_SSN_relationship_and_DOB() {
-		   EApp3.FirstprotectSponsorPrimarySomeOneElse.click();
-		    EApp3.FirstprotectSponsorPrimaryFL.sendKeys("Kurt Kobane");
-			EApp3.FirstprotectSponsorPrimarySSN.click();
-		    EApp3.FirstprotectSponsorPrimarySSN.sendKeys("545200047");
+		   EApp3.FirstprotectSponsorPrimarySOE.click();
+		    EApp3.FirstprotectSponsorPrimaryFL2.sendKeys("Kurt Kobane");
+			EApp3.FirstprotectSponsorPrimarySSN2.click();
+		    EApp3.FirstprotectSponsorPrimarySSN2.sendKeys("656000045");
 		    act.pause(2000).perform();
-		    EApp3.FirstprotectSponsorPrimaryRelationship.click();
-			EApp3.FirstprotectSponsorPrimaryDOB.click();
-			EApp3.FirstprotectSponsorPrimaryDOB.sendKeys("02211967");
+		    EApp3.FirstprotectSponsorPrimaryRelationship2.click();
+			EApp3.FirstprotectSponsorPrimaryDOB2.click();
+			EApp3.FirstprotectSponsorPrimaryDOB2.sendKeys("02211967");
 		act.pause(2000).perform();
 	    EApp2.NextBtn6.click();
 	}
@@ -368,7 +368,7 @@ public void input_Child_three_first_name_last_name_and_DOB() {
 		act.pause(2000).perform();
 		EApp2.SponsorLastSSN.clear();
 	   EApp2.SponsorLastSSN.click();
-	   EApp2.SponsorLastSSN.sendKeys("0043");
+	   EApp2.SponsorLastSSN.sendKeys("0040");
 	}
 
 	@Then("Select Paper Option radio button")

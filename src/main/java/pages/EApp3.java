@@ -480,20 +480,38 @@ public class EApp3 {
 	public static WebElement SeniorProtectPrimaryDOB;
 	
 	
-	@FindBy(xpath="/html/body/div[2]/div[1]/div[2]/div/div/div[1]/div/div/div[2]/div/div[1]/div/div[5]/form/div[3]/div[1]/div[1]/div/label[2]/span")
+	@FindBy(xpath="/html/body/div[2]/div[1]/div[2]/div/div/div[1]/div/div/div[2]/div/div[1]/div/div[5]/form/div[4]/div[1]/div[1]/div/label[2]/span")
 	public static WebElement FirstprotectSponsorPrimarySomeOneElse;
 	
-	@FindBy(xpath="//input[@name='eeBeneOtherName2']")
+	@FindBy(xpath="/html/body/div[2]/div[1]/div[2]/div/div/div[1]/div/div/div[2]/div/div[1]/div/div[5]/form/div[3]/div[1]/div[1]/div/label[2]/span")
+	public static WebElement FirstprotectSponsorPrimarySOE;
+	
+	@FindBy(xpath="//input[@name='eeBeneOtherName3']")
 	public static WebElement FirstprotectSponsorPrimaryFL;
 	
-	@FindBy(xpath="//input[@name='eeBeneOtherSSN2']")
+	@FindBy(xpath="//input[@name='eeBeneOtherSSN3']")
 	public static WebElement FirstprotectSponsorPrimarySSN;
 	
-	@FindBy(xpath="//*[@name='eeBeneOtherRelation2']/option[20]")
+	@FindBy(xpath="//*[@name='eeBeneOtherRelation3']/option[20]")
 	public static WebElement FirstprotectSponsorPrimaryRelationship;
 	
-	@FindBy(xpath="//*[@name='eeBeneOtherDOB2']")
+	@FindBy(xpath="//*[@name='eeBeneOtherDOB3']")
 	public static WebElement FirstprotectSponsorPrimaryDOB;
+	
+	
+	
+	
+	@FindBy(xpath="//input[@name='eeBeneOtherName2']")
+	public static WebElement FirstprotectSponsorPrimaryFL2;
+	
+	@FindBy(xpath="//input[@name='eeBeneOtherSSN2']")
+	public static WebElement FirstprotectSponsorPrimarySSN2;
+	
+	@FindBy(xpath="//*[@name='eeBeneOtherRelation2']/option[20]")
+	public static WebElement FirstprotectSponsorPrimaryRelationship2;
+	
+	@FindBy(xpath="//*[@name='eeBeneOtherDOB2']")
+	public static WebElement FirstprotectSponsorPrimaryDOB2;
 	
 	
 	

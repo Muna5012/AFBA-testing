@@ -39,7 +39,7 @@ Then First Protect Adult Child Pia Primary Beneficiary FullName, SSN, Relationsh
 And First Protect Adult Child Pia Contingent Beneficiary FullName, SSN, Relationship and DOB
 Then Child Protect Minor Child Roman Primary Beneficiary FullName, SSN, Relationship and DOB
 And Child Protect Minor Child Steve Primary Beneficiary FullName, SSN, Relationship and DOB
-Then Child Protect Minor Child Travis Primary Beneficiary FullName, SSN, Relationship and DOB
+#Then Child Protect Minor Child Travis Primary Beneficiary FullName, SSN, Relationship and DOB
 
 Then Select Email Summary input Email Address for Confirmation
 And Click Military Allotment Method of Payment option

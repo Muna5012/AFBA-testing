@@ -1,6 +1,6 @@
 @Remote1
-Feature: Member LT12, Better Alternative, LT121. All policies for each Applicant have Primary and Contingent Beneficiaries include DOB. Select Payment Military Allotment test feature 
-Scenario: Member LT12, Better Alternative, LT121. All policies for each Applicant have Primary and Contingent Beneficiaries include DOB. Select Payment Military Allotment test scanario
+Feature: New Membership Application/LT20 Sponsor and spouse select BA. LT20, Group Free product to customize. All policies for each Applicant have Primary and Contingent Beneficiaries include DOB. Select Payment Military Allotment test feature 
+Scenario: New Membership Application/LT20 Sponsor and spouse select BA. LT20, Group Free product to customize. All policies for each Applicant have Primary and Contingent Beneficiaries include DOB. Select Payment Military Allotment test feature test scanario
 
 When Input Sponsor SSN, Enrollment City and Enrollment State 
 And click Next and click Begin Enrollment Btn

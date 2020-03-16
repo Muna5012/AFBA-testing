@@ -34,7 +34,7 @@ public class F2FNewMembershipAppSponsorSpouseTest extends TestBase{
 	public void input_Sponsor_SSN_numbers() {
 	act.pause(1000).perform();
 	EApp2.SSN.click();
-	 EApp2.SSN.sendKeys("545200048");
+	 EApp2.SSN.sendKeys("656000033");
 	}
 
 	@Then("Input Enrollment city")
@@ -53,8 +53,8 @@ public class F2FNewMembershipAppSponsorSpouseTest extends TestBase{
 
 	@Then("click Begin Enrollement button to create new sponsor")
 	public void click_Begin_Enrollement_button_to_create_new_sponsor() {
-	   //EApp2.BeginEnrollment.click();
-   	   EApp2.ClickNewSponsor.click();
+	 //  EApp2.BeginEnrollment.click();
+   	 EApp2.ClickNewSponsor.click();
 	}
 
 	@Then("Input Sponsor First Name, Last Name and DOB")
@@ -189,7 +189,7 @@ public class F2FNewMembershipAppSponsorSpouseTest extends TestBase{
 	@Then("Input spouse information SSN, gender, height and weight")
 	public void input_spouse_information_SSN_gender_height_and_weight() {
 		EApp2.SpouseSSN.click();
-		EApp2.SpouseSSN.sendKeys("545200049");
+		EApp2.SpouseSSN.sendKeys("656000034");
 		EApp2.SpouseGenderFamale.click();
 		act.pause(1000).perform();
 		 EApp2.SpouseHeigthFeet.click();
@@ -208,7 +208,7 @@ public class F2FNewMembershipAppSponsorSpouseTest extends TestBase{
 		 act.pause(1000).perform();
 	    EApp2.PrimaryBenficiaryFullName.sendKeys("George Jetson");
 	    EApp2.PrimaryBeneficiarySSN.click();
-	    EApp2.PrimaryBeneficiarySSN.sendKeys("545200050");
+	    EApp2.PrimaryBeneficiarySSN.sendKeys("656000035");
 	    EApp2.PrimaryRelationshipForFIL.click();
 	    EApp2.PrimaryBeneficiaryDOB.click();
 	    EApp2.PrimaryBeneficiaryDOB.sendKeys("04101942");
@@ -221,7 +221,7 @@ public class F2FNewMembershipAppSponsorSpouseTest extends TestBase{
 		 act.pause(1000).perform();
 	    EApp2.SpousePrimarytFN.sendKeys("Bette Hawkins");
 	    EApp2.SpousePrimarytSSN.click();
-	    EApp2.SpousePrimarytSSN.sendKeys("545200051");
+	    EApp2.SpousePrimarytSSN.sendKeys("656000036");
 	    EApp2.SpousePrimaryRelationship.click();
 	    EApp2.SpousePrimaryDOB.click();
 	    EApp2.SpousePrimaryDOB.sendKeys("12111937");
@@ -280,7 +280,7 @@ public class F2FNewMembershipAppSponsorSpouseTest extends TestBase{
 		act.pause(2000).perform();
 		EApp2.SponsorLastSSN.clear();
 	   EApp2.SponsorLastSSN.click();
-	   EApp2.SponsorLastSSN.sendKeys("0048");
+	   EApp2.SponsorLastSSN.sendKeys("0033");
 	}
 
 	@Then("Select Paper Option for receive the documents")

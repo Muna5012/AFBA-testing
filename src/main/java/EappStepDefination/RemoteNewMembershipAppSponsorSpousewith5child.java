@@ -27,8 +27,8 @@ public void click_New_Enrollment_button_input_Sponsor_SSN_Enrollment_city_and_En
 public void select_Begin_Enrollment_button_to_create_case() {
 	Remote.NextBtn.click();
 	act.pause(1000).perform();
-    Remote.BeginEnrollment.click();
-	//Remote.ClickNewSponsor.click();
+  //  Remote.BeginEnrollment.click();
+	Remote.ClickNewSponsor.click();
 	act.pause(2000).perform();
 }
 
@@ -36,8 +36,8 @@ public void select_Begin_Enrollment_button_to_create_case() {
 public void input_Sponsor_firstName_lastName_gender_and_DOB() {
 	Remote.FirstName.sendKeys("Carl");
     Remote.LastName.sendKeys("Jackson");
-    Remote.DOB.click();
     act.pause(1000).perform();
+    Remote.DOB.click();
     Remote.DOB.sendKeys("03171964");
     Remote.GenderMale.click();   
     act.pause(2000).perform();
@@ -514,32 +514,38 @@ public void first_Protect_Adult_Child_Pia_Primary_Beneficiary_FullName_SSN_Relat
 public void first_Protect_Adult_Child_Pia_Contingent_Beneficiary_FullName_SSN_Relationship_and_DOB() {
     Remote.AC3FirstProtectContingentSomeOneElse.click();
     Remote.AC3FirstProtectContingentFN.sendKeys("Arena Stage");
+    act.pause(2000).perform();
     Remote.AC3FirstProtectContingentSSN.click();
     Remote.AC3FirstProtectContingentSSN.sendKeys("656000023");
+    act.pause(2000).perform();
     Remote.AC3FirstProtectContingentRelationshipBrother.click();
     Remote.AC3FirstProtectContingentDOB.click();
     Remote.AC3FirstProtectContingentDOB.sendKeys("07041850");
+    act.pause(2000).perform();
     Remote.AC2FirstProtectContingentDOBVarify.click();
     act.pause(1000).perform();
     Remote.AC3FirstProtectContingentDOB.clear();
     Remote.AC3FirstProtectContingentDOB.click();
     Remote.AC3FirstProtectContingentDOB.sendKeys("07041950");
-    act.pause(1000).perform();
+    act.pause(2000).perform();
 }
 
 @Then("Child Protect Minor Child Roman Primary Beneficiary FullName, SSN, Relationship and DOB")
 public void child_Protect_Minor_Child_Roman_Primary_Beneficiary_FullName_SSN_Relationship_and_DOB() {
-   Remote.MC1ChildProtectPrimarySomeoneElse.click();
+	 act.pause(2000).perform();
+	Remote.MC1ChildProtectPrimarySomeoneElse.click();
    Remote.MC1ChildProtectPrimaryFN.sendKeys("Ariana Grande");
+   act.pause(2000).perform();
    Remote.MC1ChildProtectPrimarySSN.click();
    Remote.MC1ChildProtectPrimarySSN.sendKeys("656000024");
    Remote.MC1ChildProtectPrimaryRelationshiGirlFriend.click();
+   act.pause(2000).perform();
    Remote.MC1ChildProtectPrimaryDOB.click();
-   Remote.MC1ChildProtectPrimaryDOB.sendKeys("06221892");
-   Remote.MC1ChildProtectContingentDOBVarify.click();
+ //  Remote.MC1ChildProtectPrimaryDOB.sendKeys("06221892");
+ //  Remote.MC1ChildProtectContingentDOBVarify.click();
    act.pause(1000).perform();
-   Remote.MC1ChildProtectPrimaryDOB.clear();
-   Remote.MC1ChildProtectPrimaryDOB.click();
+ //  Remote.MC1ChildProtectPrimaryDOB.clear();
+ //  Remote.MC1ChildProtectPrimaryDOB.click();
    Remote.MC1ChildProtectPrimaryDOB.sendKeys("06221992");
    act.pause(1000).perform();
 }
@@ -552,36 +558,39 @@ public void child_Protect_Minor_Child_Steve_Primary_Beneficiary_FullName_SSN_Rel
    Remote.MC2ChildProtectPrimarySSN.sendKeys("656000025");
    Remote.MC2ChildProtectPrimaryRelationshipFiance.click();
    Remote.MC2ChildProtectPrimaryDOB.click();
-   Remote.MC2ChildProtectPrimaryDOB.sendKeys("12121891");
-   Remote.MC2ChildProtectContingentDOBVarify.click();
+ //  Remote.MC2ChildProtectPrimaryDOB.sendKeys("12121891");
+ //  Remote.MC2ChildProtectContingentDOBVarify.click();
    act.pause(1000).perform();
-   Remote.MC2ChildProtectPrimaryDOB.clear();
-   Remote.MC2ChildProtectPrimaryDOB.click();
+//   Remote.MC2ChildProtectPrimaryDOB.clear();
+//   Remote.MC2ChildProtectPrimaryDOB.click();
    Remote.MC2ChildProtectPrimaryDOB.sendKeys("12121991");
    act.pause(1000).perform();
 }
 
-@Then("Child Protect Minor Child Travis Primary Beneficiary FullName, SSN, Relationship and DOB")
-public void child_Protect_Minor_Child_Travis_Primary_Beneficiary_FullName_SSN_Relationship_and_DOB() {
-   Remote.MC3ChildProtectPrimarySomeoneElse.click();
-   Remote.MC3ChildProtectPrimaryFN.sendKeys("Camila Cabello");
-   Remote.MC3ChildProtectPrimarySSN.click();
-   Remote.MC3ChildProtectPrimarySSN.sendKeys("656000026");
-   Remote.MC3ChildProtectPrimaryRelationshipFiance.click();
-   Remote.MC3ChildProtectPrimaryDOB.click();
-   Remote.MC3ChildProtectPrimaryDOB.sendKeys("11151896");
-   Remote.MC3ChildProtectContingentDOBVarify.click();
-   act.pause(1000).perform();
-   Remote.MC3ChildProtectPrimaryDOB.clear();
-   Remote.MC3ChildProtectPrimaryDOB.click();
-   Remote.MC3ChildProtectPrimaryDOB.sendKeys("11151996");
-   act.pause(2000).perform();
-   Remote.NextBtn6.click();
-   act.pause(2000).perform();
-}
+//@Then("Child Protect Minor Child Travis Primary Beneficiary FullName, SSN, Relationship and DOB")
+//public void child_Protect_Minor_Child_Travis_Primary_Beneficiary_FullName_SSN_Relationship_and_DOB() {
+//   Remote.MC3ChildProtectPrimarySomeoneElse.click();
+//   Remote.MC3ChildProtectPrimaryFN.sendKeys("Camila Cabello");
+//   Remote.MC3ChildProtectPrimarySSN.click();
+//   Remote.MC3ChildProtectPrimarySSN.sendKeys("656000026");
+//   Remote.MC3ChildProtectPrimaryRelationshipFiance.click();
+//   Remote.MC3ChildProtectPrimaryDOB.click();
+//   Remote.MC3ChildProtectPrimaryDOB.sendKeys("11151896");
+//   Remote.MC3ChildProtectContingentDOBVarify.click();
+//   act.pause(1000).perform();
+//   Remote.MC3ChildProtectPrimaryDOB.clear();
+//   Remote.MC3ChildProtectPrimaryDOB.click();
+//   Remote.MC3ChildProtectPrimaryDOB.sendKeys("11151996");
+//   act.pause(2000).perform();
+//   Remote.NextBtn6.click();
+//   act.pause(2000).perform();
+//}
 
 @Then("Select Email Summary input Email Address for Confirmation")
 public void select_Email_Summary_input_Email_Address_for_Confirmation() {
+	act.pause(2000).perform();
+  Remote.NextBtn6.click();
+  act.pause(2000).perform();
 	Remote.EmailSummary1.click();
 	act.pause(1000).perform();
 	Remote.EmailSummaryConfirm1.sendKeys("qapeep512@gmail.com");
@@ -667,12 +676,12 @@ public void enter_Sponsor_and_Spouse_lastName_and_last_four_SSN() {
     Remote.SponsorLastName.clear();
 	Remote.SponsorLastName.click();	
     Remote.SponsorLastName.sendKeys("Jackson");
-	Remote.SponsorLastSSN.sendKeys("0010");
-	Remote.verifySSN.click();
-    act.pause(2000).perform();
-	Remote.SponsorLastSSN.clear();
+//	Remote.SponsorLastSSN.sendKeys("0010");
+//	Remote.verifySSN.click();
+//    act.pause(2000).perform();
+//	Remote.SponsorLastSSN.clear();
 	Remote.SponsorLastSSN.click();
-	Remote.SponsorLastSSN.sendKeys("0026");
+	Remote.SponsorLastSSN.sendKeys("0010");
 	act.pause(1000).perform();
 //	Remote.SpouseLastName.sendKeys("Jackson");
 //	Remote.SpouseLastSSN.click();

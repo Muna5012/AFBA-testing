@@ -1620,28 +1620,28 @@ public class Remote {
 	
 	
 	
-	@FindBy(xpath="/html/body/div[2]/div[1]/div[2]/div/div/div[1]/div/div/div[2]/div/div[1]/div/div[5]/form/div[3]/div[6]/div[1]/div/label[2]/span")
+	@FindBy(xpath="/html/body/div[2]/div[1]/div[2]/div/div/div[1]/div/div/div[2]/div/div[1]/div/div[5]/form/div[5]/div[6]/div[1]/div/label[2]/span")
 	public static WebElement MC1ChildProtectPrimarySomeoneElse;
 	
-	@FindBy(xpath="//*[@name='chBeneOtherName2_0']")
+	@FindBy(xpath="//*[@name='chBeneOtherName4_0']")
 	public static WebElement MC1ChildProtectPrimaryFN;
 	
-	@FindBy(xpath="//*[@name='chBeneOtherSSN2_0']")
+	@FindBy(xpath="//*[@name='chBeneOtherSSN4_0']")
 	public static WebElement MC1ChildProtectPrimarySSN;
 	
-	@FindBy(xpath="//*[@name='chBeneOtherRelation2_0']/option[13]")
+	@FindBy(xpath="//*[@name='chBeneOtherRelation4_0']/option[13]")
 	public static WebElement MC1ChildProtectPrimaryRelationshiGirlFriend;
 	
-	@FindBy(xpath="//*[@name='chBeneOtherRelation2_0']/option[9]")
+	@FindBy(xpath="//*[@name='chBeneOtherRelation4_0']/option[9]")
 	public static WebElement MC1ChildProtectPrimaryRelationshipExSpouse;
 	
-	@FindBy(xpath="//*[@name='chBeneOtherRelation2_0']/option[15]")
+	@FindBy(xpath="//*[@name='chBeneOtherRelation4_0']/option[15]")
 	public static WebElement MC1ChildProtectPrimaryRelationshipGrandParent;
 	
-	@FindBy(xpath="//*[@name='chBeneOtherRelation2_0']/option[4]")
+	@FindBy(xpath="//*[@name='chBeneOtherRelation4_0']/option[4]")
 	public static WebElement MC1ChildProtectPrimaryRelationshipBrother;
 	
-	@FindBy(xpath="//*[@name='chBeneOtherDOB2_0']")
+	@FindBy(xpath="//*[@name='chBeneOtherDOB4_0']")
 	public static WebElement MC1ChildProtectPrimaryDOB;
 	
 	@FindBy(xpath="/html/body/div[2]/div[1]/div[2]/div/div/div[1]/div/div/div[2]/div/div[1]/div/div[5]/form/div[3]/div[6]/div[2]/div[2]/div[2]/label")
@@ -1674,25 +1674,25 @@ public class Remote {
 	
 	
 	
-	@FindBy(xpath="/html/body/div[2]/div[1]/div[2]/div/div/div[1]/div/div/div[2]/div/div[1]/div/div[5]/form/div[3]/div[6]/div[4]/div/label[2]/span")
+	@FindBy(xpath="/html/body/div[2]/div[1]/div[2]/div/div/div[1]/div/div/div[2]/div/div[1]/div/div[5]/form/div[5]/div[6]/div[4]/div/label[2]/span")
 	public static WebElement MC2ChildProtectPrimarySomeoneElse;
 	
-	@FindBy(xpath="//*[@name='chBeneOtherName2_1']")
+	@FindBy(xpath="//*[@name='chBeneOtherName4_1']")
 	public static WebElement MC2ChildProtectPrimaryFN;
 	
-	@FindBy(xpath="//*[@name='chBeneOtherSSN2_1']")
+	@FindBy(xpath="//*[@name='chBeneOtherSSN4_1']")
 	public static WebElement MC2ChildProtectPrimarySSN;
 	
-	@FindBy(xpath="//*[@name='chBeneOtherRelation2_1']/option[12]")
+	@FindBy(xpath="//*[@name='chBeneOtherRelation4_1']/option[12]")
 	public static WebElement MC2ChildProtectPrimaryRelationshipFiance;
 	
-	@FindBy(xpath="//*[@name='chBeneOtherRelation2_1']/option[2]")
+	@FindBy(xpath="//*[@name='chBeneOtherRelation4_1']/option[2]")
 	public static WebElement MC2ChildProtectPrimaryRelationshipAUnt;
 	
-	@FindBy(xpath="//*[@name='chBeneOtherRelation2_1']/option[21]")
+	@FindBy(xpath="//*[@name='chBeneOtherRelation4_1']/option[21]")
 	public static WebElement MC2ChildProtectPrimaryRelationshipOther;
 	
-	@FindBy(xpath="//*[@name='chBeneOtherDOB2_1']")
+	@FindBy(xpath="//*[@name='chBeneOtherDOB4_1']")
 	public static WebElement MC2ChildProtectPrimaryDOB;
 	
 	@FindBy(xpath="/html/body/div[2]/div[1]/div[2]/div/div/div[1]/div/div/div[2]/div/div[1]/div/div[5]/form/div[3]/div[6]/div[5]/div[2]/div[2]/label")

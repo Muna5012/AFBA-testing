@@ -35,8 +35,9 @@ public class F2FNewMembershioAppOnlySponsor extends TestBase{
 
 	@Then("Input Sponsor SSN")
 	public void input_Sponsor_SSN() {
+		act.pause(1000).perform();
 	   EApp2.SSN.click();
-	   EApp2.SSN.sendKeys("545200125");
+	   EApp2.SSN.sendKeys("656000029");
 	}
 
 	@Then("Input Enrollement City")
@@ -59,8 +60,8 @@ public class F2FNewMembershioAppOnlySponsor extends TestBase{
 
 	@Then("Click Begin Enrollement button")
 	public void click_Begin_Enrollement_button() {
-      //EApp1.ClickBiginEnrollement.click();
-	  EApp1.ClickNewSponsor.click();
+      EApp1.ClickBiginEnrollement.click();
+	 // EApp1.ClickNewSponsor.click();
 	}
 
 	@Then("Input Sponsor firstName, lastName, dateOfBirth and gender")
@@ -112,8 +113,9 @@ public class F2FNewMembershioAppOnlySponsor extends TestBase{
 	  act.pause(2000).perform();
 	  EApp2.Covered.click();
 	  EApp2.YesForFirstQuestion.click();
-	  act.pause(1000).perform();
+	  act.pause(2000).perform();
 	  EApp2.NoForSecondQuestion.click();
+	  act.pause(2000).perform();
 	}
 
 	@Then("Select Customize sponsor on FedTem and First Protect")
@@ -155,7 +157,7 @@ public class F2FNewMembershioAppOnlySponsor extends TestBase{
 	public void input_Beneficiary_for_group_free_sponsor_primary_beneficiary_full_name_SSN_relationship_and_DOB() {
 	    EApp1.BeneficiaryForBetterAlternativeFullname.sendKeys("Al Snow");
 	    EApp1.BeneficiarySSN.click();
-	    EApp1.BeneficiarySSN.sendKeys("545200030");
+	    EApp1.BeneficiarySSN.sendKeys("656000030");
 	    act.pause(1000).perform();
 	    EApp1.BeneficiaryRelationship.click();
 	    EApp1.BeneficiaryDOB.click();
@@ -168,7 +170,7 @@ public class F2FNewMembershioAppOnlySponsor extends TestBase{
 		EApp1.SomeoneElse.click();
 		EApp1.ContingentBeneficiaryFullName.sendKeys("Leo Pugh");
 		EApp1.ContingentBeneficiarySSNnumber.click();
-		EApp1.ContingentBeneficiarySSNnumber.sendKeys("545200031");
+		EApp1.ContingentBeneficiarySSNnumber.sendKeys("656000031");
 		act.pause(2000).perform();
 		EApp1.ContingentBeneficiaryRelationship.click();
 		EApp1.ContingentBeneficiaryDOB.click();
@@ -182,7 +184,7 @@ public class F2FNewMembershioAppOnlySponsor extends TestBase{
 	    act.pause(1000).perform();
 	    EApp2.SecondPrmaryBenFullName.sendKeys("Guy Best");
 	    EApp2.SecondPrimaryBenfSSN.click();
-	    EApp2.SecondPrimaryBenfSSN.sendKeys("545200090");
+	    EApp2.SecondPrimaryBenfSSN.sendKeys("656000032");
 	    EApp2.SecondPrimaryBenRelationship.click();
 	    EApp2.SecondPrimaryBenfDOB.click();
 		EApp2.SecondPrimaryBenfDOB.sendKeys("10151980");
@@ -243,7 +245,7 @@ public class F2FNewMembershioAppOnlySponsor extends TestBase{
 		 act.pause(2000).perform();
 		 EApp2.SponsorLastSSN.clear();
 		 EApp2.SponsorLastSSN.click();
-		 EApp2.SponsorLastSSN.sendKeys("0125");
+		 EApp2.SponsorLastSSN.sendKeys("0029");
 	}
 
 	@Then("Select Paper radio button and Sign the application")

@@ -337,6 +337,7 @@ public class NewMembershipAppSponsorSpousewithAdultChild extends TestBase{
 
 	@Then("Input Group Free sponsor primary beneficiary full name, SSN, relationship, DOB")
 	public void input_Group_Free_sponsor_primary_beneficiary_full_name_SSN_relationship_DOB() {
+		act.pause(1000).perform();
 		EApp3.FirstprotectSponsorPrimarySomeOneElse.click();
 		EApp3.FirstprotectSponsorPrimaryFL.sendKeys("BRITTANY AHMEYER");
 		EApp3.FirstprotectSponsorPrimarySSN.click();
