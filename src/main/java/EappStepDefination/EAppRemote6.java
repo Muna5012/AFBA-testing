@@ -134,30 +134,30 @@ public class EAppRemote6 extends TestBase {
 	    Remote.ShowCoverageOptions.click();
 	}
 	
-	@Then("Coverage Options Waive enrollment in Better Alternative, Fed Term and Application Member Benefit")
-	public void coverage_Options_Waive_enrollment_in_Better_Alternative_Fed_Term_and_Application_Member_Benefit() {
-		 Remote.WaiveBA.click();
-		 act.pause(1000).perform();
-	     Remote.FedTerm.click();
-	     act.pause(1000).perform();
-		 Remote.WaiveFedTerm.click();
-		 act.pause(2000).perform();
-	}
-
-	@Then("Select Senior Protect Customize spouse")
-	public void select_Senior_Protect_Customize_spouse() {
-		Remote.SeniorProtect.click();
-		act.pause(1000).perform();
-		Remote.SeniorProtectoNLYSpouseCustomize25.click();
-		act.pause(2000).perform();
-	    Remote.ApplicationMemberBenf.click();
-		Remote.WaiveApplication.click();
-		act.pause(2000).perform();
-	}
+//	@Then("Coverage Options Waive enrollment in Better Alternative, Fed Term and Application Member Benefit")
+//	public void coverage_Options_Waive_enrollment_in_Better_Alternative_Fed_Term_and_Application_Member_Benefit() {
+//		 Remote.WaiveBA.click();
+//		 act.pause(1000).perform();
+//	     Remote.FedTerm.click();
+//	     act.pause(1000).perform();
+//		 Remote.WaiveFedTerm.click();
+//		 act.pause(2000).perform();
+//	}
+//
+//	@Then("Select Senior Protect Customize spouse")
+//	public void select_Senior_Protect_Customize_spouse() {
+//		Remote.SeniorProtect.click();
+//		act.pause(1000).perform();
+//		Remote.SeniorProtectoNLYSpouseCustomize25.click();
+//		act.pause(2000).perform();
+//	    Remote.ApplicationMemberBenf.click();
+//		Remote.WaiveApplication.click();
+//		act.pause(2000).perform();
+//	}
 
 	@Then("First Protect No benefit for Sponsor and spouse Customize three adult children fifty thousand K")
 	public void first_Protect_No_benefit_for_Sponsor_and_spouse_Customize_three_adult_children_fifty_thousand_K() {
-		 Remote.FirstProtect.click();
+		// Remote.FirstProtect.click();
 		  act.pause(1000).perform();
 		  Remote.AC1Tobacco.click();
 		  Remote.AC2Tobacco.click();
@@ -172,16 +172,16 @@ public class EAppRemote6 extends TestBase {
 		  act.pause(2000).perform();
 	}
 
-	@Then("Children Protect Covered three Minor children")
-	public void children_Protect_Covered_three_Minor_children() {
-		 Remote.ChildrenProtectClick.click();
-		  Remote.CoveredForFirstKid.click();
-		  Remote.CoveredforSecondKid.click();
-		  Remote.CoveredForThrid.click();
-		  act.pause(2000).perform();
-		  act.pause(2000).perform();
-		  Remote.NextBtn2.click();
-	}
+//	@Then("Children Protect Covered three Minor children")
+//	public void children_Protect_Covered_three_Minor_children() {
+//		 Remote.ChildrenProtectClick.click();
+//		  Remote.CoveredForFirstKid.click();
+//		  Remote.CoveredforSecondKid.click();
+//		  Remote.CoveredForThrid.click();
+//		  act.pause(2000).perform();
+//		  act.pause(2000).perform();
+//		  Remote.NextBtn2.click();
+//	}
 	
 	@Then("Answer all the questions Yes or NO for Qualification")
 	public void answer_all_the_questions_Yes_or_NO_for_Qualification() {

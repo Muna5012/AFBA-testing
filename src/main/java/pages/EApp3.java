@@ -425,8 +425,7 @@ public class EApp3 {
 	public static WebElement FirstProtectContingentFN;
 	
 	@FindBy(xpath="//*[@name='chContBeneOtherRelation2_0']/option[15]")
-	public static WebElement FirstProtectContingentRelationship;
-	
+	public static WebElement FirstProtectContingentRelationship;	
 	
 	
 	@FindBy(xpath="/html/body/div[2]/div[1]/div[2]/div/div/div[1]/div/div/div[2]/div/div[1]/div/div[5]/form/div[3]/div[6]/div[4]/div/label[2]/span")

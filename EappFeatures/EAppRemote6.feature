@@ -17,10 +17,10 @@ And Select Fire Department on Eligibility option
 Then Select Checkmatic on Contribution Mode
 Then Enter Street Address, City, State, ZipCode and Daytime phone numbers
 
-And Coverage Options Waive enrollment in Better Alternative, Fed Term and Application Member Benefit
-Then Select Senior Protect Customize spouse
+#And Coverage Options Waive enrollment in Better Alternative, Fed Term and Application Member Benefit
+#Then Select Senior Protect Customize spouse
 And First Protect No benefit for Sponsor and spouse Customize three adult children fifty thousand K
-Then Children Protect Covered three Minor children 
+#Then Children Protect Covered three Minor children 
 And Answer all the questions Yes or NO for Qualification 
 Then Input Sponsor Information which include Height and Weight 
 And Input Spouse Information which include SSN, Gender, Height and Weight

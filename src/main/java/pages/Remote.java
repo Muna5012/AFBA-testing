@@ -950,7 +950,7 @@ public class Remote {
 	@FindBy(xpath= "//*[@id='ChildrenInfoBlock']/ul/li[3]/div[3]/div/label[2]/span")
 	public static WebElement ChildThreeGenderFemale;
 	
-	@FindBy(xpath= "//*[@id='ChildrenInfoBlock']/ul/li[3]/div[3]/div/label[1]/span")
+	@FindBy(xpath= "/html/body/div[2]/div[1]/div[2]/div/div/div[1]/div/div/div[2]/div/div[1]/div/div[4]/form/div[3]/ul/li[3]/div[3]/div/label[1]/span")
 	public static WebElement ChildThreeGenderMale;
 	
 	@FindBy(xpath="//*[@id='ChildrenInfoBlock']/ul/li[3]/div[5]/div/label[1]/select/option[5]")
@@ -958,6 +958,9 @@ public class Remote {
 	
 	@FindBy(xpath="//*[@id='ChildrenInfoBlock']/ul/li[3]/div[5]/div/label[1]/select/option[6]")
 	public static WebElement ChildThree4Feet;
+	
+	@FindBy(xpath="//*[@id=\"ChildrenInfoBlock\"]/ul/li[3]/div[5]/div/label[1]/select")
+	public static WebElement ChildThreeHightClick;
 	
 	@FindBy(xpath="//*[@id='ChildrenInfoBlock']/ul/li[3]/div[5]/div/label[1]/select/option[7]")
 	public static WebElement ChildThree5Feet;
@@ -982,6 +985,9 @@ public class Remote {
 	
 	@FindBy(xpath="//*[@id='ChildrenInfoBlock']/ul/li[3]/div[5]/div/label[2]/select/option[11]")
 	public static WebElement ChildThree9Inches;
+	
+	@FindBy(xpath="//*[@id=\"ChildrenInfoBlock\"]/ul/li[3]/div[5]/div/label[2]/select")
+	public static WebElement ChildInchesClick;
 	
 	@FindBy(xpath="//*[@id='ChildrenInfoBlock']/ul/li[3]/div[5]/div/label[2]/select/option[12]")
 	public static WebElement ChildThree10Inches;

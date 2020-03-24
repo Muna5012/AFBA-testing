@@ -13,11 +13,11 @@ Then Input Street Address, City, State and Zip
 And Input Email address, Daytime Phone Numbers
 Then Click Show Coverage Option to select Beneficiaries Product Plans
 
-And Better Alternative select Tobacco for Sponsor and spouse
-Then Better Alternative Customise fifty thousand K for Sponsor and Spouse
-Then Waived Fed Term Product and Application Member Benefit five thousand K Product
-And Senior Protect select Option two
-Then First Protect Customize sponsor and spouse fifty thousand K 
+#And Better Alternative select Tobacco for Sponsor and spouse
+#Then Better Alternative Customise fifty thousand K for Sponsor and Spouse
+Then Select Fed Term and Customize sponsor and spouse
+#And Senior Protect select Option two
+#Then First Protect Customize sponsor and spouse fifty thousand K 
 And Click Next to Answer All the questions one by one 
 Then Select Sponsor Information Height Feet, Inches and Weight 
 And Select Spouse Information SSN, Gender, Height feet inches and Weight
@@ -27,15 +27,15 @@ Then Better Alternative Sponsor Contingent Beneficiary FullName, SSN, Relationsh
 And Better Alternative Spouse Primary Beneficiary FullName, SSN, Relationship and Date of Birth
 And Better Alternative Spouse Contingent Beneficiary FullName, SSN, Relationship and Date of Birth
 
-Then Senior Protect Sponsor Primary Beneficiary FullName, SSN, Relationship and Date of Birth
-Then Senior Protect Sponsor Contingent Beneficiary FullName, SSN, Relationship and Date of Birth
-And Senior Protect Spouse Primary Beneficiary FullName, SSN, Relationship and Date of Birth
-And Senior Protect Spouse Contingent Beneficiary FullName, SSN, Relationship and Date of Birth
-
-Then First Protect Sponsor Primary Beneficiary FullName, SSN, Relationship and Date of Birth
-Then First Protect Sponsor Contingent Beneficiary FullName, SSN, Relationship and Date of Birth
-And First Protect Spouse Primary Beneficiary FullName, SSN, Relationship and Date of Birth
-And First Protect Spouse Contingent Beneficiary FullName, SSN, Relationship and Date of Birth
+#Then Senior Protect Sponsor Primary Beneficiary FullName, SSN, Relationship and Date of Birth
+#Then Senior Protect Sponsor Contingent Beneficiary FullName, SSN, Relationship and Date of Birth
+#And Senior Protect Spouse Primary Beneficiary FullName, SSN, Relationship and Date of Birth
+#And Senior Protect Spouse Contingent Beneficiary FullName, SSN, Relationship and Date of Birth
+#
+#Then First Protect Sponsor Primary Beneficiary FullName, SSN, Relationship and Date of Birth
+#Then First Protect Sponsor Contingent Beneficiary FullName, SSN, Relationship and Date of Birth
+#And First Protect Spouse Primary Beneficiary FullName, SSN, Relationship and Date of Birth
+#And First Protect Spouse Contingent Beneficiary FullName, SSN, Relationship and Date of Birth
 
 Then Confirmation page select Email Summary input Email address
 And Enter Bank Information select Day Of Deduction one, Account type Checking

@@ -13,7 +13,7 @@ public class EAppRemote3 extends TestBase {
 	@When("Click New Enrollment enter Sponsor SSN, Enrollment City and Enrollment State")
 	public void click_New_Enrollment_enter_Sponsor_SSN_Enrollment_City_and_Enrollment_State() {
 		  Remote.SSN.click();
-		  Remote.SSN.sendKeys("414000022");
+		  Remote.SSN.sendKeys("656000057");
 		  Remote.EnrollmentCity.clear();
 		  Remote.EnrollmentCity.sendKeys("Las Vegas");
 		  Remote.EnrollmentState.click();
@@ -24,14 +24,14 @@ public class EAppRemote3 extends TestBase {
 	@Then("click Next and select Begin Enrollment button")
 	public void click_Next_and_select_Begin_Enrollment_button() {
 		  Remote.NextBtn.click();
-	   	//  Remote.BeginEnrollment.click();
-		  Remote.ClickNewSponsor.click();
+	   	  Remote.BeginEnrollment.click();
+		//  Remote.ClickNewSponsor.click();
 		  act.pause(2000).perform();
 	}
 
 	@Then("Input Sponsor First Name, Last Name, gender and Date Of Birth")
 	public void input_Sponsor_First_Name_Last_Name_gender_and_Date_Of_Birth() {
-		  Remote.FirstName.sendKeys("Victoria Gotti");
+		  Remote.FirstName.sendKeys("Tomes");
 		    Remote.LastName.sendKeys("Gotti");
 		    Remote.DOB.click();
 		    act.pause(1000).perform();
@@ -43,7 +43,7 @@ public class EAppRemote3 extends TestBase {
 	@Then("Click Married Radio button and enter spouse First Name, Last Name and Date Of Birth")
 	public void click_Married_Radio_button_and_enter_spouse_First_Name_Last_Name_and_Date_Of_Birth() {
 		Remote.MarriedBtn.click();
-	    Remote.SpouseFN.sendKeys("Carmine");
+	    Remote.SpouseFN.sendKeys("Kim");
 	    Remote.SpouseLN.sendKeys("Agnello");
 	    Remote.SpouseDOB.click();
 	    act.pause(1000).perform();
@@ -186,7 +186,7 @@ public class EAppRemote3 extends TestBase {
 	@Then("Enter Spouse Information SSN, Gender, Height feet inches and Weight")
 	public void enter_Spouse_Information_SSN_Gender_Height_feet_inches_and_Weight() {
 		  Remote.SpouseSSN.click();
-		    Remote.SpouseSSN.sendKeys("414000023");
+		    Remote.SpouseSSN.sendKeys("656000058");
 		    Remote.SpouseGenderFamale.click();
 		    Remote.Spouse5Feet.click();
 		    Remote.Spouse8Inches.click();
@@ -484,16 +484,16 @@ public class EAppRemote3 extends TestBase {
 	    Remote.SponsorLastName.clear();
 		Remote.SponsorLastName.click();	
 	    Remote.SponsorLastName.sendKeys("Gotti");
-		Remote.SponsorLastSSN.sendKeys("0020");
+		Remote.SponsorLastSSN.sendKeys("0055");
 		Remote.verifySSN.click();
 	    act.pause(2000).perform();
 		Remote.SponsorLastSSN.clear();
 		Remote.SponsorLastSSN.click();
-		Remote.SponsorLastSSN.sendKeys("0022");
+		Remote.SponsorLastSSN.sendKeys("0057");
 		act.pause(1000).perform();
-		Remote.SpouseLastName.sendKeys("Agnello");
+		Remote.SpouseLastName.sendKeys("Gotti");
 		Remote.SpouseLastSSN.click();
-		Remote.SpouseLastSSN.sendKeys("0023");
+		Remote.SpouseLastSSN.sendKeys("0058");
 	}
 
 	@Then("Select Paper to receive the Document")

@@ -11,7 +11,7 @@ Then Click Add Child button to input Adult Child two firstName, lastName, DOB
 And Click Add Child button to input Adult Child three firstName, lastName, DOB
 Then Click Add Child button to input Minor child one firstName, lastName, DOB
 And Click Add Child button to input Minor Child two firstName, lastName, DOB
-#Then Click Add Child button to input Minor Child three firstName, lastName, DOB
+Then Click Add Child button to input Minor Child three firstName, lastName, DOB
 
 And Select Millitary on Eligibility, Coast Guard on Banch of service, Ready Reserve on Duty Status, O four on Rank, Military Allotment on Contribution Mode 
 Then Enter Street Address, City, State and Zip code numbers
