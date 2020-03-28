@@ -1,4 +1,4 @@
-@CallCenterWithAdultChild
+@NewMember2
 Feature: New Membership Application Sponsor With adult child to Eligibilty Fire Department and Select FedTerm, First protect and Group Free products to select yes or no test feature 
 Scenario: New Membership Application Sponsor With adult child to Eligibilty Fire Department and Select FedTerm, First protect and Group Free products to select yes or no test scenario
 

@@ -1,4 +1,4 @@
-@NMASponsor
+@NewMember1
 Feature: Eapp staging site put implementation of New Membership Application with contributory benefit choice and LT20 select yes or no test feature 
 Scenario:  Eapp staging site put implementation of New Membership Application with contributory benefit choice and LT20 select yes or no test scenario
 

@@ -1,4 +1,4 @@
-@F2FforSponsor
+@F2F1
 Feature: New Membership Application (on group free) staging site put the implementation of the membership application with contributory benefits and LT20, Only sponsor select Law Enforcement test feature 
 Scenario: New Membership Application (on group free) staging site put the implementation of the membership application with contributory benefits and LT20, Only sponsor select Law Enforcement test scenarios
 

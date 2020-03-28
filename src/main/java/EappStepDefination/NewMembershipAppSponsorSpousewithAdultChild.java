@@ -179,10 +179,10 @@ public class NewMembershipAppSponsorSpousewithAdultChild extends TestBase{
 	public void click_Covedred_on_group_free_and_answer_yes_or_no_questions() {
 		EApp2.spouseCoverage.click();
 		EApp2.Covered.click();
-		act.pause(3000).perform();	
-		EApp2.YesForFirstQuestion.click();
-		act.pause(1000).perform();
-		EApp2.YESForSecondQuestion.click();
+	//	act.pause(3000).perform();	
+//		EApp2.YesForFirstQuestion.click();
+//		act.pause(1000).perform();
+//		EApp2.YESForSecondQuestion.click();
 		act.pause(2000).perform();
 	}
 

@@ -45,7 +45,7 @@ public class NewMembershipOnlySponsor extends TestBase {
 	
 	@Then("Click Begin Enrollment button to start new case")
 	public void click_Begin_Enrollment_button_to_start_new_case() {
-	    EApp2.BeginEnrollment.click();
+	 //   EApp2.BeginEnrollment.click();
 	   EApp2.ClickNewSponsor.click();
 	}
 
@@ -128,9 +128,9 @@ public class NewMembershipOnlySponsor extends TestBase {
 		  EApp2.spouseCoverage.click();
 		  EApp2.Covered.click();
 		  act.pause(1000).perform();
-		  EApp2.YesForFirstQuestion.click();
-		  act.pause(2000).perform();
-		  EApp2.NoForSecondQuestion.click();
+//		  EApp2.YesForFirstQuestion.click();
+//		  act.pause(2000).perform();
+//		  EApp2.NoForSecondQuestion.click();
 		  act.pause(2000).perform();
 		  EApp2.NextBtn1.click();
 		  act.pause(2000).perform();

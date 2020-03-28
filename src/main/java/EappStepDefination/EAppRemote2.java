@@ -346,8 +346,9 @@ public class EAppRemote2 extends TestBase {
 //	   Remote.FirstProtectSpouseContingentSSN.click();
 //	   Remote.FirstProtectSpouseContingentSSN.sendKeys("656000063");
 //	   Remote.FirstProtectSpouseContingentRelationshipFatherInLaw.click();
-//	   act.pause(2000).perform();
 //	}
+	
+	
 	
 	@Then("Confirmation page select Email Summary input Email address")
 	public void confirmation_page_select_Email_Summary_input_Email_address() {

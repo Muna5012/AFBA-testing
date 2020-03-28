@@ -151,9 +151,9 @@ public class RemoteNewMembershipAppSponsorSpouse extends TestBase{
 		act.pause(2000).perform();	 
 		  EApp2.Covered.click();
 		  act.pause(1000).perform();	 
-		  EApp2.YesForFirstQuestion.click();
-		  act.pause(1000).perform();
-		  EApp2.NoForSecondQuestion.click();
+//		  EApp2.YesForFirstQuestion.click();
+//		  act.pause(1000).perform();
+//		  EApp2.NoForSecondQuestion.click();
 		  act.pause(2000).perform();
 	}
 

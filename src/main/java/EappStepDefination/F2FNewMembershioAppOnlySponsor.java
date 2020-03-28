@@ -60,8 +60,8 @@ public class F2FNewMembershioAppOnlySponsor extends TestBase{
 
 	@Then("Click Begin Enrollement button")
 	public void click_Begin_Enrollement_button() {
-      EApp1.ClickBiginEnrollement.click();
-	 // EApp1.ClickNewSponsor.click();
+     // EApp1.ClickBiginEnrollement.click();
+	  EApp1.ClickNewSponsor.click();
 	}
 
 	@Then("Input Sponsor firstName, lastName, dateOfBirth and gender")
@@ -112,9 +112,9 @@ public class F2FNewMembershioAppOnlySponsor extends TestBase{
 	public void select_Covered_on_group_free_and_answer_No_for_first_select_Yes_on_second_question() {
 	  act.pause(2000).perform();
 	  EApp2.Covered.click();
-	  EApp2.YesForFirstQuestion.click();
-	  act.pause(2000).perform();
-	  EApp2.NoForSecondQuestion.click();
+//	  EApp2.YesForFirstQuestion.click();
+//	  act.pause(2000).perform();
+//	  EApp2.NoForSecondQuestion.click();
 	  act.pause(2000).perform();
 	}
 
@@ -230,7 +230,7 @@ public class F2FNewMembershioAppOnlySponsor extends TestBase{
 	@Then("Click the Review Application Ducuments")
 	public void click_the_Review_Application_Ducuments() {
 		EApp2.ReviewApplicationBtn.click();
-		act.pause(7000).perform();
+		act.pause(8000).perform();
 		EApp2.CloseBtn.click();
 		act.pause(2000).perform();
 	}

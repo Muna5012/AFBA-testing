@@ -194,9 +194,9 @@ public void waive_the_Senior_Protect() {
 public void covered_Application_Member_Benefit_and_select_Yes_or_NO() {
 	  Remote.ApplicationMemberBenf.click();
 	  EApp2.Covered.click();
-	  EApp2.YesForFirstQuestion.click();
-	  act.pause(1000).perform();
-	  EApp2.YESForSecondQuestion.click();
+//	  EApp2.YesForFirstQuestion.click();
+//	  act.pause(1000).perform();
+//	  EApp2.YESForSecondQuestion.click();
 	  act.pause(2000).perform();
 }
 
@@ -325,7 +325,7 @@ public void input_Children_Information_SSN_Gender_Height_Weight_Status_Relations
     Remote.ChildOne8Inches.click();
     Remote.ChildOneWeight.sendKeys("124");
     act.pause(2000).perform();
-  //  Remote.ChildUSCitizen.click();
+//    Remote.ChildUSCitizen.click();
     Remote.ChildOneRelationshipParent.click();
     act.pause(2000).perform();
     Remote.ChildTwoSSN.click();
@@ -389,7 +389,7 @@ public void senior_Protect_for_Spouse_Contingent_Beneficiary_FullName_SSN_Relati
 	EApp3.BASponsorPrimarySomeoneElse.click();
 	EApp2.PrimaryBenficiaryFullName.sendKeys("Maldo Lanski");
 	EApp2.PrimaryBeneficiarySSN.click();
-	EApp2.PrimaryBeneficiarySSN.sendKeys("545200082");
+	EApp2.PrimaryBeneficiarySSN.sendKeys("656000082");
 	EApp2.PrimaryBeneficiaryRelationship.click();
 	EApp2.PrimaryBeneficiaryDOB.click();
 	EApp2.PrimaryBeneficiaryDOB.sendKeys("10121954");
@@ -397,7 +397,7 @@ public void senior_Protect_for_Spouse_Contingent_Beneficiary_FullName_SSN_Relati
 	EApp2.BASpouseSomeOneElse.click();
 	EApp2.BASpousePrimaryFullName.sendKeys("NATHAN ALFSEN");
 	EApp2.BASpousePrimarySSN.click();
-	EApp2.BASpousePrimarySSN.sendKeys("545200110");
+	EApp2.BASpousePrimarySSN.sendKeys("656000083");
 	EApp2.BASpousePrimaryRelationship.click();
 	EApp2.BASpousePrimaryDOB.click();
 	EApp2.BASpousePrimaryDOB.sendKeys("10141993");
@@ -424,7 +424,7 @@ public void first_Protect_Adult_Child_Nancy_Primary_Beneficiary_FullName_SSN_Rel
 	EApp2.SecondPrmaryBenSOmeOneElse.click();
 	EApp2.SecondPrmaryBenFullName.sendKeys("SCOTT JOHN");
 	EApp2.SecondPrimaryBenfSSN.click();
-	EApp2.SecondPrimaryBenfSSN.sendKeys("545200111");
+	EApp2.SecondPrimaryBenfSSN.sendKeys("656000084");
 	EApp2.SecondPrimaryBenRelationship.click();
 	EApp2.SecondPrimaryBenfDOB.click();
 	EApp2.SecondPrimaryBenfDOB.sendKeys("10141987");
@@ -433,7 +433,7 @@ public void first_Protect_Adult_Child_Nancy_Primary_Beneficiary_FullName_SSN_Rel
 	EApp3.FedTermSpousePrimarySomeOneElse.click();
 	EApp3.FedTermSpousePrimarytFN.sendKeys("DANE ALBAN");
 	EApp3.FedTermSpousePrimarytSSN.click();
-	EApp3.FedTermSpousePrimarytSSN.sendKeys("545200112");
+	EApp3.FedTermSpousePrimarytSSN.sendKeys("65600085");
 	EApp3.FedTermSpousePrimaryRelationshipFather.click();
 	EApp3.FedtermSpousePrimaryDOB.click();
 	EApp3.FedtermSpousePrimaryDOB.sendKeys("03301992");

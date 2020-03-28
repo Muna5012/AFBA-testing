@@ -14,7 +14,7 @@ public class EAppRemote6 extends TestBase {
 	@When("Click New Enrollment button input Sponsor SSN, Enrollment city, Enrollment State")
 	public void click_New_Enrollment_button_input_Sponsor_SSN_Enrollment_city_Enrollment_State() {
 		 Remote.SSN.click();
-		  Remote.SSN.sendKeys("414000044");
+		  Remote.SSN.sendKeys("656000060");
 		  Remote.EnrollmentCity.clear();
 		  Remote.EnrollmentCity.sendKeys("Tamuning");
 		  Remote.EnrollmentState.click();
@@ -32,8 +32,8 @@ public class EAppRemote6 extends TestBase {
 
 	@Then("Input Sponsor First Name, Last Name, Gender and Date of Birth")
 	public void input_Sponsor_First_Name_Last_Name_Gender_and_Date_of_Birth() {
-		Remote.FirstName.sendKeys("Eleanor");
-	    Remote.LastName.sendKeys("Lawson");
+		Remote.FirstName.sendKeys("Eric");
+	    Remote.LastName.sendKeys("Eleanor");
 	    Remote.DOB.click();
 	    act.pause(1000).perform();
 	    Remote.DOB.sendKeys("05211970");
@@ -44,8 +44,8 @@ public class EAppRemote6 extends TestBase {
 	@Then("Select Married button and enter spouse First Name, Last Name and DOB")
 	public void select_Married_button_and_enter_spouse_First_Name_Last_Name_and_DOB() {
 		Remote.MarriedBtn.click();
-	    Remote.SpouseFN.sendKeys("Daniel");
-	    Remote.SpouseLN.sendKeys("Lawson");
+	    Remote.SpouseFN.sendKeys("Sophia");
+	    Remote.SpouseLN.sendKeys("Eleanor");
 	    Remote.SpouseDOB.click();
 	    act.pause(1000).perform();
 	    Remote.SpouseDOB.sendKeys("09241963");
@@ -56,7 +56,7 @@ public class EAppRemote6 extends TestBase {
 	public void select_Include_Children_button_to_enter_Adult_Child_one_First_Name_Last_Name_DOB() {
 		 Remote.ChildrenBtn.click();
 		   Remote.ChildOneFN.sendKeys("Falco");
-		   Remote.ChildOneLN.sendKeys("Lawson");
+		   Remote.ChildOneLN.sendKeys("Eleanor");
 		   Remote.ChildOneDOB.click();
 		   Remote.ChildOneDOB.sendKeys("09251994");
 		  act.pause(1000).perform();
@@ -159,10 +159,10 @@ public class EAppRemote6 extends TestBase {
 	public void first_Protect_No_benefit_for_Sponsor_and_spouse_Customize_three_adult_children_fifty_thousand_K() {
 		// Remote.FirstProtect.click();
 		  act.pause(1000).perform();
-		  Remote.AC1Tobacco.click();
-		  Remote.AC2Tobacco.click();
-		  Remote.AC3Tobacco.click();
-		  act.pause(2000).perform();
+//		  Remote.AC1Tobacco.click();
+//		  Remote.AC2Tobacco.click();
+//		  Remote.AC3Tobacco.click();
+	//	  act.pause(2000).perform();
 		  Remote.FirstProtectNoBenefitforSponsor.click();
 		  Remote.FirstProtectNoBenefitForSpouse.click();
 		  act.pause(1000).perform();
@@ -170,6 +170,7 @@ public class EAppRemote6 extends TestBase {
 		  Remote.FirstProtectAC2Customize50.click();
 		  Remote.FirstProtectAC3Customize50.click();
 		  act.pause(2000).perform();
+		  Remote.NextBtn2.click();
 	}
 
 //	@Then("Children Protect Covered three Minor children")

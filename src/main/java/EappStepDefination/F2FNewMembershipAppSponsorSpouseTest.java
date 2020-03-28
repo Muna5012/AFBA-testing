@@ -49,11 +49,12 @@ public class F2FNewMembershipAppSponsorSpouseTest extends TestBase{
 	 EApp2.NV.click();
 	   act.pause(1000).perform();
 	   EApp2.NextBtn.click();
+	   act.pause(2000).perform();
 	}
 
 	@Then("click Begin Enrollement button to create new sponsor")
 	public void click_Begin_Enrollement_button_to_create_new_sponsor() {
-	 //  EApp2.BeginEnrollment.click();
+	//  EApp2.BeginEnrollment.click();
    	 EApp2.ClickNewSponsor.click();
 	}
 
@@ -140,9 +141,9 @@ public class F2FNewMembershipAppSponsorSpouseTest extends TestBase{
 		EApp2.spouseCoverage.click();
 		EApp2.Covered.click();
 		act.pause(3000).perform();	
-		EApp2.YesForFirstQuestion.click();
-		act.pause(1000).perform();
-		EApp2.NoForSecondQuestion.click();
+//		EApp2.YesForFirstQuestion.click();
+//		act.pause(1000).perform();
+//		EApp2.NoForSecondQuestion.click();
 		act.pause(2000).perform();
 	}
 

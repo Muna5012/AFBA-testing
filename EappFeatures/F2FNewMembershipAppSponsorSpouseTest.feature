@@ -1,4 +1,4 @@
-@F2FSponsorSpouse
+@F2F2
 Feature: EApp Application Better Alternative FedTerm (LT12) With Child rider. LT12 generic NV. Both LT12s Contingent Beneficiary FaceToFace test feature
 Scenario: EApp Application Better Alternative FedTerm (LT12) With Child rider. LT12 generic NV. Both LT12s Contingent Beneficiary test scenarios
 

@@ -1,4 +1,4 @@
-@CallCenterSponsorSpouse
+@NewMember3
 Feature: New Membership Application and LT20 include Sponsor, spouse, With Adullt child and Minor Child. Select Better Alternative, Fed Term, First protect and Group Free test feature 
 Scenario: : New Membership Application and LT20 include Sponsor, spouse, With Adullt child and Minor Child. Select Better Alternative, Fed Term, First protect and Group Free test scanario
 

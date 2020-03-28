@@ -34,15 +34,15 @@ public class EAppCallCenter2 extends TestBase {
 		 EApp2.SSN.clear();
 		 act.pause(1000).perform();
 		 EApp2.SSN.click();
-		 EApp2.SSN.sendKeys("545200003");
+		 EApp2.SSN.sendKeys("656000070");
 		 act.pause(1000).perform();
 		 EApp2.NextBtn.click();
 	}
 
 	@Then("click Begin Enrollement and Input the Sponsor First Name, Last Name, Gender and DOB")
 	public void click_Begin_Enrollement_and_Input_the_Sponsor_First_Name_Last_Name_Gender_and_DOB() {
-			//EApp2.BeginEnrollment.click();
-		    EApp2.ClickNewSponsor.click();
+			EApp2.BeginEnrollment.click();
+		    //EApp2.ClickNewSponsor.click();
 			EApp2.FirstName.sendKeys("Mark Anthony");
 			EApp2.LastName.sendKeys("Woodward");
 			act.pause(1000).perform();
@@ -135,7 +135,7 @@ public class EAppCallCenter2 extends TestBase {
 	
 	@Then("Waived BA, Fed Term, First protect, Application Member Benefit")
 	public void waived_BA_Fed_Term_First_protect_Application_Member_Benefit() {
-		 EApp2.CustomizeOption3.click();
+		 EApp2.CustomizeOption2.click();
 		 act.pause(2000).perform();
 	    act.pause(2000).perform();
 	    EApp2.FedTerm.click();
@@ -181,7 +181,7 @@ public class EAppCallCenter2 extends TestBase {
 	@Then("Input child one information SSN, Gender, Height, Weight, Slect US Citizen Option and Relationship")
 	public void input_child_one_information_SSN_Gender_Height_Weight_Slect_US_Citizen_Option_and_Relationship() {
 		EApp2.ChildOneSSN.click();
-		EApp2.ChildOneSSN.sendKeys("545200004");
+		EApp2.ChildOneSSN.sendKeys("656000071");
 		EApp2.ChildOneGenderMale.click();
 		EApp2.ChildOneHeight5Feet.click();
 		EApp2.ChildOneHeight6Inches.click();
@@ -194,7 +194,7 @@ public class EAppCallCenter2 extends TestBase {
 	@Then("Input child two information SSN, Gender, Height, Weight, Slect US Citizen Option and Relationship")
 	public void input_child_two_information_SSN_Gender_Height_Weight_Slect_US_Citizen_Option_and_Relationship() {
 		EApp2.ChildTwoSSN.click();
-		EApp2.ChildTwoSSN.sendKeys("545200005");
+		EApp2.ChildTwoSSN.sendKeys("656000072");
 		EApp2.ChildTwoGenderMale.click();
 		EApp2.ChildTwoHeight5Feet.click();
 		EApp2.ChildTwoInches0.click();
@@ -208,7 +208,7 @@ public class EAppCallCenter2 extends TestBase {
 	@Then("Input child three information SSN, Gender, Height, Weight, Slect US Citizen Option and Relationship")
 	public void input_child_three_information_SSN_Gender_Height_Weight_Slect_US_Citizen_Option_and_Relationship() {
 		EApp2.ChildThreeSSN.click();
-		EApp2.ChildThreeSSN.sendKeys("545200006");
+		EApp2.ChildThreeSSN.sendKeys("656000073");
 		EApp2.ChildThreeGenderFemale.click();
 		EApp2.ChildThreeHeight4Feet.click();
 		EApp2.ChildThree11Inches.click();
@@ -223,7 +223,7 @@ public class EAppCallCenter2 extends TestBase {
 		act.pause(2000).perform();
 	    EApp2.PrimaryBenficiaryFullName.sendKeys("Basil Kennedy");
 	    EApp2.PrimaryBeneficiarySSN.click();
-	    EApp2.PrimaryBeneficiarySSN.sendKeys("545200077");
+	    EApp2.PrimaryBeneficiarySSN.sendKeys("656000074");
 	    EApp2.PrimaryBeneficiaryRelationship.click();
 	    EApp2.PrimaryBeneficiaryDOB.click();
 	    EApp2.PrimaryBeneficiaryDOB.sendKeys("03171964");
@@ -246,7 +246,7 @@ public class EAppCallCenter2 extends TestBase {
 		  EApp2.SomeOneElseForChildProtectPrimaryFirstKid.click();
 		  EApp2.ChildProtecFirstChildtPrimaryFN.sendKeys("Margaret Thatcher");
 		  EApp2.ChildProtectFirstChildPrimarySSN.click();
-		  EApp2.ChildProtectFirstChildPrimarySSN.sendKeys("545200079");
+		  EApp2.ChildProtectFirstChildPrimarySSN.sendKeys("656000075");
 		  EApp2.ChildProtectFirstChildPrimaryRelationshipBrother.click();
 		  EApp2.ChildProtectFirstChildPrimaryDOB.click();
 		  EApp2.ChildProtectFirstChildPrimaryDOB.sendKeys("02201985");
@@ -255,7 +255,7 @@ public class EAppCallCenter2 extends TestBase {
 		  EApp2.SomeOneElseChildProtectFirstKidContingetnt.click();
 		  EApp2.ChildProtectFirstKidContingentBeneficiaryFN.sendKeys("Margaret Thatcher");
 		  EApp2.ChildProtectFirstKidContingentBeneficiarySSN.click();
-		  EApp2.ChildProtectFirstKidContingentBeneficiarySSN.sendKeys("545200079");
+		  EApp2.ChildProtectFirstKidContingentBeneficiarySSN.sendKeys("656000076");
 		  EApp2.ChildProtectFirstKidContingentBeneficiaryRelationship.click();
 		  EApp2.ChildProtectFirstKidContingentBeneficiaryDOB.click();
 		  EApp2.ChildProtectFirstKidContingentBeneficiaryDOB.sendKeys("02201985");
@@ -268,7 +268,7 @@ public class EAppCallCenter2 extends TestBase {
 		   EApp2.SomeOneElseForChildProtectPrimarySecondtKid.click();
 		   EApp2.ChildProtectSecondChildtPrimaryFN.sendKeys("Margaret Thatcher");
 		   EApp2.ChildProtectSecondChildPrimarySSN.click();
-		   EApp2.ChildProtectSecondChildPrimarySSN.sendKeys("545200007");
+		   EApp2.ChildProtectSecondChildPrimarySSN.sendKeys("656000077");
 		   EApp2.ChildProtectSecondChildPrimaryRelationship.click();
 		   EApp2.ChildProtectSecondChildPrimaryDOB.click();
 		   EApp2.ChildProtectSecondChildPrimaryDOB.sendKeys("05201990");
@@ -280,7 +280,7 @@ public class EAppCallCenter2 extends TestBase {
 		EApp2.SomeOneElseForChildProtectPrimaryThirdtKid.click();
 		EApp2.ChildProtectThirdChildtPrimaryFN.sendKeys("Caroline Woodward");
 		EApp2.ChildProtectThirdChildPrimarySSN.click();
-		EApp2.ChildProtectThirdChildPrimarySSN.sendKeys("545200008");
+		EApp2.ChildProtectThirdChildPrimarySSN.sendKeys("656000078");
 		EApp2.ChildProtectThirdChildPrimaryRelationship.click();
 		EApp2.ChildProtectThirdChildPrimaryDOB.click();
 		EApp2.ChildProtectThirdChildPrimaryDOB.sendKeys("10301980");

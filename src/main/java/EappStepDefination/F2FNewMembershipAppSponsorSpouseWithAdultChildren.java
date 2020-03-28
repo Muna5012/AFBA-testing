@@ -68,8 +68,8 @@ public class F2FNewMembershipAppSponsorSpouseWithAdultChildren extends TestBase 
 
 	@Then("Select Begin Enrollement button")
 	public void select_Begin_Enrollement_button() {
-	//  EApp2.ClickNewSponsor.click();
-	  EApp2.BeginEnrollment.click();
+	  EApp2.ClickNewSponsor.click();
+	 // EApp2.BeginEnrollment.click();
 	}
 
 	@Then("Input Sponsor first Name, last Name and DOB")
@@ -189,10 +189,10 @@ public void input_Child_three_first_name_last_name_and_DOB() {
 	public void select_Application_Member_Benefit_option_Covered_it_and_select_Yes_or_No_questions() {
 		EApp2.spouseCoverage.click();
 		EApp2.Covered.click();
-		act.pause(3000).perform();	
-		EApp2.YesForFirstQuestion.click();
-		act.pause(1000).perform();
-		EApp2.YESForSecondQuestion.click();
+//		act.pause(3000).perform();	
+//		EApp2.YesForFirstQuestion.click();
+//		act.pause(1000).perform();
+//		EApp2.YESForSecondQuestion.click();
 		act.pause(2000).perform();
 	}
 	
