@@ -79,8 +79,9 @@ public class AllPagefactories extends TestBase{
 			
 			PageFactory.initElements(driver, AgentLoginPage.class);
 			
-			PageFactory.initElements(driver, EApp3.class);
+			PageFactory.initElements(driver, EApp3.class); 
 			
+			PageFactory.initElements(driver, OneTimePayment.class);
 			
 			// here I must write all the page' classes' Page Factory
 			

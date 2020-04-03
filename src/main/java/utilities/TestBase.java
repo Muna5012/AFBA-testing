@@ -50,7 +50,7 @@ public abstract class TestBase {
 		act.pause(3000).perform();
 	}
 	
-	protected static void MemberLogIn() {	
+	protected static void CustomerPortal() {	
 		MemberLoginPage.MemberLoginBtn.click();
 		MemberLoginPage.UserName.sendKeys("qapeep512@gmail.com");
 		MemberLoginPage.Password.sendKeys("Q85q2019");
@@ -84,7 +84,7 @@ public abstract class TestBase {
 	
 	protected static void SetUp() {
 		driver=Driver.getDriver();
-		driver.get(ConfigurationReader.getProperty("url"));
+		driver.get(ConfigurationReader.getProperty("url5"));
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		act = new Actions(driver);

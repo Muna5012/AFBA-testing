@@ -1,4 +1,4 @@
-package EappStepDefination;
+package CustomerPortalStepDef;
 
 import cucumber.api.Scenario;
 import cucumber.api.java.*;
