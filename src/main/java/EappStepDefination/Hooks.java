@@ -19,11 +19,11 @@ public class Hooks extends TestBase {
 //		}
 		
 		
-//		@Before(order = 2)
-//		public void login() {
-//			LogIn();
-//			
-//		}
+		@Before(order = 2)
+		public void login() {
+			LogIn();
+			
+		}
 	
 		
 //		@Before(order = 3)
@@ -32,11 +32,11 @@ public class Hooks extends TestBase {
 //			FlashingPage();
 //		}
 		
-		@Before(order = 4)
-		public void customerPortal() {
-			CustomerPortal();
-			
-		}
+//		@Before(order = 4)
+//		public void customerPortal() {
+//			CustomerPortal();
+//			
+//		}
 		
 //		@Before(order = 4)
 //		public void memberportal() {

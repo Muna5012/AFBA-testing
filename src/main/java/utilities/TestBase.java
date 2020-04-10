@@ -26,7 +26,6 @@ public abstract class TestBase {
 	protected static Actions act;
 	protected static JavascriptExecutor js;
 	
-
 	protected static void LogIn() {
 		
 		Assert.assertTrue(driver.getTitle().contains("Login"));
@@ -77,14 +76,12 @@ public abstract class TestBase {
 		SalesforceFlashingPage.ViewSearch.click();
 		SalesforceFlashingPage.ContactWithBalmastMobileOption.click();
 		SalesforceFlashingPage.GoBtn.click();
-		act.pause(3000).perform();
-		
+		act.pause(3000).perform();	
 	}
-	
 	
 	protected static void SetUp() {
 		driver=Driver.getDriver();
-		driver.get(ConfigurationReader.getProperty("url5"));
+		driver.get(ConfigurationReader.getProperty("url"));
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		act = new Actions(driver);

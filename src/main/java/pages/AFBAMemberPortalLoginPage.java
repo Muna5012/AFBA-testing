@@ -37,7 +37,6 @@ public class AFBAMemberPortalLoginPage {
 	public static WebElement GetTextOfConfirmPassword;
 	
 	
-	
 	@FindBy(xpath="//input[@id='Registration:theForm:FirstName']")
 	public static WebElement FirstName;
 	
