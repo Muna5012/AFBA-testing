@@ -1,6 +1,6 @@
 @NewMember1
-Feature: Eapp staging site put implementation of New Membership Application with contributory benefit choice and LT20 select yes or no test feature 
-Scenario:  Eapp staging site put implementation of New Membership Application with contributory benefit choice and LT20 select yes or no test scenario
+Feature: Eapp New No Cost Enrollment Rollout Plan test only sponsor test feature 
+Scenario:   Eapp New No Cost Enrollment Rollout Plan only sponsor test scenario
 
 When Search IT_QA Automation Face to Face cases and click it 
 Then Click New Enrollement button to create the Case
@@ -17,6 +17,13 @@ Then Waived BA, Fed Term, First Protect
 And Select Covered Application Member Benefit five thousand K 
 Then Select Primary Beneficiaries for Application Member Benefit five thousand K
 And Select Contingent Beneficiary for Application Member Benefit five thousand K
+
+Then Click Save for later button
+And Click Pause Enrollement button
+Then Search the case
+And Click Next button to get Confirmation page
+
+Then Select Contributory Benefits
 Then Click I agree to this Coverage and ready to sign in button
 And Click Review Application Documents button to open the pdf file
 Then Enter Spouse Last Name and Last four SSN 

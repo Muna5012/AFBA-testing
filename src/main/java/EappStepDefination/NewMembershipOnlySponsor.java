@@ -127,11 +127,10 @@ public class NewMembershipOnlySponsor extends TestBase {
 	public void select_Covered_Application_Member_Benefit_five_thousand_K() {
 		  EApp2.spouseCoverage.click();
 		  EApp2.Covered.click();
-		  act.pause(1000).perform();
+		  act.pause(3000).perform();
 //		  EApp2.YesForFirstQuestion.click();
 //		  act.pause(2000).perform();
 //		  EApp2.NoForSecondQuestion.click();
-		  act.pause(2000).perform();
 		  EApp2.NextBtn1.click();
 		  act.pause(2000).perform();
 		  EApp2.NextBtn2.click();
@@ -166,9 +165,61 @@ public class NewMembershipOnlySponsor extends TestBase {
 		EApp2.ContingentBeneficiaryDOB.sendKeys("10151980");
 		act.pause(1000).perform();
 		EApp2.NextBtn6.click();
+		act.pause(3000).perform();
 		
+//		EApp2.ClickSaveForLater.click();
+//		act.pause(1000).perform();
+//		EApp2.ClickPauseEnrollementBtn.click();
+//		act.pause(4000).perform();
+//		EApp2.SearchCase.click();
+//		EApp2.SearchCase.sendKeys("Parks Burt");
+//		act.pause(2000).perform();
+//		EApp2.ClickEnrollCase.click();
+//		act.pause(3000).perform();		
 	}
 	
+	@Then("Click Save for later button")
+	public void click_Save_for_later_button() {
+		EApp2.ClickSaveForLater.click();
+		act.pause(1000).perform();
+	}
+
+	@Then("Click Pause Enrollement button")
+	public void click_Pause_Enrollement_button() {
+		EApp2.ClickPauseEnrollementBtn.click();
+		act.pause(4000).perform();
+	}
+
+	@Then("Search the case")
+	public void search_the_case() {
+		EApp2.SearchCase.click();
+		EApp2.SearchCase.sendKeys("Parks Burt");
+		act.pause(2000).perform();
+		EApp2.ClickEnrollCase.click();
+		act.pause(3000).perform();		
+	}
+	
+	@Then("Click Next button to get Confirmation page")
+	public void click_Next_button_to_get_Confirmation_page() {
+		  EApp2.NextBtn1.click();
+		  act.pause(2000).perform();
+		  EApp2.NextBtn2.click();
+		  act.pause(1000).perform();
+		  EApp2.NextBtn2.click();
+		  act.pause(1000).perform();
+		  EApp2.NextBtn2.click();
+		  act.pause(2000).perform();
+		  EApp2.NextBtn6.click();
+		  act.pause(3000).perform();
+	}
+
+	@Then("Select Contributory Benefits")
+	public void select_Contributory_Benefits() {	
+		EApp2.ClickSurvivor.click();
+		act.pause(2000).perform();
+	}
+
+
 	
 	@Then("Click I agree to this Coverage and ready to sign in button")
 	public void click_I_agree_to_this_Coverage_and_ready_to_sign_in_button() {

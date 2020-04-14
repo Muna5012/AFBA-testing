@@ -1370,4 +1370,14 @@ public class EApp2 {
 	@FindBy(xpath="//*[@id='eessn']")
 	public static WebElement ChangeSponsorSSN;
 	
+	@FindBy(xpath="//*[@id='SurvivorBenefit']")
+	public static WebElement ClickSurvivor;
+	
+	@FindBy(xpath="//*[@id='ScholarBenefit']")
+	public static WebElement ClickCharles;
+	
+//	@FindBy(xpath="")
+//	public static WebElementE
+	
+	
 }
