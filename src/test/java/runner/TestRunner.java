@@ -19,8 +19,8 @@ import cucumber.api.junit.Cucumber;
 					
 		features = "EappFeatures"
 		,glue = "EappStepDefination",
-		dryRun = false,
-		tags = {"@NewMember1"}
+		dryRun = true,
+		tags = {"@Consumer"}
 		)                  
 
 public class TestRunner {

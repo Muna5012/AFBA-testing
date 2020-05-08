@@ -1940,5 +1940,11 @@ public class Remote {
 	@FindBy(xpath="//*[@class='btn btn-success btn-sm center']")
 	public static WebElement Sign;
 	
+	@FindBy(xpath="//*[@id='SurvivorBenefit']")
+	public static WebElement ClickSurvivor;
+	
+	@FindBy(xpath="//*[@id='ScholarBenefit']")
+	public static WebElement ClickCharles;
+	
 	
 }

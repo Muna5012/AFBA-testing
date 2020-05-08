@@ -215,7 +215,7 @@ public class NewMembershipOnlySponsor extends TestBase {
 
 	@Then("Select Contributory Benefits")
 	public void select_Contributory_Benefits() {	
-		EApp2.ClickSurvivor.click();
+		EApp2.ClickCharles.click();
 		act.pause(2000).perform();
 	}
 

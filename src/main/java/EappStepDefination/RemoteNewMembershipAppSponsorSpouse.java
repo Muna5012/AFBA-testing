@@ -29,11 +29,11 @@ public class RemoteNewMembershipAppSponsorSpouse extends TestBase{
 	  Remote.SSN.clear();
 	  act.pause(1000).perform();
 	  Remote.SSN.click();
-	  Remote.SSN.sendKeys("656000028");
+	  Remote.SSN.sendKeys("'656100000");
 	  act.pause(2000).perform();
 	  Remote.NextBtn.click();
 	  act.pause(2000).perform();
- //     Remote.BeginEnrollment.click();
+     // Remote.BeginEnrollment.click();
 	  Remote.ClickNewSponsor.click();
 	  act.pause(2000).perform();
 	}
@@ -236,7 +236,7 @@ public class RemoteNewMembershipAppSponsorSpouse extends TestBase{
 	@Then("Input Spouse Information SSN, Gender, Height feet inches and Weight")
 	public void input_Spouse_Information_SSN_Gender_Height_feet_inches_and_Weight() {
 	    Remote.SpouseSSN.click();
-	    Remote.SpouseSSN.sendKeys("656000029");
+	    Remote.SpouseSSN.sendKeys("'656100001");
 	    Remote.SpouseGenderMale.click();
 	    Remote.Spouse6Feet.click();
 	    Remote.Spouse5Inches.click();
@@ -251,7 +251,7 @@ public class RemoteNewMembershipAppSponsorSpouse extends TestBase{
 		Remote.ContingentBeneficiaryFullName.sendKeys("Martha Keech");
 		Remote.ContingentBeneficiaryRelationshipAunt.click();
 		Remote.ContingentBeneficiarySSNnumber.click();
-		Remote.ContingentBeneficiarySSNnumber.sendKeys("656000030");
+		Remote.ContingentBeneficiarySSNnumber.sendKeys("'656100002");
 		Remote.ContingentBeneficiaryDOB.click();
 		Remote.ContingentBeneficiaryDOB.sendKeys("10111837");
 		Remote.ContingentBeneficiaryDOBVarify.click();
@@ -269,7 +269,7 @@ public class RemoteNewMembershipAppSponsorSpouse extends TestBase{
 	   Remote.SomeoneElseForSpousePrimary.click();
 	   Remote.SpousePrimarytFN.sendKeys("Jarvis Woolard");
 	   Remote.SpousePrimarytSSN.click();
-	   Remote.SpousePrimarytSSN.sendKeys("656000031");
+	   Remote.SpousePrimarytSSN.sendKeys("656100003");
 	   Remote.SpousePrimaryRelationshipGirlFriend.click();
 	   Remote.SpousePrimaryDOB.click();
 	   Remote.SpousePrimaryDOB.sendKeys("05211868");
@@ -287,7 +287,7 @@ public class RemoteNewMembershipAppSponsorSpouse extends TestBase{
 	    Remote.SeniorProtectSponsorPrimaryBenifSomeoneElse.click();
 	    Remote.SeniorProtectSponsorPrmaryBenFullName.sendKeys("Macon Thomas");
 	    Remote.SeniorProtectSponsorPrimaryBenfSSN.click();
-	    Remote.SeniorProtectSponsorPrimaryBenfSSN.sendKeys("656000032");
+	    Remote.SeniorProtectSponsorPrimaryBenfSSN.sendKeys("656100004");
 	    Remote.SeniorProtectSponsorPrimaryBenRelationshipBrother.click();
 	    Remote.SeniorProtectSponsorPrimaryBenfDOB.click();
 	    Remote.SeniorProtectSponsorPrimaryBenfDOB.sendKeys("02211878");
@@ -305,7 +305,7 @@ public class RemoteNewMembershipAppSponsorSpouse extends TestBase{
 	    Remote.SeniorProtectSpouseContingentSomeoneElse.click();
 	    Remote.SeniorProtectSpouseContingentFullName.sendKeys("John Wallace");
 	    Remote.SeniorProtectSpouseContingentSSN.click();
-	    Remote.SeniorProtectSpouseContingentSSN.sendKeys("656000033");
+	    Remote.SeniorProtectSpouseContingentSSN.sendKeys("656100005");
 	    Remote.SeniorProtectSpouseContingentRelationshipUncle.click();
 	    Remote.SeniorProtectSpouseContingentDOB.click();
 	    Remote.SeniorProtectSpouseContingentDOB.sendKeys("12251842");
@@ -323,7 +323,7 @@ public class RemoteNewMembershipAppSponsorSpouse extends TestBase{
 	  Remote.FirstprotectSponsorPrimarySomeOneElse.click();
 	  Remote.FirstProtectSponsorPrimaryFullName.sendKeys("Brett Burbage");
 	  Remote.FirstProtectSponsorPrimarySSN.click();
-	  Remote.FirstProtectSponsorPrimarySSN.sendKeys("656000034");
+	  Remote.FirstProtectSponsorPrimarySSN.sendKeys("656100006");
 	  Remote.FirstProtectSponsorPrimaryRelationshipUncle.click();
 	  Remote.FirstProtectSponsorPrimaryDOB.click();
 	  Remote.FirstProtectSponsorPrimaryDOB.sendKeys("04101867");
@@ -359,6 +359,8 @@ public class RemoteNewMembershipAppSponsorSpouse extends TestBase{
 	public void confirmation_page_select_Email_Summary_and_select_Millitary_Allotment_method_payment() {
 	    Remote.NextBtn6.click();
 	    act.pause(2000).perform();
+	    Remote.ClickSurvivor.click();
+		act.pause(2000).perform();
 		Remote.EmailSummary1.click();
 		act.pause(1000).perform();
 		Remote.EmailSummaryConfirm1.sendKeys("qapeep512@gmail.com");
@@ -424,7 +426,7 @@ public class RemoteNewMembershipAppSponsorSpouse extends TestBase{
 	@Then("Input Last Name and Last four SSN numbers")
 	public void input_Last_Name_and_Last_four_SSN_numbers() {
 		Remote.LastNameforSponsor.sendKeys("ALBEK");
-		Remote.LastSSNforSponsor.sendKeys("0028");
+		Remote.LastSSNforSponsor.sendKeys("0000");
 	}
 
 	@Then("Click Review and Sign my Application btn")
@@ -455,7 +457,7 @@ public class RemoteNewMembershipAppSponsorSpouse extends TestBase{
 	    act.pause(2000).perform();
 		Remote.SponsorLastSSN.clear();
 		Remote.SponsorLastSSN.click();
-		Remote.SponsorLastSSN.sendKeys("0028");
+		Remote.SponsorLastSSN.sendKeys("0000");
 		act.pause(1000).perform();
 //		Remote.SpouseLastName.sendKeys("ALBEK");
 //		Remote.SpouseLastSSN.click();

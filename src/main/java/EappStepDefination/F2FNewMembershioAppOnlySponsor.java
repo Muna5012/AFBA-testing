@@ -195,6 +195,8 @@ public class F2FNewMembershioAppOnlySponsor extends TestBase{
 	@Then("Click Email summary btn and input Email address")
 	public void click_Email_summary_btn_and_input_Email_address() {
 	 act.pause(2000).perform();
+	 EApp2.ClickCharles.click();
+	 act.pause(2000).perform();
 	 EApp2.EmailSummary.click();
 	 act.pause(1000).perform();
 	 EApp2.EmailSummaryConfirm1.sendKeys("qapeep512@gmail.com");

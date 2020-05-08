@@ -83,6 +83,10 @@ public class AllPagefactories extends TestBase{
 			
 			PageFactory.initElements(driver, OneTimePayment.class);
 			
+			PageFactory.initElements(driver, AFBAconsumer.class);
+			
+			PageFactory.initElements(driver, ClaimsIntake.class);
+			
 			// here I must write all the page' classes' Page Factory
 			
 			
