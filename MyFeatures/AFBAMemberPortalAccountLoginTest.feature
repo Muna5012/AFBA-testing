@@ -11,7 +11,6 @@ Then Get the second text of This is AFBA TEST System, If you are a AFBA Member, 
 And Get the text of Contact AFBA Customer Service Hours, Toll-free, Local, Address
 And Click here to complete Email form 
 And Select Subject, name, SSN or Policy number, Email Address, phone number and Message
-And Click Submit button 
 Then Get Text of Success Your Online Inquiry has been submitted. A representative will be in contact with you shortly
 And Nevigate back to Login page
 

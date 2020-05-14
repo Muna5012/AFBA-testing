@@ -7,7 +7,6 @@ When click New Enrollment button to create case
 Then Input valid Sponsor SSN, Enrollment city and state
 And Click Begin Enrollment to create new sponsor
 Then Input Sponsor First Name, Last Name, DOB
-And Select Gender
 Then Click Married radio button
 And input Spouse First Name, Last Name and DOB
 Then Select Eligibility, Branch Of Service, Duty Status, Rank and Contribution Mode

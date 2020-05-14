@@ -408,7 +408,7 @@ public class RemoteNewMembershipAppSponsorSpouse extends TestBase{
 		Remote.ClickSelect.click();
 		act.pause(2000).perform();
 		Remote.ClickEmail.click();
-		act.pause(2000).perform();
+		act.pause(4000).perform();
 		Remote.SelectFirstEmail.click();
 	//	Remote.selectEmail.click();
 		act.pause(3000).perform();

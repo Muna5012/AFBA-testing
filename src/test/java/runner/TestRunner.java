@@ -17,10 +17,10 @@ import cucumber.api.junit.Cucumber;
 						"usage:CucumberReports/Usage/UsageReport.xml"
 				},
 					
-		features = "EappFeatures"
-		,glue = "EappStepDefination",
-		dryRun = true,
-		tags = {"@Consumer"}
+		features = "MyFeatures"
+		,glue = "CustomerPortalStepDef",
+		dryRun = false,
+		tags = {"@Claims1"}
 		)                  
 
 public class TestRunner {

@@ -59,10 +59,6 @@ public class VarifySSN extends TestBase {
 	    EApp2.DOB.click();
 	    EApp2.DOB.sendKeys("09051987");
 		EApp2.GenderforMale.click();
-	}
-
-	@Then("Select Gender")
-	public void select_Gender() {
 		EApp2.GenderforMale.click();
 		act.pause(1000).perform();
 	}

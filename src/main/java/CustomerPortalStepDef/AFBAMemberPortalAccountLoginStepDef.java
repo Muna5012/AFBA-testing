@@ -138,10 +138,6 @@ public class AFBAMemberPortalAccountLoginStepDef extends TestBase {
 		AFBAMemberPortalLoginPage.ClickMessage.sendKeys("Message....");
 		System.out.println(st5+": Message....");
 		act.pause(1000).perform();
-	}
-
-	@Then("Click Submit button")
-	public void click_Submit_button() {
 		AFBAMemberPortalLoginPage.SubmitBtn.click();
 		act.pause(2000).perform();
 	}

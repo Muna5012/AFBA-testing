@@ -19,14 +19,9 @@ public class AFBAMakeOnePaymentStepDef extends TestBase{
 		act.pause(2000).perform();
 //		OneTimePayment.SelectThird.click();
 //		act.pause(2000).perform();
-	}
-	
-	@Then("click Next button")
-	public void click_Next_button() {
 		OneTimePayment.NextBtn.click();
 		act.pause(2000).perform();
 	}
-
 	@Then("Input Credit Card and CVV numbers")
 	public void input_Credit_Card_and_CVV_numbers() {
 		OneTimePayment.CreditCardNum.sendKeys("4242424242424242");

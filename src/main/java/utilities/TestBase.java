@@ -14,6 +14,7 @@ import SalesforceFlashingPages.MemberLoginPage;
 import SalesforceFlashingPages.SalesforceFlashingPage;
 import cucumber.api.Scenario;
 import pages.AllPagefactories;
+import pages.ClaimsIntake;
 import pages.LoginPage;
 import pages.AFBAMemberPortalLoginPage;
 import pages.AgentLoginPage;
@@ -49,6 +50,12 @@ public abstract class TestBase {
 		act.pause(3000).perform();
 	}
 	
+	protected static void ClaimsInTake() {	
+		act.pause(2000).perform();
+		ClaimsIntake.CNext.click();
+		act.pause(2000).perform();	
+	}
+	
 	protected static void CustomerPortal() {	
 		MemberLoginPage.MemberLoginBtn.click();
 		MemberLoginPage.UserName.sendKeys("qapeep512@gmail.com");
@@ -81,7 +88,7 @@ public abstract class TestBase {
 	
 	protected static void SetUp() {
 		driver=Driver.getDriver();
-		driver.get(ConfigurationReader.getProperty("url"));
+		driver.get(ConfigurationReader.getProperty("url9"));
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		act = new Actions(driver);

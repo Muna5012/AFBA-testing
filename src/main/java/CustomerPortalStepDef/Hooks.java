@@ -32,10 +32,14 @@ public class Hooks extends TestBase {
 //			FlashingPage();
 //		}
 		
-		@Before(order = 4)
-		public void customerPortal() {
-			CustomerPortal();
-			
+//		@Before(order = 4)
+//		public void customerPortal() {
+//			CustomerPortal();
+//			
+//		}
+		@Before(order = 2)
+		public void claimsintake() {
+			ClaimsInTake();
 		}
 		
 //		@Before(order = 4)
