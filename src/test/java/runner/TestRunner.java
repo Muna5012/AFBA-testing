@@ -19,8 +19,8 @@ import cucumber.api.junit.Cucumber;
 					
 		features = "MyFeatures"
 		,glue = "CustomerPortalStepDef",
-		dryRun = false,
-		tags = {"@Claims1"}
+		dryRun = true,
+		tags = {"@Claims3"}
 		)                  
 
 public class TestRunner {

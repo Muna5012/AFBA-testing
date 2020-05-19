@@ -119,11 +119,7 @@ public class NewRequestStepdef1 extends TestBase {
 	public void click_checking_box() {
 		act.pause(2000).perform();
 	    NewRequest1.CheckingBox.click();
-	}
-
-	@Then("Click review button to review all the informations")
-	public void click_review_button_to_review_all_the_informations() {
-	   NewRequest1.ReviewBtn.click();
+	    NewRequest1.ReviewBtn.click();
 	}
 
 	@Then("Click X button to close the review page")

@@ -65,6 +65,44 @@ public class ClaimsIntake1 extends TestBase{
 		ClaimsIntake.DOD.sendKeys("02152020");
 		act.pause(2000).perform();
 		ClaimsIntake.Next3.click();
+		act.pause(2000).perform();
 	}
+	
+	@Then("Step four select Surviving spouse is still living option")
+	public void step_four_select_Surviving_spouse_is_still_living_option() {
+		ClaimsIntake.Step4Third.click();
+		act.pause(1000).perform();
+	}
+
+	@Then("Input Spouse SSN")
+	public void input_Spouse_SSN() {
+		ClaimsIntake.SpouseSSN.click();
+		ClaimsIntake.SpouseSSN.sendKeys("656200079");
+		ClaimsIntake.SpouseDOB.click();
+		ClaimsIntake.SpouseDOB.sendKeys("09151978");
+		act.pause(2000).perform();
+		ClaimsIntake.Next4.click();
+	}
+
+	@Then("Check step five and click Next button")
+	public void check_step_five_and_click_Next_button() {
+		act.pause(2000).perform();
+		ClaimsIntake.Next5.click();
+	}
+
+	@Then("Step six Enter your opinion and select Spouse option")
+	public void step_six_Enter_your_opinion_and_select_Spouse_option() {
+		ClaimsIntake.InputOpinion.click();
+		ClaimsIntake.InputOpinion.sendKeys("Test");
+		act.pause(2000).perform();
+		ClaimsIntake.SelectSpouse.click();
+		ClaimsIntake.SelectPreview.click();
+		act.pause(1000).perform();
+		ClaimsIntake.ClickNoteBtn.click();
+		act.pause(3000).perform();
+		ClaimsIntake.ClickSubmit.click();
+		act.pause(3000).perform();
+	}
+
 
 }

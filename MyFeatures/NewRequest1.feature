@@ -23,7 +23,6 @@ Then Click ADD button
 And Click the Next button
 Then Click Next button again
 Then Click checking box 
-And Click review button to review all the informations
 Then Click X button to close the review page
 Then Click Submit button to submit it
 Then Click Ok button to successfuly sumitted
