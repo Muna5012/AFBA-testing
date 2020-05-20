@@ -20,6 +20,9 @@ public class ClaimsIntake {
 	@FindBy(xpath="//*[@id='Mainmenu:j_id27:j_id28:theForm:informantRelationship']/option[3]")
 	public static WebElement RelationshipChild;
 	
+	@FindBy(xpath="//*[@id='Mainmenu:j_id27:j_id28:theForm:informantRelationship']/option[26]")
+	public static WebElement RelationshipExSpouse;
+	
 	@FindBy(xpath="//*[@id='Mainmenu:j_id27:j_id28:theForm:informantFirstName']")
 	public static WebElement FirstName;
 	
@@ -45,6 +48,9 @@ public class ClaimsIntake {
 	
 	@FindBy(xpath="//*[@id='Mainmenu:j_id27:j_id28:theForm:state']/option[29]")
 	public static WebElement StateNevada;
+	
+	@FindBy(xpath="//*[@id='Mainmenu:j_id27:j_id28:theForm:state']/option[42]")
+	public static WebElement StateSouthDakota;
 	
 	
 	
@@ -72,6 +78,9 @@ public class ClaimsIntake {
 	@FindBy(xpath="//*[@id=\"Mainmenu:j_id27:j_id28:theForm:natureOfDeath\"]/option[6]")
 	public static WebElement Suicide;
 	
+	@FindBy(xpath="//*[@id=\"Mainmenu:j_id27:j_id28:theForm:natureOfDeath\"]/option[5]")
+	public static WebElement NaturalCauses;
+	
 	@FindBy(xpath="//*[@id=\"Mainmenu:j_id27:j_id28:theForm:insuredSSN\"]")
 	public static WebElement InsuredCompleteSSN;
 	
@@ -80,6 +89,9 @@ public class ClaimsIntake {
 	
 	@FindBy(xpath="//*[@id=\"Mainmenu:j_id27:j_id28:theForm:causeOfDeath\"]/option[4]")
 	public static WebElement GunshotSelfInflicted;
+	
+	@FindBy(xpath="//*[@id=\"Mainmenu:j_id27:j_id28:theForm:causeOfDeath\"]/option[14]")
+	public static WebElement Bronchitis;
 	
 	@FindBy(xpath="//*[@id=\"Mainmenu:j_id27:j_id28:theForm:dateOfBirth\"]")
 	public static WebElement DOB;
