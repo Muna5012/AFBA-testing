@@ -645,8 +645,12 @@ public void select_Email_Summary_input_Email_Address_for_Confirmation() {
 	act.pause(2000).perform();
   Remote.NextBtn6.click();
   act.pause(3000).perform();
-  Remote.ClickSurvivor.click();
+	EApp2.SurvivorBenefitYes.click();
 	act.pause(2000).perform();
+	EApp2.CharlesBlantonYes.click();
+	act.pause(2000).perform();
+//  Remote.ClickSurvivor.click();
+//	act.pause(2000).perform();
 	Remote.EmailSummary1.click();
 	act.pause(2000).perform();
 	Remote.EmailSummaryConfirm1.sendKeys("qapeep512@gmail.com");

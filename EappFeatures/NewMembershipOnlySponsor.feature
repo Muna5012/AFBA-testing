@@ -1,6 +1,6 @@
 @NewMember1
-Feature: Eapp New No Cost Enrollment Rollout Plan test only sponsor test feature 
-Scenario:   Eapp New No Cost Enrollment Rollout Plan only sponsor test scenario
+Feature: New Changes Contributory Benefits Eapp New No Cost Enrollment Rollout Plan test only sponsor test feature 
+Scenario: New Changes Contributory Benefits Eapp New No Cost Enrollment Rollout Plan only sponsor test scenario
 
 When Search IT_QA Automation Face to Face cases and click it 
 Then Click New Enrollement button to create the Case

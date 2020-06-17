@@ -247,6 +247,10 @@ public class F2FNewMembershipAppSponsorSpouseTest extends TestBase{
 
 	@Then("Select Location for Signing in person option")
 	public void select_Location_for_Signing_in_person_option() {
+		EApp2.SurvivorBenefitYes.click();
+		act.pause(2000).perform();
+		EApp2.CharlesBlantonYes.click();
+		act.pause(2000).perform();
 		EApp2.EmailSummary2.click();
 		 act.pause(3000).perform();
 		EApp2.AcknowledgeofPayment.click();

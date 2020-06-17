@@ -327,7 +327,9 @@ public void input_Child_three_first_name_last_name_and_DOB() {
 	
 	@Then("Select Location for Signing in person on next page")
 	public void select_Location_for_Signing_in_person_on_next_page() {
-		EApp2.ClickCharles.click();
+		EApp2.SurvivorBenefitNo.click();
+		act.pause(2000).perform();
+		EApp2.CharlesBlantonYes.click();
 		act.pause(2000).perform();
 		EApp2.EmailSummary2.click();
 		act.pause(3000).perform();

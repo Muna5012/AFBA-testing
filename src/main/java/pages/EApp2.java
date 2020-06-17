@@ -1376,6 +1376,27 @@ public class EApp2 {
 	@FindBy(xpath="//*[@id='ScholarBenefit']")
 	public static WebElement ClickCharles;
 	
+	@FindBy(xpath="//*[@id='emailSummaryConfirm']/div/div/div[1]/label[1]/span")
+	public static WebElement SurvivorBenefitYes;
+	
+	@FindBy(xpath="//*[@id='emailSummaryConfirm']/div/div/div[2]/label[1]/span")
+	public static WebElement CharlesBlantonYes;
+	
+	@FindBy(xpath="//*[@id='emailSummaryConfirm']/div/div/div[1]/label[2]/span")
+	public static WebElement SurvivorBenefitNo;
+	
+	@FindBy(xpath="//*[@id='emailSummaryConfirm']/div/div/div[2]/label[2]/span")
+	public static WebElement CharlesBlantonNo;
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 //	@FindBy(xpath="")
 //	public static WebElementE
 	

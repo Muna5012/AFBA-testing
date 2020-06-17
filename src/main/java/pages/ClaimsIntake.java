@@ -52,16 +52,23 @@ public class ClaimsIntake {
 	@FindBy(xpath="//*[@id='Mainmenu:j_id27:j_id28:theForm:state']/option[42]")
 	public static WebElement StateSouthDakota;
 	
-	
-	
 	@FindBy(xpath="//*[@id=\"Mainmenu:j_id27:j_id28:theForm:zipCode\"]")
 	public static WebElement ZipCode;
 	
 	@FindBy(xpath="//*[@id=\"Mainmenu:j_id27:j_id28:theForm:informantPhone\"]")
 	public static WebElement Phone;
 	
+	@FindBy(xpath="//*[@id=\"Mainmenu:j_id27:j_id28:theForm:stage2\"]/div[2]")
+	public static WebElement ClickBlank;
+	
+	@FindBy(xpath="//*[@id=\"Mainmenu:j_id27:j_id28:theForm:j_id76\"]/div[4]/div/label")
+	public static WebElement ClickBlank2;
+	
 	@FindBy(xpath="//*[@id='Mainmenu:j_id27:j_id28:theForm:policyNext']")
 	public static WebElement Next;
+	
+	
+	
 	
 	@FindBy(xpath="//*[@id='Mainmenu:j_id27:j_id28:theForm:insuredFirstName']")
 	public static WebElement FName;
@@ -84,6 +91,9 @@ public class ClaimsIntake {
 	@FindBy(xpath="//*[@id=\"Mainmenu:j_id27:j_id28:theForm:insuredSSN\"]")
 	public static WebElement InsuredCompleteSSN;
 	
+	@FindBy(xpath="//*[@id=\"Mainmenu:j_id27:j_id28:theForm:causeOfDeath\"]")
+	public static WebElement clickforcauseofdeath;;
+	
 	@FindBy(xpath="//*[@id=\"Mainmenu:j_id27:j_id28:theForm:causeOfDeath\"]/option[3]")
 	public static WebElement CauseOfDeath;
 	
@@ -105,6 +115,8 @@ public class ClaimsIntake {
 	@FindBy(xpath="//*[@id=\"Mainmenu:j_id27:j_id28:theForm:deathcountry\"]/option[10]")
 	public static WebElement Australia;
 	
+	@FindBy(xpath="//*[@id='Mainmenu:j_id27:j_id28:theForm:j_id126']/div[2]/div/label")
+	public static WebElement ClickBlankStep3;
 	
 	@FindBy(xpath="//*[@id=\"Mainmenu:j_id27:j_id28:theForm:j_id136\"]")
 	public static WebElement Next3;
@@ -277,6 +289,33 @@ public class ClaimsIntake {
 	
 	@FindBy(xpath="//*[@id=\"Mainmenu:j_id27:j_id28:theForm:claimPackageRadio:3\"]")
 	public static WebElement SelectOther;
+	
+	@FindBy(xpath="//*[@id=\"Mainmenu:j_id27:j_id28:theForm:claimFirstName\"]")
+	public static WebElement OtherFN;
+	
+	@FindBy(xpath="//*[@id=\"Mainmenu:j_id27:j_id28:theForm:claimLastName\"]")
+	public static WebElement OtherLN;
+	
+	@FindBy(xpath="//*[@id=\"Mainmenu:j_id27:j_id28:theForm:ClaimRelationship\"]/option[11]")
+	public static WebElement Otherrelationship;
+	
+	@FindBy(xpath="//*[@id=\"Mainmenu:j_id27:j_id28:theForm:claimStreetAddr\"]")
+	public static WebElement OtherAddress;
+	
+	@FindBy(xpath="//*[@id=\"Mainmenu:j_id27:j_id28:theForm:claimCity\"]")
+	public static WebElement OtherCity;
+	
+	@FindBy(xpath="//*[@id=\"Mainmenu:j_id27:j_id28:theForm:claimState\"]/option[34]")
+	public static WebElement OtherState;
+	
+	@FindBy(xpath="//*[@id=\"Mainmenu:j_id27:j_id28:theForm:claimZipCode\"]")
+	public static WebElement OtherZipCode;
+	
+	@FindBy(xpath="//*[@id=\"Mainmenu:j_id27:j_id28:theForm:claimCountry\"]/option[2]")
+	public static WebElement OtherCountryUS;
+	
+	
+	
 	
 	@FindBy(xpath="//*[@id=\"Mainmenu:j_id27:j_id28:theForm:j_id321\"]")
 	public static WebElement SelectPreview;

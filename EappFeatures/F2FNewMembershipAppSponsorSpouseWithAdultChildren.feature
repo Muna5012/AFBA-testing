@@ -1,5 +1,5 @@
 @F2F3
-Feature: EApp Face to Face case verify New Membership Application sponsor, spouse & Adult children Select Eligibility Fire Department. Select group free & select question, customize Fed Term & First Protect test feature
+Feature: New Changes on Contributory Benefits, verify New Membership Application sponsor, spouse & Adult children Select Eligibility Fire Department. Select group free & select question, customize Fed Term & First Protect test feature
 Scenario: EApp Face to Face case verify New Membership Application sponsor, spouse & Adult children Select Eligibility Fire Department. Select group free & select question, customize Fed Term & First Protect test scenarios
 
 	When Click Manage cases button on Home page

@@ -352,11 +352,16 @@ public class NewMembershipAppSponsorSpousewithAdultChild extends TestBase{
 	@Then("Nexc page select Email Summary and select Acknowledgement Military Payment radio button")
 	public void nexc_page_select_Email_Summary_and_select_Acknowledgement_Military_Payment_radio_button() {
 		EApp2.NextBtn6.click();
+		act.pause(2000).perform();
+		EApp2.SurvivorBenefitYes.click();
+		act.pause(2000).perform();
+		EApp2.CharlesBlantonNo.click();
+		act.pause(2000).perform();
 		EApp2.EmailSummary2.click();
 		act.pause(3000).perform();
 		EApp2.AcknowledgeofPayment.click();
 		//  EApp2.SpouseSigninYesforCallCenter.click();
-		  act.pause(2000).perform();
+	act.pause(2000).perform();
 	}
 
 	@Then("Click I Sgree to This Coverage and am ready to signin button")

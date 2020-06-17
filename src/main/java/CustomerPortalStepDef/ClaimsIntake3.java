@@ -10,6 +10,11 @@ public class ClaimsIntake3  extends TestBase{
 	
 	@Given("Step two to select Sibling to relationship Insured")
 	public void step_two_to_select_Sibling_to_relationship_Insured() {
+		act.pause(1000).perform();
+		ClaimsIntake.FirstName.sendKeys("Aleia");
+		ClaimsIntake.LastName.sendKeys("Dubois");
+		act.pause(1000).perform();
+		
 		ClaimsIntake.Relationship.click();
 		act.pause(2000).perform();
 		ClaimsIntake.RelationshipExSpouse.click();
@@ -17,15 +22,9 @@ public class ClaimsIntake3  extends TestBase{
 
 	@When("Input FN, LN, Email, Select Country, Address, City, State, Zipcode, Phone Num")
 	public void input_FN_LN_Email_Select_Country_Address_City_State_Zipcode_Phone_Num() {
-		act.pause(1000).perform();
-		ClaimsIntake.FirstName.sendKeys("Aleia");
-		ClaimsIntake.LastName.sendKeys("Dubois");
-		act.pause(1000).perform();
-		ClaimsIntake.Email.sendKeys("qapeep512@gmail.com");
-		ClaimsIntake.Country.click();
-		act.pause(1000).perform();
-		ClaimsIntake.USA.click();
-		act.pause(1000).perform();
+		act.pause(2000).perform();
+		ClaimsIntake.Email.sendKeys("qapeep19@gmail.com");
+		act.pause(2000).perform();
 		ClaimsIntake.Street.sendKeys("Apt 1227 7 River Rd");
 		act.pause(1000).perform();
 		ClaimsIntake.City.sendKeys("Pago Pago");
@@ -33,8 +32,15 @@ public class ClaimsIntake3  extends TestBase{
 		act.pause(1000).perform();
 		ClaimsIntake.ZipCode.click();
 		ClaimsIntake.ZipCode.sendKeys("96799");
+		act.pause(2000).perform();
+		ClaimsIntake.Country.click();
+		act.pause(2000).perform();
+		ClaimsIntake.USA.click();
+		act.pause(2000).perform();
 		ClaimsIntake.Phone.click();
 		ClaimsIntake.Phone.sendKeys("7035647558");
+		act.pause(2000).perform();
+		ClaimsIntake.ClickBlank2.click();
 		act.pause(2000).perform();
 		ClaimsIntake.Next.click();
 	}
@@ -117,6 +123,7 @@ public class ClaimsIntake3  extends TestBase{
 		ClaimsIntake.NextOfCity.sendKeys("Portland");
 		act.pause(2000).perform();
 		ClaimsIntake.NextOfState.click();
+		act.pause(2000).perform();
 		ClaimsIntake.NextOfZipCode.click();
 		ClaimsIntake.NextOfZipCode.sendKeys("97035");
 		act.pause(2000).perform();
@@ -135,14 +142,14 @@ public class ClaimsIntake3  extends TestBase{
 		ClaimsIntake.SelectInformantMe.click();
 		act.pause(2000).perform();
 		ClaimsIntake.SelectPreview.click();
-		act.pause(4000).perform();
+		act.pause(6000).perform();
 	}
 
 	@Then("Step seven Summary of selection Click Notes radio button and submit the application")
 	public void step_seven_Summary_of_selection_Click_Notes_radio_button_and_submit_the_application() {
-		ClaimsIntake.ClickNoteBtn.click();
-		act.pause(2000).perform();
-		ClaimsIntake.ClickSubmit.click();
+//		ClaimsIntake.ClickNoteBtn.click();
+//		act.pause(2000).perform();
+//		ClaimsIntake.ClickSubmit.click();
 		act.pause(5000).perform();
 	}
 	

@@ -1,5 +1,5 @@
 @Remote5
-Feature: Member Spouse LT12, Three Adult Children LT15, Three Minor Children LT16. All policies for each Applicant have Primary and Contingent Beneficiaries, Which include FullName, Relationship,SSN and DOB. Select Military Allotment Payment test feature 
+Feature: New Changes on Contributory Benefits Member Spouse LT12, Three Adult Children LT15, Three Minor Children LT16. All policies for each Applicant have Primary and Contingent Beneficiaries, Which include FullName, Relationship,SSN and DOB. Select Military Allotment Payment test feature 
 Scenario: Member Spouse LT12, Three Adult Children LT15, Three Minor Children LT16. All policies for each Applicant have Primary and Contingent Beneficiaries, Which include FullName, Relationship,SSN and DOB. Select Military Allotment Payment test scanario
 
 When Click New Enrollment button input Sponsor SSN, Enrollment city and Enrollment state 
