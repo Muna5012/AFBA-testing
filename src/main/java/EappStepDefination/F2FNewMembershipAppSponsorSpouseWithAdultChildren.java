@@ -322,7 +322,7 @@ public void input_Child_three_first_name_last_name_and_DOB() {
 			EApp3.FirstprotectSponsorPrimaryDOB2.sendKeys("02211967");
 		act.pause(2000).perform();
 	    EApp2.NextBtn6.click();
-	    act.pause(2000).perform();
+	    act.pause(3000).perform();
 	}
 	
 	@Then("Select Location for Signing in person on next page")

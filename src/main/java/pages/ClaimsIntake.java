@@ -31,6 +31,7 @@ public class ClaimsIntake {
 	
 	@FindBy(xpath="//*[@id='Mainmenu:j_id27:j_id28:theForm:email']")
 	public static WebElement Email; 
+	
 	@FindBy(xpath="//*[@id='Mainmenu:j_id27:j_id28:theForm:informantCountry']")
 	public static WebElement Country;
 	
@@ -42,6 +43,9 @@ public class ClaimsIntake {
 	
 	@FindBy(xpath="//*[@id='Mainmenu:j_id27:j_id28:theForm:city']")
 	public static WebElement City;
+	
+	@FindBy(xpath="//*[@id='Mainmenu:j_id27:j_id28:theForm:state']")
+	public static WebElement Stateclick;
 	
 	@FindBy(xpath="//*[@id='Mainmenu:j_id27:j_id28:theForm:state']/option[43]")
 	public static WebElement State;
@@ -82,6 +86,9 @@ public class ClaimsIntake {
 	@FindBy(xpath="//*[@id=\"Mainmenu:j_id27:j_id28:theForm:natureOfDeath\"]/option[3]")
 	public static WebElement Accidental;
 	
+	@FindBy(xpath="//*[@id=\"Mainmenu:j_id27:j_id28:theForm:natureOfDeath\"]")
+	public static WebElement ClickNatureOfDeath;
+	
 	@FindBy(xpath="//*[@id=\"Mainmenu:j_id27:j_id28:theForm:natureOfDeath\"]/option[6]")
 	public static WebElement Suicide;
 	
@@ -96,6 +103,9 @@ public class ClaimsIntake {
 	
 	@FindBy(xpath="//*[@id=\"Mainmenu:j_id27:j_id28:theForm:causeOfDeath\"]/option[3]")
 	public static WebElement CauseOfDeath;
+	
+	@FindBy(xpath="//*[@id=\"Mainmenu:j_id27:j_id28:theForm:causeOfDeath\"]")
+	public static WebElement ClickCauseOfDeath;
 	
 	@FindBy(xpath="//*[@id=\"Mainmenu:j_id27:j_id28:theForm:causeOfDeath\"]/option[4]")
 	public static WebElement GunshotSelfInflicted;
@@ -112,13 +122,16 @@ public class ClaimsIntake {
 	@FindBy(xpath="//*[@id='Mainmenu:j_id27:j_id28:theForm:outsideUS-label-01']/span[1]")
 	public static WebElement DeathOutsideUS;
 	
+	@FindBy(xpath="//*[@id=\"Mainmenu:j_id27:j_id28:theForm:deathcountry\"]")
+	public static WebElement ClickCountry;
+	
 	@FindBy(xpath="//*[@id=\"Mainmenu:j_id27:j_id28:theForm:deathcountry\"]/option[10]")
 	public static WebElement Australia;
 	
 	@FindBy(xpath="//*[@id='Mainmenu:j_id27:j_id28:theForm:j_id126']/div[2]/div/label")
 	public static WebElement ClickBlankStep3;
 	
-	@FindBy(xpath="//*[@id=\"Mainmenu:j_id27:j_id28:theForm:j_id136\"]")
+	@FindBy(xpath="//*[@id=\"Mainmenu:j_id27:j_id28:theForm:insuredNext\"]")
 	public static WebElement Next3;
 	
 	
@@ -147,8 +160,11 @@ public class ClaimsIntake {
 	@FindBy(xpath="//*[@id=\"Mainmenu:j_id27:j_id28:theForm:spouseOtherDateOfDeath\"]")
 	public static WebElement SecondDeceasedSpouseDOD;
 	
-	@FindBy(xpath="//*[@id=\"Mainmenu:j_id27:j_id28:theForm:j_id257\"]")
+	@FindBy(xpath="//*[@id='Mainmenu:j_id27:j_id28:theForm:step4NextButton']")
 	public static WebElement Next4;
+	
+	@FindBy(xpath="//*[@id=\"Mainmenu:j_id27:j_id28:theForm:stagesurvivingSSN\"]/div")
+	public static WebElement Next4Click;
 	
 	
 	
@@ -269,7 +285,7 @@ public class ClaimsIntake {
 	@FindBy(xpath="//*[@id=\"Mainmenu:j_id27:j_id28:theForm:kinPhone\"]")
 	public static WebElement NextPhoneNum;
 	
-	@FindBy(xpath="//*[@id=\"Mainmenu:j_id27:j_id28:theForm:j_id289\"]")
+	@FindBy(xpath="//*[@id='Mainmenu:j_id27:j_id28:theForm:step5NextButton']")
 	public static WebElement Next5;
 	
 	
@@ -317,7 +333,7 @@ public class ClaimsIntake {
 	
 	
 	
-	@FindBy(xpath="//*[@id=\"Mainmenu:j_id27:j_id28:theForm:j_id321\"]")
+	@FindBy(xpath="//*[@id=\"Mainmenu:j_id27:j_id28:theForm:j_id387\"]")
 	public static WebElement SelectPreview;
 	
 	@FindBy(xpath="//*[@id=\"Mainmenu:j_id27:j_id28:theForm:check-button-label-e01\"]/span[1]")
@@ -334,6 +350,9 @@ public class ClaimsIntake {
 	
 	@FindBy(xpath="//*[@id=\"Mainmenu:j_id27:j_id28:theForm:kininformantRadio:1\"]")
 	public static WebElement SelectNoSecond;
+	
+	@FindBy(xpath="//*[@id=\"Mainmenu:j_id27:j_id28:theForm:kinRelationship\"]")
+	public static WebElement Step5firstOptionStep4NextRelationship;
 	
 	@FindBy(xpath="//*[@id=\"Mainmenu:j_id27:j_id28:theForm:kinRelationship\"]/option[4]")
 	public static WebElement Step5firstOptionStep4NextRelationshipChild;
@@ -353,11 +372,17 @@ public class ClaimsIntake {
 	@FindBy(xpath="//*[@id=\"Mainmenu:j_id27:j_id28:theForm:kinCity\"]")
 	public static WebElement NextOfCity;
 	
+	@FindBy(xpath="//*[@id=\"Mainmenu:j_id27:j_id28:theForm:kinState\"]")
+	public static WebElement NextOfStateClick;
+	
 	@FindBy(xpath="//*[@id=\"Mainmenu:j_id27:j_id28:theForm:kinState\"]/option[38]")
 	public static WebElement NextOfState;
 	
 	@FindBy(xpath="//*[@id=\"Mainmenu:j_id27:j_id28:theForm:kinZipCode\"]")
 	public static WebElement NextOfZipCode;
+	
+	@FindBy(xpath="//*[@id=\"Mainmenu:j_id27:j_id28:theForm:kinCountry\"]")
+	public static WebElement NextofCountryClick;
 	
 	@FindBy(xpath="//*[@id=\"Mainmenu:j_id27:j_id28:theForm:kinCountry\"]/option[2]")
 	public static WebElement NextOfCountry;

@@ -10,11 +10,10 @@ public class ClaimsIntake3  extends TestBase{
 	
 	@Given("Step two to select Sibling to relationship Insured")
 	public void step_two_to_select_Sibling_to_relationship_Insured() {
-		act.pause(1000).perform();
+		act.pause(2000).perform();
 		ClaimsIntake.FirstName.sendKeys("Aleia");
 		ClaimsIntake.LastName.sendKeys("Dubois");
-		act.pause(1000).perform();
-		
+		act.pause(2000).perform();
 		ClaimsIntake.Relationship.click();
 		act.pause(2000).perform();
 		ClaimsIntake.RelationshipExSpouse.click();
@@ -23,13 +22,18 @@ public class ClaimsIntake3  extends TestBase{
 	@When("Input FN, LN, Email, Select Country, Address, City, State, Zipcode, Phone Num")
 	public void input_FN_LN_Email_Select_Country_Address_City_State_Zipcode_Phone_Num() {
 		act.pause(2000).perform();
+		ClaimsIntake.Email.click();
 		ClaimsIntake.Email.sendKeys("qapeep19@gmail.com");
 		act.pause(2000).perform();
+		ClaimsIntake.Street.click();
 		ClaimsIntake.Street.sendKeys("Apt 1227 7 River Rd");
-		act.pause(1000).perform();
+		act.pause(2000).perform();
+		ClaimsIntake.City.click();
 		ClaimsIntake.City.sendKeys("Pago Pago");
+		act.pause(2000).perform();
+		ClaimsIntake.State.click();
 		ClaimsIntake.StateSouthDakota.click();
-		act.pause(1000).perform();
+		act.pause(2000).perform();
 		ClaimsIntake.ZipCode.click();
 		ClaimsIntake.ZipCode.sendKeys("96799");
 		act.pause(2000).perform();
@@ -47,15 +51,11 @@ public class ClaimsIntake3  extends TestBase{
 
 	@Then("Step three Input Insured FN, LN, Policy Num, NOD, Insured complete SSN, CauseOfDeath, DOB, DOB")
 	public void step_three_Input_Insured_FN_LN_Policy_Num_NOD_Insured_complete_SSN_CauseOfDeath_DOB_DOB() {
+		ClaimsIntake.FName.click();
 		ClaimsIntake.FName.sendKeys("Barthon");
+		act.pause(2000).perform();
+		ClaimsIntake.LName.click();
 		ClaimsIntake.LName.sendKeys("Dubois");
-		act.pause(1000).perform();
-		ClaimsIntake.PolicyNum.sendKeys("4567890");
-		act.pause(1000).perform();
-		ClaimsIntake.NaturalCauses.click();
-		act.pause(1000).perform();
-		ClaimsIntake.InsuredCompleteSSN.sendKeys("646200078");
-		ClaimsIntake.Bronchitis.click();
 		act.pause(2000).perform();
 		ClaimsIntake.DOB.click();
 		ClaimsIntake.DOB.sendKeys("10041998");
@@ -63,14 +63,26 @@ public class ClaimsIntake3  extends TestBase{
 		ClaimsIntake.DOD.click();
 		ClaimsIntake.DOD.sendKeys("11202019");
 		act.pause(2000).perform();
-		ClaimsIntake.Next3.click();
+		ClaimsIntake.ClickNatureOfDeath.click();
+		ClaimsIntake.NaturalCauses.click();
 		act.pause(2000).perform();
+		ClaimsIntake.clickforcauseofdeath.click();
+		ClaimsIntake.Bronchitis.click();
+		act.pause(2000).perform();
+		ClaimsIntake.PolicyNum.click();
+		ClaimsIntake.PolicyNum.sendKeys("4567890");
+		act.pause(2000).perform();
+		ClaimsIntake.InsuredCompleteSSN.click();
+		ClaimsIntake.InsuredCompleteSSN.sendKeys("646200078");
+		act.pause(3000).perform();
+		ClaimsIntake.Next3.click();
+		act.pause(3000).perform();
 	}
 	
 	@Then("Step four Select the Insured was dicorced")
 	public void step_four_Select_the_Insured_was_dicorced() {
 		ClaimsIntake.Step4Second.click();
-		act.pause(1000).perform();
+		act.pause(3000).perform();
 	}
 
 	@Then("input Ex Spouse FN, LN, Date of Divorce, select deceased and input Date of Death")
