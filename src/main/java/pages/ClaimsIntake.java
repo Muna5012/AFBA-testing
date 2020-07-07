@@ -333,7 +333,7 @@ public class ClaimsIntake {
 	
 	
 	
-	@FindBy(xpath="//*[@id=\"Mainmenu:j_id27:j_id28:theForm:j_id387\"]")
+	@FindBy(xpath="//*[@id='Mainmenu:j_id27:j_id28:theForm:j_id389']")
 	public static WebElement SelectPreview;
 	
 	@FindBy(xpath="//*[@id=\"Mainmenu:j_id27:j_id28:theForm:check-button-label-e01\"]/span[1]")

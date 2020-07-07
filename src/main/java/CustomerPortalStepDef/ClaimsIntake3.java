@@ -8,9 +8,10 @@ import utilities.TestBase;
 
 public class ClaimsIntake3  extends TestBase{
 	
-	@Given("Step two to select Sibling to relationship Insured")
-	public void step_two_to_select_Sibling_to_relationship_Insured() {
+	@Given("Step two input First Name, Last Name, Relationship")
+	public void step_two_input_First_Name_Last_Name_Relationship() {
 		act.pause(2000).perform();
+		ClaimsIntake.FirstName.click();
 		ClaimsIntake.FirstName.sendKeys("Aleia");
 		ClaimsIntake.LastName.sendKeys("Dubois");
 		act.pause(2000).perform();
@@ -19,8 +20,8 @@ public class ClaimsIntake3  extends TestBase{
 		ClaimsIntake.RelationshipExSpouse.click();
 	}
 
-	@When("Input FN, LN, Email, Select Country, Address, City, State, Zipcode, Phone Num")
-	public void input_FN_LN_Email_Select_Country_Address_City_State_Zipcode_Phone_Num() {
+	@When("Input Email, Address, City, State, Zipcode, Country and Phone Num")
+	public void input_Email_Address_City_State_Zipcode_Country_and_Phone_Num() {
 		act.pause(2000).perform();
 		ClaimsIntake.Email.click();
 		ClaimsIntake.Email.sendKeys("qapeep19@gmail.com");
@@ -62,16 +63,16 @@ public class ClaimsIntake3  extends TestBase{
 		act.pause(2000).perform();
 		ClaimsIntake.DOD.click();
 		ClaimsIntake.DOD.sendKeys("11202019");
-		act.pause(2000).perform();
+		act.pause(3000).perform();
 		ClaimsIntake.ClickNatureOfDeath.click();
 		ClaimsIntake.NaturalCauses.click();
-		act.pause(2000).perform();
+		act.pause(3000).perform();
 		ClaimsIntake.clickforcauseofdeath.click();
 		ClaimsIntake.Bronchitis.click();
-		act.pause(2000).perform();
+		act.pause(3000).perform();
 		ClaimsIntake.PolicyNum.click();
 		ClaimsIntake.PolicyNum.sendKeys("4567890");
-		act.pause(2000).perform();
+		act.pause(3000).perform();
 		ClaimsIntake.InsuredCompleteSSN.click();
 		ClaimsIntake.InsuredCompleteSSN.sendKeys("646200078");
 		act.pause(3000).perform();

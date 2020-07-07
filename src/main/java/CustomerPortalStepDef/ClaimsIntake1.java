@@ -10,13 +10,13 @@ public class ClaimsIntake1 extends TestBase{
 
 	@Given("Step two Input First Name, Last Name, Relationship")
 	public void step_two_Input_First_Name_Last_Name_Relationship() {
-		act.pause(2000).perform();
+		act.pause(3000).perform();
 		ClaimsIntake.FirstName.click();
 		ClaimsIntake.FirstName.sendKeys("Kim");
 		act.pause(2000).perform();
 		ClaimsIntake.LastName.click();
 		ClaimsIntake.LastName.sendKeys("Johhy");
-		act.pause(2000).perform();
+		act.pause(3000).perform();
 		ClaimsIntake.Relationship.click();
 	//	act.pause(2000).perform();
 		ClaimsIntake.RelationshipSpouse.click();
@@ -35,18 +35,15 @@ public class ClaimsIntake1 extends TestBase{
 		ClaimsIntake.City.sendKeys("Nashville");
 		act.pause(3000).perform();
 		ClaimsIntake.Stateclick.click();
-	//	act.pause(2000).perform();
 		ClaimsIntake.State.click();
 		act.pause(3000).perform();
 		ClaimsIntake.ZipCode.click();
 		ClaimsIntake.ZipCode.sendKeys("37201");
 		act.pause(3000).perform();
 		ClaimsIntake.Country.click();
-		//act.pause(2000).perform();
 		ClaimsIntake.USA.click();
 		act.pause(3000).perform();
 		ClaimsIntake.Phone.click();
-    //	act.pause(2000).perform();
 		ClaimsIntake.Phone.sendKeys("7035647558");
 		act.pause(3000).perform();
 		ClaimsIntake.ClickBlank2.click();
@@ -65,26 +62,26 @@ public class ClaimsIntake1 extends TestBase{
 		act.pause(2000).perform();
 		ClaimsIntake.DOB.click();
 		ClaimsIntake.DOB.sendKeys("09151978");
-		act.pause(2000).perform();
+		act.pause(3000).perform();
 		ClaimsIntake.DOD.click();
 		ClaimsIntake.DOD.sendKeys("02152020");
-		act.pause(2000).perform();
+		act.pause(3000).perform();
 		ClaimsIntake.Accidental.click();
 		act.pause(3000).perform();
 		ClaimsIntake.clickforcauseofdeath.click();
 		act.pause(3000).perform();
 		ClaimsIntake.ClickCauseOfDeath.click();
 		ClaimsIntake.CauseOfDeath.click();
-		act.pause(2000).perform();
+		act.pause(3000).perform();
 	}
 
 	@Then("select Death Occur outside of the US and select the country")
 	public void select_Death_Occur_outside_of_the_US_and_select_the_country() {
 		ClaimsIntake.DeathOutsideUS.click();
-		act.pause(4000).perform();
-	//	ClaimsIntake.ClickCountry.click();
+		act.pause(3000).perform();
+		ClaimsIntake.ClickCountry.click();
 		ClaimsIntake.Australia.click();
-		act.pause(2000).perform();
+		act.pause(3000).perform();
 	}
 	
 @Then("Input Policy Number and SSN")
@@ -93,12 +90,12 @@ public void input_Policy_Number_and_SSN() {
 	act.pause(3000).perform();
 	ClaimsIntake.InsuredCompleteSSN.click();
 	act.pause(2000).perform();
-	ClaimsIntake.InsuredCompleteSSN.sendKeys("646200080");
+	ClaimsIntake.InsuredCompleteSSN.sendKeys("454913271");
 	act.pause(3000).perform();
 //	ClaimsIntake.ClickBlankStep3.click();
 //	act.pause(2000).perform();
 	ClaimsIntake.Next3.click();
-	act.pause(2000).perform();
+	act.pause(3000).perform();
 }
 @Then("Step four select Surviving spouse is still living option")
 public void step_four_select_Surviving_spouse_is_still_living_option() {
@@ -113,7 +110,7 @@ public void input_Spouse_FN_LN_DOB_SSN_and_click_Next_button() {
 		ClaimsIntake.SpouseDOB.sendKeys("09151978");
 		act.pause(2000).perform();
 		ClaimsIntake.SpouseSSN.click();
-		ClaimsIntake.SpouseSSN.sendKeys("656200079");
+		ClaimsIntake.SpouseSSN.sendKeys("226020144");
 		act.pause(3000).perform();
 //		ClaimsIntake.ClickBlank.click();
 //		act.pause(2000).perform();
@@ -124,7 +121,7 @@ public void input_Spouse_FN_LN_DOB_SSN_and_click_Next_button() {
 
 @Then("Check step five check the input data and click Next button")
 public void check_step_five_check_the_input_data_and_click_Next_button() {
-		act.pause(3000).perform();
+		act.pause(5000).perform();
 		ClaimsIntake.Next5.click();
 	}
 
