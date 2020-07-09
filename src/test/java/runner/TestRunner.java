@@ -20,7 +20,7 @@ import cucumber.api.junit.Cucumber;
 		features = "MyFeatures"
 		,glue = "CustomerPortalStepDef",
 		dryRun = false,
-		tags = {"@Claims3"}
+		tags = {"@Claims1"}
 		)                  
 
 public class TestRunner {

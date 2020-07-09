@@ -27,6 +27,7 @@ public abstract class TestBase {
 	protected static Actions act;
 	protected static JavascriptExecutor js;
 	
+	
 	protected static void LogIn() {
 		
 		Assert.assertTrue(driver.getTitle().contains("Login"));
@@ -88,7 +89,7 @@ public abstract class TestBase {
 	
 	protected static void SetUp() {
 		driver=Driver.getDriver();
-		driver.get(ConfigurationReader.getProperty("url9"));
+		driver.get(ConfigurationReader.getProperty("url"));
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		act = new Actions(driver);

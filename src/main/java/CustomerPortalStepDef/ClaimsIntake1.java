@@ -13,7 +13,7 @@ public class ClaimsIntake1 extends TestBase{
 		act.pause(3000).perform();
 		ClaimsIntake.FirstName.click();
 		ClaimsIntake.FirstName.sendKeys("Kim");
-		act.pause(2000).perform();
+		act.pause(3000).perform();
 		ClaimsIntake.LastName.click();
 		ClaimsIntake.LastName.sendKeys("Johhy");
 		act.pause(3000).perform();
@@ -67,9 +67,9 @@ public class ClaimsIntake1 extends TestBase{
 		ClaimsIntake.DOD.sendKeys("02152020");
 		act.pause(3000).perform();
 		ClaimsIntake.Accidental.click();
-		act.pause(3000).perform();
+		act.pause(4000).perform();
 		ClaimsIntake.clickforcauseofdeath.click();
-		act.pause(3000).perform();
+		act.pause(4000).perform();
 		ClaimsIntake.ClickCauseOfDeath.click();
 		ClaimsIntake.CauseOfDeath.click();
 		act.pause(3000).perform();

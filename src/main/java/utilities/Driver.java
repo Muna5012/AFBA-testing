@@ -4,7 +4,9 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.*;
 import org.openqa.selenium.firefox.FirefoxDriver; 
-import org.openqa.selenium.ie.InternetExplorerDriver;  
+import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.ie.InternetExplorerOptions;
+
 
 enum MyWebDrivers{
 	chrome, FireFox, IE, chromeheadless
@@ -51,8 +53,15 @@ enum MyWebDrivers{
                      if (System.getProperty("os.name").toLowerCase().contains("windows10")) { 
                         throw new WebDriverException("Your operating system does not support the requested browser"); 
                     }
+                     
                      WebDriverManager.iedriver().setup(); 
-                    driver = new InternetExplorerDriver(); 
+             
+                     InternetExplorerOptions capabilities = new InternetExplorerOptions();
+                     capabilities.setCapability("ignoreZoomSetting", true);
+                     driver = new InternetExplorerDriver(capabilities);
+                     
+               //      driver = new InternetExplorerDriver(); 
+                     
                      break; 
                      
                      default:
