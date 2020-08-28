@@ -87,6 +87,11 @@ public class AllPagefactories extends TestBase{
 			
 			PageFactory.initElements(driver, ClaimsIntake.class);
 			
+			PageFactory.initElements(driver, NGPPayments.class);
+			
+			PageFactory.initElements(driver, SalesforceChangesforLP.class);
+			
+			
 			// here I must write all the page' classes' Page Factory
 			
 			

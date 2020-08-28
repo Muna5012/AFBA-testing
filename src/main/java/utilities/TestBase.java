@@ -16,9 +16,11 @@ import cucumber.api.Scenario;
 import pages.AllPagefactories;
 import pages.ClaimsIntake;
 import pages.LoginPage;
+import pages.NGPPayments;
 import pages.AFBAMemberPortalLoginPage;
 import pages.AgentLoginPage;
 import pages.RemoteLoginPage;
+import pages.SalesforceChangesforLP;
 
 public abstract class TestBase {
 	
@@ -35,6 +37,16 @@ public abstract class TestBase {
 		LoginPage.password.sendKeys("Muna5012");	 
 		LoginPage.loginBtn.click();
 		act.pause(3000).perform();
+	}
+	
+	protected static void NGP() {	
+		act.pause(2000).perform();
+		NGPPayments.Username.sendKeys("mababaikeli@afba.com.ngcommunityks");
+		act.pause(3000).perform();	
+		NGPPayments.Password.sendKeys("Muna#5012");
+		act.pause(3000).perform();	
+		NGPPayments.Login.click();
+		act.pause(4000).perform();	
 	}
 	
 	protected static void RemoteLogIn() {
@@ -56,6 +68,17 @@ public abstract class TestBase {
 		ClaimsIntake.CNext.click();
 		act.pause(2000).perform();	
 	}
+	
+	protected static void CustomerPortalChangesForLP() {	
+		act.pause(2000).perform();
+		SalesforceChangesforLP.Username.sendKeys("mababaikeli@afba.com.afbafull");
+		act.pause(3000).perform();	
+		SalesforceChangesforLP.Password.sendKeys("Munavar#1223");
+		act.pause(3000).perform();	
+		SalesforceChangesforLP.Login.click();
+		act.pause(4000).perform();	
+	}
+	
 	
 	protected static void CustomerPortal() {	
 		MemberLoginPage.MemberLoginBtn.click();
@@ -89,7 +112,7 @@ public abstract class TestBase {
 	
 	protected static void SetUp() {
 		driver=Driver.getDriver();
-		driver.get(ConfigurationReader.getProperty("url"));
+		driver.get(ConfigurationReader.getProperty("url10"));
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		act = new Actions(driver);

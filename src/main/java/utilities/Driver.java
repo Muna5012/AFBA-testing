@@ -5,7 +5,7 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.*;
 import org.openqa.selenium.firefox.FirefoxDriver; 
 import org.openqa.selenium.ie.InternetExplorerDriver;
-import org.openqa.selenium.ie.InternetExplorerOptions;
+//import org.openqa.selenium.ie.InternetExplorerOptions;
 
 
 enum MyWebDrivers{
@@ -56,11 +56,11 @@ enum MyWebDrivers{
                      
                      WebDriverManager.iedriver().setup(); 
              
-                     InternetExplorerOptions capabilities = new InternetExplorerOptions();
-                     capabilities.setCapability("ignoreZoomSetting", true);
-                     driver = new InternetExplorerDriver(capabilities);
+//                     InternetExplorerOptions capabilities = new InternetExplorerOptions();
+//                     capabilities.setCapability("ignoreZoomSetting", true);
+//                     driver = new InternetExplorerDriver(capabilities);
                      
-               //      driver = new InternetExplorerDriver(); 
+                     driver = new InternetExplorerDriver(); 
                      
                      break; 
                      
