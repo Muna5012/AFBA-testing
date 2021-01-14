@@ -174,9 +174,9 @@ public class EAppFaceToFace8 extends TestBase{
 		EApp2.FedTerm.click();
 		EApp2.FedTermTobaccoForSponsor.click();
 		EApp2.FedTermTobaccoForSpouse.click();
-		EApp2.FedTermNOnTobaccoforFirstKid.click();
-		EApp2.FedTermNonTobaccoforSecondKid.click();
-		act.pause(4000).perform();
+//		EApp2.FedTermNOnTobaccoforFirstKid.click();
+//		EApp2.FedTermNonTobaccoforSecondKid.click();
+		act.pause(3000).perform();
 	}
 
 	@Then("Select Customize One Hundred Thousand for Spouse and fifty thousand for Sponsor")
@@ -192,6 +192,10 @@ public class EAppFaceToFace8 extends TestBase{
 	    EApp2.FirstProtectCustomizeFirstKid.click();
 	    EApp2.FirstProtectCustomizeSecondKid.click();
 	    act.pause(4000).perform();
+	    EApp2.SeniorProtect.click();
+		  act.pause(2000).perform();
+		  EApp2.WaiveSeniorProtect.click();
+		    act.pause(3000).perform();
 	    EApp2.NextBtn1.click();
 	}
 
