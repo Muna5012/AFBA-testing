@@ -204,8 +204,10 @@ public class EAppCallCenter1 extends TestBase {
 
 	@Then("Next Page select Email Summary And Select Spouse sign this application click Yes")
 	public void next_Page_select_Email_Summary_And_Select_Spouse_sign_this_application_click_Yes() {
-		   EApp2.EmailSummary2.click();
+//		   EApp2.EmailSummary2.click();
 	       act.pause(3000).perform();
+	       EApp2.AcknowledgeofPayment.click();
+		    act.pause(2000).perform();
 		   EApp2.SpouseSigninYes.click();
 		    act.pause(2000).perform();
 		    EApp2.AgreeToSignInBtn.click();

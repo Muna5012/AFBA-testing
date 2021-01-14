@@ -1,4 +1,4 @@
-@Login
+@LoginPage
 Feature: National Guard Platform Payment Login Page verify forget password test feature 
 Scenario: National Guard Platform Payment Login Page verify forget password test scenario
 Given Open NGP login page and get the URL of NGP tag
